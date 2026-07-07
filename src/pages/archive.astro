@@ -1,0 +1,586 @@
+---
+import "../styles/global.css";
+import { articles, issueArchives } from "../data/articles";
+
+const issueMap = Object.fromEntries(issueArchives.map((issue) => [issue.id, issue]));
+const monthNames = [
+  "1月",
+  "2月",
+  "3月",
+  "4月",
+  "5月",
+  "6月",
+  "7月",
+  "8月",
+  "9月",
+  "10月",
+  "11月",
+  "12月"
+];
+
+const getPreviewText = (article: (typeof articles)[number]) =>
+  article.sections
+    .flatMap((section) => section.paragraphs)
+    .filter(Boolean)
+    .slice(0, 3)
+    .join("\n\n") || article.excerpt;
+
+const getBodySearchText = (article: (typeof articles)[number]) =>
+  [
+    article.excerpt,
+    ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs]),
+    ...(article.contentBlocks ?? []).map((block) => (block.type === "image" ? block.caption ?? "" : block.text))
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+const getSearchText = (article: (typeof articles)[number]) =>
+  [
+    article.title,
+    article.author,
+    article.category,
+    article.tags.join(" "),
+    article.issue,
+    article.excerpt,
+    ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs]),
+    ...(article.contentBlocks ?? []).map((block) => (block.type === "image" ? block.caption ?? "" : block.text))
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+const archiveTree = issueArchives
+  .filter((issue) => articles.some((article) => article.issueId === issue.id))
+  .reduce(
+    (years, issue) => {
+      const issueArticles = articles.filter((article) => article.issueId === issue.id);
+      const year = issue.id.slice(0, 4);
+      const month = issue.id.slice(4, 6);
+      years[year] = years[year] ?? {
+        year,
+        articleCount: 0,
+        months: [] as Array<{
+          month: string;
+          label: string;
+          issue: typeof issue;
+          articles: typeof articles;
+        }>
+      };
+      years[year].articleCount += issueArticles.length;
+      years[year].months.push({
+        month,
+        label: monthNames[Number(month) - 1] ?? `${Number(month)}月`,
+        issue,
+        articles: issueArticles
+      });
+      return years;
+    },
+    {} as Record<
+      string,
+      {
+        year: string;
+        articleCount: number;
+        months: Array<{
+          month: string;
+          label: string;
+          issue: (typeof issueArchives)[number];
+          articles: typeof articles;
+        }>;
+      }
+    >
+  );
+
+const archiveYears = Object.values(archiveTree)
+  .sort((a, b) => Number(b.year) - Number(a.year))
+  .map((year) => ({
+    ...year,
+    months: year.months.sort((a, b) => Number(b.month) - Number(a.month))
+  }));
+
+const latestYear = archiveYears[0];
+const latestMonth = latestYear?.months[0];
+const initialArticle = latestMonth?.articles[0] ?? articles[0];
+const initialIssue = initialArticle ? issueMap[initialArticle.issueId] : undefined;
+const totalArticles = articles.length;
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="氣機導引電子報歷史文章索引，可依年份、月份、文章標題、作者或分類搜尋並預覽文章。"
+    />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>歷史文章索引 - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href="/#newest">最新一期</a>
+          <a href="/archive/" aria-current="page">歷史期數</a>
+          <a href="/topics/">主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="tag-page-hero">
+        <a href="/">回首頁</a>
+        <h1>歷史文章索引</h1>
+        <p>依年份與月份收合文章。點選左側文章可在右側預覽，確認後再進入完整閱讀頁。</p>
+      </section>
+
+      <section class="content-block archive-page" aria-label="歷史文章">
+        <div class="archive-toolbar" aria-label="文章搜尋">
+          <label>
+            <span>搜尋歷史文章</span>
+            <input
+              type="search"
+              data-archive-search
+              placeholder="輸入文章標題、作者、分類、2024.05、219期..."
+              autocomplete="off"
+            />
+          </label>
+          <div class="archive-toolbar-status">
+            <p>{issueArchives.length} 期 / {totalArticles} 篇文章</p>
+            <p data-archive-count>預設顯示最新月份，展開年份或月份可瀏覽更多文章。</p>
+          </div>
+        </div>
+
+        <div class="archive-compact-layout">
+          <nav class="archive-tree" aria-label="歷史文章樹狀索引">
+            {archiveYears.map((yearGroup) => (
+              <details
+                class="archive-year-node"
+                data-archive-year={yearGroup.year}
+                open={yearGroup.year === latestYear?.year}
+              >
+                <summary>
+                  <span>{yearGroup.year}</span>
+                  <em>({yearGroup.articleCount})</em>
+                </summary>
+                <div class="archive-month-list">
+                  {yearGroup.months.map((monthGroup) => (
+                    <details
+                      class="archive-month-node"
+                      data-archive-month={monthGroup.issue.id}
+                      open={monthGroup.issue.id === latestMonth?.issue.id}
+                    >
+                      <summary>
+                        <span>{monthGroup.label}</span>
+                        <em>({monthGroup.articles.length})</em>
+                      </summary>
+                      <ul>
+                        {monthGroup.articles.map((article) => {
+                          const issue = issueMap[article.issueId];
+                          const href = `/articles/${article.slug}/`;
+                          return (
+                            <li
+                              data-archive-tree-item
+                              data-search={`${getSearchText(article)} ${issue?.label ?? ""} ${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                            >
+                              <button
+                                type="button"
+                                data-preview-trigger
+                                data-title={article.title}
+                                data-category={article.category}
+                                data-author={article.author || article.readTime}
+                                data-issue={`${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                                data-excerpt={article.excerpt}
+                                data-preview={getPreviewText(article)}
+                                data-fulltext={getSearchText(article)}
+                                data-bodytext={getBodySearchText(article)}
+                                data-href={href}
+                              >
+                                <span>{article.category}</span>
+                                <strong>{article.title}</strong>
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </details>
+                  ))}
+                </div>
+              </details>
+            ))}
+          </nav>
+
+          <aside class="archive-search-panel" aria-live="polite">
+            <article class="archive-preview" data-archive-preview>
+              <p class="meta-line">
+                <span data-preview-issue>{initialIssue?.issueNumber}</span>
+                <span data-preview-date>{initialIssue?.date}</span>
+                <span data-preview-category>{initialArticle?.category}</span>
+              </p>
+              <h3 data-preview-title>{initialArticle?.title}</h3>
+              <p class="byline" data-preview-author>{initialArticle?.author || initialArticle?.readTime}</p>
+              <p class="archive-preview-excerpt" data-preview-excerpt>{initialArticle?.excerpt}</p>
+              <div class="archive-preview-body" data-preview-body>
+                {getPreviewText(initialArticle).split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+              <a class="archive-preview-link" href={`/articles/${initialArticle?.slug}/`} data-preview-href target="_blank" rel="noreferrer">
+                閱讀全文
+              </a>
+            </article>
+
+            <div class="archive-result-list" data-archive-results hidden>
+              {articles.map((article) => {
+                const issue = issueMap[article.issueId];
+                const href = `/articles/${article.slug}/`;
+                return (
+                  <article
+                    class="archive-result-row"
+                    data-archive-result
+                    data-search={`${article.title} ${article.author} ${article.category} ${article.tags.join(" ")} ${issue?.label ?? ""} ${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                  >
+                    <button
+                      type="button"
+                      data-preview-trigger
+                      data-title={article.title}
+                      data-category={article.category}
+                      data-author={article.author || article.readTime}
+                      data-issue={`${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                      data-excerpt={article.excerpt}
+                      data-preview={getPreviewText(article)}
+                      data-href={href}
+                    >
+                      <p class="meta-line">
+                        <span>{issue?.issueNumber}</span>
+                        <span>{issue?.date}</span>
+                        <span>{article.category}</span>
+                      </p>
+                      <h3>{article.title}</h3>
+                      <p>{article.author || article.readTime}</p>
+                    </button>
+                  </article>
+                );
+              })}
+            </div>
+            <p class="archive-empty" data-archive-empty hidden>找不到符合條件的文章，請換個關鍵字試試。</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>中華氣機導引文化研究會</strong>
+        <p>10046台北市漢口街一段3號9樓</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="application/json" id="archive-legacy-search-disabled">
+      const input = document.querySelector("[data-archive-search]");
+      const treeItems = Array.from(document.querySelectorAll("[data-archive-tree-item]"));
+      const resultItems = Array.from(document.querySelectorAll("[data-archive-result]"));
+      const previewTriggers = Array.from(document.querySelectorAll("[data-preview-trigger]"));
+      const yearNodes = Array.from(document.querySelectorAll("[data-archive-year]"));
+      const monthNodes = Array.from(document.querySelectorAll("[data-archive-month]"));
+      const results = document.querySelector("[data-archive-results]");
+      const count = document.querySelector("[data-archive-count]");
+      const empty = document.querySelector("[data-archive-empty]");
+      const preview = document.querySelector("[data-archive-preview]");
+
+      const normalize = (value) => value.trim().toLowerCase();
+      const initialOpenMonths = new Set(
+        monthNodes.filter((node) => node.hasAttribute("open")).map((node) => node.getAttribute("data-archive-month"))
+      );
+      const initialOpenYears = new Set(
+        yearNodes.filter((node) => node.hasAttribute("open")).map((node) => node.getAttribute("data-archive-year"))
+      );
+
+      const setPreview = (trigger) => {
+        if (!preview) return;
+        const title = trigger.getAttribute("data-title") ?? "";
+        const category = trigger.getAttribute("data-category") ?? "";
+        const author = trigger.getAttribute("data-author") ?? "";
+        const issue = trigger.getAttribute("data-issue") ?? "";
+        const excerpt = trigger.getAttribute("data-excerpt") ?? "";
+        const body = trigger.getAttribute("data-preview") ?? "";
+        const href = trigger.getAttribute("data-href") ?? "#";
+        const [issueNumber = "", date = ""] = issue.split(" ");
+
+        preview.querySelector("[data-preview-issue]").textContent = issueNumber;
+        preview.querySelector("[data-preview-date]").textContent = date;
+        preview.querySelector("[data-preview-category]").textContent = category;
+        preview.querySelector("[data-preview-title]").textContent = title;
+        preview.querySelector("[data-preview-author]").textContent = author;
+        preview.querySelector("[data-preview-excerpt]").textContent = excerpt;
+        preview.querySelector("[data-preview-href]").setAttribute("href", href);
+
+        const bodyTarget = preview.querySelector("[data-preview-body]");
+        bodyTarget.replaceChildren(
+          ...body
+            .split(/\n{2,}/)
+            .filter(Boolean)
+            .map((paragraph) => {
+              const node = document.createElement("p");
+              node.textContent = paragraph;
+              return node;
+            })
+        );
+
+        previewTriggers.forEach((item) => item.classList.toggle("is-active", item === trigger));
+      };
+
+      const resetArchive = () => {
+        treeItems.forEach((item) => item.removeAttribute("hidden"));
+        resultItems.forEach((item) => item.setAttribute("hidden", ""));
+        monthNodes.forEach((node) => {
+          const id = node.getAttribute("data-archive-month");
+          node.toggleAttribute("open", initialOpenMonths.has(id));
+          node.removeAttribute("hidden");
+        });
+        yearNodes.forEach((node) => {
+          const id = node.getAttribute("data-archive-year");
+          node.toggleAttribute("open", initialOpenYears.has(id));
+          node.removeAttribute("hidden");
+        });
+        results?.setAttribute("hidden", "");
+        empty?.setAttribute("hidden", "");
+        if (count) count.textContent = "預設顯示最新月份，展開年份或月份可瀏覽更多文章。";
+      };
+
+      const filterArchive = () => {
+        const keyword = normalize(input?.value ?? "");
+        if (!keyword) {
+          resetArchive();
+          return;
+        }
+
+        let visibleCount = 0;
+
+        treeItems.forEach((item) => {
+          const text = normalize(item.getAttribute("data-search") ?? "");
+          const visible = text.includes(keyword);
+          item.toggleAttribute("hidden", !visible);
+        });
+
+        resultItems.forEach((item) => {
+          const text = normalize(item.getAttribute("data-search") ?? "");
+          const visible = text.includes(keyword);
+          item.toggleAttribute("hidden", !visible);
+          if (visible) visibleCount += 1;
+        });
+
+        monthNodes.forEach((node) => {
+          const hasVisibleItem = node.querySelector("[data-archive-tree-item]:not([hidden])");
+          node.toggleAttribute("hidden", !hasVisibleItem);
+          node.toggleAttribute("open", Boolean(hasVisibleItem));
+        });
+
+        yearNodes.forEach((node) => {
+          const hasVisibleMonth = node.querySelector("[data-archive-month]:not([hidden])");
+          node.toggleAttribute("hidden", !hasVisibleMonth);
+          node.toggleAttribute("open", Boolean(hasVisibleMonth));
+        });
+
+        results?.toggleAttribute("hidden", visibleCount === 0);
+        empty?.toggleAttribute("hidden", visibleCount > 0);
+        if (count) count.textContent = `${visibleCount} 篇文章`;
+      };
+
+      previewTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", () => setPreview(trigger));
+      });
+
+      const initialKeyword = new URLSearchParams(window.location.search).get("keyword");
+      if (input && initialKeyword) input.value = initialKeyword;
+      input?.addEventListener("input", filterArchive);
+      filterArchive();
+      if (previewTriggers[0]) setPreview(previewTriggers[0]);
+    </script>
+    <script>
+      (() => {
+        const input = document.querySelector("[data-archive-search]");
+        const treeItems = Array.from(document.querySelectorAll("[data-archive-tree-item]"));
+        const treeTriggers = treeItems
+          .map((item) => item.querySelector("[data-preview-trigger]"))
+          .filter(Boolean);
+        const yearNodes = Array.from(document.querySelectorAll("[data-archive-year]"));
+        const monthNodes = Array.from(document.querySelectorAll("[data-archive-month]"));
+        const results = document.querySelector("[data-archive-results]");
+        const count = document.querySelector("[data-archive-count]");
+        const empty = document.querySelector("[data-archive-empty]");
+        const preview = document.querySelector("[data-archive-preview]");
+        const initialOpenMonths = new Set(
+          monthNodes.filter((node) => node.hasAttribute("open")).map((node) => node.getAttribute("data-archive-month"))
+        );
+        const initialOpenYears = new Set(
+          yearNodes.filter((node) => node.hasAttribute("open")).map((node) => node.getAttribute("data-archive-year"))
+        );
+
+        const normalize = (value) => value.trim().toLowerCase();
+        const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const termsFor = (keyword) =>
+          keyword
+            .trim()
+            .split(/\s+/)
+            .filter(Boolean)
+            .sort((a, b) => b.length - a.length);
+        const highlightText = (target, text, keyword) => {
+          if (!target) return;
+          const terms = termsFor(keyword);
+          target.replaceChildren();
+          if (!terms.length) {
+            target.textContent = text;
+            return;
+          }
+          const pattern = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "gi");
+          text.split(pattern).forEach((part) => {
+            if (!part) return;
+            if (terms.some((term) => part.toLowerCase() === term.toLowerCase())) {
+              const mark = document.createElement("mark");
+              mark.className = "archive-search-hit";
+              mark.textContent = part;
+              target.append(mark);
+            } else {
+              target.append(document.createTextNode(part));
+            }
+          });
+        };
+        const compactText = (value) => value.replace(/\s+/g, " ").trim();
+        const snippetsFor = (text, keyword, fallback) => {
+          const source = compactText(text || fallback);
+          const fallbackText = compactText(fallback || source);
+          const terms = termsFor(keyword);
+          if (!source) return [];
+          if (!terms.length) return source.split(/\n{2,}/).filter(Boolean).slice(0, 2);
+
+          const lowerSource = source.toLowerCase();
+          const hitIndexes = terms
+            .map((term) => lowerSource.indexOf(term.toLowerCase()))
+            .filter((index) => index >= 0)
+            .sort((a, b) => a - b);
+
+          if (!hitIndexes.length) return [fallbackText.slice(0, 120)].filter(Boolean);
+
+          return hitIndexes.slice(0, 2).map((index) => {
+            const start = Math.max(0, index - 48);
+            const end = Math.min(source.length, index + 92);
+            return `${start > 0 ? "..." : ""}${source.slice(start, end)}${end < source.length ? "..." : ""}`;
+          });
+        };
+
+        const setArchivePreview = (trigger) => {
+          if (!preview || !trigger) return;
+          const keyword = input?.value.trim() ?? "";
+          const title = trigger.getAttribute("data-title") ?? "";
+          const category = trigger.getAttribute("data-category") ?? "";
+          const author = trigger.getAttribute("data-author") ?? "";
+          const issue = trigger.getAttribute("data-issue") ?? "";
+          const excerpt = trigger.getAttribute("data-excerpt") ?? "";
+          const body = trigger.getAttribute("data-preview") ?? "";
+          const bodyText = trigger.getAttribute("data-bodytext") ?? body;
+          const href = trigger.getAttribute("data-href") ?? "#";
+          const [issueNumber = "", date = ""] = issue.split(" ");
+
+          preview.querySelector("[data-preview-issue]").textContent = issueNumber;
+          preview.querySelector("[data-preview-date]").textContent = date;
+          preview.querySelector("[data-preview-category]").textContent = category;
+          highlightText(preview.querySelector("[data-preview-title]"), title, keyword);
+          preview.querySelector("[data-preview-author]").textContent = author;
+          highlightText(preview.querySelector("[data-preview-excerpt]"), excerpt, keyword);
+
+          const link = preview.querySelector("[data-preview-href]");
+          link.setAttribute("href", href);
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noreferrer");
+
+          const bodyTarget = preview.querySelector("[data-preview-body]");
+          const snippets = keyword
+            ? snippetsFor(bodyText, keyword, excerpt || body)
+            : body.split(/\n{2,}/).filter(Boolean).slice(0, 2);
+          bodyTarget.replaceChildren(
+            ...snippets.map((paragraph) => {
+              const node = document.createElement("p");
+              highlightText(node, paragraph, keyword);
+              return node;
+            })
+          );
+
+          treeTriggers.forEach((item) => item.classList.toggle("is-active", item === trigger));
+          treeItems.forEach((item) => item.classList.toggle("is-selected", item.contains(trigger)));
+        };
+
+        const resetArchiveSearch = () => {
+          treeItems.forEach((item) => item.removeAttribute("hidden"));
+          monthNodes.forEach((node) => {
+            const id = node.getAttribute("data-archive-month");
+            node.toggleAttribute("open", initialOpenMonths.has(id));
+            node.removeAttribute("hidden");
+          });
+          yearNodes.forEach((node) => {
+            const id = node.getAttribute("data-archive-year");
+            node.toggleAttribute("open", initialOpenYears.has(id));
+            node.removeAttribute("hidden");
+          });
+          results?.setAttribute("hidden", "");
+          empty?.setAttribute("hidden", "");
+          if (count) count.textContent = "預設顯示最新月份，展開年份或月份可瀏覽更多文章。";
+          setArchivePreview(treeTriggers[0]);
+        };
+
+        const filterArchiveSearch = () => {
+          const keyword = normalize(input?.value ?? "");
+          if (!keyword) {
+            resetArchiveSearch();
+            return;
+          }
+
+          const visibleItems = [];
+          treeItems.forEach((item) => {
+            const visible = normalize(item.getAttribute("data-search") ?? "").includes(keyword);
+            item.toggleAttribute("hidden", !visible);
+            if (visible) visibleItems.push(item);
+          });
+
+          monthNodes.forEach((node) => {
+            const hasVisibleItem = node.querySelector("[data-archive-tree-item]:not([hidden])");
+            node.toggleAttribute("hidden", !hasVisibleItem);
+            node.toggleAttribute("open", Boolean(hasVisibleItem));
+          });
+          yearNodes.forEach((node) => {
+            const hasVisibleMonth = node.querySelector("[data-archive-month]:not([hidden])");
+            node.toggleAttribute("hidden", !hasVisibleMonth);
+            node.toggleAttribute("open", Boolean(hasVisibleMonth));
+          });
+
+          results?.setAttribute("hidden", "");
+          empty?.toggleAttribute("hidden", visibleItems.length > 0);
+          if (count) count.textContent = `${visibleItems.length} 篇文章`;
+          setArchivePreview(visibleItems[0]?.querySelector("[data-preview-trigger]"));
+        };
+
+        treeTriggers.forEach((trigger) => {
+          trigger.addEventListener("click", (event) => {
+            event.preventDefault();
+            setArchivePreview(trigger);
+          });
+        });
+        input?.addEventListener("input", filterArchiveSearch);
+        results?.setAttribute("hidden", "");
+        filterArchiveSearch();
+      })();
+    </script>
+  </body>
+</html>

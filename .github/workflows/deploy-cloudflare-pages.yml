@@ -1,0 +1,65 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
+      GOOGLE_DRIVE_REMOTE: ${{ vars.GOOGLE_DRIVE_REMOTE }}
+      CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install rclone when Google Drive secret exists
+        if: ${{ env.RCLONE_CONFIG_CONTENT != '' }}
+        run: |
+          curl https://rclone.org/install.sh | sudo bash
+          mkdir -p ~/.config/rclone
+          printf '%s' "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
+
+      - name: Sync Google Drive source
+        if: ${{ env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        shell: pwsh
+        run: ./scripts/sync_google_drive.ps1
+
+      - name: Generate article data
+        shell: pwsh
+        run: |
+          if ($env:GOOGLE_DRIVE_REMOTE) {
+            ./scripts/generate_archive.ps1
+          } else {
+            Write-Host "No local article source folder found; using committed generated data."
+          }
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_PAGES_PROJECT"
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+          pnpm dlx wrangler pages deploy dist --project-name="$CLOUDFLARE_PAGES_PROJECT" --branch=main

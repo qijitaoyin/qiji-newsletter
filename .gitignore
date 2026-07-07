@@ -1,0 +1,26 @@
+node_modules/
+.astro/
+dist/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.rclone.conf
+*.local
+
+# Generated local handoff files
+review-publish.json
+review-approvals.local.json
+
+# Logs
+*.log
+
+# OS and cloud-drive temporary files
+Thumbs.db
+.DS_Store
+._*
+~$*
+
+# Google Drive source Word files stay outside Git.
+各期電子報/

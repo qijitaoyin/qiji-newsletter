@@ -1,0 +1,253 @@
+---
+import "../../styles/global.css";
+import {
+  articleTags,
+  articles,
+  getArticlesByIssue,
+  getRelatedArticles
+} from "../../data/articles";
+
+export function getStaticPaths() {
+  return articles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const relatedArticles = getRelatedArticles(article.slug);
+const issueArticles = getArticlesByIssue(article.issueId);
+const issueIndex = issueArticles.findIndex((item) => item.slug === article.slug);
+const previousArticle = issueArticles[issueIndex - 1] ?? issueArticles[issueArticles.length - 1];
+const nextArticle = issueArticles[issueIndex + 1] ?? issueArticles[0];
+const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
+const contentBlocks = article.contentBlocks ?? [];
+const hasContentBlocks = contentBlocks.length > 0;
+const titlePhrases = article.title.includes(" ")
+  ? article.title.split(/\s+/).filter(Boolean)
+  : article.title.match(/.{1,8}/gu) ?? [article.title];
+const hasHeroImage = Boolean(article.image && !article.image.includes("/assets/qiji-logo"));
+const normalizeCategory = (category: string) => {
+  if (category.startsWith("如是我")) return "如是我聞";
+  if (category === "同頻共振時") return "導引專欄";
+  return category;
+};
+const articleCategory = normalizeCategory(article.category);
+const issueMenuGroups = issueArticles.reduce(
+  (groups, item) => {
+    const category = normalizeCategory(item.category);
+    const group = groups.find((entry) => entry.category === category);
+    if (group) {
+      group.items.push(item);
+    } else {
+      groups.push({ category, items: [item] });
+    }
+    return groups;
+  },
+  [] as { category: string; items: typeof issueArticles }[]
+);
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={article.excerpt} />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>{article.title} - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href="/#newest">最新一期</a>
+          <a href="/archive/">歷史期數</a>
+          <a href="/topics/">主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action="/archive/" aria-label="搜尋文章">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="article-page">
+      <article>
+        <header class="article-hero">
+          <div class={`article-hero-grid${hasHeroImage ? "" : " has-no-cover"}`}>
+            <div class="article-hero-copy">
+              <p class="meta-line">
+                <span>{articleCategory}</span>
+                <span>{article.issue}</span>
+                <span>{article.readTime}</span>
+              </p>
+              <h1 class="title-fixed" aria-label={article.title}>
+                {titlePhrases.map((phrase) => <span class="title-phrase">{phrase}</span>)}
+              </h1>
+              {article.subtitle && <p class="article-subtitle">{article.subtitle}</p>}
+              <p class="article-byline">
+                <span>{article.author}</span>
+                <time datetime={article.date}>{article.date}</time>
+              </p>
+            </div>
+            {hasHeroImage && (
+              <figure class="article-cover">
+                <img src={article.image} alt="" />
+                {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
+              </figure>
+            )}
+          </div>
+        </header>
+
+        <div class="article-shell">
+          <aside class="article-sidebar" aria-label="文章導覽">
+            <nav class="article-sidebar-block article-issue-menu" aria-label="本期電子報目錄">
+              <strong>目錄</strong>
+              {issueMenuGroups.map((group) => (
+                <div class="article-issue-group">
+                  <span class="article-issue-group-title">{group.category}</span>
+                  {group.items.map((item) => (
+                    <a
+                      href={`/articles/${item.slug}/`}
+                      class:list={{ "is-current": item.slug === article.slug }}
+                      aria-current={item.slug === article.slug ? "page" : undefined}
+                    >
+                      {item.title}
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </nav>
+
+            <div class="article-sidebar-block">
+              <strong>主題分類</strong>
+              <div class="article-tag-list">
+                {article.tags.map((tag) => (
+                  <a href={`/tags/${tagByLabel[tag]?.slug ?? tag}/`}>{tag}</a>
+                ))}
+              </div>
+            </div>
+          </aside>
+
+          <div class="article-main">
+            <div class="article-tools" aria-label="閱讀設定">
+              <span>字級</span>
+              <div class="font-size-control" role="group" aria-label="選擇文章字級">
+                <button type="button" data-font-size="small">小</button>
+                <button type="button" data-font-size="medium" class="is-active">中</button>
+                <button type="button" data-font-size="large">大</button>
+              </div>
+            </div>
+
+            <div class="article-body" data-article-body data-font-size="medium">
+              {article.lede && <p class="article-lede">{article.lede}</p>}
+              {hasContentBlocks ? (
+                contentBlocks.map((block) => {
+                  if (block.type === "heading") {
+                    return <h2>{block.text}</h2>;
+                  }
+                  if (block.type === "image") {
+                    return (
+                      <figure class="article-inline-image">
+                        <img src={block.src} alt={block.caption ?? ""} loading="lazy" />
+                        {block.caption && <figcaption>{block.caption}</figcaption>}
+                      </figure>
+                    );
+                  }
+                  return <p>{block.text}</p>;
+                })
+              ) : (
+                article.sections.map((section, index) => (
+                  <section id={`section-${index + 1}`}>
+                    {section.heading && <h2>{section.heading}</h2>}
+                    {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                  </section>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <nav class="article-pager" aria-label="上一篇與下一篇">
+        <a href={`/articles/${previousArticle.slug}/`}>
+          <span>上一篇</span>
+          <strong>{previousArticle.title}</strong>
+        </a>
+        <a href={`/articles/${nextArticle.slug}/`}>
+          <span>下一篇</span>
+          <strong>{nextArticle.title}</strong>
+        </a>
+      </nav>
+
+      <section class="content-block article-related" aria-labelledby="related-title">
+        <div class="block-title">
+          <h2 id="related-title">相關閱讀</h2>
+        </div>
+        <div class="compact-grid">
+          {relatedArticles.map((item) => (
+            <article>
+              <a href={`/articles/${item.slug}/`}>
+                {item.image && !item.image.includes("/assets/qiji-logo") && <img src={item.image} alt="" />}
+                <div>
+                  <p class="meta-line"><span>{item.category}</span><span>{item.date}</span></p>
+                  <h3>{item.title}</h3>
+                  <p class="byline">{item.author}</p>
+                </div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>中華氣機導引文化研究會</strong>
+        <p>10046台北市漢口街一段3號9樓</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const body = document.querySelector("[data-article-body]");
+      const controls = Array.from(document.querySelectorAll(".font-size-control [data-font-size]"));
+      const key = "qiji-article-font-size";
+      const applySize = (size) => {
+        if (!body) return;
+        body.setAttribute("data-font-size", size);
+        controls.forEach((control) => {
+          const isActive = control.getAttribute("data-font-size") === size;
+          control.classList.toggle("is-active", isActive);
+          control.setAttribute("aria-pressed", String(isActive));
+        });
+        window.localStorage.setItem(key, size);
+      };
+
+      const savedSize = window.localStorage.getItem(key);
+      if (savedSize === "small" || savedSize === "medium" || savedSize === "large") {
+        applySize(savedSize);
+      } else {
+        applySize("medium");
+      }
+
+      controls.forEach((control) => {
+        control.addEventListener("click", () => {
+          applySize(control.getAttribute("data-font-size") || "medium");
+        });
+      });
+
+    </script>
+  </body>
+</html>

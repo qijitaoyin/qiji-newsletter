@@ -1,0 +1,5833 @@
+﻿[
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-2同頻共振.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-1如是我聞之一.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-2如是我聞之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-3如是我聞之三.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-4如是我聞之四.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-5如是我聞之五.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-6如是我聞之六.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202605\\2605-3-7如是我聞之七.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-3體證道德經《第62章》道奧.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-4圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-4圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-5山腳下的蘆葦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202508\\2508-5山腳下的蘆葦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1-2新書推薦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1-2新書推薦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1-3新書推薦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1-3新書推薦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-3體證道德經第61.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202507\\2507-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-2-2如是我聞之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "圖片無標題：/assets/articles/202506/202506-img-006.png?v=269089",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-2-2如是我聞之二.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "圖片無標題：/assets/articles/202506/202506-img-007.png?v=161751",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-2-3如是我聞之三.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "圖片無標題：/assets/articles/202506/202506-img-008.png?v=236498",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-2-3如是我聞之三.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "圖片無標題：/assets/articles/202506/202506-img-009.jpeg?v=25640",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-2-3如是我聞之三.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-3體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-4圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202506\\2506-4圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-2屏東會館.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-5導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-5導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202505\\2505-6心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-3體證道德經58章.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-5圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-5圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-6山腳下的蘆葦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202504\\2504-6山腳下的蘆葦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202503\\2503-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202503\\2503-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202503\\2503-3道德經第57章.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202503\\2503-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202503\\2503-5心田集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-1_編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-1_編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-2特別報導_南台灣的全覺能基地.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-3-1_如是我聞_成佛是一切在心 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-3-1_如是我聞_成佛是一切在心 .docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-3-2_如是我聞_覺性之路   拉出新維度.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-3-2_如是我聞_覺性之路   拉出新維度.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-3-3_如是我聞_信的是生命中的一把寶劍.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-4-1_體證道德經_第56章道貴.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-4-1_體證道德經_第56章道貴.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-4-2_圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202502\\2502-4-2_圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_1-1覺能降臨集體成佛—編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_1-1覺能降臨集體成佛—編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-2_四午班年終一分鐘.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-3_四晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-4_五晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-4_五晚.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-5_六早班一分鐘.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-6_台中班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-7_日早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-8_一晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-8_一晚.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202501\\2501_2-9_一分鐘錄音_二早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-2-1如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-2-1如是我聞.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-2-2如是我聞之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-2-2如是我聞之二.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-3記沉香花梨會.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-4讀書會.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-5含德章055.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-6導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-7股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202412\\2412-7股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\24010-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-2-1如是我聞之一.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-2-1如是我聞之一.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-2-2如是我聞之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-2-2如是我聞之二.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-3道德經第53章大道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-4導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-6股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202410\\2410-6股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-2應做如是觀-應做如是覺.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-2應做如是觀-應做如是覺.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-4道德經_51尊貴.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-4導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-6心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-7術之盡頭 炁體源流.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202408\\2408-7術之盡頭 炁體源流.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-3道德經49章.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "圖片無標題：/assets/articles/202406/202406-img-003.png?v=409263",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-4導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "圖片無標題：/assets/articles/202406/202406-img-004.jpeg?v=26800",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-4導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202406\\2406-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\fwd5\\202405___ 會館電子報.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\fwd5\\202405___ 會館電子報.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-2如是我聞.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-3屏東會館.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-3屏東會館.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-4-1莊醫師 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-4-1莊醫師 .docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-4-2余媛媛.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-4-2余媛媛.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-6骨盆治療.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-7圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-7圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-8宇宙這樣從你心中生起.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-8宇宙這樣從你心中生起.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-8觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-9山腳下的蘆葦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202405\\2405-9山腳下的蘆葦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-2練功筆記之一.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-2練功筆記之一.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-3練功筆記之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-4體證道德經第四十七.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-5導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-5導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-6股海人生之桂林仔的卡通錶.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-6股海人生之桂林仔的卡通錶.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-7導引采風呂麗卿.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202404\\Gmail\\2404-7導引采風呂麗卿.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-2走春.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-3練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-3練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-5導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-5導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-6圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-6圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-6觀行錄_當下.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "圖片無標題：/assets/articles/202403/202403-img-010.png?v=10268340",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-6觀行錄_當下.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-7股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-7股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-8導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202403\\Gmail\\2403-8導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-1台中班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-2日早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-3六早.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-4五晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-5四晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-6四午.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-7二晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-8二早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-2-9一晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-3道德經第45章.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-4導引按蹻.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-4導引按蹻.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-5圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-5圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-7謝式冰.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202401\\2401-7謝式冰.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-10導引采風錄 程文政.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-10導引采風錄 程文政.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-3練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-3練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-4老子第43章.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-4老子第43章.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-5治療學就是人生學.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-6心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "圖片無標題：/assets/articles/202312/202312-img-005.png?v=166213",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-6心田集.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-7觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-8股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-8股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-9山腳下的蘆葦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202312\\文章\\2312-9山腳下的蘆葦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-2如是我聞.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-2練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-2練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-3治療見學.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-5圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-5圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-6股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-6股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-7導引采風錄 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202311\\2311-7導引采風錄 .docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-3練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-3練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-5股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-5股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-6山腳下的蘆葦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-6山腳下的蘆葦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-7導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202310\\2310-7導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-2練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-2練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-3治療的真意.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-5圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-5圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-6觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-7股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202309\\2309-7股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-2練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-2練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "圖片無標題：/assets/articles/202308/202308-img-011.png?v=330413",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-3導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "圖片無標題：/assets/articles/202308/202308-img-012.png?v=121625",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-3導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "圖片無標題：/assets/articles/202308/202308-img-013.jpeg?v=54800",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-3導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "圖片無標題：/assets/articles/202308/202308-img-014.png?v=157651",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-3導引按蹻.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-5道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-6無極練自我.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-7週期與逆週期.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-7週期與逆週期.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-8導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202308\\Gmail\\2308-8導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-2疑義相與析.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-3體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-4圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-4圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-5導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202307\\2307-5導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-10導引采風.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-10導引采風.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-2如是我聞.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-6導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-6導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-7體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-8心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202306\\2306-9觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-2陳國華.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-2陳國華.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-3體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-4導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-4導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "圖片無標題：/assets/articles/202305/202305-img-006.jpeg?v=280787",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-5導引香道_莫仁維.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "圖片無標題：/assets/articles/202305/202305-img-007.jpeg?v=470017",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-5導引香道_莫仁維.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "圖片無標題：/assets/articles/202305/202305-img-008.jpeg?v=76840",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-5導引香道_莫仁維.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "圖片無標題：/assets/articles/202305/202305-img-009.png?v=153562",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-5導引香道_莫仁維.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-6圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-6圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-7資產負債週期性.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-7資產負債週期性.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-8導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202305\\2305-8導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-6導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-6導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-7心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-8本來無一物 無中能生有.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-8本來無一物 無中能生有.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-9采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\2304-9采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "圖片無標題：/assets/articles/202304/202304-img-003.jpg?v=280787",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "圖片無標題：/assets/articles/202304/202304-img-004.jpeg?v=470017",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "圖片無標題：/assets/articles/202304/202304-img-005.jpeg?v=76840",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "圖片無標題：/assets/articles/202304/202304-img-006.png?v=153562",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202304（妙觀品藏香）\\妙觀品藏香.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-2如是我聞：無極心法紀要(修改版).docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-2如是我聞：無極心法紀要(修改版).docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-6圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-6圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-7槁木死灰與無限性.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-7槁木死灰與無限性.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-7觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-8導引采風錄莫仁維 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202303\\2303-8導引采風錄莫仁維 .docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-3練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-3練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-4體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-6觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-7逍遙遊.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-7逍遙遊.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-8洪明美.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202302\\2302-8洪明美.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-1一晚錄音側記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-2二早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-3二晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-3二晚.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-4四午一分鐘.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-2-6五晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-11張尊堡.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-1惠如.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-2慧敏.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-3媛媛.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-4芮瑩.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-5琦瑛.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-6靜慧.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-7高袖桐.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-8秋玲.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-9暐婷.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "圖片無標題：/assets/articles/202301/202301-img-021.jpeg?v=904761",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-9暐婷.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "圖片無標題：/assets/articles/202301/202301-img-022.jpeg?v=892460",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-3-9暐婷.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-4練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-4練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-6圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202301\\2301-6圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\20221111_觀行錄_川流初心ocx.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-10導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-10導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-022.jpeg?v=715559",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-023.jpeg?v=187140",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-024.jpeg?v=466580",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-025.jpeg?v=365475",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-026.jpeg?v=138188",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-027.jpeg?v=307063",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-028.jpeg?v=743965",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-029.jpeg?v=426094",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-030.jpeg?v=286995",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-031.jpeg?v=173715",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-032.jpeg?v=886959",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "圖片無標題：/assets/articles/202212/202212-img-033.jpeg?v=532844",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-2雪山坑冬季五感.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-3歲末專題之二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-3歲末專題之二.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-4練功筆記夙君.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-4練功筆記夙君.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-6導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-6導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-7體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-8心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-9逍遙遊.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202212\\2212-9逍遙遊.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-2夙君.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-2夙君.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-4嫻言絮語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "圖片無標題：/assets/articles/202211/202211-img-003.jpeg?v=84776",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-4嫻言絮語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-5導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-5導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-6體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-7圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-7圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-8誠則明 明則誠.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-8誠則明 明則誠.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-9導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202211\\2211-9導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-2夙君.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-2夙君.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-4嫻言絮語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "圖片無標題：/assets/articles/202211/202211-img-001.jpeg?v=84776",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-4嫻言絮語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-6體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-8誠則明 明則誠.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-8誠則明 明則誠.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-9導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\202211\\2211-9導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-4土沉與碳化.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-4土沉與碳化.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-6心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-7股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202208\\2208-7股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-02一晚班要無為，先無所不為.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-13導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-13導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-14體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-15圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-15圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-16股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-16股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-17導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-17導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202207\\2207-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-2疑義相與析.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-2疑義相與析.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-4練功筆記.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-4練功筆記.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-5體證道德經.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-6心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "圖片無標題：/assets/articles/202206/202206-img-003.png?v=401742",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-6心田集.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-7觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-8法於陰陽 和於術數.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-8法於陰陽 和於術數.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-9導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202206\\2206-9導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-10陳哲甯.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-10陳哲甯.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-2群組討論.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-2群組討論.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "圖片無標題：/assets/articles/202205/202205-img-005.png?v=2548",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-2群組討論.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-3五晚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-3五晚.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-4練功筆記  .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-4練功筆記  .docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-5識香.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-5識香.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-7圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-7圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-8觀行錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-9貨、幣之戰.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202205\\2205-9貨、幣之戰.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-01編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-01編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-02疑義相與析.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-02疑義相與析.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-03疑義相與析.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-03疑義相與析.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "圖片無標題：/assets/articles/202204/202204-img-004.jpeg?v=75674",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-03疑義相與析.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-06五感香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-06導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-06導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-08體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-10股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-10股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-11導引采風錄.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-11導引采風錄.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202204\\2204-9心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-2疑義相與析.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-2疑義相與析.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-3功夫熊貓.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-3功夫熊貓.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-4導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-4導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-6圖靈集_2203.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-6圖靈集_2203.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-7股海人生.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-7股海人生.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-8氣機人物一 James.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202203\\2203-8氣機人物一 James.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-10體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-10體證道德經_1.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-11心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-12有涯隨無涯殆已.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-12有涯隨無涯殆已.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-13身體書寫.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-13身體書寫.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-9眾香平等.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202202\\2202-9眾香平等.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "同 sourceId 已採用 Gmail 版本：G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-10圖靈集_2201.docx",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-10圖靈集_2201_1.docx",
+        "type":  "gmail-source-replaced",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-10圖靈集_2201.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-10圖靈集_2201.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-11香之物語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-12股海人生逍遙遊.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-12股海人生逍遙遊.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\2201-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\2201-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "圖片無標題：/assets/articles/202201/202201-img-008.jpeg?v=705856",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-5雪山坑教我的三件事.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "圖片無標題：/assets/articles/202201/202201-img-009.jpeg?v=371484",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-5雪山坑教我的三件事.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "圖片無標題：/assets/articles/202201/202201-img-010.jpeg?v=49737",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-8范家豪.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202201\\Gmail\\2201-9體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-10台中一.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-11台中二.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-12范子計然.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-12范子計然.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-12導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-12導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-13心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-3一晚班 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-4二早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "圖片無標題：/assets/articles/202112/202112-img-021.jpeg?v=725223",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-4二早班.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-5二晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-8《就這些了！》週五晚班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "圖片無標題：/assets/articles/202112/202112-img-024.jpeg?v=622312",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-8《就這些了！》週五晚班.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202112\\2112-9六早班.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-10賴鈺晶.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "圖片無標題：/assets/articles/202111/202111-img-015.jpeg?v=103783",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-10賴鈺晶.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-12圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-12圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-13香之物語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-14身體書寫.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-14身體書寫.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-2又一里程碑 .docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-3蔡育展.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-4鍾宛真.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-5夙君.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-6雅靜.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-7張可士.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-8暐婷.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\2111-9賴碧蘭.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\道場還是戰場？【2021-11-07交稿的版本】.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202111\\道場還是戰場？【2021-11-07交稿的版本】.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\Gmail\\2110-13余安邦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\2110-13導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\2110-13導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\2110-14見素抱樸.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\2110-15心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\Gmail\\2110-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202110\\Gmail\\2110-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-2導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-2導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-3體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-4圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-4圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "圖片無標題：/assets/articles/202109/202109-img-012.jpeg?v=34181",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "圖片無標題：/assets/articles/202109/202109-img-013.jpeg?v=376041",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "圖片無標題：/assets/articles/202109/202109-img-014.jpeg?v=211038",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "圖片無標題：/assets/articles/202109/202109-img-015.jpeg?v=506287",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "圖片無標題：/assets/articles/202109/202109-img-016.jpeg?v=235361",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-6沉香物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-7身體書寫.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\2109-7身體書寫.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\雲霞滿紙  金瓶梅香觀.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202109\\雲霞滿紙  金瓶梅香觀.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "同 sourceId 已採用 Gmail 版本：G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語＿修正.docx",
+        "type":  "gmail-source-replaced",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-2導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-2導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-3體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-4圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-4圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-5心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "圖片無標題：/assets/articles/202108/202108-img-008.jpeg?v=312154",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "圖片無標題：/assets/articles/202108/202108-img-009.jpeg?v=348423",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "圖片無標題：/assets/articles/202108/202108-img-010.jpeg?v=2175942",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "圖片無標題：/assets/articles/202108/202108-img-011.jpeg?v=109055",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-6香之物語.docx",
+        "type":  "content-warning",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-7身體書寫.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\Gmail\\2108-7身體書寫.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\王亞玲＿活色生香  愛慾金瓶梅.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202108\\王亞玲＿活色生香  愛慾金瓶梅.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\2107-1編輯小語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\2107-1編輯小語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-2-1洪明美.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-2-2陳盈靜.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-2-3蕭瑞玲.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-2-4林碧珠.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-3-1林沅錚.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-3-2秋泓.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-3-3洪于婷.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-1導引香道.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-1導引香道.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-2余安邦.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-2余安邦.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-3周小昱.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-4-3周小昱.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-5香之物語.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-5香之物語.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-5體證道德經.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-6圖靈集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-6圖靈集.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-8心田集.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-9身體書寫.docx",
+        "type":  "legacy-template-missing",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "缺少作者，已留空",
+        "file":  "G:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202107\\Gmail\\2107-9身體書寫.docx",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2508-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2508-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202508",
+        "message":  "文章缺少作者：傅冶中",
+        "file":  "2508-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2507-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "文章缺少作者：新書推薦",
+        "file":  "2507-1-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202507",
+        "message":  "文章缺少作者：新書推薦",
+        "file":  "2507-1-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2506-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202506",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2506-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2505-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202505",
+        "message":  "文章缺少作者：黃渼蔆",
+        "file":  "2505-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2504-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "文章缺少作者：傅冶中",
+        "file":  "2504-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202504",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2504-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2503-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202503",
+        "message":  "文章缺少作者：鄭雅靜",
+        "file":  "2503-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "文章缺少作者：編輯小語",
+        "file":  "2502-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "文章缺少作者：體證道德經 第56章道貴",
+        "file":  "2502-4-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "文章缺少作者：阿充（依2025/01/06課程部分內容編寫）",
+        "file":  "2502-4-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "文章缺少作者：如是我聞 成佛是一切在心",
+        "file":  "2502-3-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202502",
+        "message":  "文章缺少作者：如是我聞 覺性之路 拉出新維度",
+        "file":  "2502-3-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "文章缺少作者：覺能降臨集體成佛—編輯小語",
+        "file":  "2501-1-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "文章缺少作者：一晚",
+        "file":  "2501-2-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202501",
+        "message":  "文章缺少作者：五晚",
+        "file":  "2501-2-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2412-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2412-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "文章缺少作者：文稿彙整／二早班筆記小組",
+        "file":  "2412-2-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202412",
+        "message":  "文章缺少作者：文稿彙整／五晚班筆記小組",
+        "file":  "2412-2-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "文章缺少作者：韓憶萍",
+        "file":  "2410-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2410-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "文章缺少作者：文稿彙整／四午班筆記小組",
+        "file":  "2410-2-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202410",
+        "message":  "文章缺少作者：文稿彙整／日早班筆記小組",
+        "file":  "2410-2-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2408-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2408-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "文章缺少作者：記三天兩夜治療課密集訓練",
+        "file":  "2408-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202408",
+        "message":  "文章缺少作者：文稿彙整／週四晚班筆記小組",
+        "file":  "2408-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202406",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2406-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2405-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2405-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2405-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：傅冶中",
+        "file":  "2405-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：課程筆記彙整／周四下午班",
+        "file":  "2405-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：會館電子報",
+        "file":  "202405",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：屏東會館",
+        "file":  "2405-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：余媛媛",
+        "file":  "2405-4-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202405",
+        "message":  "文章缺少作者：莊朝傑",
+        "file":  "2405-4-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2404-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "文章缺少作者：李秀娥",
+        "file":  "2404-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2404-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "文章缺少作者：呂麗卿",
+        "file":  "2404-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202404",
+        "message":  "文章缺少作者：鄭雅靜",
+        "file":  "2404-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2403-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2403-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2403-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2403-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：朱芮瑩",
+        "file":  "2403-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202403",
+        "message":  "文章缺少作者：楊慧敏",
+        "file":  "2403-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2401-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2401-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2401-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202401",
+        "message":  "文章缺少作者：莊朝傑",
+        "file":  "2401-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2312-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：傅冶中",
+        "file":  "2312-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2312-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2312-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：李明",
+        "file":  "2312-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202312",
+        "message":  "文章缺少作者：黃惠如",
+        "file":  "2312-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2311-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2311-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2311-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2311-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：林鈴宜",
+        "file":  "2311-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202311",
+        "message":  "文章缺少作者：鍾宛真",
+        "file":  "2311-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2310-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2310-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "文章缺少作者：傅冶中",
+        "file":  "2310-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "文章缺少作者：余媛媛 \u0026 莊正賢",
+        "file":  "2310-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202310",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2310-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2309-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2309-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2309-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202309",
+        "message":  "文章缺少作者：賴鈺晶",
+        "file":  "2309-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2308-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "文章缺少作者：母女擕手練氣機",
+        "file":  "2308-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2308-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202308",
+        "message":  "文章缺少作者：謝珪如",
+        "file":  "2308-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2307-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2307-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202307",
+        "message":  "文章缺少作者：楊清雲牽手張詒鵬",
+        "file":  "2307-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2306-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2306-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202306",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2306-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2305-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2305-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2305-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2305-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：陳國華",
+        "file":  "2305-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202305",
+        "message":  "文章缺少作者：呂麗卿",
+        "file":  "2305-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2304-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2304-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "文章缺少作者：妙觀品藏香",
+        "file":  "202304-",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "文章缺少作者：鄭素蘭\u0026姚崑宗",
+        "file":  "2304-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202304",
+        "message":  "文章缺少作者：倪暐婷",
+        "file":  "2304-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2303-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2303-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2303-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "文章缺少作者：找到真功夫，推廣至國際",
+        "file":  "2303-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202303",
+        "message":  "文章缺少作者：蔡進懋、謝神助",
+        "file":  "2303-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2302-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "文章缺少作者：熊曼琦",
+        "file":  "2302-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2302-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2302-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-7",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-3",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-2",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-1",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-6",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-5",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202302",
+        "message":  "分類不在既有分類清單：專欄文章/新春團拜",
+        "file":  "2302-2-4",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2301-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "文章缺少作者：熊曼琦",
+        "file":  "2301-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202301",
+        "message":  "文章缺少作者：二晚",
+        "file":  "2301-2-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2212-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2212-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：蔡玉展",
+        "file":  "2212-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：莊朝傑\u0026劉惠瑛",
+        "file":  "2212-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：雪山坑冬季五感",
+        "file":  "2212-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：（完結篇）",
+        "file":  "2212-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202212",
+        "message":  "文章缺少作者：歲末專題之二",
+        "file":  "2212-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2211-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2211-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2211-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2211-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：（二）",
+        "file":  "2211-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2211-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2211-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2211-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202211",
+        "message":  "文章缺少作者：（二）",
+        "file":  "2211-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2208-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2208-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202208",
+        "message":  "文章缺少作者：倪暐婷",
+        "file":  "2208-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "文章缺少作者：編輯小組",
+        "file":  "2207-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2207-16",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2207-15",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "分類不在既有分類清單：專欄文章/傳習錄",
+        "file":  "2207-02",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "文章缺少作者：黃坤瑛",
+        "file":  "2207-17",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202207",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2207-13",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：編輯小組",
+        "file":  "2206-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：陳碧玉看見自己的「我認為",
+        "file":  "2206-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2206-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "分類不在既有分類清單：如是我聞/疑義相與析",
+        "file":  "2206-3",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：疑義相與析",
+        "file":  "2206-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：——管窺老子在身體的道與德",
+        "file":  "2206-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202206",
+        "message":  "文章缺少作者：陳宜",
+        "file":  "2206-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2205-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2205-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：識香課整理小組",
+        "file":  "2205-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2205-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：傅金匙",
+        "file":  "2205-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：群組討論",
+        "file":  "2205-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：——陳哲甯的生死感悟",
+        "file":  "2205-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202205",
+        "message":  "文章缺少作者：五晚",
+        "file":  "2205-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2204-01",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2204-06",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2204-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：李宗演的「按圖施工，不保證成功",
+        "file":  "2204-11",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：疑義相與析",
+        "file":  "2204-03",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202204",
+        "message":  "文章缺少作者：疑義相與析",
+        "file":  "2204-02",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2203-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2203-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：從大溪地到台灣——James",
+        "file":  "2203-8",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：疑義相與析",
+        "file":  "2203-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：蕭怡萍（二早班）",
+        "file":  "2203-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202203",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2203-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2202-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "分類不在既有分類清單：如是我聞/疑義相與析",
+        "file":  "2202-5",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "分類不在既有分類清單：如是我聞/疑義相與析",
+        "file":  "2202-4",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2202-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "分類不在既有分類清單：如是我聞/疑義相與析",
+        "file":  "2202-3",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "分類不在既有分類清單：如是我聞/疑義相與析",
+        "file":  "2202-2",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "文章缺少作者：高袖桐",
+        "file":  "2202-13",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202202",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2202-12",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2201-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2201-10",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202201",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2201-12",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2112-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "文章缺少作者：蔡育展",
+        "file":  "2112-12",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202112",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2112-12",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2111-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "文章缺少作者：道場還是戰場？【2021-11-07交稿的版本】",
+        "file":  "202111-2021-11-07",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2111-12",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202111",
+        "message":  "文章缺少作者：鄭雅靜",
+        "file":  "2111-14",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2110-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-5",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-4",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-3",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-6",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-9",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-8",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-7",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-2",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-12",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-11",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2110-13",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202110",
+        "message":  "分類不在既有分類清單：專欄文章/視訊課的自由與孤獨",
+        "file":  "2110-10",
+        "type":  "unknown-category",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2109-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：沉香物語",
+        "file":  "2109-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：鄧美玲",
+        "file":  "2109-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：雲霞滿紙 金瓶梅香觀",
+        "file":  "202109-",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2109-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202109",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2109-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2108-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "文章缺少作者：◎沈寧衛",
+        "file":  "2108-7",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "文章缺少作者：王亞玲＿活色生香 愛慾金瓶梅",
+        "file":  "202108-",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2108-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202108",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2108-4",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：編輯部",
+        "file":  "2107-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：香之物語",
+        "file":  "2107-5",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：周小昱",
+        "file":  "2107-4-3",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：余安邦",
+        "file":  "2107-4-2",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：謝珪如",
+        "file":  "2107-9",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：阿充",
+        "file":  "2107-6",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202107",
+        "message":  "文章缺少作者：文稿彙整／識香課整理小組",
+        "file":  "2107-4-1",
+        "type":  "missing-author",
+        "severity":  "warning"
+    },
+    {
+        "issueId":  "202605",
+        "message":  "同一期內疑似重複文章標題：帶著靈魂衝浪吧！",
+        "file":  "2605-1, 2605-3-6, 2605-3-5, 2605-4, 2605-3-7, 2605-3-4, 2605-3-1, 2605-2, 2605-3-3, 2605-3-2, 2508-1, 2508-3, 2508-4, 2508-5, 2508-2-4, 2508-2-1, 2508-2-2, 2508-2-3, 2507-1, 2507-2-5, 2507-2-4, 2507-3, 2507-4, 2507-2-3, 2507-1-3, 2507-1-2, 2507-2-2, 2507-2-1, 2506-1, 2506-2-4, 2506-3, 2506-4, 2506-2-1, 2506-2-2, 2506-2-3, 2505-1, 2505-4, 2505-3-4, 2505-6, 2505-5, 2505-3-1, 2505-2, 2505-3-3, 2505-3-2, 2504-1, 2504-4, 2504-3, 2504-6, 2504-5, 2504-2-2, 2504-2-1, 2504-2-4, 2504-2-3, 2503-1, 2503-3, 2503-5, 2503-2-3, 2503-2-1, 2503-2-2, 2502-1, 2502-3-3, 2502-4-1, 2502-4-2, 2502-2, 2502-3-1, 2502-3-2, 2501-1-1, 2501-2-7, 2501-2-6, 2501-2-9, 2501-2-8, 2501-2-3, 2501-2-2, 2501-2-5, 2501-2-4, 2412-1, 2412-5, 2412-6, 2412-7, 2412-4, 2412-2-1, 2412-2-2, 2412-3, 2410-3, 2410-4, 2410-6, 2410-2-3, 24010-5, 2410-2-1, 2410-2-2, 2408-1, 2408-6, 2408-7, 2408-4, 2408-2, 2408-4, 2406-1, 2406-4, 2406-5, 2406-2, 2406-3, 2405-1, 2405-7, 2405-6, 2405-8, 2405-9, 2405-8, 2405-5, 2405-2, 202405, 2405-3, 2405-4-2, 2405-4-1, 2404-1, 2404-5, 2404-6, 2404-7, 2404-2, 2404-3, 2404-4, 2403-1, 2403-6, 2403-6, 2403-8, 2403-7, 2403-3, 2403-2, 2403-5, 2403-4, 2401-1, 2401-3, 2401-2-9, 2401-2-8, 2401-7, 2401-5, 2401-4, 2401-2-7, 2401-2-3, 2401-2-2, 2401-2-1, 2401-2-6, 2401-2-5, 2401-2-4, 2312-1, 2312-7, 2312-6, 2312-9, 2312-8, 2312-5, 2312-2, 2312-10, 2312-4, 2312-3, 2311-1, 2311-5, 2311-6, 2311-7, 2311-4, 2311-2, 2311-2, 2311-3, 2310-1, 2310-5, 2310-6, 2310-7, 2310-2, 2310-3, 2310-4, 2309-1, 2309-5, 2309-6, 2309-7, 2309-2, 2309-3, 2309-4, 2308-1, 2308-6, 2308-5, 2308-8, 2308-7, 2308-4, 2308-2, 2308-2-1, 2308-3, 2308-3-1, 2307-1, 2307-4, 2307-5, 2307-2, 2307-3, 2306-1, 2306-7, 2306-6, 2306-9, 2306-8, 2306-5, 2306-2, 2306-10, 2306-4, 2306-3, 2305-1, 2305-6, 2305-7, 2305-8, 2305-5, 2305-2, 2305-3, 2305-4, 2304-1, 2304-8, 2304-7, 202304-, 2304-9, 2304-6, 2304-3, 2304-2, 2304-5, 2304-4, 2303-1, 2303-7, 2303-6, 2303-8, 2303-7, 2303-3, 2303-2, 2303-5, 2303-4, 2302-1, 2302-5, 2302-4, 2302-3, 2302-8, 2302-7, 2302-6, 2302-2-7, 2302-2-3, 2302-2-2, 2302-2-1, 2302-2-6, 2302-2-5, 2302-2-4, 2301-3-6, 2301-3-7, 2301-3-4, 2301-3-5, 2301-3-8, 2301-5, 2301-6, 2301-3-9, 2301-4, 2301-2-3, 2301-2-4, 2301-2-1, 2301-2-2, 2301-2-6, 2301-3-2, 2301-3-3, 2301-3-11, 2301-3-1, 2212-1, 2212-6, 2212-5, 2212-7, 2212-8, 2212-9, 2212-10, 202211, 2212-2, 2212-4, 2212-3, 2211-1, 2211-7, 2211-6, 2211-9, 2211-8, 2211-3, 2211-2, 2211-5, 2211-4, 2211-6, 2211-8, 2211-9, 2211-2, 2211-3, 2211-4, 2208-1, 2208-5, 2208-6, 2208-7, 2208-2, 2208-3, 2208-4, 2207-1, 2207-16, 2207-15, 2207-02, 2207-17, 2207-12, 2207-11, 2207-14, 2207-13, 2206-1, 2206-7, 2206-6, 2206-9, 2206-8, 2206-3, 2206-2, 2206-5, 2206-4, 2205-1, 2205-7, 2205-5, 2205-9, 2205-8, 2205-4, 2205-2, 2205-10, 2205-4-1, 2205-3, 2204-01, 2204-08, 2204-06, 2204-10, 2204-9, 2204-11, 2204-03, 2204-02, 2204-04, 2204-06, 2204-05, 2203-6, 2203-7, 2203-8, 2203-5, 2203-2, 2203-3, 2203-4, 2202-1, 2202-5, 2202-4, 2202-6, 2202-9, 2202-8, 2202-7, 2202-3, 2202-11, 2202-10, 2202-10, 2202-2, 2202-13, 2202-12, 2201-1, 2201-5, 2201-6, 2201-9, 2201-8, 2201-7, 2201-4, 2201-11, 2201-10, 2201-12, 2201-3, 2201-2, 2112-1, 2112-4, 2112-3, 2112-5, 2112-9, 2112-8, 2112-12, 2112-11, 2112-12, 2112-10, 2112-13, 2111-1, 2111-5, 2111-6, 2111-7, 202111-2021-11-07, 2111-9, 2111-8, 2111-4, 2111-13, 2111-12, 2111-10, 2111-3, 2111-2, 2111-14, 2110-1, 2110-5, 2110-4, 2110-3, 2110-6, 2110-9, 2110-8, 2110-7, 2110-2, 2110-13, 2110-12, 2110-11, 2110-13, 2110-10, 2110-15, 2110-14, 2109-1, 2109-6, 2109-7, 202109-, 2109-5, 2109-2, 2109-3, 2109-4, 2108-1, 2108-6, 2108-7, 202108-, 2108-5, 2108-2, 2108-3, 2108-4, 2107-1, 2107-5, 2107-4-3, 2107-4-2, 2107-5, 2107-9, 2107-8, 2107-6, 2107-4-1, 2107-2-3, 2107-2-2, 2107-2-1, 2107-2-4, 2107-3-3, 2107-3-2, 2107-3-1",
+        "type":  "possible-duplicate",
+        "severity":  "warning"
+    }
+]

@@ -1,0 +1,1442 @@
+﻿---
+import fs from "node:fs";
+import path from "node:path";
+import "../styles/global.css";
+import { reviewItems, reviewIssueIds, reviewSummary } from "../data/review";
+import {
+  wordNormalizeIssueIds,
+  wordNormalizeItems,
+  wordNormalizeSummary
+} from "../data/wordNormalizeReview";
+import { latestIssueArticles, latestIssueArchive } from "../data/articles";
+import aiMetadata from "../data/aiMetadata.json";
+type ReviewAiOverrides = {
+  quotes?: Record<string, string>;
+  tags?: Record<string, string[]>;
+};
+
+const aiOverridesPath = path.resolve("src/data/editorialOverrides.json");
+const aiOverrides: ReviewAiOverrides = fs.existsSync(aiOverridesPath)
+  ? JSON.parse(fs.readFileSync(aiOverridesPath, "utf-8"))
+  : {};
+
+const statusLabels: Record<string, string> = {
+  error: "不可上架",
+  "needs-review": "需人工校對",
+  approved: "已核准"
+};
+
+const typeLabels: Record<string, string> = {
+  "template-invalid": "模板格式錯誤",
+  "legacy-template-missing": "舊稿格式",
+  "missing-author": "作者缺漏",
+  "content-warning": "內容警示",
+  "unknown-category": "分類待確認",
+  "possible-duplicate": "疑似重複"
+};
+
+const wordStatusLabels: Record<string, string> = {
+  error: "不可處理",
+  normalize: "可自動標準化",
+  normalized: "已標準化",
+  review: "需人工確認",
+  skipped: "已是標準格式"
+};
+
+const reasonLabels: Record<string, string> = {
+  "already-standard": "這篇已經符合標準模板。",
+  "table-of-contents": "這是目錄檔，系統會自動忽略，不列入文章上架。",
+  "empty-document": "這個 Word 檔沒有可讀取的正文內容。",
+  "legacy-heading-suggestion": "系統已依舊稿前幾行推測分類、標題、作者與日期，請確認是否正確。",
+  "needs-confirmation": "系統已提出推測結果，但仍需人工確認後才建議正式上架。",
+  "unsupported-legacy-structure": "舊稿格式無法穩定判讀，需人工開啟 Word 修正或補成標準模板。"
+};
+
+const issueGroups = reviewIssueIds.map((issueId) => ({
+  issueId,
+  items: reviewItems.filter((item) => item.issueId === issueId)
+}));
+
+const wordReviewGroups = wordNormalizeIssueIds
+  .map((issueId) => ({
+    issueId,
+    items: wordNormalizeItems.filter(
+      (item) => item.issueId === issueId && (item.status === "error" || item.status === "review")
+    )
+  }))
+  .filter((group) => group.items.length > 0);
+
+const latestReviewArticles = latestIssueArticles;
+const normalizeCategory = (category: string) => {
+  if (category.startsWith("如是我")) return "如是我聞";
+  if (category === "同頻共振時") return "導引專欄";
+  return category;
+};
+const latestReviewCatalog = latestReviewArticles.reduce(
+  (groups, article) => {
+    const category = normalizeCategory(article.category);
+    const group = groups.find((entry) => entry.category === category);
+    if (group) {
+      group.items.push(article);
+    } else {
+      groups.push({ category, items: [article] });
+    }
+    return groups;
+  },
+  [] as { category: string; items: typeof latestReviewArticles }[]
+);
+const titlePhrasesFor = (title: string) =>
+  title.includes(" ") ? title.split(/\s+/).filter(Boolean) : title.match(/.{1,8}/gu) ?? [title];
+const previewBlocksFor = (article: (typeof latestIssueArticles)[number]) =>
+  article.contentBlocks?.length
+    ? article.contentBlocks.slice(0, 8)
+    : article.sections.flatMap((section) => [
+        ...(section.heading ? [{ type: "heading" as const, text: section.heading }] : []),
+        ...section.paragraphs.map((text) => ({ type: "paragraph" as const, text }))
+      ]).slice(0, 8);
+const quoteSuggestionFor = (article: (typeof latestIssueArticles)[number]) => {
+  const manualQuote = aiOverrides.quotes?.[article.slug]?.trim();
+  if (manualQuote) return manualQuote;
+  const aiQuote = aiMetadata.quotes?.[article.slug]?.trim();
+  if (aiQuote) return aiQuote.length > 50 ? `${aiQuote.slice(0, 49)}…` : aiQuote;
+
+  const paragraphs = article.sections.flatMap((section) => section.paragraphs);
+  const sentenceCandidates = paragraphs.flatMap((paragraph) =>
+    paragraph
+      .split(/(?<=[。！？!?；;])/u)
+      .map((sentence) => sentence.trim())
+      .filter(Boolean)
+  );
+  const quote =
+    sentenceCandidates.find((sentence) => sentence.length >= 24 && sentence.length <= 50) ??
+    paragraphs
+      .map((paragraph) => paragraph.trim())
+      .find((paragraph) => paragraph.length >= 24);
+
+  if (!quote) return article.excerpt.length > 50 ? `${article.excerpt.slice(0, 49)}…` : article.excerpt;
+  return quote.length > 50 ? `${quote.slice(0, 49)}…` : quote;
+};
+const quoteSourceFor = (article: (typeof latestIssueArticles)[number]) =>
+  aiOverrides.quotes?.[article.slug]?.trim() ? "manual" : "ai";
+const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
+  aiOverrides.tags?.[article.slug]?.length
+    ? aiOverrides.tags[article.slug]
+    : aiMetadata.tags?.[article.slug]?.length
+      ? aiMetadata.tags[article.slug]
+      : [article.category, ...article.tags.filter((tag) => tag !== article.category).slice(0, 4)];
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>上架校對 - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Import Review</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav review-local-nav" aria-label="校對頁導覽">
+          <a href="/review/">校對工作台</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="review-page">
+      <section class="review-hero">
+        <p class="meta-line">
+          <span>Google Drive 匯入</span>
+          <span>Word 標準化</span>
+          <span>人工校對確認</span>
+        </p>
+        <h1>上架校對</h1>
+        <p>
+          這裡列出最新一期校對、上架人員待辦與舊稿整理。校對意見會先集中成待辦；上架人員確認修正完成後，再產生發布核准檔。
+          金句與分類標籤屬於網站附加資料，不會寫回 Word 正文。
+        </p>
+      </section>
+
+      <div class="review-mode-tabs" role="tablist" aria-label="校對模式">
+        <button type="button" class="is-active" data-review-mode-tab="current">最新一期校對</button>
+        <button type="button" data-review-mode-tab="legacy">舊稿整理</button>
+      </div>
+
+      <div class="review-mode-panel is-active" data-review-mode-panel="current">
+      <section class="review-workflow review-current-workspace" aria-label="最新一期校對工作台">
+        <div>
+          <p class="review-kicker">最新一期校對</p>
+          <h2>{latestIssueArchive?.issueNumber ?? "最新一期"} / {latestIssueArchive?.date ?? ""}</h2>
+          <p>
+          校對者可在同一篇文章內切換電腦版與手機版預覽，直接留下位置、修正意見與截圖。上架人員處理完每一則待辦後，再進入發布前確認。
+          </p>
+        </div>
+        <div class="review-summary review-current-summary" aria-label="最新一期校對統計">
+          <article class="review-stat is-review">
+            <strong>{latestReviewArticles.length}</strong>
+            <span>本期待校對文章</span>
+          </article>
+          <article class="review-stat">
+            <strong data-report-count>0</strong>
+            <span>已回報修正意見</span>
+          </article>
+          <article class="review-stat is-approved">
+            <strong data-report-done-count>0</strong>
+            <span>已處理待辦</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="review-task-board" aria-label="上架人員待辦">
+        <div class="review-task-board-head">
+          <div>
+            <p class="review-kicker">上架人員待辦</p>
+            <h2>修正意見集中區</h2>
+          </div>
+          <button type="button" data-clear-reports>清空回報</button>
+        </div>
+        <p>
+          校對者送出的意見會集中在這裡。一般錯字、段落與圖片位置請先回 Word 修改；若是指定金句或分類標籤，請按「採用為網站資料」，系統會在發布核准檔中保存，不改動 Word。
+        </p>
+        <div class="review-task-list" data-report-board>
+          <p class="review-empty-state">目前沒有修正意見。</p>
+        </div>
+      </section>
+
+      <section class="review-publish-note review-publish-package" aria-label="產生發布核准檔">
+        <div>
+          <h2>發布前總確認</h2>
+          <p>
+            所有待辦處理完成、最後閱讀預覽也確認無誤後，按「產生發布確認」。目前本機原型會先下載一個
+            <code>review-publish.json</code> 作為交接紀錄；正式接上 GitHub 後，這一步會改成直接送出發布確認。
+          </p>
+        </div>
+        <div class="review-publish-status" data-publish-status>
+          目前尚未產生發布確認。
+        </div>
+        <div class="review-publish-actions">
+          <button type="button" data-download-publish>產生發布確認</button>
+          <button type="button" data-copy-publish>複製交接資料</button>
+        </div>
+        <details class="review-technical-details">
+          <summary>查看交接資料</summary>
+          <p>這是給上架腳本讀取的資料，校對者不用閱讀。</p>
+          <pre data-publish-preview>{`{
+  "status": "pending",
+  "reports": [],
+  "metadataOverrides": {
+    "quotes": {},
+    "tags": {}
+  }
+}`}</pre>
+        </details>
+      </section>
+
+      <section class="review-publish-note" aria-label="發布流程說明">
+        <h2>發布前確認</h2>
+        <p>
+          每篇文章可先在卡片內查看電腦版與手機版預覽。全部校對完成後，再使用下方閱讀預覽清單逐篇做最後確認；閱讀預覽只會打開目前產生的文章頁，不會把文章正式發布。正式發布會在所有待辦完成、Word 重新匯入並確認預覽無誤後，才由上架人員執行發布流程。
+        </p>
+      </section>
+
+      <details class="review-final-preview-list review-final-catalog">
+        <summary>最後閱讀預覽目錄</summary>
+        <p>依正式閱讀頁的本期目錄格式排列，方便校對完成後一併檢查分類與文章順序。</p>
+        <nav aria-label="最新一期閱讀預覽目錄">
+          {latestReviewCatalog.map((group) => (
+            <section class="review-final-catalog-group">
+              <h3>{group.category}</h3>
+              <ol>
+                {group.items.map((article) => (
+                  <li>
+                    <a href={`/articles/${article.slug}/`} target="_blank" rel="noreferrer">
+                      <strong>{article.title}</strong>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          ))}
+        </nav>
+      </details>
+
+      <section class="review-current-list" aria-label="最新一期文章校對">
+        {latestReviewArticles.map((article, index) => {
+          const previewBlocks = previewBlocksFor(article);
+          const quoteSuggestion = quoteSuggestionFor(article);
+          const quoteSource = quoteSourceFor(article);
+          const tagSuggestions = tagSuggestionsFor(article);
+          const tabs = [
+            ["info", "文章資料"],
+            ["desktop", "電腦預覽"],
+            ["mobile", "手機預覽"],
+            ["report", "修正意見"]
+          ];
+          return (
+            <article
+              class="review-current-card"
+              data-current-review-card
+              data-article-slug={article.slug}
+              data-article-title={article.title}
+              data-article-category={article.category}
+              data-article-author={article.author}
+              data-article-url={`/articles/${article.slug}/`}
+            >
+              <header class="review-current-card-head">
+                <div>
+                  <p class="meta-line">
+                    <span>{normalizeCategory(article.category)}</span>
+                    <span>{article.readTime}</span>
+                  </p>
+                  <h3>{article.title}</h3>
+                  <p class="review-meta">
+                    <span>{article.author || "作者未填"}</span>
+                    <span>{article.date}</span>
+                  </p>
+                </div>
+              </header>
+
+              <div class="review-tablist" role="tablist" aria-label={`${article.title} 校對分頁`}>
+                {tabs.map(([id, label], tabIndex) => (
+                  <button
+                    type="button"
+                    class:list={{ "is-active": tabIndex === 0 }}
+                    data-review-tab={id}
+                    data-review-target={`${article.slug}-${id}`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+
+              <div class="review-tabpanels">
+                <section class="review-tabpanel is-active" data-review-panel={`${article.slug}-info`}>
+                  <dl class="review-info-grid">
+                    <div><dt>分類</dt><dd>{article.category}</dd></div>
+                    <div><dt>標題</dt><dd>{article.title}</dd></div>
+                    <div><dt>作者</dt><dd>{article.author || "作者未填"}</dd></div>
+                    <div><dt>日期</dt><dd>{article.date}</dd></div>
+                  </dl>
+                  {article.excerpt && <p class="review-excerpt">{article.excerpt}</p>}
+                  <div class="review-ai-panel review-ai-inline">
+                    <div>
+                      <h4>建議分類標籤</h4>
+                      <div class="review-ai-tags">
+                        {tagSuggestions.map((tag) => <span>{tag}</span>)}
+                      </div>
+                    </div>
+                    <div>
+                      <h4>{quoteSource === "manual" ? "人工指定重點金句" : "建議重點金句"}</h4>
+                      <blockquote>{quoteSuggestion}</blockquote>
+                    </div>
+                    <p>{quoteSource === "manual"
+                        ? "此金句已由校對意見指定，來源為網站附加資料。若需再調整，請在修正意見中指定新金句，發布時會重新套用。"
+                        : "AI 建議目前只作為校對參考。若要採用校對者指定版本，請在修正意見中直接寫希望採用的金句，上架人員可在待辦區按「採用為網站資料」。"}</p>
+                  </div>
+                </section>
+
+                <section class="review-tabpanel" data-review-panel={`${article.slug}-desktop`}>
+                  <div class="review-device-frame review-device-desktop">
+                    <div class="review-preview-article">
+                      <div class="review-preview-hero">
+                        <div>
+                          <p class="meta-line"><span>{normalizeCategory(article.category)}</span><span>{article.readTime}</span></p>
+                          <h1>{titlePhrasesFor(article.title).map((phrase) => <span>{phrase}</span>)}</h1>
+                          <p class="article-byline"><span>{article.author}</span><time>{article.date}</time></p>
+                        </div>
+                        {article.image && !article.image.includes("/assets/qiji-logo") && <img src={article.image} alt="" loading="lazy" />}
+                      </div>
+                      <div class="review-preview-body">
+                        {previewBlocks.map((block) => {
+                          if (block.type === "heading") return <h2>{block.text}</h2>;
+                          if (block.type === "image") return <figure><img src={block.src} alt={block.caption ?? ""} loading="lazy" />{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
+                          return <p>{block.text}</p>;
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="review-tabpanel" data-review-panel={`${article.slug}-mobile`}>
+                  <div class="review-device-frame review-device-mobile">
+                    <div class="review-preview-article">
+                      <div class="review-preview-hero">
+                        <div>
+                          <p class="meta-line"><span>{normalizeCategory(article.category)}</span><span>{article.readTime}</span></p>
+                          <h1>{titlePhrasesFor(article.title).map((phrase) => <span>{phrase}</span>)}</h1>
+                          <p class="article-byline"><span>{article.author}</span><time>{article.date}</time></p>
+                        </div>
+                        {article.image && !article.image.includes("/assets/qiji-logo") && <img src={article.image} alt="" loading="lazy" />}
+                      </div>
+                      <div class="review-preview-body">
+                        {previewBlocks.map((block) => {
+                          if (block.type === "heading") return <h2>{block.text}</h2>;
+                          if (block.type === "image") return <figure><img src={block.src} alt={block.caption ?? ""} loading="lazy" />{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
+                          return <p>{block.text}</p>;
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="review-tabpanel" data-review-panel={`${article.slug}-report`}>
+                  <form class="review-report-form" data-report-form>
+                    <label>
+                      <span>出現版面</span>
+                      <select name="viewport">
+                        <option value="不確定">不確定</option>
+                        <option value="電腦版">電腦版</option>
+                        <option value="手機版">手機版</option>
+                        <option value="兩者都有">兩者都有</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>位置說明</span>
+                      <input name="position" placeholder="例如：第 3 段、標題下方、第一張圖片旁" />
+                    </label>
+                    <label class="review-report-wide">
+                      <span>修正意見</span>
+                      <textarea name="comment" rows="4" required placeholder="請直接寫要修正的內容，例如：這裡多了一個錯字，應改成……"></textarea>
+                    </label>
+                    <label>
+                      <span>截圖</span>
+                      <input name="screenshot" type="file" accept="image/*" />
+                    </label>
+                    <div class="review-report-actions">
+                      <button type="submit">送出修正意見</button>
+                      <span data-report-result></span>
+                    </div>
+                  </form>
+                  <div class="review-article-report-list" data-article-report-list={article.slug}>
+                    <p class="review-empty-state">這篇目前沒有回報。</p>
+                  </div>
+                </section>
+              </div>
+            </article>
+          );
+        })}
+      </section>
+
+      </div>
+
+      <div class="review-mode-panel" data-review-mode-panel="legacy">
+      <section class="review-approval-panel" aria-label="核准結果">
+        <div>
+          <h2>核准結果</h2>
+          <p>
+            按下確認後，該篇會加入下方 JSON。校對完成後請儲存或下載
+            <code>review-approvals.json</code>，放在專案根目錄，再重新執行匯入與建置。
+          </p>
+        </div>
+        <div class="review-approval-actions">
+          <strong><span data-approval-count>0</span> 篇已確認</strong>
+          <button type="button" data-save-approvals>儲存核准檔</button>
+          <button type="button" data-download-approvals>下載 JSON</button>
+          <button type="button" data-copy-approvals>複製 JSON</button>
+          <button type="button" data-clear-approvals>清空</button>
+        </div>
+        <pre data-approval-preview>{`{
+  "approvals": []
+}`}</pre>
+        <div class="review-fix-list" data-fix-list hidden>
+          <h3>待修正 Word 清單</h3>
+          <p>以下是你已標記「需要修正 Word」的文章，之後依照檔案路徑回 Word 修改即可。</p>
+          <ul data-fix-list-items></ul>
+        </div>
+        <div class="review-processed-list" data-processed-list hidden>
+          <h3>已處理項目</h3>
+          <p>如果剛剛按錯，可以在這裡退回原卡片重新校對或局部修正。</p>
+          <ul data-processed-list-items></ul>
+        </div>
+      </section>
+
+      <section class="review-workflow" aria-label="Word 標準化狀態">
+        <h2>Word 標準化校對</h2>
+        <p>
+          這一區是舊稿整理用。系統會顯示它從 Word 前幾行推測出的分類、標題、作者、日期與首段。
+          如果判斷正確，可以先確認；如果不正確，請回 Word 檔改成標準模板後重新匯入。
+        </p>
+        <div class="review-summary" aria-label="Word 標準化統計">
+          <article class="review-stat is-error">
+            <strong>{wordNormalizeSummary.error}</strong>
+            <span>不可處理</span>
+          </article>
+          <article class="review-stat is-review">
+            <strong>{wordNormalizeSummary.review}</strong>
+            <span>需人工確認</span>
+          </article>
+          <article class="review-stat is-approved">
+            <strong>{wordNormalizeSummary.skipped}</strong>
+            <span>已是標準格式</span>
+          </article>
+          <article class="review-stat">
+            <strong>{wordNormalizeSummary.total}</strong>
+            <span>全部 Word</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="review-list" aria-label="Word 標準化校對清單">
+        {wordReviewGroups.map((group) => (
+          <section class="review-issue" id={`word-${group.issueId}`}>
+            <header>
+              <h2>{group.issueId}</h2>
+              <span>{group.items.length} 篇需處理</span>
+            </header>
+
+            <div class="review-items">
+              {group.items.map((item) => (
+                <article
+                  class={`review-card status-${item.status === "error" ? "error" : "needs-review"}`}
+                  data-word-review-card
+                  data-approval-id={`word::${item.file}`}
+                  data-source-modified=""
+                  data-issue-id={item.issueId}
+                  data-title={item.title || item.file.split(/[\\/]/).pop()}
+                  data-category={item.category || ""}
+                  data-author={item.author || ""}
+                  data-date={item.date || item.issueId}
+                  data-file={item.file}
+                  data-kind="word-normalize"
+                >
+                  <div class="review-card-main">
+                    <div class="review-card-head">
+                      <div>
+                        <p class="review-status">{wordStatusLabels[item.status] ?? item.status}</p>
+                        <h3>{item.title || item.file.split(/[\\/]/).pop()}</h3>
+                      </div>
+                      {item.status !== "error" && (
+                        <div class="review-actions review-actions-inline">
+                          <button type="button" data-approve-item>確認可上架</button>
+                          <button type="button" data-edit-item>局部修正</button>
+                          <button type="button" data-ignore-item>不需上架／忽略</button>
+                          <button type="button" data-fix-item>需要修正 Word</button>
+                        </div>
+                      )}
+                    </div>
+                    {item.status !== "error" && (
+                      <form class="review-inline-edit" data-inline-edit hidden>
+                        <label>
+                          <span>文章分類</span>
+                          <input name="category" value={item.category || ""} />
+                        </label>
+                        <label>
+                          <span>文章標題</span>
+                          <input name="title" value={item.title || ""} />
+                        </label>
+                        <label>
+                          <span>作者</span>
+                          <input name="author" value={item.author || ""} />
+                        </label>
+                        <label>
+                          <span>日期</span>
+                          <input name="date" value={item.date || item.issueId} />
+                        </label>
+                        <label class="review-inline-edit-note">
+                          <span>備註</span>
+                          <textarea name="note" rows="2" placeholder="例如：只補作者，其他欄位正確"></textarea>
+                        </label>
+                        <div>
+                          <button type="submit">套用修正並上架</button>
+                          <button type="button" data-cancel-edit>取消</button>
+                        </div>
+                      </form>
+                    )}
+                    <div class="review-judgement">
+                      <h4>系統判斷結果</h4>
+                      <ol>
+                        <li><strong>文章分類：</strong>{item.category || "分類待判斷"}</li>
+                        <li><strong>文章標題：</strong>{item.title || "標題待判斷"}</li>
+                        <li><strong>作者：</strong>{item.author || "作者待判斷"}</li>
+                        <li><strong>日期：</strong>{item.date || item.issueId}</li>
+                      </ol>
+                    </div>
+                    {item.preview && <p class="review-excerpt">{item.preview}</p>}
+                    {item.firstLines && item.firstLines.length > 0 && (
+                      <div class="review-lines-block">
+                        <h4>原始 Word 內容參考</h4>
+                        <p>以下是系統抓到的原始段落，供你比對上方判斷是否正確。</p>
+                        <ol class="review-lines">
+                          {item.firstLines.map((line) => <li>{line}</li>)}
+                        </ol>
+                      </div>
+                    )}
+                    <p class="review-file">{item.file}</p>
+                  </div>
+
+                  <div class="review-messages">
+                    <p class={`review-message severity-${item.status === "error" ? "error" : "warning"}`}>
+                      <strong>{reasonLabels[item.reason || item.rule || ""] ?? item.reason ?? item.rule ?? "需確認"}</strong>
+                      <span>{reasonLabels[item.rule || ""] ?? "請確認上方系統判斷是否可接受。"}</span>
+                    </p>
+                  </div>
+
+                  {item.status !== "error" && <div class="review-actions"></div>}
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </section>
+
+      <section class="review-workflow" aria-label="匯入校對狀態">
+        <h2>正式匯入校對</h2>
+        <p>
+          這一區是實際上架流程的校對清單。按下「確認可上架」後，文章會被寫入核准 JSON；重新匯入後即可由系統視為校對通過。
+        </p>
+        <div class="review-summary" aria-label="匯入校對統計">
+          <article class="review-stat is-error">
+            <strong>{reviewSummary.error}</strong>
+            <span>不可上架</span>
+          </article>
+          <article class="review-stat is-review">
+            <strong>{reviewSummary.needsReview}</strong>
+            <span>需人工校對</span>
+          </article>
+          <article class="review-stat is-approved">
+            <strong>{reviewSummary.approved}</strong>
+            <span>已核准</span>
+          </article>
+          <article class="review-stat">
+            <strong>{reviewSummary.total}</strong>
+            <span>全部項目</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="review-list" aria-label="匯入校對清單">
+        {issueGroups.map((group) => (
+          <section class="review-issue" id={`issue-${group.issueId}`}>
+            <header>
+              <h2>{group.issueId}</h2>
+              <span>{group.items.length} 篇</span>
+            </header>
+
+            <div class="review-items">
+              {group.items.map((item) => (
+                <article
+                  class={`review-card status-${item.status}`}
+                  data-import-review-card
+                  data-approval-id={item.id}
+                  data-source-modified={item.sourceModified}
+                  data-issue-id={item.issueId}
+                  data-title={item.title || item.sourceId || "未命名文章"}
+                  data-category={item.category || ""}
+                  data-author={item.author || ""}
+                  data-date={item.date || item.issueId}
+                  data-file={item.file}
+                  data-kind="import"
+                >
+                  <div class="review-card-main">
+                    <p class="review-status">{statusLabels[item.status] ?? item.status}</p>
+                    <h3>{item.title || item.sourceId || "未命名文章"}</h3>
+                    <p class="review-meta">
+                      <span>{item.category || "分類待判斷"}</span>
+                      <span>{item.author || "作者待判斷"}</span>
+                      <span>{item.date || item.issueId}</span>
+                    </p>
+                    <div class="review-actions review-actions-inline">
+                      {item.slug && <a href={`/articles/${item.slug}/`}>閱讀預覽</a>}
+                      {item.status !== "error" && <button type="button" data-approve-item>確認可上架</button>}
+                      {item.status !== "error" && <button type="button" data-edit-item>局部修正</button>}
+                      <button type="button" data-ignore-item>不需上架／忽略</button>
+                    </div>
+                    {item.status !== "error" && (
+                      <form class="review-inline-edit" data-inline-edit hidden>
+                        <label>
+                          <span>文章分類</span>
+                          <input name="category" value={item.category || ""} />
+                        </label>
+                        <label>
+                          <span>文章標題</span>
+                          <input name="title" value={item.title || item.sourceId || ""} />
+                        </label>
+                        <label>
+                          <span>作者</span>
+                          <input name="author" value={item.author || ""} />
+                        </label>
+                        <label>
+                          <span>日期</span>
+                          <input name="date" value={item.date || item.issueId} />
+                        </label>
+                        <label class="review-inline-edit-note">
+                          <span>備註</span>
+                          <textarea name="note" rows="2" placeholder="例如：只補作者，其他欄位正確"></textarea>
+                        </label>
+                        <div>
+                          <button type="submit">套用修正並上架</button>
+                          <button type="button" data-cancel-edit>取消</button>
+                        </div>
+                      </form>
+                    )}
+                    {item.excerpt && <p class="review-excerpt">{item.excerpt}</p>}
+                    <p class="review-file">{item.file}</p>
+                  </div>
+
+                  {item.image && (
+                    <figure class="review-thumb">
+                      <img src={item.image} alt="" loading="lazy" />
+                    </figure>
+                  )}
+
+                  <div class="review-messages">
+                    {item.messages.map((message) => (
+                      <p class={`review-message severity-${message.severity}`}>
+                        <strong>{typeLabels[message.type] ?? message.type}</strong>
+                        <span>{message.message}</span>
+                      </p>
+                    ))}
+                  </div>
+
+                  <div class="review-actions">
+                    <code>{item.id}</code>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </section>
+      </div>
+    </main>
+
+    <script>
+      const storageKey = "qiji-review-approvals";
+      const countNode = document.querySelector("[data-approval-count]");
+      const previewNode = document.querySelector("[data-approval-preview]");
+      const fixListNode = document.querySelector("[data-fix-list]");
+      const fixListItemsNode = document.querySelector("[data-fix-list-items]");
+      const processedListNode = document.querySelector("[data-processed-list]");
+      const processedListItemsNode = document.querySelector("[data-processed-list-items]");
+      const saveButton = document.querySelector("[data-save-approvals]");
+      const downloadButton = document.querySelector("[data-download-approvals]");
+      const copyButton = document.querySelector("[data-copy-approvals]");
+      const clearButton = document.querySelector("[data-clear-approvals]");
+      const reportStorageKey = "qiji-review-reports-v1";
+      const reportBoard = document.querySelector("[data-report-board]");
+      const reportCountNode = document.querySelector("[data-report-count]");
+      const reportDoneCountNode = document.querySelector("[data-report-done-count]");
+      const clearReportsButton = document.querySelector("[data-clear-reports]");
+      const publishPreviewNode = document.querySelector("[data-publish-preview]");
+      const publishStatusNode = document.querySelector("[data-publish-status]");
+      const downloadPublishButton = document.querySelector("[data-download-publish]");
+      const copyPublishButton = document.querySelector("[data-copy-publish]");
+
+      const readReports = () => {
+        try {
+          const parsed = JSON.parse(window.localStorage.getItem(reportStorageKey) || "[]");
+          return Array.isArray(parsed) ? parsed : [];
+        } catch {
+          return [];
+        }
+      };
+
+      const writeReports = (reports) => {
+        window.localStorage.setItem(reportStorageKey, JSON.stringify(reports));
+      };
+
+      const escapeHtml = (value = "") =>
+        String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+
+      const reportStatusLabel = (status) => {
+        if (status === "fixed") return "Word 已修，待重新匯入確認";
+        if (status === "metadata") return "網站資料已採用，待發布";
+        if (status === "done") return "確認完成";
+        return "待處理";
+      };
+
+      const reportPrimaryAction = (status) => {
+        if (status === "fixed") return "重新匯入後確認無誤";
+        if (status === "metadata") return "確認可發布";
+        if (status === "done") return "改回待處理";
+        return "標記 Word 已修";
+      };
+
+      const extractMetadataQuote = (comment = "") => {
+        const text = String(comment).trim();
+        const quoted = text.match(/[「"“](.+?)[」"”]/u);
+        if (quoted?.[1]?.trim()) return quoted[1].trim();
+
+        const explicit = text.match(/(?:金句|重點金句|修正為|改成|採用|指定為)[：:\s]*(.+)$/u);
+        if (explicit?.[1]?.trim()) return explicit[1].trim();
+
+        return text.length >= 12 && text.length <= 140 ? text : "";
+      };
+
+      const buildPublishPayload = () => {
+        const reports = readReports();
+        const completedReports = reports.filter((report) =>
+          ["done", "metadata"].includes(report.status)
+        );
+        const openReports = reports.filter((report) =>
+          !["done", "metadata"].includes(report.status)
+        );
+        const quotes = {};
+        const tags = {};
+
+        completedReports.forEach((report) => {
+          if (report.metadataQuote) {
+            quotes[report.articleSlug] = report.metadataQuote;
+          }
+          if (Array.isArray(report.metadataTags) && report.metadataTags.length) {
+            tags[report.articleSlug] = report.metadataTags;
+          }
+        });
+
+        return {
+          status: openReports.length ? "has-open-tasks" : "ready-to-publish",
+          generatedAt: new Date().toISOString(),
+          issueId: "latest",
+          reports: completedReports,
+          openReports,
+          metadataOverrides: {
+            quotes,
+            tags
+          }
+        };
+      };
+
+      const publishPayloadText = () => JSON.stringify(buildPublishPayload(), null, 2);
+
+      const reportCardHtml = (report, compact = false) => {
+        const quoteCandidate = extractMetadataQuote(report.comment);
+        return `
+        <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${report.status === "metadata" ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
+          <header>
+            <div>
+              <small>${escapeHtml(report.viewport)} · ${escapeHtml(report.position || "未填位置")}</small>
+              <h3>${escapeHtml(report.articleTitle)}</h3>
+            </div>
+            <small>${reportStatusLabel(report.status)}</small>
+          </header>
+          <p>${escapeHtml(report.comment)}</p>
+          ${report.metadataQuote ? `<small>已採用金句：${escapeHtml(report.metadataQuote)}</small>` : ""}
+          ${!report.metadataQuote && quoteCandidate ? `<small>可採用為金句：${escapeHtml(quoteCandidate)}</small>` : ""}
+          ${report.status === "fixed" ? `<small>已記錄你修過 Word；請先重新執行匯入/重建，頁面預覽更新後再確認無誤。</small>` : ""}
+          ${report.screenshot ? `<small>截圖：${escapeHtml(report.screenshot)}</small>` : ""}
+          ${compact ? "" : `
+            <div class="review-task-card-actions">
+              <button type="button" data-report-next="${escapeHtml(report.id)}">${reportPrimaryAction(report.status)}</button>
+              ${quoteCandidate ? `<button type="button" data-report-quote="${escapeHtml(report.id)}">採用為網站資料</button>` : ""}
+              <button type="button" data-report-remove="${escapeHtml(report.id)}">刪除此回報</button>
+            </div>
+          `}
+        </article>
+      `;
+      };
+
+      const renderReports = () => {
+        const reports = readReports();
+        const doneCount = reports.filter((report) => report.status === "done").length;
+        if (reportCountNode) reportCountNode.textContent = String(reports.length);
+        if (reportDoneCountNode) reportDoneCountNode.textContent = String(doneCount);
+
+        if (reportBoard) {
+          reportBoard.innerHTML = reports.length
+            ? reports.slice().reverse().map((report) => reportCardHtml(report)).join("")
+            : '<p class="review-empty-state">目前沒有修正意見。</p>';
+        }
+
+        document.querySelectorAll("[data-article-report-list]").forEach((list) => {
+          const slug = list.getAttribute("data-article-report-list") || "";
+          const articleReports = reports.filter((report) => report.articleSlug === slug);
+          list.innerHTML = articleReports.length
+            ? articleReports.slice().reverse().map((report) => reportCardHtml(report, true)).join("")
+            : '<p class="review-empty-state">這篇目前沒有回報。</p>';
+        });
+
+        if (publishPreviewNode) {
+          const payload = buildPublishPayload();
+          publishPreviewNode.textContent = JSON.stringify(payload, null, 2);
+          if (publishStatusNode) {
+            const quoteCount = Object.keys(payload.metadataOverrides.quotes).length;
+            const tagCount = Object.keys(payload.metadataOverrides.tags).length;
+            publishStatusNode.innerHTML = payload.openReports.length
+              ? `還有 <strong>${payload.openReports.length}</strong> 則待辦尚未完成；完成後再產生發布確認。`
+              : `可進入發布確認：已完成 <strong>${payload.reports.length}</strong> 則待辦，包含 <strong>${quoteCount}</strong> 筆人工金句、<strong>${tagCount}</strong> 筆人工標籤。`;
+          }
+        }
+      };
+
+      const readApprovals = () => {
+        try {
+          const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "[]");
+          return Array.isArray(parsed) ? parsed : [];
+        } catch {
+          return [];
+        }
+      };
+
+      const writeApprovals = (approvals) => {
+        window.localStorage.setItem(storageKey, JSON.stringify(approvals));
+      };
+
+      const cardFieldValue = (card, key) => {
+        const input = card.querySelector(`[data-inline-edit] [name="${key}"]`);
+        const formValue = input ? String(input.value || "").trim() : "";
+        const datasetValue = String(card.dataset[key] || "").trim();
+        return formValue || datasetValue;
+      };
+
+      const toDecision = (card, decision) => ({
+        id: card.dataset.approvalId || "",
+        sourceModified: card.dataset.sourceModified || "",
+        kind: card.dataset.kind || "import",
+        decision,
+        issueId: card.dataset.issueId || "",
+        title: cardFieldValue(card, "title"),
+        category: cardFieldValue(card, "category"),
+        author: cardFieldValue(card, "author"),
+        date: cardFieldValue(card, "date"),
+        file: card.dataset.file || "",
+        decidedAt: new Date().toISOString()
+      });
+
+      const getCorrections = (form) => {
+        const data = new FormData(form);
+        return {
+          category: String(data.get("category") || "").trim(),
+          title: String(data.get("title") || "").trim(),
+          author: String(data.get("author") || "").trim(),
+          date: String(data.get("date") || "").trim(),
+          note: String(data.get("note") || "").trim()
+        };
+      };
+
+      const approvalPayload = () => ({
+        approvals: readApprovals()
+          .filter((item) => item.kind === "import" && item.decision === "approved")
+          .map(({ kind, decision, issueId, title, category, author, date, file, decidedAt, ...approval }) => approval),
+        corrections: readApprovals()
+          .filter((item) => item.decision === "corrected")
+          .map(({ kind, decision, decidedAt, ...correction }) => correction),
+        ignores: readApprovals()
+          .filter((item) => item.kind === "import" && item.decision === "ignored")
+          .map(({ kind, decision, issueId, title, category, author, date, file, decidedAt, ...ignore }) => ignore),
+        fixes: readApprovals()
+          .filter((item) => item.decision === "needs-fix")
+          .map(({ kind, decision, issueId, title, category, author, date, file, decidedAt, ...fix }) => fix),
+        notes: readApprovals().filter((item) => item.kind !== "import")
+      });
+
+      const payloadText = () => JSON.stringify(approvalPayload(), null, 2);
+
+      const decisionLabels = {
+        approved: "確認可上架",
+        corrected: "局部修正",
+        ignored: "不需上架／忽略",
+        "needs-fix": "需要修正 Word"
+      };
+
+      const expectedValue = (item, key) => {
+        const corrected = item.corrections?.[key];
+        if (corrected) return String(corrected).trim();
+        const escapedId = window.CSS?.escape ? CSS.escape(item.id || "") : String(item.id || "").replaceAll('"', '\\"');
+        const card = escapedId ? document.querySelector(`[data-approval-id="${escapedId}"]`) : null;
+        const cardValue = card ? cardFieldValue(card, key) : "";
+        return String(cardValue || item[key] || "").trim() || "未填";
+      };
+
+      const renderDecisionSummaryCard = (listNode, item, buttonDatasetName, buttonText) => {
+        const li = document.createElement("li");
+        const head = document.createElement("div");
+        const status = document.createElement("strong");
+        const file = document.createElement("span");
+        const fields = document.createElement("dl");
+        const actions = document.createElement("div");
+        const button = document.createElement("button");
+        head.className = "review-processed-head";
+        fields.className = "review-processed-fields";
+        status.textContent = decisionLabels[item.decision] || item.decision || "已處理";
+        file.textContent = item.file || item.id || "";
+        [
+          ["分類", expectedValue(item, "category")],
+          ["標題", expectedValue(item, "title")],
+          ["作者", expectedValue(item, "author")]
+        ].forEach(([label, value]) => {
+          const dt = document.createElement("dt");
+          const dd = document.createElement("dd");
+          dt.textContent = label;
+          dd.textContent = value;
+          fields.append(dt, dd);
+        });
+        actions.className = "review-fix-actions";
+        button.type = "button";
+        button.textContent = buttonText;
+        button.dataset[buttonDatasetName] = item.id || "";
+        actions.appendChild(button);
+        head.append(status, file);
+        li.append(head, fields, actions);
+        listNode.appendChild(li);
+      };
+
+      const markCards = () => {
+        const approvals = readApprovals();
+        const byId = new Map(approvals.map((item) => [item.id, item]));
+        document.querySelectorAll("[data-approval-id]").forEach((card) => {
+          const decision = byId.get(card.dataset.approvalId || "")?.decision;
+          const isApproved = decision === "approved";
+          const isIgnored = decision === "ignored";
+          const isCorrected = decision === "corrected";
+          card.classList.toggle("status-approved", isApproved);
+          card.classList.toggle("status-corrected", isCorrected);
+          card.classList.toggle("status-ignored", isIgnored);
+          card.classList.toggle("status-needs-fix", decision === "needs-fix");
+          if (isApproved) {
+            const status = card.querySelector(".review-status");
+            if (status) status.textContent = "已確認";
+          }
+          if (isIgnored) {
+            const status = card.querySelector(".review-status");
+            if (status) status.textContent = "已忽略";
+          }
+          card.querySelectorAll("[data-approve-item], [data-ignore-item], [data-edit-item]").forEach((button) => {
+            button.disabled = isApproved || isIgnored || isCorrected;
+          });
+          const approveButton = card.querySelector("[data-approve-item]");
+          if (approveButton && isApproved) approveButton.textContent = "已確認";
+          const ignoreButton = card.querySelector("[data-ignore-item]");
+          if (ignoreButton && isIgnored) ignoreButton.textContent = "已忽略";
+        });
+      };
+
+      const renderApprovalsLegacy = () => {
+        const approvals = readApprovals();
+        if (countNode) countNode.textContent = String(approvals.length);
+        if (previewNode) previewNode.textContent = payloadText();
+        const fixes = approvals.filter((item) => item.decision === "needs-fix");
+        if (fixListNode) fixListNode.hidden = fixes.length === 0;
+        if (fixListItemsNode) {
+          fixListItemsNode.innerHTML = "";
+          fixes.forEach((item) => {
+            const li = document.createElement("li");
+            const title = document.createElement("strong");
+            const file = document.createElement("span");
+            const actions = document.createElement("div");
+            const restoreButton = document.createElement("button");
+            title.textContent = item.title || "未命名文章";
+            file.textContent = item.file || item.id || "";
+            actions.className = "review-fix-actions";
+            restoreButton.type = "button";
+            restoreButton.textContent = "改為局部修正";
+            restoreButton.dataset.restoreFix = item.id || "";
+            actions.appendChild(restoreButton);
+            li.append(title, file, actions);
+            fixListItemsNode.appendChild(li);
+          });
+        }
+        const processed = approvals.filter((item) => item.decision !== "needs-fix");
+        if (processedListNode) processedListNode.hidden = processed.length === 0;
+        if (processedListItemsNode) {
+          processedListItemsNode.innerHTML = "";
+          processed
+            .slice()
+            .reverse()
+            .forEach((item) => {
+              const li = document.createElement("li");
+              const title = document.createElement("strong");
+              const meta = document.createElement("span");
+              const actions = document.createElement("div");
+              const undoButton = document.createElement("button");
+              title.textContent = item.corrections?.title || item.title || "未命名文章";
+              meta.textContent = `${decisionLabels[item.decision] || item.decision || "已處理"} · ${item.file || item.id || ""}`;
+              actions.className = "review-fix-actions";
+              undoButton.type = "button";
+              undoButton.textContent = "退回重新修正";
+              undoButton.dataset.reopenDecision = item.id || "";
+              actions.appendChild(undoButton);
+              li.append(title, meta, actions);
+              processedListItemsNode.appendChild(li);
+            });
+        }
+        if (processedListItemsNode) {
+          processedListItemsNode.innerHTML = "";
+          processed
+            .slice()
+            .reverse()
+            .forEach((item) => {
+              const li = document.createElement("li");
+              const head = document.createElement("div");
+              const status = document.createElement("strong");
+              const file = document.createElement("span");
+              const fields = document.createElement("dl");
+              const actions = document.createElement("div");
+              const undoButton = document.createElement("button");
+              head.className = "review-processed-head";
+              fields.className = "review-processed-fields";
+              status.textContent = decisionLabels[item.decision] || item.decision || "已處理";
+              file.textContent = item.file || item.id || "";
+              [
+                ["分類", expectedValue(item, "category")],
+                ["標題", expectedValue(item, "title")],
+                ["作者", expectedValue(item, "author")]
+              ].forEach(([label, value]) => {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.textContent = label;
+                dd.textContent = value;
+                fields.append(dt, dd);
+              });
+              actions.className = "review-fix-actions";
+              undoButton.type = "button";
+              undoButton.textContent = "退回重新修正";
+              undoButton.dataset.reopenDecision = item.id || "";
+              actions.appendChild(undoButton);
+              head.append(status, file);
+              li.append(head, fields, actions);
+              processedListItemsNode.appendChild(li);
+            });
+        }
+        markCards();
+      };
+
+      const renderApprovals = () => {
+        const approvals = readApprovals();
+        if (countNode) countNode.textContent = String(approvals.length);
+        if (previewNode) previewNode.textContent = payloadText();
+
+        const fixes = approvals.filter((item) => item.decision === "needs-fix");
+        if (fixListNode) fixListNode.hidden = fixes.length === 0;
+        if (fixListItemsNode) {
+          fixListItemsNode.innerHTML = "";
+          fixes
+            .slice()
+            .reverse()
+            .forEach((item) => {
+              renderDecisionSummaryCard(fixListItemsNode, item, "restoreFix", "改為局部修正");
+            });
+        }
+
+        const processed = approvals.filter((item) => item.decision !== "needs-fix");
+        if (processedListNode) processedListNode.hidden = processed.length === 0;
+        if (processedListItemsNode) {
+          processedListItemsNode.innerHTML = "";
+          processed
+            .slice()
+            .reverse()
+            .forEach((item) => {
+              renderDecisionSummaryCard(processedListItemsNode, item, "reopenDecision", "退回重新修正");
+            });
+        }
+
+        markCards();
+      };
+
+      const reopenForCorrection = (id) => {
+        if (!id) return;
+        const approvals = readApprovals();
+        const next = approvals.filter((item) => item.id !== id);
+        writeApprovals(next);
+        renderApprovals();
+        const escapedId = window.CSS?.escape ? CSS.escape(id) : id.replaceAll('"', '\\"');
+        const card = document.querySelector(`[data-approval-id="${escapedId}"]`);
+        if (!card) return;
+        card.classList.remove("status-approved", "status-corrected", "status-ignored", "status-needs-fix");
+        card.querySelectorAll("[data-approve-item], [data-ignore-item], [data-edit-item], [data-fix-item]").forEach((button) => {
+          button.disabled = false;
+        });
+        const form = card.querySelector("[data-inline-edit]");
+        if (form) form.hidden = false;
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      };
+
+      const decideCard = (card, decision) => {
+        const record = toDecision(card, decision);
+        if (!record.id) return;
+        const approvals = readApprovals();
+        const next = approvals.filter((item) => item.id !== record.id);
+        next.push(record);
+        writeApprovals(next);
+        renderApprovals();
+      };
+
+      const approveCard = (card) => decideCard(card, "approved");
+
+      const ignoreCard = (card) => decideCard(card, "ignored");
+
+      const fixCard = (card) => decideCard(card, "needs-fix");
+
+      const correctCard = (card, form) => {
+        const record = {
+          ...toDecision(card, "corrected"),
+          corrections: getCorrections(form)
+        };
+        if (!record.id) return;
+        const approvals = readApprovals();
+        const next = approvals.filter((item) => item.id !== record.id);
+        next.push(record);
+        writeApprovals(next);
+        renderApprovals();
+      };
+
+      document.querySelectorAll("[data-approve-item]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest("[data-approval-id]");
+          if (card) approveCard(card);
+        });
+      });
+
+      document.querySelectorAll("[data-ignore-item]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest("[data-approval-id]");
+          if (card) ignoreCard(card);
+        });
+      });
+
+      document.querySelectorAll("[data-edit-item]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest("[data-approval-id]");
+          const form = card?.querySelector("[data-inline-edit]");
+          if (form) form.hidden = !form.hidden;
+        });
+      });
+
+      document.querySelectorAll("[data-inline-edit]").forEach((form) => {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const card = form.closest("[data-approval-id]");
+          if (card) correctCard(card, form);
+        });
+      });
+
+      document.querySelectorAll("[data-cancel-edit]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const form = button.closest("[data-inline-edit]");
+          if (form) form.hidden = true;
+        });
+      });
+
+      document.querySelectorAll("[data-fix-item]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest("[data-approval-id]");
+          if (!card) return;
+          card.classList.add("status-needs-fix");
+          const status = card.querySelector(".review-status");
+          if (status) status.textContent = "需修正 Word";
+          button.textContent = "已標記需修正";
+          button.disabled = true;
+        });
+      });
+
+      document.querySelectorAll("[data-fix-item]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const card = button.closest("[data-approval-id]");
+          if (card) fixCard(card);
+        });
+      });
+
+      fixListItemsNode?.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-restore-fix]");
+        if (!button) return;
+        reopenForCorrection(button.dataset.restoreFix || "");
+      });
+
+      processedListItemsNode?.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-reopen-decision]");
+        if (!button) return;
+        reopenForCorrection(button.dataset.reopenDecision || "");
+      });
+
+      downloadButton?.addEventListener("click", () => {
+        const blob = new Blob([payloadText()], { type: "application/json;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "review-approvals.json";
+        link.click();
+        URL.revokeObjectURL(url);
+      });
+
+      saveButton?.addEventListener("click", async () => {
+        const picker = window.showSaveFilePicker;
+        if (!picker) {
+          downloadButton?.dispatchEvent(new Event("click"));
+          return;
+        }
+        const handle = await picker({
+          suggestedName: "review-approvals.json",
+          types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
+        });
+        const writable = await handle.createWritable();
+        await writable.write(payloadText());
+        await writable.close();
+      });
+
+      copyButton?.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(payloadText());
+      });
+
+      clearButton?.addEventListener("click", () => {
+        writeApprovals([]);
+        document.querySelectorAll("[data-approve-item]").forEach((button) => {
+          button.textContent = "確認可上架";
+          button.disabled = false;
+        });
+        document.querySelectorAll("[data-ignore-item]").forEach((button) => {
+          button.textContent = "不需上架／忽略";
+          button.disabled = false;
+        });
+        document.querySelectorAll("[data-fix-item]").forEach((button) => {
+          button.textContent = "需要修正 Word";
+          button.disabled = false;
+        });
+        document.querySelectorAll("[data-edit-item]").forEach((button) => {
+          button.disabled = false;
+        });
+        document.querySelectorAll("[data-inline-edit]").forEach((form) => {
+          form.hidden = true;
+        });
+        document.querySelectorAll("[data-approval-id]").forEach((card) => {
+          card.classList.remove("status-approved");
+          card.classList.remove("status-corrected");
+          card.classList.remove("status-ignored");
+          card.classList.remove("status-needs-fix");
+        });
+        renderApprovals();
+      });
+
+      document.querySelectorAll("[data-current-review-card]").forEach((card) => {
+        const tabs = Array.from(card.querySelectorAll("[data-review-tab]"));
+        const panels = Array.from(card.querySelectorAll("[data-review-panel]"));
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const target = tab.getAttribute("data-review-target");
+            tabs.forEach((item) => item.classList.toggle("is-active", item === tab));
+            panels.forEach((panel) => {
+              panel.classList.toggle("is-active", panel.getAttribute("data-review-panel") === target);
+            });
+          });
+        });
+      });
+
+      const modeTabs = Array.from(document.querySelectorAll("[data-review-mode-tab]"));
+      const modePanels = Array.from(document.querySelectorAll("[data-review-mode-panel]"));
+      modeTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.getAttribute("data-review-mode-tab");
+          modeTabs.forEach((item) => item.classList.toggle("is-active", item === tab));
+          modePanels.forEach((panel) => {
+            panel.classList.toggle("is-active", panel.getAttribute("data-review-mode-panel") === target);
+          });
+        });
+      });
+
+      document.querySelectorAll("[data-report-form]").forEach((form) => {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const card = form.closest("[data-current-review-card]");
+          if (!card) return;
+          const formData = new FormData(form);
+          const screenshot = form.querySelector('input[name="screenshot"]')?.files?.[0]?.name || "";
+          const report = {
+            id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+            articleSlug: card.dataset.articleSlug || "",
+            articleTitle: card.dataset.articleTitle || "",
+            articleCategory: card.dataset.articleCategory || "",
+            articleAuthor: card.dataset.articleAuthor || "",
+            articleUrl: card.dataset.articleUrl || "",
+            viewport: String(formData.get("viewport") || "不確定").trim(),
+            position: String(formData.get("position") || "").trim(),
+            comment: String(formData.get("comment") || "").trim(),
+            screenshot,
+            status: "open",
+            createdAt: new Date().toISOString()
+          };
+          if (!report.comment) return;
+          const reports = readReports();
+          reports.push(report);
+          writeReports(reports);
+          form.reset();
+          const result = form.querySelector("[data-report-result]");
+          if (result) {
+            result.textContent = "已加入待辦清單";
+            window.setTimeout(() => {
+              result.textContent = "";
+            }, 2400);
+          }
+          renderReports();
+        });
+      });
+
+      reportBoard?.addEventListener("click", (event) => {
+        const nextButton = event.target.closest("[data-report-next]");
+        const removeButton = event.target.closest("[data-report-remove]");
+        const quoteButton = event.target.closest("[data-report-quote]");
+        if (!nextButton && !removeButton && !quoteButton) return;
+        const id =
+          nextButton?.dataset.reportNext ||
+          removeButton?.dataset.reportRemove ||
+          quoteButton?.dataset.reportQuote ||
+          "";
+        const reports = readReports();
+        const next = removeButton
+          ? reports.filter((report) => report.id !== id)
+          : reports.map((report) =>
+              report.id === id
+                ? quoteButton
+                  ? {
+                      ...report,
+                      status: "metadata",
+                      metadataQuote: extractMetadataQuote(report.comment),
+                      metadataUpdatedAt: new Date().toISOString()
+                    }
+                  : {
+                      ...report,
+                      status:
+                        report.status === "open"
+                          ? "fixed"
+                          : report.status === "fixed" || report.status === "metadata"
+                            ? "done"
+                            : "open"
+                    }
+                : report
+            );
+        writeReports(next);
+        renderReports();
+      });
+
+      downloadPublishButton?.addEventListener("click", () => {
+        const blob = new Blob([publishPayloadText()], { type: "application/json;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "review-publish.json";
+        link.click();
+        URL.revokeObjectURL(url);
+      });
+
+      copyPublishButton?.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(publishPayloadText());
+      });
+
+      clearReportsButton?.addEventListener("click", () => {
+        writeReports([]);
+        renderReports();
+      });
+
+      renderReports();
+      renderApprovals();
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

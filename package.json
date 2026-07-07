@@ -1,0 +1,21 @@
+{
+  "name": "qiji-newsletter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "generate": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate_archive.ps1",
+    "clean:source": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean_source_files.ps1",
+    "sync:drive": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync_google_drive.ps1",
+    "review:apply": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/apply_review_publish.ps1",
+    "ai:metadata": "node scripts/generate_ai_metadata.mjs",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.9.2",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,298 @@
+---
+import "../styles/global.css";
+import {
+  articles,
+  latestIssueArchive,
+  latestIssueArticles
+} from "../data/articles";
+
+const heroArticles = latestIssueArticles.slice(0, 3);
+const editorNote = latestIssueArticles[0];
+const groupedArticles = Object.values(
+  latestIssueArticles.slice(1).reduce(
+    (groups, article) => {
+      groups[article.category] = groups[article.category] ?? { title: article.category, articles: [] };
+      groups[article.category].articles.push(article);
+      return groups;
+    },
+    {} as Record<string, { title: string; articles: typeof latestIssueArticles }>
+  )
+);
+
+const throwbackCandidates = articles
+  .filter((article) => article.issueId !== latestIssueArchive?.id)
+  .map((article) => ({
+    title: article.title,
+    meta: `${article.date.slice(0, 4)} ・ ${article.issue} ・ ${article.author}`,
+    href: `/articles/${article.slug}/`,
+    image: article.image || ""
+  }));
+const throwbackFallback = throwbackCandidates[0];
+const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u003c");
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="氣機導引電子報，收錄最新一期與歷史文章。" />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href="/#newest" aria-current="page">最新一期</a>
+          <a href="/archive/">歷史期數</a>
+          <a href="/topics/">主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="headline-stage" id="latest" aria-labelledby="hero-title" data-carousel>
+        <div class="hero-rail">
+          {heroArticles.map((article, index) => (
+            <article class:list={["hero-story", { "is-active": index === 0 }]} data-slide>
+              <img src={article.image} alt="" />
+              <div class="hero-overlay"></div>
+              <div class="hero-content">
+                <p class="meta-line">
+                  <span>{article.category}</span>
+                  <span>{latestIssueArchive?.issueNumber}電子報</span>
+                </p>
+                {index === 0 ? (
+                  <h1 id="hero-title">
+                    <a class="hero-title-link" href={`/articles/${article.slug}/`}>{article.title}</a>
+                  </h1>
+                ) : (
+                  <h2>
+                    <a class="hero-title-link" href={`/articles/${article.slug}/`}>{article.title}</a>
+                  </h2>
+                )}
+                <p class="byline">{article.author || "氣機導引編輯部"}　{article.date}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="hero-count" aria-label="切換焦點文章">
+          {heroArticles.map((_, index) => (
+            <button
+              class:list={[{ "is-active": index === 0 }]}
+              type="button"
+              data-slide-control={index}
+              aria-label={`切換焦點文章 ${index + 1}`}
+            >
+              {String(index + 1).padStart(2, "0")}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section class="content-block newest-post" id="newest" aria-labelledby="newest-title">
+        <div class="block-title">
+          <h2 id="newest-title">最新一期</h2>
+        </div>
+
+        {editorNote && (
+          <section class="issue-list-section issue-editor-section" aria-labelledby="issue-section-editor">
+            <div class="issue-list-heading">
+              <h3 id="issue-section-editor">編輯小語</h3>
+            </div>
+            <div class="issue-card-grid issue-card-grid-single issue-editor-grid">
+              <article class="issue-card">
+                <a href={`/articles/${editorNote.slug}/`}>
+                  <img src={editorNote.image} alt="" />
+                  <div>
+                    <p class="meta-line"><span>{editorNote.category}</span><span>{editorNote.author}</span></p>
+                    <h4>{editorNote.title}</h4>
+                    <p class="read-more">閱讀全文</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </section>
+        )}
+
+        {groupedArticles.map((group) => (
+          <section class="issue-list-section" aria-labelledby={`issue-section-${group.title}`} data-issue-list>
+            <div class="issue-list-heading">
+              <h3 id={`issue-section-${group.title}`}>{group.title}</h3>
+            </div>
+            <div class="issue-card-grid">
+              {group.articles.map((article, index) => (
+                <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
+                  <a href={`/articles/${article.slug}/`}>
+                    <img src={article.image} alt="" />
+                    <p class="meta-line"><span>{article.category}</span><span>{article.author}</span></p>
+                    <h4>{article.title}</h4>
+                    <p class="read-more">閱讀全文</p>
+                  </a>
+                </article>
+              ))}
+            </div>
+            {group.articles.length > 3 && (
+              <div class="issue-list-action">
+                <button class="issue-list-toggle" type="button" aria-expanded="false" data-issue-toggle>
+                  展開全部
+                </button>
+              </div>
+            )}
+          </section>
+        ))}
+      </section>
+
+      {throwbackFallback && (
+        <section
+          class={`feature-banner${throwbackFallback.image ? "" : " feature-banner--text-only"}`}
+          aria-labelledby="feature-title"
+          data-throwback
+        >
+          <img src={throwbackFallback.image} alt="" data-throwback-image hidden={!throwbackFallback.image} />
+          <div>
+            <p class="meta-line">
+              <span data-throwback-meta>{throwbackFallback.meta}</span>
+            </p>
+            <h2 id="feature-title" data-throwback-title>{throwbackFallback.title}</h2>
+            <a href={throwbackFallback.href} data-throwback-link>重溫好文</a>
+          </div>
+        </section>
+      )}
+
+      <div class="footer-bridge" aria-hidden="true"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>中華氣機導引文化研究會</strong>
+        <p>10046台北市漢口街一段3號9樓</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script id="throwback-data" type="application/json" set:html={throwbackPayload}></script>
+
+    <script>
+      const carousel = document.querySelector("[data-carousel]");
+      if (carousel) {
+        const slides = Array.from(carousel.querySelectorAll("[data-slide]"));
+        const controls = Array.from(carousel.querySelectorAll("[data-slide-control]"));
+        let activeIndex = 0;
+        let timer;
+        const showSlide = (nextIndex) => {
+          activeIndex = (nextIndex + slides.length) % slides.length;
+          slides.forEach((slide, index) => slide.classList.toggle("is-active", index === activeIndex));
+          controls.forEach((control, index) => control.classList.toggle("is-active", index === activeIndex));
+        };
+        const startTimer = () => {
+          window.clearInterval(timer);
+          timer = window.setInterval(() => showSlide(activeIndex + 1), 6000);
+        };
+        controls.forEach((control, index) => {
+          control.addEventListener("click", () => {
+            showSlide(index);
+            startTimer();
+          });
+        });
+        startTimer();
+      }
+
+      document.querySelectorAll("[data-issue-list]").forEach((section) => {
+        const toggle = section.querySelector("[data-issue-toggle]");
+        if (!toggle) return;
+        const extraItems = Array.from(section.querySelectorAll(".issue-extra"));
+
+        extraItems.forEach((item) => {
+          item.style.maxHeight = "0px";
+          item.hidden = true;
+        });
+
+        toggle.addEventListener("click", () => {
+          const isExpanded = !section.classList.contains("is-expanded");
+          section.classList.toggle("is-expanded", isExpanded);
+
+          if (isExpanded) {
+            extraItems.forEach((item) => {
+              item.hidden = false;
+              item.style.maxHeight = "0px";
+            });
+            window.requestAnimationFrame(() => {
+              extraItems.forEach((item) => {
+                item.style.maxHeight = `${item.scrollHeight}px`;
+              });
+            });
+          } else {
+            extraItems.forEach((item) => {
+              item.style.maxHeight = "0px";
+            });
+            window.setTimeout(() => {
+              if (!section.classList.contains("is-expanded")) {
+                extraItems.forEach((item) => {
+                  item.hidden = true;
+                });
+              }
+            }, 420);
+          }
+
+          toggle.setAttribute("aria-expanded", String(isExpanded));
+          toggle.textContent = isExpanded ? "收合文章" : "展開全部";
+        });
+      });
+
+      const throwbackRoot = document.querySelector("[data-throwback]");
+      if (throwbackRoot) {
+        const dataNode = document.getElementById("throwback-data");
+        const candidates = dataNode ? JSON.parse(dataNode.textContent || "[]") : [];
+        const image = throwbackRoot.querySelector("[data-throwback-image]");
+        const meta = throwbackRoot.querySelector("[data-throwback-meta]");
+        const title = throwbackRoot.querySelector("[data-throwback-title]");
+        const link = throwbackRoot.querySelector("[data-throwback-link]");
+        const applyTextOnly = () => {
+          throwbackRoot.classList.add("feature-banner--text-only");
+          if (image) {
+            image.hidden = true;
+            image.removeAttribute("src");
+          }
+        };
+
+        if (image) {
+          image.addEventListener("error", applyTextOnly);
+          if (image.complete && image.naturalWidth === 0) {
+            applyTextOnly();
+          }
+        }
+
+        if (candidates.length && meta && title && link) {
+          const pick = candidates[Math.floor(Math.random() * candidates.length)];
+          meta.textContent = pick.meta;
+          title.textContent = pick.title;
+          link.href = pick.href;
+
+          if (image && pick.image) {
+            throwbackRoot.classList.remove("feature-banner--text-only");
+            image.hidden = false;
+            image.src = pick.image;
+          } else {
+            applyTextOnly();
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

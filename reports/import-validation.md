@@ -1,0 +1,839 @@
+﻿# 匯入校驗報告
+
+產生時間：2026-07-06 03:11:32
+
+總筆數：833
+
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-2同頻共振.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-1如是我聞之一.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-2如是我聞之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-3如是我聞之三.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-4如是我聞之四.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-5如是我聞之五.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-6如是我聞之六.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202605 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202605\2605-3-7如是我聞之七.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202508 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202508 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-1編輯小語.docx：缺少作者，已留空
+- [warning] 202508 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-3體證道德經《第62章》道奧.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202508 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-4圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202508 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-4圖靈集.docx：缺少作者，已留空
+- [warning] 202508 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-5山腳下的蘆葦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202508 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202508\2508-5山腳下的蘆葦.docx：缺少作者，已留空
+- [warning] 202507 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1-2新書推薦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202507 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1-2新書推薦.docx：缺少作者，已留空
+- [warning] 202507 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1-3新書推薦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202507 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1-3新書推薦.docx：缺少作者，已留空
+- [warning] 202507 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202507 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-1編輯小語.docx：缺少作者，已留空
+- [warning] 202507 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-3體證道德經第61.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202507 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202507\2507-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202506 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202506 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-1編輯小語.docx：缺少作者，已留空
+- [warning] 202506 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-2-2如是我聞之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202506 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-2-2如是我聞之二.docx：圖片無標題：/assets/articles/202506/202506-img-006.png?v=269089
+- [warning] 202506 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-2-3如是我聞之三.docx：圖片無標題：/assets/articles/202506/202506-img-007.png?v=161751
+- [warning] 202506 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-2-3如是我聞之三.docx：圖片無標題：/assets/articles/202506/202506-img-008.png?v=236498
+- [warning] 202506 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-2-3如是我聞之三.docx：圖片無標題：/assets/articles/202506/202506-img-009.jpeg?v=25640
+- [warning] 202506 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-3體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202506 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-4圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202506 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202506\2506-4圖靈集.docx：缺少作者，已留空
+- [warning] 202505 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202505 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-1編輯小語.docx：缺少作者，已留空
+- [warning] 202505 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-2屏東會館.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202505 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202505 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-5導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202505 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-5導引按蹻.docx：缺少作者，已留空
+- [warning] 202505 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202505\2505-6心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-1編輯小語.docx：缺少作者，已留空
+- [warning] 202504 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-3體證道德經58章.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-5圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-5圖靈集.docx：缺少作者，已留空
+- [warning] 202504 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-6山腳下的蘆葦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202504 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202504\2504-6山腳下的蘆葦.docx：缺少作者，已留空
+- [warning] 202503 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202503\2503-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202503 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202503\2503-1編輯小語.docx：缺少作者，已留空
+- [warning] 202503 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202503\2503-3道德經第57章.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202503 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202503\2503-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202503 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202503\2503-5心田集.docx：缺少作者，已留空
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-1_編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-1_編輯小語.docx：缺少作者，已留空
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-2特別報導_南台灣的全覺能基地.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-3-1_如是我聞_成佛是一切在心 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-3-1_如是我聞_成佛是一切在心 .docx：缺少作者，已留空
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-3-2_如是我聞_覺性之路   拉出新維度.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-3-2_如是我聞_覺性之路   拉出新維度.docx：缺少作者，已留空
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-3-3_如是我聞_信的是生命中的一把寶劍.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-4-1_體證道德經_第56章道貴.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-4-1_體證道德經_第56章道貴.docx：缺少作者，已留空
+- [warning] 202502 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-4-2_圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202502 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202502\2502-4-2_圖靈集.docx：缺少作者，已留空
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_1-1覺能降臨集體成佛—編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_1-1覺能降臨集體成佛—編輯小語.docx：缺少作者，已留空
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-2_四午班年終一分鐘.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-3_四晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-4_五晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-4_五晚.docx：缺少作者，已留空
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-5_六早班一分鐘.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-6_台中班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-7_日早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-8_一晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202501 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-8_一晚.docx：缺少作者，已留空
+- [warning] 202501 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202501\2501_2-9_一分鐘錄音_二早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-1編輯小語.docx：缺少作者，已留空
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-2-1如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-2-1如是我聞.docx：缺少作者，已留空
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-2-2如是我聞之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-2-2如是我聞之二.docx：缺少作者，已留空
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-3記沉香花梨會.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-4讀書會.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-5含德章055.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-6導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-7股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202412 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202412\2412-7股海人生.docx：缺少作者，已留空
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\24010-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-2-1如是我聞之一.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-2-1如是我聞之一.docx：缺少作者，已留空
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-2-2如是我聞之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-2-2如是我聞之二.docx：缺少作者，已留空
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-3道德經第53章大道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-4導引按蹻.docx：缺少作者，已留空
+- [warning] 202410 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-6股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202410 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202410\2410-6股海人生.docx：缺少作者，已留空
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-1編輯小語.docx：缺少作者，已留空
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-2應做如是觀-應做如是覺.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-2應做如是觀-應做如是覺.docx：缺少作者，已留空
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-4道德經_51尊貴.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-4導引按蹻.docx：缺少作者，已留空
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-6心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-7術之盡頭 炁體源流.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202408 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202408\2408-7術之盡頭 炁體源流.docx：缺少作者，已留空
+- [warning] 202406 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202406 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-1編輯小語.docx：缺少作者，已留空
+- [warning] 202406 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202406 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-3道德經49章.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202406 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202406 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-4導引按蹻.docx：圖片無標題：/assets/articles/202406/202406-img-003.png?v=409263
+- [warning] 202406 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-4導引按蹻.docx：圖片無標題：/assets/articles/202406/202406-img-004.jpeg?v=26800
+- [warning] 202406 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202406\2406-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\fwd5\202405___ 會館電子報.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\fwd5\202405___ 會館電子報.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-1編輯小語.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-2如是我聞.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-3屏東會館.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-3屏東會館.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-4-1莊醫師 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-4-1莊醫師 .docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-4-2余媛媛.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-4-2余媛媛.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-6骨盆治療.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-7圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-7圖靈集.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-8宇宙這樣從你心中生起.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-8宇宙這樣從你心中生起.docx：缺少作者，已留空
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-8觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-9山腳下的蘆葦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202405 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202405\2405-9山腳下的蘆葦.docx：缺少作者，已留空
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-1編輯小語.docx：缺少作者，已留空
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-2練功筆記之一.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-2練功筆記之一.docx：缺少作者，已留空
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-3練功筆記之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-4體證道德經第四十七.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-5導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-5導引按蹻.docx：缺少作者，已留空
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-6股海人生之桂林仔的卡通錶.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-6股海人生之桂林仔的卡通錶.docx：缺少作者，已留空
+- [warning] 202404 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-7導引采風呂麗卿.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202404 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202404\Gmail\2404-7導引采風呂麗卿.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-1編輯小語.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-2走春.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-3練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-3練功筆記.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-5導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-5導引按蹻.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-6圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-6圖靈集.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-6觀行錄_當下.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-6觀行錄_當下.docx：圖片無標題：/assets/articles/202403/202403-img-010.png?v=10268340
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-7股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-7股海人生.docx：缺少作者，已留空
+- [warning] 202403 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-8導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202403 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202403\Gmail\2403-8導引采風錄.docx：缺少作者，已留空
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-1編輯小語.docx：缺少作者，已留空
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-1台中班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-2日早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-3六早.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-4五晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-5四晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-6四午.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-7二晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-8二早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-2-9一晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-3道德經第45章.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-4導引按蹻.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-4導引按蹻.docx：缺少作者，已留空
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-5圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-5圖靈集.docx：缺少作者，已留空
+- [warning] 202401 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-7謝式冰.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202401 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202401\2401-7謝式冰.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-10導引采風錄 程文政.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-10導引采風錄 程文政.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-1編輯小語.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-3練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-3練功筆記.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-4老子第43章.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-4老子第43章.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-5治療學就是人生學.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-6心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-6心田集.docx：圖片無標題：/assets/articles/202312/202312-img-005.png?v=166213
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-7觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-8股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-8股海人生.docx：缺少作者，已留空
+- [warning] 202312 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-9山腳下的蘆葦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202312 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202312\文章\2312-9山腳下的蘆葦.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-1編輯小語.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-2如是我聞.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-2練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-2練功筆記.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-3治療見學.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-5圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-5圖靈集.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-6股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-6股海人生.docx：缺少作者，已留空
+- [warning] 202311 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-7導引采風錄 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202311 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202311\2311-7導引采風錄 .docx：缺少作者，已留空
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-1編輯小語.docx：缺少作者，已留空
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-3練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-3練功筆記.docx：缺少作者，已留空
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-5股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-5股海人生.docx：缺少作者，已留空
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-6山腳下的蘆葦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-6山腳下的蘆葦.docx：缺少作者，已留空
+- [warning] 202310 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-7導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202310 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202310\2310-7導引采風錄.docx：缺少作者，已留空
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-1編輯小語.docx：缺少作者，已留空
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-2練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-2練功筆記.docx：缺少作者，已留空
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-3治療的真意.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-5圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-5圖靈集.docx：缺少作者，已留空
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-6觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-7股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202309 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202309\2309-7股海人生.docx：缺少作者，已留空
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-1編輯小語.docx：缺少作者，已留空
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-2練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-2練功筆記.docx：缺少作者，已留空
+- [warning] 202308 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-3導引按蹻.docx：圖片無標題：/assets/articles/202308/202308-img-011.png?v=330413
+- [warning] 202308 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-3導引按蹻.docx：圖片無標題：/assets/articles/202308/202308-img-012.png?v=121625
+- [warning] 202308 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-3導引按蹻.docx：圖片無標題：/assets/articles/202308/202308-img-013.jpeg?v=54800
+- [warning] 202308 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-3導引按蹻.docx：圖片無標題：/assets/articles/202308/202308-img-014.png?v=157651
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-5道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-6無極練自我.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-7週期與逆週期.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-7週期與逆週期.docx：缺少作者，已留空
+- [warning] 202308 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-8導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202308 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202308\Gmail\2308-8導引采風錄.docx：缺少作者，已留空
+- [warning] 202307 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202307 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-1編輯小語.docx：缺少作者，已留空
+- [warning] 202307 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-2疑義相與析.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202307 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-3體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202307 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-4圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202307 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-4圖靈集.docx：缺少作者，已留空
+- [warning] 202307 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-5導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202307 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202307\2307-5導引采風錄.docx：缺少作者，已留空
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-10導引采風.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-10導引采風.docx：缺少作者，已留空
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-1編輯小語.docx：缺少作者，已留空
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-2如是我聞.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-6導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-6導引香道.docx：缺少作者，已留空
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-7體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-8心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202306 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202306\2306-9觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-1編輯小語.docx：缺少作者，已留空
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-2陳國華.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-2陳國華.docx：缺少作者，已留空
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-3體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-4導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-4導引香道.docx：缺少作者，已留空
+- [warning] 202305 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-5導引香道_莫仁維.docx：圖片無標題：/assets/articles/202305/202305-img-006.jpeg?v=280787
+- [warning] 202305 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-5導引香道_莫仁維.docx：圖片無標題：/assets/articles/202305/202305-img-007.jpeg?v=470017
+- [warning] 202305 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-5導引香道_莫仁維.docx：圖片無標題：/assets/articles/202305/202305-img-008.jpeg?v=76840
+- [warning] 202305 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-5導引香道_莫仁維.docx：圖片無標題：/assets/articles/202305/202305-img-009.png?v=153562
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-6圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-6圖靈集.docx：缺少作者，已留空
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-7資產負債週期性.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-7資產負債週期性.docx：缺少作者，已留空
+- [warning] 202305 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-8導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202305 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202305\2305-8導引采風錄.docx：缺少作者，已留空
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-1編輯小語.docx：缺少作者，已留空
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-6導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-6導引香道.docx：缺少作者，已留空
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-7心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-8本來無一物 無中能生有.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-8本來無一物 無中能生有.docx：缺少作者，已留空
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-9采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\2304-9采風錄.docx：缺少作者，已留空
+- [warning] 202304 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202304 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：缺少作者，已留空
+- [warning] 202304 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：圖片無標題：/assets/articles/202304/202304-img-003.jpg?v=280787
+- [warning] 202304 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：圖片無標題：/assets/articles/202304/202304-img-004.jpeg?v=470017
+- [warning] 202304 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：圖片無標題：/assets/articles/202304/202304-img-005.jpeg?v=76840
+- [warning] 202304 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202304（妙觀品藏香）\妙觀品藏香.docx：圖片無標題：/assets/articles/202304/202304-img-006.png?v=153562
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-1編輯小語.docx：缺少作者，已留空
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-2如是我聞：無極心法紀要(修改版).docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-2如是我聞：無極心法紀要(修改版).docx：缺少作者，已留空
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-6圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-6圖靈集.docx：缺少作者，已留空
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-7槁木死灰與無限性.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-7槁木死灰與無限性.docx：缺少作者，已留空
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-7觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-8導引采風錄莫仁維 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202303 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202303\2303-8導引采風錄莫仁維 .docx：缺少作者，已留空
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-1編輯小語.docx：缺少作者，已留空
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-3練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-3練功筆記.docx：缺少作者，已留空
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-4體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-6觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-7逍遙遊.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-7逍遙遊.docx：缺少作者，已留空
+- [warning] 202302 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-8洪明美.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202302 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202302\2302-8洪明美.docx：缺少作者，已留空
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-1一晚錄音側記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-2二早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-3二晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-3二晚.docx：缺少作者，已留空
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-4四午一分鐘.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-2-6五晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-11張尊堡.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-1惠如.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-2慧敏.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-3媛媛.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-4芮瑩.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-5琦瑛.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-6靜慧.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-7高袖桐.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-8秋玲.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-9暐婷.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-9暐婷.docx：圖片無標題：/assets/articles/202301/202301-img-021.jpeg?v=904761
+- [warning] 202301 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-3-9暐婷.docx：圖片無標題：/assets/articles/202301/202301-img-022.jpeg?v=892460
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-4練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-4練功筆記.docx：缺少作者，已留空
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-6圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202301 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202301\2301-6圖靈集.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\20221111_觀行錄_川流初心ocx.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-10導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-10導引采風錄.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-1編輯小語.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：缺少作者，已留空
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-022.jpeg?v=715559
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-023.jpeg?v=187140
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-024.jpeg?v=466580
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-025.jpeg?v=365475
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-026.jpeg?v=138188
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-027.jpeg?v=307063
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-028.jpeg?v=743965
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-029.jpeg?v=426094
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-030.jpeg?v=286995
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-031.jpeg?v=173715
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-032.jpeg?v=886959
+- [warning] 202212 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-2雪山坑冬季五感.docx：圖片無標題：/assets/articles/202212/202212-img-033.jpeg?v=532844
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-3歲末專題之二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-3歲末專題之二.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-4練功筆記夙君.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-4練功筆記夙君.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-6導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-6導引香道.docx：缺少作者，已留空
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-7體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-8心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-9逍遙遊.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202212 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202212\2212-9逍遙遊.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-1編輯小語.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-2夙君.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-2夙君.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-4嫻言絮語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-4嫻言絮語.docx：圖片無標題：/assets/articles/202211/202211-img-003.jpeg?v=84776
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-5導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-5導引香道.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-6體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-7圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-7圖靈集.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-8誠則明 明則誠.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-8誠則明 明則誠.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-9導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202211\2211-9導引采風錄.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-2夙君.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-2夙君.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-4嫻言絮語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-4嫻言絮語.docx：圖片無標題：/assets/articles/202211/202211-img-001.jpeg?v=84776
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-6體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-8誠則明 明則誠.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-8誠則明 明則誠.docx：缺少作者，已留空
+- [warning] 202211 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-9導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202211 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\202211\2211-9導引采風錄.docx：缺少作者，已留空
+- [warning] 202208 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202208 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-1編輯小語.docx：缺少作者，已留空
+- [warning] 202208 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-4土沉與碳化.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202208 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-4土沉與碳化.docx：缺少作者，已留空
+- [warning] 202208 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202208 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-6心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202208 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-7股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202208 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202208\2208-7股海人生.docx：缺少作者，已留空
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-02一晚班要無為，先無所不為.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-13導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-13導引香道.docx：缺少作者，已留空
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-14體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-15圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-15圖靈集.docx：缺少作者，已留空
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-16股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-16股海人生.docx：缺少作者，已留空
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-17導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-17導引采風錄.docx：缺少作者，已留空
+- [warning] 202207 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202207 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202207\2207-1編輯小語.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-1編輯小語.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-2疑義相與析.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-2疑義相與析.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-4練功筆記.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-4練功筆記.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-5體證道德經.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-6心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-6心田集.docx：圖片無標題：/assets/articles/202206/202206-img-003.png?v=401742
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-7觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-8法於陰陽 和於術數.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-8法於陰陽 和於術數.docx：缺少作者，已留空
+- [warning] 202206 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-9導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202206 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202206\2206-9導引采風錄.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-10陳哲甯.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-10陳哲甯.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-1編輯小語.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-2群組討論.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-2群組討論.docx：缺少作者，已留空
+- [warning] 202205 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-2群組討論.docx：圖片無標題：/assets/articles/202205/202205-img-005.png?v=2548
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-3五晚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-3五晚.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-4練功筆記  .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-4練功筆記  .docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-5識香.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-5識香.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-7圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-7圖靈集.docx：缺少作者，已留空
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-8觀行錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-9貨、幣之戰.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202205 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202205\2205-9貨、幣之戰.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-01編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-01編輯小語.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-02疑義相與析.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-02疑義相與析.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-03疑義相與析.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-03疑義相與析.docx：缺少作者，已留空
+- [warning] 202204 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-03疑義相與析.docx：圖片無標題：/assets/articles/202204/202204-img-004.jpeg?v=75674
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-06五感香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-06導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-06導引香道.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-08體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-10股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-10股海人生.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-11導引采風錄.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202204 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-11導引采風錄.docx：缺少作者，已留空
+- [warning] 202204 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202204\2204-9心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-2疑義相與析.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-2疑義相與析.docx：缺少作者，已留空
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-3功夫熊貓.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-3功夫熊貓.docx：缺少作者，已留空
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-4導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-4導引香道.docx：缺少作者，已留空
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-6圖靈集_2203.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-6圖靈集_2203.docx：缺少作者，已留空
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-7股海人生.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-7股海人生.docx：缺少作者，已留空
+- [warning] 202203 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-8氣機人物一 James.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202203 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202203\2203-8氣機人物一 James.docx：缺少作者，已留空
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-10體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-10體證道德經_1.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-11心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-12有涯隨無涯殆已.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-12有涯隨無涯殆已.docx：缺少作者，已留空
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-13身體書寫.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-13身體書寫.docx：缺少作者，已留空
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-1編輯小語.docx：缺少作者，已留空
+- [warning] 202202 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-9眾香平等.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202202 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202202\2202-9眾香平等.docx：缺少作者，已留空
+- [warning] 202201 / gmail-source-replaced / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-10圖靈集_2201_1.docx：同 sourceId 已採用 Gmail 版本：G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-10圖靈集_2201.docx
+- [warning] 202201 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-10圖靈集_2201.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202201 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-10圖靈集_2201.docx：缺少作者，已留空
+- [warning] 202201 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-11香之物語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202201 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-12股海人生逍遙遊.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202201 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-12股海人生逍遙遊.docx：缺少作者，已留空
+- [warning] 202201 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\2201-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202201 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\2201-1編輯小語.docx：缺少作者，已留空
+- [warning] 202201 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-5雪山坑教我的三件事.docx：圖片無標題：/assets/articles/202201/202201-img-008.jpeg?v=705856
+- [warning] 202201 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-5雪山坑教我的三件事.docx：圖片無標題：/assets/articles/202201/202201-img-009.jpeg?v=371484
+- [warning] 202201 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-8范家豪.docx：圖片無標題：/assets/articles/202201/202201-img-010.jpeg?v=49737
+- [warning] 202201 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202201\Gmail\2201-9體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-10台中一.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-11台中二.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-12范子計然.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-12范子計然.docx：缺少作者，已留空
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-12導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-12導引香道.docx：缺少作者，已留空
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-13心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-1編輯小語.docx：缺少作者，已留空
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-3一晚班 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-4二早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-4二早班.docx：圖片無標題：/assets/articles/202112/202112-img-021.jpeg?v=725223
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-5二晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-8《就這些了！》週五晚班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202112 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-8《就這些了！》週五晚班.docx：圖片無標題：/assets/articles/202112/202112-img-024.jpeg?v=622312
+- [warning] 202112 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202112\2112-9六早班.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-10賴鈺晶.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-10賴鈺晶.docx：圖片無標題：/assets/articles/202111/202111-img-015.jpeg?v=103783
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-12圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-12圖靈集.docx：缺少作者，已留空
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-13香之物語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-14身體書寫.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-14身體書寫.docx：缺少作者，已留空
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-1編輯小語.docx：缺少作者，已留空
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-2又一里程碑 .docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-3蔡育展.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-4鍾宛真.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-5夙君.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-6雅靜.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-7張可士.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-8暐婷.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\2111-9賴碧蘭.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\道場還是戰場？【2021-11-07交稿的版本】.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202111 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202111\道場還是戰場？【2021-11-07交稿的版本】.docx：缺少作者，已留空
+- [warning] 202110 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\Gmail\2110-13余安邦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202110 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\2110-13導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202110 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\2110-13導引香道.docx：缺少作者，已留空
+- [warning] 202110 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\2110-14見素抱樸.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202110 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\2110-15心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202110 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\Gmail\2110-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202110 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202110\Gmail\2110-1編輯小語.docx：缺少作者，已留空
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-1編輯小語.docx：缺少作者，已留空
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-2導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-2導引香道.docx：缺少作者，已留空
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-3體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-4圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-4圖靈集.docx：缺少作者，已留空
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：缺少作者，已留空
+- [warning] 202109 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：圖片無標題：/assets/articles/202109/202109-img-012.jpeg?v=34181
+- [warning] 202109 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：圖片無標題：/assets/articles/202109/202109-img-013.jpeg?v=376041
+- [warning] 202109 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：圖片無標題：/assets/articles/202109/202109-img-014.jpeg?v=211038
+- [warning] 202109 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：圖片無標題：/assets/articles/202109/202109-img-015.jpeg?v=506287
+- [warning] 202109 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-6沉香物語.docx：圖片無標題：/assets/articles/202109/202109-img-016.jpeg?v=235361
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-7身體書寫.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\2109-7身體書寫.docx：缺少作者，已留空
+- [warning] 202109 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\雲霞滿紙  金瓶梅香觀.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202109 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202109\雲霞滿紙  金瓶梅香觀.docx：缺少作者，已留空
+- [warning] 202108 / gmail-source-replaced / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語＿修正.docx：同 sourceId 已採用 Gmail 版本：G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-1編輯小語.docx：缺少作者，已留空
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-2導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-2導引香道.docx：缺少作者，已留空
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-3體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-4圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-4圖靈集.docx：缺少作者，已留空
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-5心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx：圖片無標題：/assets/articles/202108/202108-img-008.jpeg?v=312154
+- [warning] 202108 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx：圖片無標題：/assets/articles/202108/202108-img-009.jpeg?v=348423
+- [warning] 202108 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx：圖片無標題：/assets/articles/202108/202108-img-010.jpeg?v=2175942
+- [warning] 202108 / content-warning / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-6香之物語.docx：圖片無標題：/assets/articles/202108/202108-img-011.jpeg?v=109055
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-7身體書寫.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\Gmail\2108-7身體書寫.docx：缺少作者，已留空
+- [warning] 202108 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\王亞玲＿活色生香  愛慾金瓶梅.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202108 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202108\王亞玲＿活色生香  愛慾金瓶梅.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\2107-1編輯小語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\2107-1編輯小語.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-2-1洪明美.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-2-2陳盈靜.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-2-3蕭瑞玲.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-2-4林碧珠.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-3-1林沅錚.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-3-2秋泓.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-3-3洪于婷.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-1導引香道.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-1導引香道.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-2余安邦.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-2余安邦.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-3周小昱.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-4-3周小昱.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-5香之物語.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-5香之物語.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-5體證道德經.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-6圖靈集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-6圖靈集.docx：缺少作者，已留空
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-8心田集.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / legacy-template-missing / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-9身體書寫.docx：舊格式文章未含投稿模板，已用保守 legacy 規則匯入
+- [warning] 202107 / missing-author / G:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報\202107\Gmail\2107-9身體書寫.docx：缺少作者，已留空
+- [warning] 202508 / missing-author / 2508-1：文章缺少作者：編輯部
+- [warning] 202508 / missing-author / 2508-4：文章缺少作者：阿充
+- [warning] 202508 / missing-author / 2508-5：文章缺少作者：傅冶中
+- [warning] 202507 / missing-author / 2507-1：文章缺少作者：編輯部
+- [warning] 202507 / missing-author / 2507-1-3：文章缺少作者：新書推薦
+- [warning] 202507 / missing-author / 2507-1-2：文章缺少作者：新書推薦
+- [warning] 202506 / missing-author / 2506-1：文章缺少作者：編輯部
+- [warning] 202506 / missing-author / 2506-4：文章缺少作者：阿充
+- [warning] 202505 / missing-author / 2505-1：文章缺少作者：編輯部
+- [warning] 202505 / missing-author / 2505-5：文章缺少作者：黃渼蔆
+- [warning] 202504 / missing-author / 2504-1：文章缺少作者：編輯部
+- [warning] 202504 / missing-author / 2504-6：文章缺少作者：傅冶中
+- [warning] 202504 / missing-author / 2504-5：文章缺少作者：阿充
+- [warning] 202503 / missing-author / 2503-1：文章缺少作者：編輯部
+- [warning] 202503 / missing-author / 2503-5：文章缺少作者：鄭雅靜
+- [warning] 202502 / missing-author / 2502-1：文章缺少作者：編輯小語
+- [warning] 202502 / missing-author / 2502-4-1：文章缺少作者：體證道德經 第56章道貴
+- [warning] 202502 / missing-author / 2502-4-2：文章缺少作者：阿充（依2025/01/06課程部分內容編寫）
+- [warning] 202502 / missing-author / 2502-3-1：文章缺少作者：如是我聞 成佛是一切在心
+- [warning] 202502 / missing-author / 2502-3-2：文章缺少作者：如是我聞 覺性之路 拉出新維度
+- [warning] 202501 / missing-author / 2501-1-1：文章缺少作者：覺能降臨集體成佛—編輯小語
+- [warning] 202501 / missing-author / 2501-2-8：文章缺少作者：一晚
+- [warning] 202501 / missing-author / 2501-2-4：文章缺少作者：五晚
+- [warning] 202412 / missing-author / 2412-1：文章缺少作者：編輯部
+- [warning] 202412 / missing-author / 2412-7：文章缺少作者：蔡育展
+- [warning] 202412 / missing-author / 2412-2-1：文章缺少作者：文稿彙整／二早班筆記小組
+- [warning] 202412 / missing-author / 2412-2-2：文章缺少作者：文稿彙整／五晚班筆記小組
+- [warning] 202410 / missing-author / 2410-4：文章缺少作者：韓憶萍
+- [warning] 202410 / missing-author / 2410-6：文章缺少作者：蔡育展
+- [warning] 202410 / missing-author / 2410-2-1：文章缺少作者：文稿彙整／四午班筆記小組
+- [warning] 202410 / missing-author / 2410-2-2：文章缺少作者：文稿彙整／日早班筆記小組
+- [warning] 202408 / missing-author / 2408-1：文章缺少作者：編輯部
+- [warning] 202408 / missing-author / 2408-7：文章缺少作者：蔡育展
+- [warning] 202408 / missing-author / 2408-4：文章缺少作者：記三天兩夜治療課密集訓練
+- [warning] 202408 / missing-author / 2408-2：文章缺少作者：文稿彙整／週四晚班筆記小組
+- [warning] 202406 / missing-author / 2406-1：文章缺少作者：編輯部
+- [warning] 202405 / missing-author / 2405-1：文章缺少作者：編輯部
+- [warning] 202405 / missing-author / 2405-7：文章缺少作者：阿充
+- [warning] 202405 / missing-author / 2405-8：文章缺少作者：蔡育展
+- [warning] 202405 / missing-author / 2405-9：文章缺少作者：傅冶中
+- [warning] 202405 / missing-author / 2405-2：文章缺少作者：課程筆記彙整／周四下午班
+- [warning] 202405 / missing-author / 202405：文章缺少作者：會館電子報
+- [warning] 202405 / missing-author / 2405-3：文章缺少作者：屏東會館
+- [warning] 202405 / missing-author / 2405-4-2：文章缺少作者：余媛媛
+- [warning] 202405 / missing-author / 2405-4-1：文章缺少作者：莊朝傑
+- [warning] 202404 / missing-author / 2404-1：文章缺少作者：編輯部
+- [warning] 202404 / missing-author / 2404-5：文章缺少作者：李秀娥
+- [warning] 202404 / missing-author / 2404-6：文章缺少作者：蔡育展
+- [warning] 202404 / missing-author / 2404-7：文章缺少作者：呂麗卿
+- [warning] 202404 / missing-author / 2404-2：文章缺少作者：鄭雅靜
+- [warning] 202403 / missing-author / 2403-1：文章缺少作者：編輯部
+- [warning] 202403 / missing-author / 2403-6：文章缺少作者：阿充
+- [warning] 202403 / missing-author / 2403-8：文章缺少作者：黃坤瑛
+- [warning] 202403 / missing-author / 2403-7：文章缺少作者：蔡育展
+- [warning] 202403 / missing-author / 2403-3：文章缺少作者：朱芮瑩
+- [warning] 202403 / missing-author / 2403-5：文章缺少作者：楊慧敏
+- [warning] 202401 / missing-author / 2401-1：文章缺少作者：編輯部
+- [warning] 202401 / missing-author / 2401-7：文章缺少作者：黃坤瑛
+- [warning] 202401 / missing-author / 2401-5：文章缺少作者：阿充
+- [warning] 202401 / missing-author / 2401-4：文章缺少作者：莊朝傑
+- [warning] 202312 / missing-author / 2312-1：文章缺少作者：編輯部
+- [warning] 202312 / missing-author / 2312-9：文章缺少作者：傅冶中
+- [warning] 202312 / missing-author / 2312-8：文章缺少作者：蔡育展
+- [warning] 202312 / missing-author / 2312-10：文章缺少作者：黃坤瑛
+- [warning] 202312 / missing-author / 2312-4：文章缺少作者：李明
+- [warning] 202312 / missing-author / 2312-3：文章缺少作者：黃惠如
+- [warning] 202311 / missing-author / 2311-1：文章缺少作者：編輯部
+- [warning] 202311 / missing-author / 2311-5：文章缺少作者：阿充
+- [warning] 202311 / missing-author / 2311-6：文章缺少作者：蔡育展
+- [warning] 202311 / missing-author / 2311-7：文章缺少作者：黃坤瑛
+- [warning] 202311 / missing-author / 2311-2：文章缺少作者：林鈴宜
+- [warning] 202311 / missing-author / 2311-2：文章缺少作者：鍾宛真
+- [warning] 202310 / missing-author / 2310-1：文章缺少作者：編輯部
+- [warning] 202310 / missing-author / 2310-5：文章缺少作者：蔡育展
+- [warning] 202310 / missing-author / 2310-6：文章缺少作者：傅冶中
+- [warning] 202310 / missing-author / 2310-7：文章缺少作者：余媛媛 & 莊正賢
+- [warning] 202310 / missing-author / 2310-3：文章缺少作者：蔡育展
+- [warning] 202309 / missing-author / 2309-1：文章缺少作者：編輯部
+- [warning] 202309 / missing-author / 2309-5：文章缺少作者：阿充
+- [warning] 202309 / missing-author / 2309-7：文章缺少作者：蔡育展
+- [warning] 202309 / missing-author / 2309-2：文章缺少作者：賴鈺晶
+- [warning] 202308 / missing-author / 2308-1：文章缺少作者：編輯部
+- [warning] 202308 / missing-author / 2308-8：文章缺少作者：母女擕手練氣機
+- [warning] 202308 / missing-author / 2308-7：文章缺少作者：蔡育展
+- [warning] 202308 / missing-author / 2308-2：文章缺少作者：謝珪如
+- [warning] 202307 / missing-author / 2307-1：文章缺少作者：編輯部
+- [warning] 202307 / missing-author / 2307-4：文章缺少作者：阿充
+- [warning] 202307 / missing-author / 2307-5：文章缺少作者：楊清雲牽手張詒鵬
+- [warning] 202306 / missing-author / 2306-1：文章缺少作者：編輯部
+- [warning] 202306 / missing-author / 2306-6：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202306 / missing-author / 2306-10：文章缺少作者：黃坤瑛
+- [warning] 202305 / missing-author / 2305-1：文章缺少作者：編輯部
+- [warning] 202305 / missing-author / 2305-6：文章缺少作者：阿充
+- [warning] 202305 / missing-author / 2305-7：文章缺少作者：蔡育展
+- [warning] 202305 / missing-author / 2305-8：文章缺少作者：黃坤瑛
+- [warning] 202305 / missing-author / 2305-2：文章缺少作者：陳國華
+- [warning] 202305 / missing-author / 2305-4：文章缺少作者：呂麗卿
+- [warning] 202304 / missing-author / 2304-1：文章缺少作者：編輯部
+- [warning] 202304 / missing-author / 2304-8：文章缺少作者：蔡育展
+- [warning] 202304 / missing-author / 202304-：文章缺少作者：妙觀品藏香
+- [warning] 202304 / missing-author / 2304-9：文章缺少作者：鄭素蘭&姚崑宗
+- [warning] 202304 / missing-author / 2304-6：文章缺少作者：倪暐婷
+- [warning] 202303 / missing-author / 2303-1：文章缺少作者：編輯部
+- [warning] 202303 / missing-author / 2303-7：文章缺少作者：蔡育展
+- [warning] 202303 / missing-author / 2303-6：文章缺少作者：阿充
+- [warning] 202303 / missing-author / 2303-8：文章缺少作者：找到真功夫，推廣至國際
+- [warning] 202303 / missing-author / 2303-2：文章缺少作者：蔡進懋、謝神助
+- [warning] 202302 / missing-author / 2302-1：文章缺少作者：編輯部
+- [warning] 202302 / missing-author / 2302-3：文章缺少作者：熊曼琦
+- [warning] 202302 / missing-author / 2302-8：文章缺少作者：黃坤瑛
+- [warning] 202302 / missing-author / 2302-7：文章缺少作者：蔡育展
+- [warning] 202302 / unknown-category / 2302-2-7：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-3：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-2：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-1：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-6：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-5：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202302 / unknown-category / 2302-2-4：分類不在既有分類清單：專欄文章/新春團拜
+- [warning] 202301 / missing-author / 2301-6：文章缺少作者：阿充
+- [warning] 202301 / missing-author / 2301-4：文章缺少作者：熊曼琦
+- [warning] 202301 / missing-author / 2301-2-3：文章缺少作者：二晚
+- [warning] 202212 / missing-author / 2212-1：文章缺少作者：編輯部
+- [warning] 202212 / missing-author / 2212-6：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202212 / missing-author / 2212-9：文章缺少作者：蔡玉展
+- [warning] 202212 / missing-author / 2212-10：文章缺少作者：莊朝傑&劉惠瑛
+- [warning] 202212 / missing-author / 2212-2：文章缺少作者：雪山坑冬季五感
+- [warning] 202212 / missing-author / 2212-4：文章缺少作者：（完結篇）
+- [warning] 202212 / missing-author / 2212-3：文章缺少作者：歲末專題之二
+- [warning] 202211 / missing-author / 2211-1：文章缺少作者：編輯部
+- [warning] 202211 / missing-author / 2211-7：文章缺少作者：阿充
+- [warning] 202211 / missing-author / 2211-9：文章缺少作者：黃坤瑛
+- [warning] 202211 / missing-author / 2211-8：文章缺少作者：蔡育展
+- [warning] 202211 / missing-author / 2211-2：文章缺少作者：（二）
+- [warning] 202211 / missing-author / 2211-5：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202211 / missing-author / 2211-8：文章缺少作者：蔡育展
+- [warning] 202211 / missing-author / 2211-9：文章缺少作者：黃坤瑛
+- [warning] 202211 / missing-author / 2211-2：文章缺少作者：（二）
+- [warning] 202208 / missing-author / 2208-1：文章缺少作者：編輯部
+- [warning] 202208 / missing-author / 2208-7：文章缺少作者：蔡育展
+- [warning] 202208 / missing-author / 2208-4：文章缺少作者：倪暐婷
+- [warning] 202207 / missing-author / 2207-1：文章缺少作者：編輯小組
+- [warning] 202207 / missing-author / 2207-16：文章缺少作者：蔡育展
+- [warning] 202207 / missing-author / 2207-15：文章缺少作者：阿充
+- [warning] 202207 / unknown-category / 2207-02：分類不在既有分類清單：專欄文章/傳習錄
+- [warning] 202207 / missing-author / 2207-17：文章缺少作者：黃坤瑛
+- [warning] 202207 / missing-author / 2207-13：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202206 / missing-author / 2206-1：文章缺少作者：編輯小組
+- [warning] 202206 / missing-author / 2206-9：文章缺少作者：陳碧玉看見自己的「我認為
+- [warning] 202206 / missing-author / 2206-8：文章缺少作者：蔡育展
+- [warning] 202206 / unknown-category / 2206-3：分類不在既有分類清單：如是我聞/疑義相與析
+- [warning] 202206 / missing-author / 2206-2：文章缺少作者：疑義相與析
+- [warning] 202206 / missing-author / 2206-5：文章缺少作者：——管窺老子在身體的道與德
+- [warning] 202206 / missing-author / 2206-4：文章缺少作者：陳宜
+- [warning] 202205 / missing-author / 2205-1：文章缺少作者：編輯部
+- [warning] 202205 / missing-author / 2205-7：文章缺少作者：阿充
+- [warning] 202205 / missing-author / 2205-5：文章缺少作者：識香課整理小組
+- [warning] 202205 / missing-author / 2205-9：文章缺少作者：蔡育展
+- [warning] 202205 / missing-author / 2205-4：文章缺少作者：傅金匙
+- [warning] 202205 / missing-author / 2205-2：文章缺少作者：群組討論
+- [warning] 202205 / missing-author / 2205-10：文章缺少作者：——陳哲甯的生死感悟
+- [warning] 202205 / missing-author / 2205-3：文章缺少作者：五晚
+- [warning] 202204 / missing-author / 2204-01：文章缺少作者：編輯部
+- [warning] 202204 / missing-author / 2204-06：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202204 / missing-author / 2204-10：文章缺少作者：蔡育展
+- [warning] 202204 / missing-author / 2204-11：文章缺少作者：李宗演的「按圖施工，不保證成功
+- [warning] 202204 / missing-author / 2204-03：文章缺少作者：疑義相與析
+- [warning] 202204 / missing-author / 2204-02：文章缺少作者：疑義相與析
+- [warning] 202203 / missing-author / 2203-6：文章缺少作者：阿充
+- [warning] 202203 / missing-author / 2203-7：文章缺少作者：蔡育展
+- [warning] 202203 / missing-author / 2203-8：文章缺少作者：從大溪地到台灣——James
+- [warning] 202203 / missing-author / 2203-2：文章缺少作者：疑義相與析
+- [warning] 202203 / missing-author / 2203-3：文章缺少作者：蕭怡萍（二早班）
+- [warning] 202203 / missing-author / 2203-4：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202202 / missing-author / 2202-1：文章缺少作者：編輯部
+- [warning] 202202 / unknown-category / 2202-5：分類不在既有分類清單：如是我聞/疑義相與析
+- [warning] 202202 / unknown-category / 2202-4：分類不在既有分類清單：如是我聞/疑義相與析
+- [warning] 202202 / missing-author / 2202-9：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202202 / unknown-category / 2202-3：分類不在既有分類清單：如是我聞/疑義相與析
+- [warning] 202202 / unknown-category / 2202-2：分類不在既有分類清單：如是我聞/疑義相與析
+- [warning] 202202 / missing-author / 2202-13：文章缺少作者：高袖桐
+- [warning] 202202 / missing-author / 2202-12：文章缺少作者：蔡育展
+- [warning] 202201 / missing-author / 2201-1：文章缺少作者：編輯部
+- [warning] 202201 / missing-author / 2201-10：文章缺少作者：阿充
+- [warning] 202201 / missing-author / 2201-12：文章缺少作者：蔡育展
+- [warning] 202112 / missing-author / 2112-1：文章缺少作者：編輯部
+- [warning] 202112 / missing-author / 2112-12：文章缺少作者：蔡育展
+- [warning] 202112 / missing-author / 2112-12：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202111 / missing-author / 2111-1：文章缺少作者：編輯部
+- [warning] 202111 / missing-author / 202111-2021-11-07：文章缺少作者：道場還是戰場？【2021-11-07交稿的版本】
+- [warning] 202111 / missing-author / 2111-12：文章缺少作者：阿充
+- [warning] 202111 / missing-author / 2111-14：文章缺少作者：鄭雅靜
+- [warning] 202110 / missing-author / 2110-1：文章缺少作者：編輯部
+- [warning] 202110 / unknown-category / 2110-5：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-4：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-3：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-6：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-9：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-8：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-7：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-2：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-12：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / unknown-category / 2110-11：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202110 / missing-author / 2110-13：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202110 / unknown-category / 2110-10：分類不在既有分類清單：專欄文章/視訊課的自由與孤獨
+- [warning] 202109 / missing-author / 2109-1：文章缺少作者：編輯部
+- [warning] 202109 / missing-author / 2109-6：文章缺少作者：沉香物語
+- [warning] 202109 / missing-author / 2109-7：文章缺少作者：鄧美玲
+- [warning] 202109 / missing-author / 202109-：文章缺少作者：雲霞滿紙 金瓶梅香觀
+- [warning] 202109 / missing-author / 2109-2：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202109 / missing-author / 2109-4：文章缺少作者：阿充
+- [warning] 202108 / missing-author / 2108-1：文章缺少作者：編輯部
+- [warning] 202108 / missing-author / 2108-7：文章缺少作者：◎沈寧衛
+- [warning] 202108 / missing-author / 202108-：文章缺少作者：王亞玲＿活色生香 愛慾金瓶梅
+- [warning] 202108 / missing-author / 2108-2：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202108 / missing-author / 2108-4：文章缺少作者：阿充
+- [warning] 202107 / missing-author / 2107-1：文章缺少作者：編輯部
+- [warning] 202107 / missing-author / 2107-5：文章缺少作者：香之物語
+- [warning] 202107 / missing-author / 2107-4-3：文章缺少作者：周小昱
+- [warning] 202107 / missing-author / 2107-4-2：文章缺少作者：余安邦
+- [warning] 202107 / missing-author / 2107-9：文章缺少作者：謝珪如
+- [warning] 202107 / missing-author / 2107-6：文章缺少作者：阿充
+- [warning] 202107 / missing-author / 2107-4-1：文章缺少作者：文稿彙整／識香課整理小組
+- [warning] 202605 / possible-duplicate / 2605-1, 2605-3-6, 2605-3-5, 2605-4, 2605-3-7, 2605-3-4, 2605-3-1, 2605-2, 2605-3-3, 2605-3-2, 2508-1, 2508-3, 2508-4, 2508-5, 2508-2-4, 2508-2-1, 2508-2-2, 2508-2-3, 2507-1, 2507-2-5, 2507-2-4, 2507-3, 2507-4, 2507-2-3, 2507-1-3, 2507-1-2, 2507-2-2, 2507-2-1, 2506-1, 2506-2-4, 2506-3, 2506-4, 2506-2-1, 2506-2-2, 2506-2-3, 2505-1, 2505-4, 2505-3-4, 2505-6, 2505-5, 2505-3-1, 2505-2, 2505-3-3, 2505-3-2, 2504-1, 2504-4, 2504-3, 2504-6, 2504-5, 2504-2-2, 2504-2-1, 2504-2-4, 2504-2-3, 2503-1, 2503-3, 2503-5, 2503-2-3, 2503-2-1, 2503-2-2, 2502-1, 2502-3-3, 2502-4-1, 2502-4-2, 2502-2, 2502-3-1, 2502-3-2, 2501-1-1, 2501-2-7, 2501-2-6, 2501-2-9, 2501-2-8, 2501-2-3, 2501-2-2, 2501-2-5, 2501-2-4, 2412-1, 2412-5, 2412-6, 2412-7, 2412-4, 2412-2-1, 2412-2-2, 2412-3, 2410-3, 2410-4, 2410-6, 2410-2-3, 24010-5, 2410-2-1, 2410-2-2, 2408-1, 2408-6, 2408-7, 2408-4, 2408-2, 2408-4, 2406-1, 2406-4, 2406-5, 2406-2, 2406-3, 2405-1, 2405-7, 2405-6, 2405-8, 2405-9, 2405-8, 2405-5, 2405-2, 202405, 2405-3, 2405-4-2, 2405-4-1, 2404-1, 2404-5, 2404-6, 2404-7, 2404-2, 2404-3, 2404-4, 2403-1, 2403-6, 2403-6, 2403-8, 2403-7, 2403-3, 2403-2, 2403-5, 2403-4, 2401-1, 2401-3, 2401-2-9, 2401-2-8, 2401-7, 2401-5, 2401-4, 2401-2-7, 2401-2-3, 2401-2-2, 2401-2-1, 2401-2-6, 2401-2-5, 2401-2-4, 2312-1, 2312-7, 2312-6, 2312-9, 2312-8, 2312-5, 2312-2, 2312-10, 2312-4, 2312-3, 2311-1, 2311-5, 2311-6, 2311-7, 2311-4, 2311-2, 2311-2, 2311-3, 2310-1, 2310-5, 2310-6, 2310-7, 2310-2, 2310-3, 2310-4, 2309-1, 2309-5, 2309-6, 2309-7, 2309-2, 2309-3, 2309-4, 2308-1, 2308-6, 2308-5, 2308-8, 2308-7, 2308-4, 2308-2, 2308-2-1, 2308-3, 2308-3-1, 2307-1, 2307-4, 2307-5, 2307-2, 2307-3, 2306-1, 2306-7, 2306-6, 2306-9, 2306-8, 2306-5, 2306-2, 2306-10, 2306-4, 2306-3, 2305-1, 2305-6, 2305-7, 2305-8, 2305-5, 2305-2, 2305-3, 2305-4, 2304-1, 2304-8, 2304-7, 202304-, 2304-9, 2304-6, 2304-3, 2304-2, 2304-5, 2304-4, 2303-1, 2303-7, 2303-6, 2303-8, 2303-7, 2303-3, 2303-2, 2303-5, 2303-4, 2302-1, 2302-5, 2302-4, 2302-3, 2302-8, 2302-7, 2302-6, 2302-2-7, 2302-2-3, 2302-2-2, 2302-2-1, 2302-2-6, 2302-2-5, 2302-2-4, 2301-3-6, 2301-3-7, 2301-3-4, 2301-3-5, 2301-3-8, 2301-5, 2301-6, 2301-3-9, 2301-4, 2301-2-3, 2301-2-4, 2301-2-1, 2301-2-2, 2301-2-6, 2301-3-2, 2301-3-3, 2301-3-11, 2301-3-1, 2212-1, 2212-6, 2212-5, 2212-7, 2212-8, 2212-9, 2212-10, 202211, 2212-2, 2212-4, 2212-3, 2211-1, 2211-7, 2211-6, 2211-9, 2211-8, 2211-3, 2211-2, 2211-5, 2211-4, 2211-6, 2211-8, 2211-9, 2211-2, 2211-3, 2211-4, 2208-1, 2208-5, 2208-6, 2208-7, 2208-2, 2208-3, 2208-4, 2207-1, 2207-16, 2207-15, 2207-02, 2207-17, 2207-12, 2207-11, 2207-14, 2207-13, 2206-1, 2206-7, 2206-6, 2206-9, 2206-8, 2206-3, 2206-2, 2206-5, 2206-4, 2205-1, 2205-7, 2205-5, 2205-9, 2205-8, 2205-4, 2205-2, 2205-10, 2205-4-1, 2205-3, 2204-01, 2204-08, 2204-06, 2204-10, 2204-9, 2204-11, 2204-03, 2204-02, 2204-04, 2204-06, 2204-05, 2203-6, 2203-7, 2203-8, 2203-5, 2203-2, 2203-3, 2203-4, 2202-1, 2202-5, 2202-4, 2202-6, 2202-9, 2202-8, 2202-7, 2202-3, 2202-11, 2202-10, 2202-10, 2202-2, 2202-13, 2202-12, 2201-1, 2201-5, 2201-6, 2201-9, 2201-8, 2201-7, 2201-4, 2201-11, 2201-10, 2201-12, 2201-3, 2201-2, 2112-1, 2112-4, 2112-3, 2112-5, 2112-9, 2112-8, 2112-12, 2112-11, 2112-12, 2112-10, 2112-13, 2111-1, 2111-5, 2111-6, 2111-7, 202111-2021-11-07, 2111-9, 2111-8, 2111-4, 2111-13, 2111-12, 2111-10, 2111-3, 2111-2, 2111-14, 2110-1, 2110-5, 2110-4, 2110-3, 2110-6, 2110-9, 2110-8, 2110-7, 2110-2, 2110-13, 2110-12, 2110-11, 2110-13, 2110-10, 2110-15, 2110-14, 2109-1, 2109-6, 2109-7, 202109-, 2109-5, 2109-2, 2109-3, 2109-4, 2108-1, 2108-6, 2108-7, 202108-, 2108-5, 2108-2, 2108-3, 2108-4, 2107-1, 2107-5, 2107-4-3, 2107-4-2, 2107-5, 2107-9, 2107-8, 2107-6, 2107-4-1, 2107-2-3, 2107-2-2, 2107-2-1, 2107-2-4, 2107-3-3, 2107-3-2, 2107-3-1：同一期內疑似重複文章標題：帶著靈魂衝浪吧！

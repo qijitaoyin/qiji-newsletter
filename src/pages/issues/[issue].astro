@@ -1,0 +1,131 @@
+---
+import "../../styles/global.css";
+import {
+  getArticlesByIssue,
+  issueArchives
+} from "../../data/articles";
+
+export function getStaticPaths() {
+  return issueArchives.map((issue) => ({
+    params: { issue: issue.id },
+    props: { issue }
+  }));
+}
+
+const { issue } = Astro.props;
+const issueArticles = getArticlesByIssue(issue.id);
+const issueGroups = issueArticles.reduce(
+  (groups, article) => {
+    groups[article.category] = groups[article.category] ?? [];
+    groups[article.category].push(article);
+    return groups;
+  },
+  {} as Record<string, typeof issueArticles>
+);
+const categories = Object.keys(issueGroups);
+const issueIndex = issueArchives.findIndex((item) => item.id === issue.id);
+const previousIssue = issueArchives[issueIndex + 1];
+const nextIssue = issueArchives[issueIndex - 1];
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={`${issue.label}文章目錄，共 ${issue.articleCount} 篇文章。`} />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>{issue.label} - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href="/#newest">最新一期</a>
+          <a href="/archive/" aria-current="page">歷史期數</a>
+          <a href="/topics/">主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="issue-hero">
+        <div>
+          <a href="/archive/">回歷史索引</a>
+          <p class="meta-line">
+            <span>{issue.issueNumber}</span>
+            <span>{issue.date}</span>
+            <span>{issue.articleCount} 篇文章</span>
+          </p>
+          <h1>{issue.label}</h1>
+          <p>本期收錄 {categories.join("、")} 等文章。</p>
+        </div>
+        <img src={issue.image} alt="" />
+      </section>
+
+      <section class="content-block" aria-labelledby="issue-list-title">
+        <div class="block-title feed-title">
+          <h2 id="issue-list-title">本期目錄</h2>
+          <div class="topic-links">
+            {categories.map((category) => <a href={`#category-${category}`}>{category}</a>)}
+          </div>
+        </div>
+        {categories.map((category) => (
+          <section class="issue-list-section" id={`category-${category}`}>
+            <div class="issue-list-heading">
+              <h3>{category}</h3>
+            </div>
+            <div class="issue-card-grid">
+              {issueGroups[category].map((article) => (
+                <article class="issue-card">
+                  <a href={`/articles/${article.slug}/`}>
+                    <img src={article.image} alt="" />
+                    <p class="meta-line">
+                      <span>{article.category}</span>
+                      <span>{article.readTime}</span>
+                    </p>
+                    <h4>{article.title}</h4>
+                    <p class="byline">{article.author}</p>
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
+      </section>
+
+      <nav class="article-pager" aria-label="上一期與下一期">
+        <a href={previousIssue ? previousIssue.href : "/archive/"}>
+          <span>上一期</span>
+          <strong>{previousIssue ? previousIssue.label : "回歷史索引"}</strong>
+        </a>
+        <a href={nextIssue ? nextIssue.href : "/archive/"}>
+          <span>下一期</span>
+          <strong>{nextIssue ? nextIssue.label : "回歷史索引"}</strong>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>中華氣機導引文化研究會</strong>
+        <p>10046台北市漢口街一段3號9樓</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

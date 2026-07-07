@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import { articleTags, articles } from "../data/articles";
+
+const activeTags = articleTags
+  .map((tag) => ({
+    ...tag,
+    count: articles.filter((article) => article.tags.includes(tag.label)).length
+  }))
+  .filter((tag) => tag.count > 0);
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="依主題瀏覽氣機導引電子報文章。" />
+    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <title>依主題瀏覽 - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href="/#newest">最新一期</a>
+          <a href="/archive/">歷史期數</a>
+          <a href="/topics/" aria-current="page">主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action="/archive/" aria-label="搜尋文章">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="tag-page-hero">
+        <a href="/">← 回首頁</a>
+        <h1>依主題瀏覽</h1>
+        <p>用文章主題快速找到同一類修煉筆記、身體經驗與道德經體證。</p>
+      </section>
+
+      <section class="content-block topics-page" aria-label="主題列表">
+        <div class="topic-grid">
+          {activeTags.map((tag) => (
+            <a href={`/tags/${tag.slug}/`}>
+              <strong>#{tag.label}</strong>
+              <span>{tag.description}</span>
+              <em>{tag.count} 篇文章</em>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>中華氣機導引文化研究會</strong>
+        <p>10046台北市漢口街一段3號9樓</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

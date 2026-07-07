@@ -1,0 +1,5 @@
+/review/*
+  X-Robots-Tag: noindex, nofollow
+
+/review
+  X-Robots-Tag: noindex, nofollow
