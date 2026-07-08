@@ -7,7 +7,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 if ([string]::IsNullOrWhiteSpace($Remote)) {
-  throw "Missing Google Drive remote. Set GOOGLE_DRIVE_REMOTE, for example qiji-drive:newsletter/各期電子報"
+  throw "Missing Google Drive remote. Set GOOGLE_DRIVE_REMOTE, for example qiji-drive:各期電子報"
 }
 
 $rclone = Get-Command rclone -ErrorAction SilentlyContinue
