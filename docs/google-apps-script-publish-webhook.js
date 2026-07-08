@@ -78,6 +78,17 @@ function doGet() {
   });
 }
 
+function setScriptProperties(config) {
+  if (!config || typeof config !== "object") {
+    throw new Error("setScriptProperties requires a config object.");
+  }
+  PropertiesService.getScriptProperties().setProperties(config, true);
+  return {
+    ok: true,
+    savedKeys: Object.keys(config)
+  };
+}
+
 function getPayloadText_(e) {
   if (e && e.postData && e.postData.contents) {
     return e.postData.contents;

@@ -12,6 +12,7 @@ dist/
 # Generated local handoff files
 review-publish.json
 review-approvals.local.json
+.apps-script-publish/
 
 # Logs
 *.log

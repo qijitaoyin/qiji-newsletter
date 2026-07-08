@@ -54,7 +54,7 @@ AI_LIMIT=0
 1. Click `Deploy > New deployment`.
 2. Select type: `Web app`.
 3. Execute as: `Me`.
-4. Who has access: choose the narrowest option that works for your reviewers.
+4. Who has access: choose `Anyone`.
 5. Deploy and copy the Web App URL.
 
 ## 4. Add The Web App URL To GitHub
