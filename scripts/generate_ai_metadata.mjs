@@ -115,21 +115,52 @@ const buildPrompt = (article) => [
 ].join("\n");
 
 const requestMetadata = async (article) => {
+  const prompt = [
+    "You are helping a Traditional Chinese newsletter website generate review-only metadata.",
+    "Return exactly one valid JSON object. Do not include Markdown, explanations, or code fences.",
+    'JSON schema: {"quote":"a highlighted sentence under 50 Chinese characters","tags":["2 to 5 short Traditional Chinese topic tags"],"summary":"a concise Traditional Chinese summary under 80 Chinese characters","themes":["3 to 6 short Traditional Chinese core themes"]}',
+    "",
+    "Rules:",
+    "1. quote must be copied or lightly compressed from the article and stay under 50 Chinese characters.",
+    "2. summary must be under 80 Chinese characters and describe the article, not the website.",
+    "3. tags should be reader-facing topic labels, not issue numbers, author names, or generic words.",
+    "4. themes can be broader than tags, but still concise.",
+    "5. Use Traditional Chinese for every value.",
+    "6. If the article is too short, still return valid JSON with your best concise suggestions.",
+    "",
+    `Category: ${article.category || ""}`,
+    `Title: ${article.title || ""}`,
+    `Author: ${article.author || ""}`,
+    "",
+    "Article text:",
+    articleText(article)
+  ].join("\n");
+
+  const requestBody = {
+    model,
+    messages: [
+      {
+        role: "system",
+        content:
+          'Return only valid JSON with keys "quote", "tags", "summary", and "themes". All values must be Traditional Chinese.'
+      },
+      { role: "user", content: prompt }
+    ],
+    temperature,
+    max_tokens: 700
+  };
+
+  if (provider === "kimi") {
+    requestBody.response_format = { type: "json_object" };
+  }
+
   const response = await fetch(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({
-      model,
-      messages: [
-        { role: "system", content: "你只輸出合法 JSON。" },
-        { role: "user", content: buildPrompt(article) }
-      ],
-      temperature,
-      max_tokens: 700
-    })
+    body: JSON.stringify(requestBody)
   });
 
   if (!response.ok) {
@@ -138,7 +169,13 @@ const requestMetadata = async (article) => {
   }
 
   const data = await response.json();
-  const text = data.choices?.[0]?.message?.content || "";
+  const choice = data.choices?.[0];
+  const text = choice?.message?.content || "";
+  if (!text.trim()) {
+    throw new Error(
+      `AI response is empty: finish_reason=${choice?.finish_reason || "unknown"} raw=${JSON.stringify(data).slice(0, 500)}`
+    );
+  }
   const parsed = parseAiJson(text);
 
   return {
@@ -331,3 +368,4 @@ const main = async () => {
 };
 
 await main();
+
