@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { pathFor } from "../utils/paths";
 import { articleTags, articles } from "../data/articles";
 
 const activeTags = articleTags
@@ -15,13 +16,13 @@ const activeTags = articleTags
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="依主題瀏覽氣機導引電子報文章。" />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>依主題瀏覽 - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -30,12 +31,12 @@ const activeTags = articleTags
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest">最新一期</a>
-          <a href="/archive/">歷史期數</a>
-          <a href="/topics/" aria-current="page">主題分類</a>
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")}>歷史期數</a>
+          <a href={pathFor("/topics/")} aria-current="page">主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="搜尋文章">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="搜尋文章">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -44,7 +45,7 @@ const activeTags = articleTags
 
     <main>
       <section class="tag-page-hero">
-        <a href="/">← 回首頁</a>
+        <a href={pathFor("/")}>← 回首頁</a>
         <h1>依主題瀏覽</h1>
         <p>用文章主題快速找到同一類修煉筆記、身體經驗與道德經體證。</p>
       </section>
@@ -52,7 +53,7 @@ const activeTags = articleTags
       <section class="content-block topics-page" aria-label="主題列表">
         <div class="topic-grid">
           {activeTags.map((tag) => (
-            <a href={`/tags/${tag.slug}/`}>
+            <a href={pathFor(`/tags/${tag.slug}/`)}>
               <strong>#{tag.label}</strong>
               <span>{tag.description}</span>
               <em>{tag.count} 篇文章</em>

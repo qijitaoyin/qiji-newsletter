@@ -1,7 +1,8 @@
-﻿---
+---
 import fs from "node:fs";
 import path from "node:path";
 import "../styles/global.css";
+import { pathFor } from "../utils/paths";
 import { reviewItems, reviewIssueIds, reviewSummary } from "../data/review";
 import {
   wordNormalizeIssueIds,
@@ -131,13 +132,13 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>上架校對 - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Import Review</small>
@@ -257,7 +258,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
               <ol>
                 {group.items.map((article) => (
                   <li>
-                    <a href={`/articles/${article.slug}/`} target="_blank" rel="noreferrer">
+                    <a href={pathFor(`/articles/${article.slug}/`)} target="_blank" rel="noreferrer">
                       <strong>{article.title}</strong>
                     </a>
                   </li>
@@ -288,7 +289,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
               data-article-title={article.title}
               data-article-category={article.category}
               data-article-author={article.author}
-              data-article-url={`/articles/${article.slug}/`}
+              data-article-url={pathFor(`/articles/${article.slug}/`)}
             >
               <header class="review-current-card-head">
                 <div>
@@ -644,7 +645,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
                       <span>{item.date || item.issueId}</span>
                     </p>
                     <div class="review-actions review-actions-inline">
-                      {item.slug && <a href={`/articles/${item.slug}/`}>閱讀預覽</a>}
+                      {item.slug && <a href={pathFor(`/articles/${item.slug}/`)}>閱讀預覽</a>}
                       {item.status !== "error" && <button type="button" data-approve-item>確認可上架</button>}
                       {item.status !== "error" && <button type="button" data-edit-item>局部修正</button>}
                       <button type="button" data-ignore-item>不需上架／忽略</button>

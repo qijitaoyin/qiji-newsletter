@@ -1,5 +1,6 @@
 ---
 import "../../styles/global.css";
+import { pathFor } from "../../utils/paths";
 import { articleTags, getArticlesByTag } from "../../data/articles";
 
 export function getStaticPaths() {
@@ -18,13 +19,13 @@ const tagArticles = getArticlesByTag(tag.label);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={`#${tag.label} 文章列表 - 氣機導引電子報`} />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>#{tag.label} - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -33,12 +34,12 @@ const tagArticles = getArticlesByTag(tag.label);
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest">最新一期</a>
-          <a href="/archive/">歷史期數</a>
-          <a href="/topics/" aria-current="page">主題分類</a>
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")}>歷史期數</a>
+          <a href={pathFor("/topics/")} aria-current="page">主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="搜尋文章">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="搜尋文章">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -47,7 +48,7 @@ const tagArticles = getArticlesByTag(tag.label);
 
     <main>
       <section class="tag-page-hero">
-        <a href="/topics/">← 依主題瀏覽</a>
+        <a href={pathFor("/topics/")}>← 依主題瀏覽</a>
         <h1>#{tag.label}</h1>
         <p>{tag.description}</p>
       </section>
@@ -56,7 +57,7 @@ const tagArticles = getArticlesByTag(tag.label);
         <div class="tag-results">
           {tagArticles.map((article) => (
             <article class="tag-result-card has-no-image">
-              <a href={`/articles/${article.slug}/`}>
+              <a href={pathFor(`/articles/${article.slug}/`)}>
                 <div>
                   <p class="meta-line"><span>{article.category}</span><span>{article.date}</span></p>
                   <h2>{article.title}</h2>

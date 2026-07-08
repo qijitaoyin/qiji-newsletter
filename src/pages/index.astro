@@ -5,6 +5,7 @@ import {
   latestIssueArchive,
   latestIssueArticles
 } from "../data/articles";
+import { pathFor } from "../utils/paths";
 
 const heroArticles = latestIssueArticles.slice(0, 3);
 const editorNote = latestIssueArticles[0];
@@ -24,7 +25,7 @@ const throwbackCandidates = articles
   .map((article) => ({
     title: article.title,
     meta: `${article.date.slice(0, 4)} ・ ${article.issue} ・ ${article.author}`,
-    href: `/articles/${article.slug}/`,
+    href: pathFor(`/articles/${article.slug}/`),
     image: article.image || ""
   }));
 const throwbackFallback = throwbackCandidates[0];
@@ -36,13 +37,13 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="氣機導引電子報，收錄最新一期與歷史文章。" />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -51,12 +52,12 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest" aria-current="page">最新一期</a>
-          <a href="/archive/">歷史期數</a>
-          <a href="/topics/">主題分類</a>
+          <a href={pathFor("/#newest")} aria-current="page">最新一期</a>
+          <a href={pathFor("/archive/")}>歷史期數</a>
+          <a href={pathFor("/topics/")}>主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="站內搜尋">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -77,11 +78,11 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
                 </p>
                 {index === 0 ? (
                   <h1 id="hero-title">
-                    <a class="hero-title-link" href={`/articles/${article.slug}/`}>{article.title}</a>
+                    <a class="hero-title-link" href={pathFor(`/articles/${article.slug}/`)}>{article.title}</a>
                   </h1>
                 ) : (
                   <h2>
-                    <a class="hero-title-link" href={`/articles/${article.slug}/`}>{article.title}</a>
+                    <a class="hero-title-link" href={pathFor(`/articles/${article.slug}/`)}>{article.title}</a>
                   </h2>
                 )}
                 <p class="byline">{article.author || "氣機導引編輯部"}　{article.date}</p>
@@ -115,7 +116,7 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
             </div>
             <div class="issue-card-grid issue-card-grid-single issue-editor-grid">
               <article class="issue-card">
-                <a href={`/articles/${editorNote.slug}/`}>
+                <a href={pathFor(`/articles/${editorNote.slug}/`)}>
                   <img src={editorNote.image} alt="" />
                   <div>
                     <p class="meta-line"><span>{editorNote.category}</span><span>{editorNote.author}</span></p>
@@ -136,7 +137,7 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
             <div class="issue-card-grid">
               {group.articles.map((article, index) => (
                 <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
-                  <a href={`/articles/${article.slug}/`}>
+                  <a href={pathFor(`/articles/${article.slug}/`)}>
                     <img src={article.image} alt="" />
                     <p class="meta-line"><span>{article.category}</span><span>{article.author}</span></p>
                     <h4>{article.title}</h4>

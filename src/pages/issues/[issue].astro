@@ -1,5 +1,6 @@
 ---
 import "../../styles/global.css";
+import { pathFor } from "../../utils/paths";
 import {
   getArticlesByIssue,
   issueArchives
@@ -33,13 +34,13 @@ const nextIssue = issueArchives[issueIndex - 1];
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={`${issue.label}文章目錄，共 ${issue.articleCount} 篇文章。`} />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>{issue.label} - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -48,12 +49,12 @@ const nextIssue = issueArchives[issueIndex - 1];
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest">最新一期</a>
-          <a href="/archive/" aria-current="page">歷史期數</a>
-          <a href="/topics/">主題分類</a>
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")} aria-current="page">歷史期數</a>
+          <a href={pathFor("/topics/")}>主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="站內搜尋">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -63,7 +64,7 @@ const nextIssue = issueArchives[issueIndex - 1];
     <main>
       <section class="issue-hero">
         <div>
-          <a href="/archive/">回歷史索引</a>
+          <a href={pathFor("/archive/")}>回歷史索引</a>
           <p class="meta-line">
             <span>{issue.issueNumber}</span>
             <span>{issue.date}</span>
@@ -90,7 +91,7 @@ const nextIssue = issueArchives[issueIndex - 1];
             <div class="issue-card-grid">
               {issueGroups[category].map((article) => (
                 <article class="issue-card">
-                  <a href={`/articles/${article.slug}/`}>
+                  <a href={pathFor(`/articles/${article.slug}/`)}>
                     <img src={article.image} alt="" />
                     <p class="meta-line">
                       <span>{article.category}</span>

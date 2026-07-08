@@ -39,6 +39,8 @@ jobs:
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
+      PUBLIC_SITE_URL: https://qijitaoyin.github.io
+      PUBLIC_BASE_PATH: /qiji-newsletter/
     steps:
       - name: Checkout
         uses: actions/checkout@v4

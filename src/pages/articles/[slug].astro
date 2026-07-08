@@ -1,5 +1,6 @@
 ---
 import "../../styles/global.css";
+import { pathFor } from "../../utils/paths";
 import {
   articleTags,
   articles,
@@ -53,13 +54,13 @@ const issueMenuGroups = issueArticles.reduce(
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={article.excerpt} />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>{article.title} - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -68,12 +69,12 @@ const issueMenuGroups = issueArticles.reduce(
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest">最新一期</a>
-          <a href="/archive/">歷史期數</a>
-          <a href="/topics/">主題分類</a>
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")}>歷史期數</a>
+          <a href={pathFor("/topics/")}>主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="搜尋文章">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="搜尋文章">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -117,7 +118,7 @@ const issueMenuGroups = issueArticles.reduce(
                   <span class="article-issue-group-title">{group.category}</span>
                   {group.items.map((item) => (
                     <a
-                      href={`/articles/${item.slug}/`}
+                      href={pathFor(`/articles/${item.slug}/`)}
                       class:list={{ "is-current": item.slug === article.slug }}
                       aria-current={item.slug === article.slug ? "page" : undefined}
                     >
@@ -132,7 +133,7 @@ const issueMenuGroups = issueArticles.reduce(
               <strong>主題分類</strong>
               <div class="article-tag-list">
                 {article.tags.map((tag) => (
-                  <a href={`/tags/${tagByLabel[tag]?.slug ?? tag}/`}>{tag}</a>
+                  <a href={pathFor(`/tags/${tagByLabel[tag]?.slug ?? tag}/`)}>{tag}</a>
                 ))}
               </div>
             </div>
@@ -179,11 +180,11 @@ const issueMenuGroups = issueArticles.reduce(
       </article>
 
       <nav class="article-pager" aria-label="上一篇與下一篇">
-        <a href={`/articles/${previousArticle.slug}/`}>
+        <a href={pathFor(`/articles/${previousArticle.slug}/`)}>
           <span>上一篇</span>
           <strong>{previousArticle.title}</strong>
         </a>
-        <a href={`/articles/${nextArticle.slug}/`}>
+        <a href={pathFor(`/articles/${nextArticle.slug}/`)}>
           <span>下一篇</span>
           <strong>{nextArticle.title}</strong>
         </a>
@@ -196,7 +197,7 @@ const issueMenuGroups = issueArticles.reduce(
         <div class="compact-grid">
           {relatedArticles.map((item) => (
             <article>
-              <a href={`/articles/${item.slug}/`}>
+              <a href={pathFor(`/articles/${item.slug}/`)}>
                 {item.image && !item.image.includes("/assets/qiji-logo") && <img src={item.image} alt="" />}
                 <div>
                   <p class="meta-line"><span>{item.category}</span><span>{item.date}</span></p>

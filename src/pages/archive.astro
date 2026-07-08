@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { pathFor } from "../utils/paths";
 import { articles, issueArchives } from "../data/articles";
 
 const issueMap = Object.fromEntries(issueArchives.map((issue) => [issue.id, issue]));
@@ -111,13 +112,13 @@ const totalArticles = articles.length;
       name="description"
       content="氣機導引電子報歷史文章索引，可依年份、月份、文章標題、作者或分類搜尋並預覽文章。"
     />
-    <link rel="icon" href="/assets/qiji-logo.png" type="image/png" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>歷史文章索引 - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/" aria-label="氣機導引電子報首頁">
-        <span class="brand-mark"><img src="/assets/qiji-logo.png" alt="" /></span>
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
         <span class="brand-text">
           <strong>氣機導引電子報</strong>
           <small>Qiji Newsletter</small>
@@ -126,12 +127,12 @@ const totalArticles = articles.length;
 
       <div class="header-actions">
         <nav class="top-nav" aria-label="主要導覽">
-          <a href="/#newest">最新一期</a>
-          <a href="/archive/" aria-current="page">歷史期數</a>
-          <a href="/topics/">主題分類</a>
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")} aria-current="page">歷史期數</a>
+          <a href={pathFor("/topics/")}>主題分類</a>
           <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
         </nav>
-        <form class="site-search" action="/archive/" aria-label="站內搜尋">
+        <form class="site-search" action={pathFor("/archive/")} aria-label="站內搜尋">
           <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
           <button type="submit" aria-label="搜尋">SEARCH</button>
         </form>
@@ -140,7 +141,7 @@ const totalArticles = articles.length;
 
     <main>
       <section class="tag-page-hero">
-        <a href="/">回首頁</a>
+        <a href={pathFor("/")}>回首頁</a>
         <h1>歷史文章索引</h1>
         <p>依年份與月份收合文章。點選左側文章可在右側預覽，確認後再進入完整閱讀頁。</p>
       </section>
@@ -188,7 +189,7 @@ const totalArticles = articles.length;
                       <ul>
                         {monthGroup.articles.map((article) => {
                           const issue = issueMap[article.issueId];
-                          const href = `/articles/${article.slug}/`;
+                          const href = pathFor(`/articles/${article.slug}/`);
                           return (
                             <li
                               data-archive-tree-item
@@ -234,7 +235,7 @@ const totalArticles = articles.length;
               <div class="archive-preview-body" data-preview-body>
                 {getPreviewText(initialArticle).split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
               </div>
-              <a class="archive-preview-link" href={`/articles/${initialArticle?.slug}/`} data-preview-href target="_blank" rel="noreferrer">
+              <a class="archive-preview-link" href={pathFor(`/articles/${initialArticle?.slug}/`)} data-preview-href target="_blank" rel="noreferrer">
                 閱讀全文
               </a>
             </article>
@@ -242,7 +243,7 @@ const totalArticles = articles.length;
             <div class="archive-result-list" data-archive-results hidden>
               {articles.map((article) => {
                 const issue = issueMap[article.issueId];
-                const href = `/articles/${article.slug}/`;
+                const href = pathFor(`/articles/${article.slug}/`);
                 return (
                   <article
                     class="archive-result-row"

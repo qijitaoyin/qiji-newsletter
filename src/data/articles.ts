@@ -1,6 +1,7 @@
 import { generatedArticles, generatedIssues } from "./generatedArticles";
 import editorialOverrides from "./editorialOverrides.json";
 import aiMetadata from "./aiMetadata.json";
+import { pathFor } from "../utils/paths";
 
 export type ArticleSection = {
   heading?: string;
@@ -318,12 +319,35 @@ const withAutoTags = (article: Article): Article => {
   };
 };
 
+const withBasePaths = (article: Article): Article => ({
+  ...article,
+  homeAnchor: pathFor(article.homeAnchor),
+  image: pathFor(article.image),
+  images: article.images?.map((image) => ({
+    ...image,
+    src: pathFor(image.src)
+  })),
+  contentBlocks: article.contentBlocks?.map((block) =>
+    block.type === "image"
+      ? {
+          ...block,
+          src: pathFor(block.src)
+        }
+      : block
+  )
+});
+
 export const articles: Article[] = generatedArticles
   .map(withNormalizedTitleAndAuthor)
   .map(withAutoTags)
+  .map(withBasePaths)
   .sort((a, b) => b.issueId.localeCompare(a.issueId) || compareArticlesInIssue(a, b));
 
-export const issueArchives: IssueArchive[] = generatedIssues;
+export const issueArchives: IssueArchive[] = generatedIssues.map((issue) => ({
+  ...issue,
+  href: pathFor(issue.href),
+  image: pathFor(issue.image)
+}));
 
 export const latestIssueArchive = issueArchives[0];
 export const latestIssueArticles = articles.filter(
@@ -340,8 +364,8 @@ export const latestIssue = {
   summary: latestIssueArchive
     ? `${latestIssueArchive.date} 電子報收錄 ${latestIssueArchive.articleCount} 篇文章。`
     : "氣機導引電子報歷史文章。",
-  href: latestIssueArchive?.href ?? "/archive/",
-  image: latestIssueArchive?.image ?? "/assets/qiji-logo.png"
+  href: latestIssueArchive?.href ?? pathFor("/archive/"),
+  image: latestIssueArchive?.image ?? pathFor("/assets/qiji-logo.png")
 };
 
 const tagDescriptions: Record<string, string> = {
