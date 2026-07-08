@@ -18,6 +18,9 @@ const model =
   process.env.KIMI_MODEL ||
   process.env.OPENAI_MODEL ||
   (provider === "kimi" ? "kimi-k2.6" : "gpt-5.5");
+const temperature = Number.parseFloat(
+  process.env.AI_TEMPERATURE || (provider === "kimi" ? "1" : "0.2")
+);
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
@@ -124,7 +127,7 @@ const requestMetadata = async (article) => {
         { role: "system", content: "你只輸出合法 JSON。" },
         { role: "user", content: buildPrompt(article) }
       ],
-      temperature: 0.2,
+      temperature,
       max_tokens: 700
     })
   });
