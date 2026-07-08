@@ -7,8 +7,16 @@ const generatedArticlesPath = path.join(root, "src/data/generatedArticles.ts");
 const aiMetadataPath = path.join(root, "src/data/aiMetadata.json");
 const reportPath = path.join(root, "reports/ai-metadata-report.json");
 
-const apiKey = process.env.OPENAI_API_KEY;
-const model = process.env.OPENAI_MODEL || "gpt-5.5";
+const provider = process.env.AI_PROVIDER || (process.env.KIMI_API_KEY ? "kimi" : "openai");
+const apiKey = process.env.KIMI_API_KEY || process.env.OPENAI_API_KEY || process.env.AI_API_KEY;
+const apiBaseUrl =
+  process.env.AI_API_BASE_URL ||
+  (provider === "kimi" ? "https://api.moonshot.ai/v1" : "https://api.openai.com/v1");
+const model =
+  process.env.AI_MODEL ||
+  process.env.KIMI_MODEL ||
+  process.env.OPENAI_MODEL ||
+  (provider === "kimi" ? "kimi-k2.5" : "gpt-5.5");
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
@@ -18,15 +26,6 @@ const readJson = (filePath, fallback) => {
   const raw = fs.readFileSync(filePath, "utf8").trim();
   if (!raw) return fallback;
   return JSON.parse(raw);
-};
-
-const normalizeOutputText = (response) => {
-  if (typeof response.output_text === "string") return response.output_text;
-  return (response.output || [])
-    .flatMap((item) => item.content || [])
-    .map((part) => part.text || "")
-    .join("")
-    .trim();
 };
 
 const extractExportedArray = (source, name) => {
@@ -66,24 +65,27 @@ const parseAiJson = (text) => {
   return JSON.parse(trimmed.slice(first, last + 1));
 };
 
-const requestMetadata = async (article) => {
-  const prompt = [
-    "你是氣機導引電子報的編輯助理，請根據文章內容產生網站 metadata。",
-    "請只回傳有效 JSON，不要加入 Markdown 或額外說明。",
-    'JSON schema: {"quote":"50字以內的重點金句","tags":["2到5個中文主題標籤"]}',
-    "規則：",
-    "1. quote 必須從文章精神萃取，適合放在網站首頁或文章摘要，長度必須在 50 個中文字以內。",
-    "2. tags 使用精簡中文名詞，不要超過 5 個；可包含既有分類，但不要產生太細碎的標籤。",
-    "3. 不要捏造文章沒有的內容，不要加入作者名、日期或期數。",
-    "",
-    `文章分類：${article.category || ""}`,
-    `文章標題：${article.title || ""}`,
-    `作者：${article.author || ""}`,
-    "正文：",
-    articleText(article)
-  ].join("\n");
+const buildPrompt = (article) => [
+  "你是氣機導引電子報的繁體中文編輯助理，請根據文章內容產生網站用 metadata。",
+  "只回傳 JSON，不要 Markdown，不要解釋。",
+  'JSON schema: {"quote":"50字以內的重點金句","tags":["2到5個中文主題標籤"]}',
+  "",
+  "規則：",
+  "1. quote 必須是 50 個中文字以內，適合放在首頁或文章摘要的重點金句。",
+  "2. quote 可以精煉原文意思，但不可編造文章沒有的主張。",
+  "3. tags 使用簡短中文詞，最多 5 個，不要放作者、日期、期數或文章分類本身。",
+  "4. 若文章內容不足以判斷，quote 請留空字串，tags 請留空陣列。",
+  "",
+  `文章分類：${article.category || ""}`,
+  `文章標題：${article.title || ""}`,
+  `作者：${article.author || ""}`,
+  "",
+  "文章內容：",
+  articleText(article)
+].join("\n");
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
+const requestMetadata = async (article) => {
+  const response = await fetch(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -91,18 +93,29 @@ const requestMetadata = async (article) => {
     },
     body: JSON.stringify({
       model,
-      input: prompt,
-      max_output_tokens: 500
+      messages: [
+        {
+          role: "system",
+          content: "你只輸出合法 JSON。"
+        },
+        {
+          role: "user",
+          content: buildPrompt(article)
+        }
+      ],
+      temperature: 0.2,
+      max_tokens: 500
     })
   });
 
   if (!response.ok) {
     const errorText = await response.text();
-    throw new Error(`OpenAI API failed for ${article.slug}: ${response.status} ${errorText}`);
+    throw new Error(`AI API failed for ${article.slug}: ${response.status} ${errorText}`);
   }
 
   const data = await response.json();
-  const parsed = parseAiJson(normalizeOutputText(data));
+  const text = data.choices?.[0]?.message?.content || "";
+  const parsed = parseAiJson(text);
   const quote = String(parsed.quote || "").trim().slice(0, 50);
   const tags = Array.isArray(parsed.tags)
     ? parsed.tags.map((tag) => String(tag).trim()).filter(Boolean).slice(0, 5)
@@ -117,11 +130,11 @@ const main = async () => {
   if (!apiKey) {
     const report = {
       status: "skipped",
-      reason: "OPENAI_API_KEY is not set",
+      reason: "KIMI_API_KEY, OPENAI_API_KEY, or AI_API_KEY is not set",
       generatedAt: new Date().toISOString()
     };
     fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf8");
-    console.log("OPENAI_API_KEY is not set; skipped AI metadata generation.");
+    console.log("No AI API key is set; skipped AI metadata generation.");
     return;
   }
 
@@ -163,6 +176,8 @@ const main = async () => {
       {
         status: "done",
         generatedAt: new Date().toISOString(),
+        provider,
+        apiBaseUrl,
         issueId,
         model,
         count: results.length,
@@ -173,7 +188,7 @@ const main = async () => {
     ),
     "utf8"
   );
-  console.log(`AI metadata completed: ${results.length} article(s), issue=${issueId}`);
+  console.log(`AI metadata completed: ${results.length} article(s), provider=${provider}, issue=${issueId}`);
 };
 
 await main();

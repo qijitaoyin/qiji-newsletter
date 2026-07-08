@@ -39,7 +39,11 @@ jobs:
     env:
       RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
       GOOGLE_DRIVE_REMOTE: ${{ vars.GOOGLE_DRIVE_REMOTE }}
+      KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      AI_PROVIDER: ${{ vars.AI_PROVIDER }}
+      AI_API_BASE_URL: ${{ vars.AI_API_BASE_URL }}
+      AI_MODEL: ${{ vars.AI_MODEL }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
@@ -87,7 +91,7 @@ jobs:
           }
 
       - name: Generate AI metadata
-        if: ${{ inputs.run_ai == 'true' && env.OPENAI_API_KEY != '' }}
+        if: ${{ inputs.run_ai == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
         run: pnpm ai:metadata
 
       - name: Apply review publish confirmation
