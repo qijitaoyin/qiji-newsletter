@@ -19,7 +19,7 @@ const model =
   process.env.OPENAI_MODEL ||
   (provider === "kimi" ? "kimi-k2.6" : "gpt-5.5");
 const temperature = Number.parseFloat(
-  process.env.AI_TEMPERATURE || (provider === "kimi" ? "1" : "0.2")
+  process.env.AI_TEMPERATURE || (provider === "kimi" ? "0.6" : "0.2")
 );
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
