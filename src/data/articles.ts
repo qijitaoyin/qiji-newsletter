@@ -3,6 +3,24 @@ import editorialOverrides from "./editorialOverrides.json";
 import aiMetadata from "./aiMetadata.json";
 import { pathFor } from "../utils/paths";
 
+const typedAiMetadata = aiMetadata as {
+  quotes?: Record<string, string>;
+  tags?: Record<string, string[]>;
+  summaries?: Record<string, string>;
+  themes?: Record<string, string[]>;
+  similar?: Record<string, string[]>;
+  articles?: Record<
+    string,
+    {
+      quote?: string;
+      tags?: string[];
+      summary?: string;
+      themes?: string[];
+      similarCandidates?: string[];
+    }
+  >;
+};
+
 export type ArticleSection = {
   heading?: string;
   paragraphs: string[];
@@ -45,6 +63,10 @@ export type Article = {
   contentBlocks?: ArticleContentBlock[];
   images?: ArticleImage[];
   tags: string[];
+  aiQuote?: string;
+  aiSummary?: string;
+  aiThemes?: string[];
+  aiSimilarSlugs?: string[];
   order: number;
 };
 
@@ -295,10 +317,15 @@ const articleSearchText = (article: Article) =>
     .filter(Boolean)
     .join("\n");
 
+const aiArticleMetadata = typedAiMetadata.articles ?? {};
+
+const metadataFor = (article: Article) => aiArticleMetadata[article.slug] ?? {};
+
 const withAutoTags = (article: Article): Article => {
   const text = articleSearchText(article);
   const manualTags = editorialOverrides.tags?.[article.slug];
-  const aiTags = aiMetadata.tags?.[article.slug];
+  const ai = metadataFor(article);
+  const aiTags = ai.tags?.length ? ai.tags : typedAiMetadata.tags?.[article.slug];
   const tags = new Set(manualTags?.length ? manualTags : aiTags?.length ? aiTags : article.tags);
   let autoTagCount = 0;
 
@@ -315,7 +342,11 @@ const withAutoTags = (article: Article): Article => {
 
   return {
     ...article,
-    tags: Array.from(tags)
+    tags: Array.from(tags),
+    aiQuote: editorialOverrides.quotes?.[article.slug] ?? ai.quote ?? typedAiMetadata.quotes?.[article.slug],
+    aiSummary: ai.summary ?? typedAiMetadata.summaries?.[article.slug],
+    aiThemes: ai.themes ?? typedAiMetadata.themes?.[article.slug] ?? [],
+    aiSimilarSlugs: ai.similarCandidates ?? typedAiMetadata.similar?.[article.slug] ?? []
   };
 };
 
@@ -453,6 +484,10 @@ export const getRelatedArticles = (currentSlug: string) => {
     return articles.filter((article) => article.slug !== currentSlug).slice(0, 3);
   }
 
+  const aiRelated = (current.aiSimilarSlugs ?? [])
+    .map((slug) => getArticleBySlug(slug))
+    .filter((article): article is Article => Boolean(article) && article.slug !== currentSlug);
+
   const related = articles
     .filter((article) => article.slug !== currentSlug)
     .map((article) => ({
@@ -463,5 +498,7 @@ export const getRelatedArticles = (currentSlug: string) => {
     }))
     .sort((a, b) => b.score - a.score);
 
-  return related.slice(0, 3).map((item) => item.article);
+  const fallback = related.map((item) => item.article);
+  return [...aiRelated, ...fallback.filter((article) => !aiRelated.some((item) => item.slug === article.slug))]
+    .slice(0, 3);
 };

@@ -20,6 +20,7 @@ const monthNames = [
 ];
 
 const getPreviewText = (article: (typeof articles)[number]) =>
+  article.aiSummary ||
   article.sections
     .flatMap((section) => section.paragraphs)
     .filter(Boolean)
@@ -29,6 +30,7 @@ const getPreviewText = (article: (typeof articles)[number]) =>
 const getBodySearchText = (article: (typeof articles)[number]) =>
   [
     article.excerpt,
+    article.aiSummary,
     ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs]),
     ...(article.contentBlocks ?? []).map((block) => (block.type === "image" ? block.caption ?? "" : block.text))
   ]
@@ -41,6 +43,8 @@ const getSearchText = (article: (typeof articles)[number]) =>
     article.author,
     article.category,
     article.tags.join(" "),
+    article.aiSummary,
+    article.aiThemes?.join(" "),
     article.issue,
     article.excerpt,
     ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs]),

@@ -9,10 +9,18 @@ import {
   wordNormalizeItems,
   wordNormalizeSummary
 } from "../data/wordNormalizeReview";
-import { latestIssueArticles, latestIssueArchive } from "../data/articles";
+import { articles, latestIssueArticles, latestIssueArchive } from "../data/articles";
 import aiMetadata from "../data/aiMetadata.json";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
+
+const typedAiMetadata = aiMetadata as {
+  quotes?: Record<string, string>;
+  tags?: Record<string, string[]>;
+  summaries?: Record<string, string>;
+  themes?: Record<string, string[]>;
+  similar?: Record<string, string[]>;
+};
 
 type ReviewAiOverrides = {
   quotes?: Record<string, string>;
@@ -101,7 +109,7 @@ const previewBlocksFor = (article: (typeof latestIssueArticles)[number]) =>
 const quoteSuggestionFor = (article: (typeof latestIssueArticles)[number]) => {
   const manualQuote = aiOverrides.quotes?.[article.slug]?.trim();
   if (manualQuote) return manualQuote;
-  const aiQuote = aiMetadata.quotes?.[article.slug]?.trim();
+  const aiQuote = typedAiMetadata.quotes?.[article.slug]?.trim();
   if (aiQuote) return aiQuote.length > 50 ? `${aiQuote.slice(0, 49)}…` : aiQuote;
 
   const paragraphs = article.sections.flatMap((section) => section.paragraphs);
@@ -125,9 +133,22 @@ const quoteSourceFor = (article: (typeof latestIssueArticles)[number]) =>
 const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
   aiOverrides.tags?.[article.slug]?.length
     ? aiOverrides.tags[article.slug]
-    : aiMetadata.tags?.[article.slug]?.length
-      ? aiMetadata.tags[article.slug]
+    : typedAiMetadata.tags?.[article.slug]?.length
+      ? typedAiMetadata.tags[article.slug]
       : [article.category, ...article.tags.filter((tag) => tag !== article.category).slice(0, 4)];
+const summarySuggestionFor = (article: (typeof latestIssueArticles)[number]) =>
+  article.aiSummary || typedAiMetadata.summaries?.[article.slug] || "";
+const themeSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
+  article.aiThemes?.length ? article.aiThemes : typedAiMetadata.themes?.[article.slug] ?? [];
+const similarSuggestionsFor = (article: (typeof latestIssueArticles)[number]) => {
+  const slugs = article.aiSimilarSlugs?.length
+    ? article.aiSimilarSlugs
+    : typedAiMetadata.similar?.[article.slug] ?? [];
+  return slugs
+    .map((slug) => articles.find((item) => item.slug === slug))
+    .filter((item): item is (typeof articles)[number] => Boolean(item))
+    .slice(0, 3);
+};
 ---
 
 <html lang="zh-Hant">
@@ -279,6 +300,9 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
           const quoteSuggestion = quoteSuggestionFor(article);
           const quoteSource = quoteSourceFor(article);
           const tagSuggestions = tagSuggestionsFor(article);
+          const summarySuggestion = summarySuggestionFor(article);
+          const themeSuggestions = themeSuggestionsFor(article);
+          const similarSuggestions = similarSuggestionsFor(article);
           const tabs = [
             ["info", "文章資料"],
             ["desktop", "電腦預覽"],
@@ -342,6 +366,34 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
                       <h4>{quoteSource === "manual" ? "人工指定重點金句" : "建議重點金句"}</h4>
                       <blockquote>{quoteSuggestion}</blockquote>
                     </div>
+                    {summarySuggestion && (
+                      <div>
+                        <h4>建議短摘要</h4>
+                        <p>{summarySuggestion}</p>
+                      </div>
+                    )}
+                    {themeSuggestions.length > 0 && (
+                      <div>
+                        <h4>文章核心主題</h4>
+                        <div class="review-ai-tags">
+                          {themeSuggestions.map((theme) => <span>{theme}</span>)}
+                        </div>
+                      </div>
+                    )}
+                    {similarSuggestions.length > 0 && (
+                      <div>
+                        <h4>相似文章候選</h4>
+                        <ul class="review-ai-related">
+                          {similarSuggestions.map((item) => (
+                            <li>
+                              <a href={pathFor(`/articles/${item.slug}/`)} target="_blank" rel="noreferrer">
+                                {item.title}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <p>{quoteSource === "manual"
                         ? "此金句已由校對意見指定，來源為網站附加資料。若需再調整，請在修正意見中指定新金句，發布時會重新套用。"
                         : "AI 建議目前只作為校對參考。若要採用校對者指定版本，請在修正意見中直接寫希望採用的金句，上架人員可在待辦區按「採用為網站資料」。"}</p>

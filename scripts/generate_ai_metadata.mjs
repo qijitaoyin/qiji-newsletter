@@ -1,3 +1,4 @@
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
@@ -16,7 +17,7 @@ const model =
   process.env.AI_MODEL ||
   process.env.KIMI_MODEL ||
   process.env.OPENAI_MODEL ||
-  (provider === "kimi" ? "kimi-k2.5" : "gpt-5.5");
+  (provider === "kimi" ? "kimi-k2.6" : "gpt-5.5");
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
@@ -42,7 +43,9 @@ const extractExportedArray = (source, name) => {
   return vm.runInNewContext(code, {}, { timeout: 5000 });
 };
 
-const articleText = (article) => {
+const compactText = (value) => String(value || "").replace(/\s+/g, " ").trim();
+
+const articleText = (article, maxLength = 6000) => {
   const blocks = Array.isArray(article.contentBlocks)
     ? article.contentBlocks.map((block) => block.text || block.caption || "")
     : [];
@@ -54,8 +57,25 @@ const articleText = (article) => {
     .join("\n")
     .replace(/\s+/g, " ")
     .trim()
-    .slice(0, 6000);
+    .slice(0, maxLength);
 };
+
+const contentHashFor = (article) => {
+  const payload = {
+    slug: article.slug,
+    sourceId: article.sourceId,
+    issueId: article.issueId,
+    title: article.title,
+    category: article.category,
+    author: article.author,
+    date: article.date,
+    text: articleText(article, 20000)
+  };
+  return crypto.createHash("sha256").update(JSON.stringify(payload)).digest("hex");
+};
+
+const sourceKeyFor = (article) =>
+  [article.issueId, article.sourceId, article.slug].filter(Boolean).join(":");
 
 const parseAiJson = (text) => {
   const trimmed = text.trim().replace(/^```json\s*/i, "").replace(/```$/i, "").trim();
@@ -65,16 +85,23 @@ const parseAiJson = (text) => {
   return JSON.parse(trimmed.slice(first, last + 1));
 };
 
+const normalizeStringArray = (value, maxItems) =>
+  Array.isArray(value)
+    ? value.map((item) => String(item).trim()).filter(Boolean).slice(0, maxItems)
+    : [];
+
 const buildPrompt = (article) => [
-  "你是氣機導引電子報的繁體中文編輯助理，請根據文章內容產生網站用 metadata。",
+  "你是氣機導引電子報的繁體中文編輯助理，請根據文章內容產生網站用 AI metadata。",
   "只回傳 JSON，不要 Markdown，不要解釋。",
-  'JSON schema: {"quote":"50字以內的重點金句","tags":["2到5個中文主題標籤"]}',
+  'JSON schema: {"quote":"50字以內的重點金句","tags":["2到5個中文主題標籤"],"summary":"80字以內短摘要","themes":["3到6個文章核心主題"]}',
   "",
   "規則：",
   "1. quote 必須是 50 個中文字以內，適合放在首頁或文章摘要的重點金句。",
   "2. quote 可以精煉原文意思，但不可編造文章沒有的主張。",
-  "3. tags 使用簡短中文詞，最多 5 個，不要放作者、日期、期數或文章分類本身。",
-  "4. 若文章內容不足以判斷，quote 請留空字串，tags 請留空陣列。",
+  "3. summary 必須是 80 個中文字以內，說明本文重點，不要加入作者、日期或期數。",
+  "4. tags 使用簡短中文詞，最多 5 個，不要放作者、日期、期數或文章分類本身。",
+  "5. themes 可比 tags 稍具體，用來判斷相似文章。",
+  "6. 若文章內容不足以判斷，quote/summary 請留空字串，tags/themes 請留空陣列。",
   "",
   `文章分類：${article.category || ""}`,
   `文章標題：${article.title || ""}`,
@@ -94,17 +121,11 @@ const requestMetadata = async (article) => {
     body: JSON.stringify({
       model,
       messages: [
-        {
-          role: "system",
-          content: "你只輸出合法 JSON。"
-        },
-        {
-          role: "user",
-          content: buildPrompt(article)
-        }
+        { role: "system", content: "你只輸出合法 JSON。" },
+        { role: "user", content: buildPrompt(article) }
       ],
       temperature: 0.2,
-      max_tokens: 500
+      max_tokens: 700
     })
   });
 
@@ -116,27 +137,93 @@ const requestMetadata = async (article) => {
   const data = await response.json();
   const text = data.choices?.[0]?.message?.content || "";
   const parsed = parseAiJson(text);
-  const quote = String(parsed.quote || "").trim().slice(0, 50);
-  const tags = Array.isArray(parsed.tags)
-    ? parsed.tags.map((tag) => String(tag).trim()).filter(Boolean).slice(0, 5)
-    : [];
 
-  return { quote, tags };
+  return {
+    quote: String(parsed.quote || "").trim().slice(0, 50),
+    tags: normalizeStringArray(parsed.tags, 5),
+    summary: String(parsed.summary || "").trim().slice(0, 80),
+    themes: normalizeStringArray(parsed.themes, 6)
+  };
+};
+
+const searchableTokensFor = (article, meta) =>
+  new Set(
+    [
+      article.category,
+      ...(article.tags || []),
+      ...(meta?.tags || []),
+      ...(meta?.themes || [])
+    ]
+      .map(compactText)
+      .filter(Boolean)
+  );
+
+const scoreSimilarity = (leftArticle, leftMeta, rightArticle, rightMeta) => {
+  if (leftArticle.slug === rightArticle.slug) return -1;
+
+  const leftTokens = searchableTokensFor(leftArticle, leftMeta);
+  const rightTokens = searchableTokensFor(rightArticle, rightMeta);
+  let score = 0;
+
+  leftTokens.forEach((token) => {
+    if (rightTokens.has(token)) score += 4;
+  });
+
+  if (leftArticle.category === rightArticle.category) score += 5;
+  if (leftArticle.issueId === rightArticle.issueId) score += 2;
+
+  const leftTitle = compactText(leftArticle.title);
+  const rightTitle = compactText(rightArticle.title);
+  if (leftTitle && rightTitle && (leftTitle.includes(rightTitle) || rightTitle.includes(leftTitle))) {
+    score += 2;
+  }
+
+  return score;
+};
+
+const updateSimilarCandidates = (metadata, articles, targetSlugs) => {
+  const articleBySlug = new Map(articles.map((article) => [article.slug, article]));
+
+  targetSlugs.forEach((slug) => {
+    const article = articleBySlug.get(slug);
+    const meta = metadata.articles?.[slug];
+    if (!article || !meta) return;
+
+    const candidates = articles
+      .map((candidate) => ({
+        slug: candidate.slug,
+        score: scoreSimilarity(article, meta, candidate, metadata.articles?.[candidate.slug])
+      }))
+      .filter((candidate) => candidate.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 5)
+      .map((candidate) => candidate.slug);
+
+    meta.similarCandidates = candidates;
+  });
+};
+
+const normalizeMetadata = (metadata) => ({
+  version: metadata.version || 2,
+  generatedAt: metadata.generatedAt || "",
+  quotes: metadata.quotes || {},
+  tags: metadata.tags || {},
+  summaries: metadata.summaries || {},
+  themes: metadata.themes || {},
+  similar: metadata.similar || {},
+  articles: metadata.articles || {}
+});
+
+const syncCompatibilityMaps = (metadata, slug, item) => {
+  if (item.quote) metadata.quotes[slug] = item.quote;
+  if (item.tags?.length) metadata.tags[slug] = item.tags;
+  if (item.summary) metadata.summaries[slug] = item.summary;
+  if (item.themes?.length) metadata.themes[slug] = item.themes;
+  if (item.similarCandidates?.length) metadata.similar[slug] = item.similarCandidates;
 };
 
 const main = async () => {
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
-
-  if (!apiKey) {
-    const report = {
-      status: "skipped",
-      reason: "KIMI_API_KEY, OPENAI_API_KEY, or AI_API_KEY is not set",
-      generatedAt: new Date().toISOString()
-    };
-    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf8");
-    console.log("No AI API key is set; skipped AI metadata generation.");
-    return;
-  }
 
   const source = fs.readFileSync(generatedArticlesPath, "utf8");
   const articles = extractExportedArray(source, "generatedArticles");
@@ -147,27 +234,73 @@ const main = async () => {
     .filter((article) => !issueId || article.issueId === issueId)
     .slice(0, limit > 0 ? limit : undefined);
 
-  const metadata = readJson(aiMetadataPath, { quotes: {}, tags: {} });
-  metadata.quotes ||= {};
-  metadata.tags ||= {};
-
+  const metadata = normalizeMetadata(readJson(aiMetadataPath, {}));
   const results = [];
+  const touchedSlugs = new Set(candidates.map((article) => article.slug));
+
+  if (!apiKey) {
+    fs.writeFileSync(
+      reportPath,
+      JSON.stringify(
+        {
+          status: "skipped",
+          reason: "KIMI_API_KEY, OPENAI_API_KEY, or AI_API_KEY is not set",
+          generatedAt: new Date().toISOString(),
+          issueId,
+          count: candidates.length
+        },
+        null,
+        2
+      ),
+      "utf8"
+    );
+    console.log("No AI API key is set; skipped AI metadata generation.");
+    return;
+  }
+
   for (const article of candidates) {
-    const alreadyDone = metadata.quotes[article.slug] && metadata.tags[article.slug]?.length;
-    if (alreadyDone && !force) {
-      results.push({ slug: article.slug, title: article.title, status: "kept-existing" });
+    const slug = article.slug;
+    const sourceKey = sourceKeyFor(article);
+    const contentHash = contentHashFor(article);
+    const existing = metadata.articles[slug];
+    const cacheHit =
+      existing &&
+      !force &&
+      existing.sourceKey === sourceKey &&
+      existing.contentHash === contentHash &&
+      existing.quote &&
+      existing.tags?.length &&
+      existing.summary &&
+      existing.themes?.length;
+
+    if (cacheHit) {
+      syncCompatibilityMaps(metadata, slug, existing);
+      results.push({ slug, title: article.title, status: "cache-hit" });
       continue;
     }
 
     try {
       const generated = await requestMetadata(article);
-      if (generated.quote) metadata.quotes[article.slug] = generated.quote;
-      if (generated.tags.length) metadata.tags[article.slug] = generated.tags;
-      results.push({ slug: article.slug, title: article.title, status: "generated", ...generated });
+      metadata.articles[slug] = {
+        ...existing,
+        ...generated,
+        provider,
+        model,
+        apiBaseUrl,
+        sourceKey,
+        contentHash,
+        generatedAt: new Date().toISOString()
+      };
+      syncCompatibilityMaps(metadata, slug, metadata.articles[slug]);
+      results.push({ slug, title: article.title, status: "generated", ...generated });
     } catch (error) {
-      results.push({ slug: article.slug, title: article.title, status: "error", error: error.message });
+      results.push({ slug, title: article.title, status: "error", error: error.message });
     }
   }
+
+  updateSimilarCandidates(metadata, articles, touchedSlugs);
+  touchedSlugs.forEach((slug) => syncCompatibilityMaps(metadata, slug, metadata.articles[slug] || {}));
+  metadata.generatedAt = new Date().toISOString();
 
   fs.writeFileSync(aiMetadataPath, JSON.stringify(metadata, null, 2), "utf8");
   fs.writeFileSync(
@@ -175,12 +308,15 @@ const main = async () => {
     JSON.stringify(
       {
         status: "done",
-        generatedAt: new Date().toISOString(),
+        generatedAt: metadata.generatedAt,
         provider,
         apiBaseUrl,
         issueId,
         model,
         count: results.length,
+        cacheHits: results.filter((result) => result.status === "cache-hit").length,
+        generated: results.filter((result) => result.status === "generated").length,
+        errors: results.filter((result) => result.status === "error").length,
         results
       },
       null,

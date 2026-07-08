@@ -1395,6 +1395,50 @@ p {
   padding-right: 18px;
 }
 
+.article-ai-guide {
+  background: rgba(243, 234, 220, 0.46);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  display: grid;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding: 18px 20px;
+}
+
+.article-ai-guide blockquote {
+  color: var(--coffee);
+  font-family: "Noto Serif TC", "Songti TC", serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+.article-ai-guide blockquote span {
+  color: var(--gold);
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.88rem;
+  margin-bottom: 6px;
+}
+
+.article-ai-guide blockquote p,
+.article-ai-summary {
+  margin: 0;
+}
+
+.article-ai-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.article-ai-themes span {
+  border: 1px solid var(--line);
+  color: var(--brown);
+  font-size: 0.88rem;
+  font-weight: 900;
+  padding: 4px 8px;
+}
+
 .article-cover {
   margin: 0;
   display: flex;
@@ -2636,6 +2680,22 @@ p {
   color: var(--muted);
   line-height: 1.7;
   margin: 0;
+}
+
+.review-ai-related {
+  display: grid;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review-ai-related a {
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 4px;
 }
 
 .review-issue {

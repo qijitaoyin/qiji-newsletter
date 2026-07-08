@@ -61,7 +61,7 @@ const tagArticles = getArticlesByTag(tag.label);
                 <div>
                   <p class="meta-line"><span>{article.category}</span><span>{article.date}</span></p>
                   <h2>{article.title}</h2>
-                  <p>{article.excerpt}</p>
+                  <p>{article.aiSummary || article.excerpt}</p>
                   {article.author && article.author !== article.title && <p class="byline">{article.author}</p>}
                 </div>
               </a>

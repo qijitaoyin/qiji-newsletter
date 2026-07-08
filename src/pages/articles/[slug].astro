@@ -140,6 +140,22 @@ const issueMenuGroups = issueArticles.reduce(
           </aside>
 
           <div class="article-main">
+            {(article.aiQuote || article.aiSummary || article.aiThemes?.length) && (
+              <section class="article-ai-guide" aria-label="AI 閱讀導覽">
+                {article.aiQuote && (
+                  <blockquote>
+                    <span>重點金句</span>
+                    <p>{article.aiQuote}</p>
+                  </blockquote>
+                )}
+                {article.aiSummary && <p class="article-ai-summary">{article.aiSummary}</p>}
+                {article.aiThemes?.length > 0 && (
+                  <div class="article-ai-themes" aria-label="文章核心主題">
+                    {article.aiThemes.map((theme) => <span>{theme}</span>)}
+                  </div>
+                )}
+              </section>
+            )}
             <div class="article-tools" aria-label="閱讀設定">
               <span>字級</span>
               <div class="font-size-control" role="group" aria-label="選擇文章字級">
@@ -202,6 +218,7 @@ const issueMenuGroups = issueArticles.reduce(
                 <div>
                   <p class="meta-line"><span>{item.category}</span><span>{item.date}</span></p>
                   <h3>{item.title}</h3>
+                  {(item.aiSummary || item.excerpt) && <p>{item.aiSummary || item.excerpt}</p>}
                   <p class="byline">{item.author}</p>
                 </div>
               </a>
