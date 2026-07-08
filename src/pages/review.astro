@@ -11,6 +11,9 @@ import {
 } from "../data/wordNormalizeReview";
 import { latestIssueArticles, latestIssueArchive } from "../data/articles";
 import aiMetadata from "../data/aiMetadata.json";
+
+const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
+
 type ReviewAiOverrides = {
   quotes?: Record<string, string>;
   tags?: Record<string, string[]>;
@@ -224,6 +227,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
           目前尚未產生發布確認。
         </div>
         <div class="review-publish-actions">
+          <button type="button" data-submit-publish>送出正式發布</button>
           <button type="button" data-download-publish>產生發布確認</button>
           <button type="button" data-copy-publish>複製交接資料</button>
         </div>
@@ -709,7 +713,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
       </div>
     </main>
 
-    <script>
+    <script define:vars={{ publishWebhookUrl: reviewPublishWebhookUrl }}>
       const storageKey = "qiji-review-approvals";
       const countNode = document.querySelector("[data-approval-count]");
       const previewNode = document.querySelector("[data-approval-preview]");
@@ -730,6 +734,7 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
       const publishStatusNode = document.querySelector("[data-publish-status]");
       const downloadPublishButton = document.querySelector("[data-download-publish]");
       const copyPublishButton = document.querySelector("[data-copy-publish]");
+      const submitPublishButton = document.querySelector("[data-submit-publish]");
 
       const readReports = () => {
         try {
@@ -1420,6 +1425,46 @@ const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
 
       copyPublishButton?.addEventListener("click", async () => {
         await navigator.clipboard.writeText(publishPayloadText());
+      });
+
+      submitPublishButton?.addEventListener("click", async () => {
+        if (!publishWebhookUrl) {
+          if (publishStatusNode) {
+            publishStatusNode.textContent = "尚未設定正式發布中介。請先部署 Google Apps Script，並設定 PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL。";
+          }
+          return;
+        }
+
+        const payload = buildPublishPayload();
+        if (payload.openReports.length) {
+          const confirmed = window.confirm(`仍有 ${payload.openReports.length} 則未完成回報，確定要送出正式發布嗎？`);
+          if (!confirmed) return;
+        }
+
+        submitPublishButton.disabled = true;
+        const originalText = submitPublishButton.textContent;
+        submitPublishButton.textContent = "送出中...";
+        if (publishStatusNode) publishStatusNode.textContent = "正在送出正式發布請求...";
+
+        try {
+          await fetch(publishWebhookUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(payload)
+          });
+
+          if (publishStatusNode) {
+            publishStatusNode.innerHTML = '已送出正式發布請求。請到 <a href="https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml" target="_blank" rel="noreferrer">GitHub Actions</a> 查看部署進度。';
+          }
+        } catch (error) {
+          if (publishStatusNode) {
+            publishStatusNode.textContent = `送出失敗：${error.message || error}`;
+          }
+        } finally {
+          submitPublishButton.disabled = false;
+          submitPublishButton.textContent = originalText;
+        }
       });
 
       clearReportsButton?.addEventListener("click", () => {

@@ -45,6 +45,7 @@ jobs:
       AI_LIMIT: ${{ inputs.ai_limit }}
       PUBLIC_SITE_URL: https://qijitaoyin.github.io
       PUBLIC_BASE_PATH: /qiji-newsletter/
+      PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL }}
       REVIEW_PUBLISH_JSON: ${{ inputs.review_publish_json }}
     steps:
       - name: Checkout
@@ -90,11 +91,17 @@ jobs:
         run: pnpm ai:metadata
 
       - name: Apply review publish confirmation
-        if: ${{ env.REVIEW_PUBLISH_JSON != '' }}
         shell: pwsh
         run: |
-          Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
-          ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
+          if ($env:REVIEW_PUBLISH_JSON) {
+            Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
+          }
+
+          if (Test-Path -LiteralPath review-publish.json) {
+            ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
+          } else {
+            Write-Host "No review-publish.json found; skipping review publish confirmation."
+          }
 
       - name: Build
         run: pnpm build
