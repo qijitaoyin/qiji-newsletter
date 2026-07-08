@@ -19,6 +19,14 @@ on:
         description: "Limit AI articles; 0 means no limit"
         required: true
         default: "0"
+      sync_drive:
+        description: "Sync Google Drive before build"
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
       review_publish_json:
         description: "Optional JSON copied from /review/ publish confirmation"
         required: false
@@ -77,14 +85,15 @@ jobs:
           printf '%s' "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
 
       - name: Sync Google Drive source
-        if: ${{ env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        if: ${{ inputs.sync_drive == 'true' && env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        timeout-minutes: 10
         shell: pwsh
         run: ./scripts/sync_google_drive.ps1
 
       - name: Generate article data
         shell: pwsh
         run: |
-          if ($env:GOOGLE_DRIVE_REMOTE) {
+          if ("${{ inputs.sync_drive }}" -eq "true" -and $env:GOOGLE_DRIVE_REMOTE) {
             ./scripts/generate_archive.ps1
           } else {
             Write-Host "No Google Drive remote configured; using committed generated data."
