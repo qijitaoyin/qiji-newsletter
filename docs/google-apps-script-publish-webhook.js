@@ -13,7 +13,7 @@
  * Optional Script Properties:
  * - GITHUB_BRANCH: main
  * - GITHUB_WORKFLOW: deploy-github-pages.yml
- * - RUN_AI: false
+ * - RUN_AI: true
  * - AI_ISSUE_ID: latest
  * - AI_LIMIT: 0
  */
@@ -48,7 +48,7 @@ function doPost(e) {
       workflow,
       branch,
       inputs: {
-        run_ai: props.getProperty("RUN_AI") || "false",
+        run_ai: props.getProperty("RUN_AI") || "true",
         ai_issue_id: props.getProperty("AI_ISSUE_ID") || "latest",
         ai_limit: props.getProperty("AI_LIMIT") || "0",
         review_publish_json: ""
