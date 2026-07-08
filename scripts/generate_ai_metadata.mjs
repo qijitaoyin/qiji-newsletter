@@ -152,6 +152,7 @@ const requestMetadata = async (article) => {
 
   if (provider === "kimi") {
     requestBody.response_format = { type: "json_object" };
+    requestBody.thinking = { type: "disabled" };
   }
 
   const response = await fetch(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
