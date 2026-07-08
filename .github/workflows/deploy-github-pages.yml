@@ -19,6 +19,10 @@ on:
         description: "Limit AI articles; 0 means no limit"
         required: true
         default: "0"
+      review_publish_json:
+        description: "Optional JSON copied from /review/ publish confirmation"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -41,6 +45,7 @@ jobs:
       AI_LIMIT: ${{ inputs.ai_limit }}
       PUBLIC_SITE_URL: https://qijitaoyin.github.io
       PUBLIC_BASE_PATH: /qiji-newsletter/
+      REVIEW_PUBLISH_JSON: ${{ inputs.review_publish_json }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -83,6 +88,13 @@ jobs:
       - name: Generate AI metadata
         if: ${{ inputs.run_ai == 'true' && env.OPENAI_API_KEY != '' }}
         run: pnpm ai:metadata
+
+      - name: Apply review publish confirmation
+        if: ${{ env.REVIEW_PUBLISH_JSON != '' }}
+        shell: pwsh
+        run: |
+          Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
+          ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
 
       - name: Build
         run: pnpm build
