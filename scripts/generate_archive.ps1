@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 2
+$importCacheVersion = 3
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 
@@ -79,6 +79,22 @@ function Get-RelativePath {
     return $full.Substring($base.Length).TrimStart([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
   }
   return $full
+}
+
+function Get-FileContentHash {
+  param([string]$Path)
+  if (-not (Test-Path -LiteralPath $Path)) { return "" }
+  $stream = $null
+  $sha = $null
+  try {
+    $stream = [System.IO.File]::Open($Path, [System.IO.FileMode]::Open, [System.IO.FileAccess]::Read, [System.IO.FileShare]::ReadWrite)
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    $hash = $sha.ComputeHash($stream)
+    return ([System.BitConverter]::ToString($hash) -replace "-", "").ToLowerInvariant()
+  } finally {
+    if ($sha) { $sha.Dispose() }
+    if ($stream) { $stream.Dispose() }
+  }
 }
 
 function Get-FileSignature {
@@ -1144,7 +1160,7 @@ $correctionMap = @{}
 $approvalFingerprint = ""
 if (Test-Path -LiteralPath $reviewApprovalsPath) {
   try {
-    $approvalFingerprint = (Get-Item -LiteralPath $reviewApprovalsPath).LastWriteTimeUtc.ToString("o")
+    $approvalFingerprint = Get-FileContentHash $reviewApprovalsPath
     $approvalData = Get-Content -LiteralPath $reviewApprovalsPath -Raw -Encoding UTF8 | ConvertFrom-Json
     foreach ($entry in @($approvalData.approvals)) {
       if ($entry.id) { $approvalMap[$entry.id] = $entry }
