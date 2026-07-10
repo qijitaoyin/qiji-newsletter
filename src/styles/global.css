@@ -1401,6 +1401,18 @@ body.is-review-frame .article-main {
   white-space: nowrap;
 }
 
+.article-hero-quote {
+  border-left: 4px solid var(--gold);
+  color: var(--coffee);
+  font-family: "Noto Serif TC", "Songti TC", serif;
+  font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+  font-weight: 800;
+  line-height: 1.62;
+  margin: calc(clamp(18px, 2vw, 28px) * -0.35) 0 clamp(18px, 2vw, 28px);
+  max-width: 760px;
+  padding-left: 16px;
+}
+
 .article-subtitle {
   color: var(--coffee);
   font-family: "Noto Serif TC", "Songti TC", serif;
@@ -1490,12 +1502,12 @@ body.is-review-frame .article-main {
 }
 
 .article-cover figcaption {
-  border-bottom: 1px solid var(--line-dark);
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.55;
-  padding: 12px 0 14px;
+  padding: 8px 0 0;
+  text-align: right;
 }
 
 .article-shell {
