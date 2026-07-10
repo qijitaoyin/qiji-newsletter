@@ -534,6 +534,7 @@ const normalizeCategory = (category: string) => {
 
     <script define:vars={{
       publishWebhookUrl: reviewPublishWebhookUrl,
+      currentReviewIssueId: latestReviewArchive?.id ?? "latest",
       reviewArticleIndex: latestReviewArticles.map((article) => ({
         slug: article.slug,
         title: article.title,
@@ -801,7 +802,7 @@ const normalizeCategory = (category: string) => {
         return {
           status: openReports.length ? "has-open-tasks" : "ready-to-publish",
           generatedAt: new Date().toISOString(),
-          issueId: "latest",
+          issueId: currentReviewIssueId,
           reports: completedReports,
           openReports,
           metadataOverrides: {
@@ -1698,7 +1699,6 @@ const normalizeCategory = (category: string) => {
     </script>
   </body>
 </html>
-
 
 
 

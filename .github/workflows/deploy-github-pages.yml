@@ -139,17 +139,26 @@ jobs:
           git push
 
       - name: Apply review publish confirmation
+        if: ${{ inputs.review_publish_json != '' }}
         shell: pwsh
         run: |
-          if ($env:REVIEW_PUBLISH_JSON) {
-            Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
-          }
+          Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
 
-          if (Test-Path -LiteralPath review-publish.json) {
-            ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
-          } else {
-            Write-Host "No review-publish.json found; skipping review publish confirmation."
-          }
+          ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
+
+      - name: Persist review publish state
+        if: ${{ inputs.review_publish_json != '' }}
+        run: |
+          if git diff --quiet -- review-publish.json src/data/editorialOverrides.json src/data/publishState.json; then
+            echo "Review publish state unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review-publish.json src/data/editorialOverrides.json src/data/publishState.json
+          git commit -m "Publish reviewed issue"
+          git push
 
       - name: Build
         run: pnpm build

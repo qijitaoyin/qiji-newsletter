@@ -81,7 +81,7 @@ function doPost(e) {
         ai_issue_id: props.getProperty("AI_ISSUE_ID") || "latest",
         ai_limit: props.getProperty("AI_LIMIT") || "0",
         sync_drive: "true",
-        review_publish_json: ""
+        review_publish_json: payloadText
       }
     });
 

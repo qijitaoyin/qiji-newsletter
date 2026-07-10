@@ -1,6 +1,7 @@
 import { generatedArticles, generatedIssues } from "./generatedArticles";
 import editorialOverrides from "./editorialOverrides.json";
 import aiMetadata from "./aiMetadata.json";
+import publishState from "./publishState.json";
 import { pathFor } from "../utils/paths";
 
 const typedAiMetadata = aiMetadata as {
@@ -19,6 +20,11 @@ const typedAiMetadata = aiMetadata as {
       similarCandidates?: string[];
     }
   >;
+};
+
+const typedPublishState = publishState as {
+  publicLatestIssueId?: string;
+  reviewIssueId?: string;
 };
 
 export type ArticleSection = {
@@ -81,8 +87,13 @@ export type IssueArchive = {
   title: string;
 };
 
-export const publicLatestIssueId = "202605";
-export const reviewIssueId = "202607";
+export const publicLatestIssueId = typedPublishState.publicLatestIssueId || "202605";
+const newestGeneratedIssueId = generatedIssues[0]?.id ?? publicLatestIssueId;
+export const reviewIssueId =
+  typedPublishState.reviewIssueId ||
+  (newestGeneratedIssueId.localeCompare(publicLatestIssueId) > 0
+    ? newestGeneratedIssueId
+    : publicLatestIssueId);
 
 const isPublishedIssue = (issueId: string) =>
   issueId.localeCompare(publicLatestIssueId) <= 0;
