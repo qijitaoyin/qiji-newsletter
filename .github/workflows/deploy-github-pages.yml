@@ -142,7 +142,18 @@ jobs:
         if: ${{ inputs.review_publish_json != '' }}
         shell: pwsh
         run: |
-          Set-Content -LiteralPath review-publish.json -Value $env:REVIEW_PUBLISH_JSON -Encoding UTF8
+          $payload = [string]$env:REVIEW_PUBLISH_JSON
+          try {
+            $payload | ConvertFrom-Json | Out-Null
+            Set-Content -LiteralPath review-publish.json -Value $payload -Encoding UTF8
+            Write-Host "Using review publish JSON from workflow input."
+          } catch {
+            if (Test-Path -LiteralPath review-publish.json) {
+              Write-Warning "Workflow input was not valid JSON; using committed review-publish.json instead."
+            } else {
+              throw
+            }
+          }
 
           ./scripts/apply_review_publish.ps1 -PublishFile review-publish.json
 
