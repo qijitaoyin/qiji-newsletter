@@ -2516,6 +2516,36 @@ body.is-review-frame .article-main {
   font-weight: 800;
 }
 
+.review-summary-actions span a {
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.review-progress-dot {
+  animation: reviewPulse 1.15s ease-in-out infinite;
+  background: var(--gold);
+  border-radius: 999px;
+  display: inline-block;
+  height: 0.72em;
+  margin-right: 8px;
+  vertical-align: -0.02em;
+  width: 0.72em;
+}
+
+@keyframes reviewPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
 .review-summary-actions button {
   min-height: 38px;
   padding: 7px 10px;
