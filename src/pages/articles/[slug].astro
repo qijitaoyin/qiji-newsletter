@@ -245,6 +245,13 @@ const issueMenuGroups = issueArticles.reduce(
       if (isReviewFrame) {
         document.documentElement.classList.add("is-review-frame");
         document.body.classList.add("is-review-frame");
+        document.querySelectorAll(".article-issue-menu a[href]").forEach((link) => {
+          const href = link.getAttribute("href");
+          if (!href) return;
+          const url = new URL(href, window.location.href);
+          url.searchParams.set("reviewFrame", "1");
+          link.setAttribute("href", `${url.pathname}${url.search}${url.hash}`);
+        });
       }
 
       const body = document.querySelector("[data-article-body]");

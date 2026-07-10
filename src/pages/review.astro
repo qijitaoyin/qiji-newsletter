@@ -1,6 +1,4 @@
 ---
-import fs from "node:fs";
-import path from "node:path";
 import "../styles/global.css";
 import { pathFor } from "../utils/paths";
 import { reviewItems, reviewIssueIds, reviewSummary } from "../data/review";
@@ -9,28 +7,9 @@ import {
   wordNormalizeItems,
   wordNormalizeSummary
 } from "../data/wordNormalizeReview";
-import { articles, reviewIssueArticles, reviewIssueArchive } from "../data/articles";
-import aiMetadata from "../data/aiMetadata.json";
+import { reviewIssueArticles, reviewIssueArchive } from "../data/articles";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
-
-const typedAiMetadata = aiMetadata as {
-  quotes?: Record<string, string>;
-  tags?: Record<string, string[]>;
-  summaries?: Record<string, string>;
-  themes?: Record<string, string[]>;
-  similar?: Record<string, string[]>;
-};
-
-type ReviewAiOverrides = {
-  quotes?: Record<string, string>;
-  tags?: Record<string, string[]>;
-};
-
-const aiOverridesPath = path.resolve("src/data/editorialOverrides.json");
-const aiOverrides: ReviewAiOverrides = fs.existsSync(aiOverridesPath)
-  ? JSON.parse(fs.readFileSync(aiOverridesPath, "utf-8"))
-  : {};
 
 const statusLabels: Record<string, string> = {
   error: "不可上架",
@@ -84,49 +63,6 @@ const normalizeCategory = (category: string) => {
   if (category.startsWith("如是我")) return "如是我聞";
   if (category === "同頻共振時") return "導引專欄";
   return category;
-};
-const quoteSuggestionFor = (article: (typeof latestReviewArticles)[number]) => {
-  const manualQuote = aiOverrides.quotes?.[article.slug]?.trim();
-  if (manualQuote) return manualQuote;
-  const aiQuote = typedAiMetadata.quotes?.[article.slug]?.trim();
-  if (aiQuote) return aiQuote.length > 50 ? `${aiQuote.slice(0, 49)}…` : aiQuote;
-
-  const paragraphs = article.sections.flatMap((section) => section.paragraphs);
-  const sentenceCandidates = paragraphs.flatMap((paragraph) =>
-    paragraph
-      .split(/(?<=[。！？!?；;])/u)
-      .map((sentence) => sentence.trim())
-      .filter(Boolean)
-  );
-  const quote =
-    sentenceCandidates.find((sentence) => sentence.length >= 24 && sentence.length <= 50) ??
-    paragraphs
-      .map((paragraph) => paragraph.trim())
-      .find((paragraph) => paragraph.length >= 24);
-
-  if (!quote) return article.excerpt.length > 50 ? `${article.excerpt.slice(0, 49)}…` : article.excerpt;
-  return quote.length > 50 ? `${quote.slice(0, 49)}…` : quote;
-};
-const quoteSourceFor = (article: (typeof latestReviewArticles)[number]) =>
-  aiOverrides.quotes?.[article.slug]?.trim() ? "manual" : "ai";
-const tagSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =>
-  aiOverrides.tags?.[article.slug]?.length
-    ? aiOverrides.tags[article.slug]
-    : typedAiMetadata.tags?.[article.slug]?.length
-      ? typedAiMetadata.tags[article.slug]
-      : [article.category, ...article.tags.filter((tag) => tag !== article.category).slice(0, 4)];
-const summarySuggestionFor = (article: (typeof latestReviewArticles)[number]) =>
-  article.aiSummary || typedAiMetadata.summaries?.[article.slug] || "";
-const themeSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =>
-  article.aiThemes?.length ? article.aiThemes : typedAiMetadata.themes?.[article.slug] ?? [];
-const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) => {
-  const slugs = article.aiSimilarSlugs?.length
-    ? article.aiSimilarSlugs
-    : typedAiMetadata.similar?.[article.slug] ?? [];
-  return slugs
-    .map((slug) => articles.find((item) => item.slug === slug))
-    .filter((item): item is (typeof articles)[number] => Boolean(item))
-    .slice(0, 3);
 };
 ---
 
@@ -199,8 +135,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
             <button type="button" data-submit-publish>送出正式發布</button>
-            <button type="button" data-download-publish>產生交接資料</button>
-            <button type="button" data-copy-publish>複製交接資料</button>
             <pre data-publish-preview hidden>{`{
   "status": "pending",
   "reports": [],
@@ -210,22 +144,18 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
   }
 }`}</pre>
           </div>
-        </div>
-      </section>
-
-      <section class="review-task-board" aria-label="上架人員待辦">
-        <div class="review-task-board-head">
-          <div>
-            <p class="review-kicker">上架人員待辦</p>
-            <h2>修正意見集中區</h2>
-          </div>
-          <button type="button" data-clear-reports>清空回報</button>
-        </div>
-        <p>
-          校對者送出的意見會集中在這裡。一般錯字、段落與圖片位置請先回 Word 修改；若是指定金句或分類標籤，請按「採用為網站資料」，系統會在發布核准檔中保存，不改動 Word。
-        </p>
-        <div class="review-task-list" data-report-board>
-          <p class="review-empty-state">目前沒有修正意見。</p>
+          <section class="review-task-board review-summary-tasks" aria-label="上架人員待辦">
+            <div class="review-task-board-head">
+              <div>
+                <p class="review-kicker">上架人員待辦</p>
+                <h2>修正意見集中區</h2>
+              </div>
+              <button type="button" data-clear-reports>清空回報</button>
+            </div>
+            <div class="review-task-list" data-report-board>
+              <p class="review-empty-state">目前沒有修正意見。</p>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -275,122 +205,45 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
               src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1`)}
             ></iframe>
           </div>
-        </div>
 
-        <aside class="review-live-sidebar" aria-label="校對回報與文章資料">
-          <form class="review-report-form review-live-report-form" data-report-form>
-            <label>
-              <span>文章</span>
-              <select name="articleSlug" data-report-article-select>
-                {latestReviewArticles.map((article) => (
-                  <option
-                    value={article.slug}
-                    data-title={article.title}
-                    data-category={article.category}
-                    data-author={article.author}
-                    data-url={pathFor(`/articles/${article.slug}/`)}
-                    data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
-                  >
-                    {article.title}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label class="review-report-wide">
-              <span>修正意見</span>
-              <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
-            </label>
-            <div class="review-screenshot-paste" tabindex="0" data-screenshot-paste>
-              <strong>貼上截圖</strong>
-              <span>點這裡後按 Ctrl+V，或在意見欄直接貼上圖片</span>
-              <div data-screenshot-preview></div>
+          <div class="review-live-feedback" aria-label="校對回報">
+            <form class="review-report-form review-live-report-form" data-report-form>
+              <label>
+                <span>文章</span>
+                <select name="articleSlug" data-report-article-select>
+                  {latestReviewArticles.map((article) => (
+                    <option
+                      value={article.slug}
+                      data-title={article.title}
+                      data-category={article.category}
+                      data-author={article.author}
+                      data-url={pathFor(`/articles/${article.slug}/`)}
+                      data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
+                    >
+                      {article.title}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label class="review-report-wide">
+                <span>修正意見</span>
+                <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
+              </label>
+              <div class="review-screenshot-paste" tabindex="0" data-screenshot-paste>
+                <strong>貼上截圖</strong>
+                <span>點這裡後按 Ctrl+V，或在意見欄直接貼上圖片</span>
+                <div data-screenshot-preview></div>
+              </div>
+              <div class="review-report-actions">
+                <button type="submit">送出修正意見</button>
+                <span data-report-result></span>
+              </div>
+            </form>
+            <div class="review-article-report-list" data-live-article-report-list>
+              <p class="review-empty-state">這篇目前沒有回報。</p>
             </div>
-            <div class="review-report-actions">
-              <button type="submit">送出修正意見</button>
-              <span data-report-result></span>
-            </div>
-          </form>
-
-          <div class="review-live-info-list">
-            {latestReviewArticles.map((article, index) => {
-              const quoteSuggestion = quoteSuggestionFor(article);
-              const quoteSource = quoteSourceFor(article);
-              const tagSuggestions = tagSuggestionsFor(article);
-              const summarySuggestion = summarySuggestionFor(article);
-              const themeSuggestions = themeSuggestionsFor(article);
-              const similarSuggestions = similarSuggestionsFor(article);
-              return (
-                <article
-                  class:list={{ "review-live-info": true, "is-active": index === 0 }}
-                  data-live-article-info={article.slug}
-                >
-                  <p class="meta-line">
-                    <span>{normalizeCategory(article.category)}</span>
-                    <span>{article.readTime}</span>
-                  </p>
-                  <h3>{article.title}</h3>
-                  <p class="review-meta">
-                    <span>{article.author || "作者未填"}</span>
-                    <span>{article.date}</span>
-                  </p>
-                  <dl class="review-info-grid">
-                    <div><dt>分類</dt><dd>{article.category}</dd></div>
-                    <div><dt>標題</dt><dd>{article.title}</dd></div>
-                    <div><dt>作者</dt><dd>{article.author || "作者未填"}</dd></div>
-                    <div><dt>日期</dt><dd>{article.date}</dd></div>
-                  </dl>
-                  {article.excerpt && <p class="review-excerpt">{article.excerpt}</p>}
-                  <div class="review-ai-panel review-ai-inline">
-                    <div>
-                      <h4>建議分類標籤</h4>
-                      <div class="review-ai-tags">
-                        {tagSuggestions.map((tag) => <span>{tag}</span>)}
-                      </div>
-                    </div>
-                    <div>
-                      <h4>{quoteSource === "manual" ? "校對指定重點金句" : "建議重點金句"}</h4>
-                      <blockquote>{quoteSuggestion}</blockquote>
-                    </div>
-                    {summarySuggestion && (
-                      <div>
-                        <h4>建議摘要</h4>
-                        <p>{summarySuggestion}</p>
-                      </div>
-                    )}
-                    {themeSuggestions.length > 0 && (
-                      <div>
-                        <h4>文章核心主題</h4>
-                        <div class="review-ai-tags">
-                          {themeSuggestions.map((theme) => <span>{theme}</span>)}
-                        </div>
-                      </div>
-                    )}
-                    {similarSuggestions.length > 0 && (
-                      <div>
-                        <h4>相關文章參考</h4>
-                        <ul class="review-ai-related">
-                          {similarSuggestions.map((item) => (
-                            <li>
-                              <a href={pathFor(`/articles/${item.slug}/`)} target="_blank" rel="noreferrer">
-                                {item.title}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                    <p>{quoteSource === "manual"
-                        ? "這裡已套用校對者指定的網站資料。若要再次調整，請在修正意見中留下新的金句或標籤。"
-                        : "AI 建議目前只作為校對參考。若要採用校對者指定版本，請在修正意見中直接寫希望採用的金句，上架人員可在待辦區按「採用為網站資料」。"}</p>
-                  </div>
-                  <div class="review-article-report-list" data-live-article-report-list>
-                    <p class="review-empty-state">這篇目前沒有回報。</p>
-                  </div>
-                </article>
-              );
-            })}
           </div>
-        </aside>
+        </div>
       </section>
 
       </div>
@@ -676,7 +529,14 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       </div>
     </main>
 
-    <script define:vars={{ publishWebhookUrl: reviewPublishWebhookUrl }}>
+    <script define:vars={{
+      publishWebhookUrl: reviewPublishWebhookUrl,
+      reviewArticleIndex: latestReviewArticles.map((article) => ({
+        slug: article.slug,
+        title: article.title,
+        category: normalizeCategory(article.category)
+      }))
+    }}>
       const storageKey = "qiji-review-approvals";
       const countNode = document.querySelector("[data-approval-count]");
       const previewNode = document.querySelector("[data-approval-preview]");
@@ -695,8 +555,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       const clearReportsButton = document.querySelector("[data-clear-reports]");
       const publishPreviewNode = document.querySelector("[data-publish-preview]");
       const publishStatusNode = document.querySelector("[data-publish-status]");
-      const downloadPublishButton = document.querySelector("[data-download-publish]");
-      const copyPublishButton = document.querySelector("[data-copy-publish]");
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
       const reportArticleSelect = document.querySelector("[data-report-article-select]");
@@ -704,7 +562,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       const liveFrames = Array.from(document.querySelectorAll("[data-live-frame]"));
       const liveViewportTabs = Array.from(document.querySelectorAll("[data-live-viewport-tab]"));
       const liveViewportPanels = Array.from(document.querySelectorAll("[data-live-viewport-panel]"));
-      const liveInfoPanels = Array.from(document.querySelectorAll("[data-live-article-info]"));
       const liveReportLists = Array.from(document.querySelectorAll("[data-live-article-report-list]"));
 
       const readReports = () => {
@@ -739,6 +596,25 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         frameUrl: option?.dataset.frameUrl || option?.dataset.url || ""
       });
 
+      const slugFromArticleUrl = (value = "") => {
+        try {
+          const url = new URL(value, window.location.href);
+          const path = url.pathname.replace(/\/+$/, "");
+          return path.match(/\/articles\/([^/]+)$/)?.[1] || "";
+        } catch {
+          return "";
+        }
+      };
+
+      const syncSelectedArticle = (slug) => {
+        if (!slug) return null;
+        if (liveArticleSelect && liveArticleSelect.value !== slug) liveArticleSelect.value = slug;
+        if (reportArticleSelect && reportArticleSelect.value !== slug) reportArticleSelect.value = slug;
+        const article = articleFromOption(selectedArticleOption(liveArticleSelect || reportArticleSelect));
+        if (liveOpenLink && article.url) liveOpenLink.setAttribute("href", article.url);
+        return article;
+      };
+
       const resizeLiveFrame = (frame) => {
         if (!frame) return;
         try {
@@ -760,19 +636,14 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
 
       const syncLiveArticle = (slug) => {
         if (!slug) return;
-        if (liveArticleSelect && liveArticleSelect.value !== slug) liveArticleSelect.value = slug;
-        if (reportArticleSelect && reportArticleSelect.value !== slug) reportArticleSelect.value = slug;
-        const article = articleFromOption(selectedArticleOption(liveArticleSelect || reportArticleSelect));
+        const article = syncSelectedArticle(slug);
+        if (!article) return;
         liveFrames.forEach((frame) => {
           if (article.frameUrl && frame.getAttribute("src") !== article.frameUrl) {
             frame.setAttribute("src", article.frameUrl);
           } else {
             resizeLiveFrame(frame);
           }
-        });
-        if (liveOpenLink && article.url) liveOpenLink.setAttribute("href", article.url);
-        liveInfoPanels.forEach((panel) => {
-          panel.classList.toggle("is-active", panel.getAttribute("data-live-article-info") === slug);
         });
         renderReports();
       };
@@ -802,13 +673,9 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
 
       const extractMetadataQuote = (comment = "") => {
         const text = String(comment).trim();
-        const quoted = text.match(/[「"“](.+?)[」"”]/u);
-        if (quoted?.[1]?.trim()) return quoted[1].trim();
-
-        const explicit = text.match(/(?:金句|重點金句|修正為|改成|採用|指定為)[：:\s]*(.+)$/u);
+        const explicit = text.match(/(?:^|\n)\s*(?:金句|重點金句|網站金句|採用金句|指定金句)[：:\s]+(.+)$/u);
         if (explicit?.[1]?.trim()) return explicit[1].trim();
-
-        return text.length >= 12 && text.length <= 140 ? text : "";
+        return "";
       };
 
       const buildPublishPayload = () => {
@@ -844,16 +711,14 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         };
       };
 
-      const publishPayloadText = () => JSON.stringify(buildPublishPayload(), null, 2);
-
-      const reportCardHtml = (report, compact = false) => {
+      const reportCardHtml = (report, compact = false, showArticleTitle = true) => {
         const quoteCandidate = extractMetadataQuote(report.comment);
         return `
         <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${report.status === "metadata" ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
           <header>
             <div>
               <small>${escapeHtml(report.articleCategory || report.viewport || "校對回報")}</small>
-              <h3>${escapeHtml(report.articleTitle)}</h3>
+              ${showArticleTitle ? `<h3>${escapeHtml(report.articleTitle)}</h3>` : ""}
             </div>
             <small>${reportStatusLabel(report.status)}</small>
           </header>
@@ -874,16 +739,65 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       `;
       };
 
+      const isCompletedReport = (report) => ["done", "metadata"].includes(report.status);
+
+      const groupedReportsHtml = (reports) => {
+        if (!reports.length) return '<p class="review-empty-state">目前沒有修正意見。</p>';
+        const knownArticles = new Map((reviewArticleIndex || []).map((article) => [article.slug, article]));
+        const groups = new Map();
+        reports.forEach((report) => {
+          const slug = report.articleSlug || "__unknown";
+          if (!groups.has(slug)) {
+            const article = knownArticles.get(slug) || {
+              slug,
+              title: report.articleTitle || "未指定文章",
+              category: report.articleCategory || "校對回報"
+            };
+            groups.set(slug, { ...article, reports: [] });
+          }
+          groups.get(slug).reports.push(report);
+        });
+
+        const orderedGroups = [
+          ...(reviewArticleIndex || [])
+            .map((article) => groups.get(article.slug))
+            .filter(Boolean),
+          ...Array.from(groups.values()).filter(
+            (group) => !(reviewArticleIndex || []).some((article) => article.slug === group.slug)
+          )
+        ];
+
+        return orderedGroups
+          .map((group) => {
+            const total = group.reports.length;
+            const openCount = group.reports.filter((report) => !isCompletedReport(report)).length;
+            const statusText = openCount ? `${openCount} 待處理 / ${total}` : `已完成 ${total}`;
+            return `
+              <details class="review-task-group${openCount ? " has-open" : ""}" ${openCount ? "open" : ""}>
+                <summary>
+                  <span>
+                    <small>${escapeHtml(group.category || "校對回報")}</small>
+                    <strong>${escapeHtml(group.title)} (${total})</strong>
+                  </span>
+                  <em>${escapeHtml(statusText)}</em>
+                </summary>
+                <div class="review-task-group-items">
+                  ${group.reports.slice().reverse().map((report) => reportCardHtml(report, false, false)).join("")}
+                </div>
+              </details>
+            `;
+          })
+          .join("");
+      };
+
       const renderReports = () => {
         const reports = readReports();
-        const doneCount = reports.filter((report) => report.status === "done").length;
+        const doneCount = reports.filter(isCompletedReport).length;
         if (reportCountNode) reportCountNode.textContent = String(reports.length);
         if (reportDoneCountNode) reportDoneCountNode.textContent = String(doneCount);
 
         if (reportBoard) {
-          reportBoard.innerHTML = reports.length
-            ? reports.slice().reverse().map((report) => reportCardHtml(report)).join("")
-            : '<p class="review-empty-state">目前沒有修正意見。</p>';
+          reportBoard.innerHTML = groupedReportsHtml(reports);
         }
 
         const activeSlug = reportArticleSelect?.value || liveArticleSelect?.value || "";
@@ -897,11 +811,17 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         if (publishPreviewNode) {
           const payload = buildPublishPayload();
           publishPreviewNode.textContent = JSON.stringify(payload, null, 2);
+          if (submitPublishButton) {
+            submitPublishButton.disabled = payload.openReports.length > 0;
+            submitPublishButton.title = payload.openReports.length
+              ? "仍有待處理的修正意見，完成後才能正式發布。"
+              : "";
+          }
           if (publishStatusNode) {
             const quoteCount = Object.keys(payload.metadataOverrides.quotes).length;
             const tagCount = Object.keys(payload.metadataOverrides.tags).length;
             publishStatusNode.innerHTML = payload.openReports.length
-              ? `還有 <strong>${payload.openReports.length}</strong> 則待辦尚未完成；完成後再產生發布確認。`
+              ? `還有 <strong>${payload.openReports.length}</strong> 則待辦尚未完成；正式發布暫不可送出。`
               : `可進入發布確認：已完成 <strong>${payload.reports.length}</strong> 則待辦，包含 <strong>${quoteCount}</strong> 筆人工金句、<strong>${tagCount}</strong> 筆人工標籤。`;
           }
         }
@@ -1438,6 +1358,15 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
 
       liveFrames.forEach((frame) => {
         frame.addEventListener("load", () => {
+          try {
+            const frameSlug = slugFromArticleUrl(frame.contentWindow?.location?.href || frame.src);
+            if (frameSlug && frameSlug !== (liveArticleSelect?.value || "")) {
+              syncSelectedArticle(frameSlug);
+              renderReports();
+            }
+          } catch {
+            // Same-origin article frames should sync; ignore browser edge cases.
+          }
           resizeLiveFrame(frame);
           window.setTimeout(() => resizeLiveFrame(frame), 250);
         });
@@ -1535,32 +1464,20 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         renderReports();
       });
 
-      downloadPublishButton?.addEventListener("click", () => {
-        const blob = new Blob([publishPayloadText()], { type: "application/json;charset=utf-8" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "review-publish.json";
-        link.click();
-        URL.revokeObjectURL(url);
-      });
-
-      copyPublishButton?.addEventListener("click", async () => {
-        await navigator.clipboard.writeText(publishPayloadText());
-      });
-
       submitPublishButton?.addEventListener("click", async () => {
+        const payload = buildPublishPayload();
+        if (payload.openReports.length) {
+          if (publishStatusNode) {
+            publishStatusNode.innerHTML = `還有 <strong>${payload.openReports.length}</strong> 則待辦尚未完成；完成後才能正式發布。`;
+          }
+          return;
+        }
+
         if (!publishWebhookUrl) {
           if (publishStatusNode) {
             publishStatusNode.textContent = "尚未設定正式發布中介。請先部署 Google Apps Script，並設定 PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL。";
           }
           return;
-        }
-
-        const payload = buildPublishPayload();
-        if (payload.openReports.length) {
-          const confirmed = window.confirm(`仍有 ${payload.openReports.length} 則未完成回報，確定要送出正式發布嗎？`);
-          if (!confirmed) return;
         }
 
         submitPublishButton.disabled = true;
