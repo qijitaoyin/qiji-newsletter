@@ -171,6 +171,7 @@ const normalizeCategory = (category: string) => {
                     data-title={article.title}
                     data-category={article.category}
                     data-author={article.author}
+                    data-quote={article.aiQuote ?? ""}
                     data-url={pathFor(`/articles/${article.slug}/`)}
                     data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
                   >
@@ -209,8 +210,22 @@ const normalizeCategory = (category: string) => {
           <div class="review-live-feedback" aria-label="校對回報">
             <form class="review-report-form review-live-report-form" data-report-form>
               <div class="review-current-article" data-current-article-label>
-                <span>目前文章</span>
-                <strong data-current-article-title>{latestReviewArticles[0]?.title ?? "尚未載入文章"}</strong>
+                <div>
+                  <span>分類</span>
+                  <strong data-current-article-category>{latestReviewArticles[0]?.category ?? ""}</strong>
+                </div>
+                <div>
+                  <span>標題</span>
+                  <strong data-current-article-title>{latestReviewArticles[0]?.title ?? ""}</strong>
+                </div>
+                <div>
+                  <span>作者</span>
+                  <strong data-current-article-author>{latestReviewArticles[0]?.author ?? ""}</strong>
+                </div>
+                <div>
+                  <span>建議金句</span>
+                  <strong data-current-article-quote>{latestReviewArticles[0]?.aiQuote ?? ""}</strong>
+                </div>
               </div>
               <label class="review-report-wide">
                 <span>修正意見</span>
@@ -579,6 +594,7 @@ const normalizeCategory = (category: string) => {
         title: option?.dataset.title || option?.textContent?.trim() || "",
         category: option?.dataset.category || "",
         author: option?.dataset.author || "",
+        quote: option?.dataset.quote || "",
         url: option?.dataset.url || "",
         frameUrl: option?.dataset.frameUrl || option?.dataset.url || ""
       });
@@ -588,8 +604,14 @@ const normalizeCategory = (category: string) => {
       const renderCurrentArticleLabel = (article = currentArticle) => {
         if (!currentArticleLabel) return;
         currentArticleLabel.dataset.articleSlug = article?.slug || "";
+        const categoryNode = currentArticleLabel.querySelector("[data-current-article-category]");
         const titleNode = currentArticleLabel.querySelector("[data-current-article-title]");
-        if (titleNode) titleNode.textContent = article?.title || "尚未載入文章";
+        const authorNode = currentArticleLabel.querySelector("[data-current-article-author]");
+        const quoteNode = currentArticleLabel.querySelector("[data-current-article-quote]");
+        if (categoryNode) categoryNode.textContent = article?.category || "";
+        if (titleNode) titleNode.textContent = article?.title || "";
+        if (authorNode) authorNode.textContent = article?.author || "";
+        if (quoteNode) quoteNode.textContent = article?.quote || "";
       };
 
       const slugFromArticleUrl = (value = "") => {
