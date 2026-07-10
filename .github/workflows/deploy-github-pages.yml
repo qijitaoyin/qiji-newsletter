@@ -86,6 +86,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Restore import cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache
+            public/assets/articles
+          key: qiji-import-cache-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            qiji-import-cache-${{ runner.os }}-${{ github.ref_name }}-
+            qiji-import-cache-${{ runner.os }}-
+
       - name: Install rclone when Google Drive secret exists
         if: ${{ env.RCLONE_CONFIG_CONTENT != '' }}
         run: |

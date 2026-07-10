@@ -1,6 +1,7 @@
 node_modules/
 .astro/
 dist/
+.cache/
 
 # Local environment and credentials
 .env

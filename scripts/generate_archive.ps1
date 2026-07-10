@@ -13,6 +13,9 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
+$importCacheVersion = 2
+$importCacheDir = Join-Path $Root ".cache"
+$importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 
 $skipDirectoryNames = @(
   "pic", "pics", "picture", "pictures", "images", "image", "圖", "圖片", "圖片檔", "五感圖片", "傳習錄圖片", "網站",
@@ -43,6 +46,62 @@ function ConvertTo-PlainText {
   $value = $value -replace "[\x00-\x08\x0B\x0C\x0E-\x1F]", ""
   $value = $value -replace "\s+", " "
   return $value.Trim()
+}
+
+function ConvertTo-PlainObject {
+  param([object]$Value)
+  if ($null -eq $Value) { return $null }
+  if ($Value -is [System.Collections.IDictionary]) {
+    $result = @{}
+    foreach ($key in $Value.Keys) {
+      $result[$key] = ConvertTo-PlainObject $Value[$key]
+    }
+    return $result
+  }
+  if ($Value -is [System.Management.Automation.PSCustomObject]) {
+    $result = @{}
+    foreach ($property in $Value.PSObject.Properties) {
+      $result[$property.Name] = ConvertTo-PlainObject $property.Value
+    }
+    return $result
+  }
+  if ($Value -is [System.Array]) {
+    return @($Value | ForEach-Object { ConvertTo-PlainObject $_ })
+  }
+  return $Value
+}
+
+function Get-RelativePath {
+  param([string]$Path, [string]$BasePath)
+  $base = [System.IO.Path]::GetFullPath($BasePath).TrimEnd([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
+  $full = [System.IO.Path]::GetFullPath($Path)
+  if ($full.StartsWith($base, [System.StringComparison]::OrdinalIgnoreCase)) {
+    return $full.Substring($base.Length).TrimStart([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
+  }
+  return $full
+}
+
+function Get-FileSignature {
+  param([System.IO.FileInfo]$File, [string]$BasePath, [int]$CacheVersion, [string]$ApprovalFingerprint)
+  return @{
+    key = Get-RelativePath $File.FullName $BasePath
+    modifiedUtc = $File.LastWriteTimeUtc.ToString("o")
+    length = $File.Length
+    cacheVersion = $CacheVersion
+    approvalFingerprint = $ApprovalFingerprint
+  }
+}
+
+function Test-CacheSignatureMatch {
+  param([object]$Entry, [object]$Signature)
+  if (-not $Entry -or -not $Entry.signature) { return $false }
+  return (
+    [string]$Entry.signature.key -eq [string]$Signature.key -and
+    [string]$Entry.signature.modifiedUtc -eq [string]$Signature.modifiedUtc -and
+    [string]$Entry.signature.length -eq [string]$Signature.length -and
+    [string]$Entry.signature.cacheVersion -eq [string]$Signature.cacheVersion -and
+    [string]$Entry.signature.approvalFingerprint -eq [string]$Signature.approvalFingerprint
+  )
 }
 
 function Read-DocxParagraphs {
@@ -936,11 +995,19 @@ function Get-ArticleAssetPath {
   return "/assets/articles/${IssueId}/${FileName}?v=${version}"
 }
 
+function Test-FileCopyNeeded {
+  param([System.IO.FileInfo]$Source, [string]$Destination)
+  if (-not (Test-Path -LiteralPath $Destination)) { return $true }
+  $targetItem = Get-Item -LiteralPath $Destination
+  if ($targetItem.Length -ne $Source.Length) { return $true }
+  if ($targetItem.LastWriteTimeUtc -lt $Source.LastWriteTimeUtc) { return $true }
+  return $false
+}
+
 function Copy-IssueImages {
   param([string]$IssueId, [System.IO.DirectoryInfo]$IssueDir)
   $target = Join-Path $publicArticles $IssueId
   New-Item -ItemType Directory -Force -Path $target | Out-Null
-  Get-ChildItem -LiteralPath $target -File -ErrorAction SilentlyContinue | Remove-Item -Force
   $images = Get-ChildItem -Path $IssueDir.FullName -Recurse -File |
     Where-Object { $_.Extension -match "^\.(jpg|jpeg|png|webp|gif)$" } |
     Where-Object { Test-UsableImageFile $_ } |
@@ -952,7 +1019,10 @@ function Copy-IssueImages {
     $ext = $image.Extension.ToLowerInvariant()
     $name = "{0}-img-{1:D3}{2}" -f $IssueId, $index, $ext
     $destination = Join-Path $target $name
-    Copy-Item -LiteralPath $image.FullName -Destination $destination -Force
+    if (Test-FileCopyNeeded $image $destination) {
+      Copy-Item -LiteralPath $image.FullName -Destination $destination -Force
+      (Get-Item -LiteralPath $destination).LastWriteTimeUtc = $image.LastWriteTimeUtc
+    }
     $copied.Add(@{
       sourceName = [IO.Path]::GetFileNameWithoutExtension($image.Name)
       path = Get-ArticleAssetPath $IssueId $name $destination
@@ -1067,10 +1137,14 @@ $articles = New-Object System.Collections.Generic.List[object]
 $issues = New-Object System.Collections.Generic.List[object]
 $seenSlugs = @{}
 $validationItems = New-Object System.Collections.Generic.List[object]
+$cacheHitCount = 0
+$cacheMissCount = 0
 $approvalMap = @{}
 $correctionMap = @{}
+$approvalFingerprint = ""
 if (Test-Path -LiteralPath $reviewApprovalsPath) {
   try {
+    $approvalFingerprint = (Get-Item -LiteralPath $reviewApprovalsPath).LastWriteTimeUtc.ToString("o")
     $approvalData = Get-Content -LiteralPath $reviewApprovalsPath -Raw -Encoding UTF8 | ConvertFrom-Json
     foreach ($entry in @($approvalData.approvals)) {
       if ($entry.id) { $approvalMap[$entry.id] = $entry }
@@ -1080,6 +1154,22 @@ if (Test-Path -LiteralPath $reviewApprovalsPath) {
     }
   } catch {
     Write-Warning "Cannot read review approvals: $reviewApprovalsPath ($($_.Exception.Message))"
+  }
+}
+
+$cacheMap = @{}
+$nextCacheEntries = @{}
+if (Test-Path -LiteralPath $importCachePath) {
+  try {
+    $cacheData = Get-Content -LiteralPath $importCachePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    foreach ($entry in @($cacheData.entries)) {
+      if ($entry.signature -and $entry.signature.key) {
+        $cacheMap[[string]$entry.signature.key] = $entry
+      }
+    }
+    Write-Host "Loaded article import cache: $($cacheMap.Count) entries."
+  } catch {
+    Write-Warning "Cannot read article import cache: $importCachePath ($($_.Exception.Message))"
   }
 }
 
@@ -1095,11 +1185,40 @@ foreach ($issueDir in $issueDirs) {
   $issueArticles = New-Object System.Collections.Generic.List[object]
   $order = 0
   foreach ($file in $files) {
+    $stem = [IO.Path]::GetFileNameWithoutExtension($file.Name)
+    $sourceId = Get-SourceId $issueId $stem
+    $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint
+    $cachedEntry = $cacheMap[[string]$signature.key]
+    if ((Test-CacheSignatureMatch $cachedEntry $signature) -and $cachedEntry.article) {
+      $cacheHitCount++
+      $cachedArticle = ConvertTo-PlainObject $cachedEntry.article
+      $cachedArticle["order"] = $order
+      if ($cachedArticle.slug) {
+        if ($seenSlugs.ContainsKey($cachedArticle.slug)) {
+          $seenSlugs[$cachedArticle.slug] += 1
+        } else {
+          $seenSlugs[$cachedArticle.slug] = 1
+        }
+      }
+      $issueArticles.Add($cachedArticle)
+      foreach ($cachedValidation in @($cachedEntry.validationItems)) {
+        $validationItems.Add((ConvertTo-PlainObject $cachedValidation))
+      }
+      $nextCacheEntries[[string]$signature.key] = @{
+        signature = $signature
+        article = $cachedArticle
+        validationItems = @($cachedEntry.validationItems)
+      }
+      $order++
+      continue
+    }
+    $cacheMissCount++
+
+    $validationStartIndex = $validationItems.Count
     $docxContent = Read-DocxContent $file $issueId (Join-Path $publicArticles $issueId) $imageIndex
     $paragraphs = $docxContent.Paragraphs
     if (-not $paragraphs -or $paragraphs.Count -eq 0) { continue }
 
-    $stem = [IO.Path]::GetFileNameWithoutExtension($file.Name)
     $title = Get-CleanTitle $stem
     $bodyParagraphs = $paragraphs
     $hasHeader = $false
@@ -1141,7 +1260,6 @@ foreach ($issueDir in $issueDirs) {
         }
       }
     }
-    $sourceId = Get-SourceId $issueId $stem
     $articleReviewId = "$issueId::$($file.FullName)"
     $wordReviewId = "word::$($file.FullName)"
     $correction = $null
@@ -1295,6 +1413,15 @@ foreach ($issueDir in $issueDirs) {
       order = $order
     }
     $issueArticles.Add($article)
+    $fileValidationItems = New-Object System.Collections.Generic.List[object]
+    for ($validationIndex = $validationStartIndex; $validationIndex -lt $validationItems.Count; $validationIndex++) {
+      $fileValidationItems.Add($validationItems[$validationIndex])
+    }
+    $nextCacheEntries[[string]$signature.key] = @{
+      signature = $signature
+      article = $article
+      validationItems = @($fileValidationItems.ToArray())
+    }
     $order++
   }
   $orderedIssueArticles = @($issueArticles | Sort-Object @{ Expression = { if ($_.category -eq "編輯小語") { 0 } else { 1 } } }, order, title)
@@ -1445,6 +1572,14 @@ $articlesJson = $articles | ConvertTo-Json -Depth $jsonDepth
 $issuesJson = $issues | ConvertTo-Json -Depth $jsonDepth
 $sortedReviewItems = @($reviewItems | Sort-Object @{ Expression = { if ($_.status -eq "error") { 0 } elseif ($_.status -eq "needs-review") { 1 } else { 2 } } }, issueId, file)
 $reviewJson = ConvertTo-Json -InputObject $sortedReviewItems -Depth $jsonDepth
+$cacheEntries = @($nextCacheEntries.Values | Sort-Object { [string]$_.signature.key })
+$cachePayload = @{
+  version = $importCacheVersion
+  generatedAt = (Get-Date).ToUniversalTime().ToString("o")
+  entries = $cacheEntries
+}
+New-Item -ItemType Directory -Force -Path $importCacheDir | Out-Null
+$cachePayload | ConvertTo-Json -Depth $jsonDepth | Set-Content -LiteralPath $importCachePath -Encoding UTF8
 $content = @"
 import type { Article, IssueArchive } from "./articles";
 
@@ -1462,3 +1597,4 @@ export const generatedReviewItems = $reviewJson satisfies ReviewItem[];
 
 Set-Content -LiteralPath $generatedReviewPath -Encoding UTF8 -Value $reviewContent
 Write-Host "Generated $($articles.Count) articles across $($issues.Count) issues."
+Write-Host "Article import cache: $cacheHitCount hit(s), $cacheMissCount rebuilt."
