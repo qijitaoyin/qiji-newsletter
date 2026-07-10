@@ -14,7 +14,8 @@
  * Optional Script Properties:
  * - GITHUB_BRANCH: main
  * - GITHUB_WORKFLOW: deploy-github-pages.yml
- * - RUN_AI: true
+ * - RUN_AI: false
+ * - PAID_AI_CONFIRM: false
  * - AI_ISSUE_ID: latest
  * - AI_LIMIT: 0
  */
@@ -41,6 +42,7 @@ function doPost(e) {
         branch,
         inputs: {
           run_ai: "false",
+          paid_ai_confirm: "false",
           ai_issue_id: payload.issueId || props.getProperty("AI_ISSUE_ID") || "latest",
           ai_limit: "0",
           sync_drive: "true",
@@ -74,7 +76,8 @@ function doPost(e) {
       workflow,
       branch,
       inputs: {
-        run_ai: props.getProperty("RUN_AI") || "true",
+        run_ai: props.getProperty("RUN_AI") || "false",
+        paid_ai_confirm: props.getProperty("PAID_AI_CONFIRM") || "false",
         ai_issue_id: props.getProperty("AI_ISSUE_ID") || "latest",
         ai_limit: props.getProperty("AI_LIMIT") || "0",
         sync_drive: "true",

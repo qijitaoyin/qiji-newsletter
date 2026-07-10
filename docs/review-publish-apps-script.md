@@ -49,9 +49,14 @@ GITHUB_REPO=qiji-newsletter
 GITHUB_BRANCH=main
 GITHUB_WORKFLOW=deploy-github-pages.yml
 RUN_AI=false
+PAID_AI_CONFIRM=false
 AI_ISSUE_ID=latest
 AI_LIMIT=0
 ```
+
+Keep `PAID_AI_CONFIRM=false` unless you intentionally want GitHub Actions to
+call a paid AI API. With the default setting, publishing and reimporting reuse
+committed/local AI metadata only and do not spend Kimi/OpenAI API credits.
 
 ## 3. Deploy As Web App
 

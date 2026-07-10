@@ -15,7 +15,8 @@ $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
 
 $skipDirectoryNames = @(
-  "pic", "pics", "picture", "pictures", "images", "image", "圖", "圖片", "圖片檔", "五感圖片", "傳習錄圖片", "網站"
+  "pic", "pics", "picture", "pictures", "images", "image", "圖", "圖片", "圖片檔", "五感圖片", "傳習錄圖片", "網站",
+  "draft", "drafts", "staging", "整理中", "待整理", "暫存", "暫不上架", "不上架", "未上架", "校稿中"
 )
 
 $categoryRules = @(
@@ -988,6 +989,15 @@ function Should-SkipDoc {
   return $false
 }
 
+function Test-SkippedDirectoryPath {
+  param([System.IO.DirectoryInfo]$Directory)
+  $dirNames = $Directory.FullName.Split([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
+  foreach ($name in $dirNames) {
+    if ($skipDirectoryNames -contains $name.ToLowerInvariant()) { return $true }
+  }
+  return $false
+}
+
 function Test-NestedIssueDoc {
   param([System.IO.FileInfo]$File, [System.IO.DirectoryInfo]$IssueDir)
   $relativeDir = $File.DirectoryName.Substring($IssueDir.FullName.Length).TrimStart("\", "/")
@@ -1050,7 +1060,7 @@ function Get-PreferredArticleFiles {
 }
 
 $issueDirs = Get-ChildItem -Path $sourceRoot -Recurse -Directory |
-  Where-Object { $_.Name -match "^(20\d{4})" } |
+  Where-Object { $_.Name -match "^(20\d{4})" -and -not (Test-SkippedDirectoryPath $_) } |
   Sort-Object Name -Descending
 
 $articles = New-Object System.Collections.Generic.List[object]

@@ -4,7 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       run_ai:
-        description: "Generate AI quotes and tags before build"
+        description: "Generate AI metadata before build"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      paid_ai_confirm:
+        description: "Allow paid AI API calls for missing/changed metadata"
         required: true
         default: "false"
         type: choice
@@ -53,6 +61,7 @@ jobs:
       AI_API_BASE_URL: ${{ vars.AI_API_BASE_URL }}
       AI_MODEL: ${{ vars.AI_MODEL }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+      AI_ALLOW_PAID_API: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && 'true' || 'false' }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
@@ -86,7 +95,7 @@ jobs:
 
       - name: Sync Google Drive source
         if: ${{ inputs.sync_drive == 'true' && env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
-        timeout-minutes: 10
+        timeout-minutes: 60
         shell: pwsh
         run: ./scripts/sync_google_drive.ps1
 
@@ -100,11 +109,11 @@ jobs:
           }
 
       - name: Generate AI metadata
-        if: ${{ inputs.run_ai == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+        if: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
         run: pnpm ai:metadata
 
       - name: Persist AI metadata
-        if: ${{ inputs.run_ai == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+        if: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
         run: |
           if git diff --quiet -- src/data/aiMetadata.json; then
             echo "AI metadata unchanged."

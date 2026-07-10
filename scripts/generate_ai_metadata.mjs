@@ -24,6 +24,8 @@ const temperature = Number.parseFloat(
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
+const allowPaidApi =
+  process.env.AI_ALLOW_PAID_API === "1" || process.env.AI_ALLOW_PAID_API === "true";
 
 const readJson = (filePath, fallback) => {
   if (!fs.existsSync(filePath)) return fallback;
@@ -296,6 +298,48 @@ const main = async () => {
       "utf8"
     );
     console.log("No AI API key is set; skipped AI metadata generation.");
+    return;
+  }
+
+  if (!allowPaidApi) {
+    for (const article of candidates) {
+      const existing = metadata.articles[article.slug];
+      if (existing) {
+        syncCompatibilityMaps(metadata, article.slug, existing);
+        results.push({ slug: article.slug, title: article.title, status: "cache-hit" });
+      } else {
+        results.push({
+          slug: article.slug,
+          title: article.title,
+          status: "skipped",
+          reason: "AI_ALLOW_PAID_API is not true"
+        });
+      }
+    }
+
+    const generatedAt = new Date().toISOString();
+    fs.writeFileSync(
+      reportPath,
+      JSON.stringify(
+        {
+          status: "skipped",
+          reason: "AI_ALLOW_PAID_API is not true; existing metadata was reused only",
+          generatedAt,
+          provider,
+          apiBaseUrl,
+          issueId,
+          model,
+          count: results.length,
+          cacheHits: results.filter((result) => result.status === "cache-hit").length,
+          skipped: results.filter((result) => result.status === "skipped").length,
+          results
+        },
+        null,
+        2
+      ),
+      "utf8"
+    );
+    console.log("AI_ALLOW_PAID_API is not true; skipped paid AI calls and reused existing metadata.");
     return;
   }
 
