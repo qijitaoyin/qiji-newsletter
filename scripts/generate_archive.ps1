@@ -71,6 +71,35 @@ function ConvertTo-PlainObject {
   return $Value
 }
 
+function ConvertTo-ArrayValue {
+  param([object]$Value)
+  if ($null -eq $Value) { return @() }
+  if ($Value -is [System.Array]) { return @($Value) }
+  return @($Value)
+}
+
+function Normalize-CachedArticle {
+  param([object]$Article)
+  $plain = ConvertTo-PlainObject $Article
+  if ($null -eq $plain -or -not ($plain -is [System.Collections.IDictionary])) { return $plain }
+
+  foreach ($field in @("tags", "images", "contentBlocks")) {
+    $plain[$field] = @(ConvertTo-ArrayValue $plain[$field])
+  }
+
+  $plain["sections"] = @(
+    ConvertTo-ArrayValue $plain["sections"] | ForEach-Object {
+      $section = ConvertTo-PlainObject $_
+      if ($section -is [System.Collections.IDictionary]) {
+        $section["paragraphs"] = @(ConvertTo-ArrayValue $section["paragraphs"])
+      }
+      $section
+    }
+  )
+
+  return $plain
+}
+
 function Get-RelativePath {
   param([string]$Path, [string]$BasePath)
   $base = [System.IO.Path]::GetFullPath($BasePath).TrimEnd([IO.Path]::DirectorySeparatorChar, [IO.Path]::AltDirectorySeparatorChar)
@@ -1207,7 +1236,7 @@ foreach ($issueDir in $issueDirs) {
     $cachedEntry = $cacheMap[[string]$signature.key]
     if ((Test-CacheSignatureMatch $cachedEntry $signature) -and $cachedEntry.article) {
       $cacheHitCount++
-      $cachedArticle = ConvertTo-PlainObject $cachedEntry.article
+      $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
       if ($cachedArticle.slug) {
         if ($seenSlugs.ContainsKey($cachedArticle.slug)) {
@@ -1217,13 +1246,13 @@ foreach ($issueDir in $issueDirs) {
         }
       }
       $issueArticles.Add($cachedArticle)
-      foreach ($cachedValidation in @($cachedEntry.validationItems)) {
+      foreach ($cachedValidation in @(ConvertTo-ArrayValue $cachedEntry.validationItems)) {
         $validationItems.Add((ConvertTo-PlainObject $cachedValidation))
       }
       $nextCacheEntries[[string]$signature.key] = @{
         signature = $signature
         article = $cachedArticle
-        validationItems = @($cachedEntry.validationItems)
+        validationItems = @(ConvertTo-ArrayValue $cachedEntry.validationItems)
       }
       $order++
       continue
