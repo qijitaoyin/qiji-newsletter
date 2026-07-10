@@ -617,11 +617,15 @@ const normalizeCategory = (category: string) => {
         try {
           const doc = frame.contentDocument || frame.contentWindow?.document;
           if (!doc) return;
-          const height = Math.max(
+          const scrollTop = frame.contentWindow?.scrollY || doc.documentElement?.scrollTop || doc.body?.scrollTop || 0;
+          const content = doc.querySelector(".article-page") || doc.querySelector("main") || doc.body;
+          const contentBottom = content ? content.getBoundingClientRect().bottom + scrollTop : 0;
+          const fallbackHeight = Math.max(
             doc.documentElement?.scrollHeight || 0,
             doc.body?.scrollHeight || 0
           );
-          if (height > 0) frame.style.height = `${height}px`;
+          const height = Math.ceil(contentBottom || fallbackHeight);
+          if (height > 0) frame.style.height = `${height + 2}px`;
         } catch {
           // Same-origin review frames should resize; ignore browser edge cases.
         }

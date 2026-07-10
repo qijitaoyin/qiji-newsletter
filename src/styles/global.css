@@ -2385,8 +2385,8 @@ body.is-review-frame .article-main {
   background: var(--page);
   border: 0;
   display: block;
-  height: 1200px;
-  min-height: 70vh;
+  height: 640px;
+  min-height: 0;
   width: 100%;
 }
 
@@ -2397,8 +2397,8 @@ body.is-review-frame .article-main {
 .review-live-preview-mobile iframe {
   border: 1px solid var(--line);
   display: inline-block;
-  height: 1200px;
-  min-height: 70vh;
+  height: 640px;
+  min-height: 0;
   max-width: 100%;
   text-align: initial;
   width: 390px;
