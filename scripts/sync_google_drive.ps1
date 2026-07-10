@@ -51,7 +51,11 @@ $arguments = @(
   "--exclude", "._*",
   "--exclude", "~$*",
   "--exclude", "*.tmp",
-  "--exclude", "*.download"
+  "--exclude", "*.download",
+  "--fast-list",
+  "--checkers", "32",
+  "--transfers", "16",
+  "--drive-chunk-size", "64M"
 )
 
 foreach ($folder in $ignoredFolders) {
