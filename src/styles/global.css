@@ -2423,6 +2423,29 @@ body.is-review-frame .article-main {
   grid-column: auto;
 }
 
+.review-current-article {
+  align-content: center;
+  background: #fffaf2;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  display: grid;
+  gap: 4px;
+  min-height: 42px;
+  padding: 8px 10px;
+}
+
+.review-current-article span {
+  color: var(--brown);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.review-current-article strong {
+  font-size: 0.95rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
 .review-live-report-form textarea {
   min-height: 42px;
   resize: vertical;

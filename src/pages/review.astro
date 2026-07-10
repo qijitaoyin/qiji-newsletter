@@ -208,23 +208,10 @@ const normalizeCategory = (category: string) => {
 
           <div class="review-live-feedback" aria-label="校對回報">
             <form class="review-report-form review-live-report-form" data-report-form>
-              <label>
-                <span>文章</span>
-                <select name="articleSlug" data-report-article-select>
-                  {latestReviewArticles.map((article) => (
-                    <option
-                      value={article.slug}
-                      data-title={article.title}
-                      data-category={article.category}
-                      data-author={article.author}
-                      data-url={pathFor(`/articles/${article.slug}/`)}
-                      data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
-                    >
-                      {article.title}
-                    </option>
-                  ))}
-                </select>
-              </label>
+              <div class="review-current-article" data-current-article-label>
+                <span>目前文章</span>
+                <strong data-current-article-title>{latestReviewArticles[0]?.title ?? "尚未載入文章"}</strong>
+              </div>
               <label class="review-report-wide">
                 <span>修正意見</span>
                 <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
@@ -557,7 +544,7 @@ const normalizeCategory = (category: string) => {
       const publishStatusNode = document.querySelector("[data-publish-status]");
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
-      const reportArticleSelect = document.querySelector("[data-report-article-select]");
+      const currentArticleLabel = document.querySelector("[data-current-article-label]");
       const liveOpenLink = document.querySelector("[data-live-open-link]");
       const liveFrames = Array.from(document.querySelectorAll("[data-live-frame]"));
       const liveViewportTabs = Array.from(document.querySelectorAll("[data-live-viewport-tab]"));
@@ -584,7 +571,7 @@ const normalizeCategory = (category: string) => {
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;");
 
-      const selectedArticleOption = (select = reportArticleSelect) =>
+      const selectedArticleOption = (select = liveArticleSelect) =>
         select?.selectedOptions?.[0] || null;
 
       const articleFromOption = (option) => ({
@@ -595,6 +582,15 @@ const normalizeCategory = (category: string) => {
         url: option?.dataset.url || "",
         frameUrl: option?.dataset.frameUrl || option?.dataset.url || ""
       });
+
+      let currentArticle = articleFromOption(selectedArticleOption());
+
+      const renderCurrentArticleLabel = (article = currentArticle) => {
+        if (!currentArticleLabel) return;
+        currentArticleLabel.dataset.articleSlug = article?.slug || "";
+        const titleNode = currentArticleLabel.querySelector("[data-current-article-title]");
+        if (titleNode) titleNode.textContent = article?.title || "尚未載入文章";
+      };
 
       const slugFromArticleUrl = (value = "") => {
         try {
@@ -609,8 +605,9 @@ const normalizeCategory = (category: string) => {
       const syncSelectedArticle = (slug) => {
         if (!slug) return null;
         if (liveArticleSelect && liveArticleSelect.value !== slug) liveArticleSelect.value = slug;
-        if (reportArticleSelect && reportArticleSelect.value !== slug) reportArticleSelect.value = slug;
-        const article = articleFromOption(selectedArticleOption(liveArticleSelect || reportArticleSelect));
+        const article = articleFromOption(selectedArticleOption(liveArticleSelect));
+        currentArticle = article;
+        renderCurrentArticleLabel(article);
         if (liveOpenLink && article.url) liveOpenLink.setAttribute("href", article.url);
         return article;
       };
@@ -800,7 +797,7 @@ const normalizeCategory = (category: string) => {
           reportBoard.innerHTML = groupedReportsHtml(reports);
         }
 
-        const activeSlug = reportArticleSelect?.value || liveArticleSelect?.value || "";
+        const activeSlug = currentArticle?.slug || liveArticleSelect?.value || "";
         liveReportLists.forEach((list) => {
           const articleReports = reports.filter((report) => report.articleSlug === activeSlug);
           list.innerHTML = articleReports.length
@@ -1345,10 +1342,6 @@ const normalizeCategory = (category: string) => {
         syncLiveArticle(liveArticleSelect.value);
       });
 
-      reportArticleSelect?.addEventListener("change", () => {
-        syncLiveArticle(reportArticleSelect.value);
-      });
-
       liveViewportTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           syncLiveViewport(tab.getAttribute("data-live-viewport-tab") || "desktop");
@@ -1391,9 +1384,15 @@ const normalizeCategory = (category: string) => {
         form.addEventListener("submit", (event) => {
           event.preventDefault();
           const formData = new FormData(form);
-          const articleOption = selectedArticleOption(form.querySelector('[name="articleSlug"]'));
-          const selectedArticle = articleFromOption(articleOption);
+          const selectedArticle = currentArticle?.slug
+            ? currentArticle
+            : articleFromOption(selectedArticleOption(liveArticleSelect));
           const selectedSlug = selectedArticle.slug;
+          if (!selectedSlug) {
+            const result = form.querySelector("[data-report-result]");
+            if (result) result.textContent = "文章尚未載入完成";
+            return;
+          }
           const screenshot = form.dataset.screenshotName || "";
           const report = {
             id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
@@ -1516,7 +1515,7 @@ const normalizeCategory = (category: string) => {
         if (mobileReviewQuery.matches) syncLiveViewport("mobile");
       };
 
-      syncLiveArticle(liveArticleSelect?.value || reportArticleSelect?.value || "");
+      syncLiveArticle(liveArticleSelect?.value || "");
       syncLiveViewport(mobileReviewQuery.matches ? "mobile" : "desktop");
       mobileReviewQuery.addEventListener?.("change", applyMobileReviewMode);
       renderReports();
