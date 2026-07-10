@@ -85,28 +85,6 @@ const normalizeCategory = (category: string) => {
   if (category === "同頻共振時") return "導引專欄";
   return category;
 };
-const latestReviewCatalog = latestReviewArticles.reduce(
-  (groups, article) => {
-    const category = normalizeCategory(article.category);
-    const group = groups.find((entry) => entry.category === category);
-    if (group) {
-      group.items.push(article);
-    } else {
-      groups.push({ category, items: [article] });
-    }
-    return groups;
-  },
-  [] as { category: string; items: typeof latestReviewArticles }[]
-);
-const titlePhrasesFor = (title: string) =>
-  title.includes(" ") ? title.split(/\s+/).filter(Boolean) : title.match(/.{1,8}/gu) ?? [title];
-const previewBlocksFor = (article: (typeof latestReviewArticles)[number]) =>
-  article.contentBlocks?.length
-    ? article.contentBlocks.slice(0, 8)
-    : article.sections.flatMap((section) => [
-        ...(section.heading ? [{ type: "heading" as const, text: section.heading }] : []),
-        ...section.paragraphs.map((text) => ({ type: "paragraph" as const, text }))
-      ]).slice(0, 8);
 const quoteSuggestionFor = (article: (typeof latestReviewArticles)[number]) => {
   const manualQuote = aiOverrides.quotes?.[article.slug]?.trim();
   if (manualQuote) return manualQuote;
@@ -202,7 +180,7 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
           <p class="review-kicker">最新一期校對</p>
           <h2>{latestReviewArchive?.issueNumber ?? "最新一期"} / {latestReviewArchive?.date ?? ""}</h2>
           <p>
-          校對者可在同一篇文章內切換電腦版與手機版預覽，直接留下位置、修正意見與截圖。上架人員處理完每一則待辦後，再進入發布前確認。
+          校對者可在同一篇文章內切換電腦版與手機版預覽，直接留下修正意見與截圖。上架人員處理完每一則待辦後，再從統計區送出正式發布。
           </p>
         </div>
         <div class="review-summary review-current-summary" aria-label="最新一期校對統計">
@@ -218,6 +196,20 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
             <strong data-report-done-count>0</strong>
             <span>已處理待辦</span>
           </article>
+          <div class="review-summary-actions">
+            <span data-publish-status>尚未產生發布確認。</span>
+            <button type="button" data-submit-publish>送出正式發布</button>
+            <button type="button" data-download-publish>產生交接資料</button>
+            <button type="button" data-copy-publish>複製交接資料</button>
+            <pre data-publish-preview hidden>{`{
+  "status": "pending",
+  "reports": [],
+  "metadataOverrides": {
+    "quotes": {},
+    "tags": {}
+  }
+}`}</pre>
+          </div>
         </div>
       </section>
 
@@ -237,64 +229,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         </div>
       </section>
 
-      <section class="review-publish-note review-publish-package" aria-label="產生發布核准檔">
-        <div>
-          <h2>發布前總確認</h2>
-          <p>
-            所有待辦處理完成、最後閱讀預覽也確認無誤後，按「產生發布確認」。目前本機原型會先下載一個
-            <code>review-publish.json</code> 作為交接紀錄；正式接上 GitHub 後，這一步會改成直接送出發布確認。
-          </p>
-        </div>
-        <div class="review-publish-status" data-publish-status>
-          目前尚未產生發布確認。
-        </div>
-        <div class="review-publish-actions">
-          <button type="button" data-submit-publish>送出正式發布</button>
-          <button type="button" data-download-publish>產生發布確認</button>
-          <button type="button" data-copy-publish>複製交接資料</button>
-        </div>
-        <details class="review-technical-details">
-          <summary>查看交接資料</summary>
-          <p>這是給上架腳本讀取的資料，校對者不用閱讀。</p>
-          <pre data-publish-preview>{`{
-  "status": "pending",
-  "reports": [],
-  "metadataOverrides": {
-    "quotes": {},
-    "tags": {}
-  }
-}`}</pre>
-        </details>
-      </section>
-
-      <section class="review-publish-note" aria-label="發布流程說明">
-        <h2>發布前確認</h2>
-        <p>
-          每篇文章可先在卡片內查看電腦版與手機版預覽。全部校對完成後，再使用下方閱讀預覽清單逐篇做最後確認；閱讀預覽只會打開目前產生的文章頁，不會把文章正式發布。正式發布會在所有待辦完成、Word 重新匯入並確認預覽無誤後，才由上架人員執行發布流程。
-        </p>
-      </section>
-
-      <details class="review-final-preview-list review-final-catalog">
-        <summary>最後閱讀預覽目錄</summary>
-        <p>依正式閱讀頁的本期目錄格式排列，方便校對完成後一併檢查分類與文章順序。</p>
-        <nav aria-label="最新一期閱讀預覽目錄">
-          {latestReviewCatalog.map((group) => (
-            <section class="review-final-catalog-group">
-              <h3>{group.category}</h3>
-              <ol>
-                {group.items.map((article) => (
-                  <li>
-                    <a href={pathFor(`/articles/${article.slug}/`)} target="_blank" rel="noreferrer">
-                      <strong>{article.title}</strong>
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </section>
-          ))}
-        </nav>
-      </details>
-
       <section class="review-live-workspace" aria-label="正式版面校對" data-live-review>
         <div class="review-live-panel">
           <div class="review-live-controls">
@@ -308,6 +242,7 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
                     data-category={article.category}
                     data-author={article.author}
                     data-url={pathFor(`/articles/${article.slug}/`)}
+                    data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
                   >
                     {article.title}
                   </option>
@@ -328,14 +263,16 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
             <iframe
               title="電腦版正式文章預覽"
               data-live-frame="desktop"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/`)}
+              scrolling="no"
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1`)}
             ></iframe>
           </div>
           <div class="review-live-preview review-live-preview-mobile" data-live-viewport-panel="mobile">
             <iframe
               title="手機版正式文章預覽"
               data-live-frame="mobile"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/`)}
+              scrolling="no"
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1`)}
             ></iframe>
           </div>
         </div>
@@ -352,33 +289,22 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
                     data-category={article.category}
                     data-author={article.author}
                     data-url={pathFor(`/articles/${article.slug}/`)}
+                    data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
                   >
                     {article.title}
                   </option>
                 ))}
               </select>
             </label>
-            <label>
-              <span>出現版面</span>
-              <select name="viewport" data-report-viewport>
-                <option value="電腦版">電腦版</option>
-                <option value="手機版">手機版</option>
-                <option value="兩者都有">兩者都有</option>
-                <option value="不確定">不確定</option>
-              </select>
-            </label>
-            <label>
-              <span>位置說明</span>
-              <input name="position" placeholder="例如：標題、目錄、第 3 段、第一張圖片旁" />
-            </label>
-            <label>
-              <span>截圖檔名</span>
-              <input name="screenshot" type="text" placeholder="貼上或輸入截圖檔名" />
-            </label>
             <label class="review-report-wide">
               <span>修正意見</span>
-              <textarea name="comment" rows="5" required placeholder="請直接寫要修正的內容，例如：標題中的標點需調整、第三段多了一個字……"></textarea>
+              <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
             </label>
+            <div class="review-screenshot-paste" tabindex="0" data-screenshot-paste>
+              <strong>貼上截圖</strong>
+              <span>點這裡後按 Ctrl+V，或在意見欄直接貼上圖片</span>
+              <div data-screenshot-preview></div>
+            </div>
             <div class="review-report-actions">
               <button type="submit">送出修正意見</button>
               <span data-report-result></span>
@@ -465,194 +391,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
             })}
           </div>
         </aside>
-      </section>
-
-      <section class="review-current-list" aria-label="最新一期文章校對">
-        {latestReviewArticles.map((article, index) => {
-          const previewBlocks = previewBlocksFor(article);
-          const quoteSuggestion = quoteSuggestionFor(article);
-          const quoteSource = quoteSourceFor(article);
-          const tagSuggestions = tagSuggestionsFor(article);
-          const summarySuggestion = summarySuggestionFor(article);
-          const themeSuggestions = themeSuggestionsFor(article);
-          const similarSuggestions = similarSuggestionsFor(article);
-          const tabs = [
-            ["info", "文章資料"],
-            ["desktop", "電腦預覽"],
-            ["mobile", "手機預覽"],
-            ["report", "修正意見"]
-          ];
-          return (
-            <article
-              class="review-current-card"
-              data-current-review-card
-              data-article-slug={article.slug}
-              data-article-title={article.title}
-              data-article-category={article.category}
-              data-article-author={article.author}
-              data-article-url={pathFor(`/articles/${article.slug}/`)}
-            >
-              <header class="review-current-card-head">
-                <div>
-                  <p class="meta-line">
-                    <span>{normalizeCategory(article.category)}</span>
-                    <span>{article.readTime}</span>
-                  </p>
-                  <h3>{article.title}</h3>
-                  <p class="review-meta">
-                    <span>{article.author || "作者未填"}</span>
-                    <span>{article.date}</span>
-                  </p>
-                </div>
-              </header>
-
-              <div class="review-tablist" role="tablist" aria-label={`${article.title} 校對分頁`}>
-                {tabs.map(([id, label], tabIndex) => (
-                  <button
-                    type="button"
-                    class:list={{ "is-active": tabIndex === 0 }}
-                    data-review-tab={id}
-                    data-review-target={`${article.slug}-${id}`}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-
-              <div class="review-tabpanels">
-                <section class="review-tabpanel is-active" data-review-panel={`${article.slug}-info`}>
-                  <dl class="review-info-grid">
-                    <div><dt>分類</dt><dd>{article.category}</dd></div>
-                    <div><dt>標題</dt><dd>{article.title}</dd></div>
-                    <div><dt>作者</dt><dd>{article.author || "作者未填"}</dd></div>
-                    <div><dt>日期</dt><dd>{article.date}</dd></div>
-                  </dl>
-                  {article.excerpt && <p class="review-excerpt">{article.excerpt}</p>}
-                  <div class="review-ai-panel review-ai-inline">
-                    <div>
-                      <h4>建議分類標籤</h4>
-                      <div class="review-ai-tags">
-                        {tagSuggestions.map((tag) => <span>{tag}</span>)}
-                      </div>
-                    </div>
-                    <div>
-                      <h4>{quoteSource === "manual" ? "人工指定重點金句" : "建議重點金句"}</h4>
-                      <blockquote>{quoteSuggestion}</blockquote>
-                    </div>
-                    {summarySuggestion && (
-                      <div>
-                        <h4>建議短摘要</h4>
-                        <p>{summarySuggestion}</p>
-                      </div>
-                    )}
-                    {themeSuggestions.length > 0 && (
-                      <div>
-                        <h4>文章核心主題</h4>
-                        <div class="review-ai-tags">
-                          {themeSuggestions.map((theme) => <span>{theme}</span>)}
-                        </div>
-                      </div>
-                    )}
-                    {similarSuggestions.length > 0 && (
-                      <div>
-                        <h4>相似文章候選</h4>
-                        <ul class="review-ai-related">
-                          {similarSuggestions.map((item) => (
-                            <li>
-                              <a href={pathFor(`/articles/${item.slug}/`)} target="_blank" rel="noreferrer">
-                                {item.title}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                    <p>{quoteSource === "manual"
-                        ? "此金句已由校對意見指定，來源為網站附加資料。若需再調整，請在修正意見中指定新金句，發布時會重新套用。"
-                        : "AI 建議目前只作為校對參考。若要採用校對者指定版本，請在修正意見中直接寫希望採用的金句，上架人員可在待辦區按「採用為網站資料」。"}</p>
-                  </div>
-                </section>
-
-                <section class="review-tabpanel" data-review-panel={`${article.slug}-desktop`}>
-                  <div class="review-device-frame review-device-desktop">
-                    <div class="review-preview-article">
-                      <div class="review-preview-hero">
-                        <div>
-                          <p class="meta-line"><span>{normalizeCategory(article.category)}</span><span>{article.readTime}</span></p>
-                          <h1>{titlePhrasesFor(article.title).map((phrase) => <span>{phrase}</span>)}</h1>
-                          <p class="article-byline"><span>{article.author}</span><time>{article.date}</time></p>
-                        </div>
-                        {article.image && !article.image.includes("/assets/qiji-logo") && <img src={article.image} alt="" loading="lazy" />}
-                      </div>
-                      <div class="review-preview-body">
-                        {previewBlocks.map((block) => {
-                          if (block.type === "heading") return <h2>{block.text}</h2>;
-                          if (block.type === "image") return <figure><img src={block.src} alt={block.caption ?? ""} loading="lazy" />{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
-                          return <p>{block.text}</p>;
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="review-tabpanel" data-review-panel={`${article.slug}-mobile`}>
-                  <div class="review-device-frame review-device-mobile">
-                    <div class="review-preview-article">
-                      <div class="review-preview-hero">
-                        <div>
-                          <p class="meta-line"><span>{normalizeCategory(article.category)}</span><span>{article.readTime}</span></p>
-                          <h1>{titlePhrasesFor(article.title).map((phrase) => <span>{phrase}</span>)}</h1>
-                          <p class="article-byline"><span>{article.author}</span><time>{article.date}</time></p>
-                        </div>
-                        {article.image && !article.image.includes("/assets/qiji-logo") && <img src={article.image} alt="" loading="lazy" />}
-                      </div>
-                      <div class="review-preview-body">
-                        {previewBlocks.map((block) => {
-                          if (block.type === "heading") return <h2>{block.text}</h2>;
-                          if (block.type === "image") return <figure><img src={block.src} alt={block.caption ?? ""} loading="lazy" />{block.caption && <figcaption>{block.caption}</figcaption>}</figure>;
-                          return <p>{block.text}</p>;
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="review-tabpanel" data-review-panel={`${article.slug}-report`}>
-                  <form class="review-report-form" data-report-form>
-                    <label>
-                      <span>出現版面</span>
-                      <select name="viewport">
-                        <option value="不確定">不確定</option>
-                        <option value="電腦版">電腦版</option>
-                        <option value="手機版">手機版</option>
-                        <option value="兩者都有">兩者都有</option>
-                      </select>
-                    </label>
-                    <label>
-                      <span>位置說明</span>
-                      <input name="position" placeholder="例如：第 3 段、標題下方、第一張圖片旁" />
-                    </label>
-                    <label class="review-report-wide">
-                      <span>修正意見</span>
-                      <textarea name="comment" rows="4" required placeholder="請直接寫要修正的內容，例如：這裡多了一個錯字，應改成……"></textarea>
-                    </label>
-                    <label>
-                      <span>截圖</span>
-                      <input name="screenshot" type="file" accept="image/*" />
-                    </label>
-                    <div class="review-report-actions">
-                      <button type="submit">送出修正意見</button>
-                      <span data-report-result></span>
-                    </div>
-                  </form>
-                  <div class="review-article-report-list" data-article-report-list={article.slug}>
-                    <p class="review-empty-state">這篇目前沒有回報。</p>
-                  </div>
-                </section>
-              </div>
-            </article>
-          );
-        })}
       </section>
 
       </div>
@@ -962,7 +700,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
       const reportArticleSelect = document.querySelector("[data-report-article-select]");
-      const reportViewportSelect = document.querySelector("[data-report-viewport]");
       const liveOpenLink = document.querySelector("[data-live-open-link]");
       const liveFrames = Array.from(document.querySelectorAll("[data-live-frame]"));
       const liveViewportTabs = Array.from(document.querySelectorAll("[data-live-viewport-tab]"));
@@ -998,8 +735,28 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         title: option?.dataset.title || option?.textContent?.trim() || "",
         category: option?.dataset.category || "",
         author: option?.dataset.author || "",
-        url: option?.dataset.url || ""
+        url: option?.dataset.url || "",
+        frameUrl: option?.dataset.frameUrl || option?.dataset.url || ""
       });
+
+      const resizeLiveFrame = (frame) => {
+        if (!frame) return;
+        try {
+          const doc = frame.contentDocument || frame.contentWindow?.document;
+          if (!doc) return;
+          const height = Math.max(
+            doc.documentElement?.scrollHeight || 0,
+            doc.body?.scrollHeight || 0
+          );
+          if (height > 0) frame.style.height = `${height}px`;
+        } catch {
+          // Same-origin review frames should resize; ignore browser edge cases.
+        }
+      };
+
+      const resizeLiveFrames = () => {
+        liveFrames.forEach(resizeLiveFrame);
+      };
 
       const syncLiveArticle = (slug) => {
         if (!slug) return;
@@ -1007,8 +764,10 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         if (reportArticleSelect && reportArticleSelect.value !== slug) reportArticleSelect.value = slug;
         const article = articleFromOption(selectedArticleOption(liveArticleSelect || reportArticleSelect));
         liveFrames.forEach((frame) => {
-          if (article.url && frame.getAttribute("src") !== article.url) {
-            frame.setAttribute("src", article.url);
+          if (article.frameUrl && frame.getAttribute("src") !== article.frameUrl) {
+            frame.setAttribute("src", article.frameUrl);
+          } else {
+            resizeLiveFrame(frame);
           }
         });
         if (liveOpenLink && article.url) liveOpenLink.setAttribute("href", article.url);
@@ -1025,9 +784,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         liveViewportPanels.forEach((panel) => {
           panel.classList.toggle("is-active", panel.getAttribute("data-live-viewport-panel") === viewport);
         });
-        if (reportViewportSelect) {
-          reportViewportSelect.value = viewport === "mobile" ? "手機版" : "電腦版";
-        }
       };
 
       const reportStatusLabel = (status) => {
@@ -1096,7 +852,7 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${report.status === "metadata" ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
           <header>
             <div>
-              <small>${escapeHtml(report.viewport)} · ${escapeHtml(report.position || "未填位置")}</small>
+              <small>${escapeHtml(report.articleCategory || report.viewport || "校對回報")}</small>
               <h3>${escapeHtml(report.articleTitle)}</h3>
             </div>
             <small>${reportStatusLabel(report.status)}</small>
@@ -1106,6 +862,7 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
           ${!report.metadataQuote && quoteCandidate ? `<small>可採用為金句：${escapeHtml(quoteCandidate)}</small>` : ""}
           ${report.status === "fixed" ? `<small>已記錄你修過 Word；請先重新執行匯入/重建，頁面預覽更新後再確認無誤。</small>` : ""}
           ${report.screenshot ? `<small>截圖：${escapeHtml(report.screenshot)}</small>` : ""}
+          ${report.screenshotDataUrl ? `<img class="review-report-thumb" src="${escapeHtml(report.screenshotDataUrl)}" alt="校對截圖" />` : ""}
           ${compact ? "" : `
             <div class="review-task-card-actions">
               <button type="button" data-report-next="${escapeHtml(report.id)}">${reportPrimaryAction(report.status)}</button>
@@ -1129,14 +886,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
             : '<p class="review-empty-state">目前沒有修正意見。</p>';
         }
 
-        document.querySelectorAll("[data-article-report-list]").forEach((list) => {
-          const slug = list.getAttribute("data-article-report-list") || "";
-          const articleReports = reports.filter((report) => report.articleSlug === slug);
-          list.innerHTML = articleReports.length
-            ? articleReports.slice().reverse().map((report) => reportCardHtml(report, true)).join("")
-            : '<p class="review-empty-state">這篇目前沒有回報。</p>';
-        });
-
         const activeSlug = reportArticleSelect?.value || liveArticleSelect?.value || "";
         liveReportLists.forEach((list) => {
           const articleReports = reports.filter((report) => report.articleSlug === activeSlug);
@@ -1156,6 +905,71 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
               : `可進入發布確認：已完成 <strong>${payload.reports.length}</strong> 則待辦，包含 <strong>${quoteCount}</strong> 筆人工金句、<strong>${tagCount}</strong> 筆人工標籤。`;
           }
         }
+      };
+
+      const imageFileFromPaste = (event) => {
+        const items = Array.from(event.clipboardData?.items || []);
+        return items
+          .filter((item) => item.type?.startsWith("image/"))
+          .map((item) => item.getAsFile())
+          .find(Boolean);
+      };
+
+      const loadImage = (src) =>
+        new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve(image);
+          image.onerror = reject;
+          image.src = src;
+        });
+
+      const compressScreenshot = async (file) => {
+        const objectUrl = URL.createObjectURL(file);
+        try {
+          const image = await loadImage(objectUrl);
+          const maxWidth = 1200;
+          const scale = Math.min(1, maxWidth / image.width);
+          const canvas = document.createElement("canvas");
+          canvas.width = Math.max(1, Math.round(image.width * scale));
+          canvas.height = Math.max(1, Math.round(image.height * scale));
+          const context = canvas.getContext("2d");
+          context.drawImage(image, 0, 0, canvas.width, canvas.height);
+          return canvas.toDataURL("image/jpeg", 0.82);
+        } finally {
+          URL.revokeObjectURL(objectUrl);
+        }
+      };
+
+      const setScreenshotOnForm = async (form, file) => {
+        if (!form || !file) return;
+        const pasteZone = form.querySelector("[data-screenshot-paste]");
+        const preview = form.querySelector("[data-screenshot-preview]");
+        if (pasteZone) pasteZone.classList.add("is-loading");
+        try {
+          const dataUrl = await compressScreenshot(file);
+          const name = `pasted-screenshot-${new Date().toISOString().replace(/[:.]/g, "-")}.jpg`;
+          form.dataset.screenshotName = name;
+          form.dataset.screenshotDataUrl = dataUrl;
+          if (preview) {
+            preview.innerHTML = `<img src="${dataUrl}" alt="已貼上的截圖" /><button type="button" data-clear-screenshot>移除截圖</button>`;
+          }
+          if (pasteZone) pasteZone.classList.add("has-image");
+        } finally {
+          if (pasteZone) pasteZone.classList.remove("is-loading");
+        }
+      };
+
+      const clearScreenshotOnForm = (form) => {
+        if (!form) return;
+        delete form.dataset.screenshotName;
+        delete form.dataset.screenshotDataUrl;
+        form.querySelector("[data-screenshot-preview]")?.replaceChildren();
+        form.querySelector("[data-screenshot-paste]")?.classList.remove("has-image");
+      };
+
+      const activeViewportLabel = () => {
+        const active = liveViewportTabs.find((tab) => tab.classList.contains("is-active"));
+        return active?.getAttribute("data-live-viewport-tab") === "mobile" ? "手機版" : "電腦版";
       };
 
       const readApprovals = () => {
@@ -1595,20 +1409,6 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         renderApprovals();
       });
 
-      document.querySelectorAll("[data-current-review-card]").forEach((card) => {
-        const tabs = Array.from(card.querySelectorAll("[data-review-tab]"));
-        const panels = Array.from(card.querySelectorAll("[data-review-panel]"));
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", () => {
-            const target = tab.getAttribute("data-review-target");
-            tabs.forEach((item) => item.classList.toggle("is-active", item === tab));
-            panels.forEach((panel) => {
-              panel.classList.toggle("is-active", panel.getAttribute("data-review-panel") === target);
-            });
-          });
-        });
-      });
-
       const modeTabs = Array.from(document.querySelectorAll("[data-review-mode-tab]"));
       const modePanels = Array.from(document.querySelectorAll("[data-review-mode-panel]"));
       modeTabs.forEach((tab) => {
@@ -1632,30 +1432,51 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
       liveViewportTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           syncLiveViewport(tab.getAttribute("data-live-viewport-tab") || "desktop");
+          window.setTimeout(resizeLiveFrames, 80);
         });
       });
 
+      liveFrames.forEach((frame) => {
+        frame.addEventListener("load", () => {
+          resizeLiveFrame(frame);
+          window.setTimeout(() => resizeLiveFrame(frame), 250);
+        });
+      });
+
+      window.addEventListener("resize", resizeLiveFrames);
+
       document.querySelectorAll("[data-report-form]").forEach((form) => {
+        form.addEventListener("paste", async (event) => {
+          const imageFile = imageFileFromPaste(event);
+          if (!imageFile) return;
+          event.preventDefault();
+          await setScreenshotOnForm(form, imageFile);
+        });
+
+        form.addEventListener("click", (event) => {
+          if (event.target.closest("[data-clear-screenshot]")) {
+            clearScreenshotOnForm(form);
+          }
+        });
+
         form.addEventListener("submit", (event) => {
           event.preventDefault();
-          const card = form.closest("[data-current-review-card]");
           const formData = new FormData(form);
           const articleOption = selectedArticleOption(form.querySelector('[name="articleSlug"]'));
           const selectedArticle = articleFromOption(articleOption);
           const selectedSlug = selectedArticle.slug;
-          const screenshotInput = form.querySelector('input[name="screenshot"]');
-          const screenshot = screenshotInput?.files?.[0]?.name || screenshotInput?.value || "";
+          const screenshot = form.dataset.screenshotName || "";
           const report = {
             id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-            articleSlug: card?.dataset.articleSlug || selectedArticle.slug,
-            articleTitle: card?.dataset.articleTitle || selectedArticle.title,
-            articleCategory: card?.dataset.articleCategory || selectedArticle.category,
-            articleAuthor: card?.dataset.articleAuthor || selectedArticle.author,
-            articleUrl: card?.dataset.articleUrl || selectedArticle.url,
-            viewport: String(formData.get("viewport") || "不確定").trim(),
-            position: String(formData.get("position") || "").trim(),
+            articleSlug: selectedArticle.slug,
+            articleTitle: selectedArticle.title,
+            articleCategory: selectedArticle.category,
+            articleAuthor: selectedArticle.author,
+            articleUrl: selectedArticle.url,
+            viewport: String(formData.get("viewport") || activeViewportLabel()).trim(),
             comment: String(formData.get("comment") || "").trim(),
             screenshot,
+            screenshotDataUrl: form.dataset.screenshotDataUrl || "",
             status: "open",
             createdAt: new Date().toISOString()
           };
@@ -1664,6 +1485,7 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
           reports.push(report);
           writeReports(reports);
           form.reset();
+          clearScreenshotOnForm(form);
           syncLiveArticle(selectedSlug);
           const result = form.querySelector("[data-report-result]");
           if (result) {
@@ -1772,10 +1594,17 @@ const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =
         renderReports();
       });
 
+      const mobileReviewQuery = window.matchMedia("(max-width: 680px)");
+      const applyMobileReviewMode = () => {
+        if (mobileReviewQuery.matches) syncLiveViewport("mobile");
+      };
+
       syncLiveArticle(liveArticleSelect?.value || reportArticleSelect?.value || "");
-      syncLiveViewport("desktop");
+      syncLiveViewport(mobileReviewQuery.matches ? "mobile" : "desktop");
+      mobileReviewQuery.addEventListener?.("change", applyMobileReviewMode);
       renderReports();
       renderApprovals();
+      window.setTimeout(resizeLiveFrames, 250);
     </script>
   </body>
 </html>

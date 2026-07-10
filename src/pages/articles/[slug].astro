@@ -241,6 +241,12 @@ const issueMenuGroups = issueArticles.reduce(
     </footer>
 
     <script>
+      const isReviewFrame = new URLSearchParams(window.location.search).get("reviewFrame") === "1";
+      if (isReviewFrame) {
+        document.documentElement.classList.add("is-review-frame");
+        document.body.classList.add("is-review-frame");
+      }
+
       const body = document.querySelector("[data-article-body]");
       const controls = Array.from(document.querySelectorAll(".font-size-control [data-font-size]"));
       const key = "qiji-article-font-size";
