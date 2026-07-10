@@ -28,8 +28,7 @@ const titlePhrases = article.title.includes(" ")
   ? article.title.split(/\s+/).filter(Boolean)
   : article.title.match(/.{1,8}/gu) ?? [article.title];
 const hasHeroImage = Boolean(article.image && !article.image.includes("/assets/qiji-logo"));
-const hasAiThemes = Boolean(article.aiThemes?.length);
-const hasAiGuide = Boolean(article.aiSummary || hasAiThemes);
+const hasAiGuide = Boolean(article.aiSummary);
 const normalizeCategory = (category: string) => {
   if (category.startsWith("如是我")) return "如是我聞";
   if (category === "同頻共振時") return "導引專欄";
@@ -144,13 +143,9 @@ const issueMenuGroups = issueArticles.reduce(
 
           <div class="article-main">
             {hasAiGuide && (
-              <section class="article-ai-guide" aria-label="AI 閱讀導覽">
-                {article.aiSummary && <p class="article-ai-summary">{article.aiSummary}</p>}
-                {hasAiThemes && (
-                  <div class="article-ai-themes" aria-label="文章核心主題">
-                    {article.aiThemes?.map((theme) => <span>{theme}</span>)}
-                  </div>
-                )}
+              <section class="article-ai-guide" aria-label={"AI \u6458\u8981"}>
+                <h2>{"AI \u6458\u8981"}</h2>
+                <p class="article-ai-summary">{article.aiSummary}</p>
               </section>
             )}
             <div class="article-tools" aria-label="閱讀設定">
