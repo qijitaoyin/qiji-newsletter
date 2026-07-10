@@ -91,6 +91,7 @@ jobs:
         with:
           path: |
             .cache
+            各期電子報
             public/assets/articles
           key: qiji-import-cache-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
