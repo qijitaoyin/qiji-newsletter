@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 3
+$importCacheVersion = 4
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 
@@ -101,7 +101,7 @@ function Get-FileSignature {
   param([System.IO.FileInfo]$File, [string]$BasePath, [int]$CacheVersion, [string]$ApprovalFingerprint)
   return @{
     key = Get-RelativePath $File.FullName $BasePath
-    modifiedUtc = $File.LastWriteTimeUtc.ToString("o")
+    contentHash = Get-FileContentHash $File.FullName
     length = $File.Length
     cacheVersion = $CacheVersion
     approvalFingerprint = $ApprovalFingerprint
@@ -113,7 +113,7 @@ function Test-CacheSignatureMatch {
   if (-not $Entry -or -not $Entry.signature) { return $false }
   return (
     [string]$Entry.signature.key -eq [string]$Signature.key -and
-    [string]$Entry.signature.modifiedUtc -eq [string]$Signature.modifiedUtc -and
+    [string]$Entry.signature.contentHash -eq [string]$Signature.contentHash -and
     [string]$Entry.signature.length -eq [string]$Signature.length -and
     [string]$Entry.signature.cacheVersion -eq [string]$Signature.cacheVersion -and
     [string]$Entry.signature.approvalFingerprint -eq [string]$Signature.approvalFingerprint
