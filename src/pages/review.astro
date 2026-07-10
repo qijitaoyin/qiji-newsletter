@@ -570,7 +570,7 @@ const normalizeCategory = (category: string) => {
       const deployWorkflowUrl =
         "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml";
       const deployWorkflowRunsApiUrl =
-        "https://api.github.com/repos/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml/runs?event=workflow_dispatch&branch=main&per_page=5";
+        "https://api.github.com/repos/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml/runs?event=workflow_dispatch&branch=main&per_page=10";
       const sleep = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
 
       const workflowStatusLabel = (run) => {
@@ -584,26 +584,59 @@ const normalizeCategory = (category: string) => {
         return "\u6b63\u5728\u67e5\u8a62\u532f\u5165\u9032\u5ea6...";
       };
 
-      const latestWorkflowRunSince = async (startedAt) => {
+      const fetchWorkflowRuns = async () => {
         const response = await fetch(deployWorkflowRunsApiUrl, {
           headers: { Accept: "application/vnd.github+json" },
           cache: "no-store"
         });
         if (!response.ok) throw new Error(`GitHub Actions API ${response.status}`);
         const data = await response.json();
-        const runs = Array.isArray(data.workflow_runs) ? data.workflow_runs : [];
-        const startedTime = startedAt.getTime() - 60000;
-        return runs.find((run) => new Date(run.created_at).getTime() >= startedTime) || null;
+        return Array.isArray(data.workflow_runs) ? data.workflow_runs : [];
       };
 
-      const pollReimportWorkflow = async (startedAt) => {
+      const latestWorkflowRun = async () => {
+        const runs = await fetchWorkflowRuns();
+        return runs[0] || null;
+      };
+
+      const workflowRunAfter = async ({ previousRunId, startedAt }) => {
+        const runs = await fetchWorkflowRuns();
+        const startedTime = startedAt.getTime() - 5 * 60000;
+        return (
+          runs.find((run) => {
+            const isNewId = previousRunId ? String(run.id) !== String(previousRunId) : true;
+            const isRecent = new Date(run.created_at).getTime() >= startedTime;
+            return isNewId && isRecent;
+          }) || null
+        );
+      };
+
+      const syncDriveStepWasSkipped = async (run) => {
+        if (!run?.jobs_url) return false;
+        const response = await fetch(run.jobs_url, {
+          headers: { Accept: "application/vnd.github+json" },
+          cache: "no-store"
+        });
+        if (!response.ok) return false;
+        const data = await response.json();
+        const jobs = Array.isArray(data.jobs) ? data.jobs : [];
+        return jobs.some((job) =>
+          (Array.isArray(job.steps) ? job.steps : []).some(
+            (step) =>
+              step.name === "Sync Google Drive source" &&
+              step.conclusion === "skipped"
+          )
+        );
+      };
+
+      const pollReimportWorkflow = async ({ previousRunId, startedAt }) => {
         let lastRun = null;
         for (let index = 0; index < 45; index += 1) {
           await sleep(index === 0 ? 6000 : 8000);
-          lastRun = await latestWorkflowRunSince(startedAt);
+          lastRun = await workflowRunAfter({ previousRunId, startedAt });
           if (publishStatusNode) {
             const runLink = lastRun?.html_url || deployWorkflowUrl;
-            publishStatusNode.innerHTML = `<span class="review-progress-dot"></span>${workflowStatusLabel(lastRun)} <a href="${runLink}" target="_blank" rel="noreferrer">查看進度</a>`;
+            publishStatusNode.innerHTML = `<span class="review-progress-dot"></span>${workflowStatusLabel(lastRun)} <a href="${runLink}" target="_blank" rel="noreferrer">\u67e5\u770b\u9032\u5ea6</a>`;
           }
           if (lastRun?.status === "completed") return lastRun;
         }
@@ -1585,6 +1618,8 @@ const normalizeCategory = (category: string) => {
         }
 
         const requestStartedAt = new Date();
+        let previousRunId = "";
+        const refreshUrl = `${window.location.pathname}${window.location.search || ""}`;
         submitReimportButton.disabled = true;
         const originalText = submitReimportButton.textContent;
         submitReimportButton.textContent = "\u532f\u5165\u4e2d...";
@@ -1593,6 +1628,12 @@ const normalizeCategory = (category: string) => {
         }
 
         try {
+          try {
+            previousRunId = String((await latestWorkflowRun())?.id || "");
+          } catch {
+            previousRunId = "";
+          }
+
           await fetch(publishWebhookUrl, {
             method: "POST",
             mode: "no-cors",
@@ -1610,10 +1651,18 @@ const normalizeCategory = (category: string) => {
           }
 
           try {
-            const run = await pollReimportWorkflow(requestStartedAt);
+            const run = await pollReimportWorkflow({ previousRunId, startedAt: requestStartedAt });
             if (publishStatusNode && run?.status === "completed" && run.conclusion === "success") {
-              const refreshUrl = `${window.location.pathname}${window.location.search || ""}`;
-              publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u5df2\u5b8c\u6210\u3002<a href="${refreshUrl}">\u91cd\u65b0\u6574\u7406\u672c\u9801</a>\u5f8c\uff0c\u5c31\u6703\u770b\u5230\u6700\u65b0 Word \u9810\u89bd\u3002`;
+              const wasSkipped = await syncDriveStepWasSkipped(run);
+              if (wasSkipped) {
+                publishStatusNode.innerHTML = `\u672c\u6b21\u5efa\u7f6e\u5df2\u5b8c\u6210\uff0c\u4f46 <strong>Sync Google Drive source</strong> \u88ab\u7565\u904e\uff0c\u4ee3\u8868\u6c92\u6709\u91cd\u65b0\u540c\u6b65 Word\u3002\u8acb\u6aa2\u67e5 Google Apps Script reimport \u662f\u5426\u9001\u51fa <code>sync_drive=true</code>\u3002 <a href="${run.html_url}" target="_blank" rel="noreferrer">\u67e5\u770b\u4f5c\u696d</a>`;
+              } else {
+                publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u5df2\u5b8c\u6210\u3002<a href="${refreshUrl}">\u91cd\u65b0\u6574\u7406\u672c\u9801</a>\u5f8c\uff0c\u5c31\u6703\u770b\u5230\u6700\u65b0 Word \u9810\u89bd\u3002`;
+              }
+            } else if (publishStatusNode && run?.status === "completed") {
+              publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u6c92\u6709\u6210\u529f\u3002\u8acb\u5230 <a href="${run.html_url || deployWorkflowUrl}" target="_blank" rel="noreferrer">GitHub Actions</a> \u67e5\u770b\u5931\u6557\u539f\u56e0\u3002`;
+            } else if (publishStatusNode) {
+              publishStatusNode.innerHTML = `\u5df2\u9001\u51fa\u91cd\u65b0\u532f\u5165\u8acb\u6c42\uff0c\u4f46\u672a\u80fd\u81ea\u52d5\u78ba\u8a8d\u4f5c\u696d\u5b8c\u6210\u3002\u8acb\u5230 <a href="${deployWorkflowUrl}" target="_blank" rel="noreferrer">GitHub Actions</a> \u78ba\u8a8d\uff1b\u82e5\u986f\u793a\u7da0\u8272\u6210\u529f\uff0c\u5c31\u53ef\u4ee5 <a href="${refreshUrl}">\u91cd\u65b0\u6574\u7406\u672c\u9801</a>\u3002`;
             }
           } catch {
             if (publishStatusNode) {
@@ -1649,9 +1698,6 @@ const normalizeCategory = (category: string) => {
     </script>
   </body>
 </html>
-
-
-
 
 
 
