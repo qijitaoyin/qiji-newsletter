@@ -134,6 +134,7 @@ const normalizeCategory = (category: string) => {
           </article>
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
+            <button type="button" data-submit-reimport>{"\u91cd\u65b0\u532f\u5165\u6700\u65b0 Word"}</button>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{
   "status": "pending",
@@ -557,6 +558,7 @@ const normalizeCategory = (category: string) => {
       const clearReportsButton = document.querySelector("[data-clear-reports]");
       const publishPreviewNode = document.querySelector("[data-publish-preview]");
       const publishStatusNode = document.querySelector("[data-publish-status]");
+      const submitReimportButton = document.querySelector("[data-submit-reimport]");
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
       const currentArticleLabel = document.querySelector("[data-current-article-label]");
@@ -1523,11 +1525,53 @@ const normalizeCategory = (category: string) => {
           }
         } catch (error) {
           if (publishStatusNode) {
-            publishStatusNode.textContent = `送出失敗：${error.message || error}`;
+            publishStatusNode.textContent = "\u91cd\u65b0\u532f\u5165\u5931\u6557\uff1a" + (error.message || error);
           }
         } finally {
           submitPublishButton.disabled = false;
           submitPublishButton.textContent = originalText;
+        }
+      });
+
+
+      submitReimportButton?.addEventListener("click", async () => {
+        if (!publishWebhookUrl) {
+          if (publishStatusNode) {
+            publishStatusNode.textContent = "\u5c1a\u672a\u8a2d\u5b9a\u91cd\u65b0\u532f\u5165\u4e2d\u4ecb\u3002\u8acb\u5148\u90e8\u7f72 Google Apps Script\uff0c\u4e26\u8a2d\u5b9a PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL\u3002";
+          }
+          return;
+        }
+
+        submitReimportButton.disabled = true;
+        const originalText = submitReimportButton.textContent;
+        submitReimportButton.textContent = "\u532f\u5165\u4e2d...";
+        if (publishStatusNode) {
+          publishStatusNode.textContent = "\u5df2\u9001\u51fa\u91cd\u65b0\u532f\u5165\u8acb\u6c42\uff1b\u7cfb\u7d71\u6703\u540c\u6b65 Google Drive \u6700\u65b0 Word \u4e26\u91cd\u5efa\u9810\u89bd\u3002";
+        }
+
+        try {
+          await fetch(publishWebhookUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({
+              action: "reimport",
+              issueId: "latest",
+              runAi: false,
+              requestedAt: new Date().toISOString()
+            })
+          });
+
+          if (publishStatusNode) {
+            publishStatusNode.innerHTML = '\u5df2\u9001\u51fa\u91cd\u65b0\u532f\u5165\u8acb\u6c42\u3002\u8acb\u7a0d\u5019 1-3 \u5206\u9418\uff0c\u518d\u91cd\u65b0\u6574\u7406\u672c\u9801\u6aa2\u67e5\u9810\u89bd\uff1b\u4e5f\u53ef\u5230 <a href="https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml" target="_blank" rel="noreferrer">GitHub Actions</a> \u67e5\u770b\u9032\u5ea6\u3002';
+          }
+        } catch (error) {
+          if (publishStatusNode) {
+            publishStatusNode.textContent = "\u91cd\u65b0\u532f\u5165\u5931\u6557\uff1a" + (error.message || error);
+          }
+        } finally {
+          submitReimportButton.disabled = false;
+          submitReimportButton.textContent = originalText;
         }
       });
 

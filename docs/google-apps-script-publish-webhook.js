@@ -2,8 +2,9 @@
  * Qiji Newsletter review publish webhook.
  *
  * Deploy this file as a Google Apps Script Web App. The review page sends
- * review-publish.json here; this script commits it to GitHub and triggers the
- * GitHub Pages deployment workflow.
+ * review-publish.json or reimport requests here; this script commits publish
+ * confirmations to GitHub when needed and triggers the GitHub Pages deployment
+ * workflow.
  *
  * Required Script Properties:
  * - GITHUB_TOKEN: fine-grained token with Contents read/write and Actions write
@@ -31,6 +32,31 @@ function doPost(e) {
     const branch = props.getProperty("GITHUB_BRANCH") || "main";
     const workflow = props.getProperty("GITHUB_WORKFLOW") || "deploy-github-pages.yml";
 
+    if (payload.action === "reimport") {
+      dispatchWorkflow_({
+        owner,
+        repo,
+        token,
+        workflow,
+        branch,
+        inputs: {
+          run_ai: "false",
+          ai_issue_id: payload.issueId || props.getProperty("AI_ISSUE_ID") || "latest",
+          ai_limit: "0",
+          sync_drive: "true",
+          review_publish_json: ""
+        }
+      });
+
+      return jsonResponse_({
+        ok: true,
+        message: "Reimport request was sent to GitHub Actions.",
+        actionsUrl: `https://github.com/${owner}/${repo}/actions/workflows/${workflow}`
+      });
+    }
+
+    validatePublishPayload_(payload);
+
     putGitHubFile_({
       owner,
       repo,
@@ -51,6 +77,7 @@ function doPost(e) {
         run_ai: props.getProperty("RUN_AI") || "true",
         ai_issue_id: props.getProperty("AI_ISSUE_ID") || "latest",
         ai_limit: props.getProperty("AI_LIMIT") || "0",
+        sync_drive: "true",
         review_publish_json: ""
       }
     });
@@ -103,6 +130,9 @@ function validatePayload_(payload) {
   if (!payload || typeof payload !== "object") {
     throw new Error("Payload must be a JSON object.");
   }
+}
+
+function validatePublishPayload_(payload) {
   if (!payload.metadataOverrides || typeof payload.metadataOverrides !== "object") {
     throw new Error("Payload is missing metadataOverrides.");
   }

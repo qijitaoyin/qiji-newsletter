@@ -1,6 +1,6 @@
 # Review Publish With Google Apps Script
 
-This is the one-click publish bridge for the review page.
+This is the one-click publish and reimport bridge for the review page.
 
 The review page is hosted on GitHub Pages, so it cannot safely store a GitHub
 token or write back to the repository by itself. Google Apps Script acts as the
@@ -11,6 +11,10 @@ small trusted middle layer:
 3. Apps Script commits `review-publish.json` to GitHub.
 4. Apps Script triggers the `Deploy to GitHub Pages` workflow.
 5. The workflow applies `review-publish.json`, builds the site, and deploys.
+
+For Word corrections, the review page can also send a reimport request. The
+reimport request does not commit `review-publish.json`; it only triggers the
+deployment workflow with Google Drive sync enabled and AI disabled.
 
 ## 1. Create A GitHub Token
 
@@ -77,9 +81,16 @@ enable the `送出正式發布` button.
 1. Open `/review/`.
 2. Review the latest issue.
 3. Add comments and mark them fixed/done.
-4. Confirm the final reading preview.
-5. Click `送出正式發布`.
-6. Wait for GitHub Actions deployment to finish.
+4. After editing one or more Word files, click `?????? Word`.
+5. Wait for GitHub Actions deployment to finish, then refresh `/review/`.
+6. Confirm the fixed items after the preview updates.
+7. Confirm the final reading preview.
+8. Click the publish button.
+9. Wait for GitHub Actions deployment to finish.
+
+Recommended correction flow: batch several Word fixes, then click
+`?????? Word` once. A reimport starts a full GitHub Actions run, so doing it
+once per article is slower and creates more deployment queue noise.
 
 Fallback: the page still has download/copy buttons for the publish JSON. Use
 those only if the Apps Script bridge is unavailable.
