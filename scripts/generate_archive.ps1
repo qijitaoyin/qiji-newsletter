@@ -535,8 +535,74 @@ function Get-TemplateFieldValue {
   foreach ($line in $Lines) {
     if ($line -match $pattern) {
       $value = $Matches[1].Trim()
-      $value = ($value -replace "\s+(文章分類|文章標題|標題|作者|日期|期數|圖片來源)\s*[：:].*$", "").Trim()
+      $value = ($value -replace "\s+(文章分類|分類|類別|欄目|單元|文章標題|標題|題名|作者|撰文|文稿彙整|文稿整理|整理|編輯|口述|文|日期|期數|圖片來源|照片來源|開頭圖片來源)\s*[：:].*$", "").Trim()
       return $value
+    }
+  }
+  return ""
+}
+
+function Get-TemplateFieldValueAny {
+  param([string[]]$Lines, [string[]]$Names)
+  foreach ($name in $Names) {
+    $value = Get-TemplateFieldValue $Lines $name
+    if ($value) { return $value }
+  }
+  return ""
+}
+
+function Test-TemplateBodyMarker {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
+  $value = $Text.Trim()
+  return ($value -match "^【?\s*(正文開始|正文|內文開始|內文)\s*】?\s*[：:]?\s*$")
+}
+
+function Test-TemplateControlLine {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
+  $value = $Text.Trim()
+  if (Test-TemplateBodyMarker $value) { return $true }
+  if ($value -match "^(文章分類|分類|類別|欄目|單元|文章標題|標題|題名|作者|撰文|文稿彙整|文稿整理|整理|編輯|口述|文|日期|期數|圖片來源|照片來源|開頭圖片來源)\s*[：:]") {
+    return $true
+  }
+  if ($value -match "^【\s*(氣機導引電子報文章資料|氣機導引電子報範本|文章資料|正文開始|正文|內文開始|內文)\s*】$") {
+    return $true
+  }
+  return $false
+}
+
+function Get-TemplateBodyIndex {
+  param([string[]]$Paragraphs)
+  $strictIndex = [Array]::IndexOf($Paragraphs, "【正文開始】")
+  if ($strictIndex -ge 0) { return $strictIndex }
+  for ($i = 0; $i -lt [Math]::Min($Paragraphs.Count, 40); $i++) {
+    if (Test-TemplateBodyMarker $Paragraphs[$i]) { return $i }
+  }
+  return -1
+}
+
+function Get-TemplateMetaIndex {
+  param([string[]]$Paragraphs)
+  $knownMarkers = @("【氣機導引電子報文章資料】", "【氣機導引電子報範本】", "【文章資料】")
+  foreach ($marker in $knownMarkers) {
+    $index = [Array]::IndexOf($Paragraphs, $marker)
+    if ($index -ge 0) { return $index }
+  }
+  return -1
+}
+
+function Get-LooseCategoryValue {
+  param([string[]]$Lines)
+  $category = Get-TemplateFieldValueAny $Lines @("文章分類", "分類", "類別", "欄目", "單元")
+  if ($category) { return $category }
+  foreach ($line in $Lines) {
+    $value = $line.Trim()
+    if ($value -match "^【\s*(.+?)\s*】$") {
+      $candidate = $Matches[1].Trim()
+      if ($candidate -and $candidate -notmatch "氣機導引電子報|文章資料|範本|正文|內文") {
+        return $candidate
+      }
     }
   }
   return ""
@@ -544,29 +610,22 @@ function Get-TemplateFieldValue {
 
 function Parse-ArticleTemplate {
   param([string[]]$Paragraphs, [string]$IssueId)
-  $metaIndex = [Array]::IndexOf($Paragraphs, "【氣機導引電子報文章資料】")
-  $bodyIndex = [Array]::IndexOf($Paragraphs, "【正文開始】")
+  $metaIndex = Get-TemplateMetaIndex $Paragraphs
+  $bodyIndex = Get-TemplateBodyIndex $Paragraphs
   $hasTemplate = $metaIndex -ge 0 -or $bodyIndex -ge 0
 
-  if (-not $hasTemplate) {
-    $looseBodyIndex = -1
-    for ($i = 0; $i -lt [Math]::Min($Paragraphs.Count, 20); $i++) {
-      if ($Paragraphs[$i] -match "^內文\s*[：:]?\s*$") {
-        $looseBodyIndex = $i
-        break
-      }
-    }
+  if ($metaIndex -lt 0) {
+    $looseBodyIndex = $bodyIndex
     $looseMetaLines = if ($looseBodyIndex -gt 0) {
       $Paragraphs | Select-Object -First $looseBodyIndex
     } else {
       $Paragraphs | Select-Object -First ([Math]::Min($Paragraphs.Count, 8))
     }
-    $looseCategory = Get-TemplateFieldValue $looseMetaLines "文章分類"
-    $looseTitle = Get-TemplateFieldValue $looseMetaLines "文章標題"
-    if (-not $looseTitle) { $looseTitle = Get-TemplateFieldValue $looseMetaLines "標題" }
-    $looseAuthor = Get-TemplateFieldValue $looseMetaLines "作者"
+    $looseCategory = Get-LooseCategoryValue $looseMetaLines
+    $looseTitle = Get-TemplateFieldValueAny $looseMetaLines @("文章標題", "標題", "題名")
+    $looseAuthor = Get-TemplateFieldValueAny $looseMetaLines @("作者", "撰文", "文稿彙整", "文稿整理", "整理", "編輯", "口述", "文")
     $looseDate = Get-TemplateFieldValue $looseMetaLines "日期"
-    $looseImageSource = Get-TemplateFieldValue $looseMetaLines "圖片來源"
+    $looseImageSource = Get-TemplateFieldValueAny $looseMetaLines @("圖片來源", "照片來源", "開頭圖片來源")
     if ($looseCategory -and $looseTitle -and $looseAuthor -and $looseBodyIndex -ge 0) {
       if (-not $looseDate) {
         $looseDate = "{0}.{1}.10" -f $IssueId.Substring(0, 4), $IssueId.Substring(4, 2)
@@ -576,6 +635,28 @@ function Parse-ArticleTemplate {
         IsValid = $true
         IsLooseTemplate = $true
         Errors = @()
+        BodyStart = $looseBodyIndex + 1
+        BodyMarker = $Paragraphs[$looseBodyIndex]
+        Category = $looseCategory
+        Title = $looseTitle
+        Author = $looseAuthor
+        Date = $looseDate
+        ImageSource = $looseImageSource
+      }
+    }
+    if ($looseBodyIndex -ge 0) {
+      $looseErrors = New-Object System.Collections.Generic.List[string]
+      if (-not $looseCategory) { $looseErrors.Add("缺少文章分類") }
+      if (-not $looseTitle) { $looseErrors.Add("缺少文章標題") }
+      if (-not $looseAuthor) { $looseErrors.Add("缺少作者") }
+      if (-not $looseDate) {
+        $looseDate = "{0}.{1}.10" -f $IssueId.Substring(0, 4), $IssueId.Substring(4, 2)
+      }
+      return @{
+        HasTemplate = $true
+        IsValid = $false
+        IsLooseTemplate = $true
+        Errors = $looseErrors.ToArray()
         BodyStart = $looseBodyIndex + 1
         BodyMarker = $Paragraphs[$looseBodyIndex]
         Category = $looseCategory
@@ -600,12 +681,11 @@ function Parse-ArticleTemplate {
     $metaLines = $Paragraphs | Select-Object -Skip ($metaIndex + 1) -First ($bodyIndex - $metaIndex - 1)
   }
 
-  $category = Get-TemplateFieldValue $metaLines "文章分類"
-  $title = Get-TemplateFieldValue $metaLines "文章標題"
-  if (-not $title) { $title = Get-TemplateFieldValue $metaLines "標題" }
-  $author = Get-TemplateFieldValue $metaLines "作者"
+  $category = Get-LooseCategoryValue $metaLines
+  $title = Get-TemplateFieldValueAny $metaLines @("文章標題", "標題", "題名")
+  $author = Get-TemplateFieldValueAny $metaLines @("作者", "撰文", "文稿彙整", "文稿整理", "整理", "編輯", "口述", "文")
   $date = Get-TemplateFieldValue $metaLines "日期"
-  $imageSource = Get-TemplateFieldValue $metaLines "圖片來源"
+  $imageSource = Get-TemplateFieldValueAny $metaLines @("圖片來源", "照片來源", "開頭圖片來源")
 
   if (-not $category) { $errors.Add("缺少文章分類") }
   if (-not $title) { $errors.Add("缺少文章標題") }
@@ -620,7 +700,7 @@ function Parse-ArticleTemplate {
     IsValid = ($errors.Count -eq 0)
     Errors = $errors.ToArray()
     BodyStart = if ($bodyIndex -ge 0) { $bodyIndex + 1 } else { $Paragraphs.Count }
-    BodyMarker = "【正文開始】"
+    BodyMarker = if ($bodyIndex -ge 0) { $Paragraphs[$bodyIndex] } else { "【正文開始】" }
     Category = $category
     Title = $title
     Author = $author
@@ -750,6 +830,7 @@ function Remove-HeaderLikeBlocks {
     $text = ([string]$block.text).Trim()
     $paragraphKey = Normalize-ArticleText $text
     $paragraphAuthorKey = Normalize-ArticleText (Convert-LegacyAuthorLine $text)
+    if (Test-TemplateControlLine $text) { continue }
     if ($text -match "^圖片來源") { continue }
     if ($text -match "^\d{4}[./-]\d{1,2}[./-]\d{1,2}$") { continue }
     if ($titleKey -and $paragraphKey -eq $titleKey) { continue }
@@ -1122,6 +1203,7 @@ foreach ($issueDir in $issueDirs) {
       $paragraphAuthorKey = Normalize-ArticleText (Convert-LegacyAuthorLine $paragraphText)
       $paragraphText -notmatch "^圖片來源" -and
         $paragraphText -notmatch "^圖片標題[：:]" -and
+        -not (Test-TemplateControlLine $paragraphText) -and
         $paragraphText -notmatch "^\d{4}[./-]\d{1,2}[./-]\d{1,2}$" -and
         $paragraphKey -ne $titleKey -and
         (-not $authorKey -or $paragraphText.Length -gt 64 -or ($paragraphKey -ne $authorKey -and $paragraphAuthorKey -ne $authorKey))
