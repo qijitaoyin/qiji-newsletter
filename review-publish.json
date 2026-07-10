@@ -1,8 +1,51 @@
 {
   "status": "ready-to-publish",
-  "generatedAt": "2026-07-08T06:08:05.229Z",
+  "generatedAt": "2026-07-10T21:22:23.748Z",
   "issueId": "latest",
-  "reports": [],
+  "reports": [
+    {
+      "id": "1783632788437-6af9e3fb2c52c8",
+      "articleSlug": "202607-2607-2",
+      "articleTitle": "——六月雪山坑團練紀實",
+      "articleCategory": "同頻共振",
+      "articleAuthor": "",
+      "articleUrl": "/articles/202607-2607-2/",
+      "viewport": "兩者都有",
+      "position": "標題",
+      "comment": "標題應為\n見自己見天地見眾生\n——六月雪山坑團練紀實\n作者為 王亞玲",
+      "screenshot": "",
+      "status": "done",
+      "createdAt": "2026-07-09T21:33:08.437Z"
+    },
+    {
+      "id": "1783675421240-aa5b5e8a3cba18",
+      "articleSlug": "202607-2607-1",
+      "articleTitle": "編輯部",
+      "articleCategory": "編輯小語",
+      "articleAuthor": "",
+      "articleUrl": "/articles/202607-2607-1/",
+      "viewport": "電腦版",
+      "comment": "標題錯誤、作者錯誤",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-07-10T09:23:41.240Z"
+    },
+    {
+      "id": "1783676702269-1d24af2e3d28b8",
+      "articleSlug": "202607-2607-3-1",
+      "articleTitle": "無明即道心，在心與六根之間",
+      "articleCategory": "如是我聞",
+      "articleAuthor": "文稿彙整、五晚班、顛覆認知、回到無明",
+      "articleUrl": "/articles/202607-2607-3-1/",
+      "viewport": "電腦版",
+      "comment": "標題錯誤、作者錯誤",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-07-10T09:45:02.269Z"
+    }
+  ],
   "openReports": [],
   "metadataOverrides": {
     "quotes": {},
