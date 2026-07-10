@@ -2359,7 +2359,7 @@ p {
   align-items: start;
   display: grid;
   gap: 20px;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  grid-template-columns: minmax(0, 1fr);
   margin-bottom: 34px;
 }
 
@@ -2375,19 +2375,19 @@ p {
 }
 
 .review-live-sidebar {
+  order: -1;
   display: grid;
   gap: 16px;
-  max-height: calc(100vh - 92px);
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
   padding: 16px;
-  position: sticky;
-  top: 86px;
+  position: static;
 }
 
 .review-live-controls {
   align-items: end;
   border-bottom: 1px solid var(--line);
-  display: grid;
+  display: none;
   gap: 12px;
   grid-template-columns: minmax(0, 1fr) auto;
   padding: 16px;
@@ -2451,9 +2451,9 @@ p {
 }
 
 .review-live-preview {
-  background: #f3eadc;
+  background: transparent;
   display: none;
-  padding: 14px;
+  padding: 0;
 }
 
 .review-live-preview.is-active {
@@ -2462,9 +2462,9 @@ p {
 
 .review-live-preview iframe {
   background: var(--page);
-  border: 1px solid var(--line);
+  border: 0;
   display: block;
-  height: min(78vh, 920px);
+  height: min(88vh, 1080px);
   width: 100%;
 }
 
@@ -2473,16 +2473,29 @@ p {
 }
 
 .review-live-preview-mobile iframe {
+  border: 1px solid var(--line);
   display: inline-block;
-  height: min(78vh, 820px);
+  height: min(88vh, 900px);
   max-width: 100%;
   text-align: initial;
   width: 390px;
 }
 
 .review-report-form.review-live-report-form {
-  grid-template-columns: 1fr;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   padding: 14px;
+}
+
+.review-live-report-form .review-report-wide,
+.review-live-report-form .review-report-actions {
+  grid-column: 1 / -1;
+}
+
+.review-live-info-list {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
 }
 
 .review-live-info {
@@ -3203,6 +3216,10 @@ p {
     position: static;
   }
 
+  .review-report-form.review-live-report-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -3311,6 +3328,10 @@ p {
 }
 
 @media (max-width: 680px) {
+  .review-report-form.review-live-report-form {
+    grid-template-columns: 1fr;
+  }
+
   .brand {
     min-width: 0;
   }

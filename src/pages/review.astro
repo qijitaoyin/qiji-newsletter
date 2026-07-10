@@ -9,7 +9,7 @@ import {
   wordNormalizeItems,
   wordNormalizeSummary
 } from "../data/wordNormalizeReview";
-import { articles, latestIssueArticles, latestIssueArchive } from "../data/articles";
+import { articles, reviewIssueArticles, reviewIssueArchive } from "../data/articles";
 import aiMetadata from "../data/aiMetadata.json";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
@@ -78,7 +78,8 @@ const wordReviewGroups = wordNormalizeIssueIds
   }))
   .filter((group) => group.items.length > 0);
 
-const latestReviewArticles = latestIssueArticles;
+const latestReviewArticles = reviewIssueArticles;
+const latestReviewArchive = reviewIssueArchive;
 const normalizeCategory = (category: string) => {
   if (category.startsWith("如是我")) return "如是我聞";
   if (category === "同頻共振時") return "導引專欄";
@@ -99,14 +100,14 @@ const latestReviewCatalog = latestReviewArticles.reduce(
 );
 const titlePhrasesFor = (title: string) =>
   title.includes(" ") ? title.split(/\s+/).filter(Boolean) : title.match(/.{1,8}/gu) ?? [title];
-const previewBlocksFor = (article: (typeof latestIssueArticles)[number]) =>
+const previewBlocksFor = (article: (typeof latestReviewArticles)[number]) =>
   article.contentBlocks?.length
     ? article.contentBlocks.slice(0, 8)
     : article.sections.flatMap((section) => [
         ...(section.heading ? [{ type: "heading" as const, text: section.heading }] : []),
         ...section.paragraphs.map((text) => ({ type: "paragraph" as const, text }))
       ]).slice(0, 8);
-const quoteSuggestionFor = (article: (typeof latestIssueArticles)[number]) => {
+const quoteSuggestionFor = (article: (typeof latestReviewArticles)[number]) => {
   const manualQuote = aiOverrides.quotes?.[article.slug]?.trim();
   if (manualQuote) return manualQuote;
   const aiQuote = typedAiMetadata.quotes?.[article.slug]?.trim();
@@ -128,19 +129,19 @@ const quoteSuggestionFor = (article: (typeof latestIssueArticles)[number]) => {
   if (!quote) return article.excerpt.length > 50 ? `${article.excerpt.slice(0, 49)}…` : article.excerpt;
   return quote.length > 50 ? `${quote.slice(0, 49)}…` : quote;
 };
-const quoteSourceFor = (article: (typeof latestIssueArticles)[number]) =>
+const quoteSourceFor = (article: (typeof latestReviewArticles)[number]) =>
   aiOverrides.quotes?.[article.slug]?.trim() ? "manual" : "ai";
-const tagSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
+const tagSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =>
   aiOverrides.tags?.[article.slug]?.length
     ? aiOverrides.tags[article.slug]
     : typedAiMetadata.tags?.[article.slug]?.length
       ? typedAiMetadata.tags[article.slug]
       : [article.category, ...article.tags.filter((tag) => tag !== article.category).slice(0, 4)];
-const summarySuggestionFor = (article: (typeof latestIssueArticles)[number]) =>
+const summarySuggestionFor = (article: (typeof latestReviewArticles)[number]) =>
   article.aiSummary || typedAiMetadata.summaries?.[article.slug] || "";
-const themeSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
+const themeSuggestionsFor = (article: (typeof latestReviewArticles)[number]) =>
   article.aiThemes?.length ? article.aiThemes : typedAiMetadata.themes?.[article.slug] ?? [];
-const similarSuggestionsFor = (article: (typeof latestIssueArticles)[number]) => {
+const similarSuggestionsFor = (article: (typeof latestReviewArticles)[number]) => {
   const slugs = article.aiSimilarSlugs?.length
     ? article.aiSimilarSlugs
     : typedAiMetadata.similar?.[article.slug] ?? [];
@@ -199,7 +200,7 @@ const similarSuggestionsFor = (article: (typeof latestIssueArticles)[number]) =>
       <section class="review-workflow review-current-workspace" aria-label="最新一期校對工作台">
         <div>
           <p class="review-kicker">最新一期校對</p>
-          <h2>{latestIssueArchive?.issueNumber ?? "最新一期"} / {latestIssueArchive?.date ?? ""}</h2>
+          <h2>{latestReviewArchive?.issueNumber ?? "最新一期"} / {latestReviewArchive?.date ?? ""}</h2>
           <p>
           校對者可在同一篇文章內切換電腦版與手機版預覽，直接留下位置、修正意見與截圖。上架人員處理完每一則待辦後，再進入發布前確認。
           </p>

@@ -1,12 +1,12 @@
 ---
 import "../styles/global.css";
 import { pathFor } from "../utils/paths";
-import { articleTags, articles } from "../data/articles";
+import { articleTags, publishedArticles } from "../data/articles";
 
 const activeTags = articleTags
   .map((tag) => ({
     ...tag,
-    count: articles.filter((article) => article.tags.includes(tag.label)).length
+    count: publishedArticles.filter((article) => article.tags.includes(tag.label)).length
   }))
   .filter((tag) => tag.count > 0);
 ---

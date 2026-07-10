@@ -1,9 +1,9 @@
 ---
 import "../styles/global.css";
 import {
-  articles,
   latestIssueArchive,
-  latestIssueArticles
+  latestIssueArticles,
+  publishedArticles
 } from "../data/articles";
 import { pathFor } from "../utils/paths";
 
@@ -20,7 +20,7 @@ const groupedArticles = Object.values(
   )
 );
 
-const throwbackCandidates = articles
+const throwbackCandidates = publishedArticles
   .filter((article) => article.issueId !== latestIssueArchive?.id)
   .map((article) => ({
     title: article.title,

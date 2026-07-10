@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import { pathFor } from "../utils/paths";
-import { articles, issueArchives } from "../data/articles";
+import { publishedArticles as articles, publishedIssueArchives as issueArchives } from "../data/articles";
 
 const issueMap = Object.fromEntries(issueArchives.map((issue) => [issue.id, issue]));
 const monthNames = [

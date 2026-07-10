@@ -81,6 +81,12 @@ export type IssueArchive = {
   title: string;
 };
 
+export const publicLatestIssueId = "202605";
+export const reviewIssueId = "202607";
+
+const isPublishedIssue = (issueId: string) =>
+  issueId.localeCompare(publicLatestIssueId) <= 0;
+
 export type ArticleTag = {
   label: string;
   slug: string;
@@ -380,8 +386,25 @@ export const issueArchives: IssueArchive[] = generatedIssues.map((issue) => ({
   image: pathFor(issue.image)
 }));
 
-export const latestIssueArchive = issueArchives[0];
-export const latestIssueArticles = articles.filter(
+export const publishedArticles = articles.filter((article) => isPublishedIssue(article.issueId));
+
+export const publishedIssueArchives = issueArchives.filter((issue) =>
+  isPublishedIssue(issue.id)
+);
+
+export const reviewIssueArchive =
+  issueArchives.find((issue) => issue.id === reviewIssueId) ?? issueArchives[0];
+
+export const reviewIssueArticles = articles.filter(
+  (article) => article.issueId === reviewIssueArchive?.id
+);
+
+export const latestIssueArchive =
+  publishedIssueArchives.find((issue) => issue.id === publicLatestIssueId) ??
+  publishedIssueArchives[0] ??
+  issueArchives[0];
+
+export const latestIssueArticles = publishedArticles.filter(
   (article) => article.issueId === latestIssueArchive?.id
 );
 
@@ -453,7 +476,7 @@ const fixedTagSlugs: Record<string, string> = {
 };
 
 export const articleTags: ArticleTag[] = Array.from(
-  new Set(articles.flatMap((article) => article.tags))
+  new Set(publishedArticles.flatMap((article) => article.tags))
 ).map((label) => ({
   label,
   slug: fixedTagSlugs[label] ?? makeSlug(label),
@@ -468,27 +491,39 @@ export const getArticleBySlug = (slug: string) =>
   articles.find((article) => article.slug === slug);
 
 export const getArticlesByTag = (label: string) =>
-  articles.filter((article) => article.tags.includes(label));
+  publishedArticles.filter((article) => article.tags.includes(label));
 
 export const getArticlesByIssue = (issueId: string) =>
+  publishedArticles
+    .filter((article) => article.issueId === issueId)
+    .sort(compareArticlesInIssue);
+
+export const getAllArticlesByIssue = (issueId: string) =>
   articles
     .filter((article) => article.issueId === issueId)
     .sort(compareArticlesInIssue);
 
 export const getIssueById = (issueId: string) =>
-  issueArchives.find((issue) => issue.id === issueId);
+  publishedIssueArchives.find((issue) => issue.id === issueId);
 
 export const getRelatedArticles = (currentSlug: string) => {
   const current = getArticleBySlug(currentSlug);
   if (!current) {
-    return articles.filter((article) => article.slug !== currentSlug).slice(0, 3);
+    return publishedArticles.filter((article) => article.slug !== currentSlug).slice(0, 3);
   }
+
+  const candidates = isPublishedIssue(current.issueId) ? publishedArticles : articles;
 
   const aiRelated = (current.aiSimilarSlugs ?? [])
     .map((slug) => getArticleBySlug(slug))
-    .filter((article): article is Article => Boolean(article) && article.slug !== currentSlug);
+    .filter(
+      (article): article is Article =>
+        Boolean(article) &&
+        article.slug !== currentSlug &&
+        (!isPublishedIssue(current.issueId) || isPublishedIssue(article.issueId))
+    );
 
-  const related = articles
+  const related = candidates
     .filter((article) => article.slug !== currentSlug)
     .map((article) => ({
       article,

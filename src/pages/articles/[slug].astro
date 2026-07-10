@@ -4,7 +4,7 @@ import { pathFor } from "../../utils/paths";
 import {
   articleTags,
   articles,
-  getArticlesByIssue,
+  getAllArticlesByIssue,
   getRelatedArticles
 } from "../../data/articles";
 
@@ -17,7 +17,7 @@ export function getStaticPaths() {
 
 const { article } = Astro.props;
 const relatedArticles = getRelatedArticles(article.slug);
-const issueArticles = getArticlesByIssue(article.issueId);
+const issueArticles = getAllArticlesByIssue(article.issueId);
 const issueIndex = issueArticles.findIndex((item) => item.slug === article.slug);
 const previousArticle = issueArticles[issueIndex - 1] ?? issueArticles[issueArticles.length - 1];
 const nextArticle = issueArticles[issueIndex + 1] ?? issueArticles[0];

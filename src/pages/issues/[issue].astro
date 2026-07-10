@@ -3,11 +3,11 @@ import "../../styles/global.css";
 import { pathFor } from "../../utils/paths";
 import {
   getArticlesByIssue,
-  issueArchives
+  publishedIssueArchives
 } from "../../data/articles";
 
 export function getStaticPaths() {
-  return issueArchives.map((issue) => ({
+  return publishedIssueArchives.map((issue) => ({
     params: { issue: issue.id },
     props: { issue }
   }));
@@ -24,9 +24,9 @@ const issueGroups = issueArticles.reduce(
   {} as Record<string, typeof issueArticles>
 );
 const categories = Object.keys(issueGroups);
-const issueIndex = issueArchives.findIndex((item) => item.id === issue.id);
-const previousIssue = issueArchives[issueIndex + 1];
-const nextIssue = issueArchives[issueIndex - 1];
+const issueIndex = publishedIssueArchives.findIndex((item) => item.id === issue.id);
+const previousIssue = publishedIssueArchives[issueIndex + 1];
+const nextIssue = publishedIssueArchives[issueIndex - 1];
 ---
 
 <html lang="zh-Hant">

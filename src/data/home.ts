@@ -1,9 +1,9 @@
 import {
   articleTags,
   getArticlesByIssue,
-  issueArchives,
   latestIssue,
-  latestIssueArticles
+  latestIssueArticles,
+  publishedIssueArchives
 } from "./articles";
 
 export { articleTags, latestIssue };
@@ -33,7 +33,7 @@ export const currentIssueContent = {
   )
 };
 
-export const throwbackArticles = issueArchives.slice(1, 3).flatMap((issue) =>
+export const throwbackArticles = publishedIssueArchives.slice(1, 3).flatMap((issue) =>
   getArticlesByIssue(issue.id).slice(0, 1).map((article) => ({
     year: issue.date.slice(0, 4),
     issueNumber: issue.issueNumber,
@@ -44,7 +44,7 @@ export const throwbackArticles = issueArchives.slice(1, 3).flatMap((issue) =>
   }))
 );
 
-export const archiveIssues = issueArchives.map((issue) => ({
+export const archiveIssues = publishedIssueArchives.map((issue) => ({
   label: issue.label,
   issue: `${issue.issueNumber}・${issue.articleCount} 篇`,
   href: issue.href
