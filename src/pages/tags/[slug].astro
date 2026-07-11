@@ -12,6 +12,7 @@ export function getStaticPaths() {
 
 const { tag } = Astro.props;
 const tagArticles = getArticlesByTag(tag.label);
+const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/assets/qiji-logo"));
 ---
 
 <html lang="zh-Hant">
@@ -56,8 +57,9 @@ const tagArticles = getArticlesByTag(tag.label);
       <section class="content-block tag-results-section" aria-label={`#${tag.label} 文章`}>
         <div class="tag-results">
           {tagArticles.map((article) => (
-            <article class="tag-result-card has-no-image">
+            <article class:list={["tag-result-card", !hasArticleImage(article.image) && "has-no-image"]}>
               <a href={pathFor(`/articles/${article.slug}/`)}>
+                {hasArticleImage(article.image) && <img src={article.image} alt="" loading="lazy" />}
                 <div>
                   <p class="meta-line"><span>{article.category}</span><span>{article.date}</span></p>
                   <h2>{article.title}</h2>

@@ -180,6 +180,15 @@ const looksLikeAuthor = (value = "") => {
 const looksLikePersonName = (value = "") =>
   /^[\p{Script=Han}]{2,4}$/u.test(value.trim());
 
+const isBylineLikeTitle = (title: string, category: string) => {
+  const normalized = normalizeLabel(title);
+  return (
+    isCategoryLikeTitle(title, category) ||
+    normalized === normalizeLabel("編輯部") ||
+    looksLikeAuthor(title)
+  );
+};
+
 const looksLikeTitle = (value: string, category: string) => {
   const text = value.trim();
   return (
@@ -189,6 +198,23 @@ const looksLikeTitle = (value: string, category: string) => {
     !looksLikeAuthor(text) &&
     !/[。；]$/.test(text)
   );
+};
+
+const titleFromText = (value: string, category: string) => {
+  const text = value.trim().replace(/\s+/g, " ");
+  if (
+    text.length < 8 ||
+    isCategoryMarker(text, category) ||
+    looksLikeAuthor(text) ||
+    looksLikePersonName(text)
+  ) {
+    return "";
+  }
+
+  return text
+    .slice(0, 64)
+    .replace(/[，,。；;：:、\s]+$/u, "")
+    .trim();
 };
 
 const flatArticleText = (article: Article) =>
@@ -226,27 +252,38 @@ const excerptFromSections = (sections: ArticleSection[]) =>
 
 const withNormalizedTitleAndAuthor = (article: Article): Article => {
   const texts = flatArticleText(article).map((text) => text.trim()).filter(Boolean);
+  const manualTitle = editorialOverrides.titles?.[article.slug]?.trim();
   const authorAppearsInBody = texts.some((text) => normalizeLabel(text) === normalizeLabel(article.author));
   const shouldSwapAuthorTitle =
     Boolean(article.author) &&
     authorAppearsInBody &&
     looksLikeTitle(article.author, article.category) &&
     !looksLikeAuthor(article.author) &&
-    !isCategoryLikeTitle(article.title, article.category) &&
+    !isBylineLikeTitle(article.title, article.category) &&
     (looksLikeAuthor(article.title) || looksLikePersonName(article.title));
+  const needsTitleNormalization =
+    Boolean(manualTitle) || isBylineLikeTitle(article.title, article.category) || shouldSwapAuthorTitle;
+  const needsAuthorNormalization = !article.author;
 
-  if (!isCategoryLikeTitle(article.title, article.category) && !shouldSwapAuthorTitle) {
+  if (!needsTitleNormalization && !needsAuthorNormalization) {
     return article;
   }
 
   const titleIndex = texts.findIndex((text) => looksLikeTitle(text, article.category));
+  const fallbackTitle = texts.map((text) => titleFromText(text, article.category)).find(Boolean) ?? "";
   const authorBodyIndex = texts.findIndex((text) => normalizeLabel(text) === normalizeLabel(article.author));
   const authorAsTitle = looksLikeTitle(article.author, article.category) ? article.author.trim() : "";
   const inferredTitle =
-    shouldSwapAuthorTitle
+    !needsTitleNormalization
+      ? article.title
+      : manualTitle
+      ? manualTitle
+      : shouldSwapAuthorTitle
       ? article.author.trim()
       : titleIndex >= 0
       ? texts[titleIndex]
+      : fallbackTitle
+      ? fallbackTitle
       : authorAsTitle
         ? authorAsTitle
         : article.title;
@@ -257,6 +294,8 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
       ? texts
           .slice(authorAnchorIndex + 1, authorAnchorIndex + 8)
           .filter((text) => normalizeLabel(text) !== normalizeLabel(article.title))
+      : needsAuthorNormalization
+      ? texts.slice(0, 8)
       : [];
   const headingAuthorCandidates = shouldSwapAuthorTitle
     ? article.sections.map((section) => section.heading ?? "")
@@ -267,6 +306,7 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
     shouldSwapAuthorTitle ? article.title : "",
     article.author && article.author !== authorAsTitle ? article.author : ""
   ].filter(Boolean);
+  const defaultAuthor = normalizeLabel(article.category) === normalizeLabel("編輯小語") ? "編輯部" : "";
   const inferredAuthor =
     authorCandidates.find((candidate) => {
         const text = candidate.trim();
@@ -343,7 +383,8 @@ const withAutoTags = (article: Article): Article => {
   const manualTags = editorialOverrides.tags?.[article.slug];
   const ai = metadataFor(article);
   const aiTags = ai.tags?.length ? ai.tags : typedAiMetadata.tags?.[article.slug];
-  const tags = new Set(manualTags?.length ? manualTags : aiTags?.length ? aiTags : article.tags);
+  const tags = new Set([article.category, ...article.tags]);
+  (manualTags?.length ? manualTags : aiTags ?? []).forEach((tag) => tags.add(tag));
   let autoTagCount = 0;
 
   for (const rule of autoTagRules) {
@@ -488,11 +529,17 @@ const fixedTagSlugs: Record<string, string> = {
 
 export const articleTags: ArticleTag[] = Array.from(
   new Set(publishedArticles.flatMap((article) => article.tags))
-).map((label) => ({
-  label,
-  slug: fixedTagSlugs[label] ?? makeSlug(label),
-  description: tagDescriptions[label] ?? `${label} 文章索引。`
-}));
+).reduce((tags, label) => {
+  const slug = fixedTagSlugs[label] ?? makeSlug(label);
+  if (!tags.some((tag) => tag.slug === slug)) {
+    tags.push({
+      label,
+      slug,
+      description: tagDescriptions[label] ?? `${label} 文章索引。`
+    });
+  }
+  return tags;
+}, [] as ArticleTag[]);
 
 export const articleCategorySlugs = Object.fromEntries(
   articleTags.map((tag) => [tag.label, tag.slug])

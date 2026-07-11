@@ -30,6 +30,7 @@ const throwbackCandidates = publishedArticles
   }));
 const throwbackFallback = throwbackCandidates[0];
 const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u003c");
+const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/assets/qiji-logo"));
 ---
 
 <html lang="zh-Hant">
@@ -69,7 +70,7 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
         <div class="hero-rail">
           {heroArticles.map((article, index) => (
             <article class:list={["hero-story", { "is-active": index === 0 }]} data-slide>
-              <img src={article.image} alt="" />
+              {hasArticleImage(article.image) && <img src={article.image} alt="" />}
               <div class="hero-overlay"></div>
               <div class="hero-content">
                 <p class="meta-line">
@@ -117,7 +118,7 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
             <div class="issue-card-grid issue-card-grid-single issue-editor-grid">
               <article class="issue-card">
                 <a href={pathFor(`/articles/${editorNote.slug}/`)}>
-                  <img src={editorNote.image} alt="" />
+                  {hasArticleImage(editorNote.image) && <img src={editorNote.image} alt="" />}
                   <div>
                     <p class="meta-line"><span>{editorNote.category}</span><span>{editorNote.author}</span></p>
                     <h4>{editorNote.title}</h4>
@@ -138,7 +139,7 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
               {group.articles.map((article, index) => (
                 <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
                   <a href={pathFor(`/articles/${article.slug}/`)}>
-                    <img src={article.image} alt="" />
+                    {hasArticleImage(article.image) && <img src={article.image} alt="" />}
                     <p class="meta-line"><span>{article.category}</span><span>{article.author}</span></p>
                     <h4>{article.title}</h4>
                     <p class="read-more">閱讀全文</p>

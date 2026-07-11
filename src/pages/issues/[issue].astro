@@ -27,6 +27,7 @@ const categories = Object.keys(issueGroups);
 const issueIndex = publishedIssueArchives.findIndex((item) => item.id === issue.id);
 const previousIssue = publishedIssueArchives[issueIndex + 1];
 const nextIssue = publishedIssueArchives[issueIndex - 1];
+const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/assets/qiji-logo"));
 ---
 
 <html lang="zh-Hant">
@@ -73,7 +74,7 @@ const nextIssue = publishedIssueArchives[issueIndex - 1];
           <h1>{issue.label}</h1>
           <p>本期收錄 {categories.join("、")} 等文章。</p>
         </div>
-        <img src={issue.image} alt="" />
+        {hasArticleImage(issue.image) && <img src={issue.image} alt="" />}
       </section>
 
       <section class="content-block" aria-labelledby="issue-list-title">
@@ -92,7 +93,7 @@ const nextIssue = publishedIssueArchives[issueIndex - 1];
               {issueGroups[category].map((article) => (
                 <article class="issue-card">
                   <a href={pathFor(`/articles/${article.slug}/`)}>
-                    <img src={article.image} alt="" />
+                    {hasArticleImage(article.image) && <img src={article.image} alt="" />}
                     <p class="meta-line">
                       <span>{article.category}</span>
                       <span>{article.readTime}</span>
