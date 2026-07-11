@@ -178,8 +178,8 @@ function Get-PixabayFallbackCandidates {
     $maxPages = [Math]::Max(1, [Math]::Min(10, [int]$env:PIXABAY_MAX_PAGES))
   }
   $allHits = New-Object System.Collections.Generic.List[object]
-  try {
-    for ($page = 1; $page -le $maxPages; $page++) {
+  for ($page = 1; $page -le $maxPages; $page++) {
+    try {
       $uri = "https://pixabay.com/api/?key=$ApiKey&q=$encodedQuery&lang=zh&image_type=photo&orientation=horizontal&safesearch=true&per_page=200&page=$page&order=popular"
       $response = Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 30
       $hits = @($response.hits | Where-Object {
@@ -187,12 +187,12 @@ function Get-PixabayFallbackCandidates {
       })
       if ($hits.Count -eq 0) { break }
       foreach ($hit in $hits) { $allHits.Add($hit) }
+    } catch {
+      Write-Warning "Cannot fetch Pixabay fallback page $page. $($_.Exception.Message)"
+      break
     }
-    return @($allHits)
-  } catch {
-    Write-Warning "Cannot fetch Pixabay fallback images. $($_.Exception.Message)"
-    return @($allHits)
   }
+  return @($allHits.ToArray())
 }
 
 function Get-PixabayAssetExtension {
