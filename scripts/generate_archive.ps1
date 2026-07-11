@@ -261,11 +261,10 @@ function Apply-PixabayFallbackImages {
 
   $store = Read-PixabayFallbackStore
   $usedIds = New-Object System.Collections.Generic.HashSet[string]
-  foreach ($id in @($store.usedImageIds)) {
-    if ($id) { [void]$usedIds.Add([string]$id) }
-  }
   foreach ($entry in @($store.articles.Values)) {
-    if ($entry.imageId) { [void]$usedIds.Add([string]$entry.imageId) }
+    if ($entry.imageId -and $entry.path -and (Test-ValidPixabayAssetPath ([string]$entry.path))) {
+      [void]$usedIds.Add([string]$entry.imageId)
+    }
   }
 
   $candidates = @(Get-PixabayFallbackCandidates $apiKey | Sort-Object { Get-Random })
