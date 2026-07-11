@@ -1487,11 +1487,11 @@ body.is-review-frame .article-main {
 .article-shell {
   display: grid;
   gap: clamp(30px, 4vw, 56px);
-  grid-template-columns: minmax(200px, 280px) minmax(0, 880px);
+  grid-template-columns: minmax(240px, 330px) minmax(0, 900px);
   justify-content: center;
   margin: 0 auto;
-  max-width: 1320px;
-  padding: clamp(42px, 6vw, 88px) clamp(22px, 5vw, 96px);
+  max-width: 1380px;
+  padding: clamp(42px, 6vw, 88px) clamp(18px, 4vw, 72px);
 }
 
 .article-sidebar {
