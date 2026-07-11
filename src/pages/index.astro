@@ -31,6 +31,14 @@ const throwbackCandidates = publishedArticles
 const throwbackFallback = throwbackCandidates[0];
 const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u003c");
 const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/assets/qiji-logo"));
+const fallbackImages = [
+  pathFor("/assets/articles/202508/202508-img-001.jpg"),
+  pathFor("/assets/articles/202605/202605-img-011.jpg"),
+  pathFor("/assets/articles/202605/202605-img-012.png"),
+  pathFor("/assets/articles/202506/202506-img-005.png")
+];
+const displayImageFor = (image: string | undefined, index = 0) =>
+  hasArticleImage(image) ? image : fallbackImages[index % fallbackImages.length];
 ---
 
 <html lang="zh-Hant">
@@ -70,7 +78,7 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
         <div class="hero-rail">
           {heroArticles.map((article, index) => (
             <article class:list={["hero-story", { "is-active": index === 0 }]} data-slide>
-              {hasArticleImage(article.image) && <img src={article.image} alt="" />}
+              <img src={displayImageFor(article.image, index)} alt="" />
               <div class="hero-overlay"></div>
               <div class="hero-content">
                 <p class="meta-line">
@@ -119,6 +127,7 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
               <article class="issue-card">
                 <a href={pathFor(`/articles/${editorNote.slug}/`)}>
                   {hasArticleImage(editorNote.image) && <img src={editorNote.image} alt="" />}
+                  {!hasArticleImage(editorNote.image) && <img src={displayImageFor(editorNote.image, 1)} alt="" />}
                   <div>
                     <p class="meta-line"><span>{editorNote.category}</span><span>{editorNote.author}</span></p>
                     <h4>{editorNote.title}</h4>
@@ -139,7 +148,7 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
               {group.articles.map((article, index) => (
                 <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
                   <a href={pathFor(`/articles/${article.slug}/`)}>
-                    {hasArticleImage(article.image) && <img src={article.image} alt="" />}
+                    <img src={displayImageFor(article.image, index + 2)} alt="" />
                     <p class="meta-line"><span>{article.category}</span><span>{article.author}</span></p>
                     <h4>{article.title}</h4>
                     <p class="read-more">閱讀全文</p>
