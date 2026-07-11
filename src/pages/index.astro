@@ -165,6 +165,8 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
         >
           <img src={throwbackFallback.image} alt="" data-throwback-image hidden={!throwbackFallback.image} />
           <div>
+            <p class="feature-kicker">重溫好文｜歷史文章推薦</p>
+            <p class="feature-note">從歷史期數中選出一篇文章重新閱讀</p>
             <p class="meta-line">
               <span data-throwback-meta>{throwbackFallback.meta}</span>
             </p>
@@ -264,6 +266,9 @@ const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u0
         const meta = throwbackRoot.querySelector("[data-throwback-meta]");
         const title = throwbackRoot.querySelector("[data-throwback-title]");
         const link = throwbackRoot.querySelector("[data-throwback-link]");
+        if (link) {
+          link.textContent = "閱讀這篇歷史文章";
+        }
         const applyTextOnly = () => {
           throwbackRoot.classList.add("feature-banner--text-only");
           if (image) {
