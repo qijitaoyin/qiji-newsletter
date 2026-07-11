@@ -1357,16 +1357,16 @@ body.is-review-frame .article-main {
 
 .article-hero {
   border-bottom: 1px solid var(--line);
-  padding: clamp(24px, 3vw, 44px) clamp(18px, 4.6vw, 72px) clamp(30px, 4vw, 54px);
+  padding: clamp(24px, 3vw, 44px) clamp(22px, 5vw, 96px) clamp(30px, 4vw, 54px);
 }
 
 .article-hero-grid {
   align-items: end;
   display: grid;
-  gap: clamp(26px, 4vw, 72px);
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1fr);
+  gap: clamp(30px, 4vw, 56px);
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
   margin: 0 auto;
-  max-width: 1680px;
+  max-width: 1320px;
 }
 
 .article-hero-grid.has-no-cover {
@@ -1486,10 +1486,12 @@ body.is-review-frame .article-main {
 
 .article-shell {
   display: grid;
-  gap: clamp(28px, 5vw, 72px);
-  grid-template-columns: minmax(210px, 300px) minmax(0, 760px);
+  gap: clamp(30px, 4vw, 56px);
+  grid-template-columns: minmax(200px, 280px) minmax(0, 880px);
   justify-content: center;
-  padding: clamp(42px, 6vw, 88px) clamp(18px, 4.6vw, 72px);
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: clamp(42px, 6vw, 88px) clamp(22px, 5vw, 96px);
 }
 
 .article-sidebar {
