@@ -224,7 +224,13 @@ function Save-PixabayImageAsset {
     Invoke-WebRequest -Uri $imageUrl -OutFile $destination -TimeoutSec 60 | Out-Null
   }
 
-  return "/assets/pixabay/$fileName?v=$imageId"
+  return "/assets/pixabay/$($fileName)?v=$imageId"
+}
+
+function Test-ValidPixabayAssetPath {
+  param([string]$Path)
+  if ([string]::IsNullOrWhiteSpace($Path)) { return $false }
+  return $Path -match "^/assets/pixabay/[^/?]+\.(jpg|jpeg|png|webp)(\?v=\d+)?$"
 }
 
 function Apply-PixabayFallbackImages {
@@ -264,12 +270,15 @@ function Apply-PixabayFallbackImages {
     $slug = [string]$article.slug
     $existing = $store.articles[$slug]
 
-    if ($existing -and $existing.path) {
+    if ($existing -and $existing.path -and (Test-ValidPixabayAssetPath ([string]$existing.path))) {
       $assetPath = [string]$existing.path
       $article.image = $assetPath
       $article.imageCaption = if ($existing.caption) { [string]$existing.caption } else { "圖片來源 / Pixabay" }
       $applied += 1
       continue
+    } elseif ($existing -and $existing.path) {
+      Write-Warning "Pixabay fallback: replacing invalid cached path for $slug."
+      $store.articles.Remove($slug)
     }
 
     $candidate = $candidates | Where-Object { -not $usedIds.Contains([string]$_.id) } | Select-Object -First 1
