@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 4
+$importCacheVersion = 5
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -233,6 +233,17 @@ function Test-ValidPixabayAssetPath {
   return $Path -match "^/assets/pixabay/[^/?]+\.(jpg|jpeg|png|webp)(\?v=\d+)?$"
 }
 
+function Test-NeedsPixabayFallback {
+  param([object]$Article)
+  $image = [string]$Article.image
+  if ($image -and $image.StartsWith("/assets/pixabay/") -and -not (Test-ValidPixabayAssetPath $image)) {
+    $Article.image = ""
+    $Article.imageCaption = ""
+    return $true
+  }
+  return (-not $Article.image -or $Article.image -eq $logoPath) -and @($Article.images).Count -eq 0
+}
+
 function Apply-PixabayFallbackImages {
   param([System.Collections.Generic.List[object]]$Articles)
 
@@ -242,9 +253,7 @@ function Apply-PixabayFallbackImages {
     return
   }
 
-  $missingImageArticles = @($Articles | Where-Object {
-    (-not $_.image -or $_.image -eq $logoPath) -and @($_.images).Count -eq 0
-  })
+  $missingImageArticles = @($Articles | Where-Object { Test-NeedsPixabayFallback $_ })
   if ($missingImageArticles.Count -eq 0) {
     Write-Host "Pixabay fallback: no image-less articles."
     return
