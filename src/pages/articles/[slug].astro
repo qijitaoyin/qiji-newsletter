@@ -19,8 +19,8 @@ const { article } = Astro.props;
 const relatedArticles = getRelatedArticles(article.slug);
 const issueArticles = getAllArticlesByIssue(article.issueId);
 const issueIndex = issueArticles.findIndex((item) => item.slug === article.slug);
-const previousArticle = issueArticles[issueIndex - 1] ?? issueArticles[issueArticles.length - 1];
-const nextArticle = issueArticles[issueIndex + 1] ?? issueArticles[0];
+const previousArticle = issueIndex > 0 ? issueArticles[issueIndex - 1] : undefined;
+const nextArticle = issueIndex >= 0 && issueIndex < issueArticles.length - 1 ? issueArticles[issueIndex + 1] : undefined;
 const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
 const contentBlocks = article.contentBlocks ?? [];
 const hasContentBlocks = contentBlocks.length > 0;
@@ -108,7 +108,18 @@ const issueMenuGroups = issueArticles.reduce(
         </header>
 
         <div class="article-shell">
-          <aside class="article-sidebar" aria-label="文章導覽">
+          <button
+            class="article-menu-toggle"
+            type="button"
+            aria-controls="article-side-menu"
+            aria-expanded="false"
+            data-article-menu-toggle
+          >
+            目錄
+          </button>
+          <div class="article-menu-backdrop" data-article-menu-close></div>
+          <aside id="article-side-menu" class="article-sidebar" aria-label="文章導覽">
+            <button class="article-menu-close" type="button" aria-label="關閉目錄" data-article-menu-close>×</button>
             <nav class="article-sidebar-block article-issue-menu" aria-label="本期電子報目錄">
               <strong>目錄</strong>
               {issueMenuGroups.map((group) => (
@@ -183,15 +194,19 @@ const issueMenuGroups = issueArticles.reduce(
         </div>
       </article>
 
-      <nav class="article-pager" aria-label="上一篇與下一篇">
-        <a href={pathFor(`/articles/${previousArticle.slug}/`)}>
-          <span>上一篇</span>
-          <strong>{previousArticle.title}</strong>
-        </a>
-        <a href={pathFor(`/articles/${nextArticle.slug}/`)}>
-          <span>下一篇</span>
-          <strong>{nextArticle.title}</strong>
-        </a>
+      <nav class:list={["article-pager", { "has-single-link": !previousArticle || !nextArticle }]} aria-label="上一篇與下一篇">
+        {previousArticle && (
+          <a href={pathFor(`/articles/${previousArticle.slug}/`)}>
+            <span>上一篇</span>
+            <strong>{previousArticle.title}</strong>
+          </a>
+        )}
+        {nextArticle && (
+          <a href={pathFor(`/articles/${nextArticle.slug}/`)}>
+            <span>下一篇</span>
+            <strong>{nextArticle.title}</strong>
+          </a>
+        )}
       </nav>
 
       <section class="content-block article-related" aria-labelledby="related-title">
@@ -267,20 +282,24 @@ const issueMenuGroups = issueArticles.reduce(
         });
       });
 
-      const siteHeader = document.querySelector(".site-header");
-      const compactHeaderQuery = window.matchMedia("(max-width: 680px)");
-      const updateMobileHeader = () => {
-        if (!siteHeader) return;
-        siteHeader.classList.toggle(
-          "is-mobile-compact",
-          compactHeaderQuery.matches && window.scrollY > 96
-        );
+      const articleMenuToggle = document.querySelector("[data-article-menu-toggle]");
+      const articleMenuCloseControls = Array.from(document.querySelectorAll("[data-article-menu-close]"));
+      const setArticleMenuOpen = (isOpen) => {
+        document.body.classList.toggle("is-article-menu-open", isOpen);
+        articleMenuToggle?.setAttribute("aria-expanded", String(isOpen));
       };
 
-      updateMobileHeader();
-      window.addEventListener("scroll", updateMobileHeader, { passive: true });
-      compactHeaderQuery.addEventListener?.("change", updateMobileHeader);
+      articleMenuToggle?.addEventListener("click", () => {
+        setArticleMenuOpen(!document.body.classList.contains("is-article-menu-open"));
+      });
+      articleMenuCloseControls.forEach((control) => {
+        control.addEventListener("click", () => setArticleMenuOpen(false));
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setArticleMenuOpen(false);
+      });
 
     </script>
+    <script src={pathFor("/mobile-header.js")}></script>
   </body>
 </html>
