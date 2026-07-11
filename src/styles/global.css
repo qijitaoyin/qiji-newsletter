@@ -3304,8 +3304,8 @@ body.is-review-frame .article-main {
   }
 
   .article-hero-copy h1 {
-    font-size: clamp(2.18rem, 10vw, 2.95rem);
-    line-height: 1.14;
+    font-size: clamp(1.65rem, 7.4vw, 2rem);
+    line-height: 1.22;
     text-wrap: balance;
     word-break: normal;
     overflow-wrap: break-word;
