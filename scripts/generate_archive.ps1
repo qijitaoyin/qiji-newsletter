@@ -16,6 +16,8 @@ $logoPath = "/assets/qiji-logo.png"
 $importCacheVersion = 4
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
+$pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
+$pixabayFallbackAssetDir = Join-Path $Root "public\assets\pixabay"
 
 $skipDirectoryNames = @(
   "pic", "pics", "picture", "pictures", "images", "image", "圖", "圖片", "圖片檔", "五感圖片", "傳習錄圖片", "網站",
@@ -124,6 +126,171 @@ function Get-FileContentHash {
     if ($sha) { $sha.Dispose() }
     if ($stream) { $stream.Dispose() }
   }
+}
+
+function Read-PixabayFallbackStore {
+  if (-not (Test-Path -LiteralPath $pixabayFallbackPath)) {
+    return @{
+      articles = @{}
+      usedImageIds = @()
+    }
+  }
+
+  try {
+    $raw = [System.IO.File]::ReadAllText((Resolve-Path -LiteralPath $pixabayFallbackPath))
+    if ([string]::IsNullOrWhiteSpace($raw)) {
+      return @{
+        articles = @{}
+        usedImageIds = @()
+      }
+    }
+    $store = ConvertTo-PlainObject ($raw | ConvertFrom-Json)
+    if (-not $store.ContainsKey("articles") -or $null -eq $store["articles"]) { $store["articles"] = @{} }
+    if (-not $store.ContainsKey("usedImageIds") -or $null -eq $store["usedImageIds"]) { $store["usedImageIds"] = @() }
+    return $store
+  } catch {
+    Write-Warning "Cannot read Pixabay fallback store; starting fresh. $($_.Exception.Message)"
+    return @{
+      articles = @{}
+      usedImageIds = @()
+    }
+  }
+}
+
+function Save-PixabayFallbackStore {
+  param([hashtable]$Store)
+  $directory = Split-Path -Parent $pixabayFallbackPath
+  if ($directory -and -not (Test-Path -LiteralPath $directory)) {
+    New-Item -ItemType Directory -Path $directory | Out-Null
+  }
+  $json = $Store | ConvertTo-Json -Depth 20
+  [System.IO.File]::WriteAllText($pixabayFallbackPath, $json, [System.Text.UTF8Encoding]::new($false))
+}
+
+function Get-PixabayFallbackCandidates {
+  param([string]$ApiKey)
+  if ([string]::IsNullOrWhiteSpace($ApiKey)) { return @() }
+
+  $query = if ($env:PIXABAY_QUERY) { $env:PIXABAY_QUERY } else { "風景" }
+  $encodedQuery = [System.Uri]::EscapeDataString($query)
+  $uri = "https://pixabay.com/api/?key=$ApiKey&q=$encodedQuery&lang=zh&image_type=photo&orientation=horizontal&safesearch=true&per_page=200&order=popular"
+
+  try {
+    $response = Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 30
+    return @($response.hits | Where-Object {
+      $_.id -and ($_.largeImageURL -or $_.webformatURL)
+    })
+  } catch {
+    Write-Warning "Cannot fetch Pixabay fallback images. $($_.Exception.Message)"
+    return @()
+  }
+}
+
+function Get-PixabayAssetExtension {
+  param([string]$Url)
+  try {
+    $path = ([System.Uri]$Url).AbsolutePath
+    $extension = [System.IO.Path]::GetExtension($path)
+    if ($extension -match "^\.(jpg|jpeg|png|webp)$") {
+      return $extension.ToLowerInvariant()
+    }
+  } catch {}
+  return ".jpg"
+}
+
+function Save-PixabayImageAsset {
+  param([object]$Candidate)
+
+  if (-not (Test-Path -LiteralPath $pixabayFallbackAssetDir)) {
+    New-Item -ItemType Directory -Path $pixabayFallbackAssetDir -Force | Out-Null
+  }
+
+  $imageUrl = if ($Candidate.largeImageURL) { [string]$Candidate.largeImageURL } else { [string]$Candidate.webformatURL }
+  $imageId = [string]$Candidate.id
+  $extension = Get-PixabayAssetExtension $imageUrl
+  $fileName = "pixabay-$imageId$extension"
+  $destination = Join-Path $pixabayFallbackAssetDir $fileName
+
+  if (-not (Test-Path -LiteralPath $destination)) {
+    Invoke-WebRequest -Uri $imageUrl -OutFile $destination -TimeoutSec 60 | Out-Null
+  }
+
+  return "/assets/pixabay/$fileName?v=$imageId"
+}
+
+function Apply-PixabayFallbackImages {
+  param([System.Collections.Generic.List[object]]$Articles)
+
+  $apiKey = [string]$env:PIXABAY_API_KEY
+  if ([string]::IsNullOrWhiteSpace($apiKey)) {
+    Write-Host "Pixabay fallback disabled: PIXABAY_API_KEY is not set."
+    return
+  }
+
+  $missingImageArticles = @($Articles | Where-Object {
+    (-not $_.image -or $_.image -eq $logoPath) -and @($_.images).Count -eq 0
+  })
+  if ($missingImageArticles.Count -eq 0) {
+    Write-Host "Pixabay fallback: no image-less articles."
+    return
+  }
+
+  $store = Read-PixabayFallbackStore
+  $usedIds = New-Object System.Collections.Generic.HashSet[string]
+  foreach ($id in @($store.usedImageIds)) {
+    if ($id) { [void]$usedIds.Add([string]$id) }
+  }
+  foreach ($entry in @($store.articles.Values)) {
+    if ($entry.imageId) { [void]$usedIds.Add([string]$entry.imageId) }
+  }
+
+  $candidates = @(Get-PixabayFallbackCandidates $apiKey | Sort-Object { Get-Random })
+  if ($candidates.Count -eq 0) {
+    Write-Warning "Pixabay fallback: no candidates returned."
+    return
+  }
+
+  $applied = 0
+  foreach ($article in $missingImageArticles) {
+    $slug = [string]$article.slug
+    $existing = $store.articles[$slug]
+
+    if ($existing -and $existing.path) {
+      $assetPath = [string]$existing.path
+      $article.image = $assetPath
+      $article.imageCaption = if ($existing.caption) { [string]$existing.caption } else { "圖片來源 / Pixabay" }
+      $applied += 1
+      continue
+    }
+
+    $candidate = $candidates | Where-Object { -not $usedIds.Contains([string]$_.id) } | Select-Object -First 1
+    if (-not $candidate) {
+      Write-Warning "Pixabay fallback: image pool exhausted before assigning $slug."
+      continue
+    }
+
+    try {
+      $assetPath = Save-PixabayImageAsset $candidate
+      $caption = "圖片來源 / Pixabay"
+      $article.image = $assetPath
+      $article.imageCaption = $caption
+      [void]$usedIds.Add([string]$candidate.id)
+      $store.articles[$slug] = @{
+        imageId = [string]$candidate.id
+        path = $assetPath
+        caption = $caption
+        pageUrl = [string]$candidate.pageURL
+        user = [string]$candidate.user
+      }
+      $applied += 1
+    } catch {
+      Write-Warning "Pixabay fallback failed for $slug. $($_.Exception.Message)"
+    }
+  }
+
+  $store.usedImageIds = @($usedIds | Sort-Object)
+  Save-PixabayFallbackStore $store
+  Write-Host "Pixabay fallback: applied $applied image(s)."
 }
 
 function Get-FileSignature {
@@ -1475,6 +1642,8 @@ foreach ($issueDir in $issueDirs) {
     $articles.Add($orderedIssueArticles[$i])
   }
 }
+
+Apply-PixabayFallbackImages $articles
 
 $issues = New-Object System.Collections.Generic.List[object]
 $issueIds = $articles |
