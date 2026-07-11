@@ -214,7 +214,7 @@ main {
   bottom: clamp(44px, 7vw, 92px);
   color: #fff;
   left: clamp(20px, 5.4vw, 82px);
-  max-width: min(920px, 86vw);
+  max-width: min(780px, 76vw);
   position: absolute;
   z-index: 2;
 }
@@ -240,6 +240,8 @@ main {
 .hero-title-link {
   color: #fff;
   display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .hero-title-link:hover,
@@ -251,12 +253,18 @@ main {
 .hero-content h2 {
   color: #fff;
   font-family: "Noto Serif TC", "Songti TC", serif;
-  font-size: clamp(3.1rem, 7.6vw, 7.4rem);
+  font-size: clamp(1.85rem, 3.75vw, 3.75rem);
   font-weight: 800;
   letter-spacing: 0;
-  line-height: 1.03;
+  line-height: 1;
   margin: 0 0 16px;
   text-wrap: balance;
+}
+
+.hero-title-heading,
+.hero-title-heading .hero-title-link {
+  font-size: clamp(1.85rem, 3.75vw, 3.75rem) !important;
+  line-height: 1 !important;
 }
 
 .byline {
@@ -3309,7 +3317,12 @@ body.is-review-frame .article-main {
 
   .hero-content h1,
   .hero-content h2 {
-    font-size: clamp(2.4rem, 12vw, 4.4rem);
+    font-size: clamp(1.55rem, 7.8vw, 2.85rem);
+  }
+
+  .hero-title-heading,
+  .hero-title-heading .hero-title-link {
+    font-size: clamp(1.55rem, 7.8vw, 2.85rem) !important;
   }
 
   .hero-count {

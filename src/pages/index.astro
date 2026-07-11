@@ -78,11 +78,11 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                   <span>{latestIssueArchive?.issueNumber}電子報</span>
                 </p>
                 {index === 0 ? (
-                  <h1 id="hero-title">
+                  <h1 id="hero-title" class="hero-title-heading">
                     <a class="hero-title-link" href={pathFor(`/articles/${article.slug}/`)}>{article.title}</a>
                   </h1>
                 ) : (
-                  <h2>
+                  <h2 class="hero-title-heading">
                     <a class="hero-title-link" href={pathFor(`/articles/${article.slug}/`)}>{article.title}</a>
                   </h2>
                 )}
