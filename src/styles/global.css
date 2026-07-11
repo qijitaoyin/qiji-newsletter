@@ -53,6 +53,7 @@ img {
   position: sticky;
   right: 0;
   top: 0;
+  transition: min-height 180ms ease, padding 180ms ease;
   z-index: 30;
 }
 
@@ -69,6 +70,7 @@ img {
   height: 52px;
   justify-content: center;
   padding: 0;
+  transition: height 180ms ease, width 180ms ease;
   width: 52px;
 }
 
@@ -3298,7 +3300,20 @@ body.is-review-frame .article-main {
   }
 
   .article-hero {
-    padding-top: 18px;
+    padding: 18px clamp(22px, 7vw, 34px) 34px;
+  }
+
+  .article-hero-copy h1 {
+    font-size: clamp(2.18rem, 10vw, 2.95rem);
+    line-height: 1.14;
+    text-wrap: balance;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .article-hero-quote {
+    font-size: clamp(1.02rem, 5.2vw, 1.28rem);
+    line-height: 1.55;
   }
 
   .article-byline {
@@ -3361,6 +3376,28 @@ body.is-review-frame .article-main {
 
   .review-report-actions button {
     width: 100%;
+  }
+
+  .site-header.is-mobile-compact {
+    align-items: center;
+    flex-direction: row;
+    min-height: 54px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .site-header.is-mobile-compact .brand {
+    min-width: 0;
+  }
+
+  .site-header.is-mobile-compact .brand-mark {
+    height: 40px;
+    width: 40px;
+  }
+
+  .site-header.is-mobile-compact .brand-text,
+  .site-header.is-mobile-compact .header-actions {
+    display: none;
   }
 }
 
