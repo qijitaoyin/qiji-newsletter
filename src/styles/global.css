@@ -1384,9 +1384,6 @@ body.is-review-frame .article-main {
 }
 
 .article-hero-copy h1 {
-  column-gap: 0.22em;
-  display: flex;
-  flex-wrap: wrap;
   font-family: "Noto Serif TC", "Songti TC", serif;
   font-size: clamp(3rem, 3.12vw, 4rem);
   font-weight: 900;
@@ -1394,11 +1391,8 @@ body.is-review-frame .article-main {
   line-height: 1.08;
   margin: 0 0 clamp(18px, 2vw, 28px);
   max-width: 100%;
-  row-gap: 0.08em;
-}
-
-.article-hero-copy .title-phrase {
-  white-space: nowrap;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .article-hero-quote {

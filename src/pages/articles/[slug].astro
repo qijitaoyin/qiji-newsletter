@@ -24,9 +24,7 @@ const nextArticle = issueArticles[issueIndex + 1] ?? issueArticles[0];
 const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
 const contentBlocks = article.contentBlocks ?? [];
 const hasContentBlocks = contentBlocks.length > 0;
-const titlePhrases = article.title.includes(" ")
-  ? article.title.split(/\s+/).filter(Boolean)
-  : article.title.match(/.{1,8}/gu) ?? [article.title];
+const displayTitle = article.title.replace(/([\u3400-\u9fff])[\s　]+(?=[\u3400-\u9fff])/g, "$1");
 const hasHeroImage = Boolean(article.image && !article.image.includes("/assets/qiji-logo"));
 const hasAiGuide = Boolean(article.aiSummary);
 const normalizeCategory = (category: string) => {
@@ -92,9 +90,7 @@ const issueMenuGroups = issueArticles.reduce(
                 <span>{article.issue}</span>
                 <span>{article.readTime}</span>
               </p>
-              <h1 class="title-fixed" aria-label={article.title}>
-                {titlePhrases.map((phrase) => <span class="title-phrase">{phrase}</span>)}
-              </h1>
+              <h1 class="title-fixed">{displayTitle}</h1>
               {article.aiQuote && <p class="article-hero-quote">{article.aiQuote}</p>}
               {article.subtitle && <p class="article-subtitle">{article.subtitle}</p>}
               <p class="article-byline">
