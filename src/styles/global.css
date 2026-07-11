@@ -929,6 +929,15 @@ p {
   grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
 }
 
+.archive-compact-layout.is-searching {
+  grid-template-columns: 1fr;
+}
+
+.archive-compact-layout.is-searching .archive-tree,
+.archive-compact-layout.is-searching .archive-preview {
+  display: none;
+}
+
 .archive-tree {
   background: #fff;
   border-top: 1px solid var(--line-dark);
@@ -1094,7 +1103,7 @@ p {
 
 .archive-search-hit {
   background: transparent;
-  color: #c0392b;
+  color: #d22f27;
   font-weight: 950;
   padding: 0;
 }
@@ -1110,23 +1119,45 @@ p {
 
 .archive-result-list {
   border-bottom: 1px solid var(--line);
+  display: grid;
+}
+
+.archive-result-list:not(.is-visible) {
+  display: none;
 }
 
 .archive-result-row {
   border-top: 1px solid var(--line);
 }
 
-.archive-result-row button {
+.archive-result-row a {
   background: transparent;
-  border: 0;
   color: var(--ink);
   cursor: pointer;
   display: grid;
-  font: inherit;
-  gap: 6px;
-  padding: 16px 0;
+  gap: 8px;
+  padding: 18px 0;
   text-align: left;
   width: 100%;
+}
+
+.archive-result-row a:visited h3 {
+  color: #745d4a;
+}
+
+.archive-result-row a:hover h3,
+.archive-result-row a:focus-visible h3 {
+  color: var(--coffee);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.archive-result-row.is-read a {
+  opacity: 0.72;
+}
+
+.archive-result-row.is-read [data-read-label] {
+  color: #777;
 }
 
 .archive-result-row h3 {
@@ -1136,10 +1167,22 @@ p {
   margin: 0;
 }
 
-.archive-result-row p:last-child {
+.archive-result-author {
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 800;
+  margin: 0;
+}
+
+.archive-result-snippets {
+  color: #555;
+  display: grid;
+  gap: 5px;
+  line-height: 1.7;
+  max-width: 920px;
+}
+
+.archive-result-snippets p {
   margin: 0;
 }
 
@@ -1173,7 +1216,9 @@ p {
 [data-archive-result][hidden],
 [data-archive-results][hidden],
 [data-archive-year][hidden],
-[data-archive-month][hidden] {
+[data-archive-month][hidden],
+.archive-tree[hidden],
+.archive-preview[hidden] {
   display: none;
 }
 

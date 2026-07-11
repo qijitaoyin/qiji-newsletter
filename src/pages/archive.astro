@@ -167,7 +167,7 @@ const totalArticles = articles.length;
           </div>
         </div>
 
-        <div class="archive-compact-layout">
+        <div class="archive-compact-layout" data-archive-layout>
           <nav class="archive-tree" aria-label="歷史文章樹狀索引">
             {archiveYears.map((yearGroup) => (
               <details
@@ -252,27 +252,29 @@ const totalArticles = articles.length;
                   <article
                     class="archive-result-row"
                     data-archive-result
-                    data-search={`${article.title} ${article.author} ${article.category} ${article.tags.join(" ")} ${issue?.label ?? ""} ${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                    data-search={`${getSearchText(article)} ${issue?.label ?? ""} ${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
+                    data-title={article.title}
+                    data-category={article.category}
+                    data-author={article.author || article.readTime}
+                    data-issue-number={issue?.issueNumber ?? ""}
+                    data-date={issue?.date ?? ""}
+                    data-excerpt={article.excerpt}
+                    data-bodytext={getBodySearchText(article)}
+                    data-slug={article.slug}
                   >
-                    <button
-                      type="button"
-                      data-preview-trigger
-                      data-title={article.title}
-                      data-category={article.category}
-                      data-author={article.author || article.readTime}
-                      data-issue={`${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
-                      data-excerpt={article.excerpt}
-                      data-preview={getPreviewText(article)}
-                      data-href={href}
-                    >
+                    <a href={href} data-result-link>
                       <p class="meta-line">
                         <span>{issue?.issueNumber}</span>
                         <span>{issue?.date}</span>
                         <span>{article.category}</span>
+                        <span data-read-label hidden>已閱讀</span>
                       </p>
-                      <h3>{article.title}</h3>
-                      <p>{article.author || article.readTime}</p>
-                    </button>
+                      <h3 data-result-title>{article.title}</h3>
+                      <p class="archive-result-author" data-result-author>{article.author || article.readTime}</p>
+                      <div class="archive-result-snippets" data-result-snippets>
+                        <p data-result-excerpt>{article.excerpt}</p>
+                      </div>
+                    </a>
                   </article>
                 );
               })}
@@ -417,12 +419,15 @@ const totalArticles = articles.length;
     <script>
       (() => {
         const input = document.querySelector("[data-archive-search]");
+        const layout = document.querySelector("[data-archive-layout]");
         const treeItems = Array.from(document.querySelectorAll("[data-archive-tree-item]"));
         const treeTriggers = treeItems
           .map((item) => item.querySelector("[data-preview-trigger]"))
           .filter(Boolean);
+        const resultItems = Array.from(document.querySelectorAll("[data-archive-result]"));
         const yearNodes = Array.from(document.querySelectorAll("[data-archive-year]"));
         const monthNodes = Array.from(document.querySelectorAll("[data-archive-month]"));
+        const tree = document.querySelector(".archive-tree");
         const results = document.querySelector("[data-archive-results]");
         const count = document.querySelector("[data-archive-count]");
         const empty = document.querySelector("[data-archive-empty]");
@@ -435,6 +440,55 @@ const totalArticles = articles.length;
         );
 
         const normalize = (value) => value.trim().toLowerCase();
+        const showElement = (element, display = "") => {
+          if (!element) return;
+          element.removeAttribute("hidden");
+          element.style.display = display;
+        };
+        const hideElement = (element) => {
+          if (!element) return;
+          element.setAttribute("hidden", "");
+          element.style.display = "none";
+        };
+        const readStorageKey = "qiji-read-article-slugs";
+        const readArticles = () => {
+          try {
+            const value = window.localStorage.getItem(readStorageKey);
+            return new Set(value ? JSON.parse(value) : []);
+          } catch {
+            return new Set();
+          }
+        };
+        const saveReadArticles = (slugs) => {
+          try {
+            window.localStorage.setItem(readStorageKey, JSON.stringify(Array.from(slugs)));
+          } catch {
+            // Ignore storage limits or private browsing restrictions.
+          }
+        };
+        const markReadArticle = (slug) => {
+          if (!slug) return;
+          const slugs = readArticles();
+          slugs.add(slug);
+          saveReadArticles(slugs);
+        };
+        const applyReadState = () => {
+          const slugs = readArticles();
+          resultItems.forEach((item) => {
+            const isRead = slugs.has(item.getAttribute("data-slug"));
+            item.classList.toggle("is-read", isRead);
+            item.querySelector("[data-read-label]")?.toggleAttribute("hidden", !isRead);
+          });
+        };
+        const updateArchiveUrl = (keyword) => {
+          const url = new URL(window.location.href);
+          if (keyword.trim()) {
+            url.searchParams.set("keyword", keyword.trim());
+          } else {
+            url.searchParams.delete("keyword");
+          }
+          window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+        };
         const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
         const termsFor = (keyword) =>
           keyword
@@ -528,7 +582,11 @@ const totalArticles = articles.length;
         };
 
         const resetArchiveSearch = () => {
+          layout?.classList.remove("is-searching");
+          showElement(tree);
+          showElement(preview, "grid");
           treeItems.forEach((item) => item.removeAttribute("hidden"));
+          resultItems.forEach((item) => hideElement(item));
           monthNodes.forEach((node) => {
             const id = node.getAttribute("data-archive-month");
             node.toggleAttribute("open", initialOpenMonths.has(id));
@@ -539,41 +597,74 @@ const totalArticles = articles.length;
             node.toggleAttribute("open", initialOpenYears.has(id));
             node.removeAttribute("hidden");
           });
-          results?.setAttribute("hidden", "");
-          empty?.setAttribute("hidden", "");
+          hideElement(results);
+          results?.classList.remove("is-visible");
+          hideElement(empty);
           if (count) count.textContent = "預設顯示最新月份，展開年份或月份可瀏覽更多文章。";
           setArchivePreview(treeTriggers[0]);
         };
+        const resultMatchesKeyword = (item, keyword) => {
+          const terms = termsFor(keyword);
+          const text = normalize(item.getAttribute("data-search") ?? "");
+          return terms.length > 0 && terms.every((term) => text.includes(term.toLowerCase()));
+        };
+        const renderResultItem = (item, keyword) => {
+          const title = item.getAttribute("data-title") ?? "";
+          const author = item.getAttribute("data-author") ?? "";
+          const excerpt = item.getAttribute("data-excerpt") ?? "";
+          const bodyText = item.getAttribute("data-bodytext") ?? "";
+          highlightText(item.querySelector("[data-result-title]"), title, keyword);
+          item.querySelector("[data-result-author]").textContent = author;
+
+          const snippets = snippetsFor(bodyText, keyword, excerpt).slice(0, 2);
+          const snippetsTarget = item.querySelector("[data-result-snippets]");
+          snippetsTarget.replaceChildren(
+            ...snippets.map((snippet) => {
+              const node = document.createElement("p");
+              highlightText(node, snippet, keyword);
+              return node;
+            })
+          );
+        };
 
         const filterArchiveSearch = () => {
-          const keyword = normalize(input?.value ?? "");
+          const rawKeyword = input?.value ?? "";
+          const keyword = normalize(rawKeyword);
+          updateArchiveUrl(rawKeyword);
           if (!keyword) {
             resetArchiveSearch();
             return;
           }
 
-          const visibleItems = [];
-          treeItems.forEach((item) => {
-            const visible = normalize(item.getAttribute("data-search") ?? "").includes(keyword);
-            item.toggleAttribute("hidden", !visible);
-            if (visible) visibleItems.push(item);
+          const visibleResults = [];
+          layout?.classList.add("is-searching");
+          hideElement(tree);
+          hideElement(preview);
+
+          resultItems.forEach((item) => {
+            const visible = resultMatchesKeyword(item, rawKeyword);
+            if (visible) {
+              showElement(item, "block");
+              renderResultItem(item, rawKeyword);
+              visibleResults.push(item);
+            } else {
+              hideElement(item);
+            }
           });
 
-          monthNodes.forEach((node) => {
-            const hasVisibleItem = node.querySelector("[data-archive-tree-item]:not([hidden])");
-            node.toggleAttribute("hidden", !hasVisibleItem);
-            node.toggleAttribute("open", Boolean(hasVisibleItem));
-          });
-          yearNodes.forEach((node) => {
-            const hasVisibleMonth = node.querySelector("[data-archive-month]:not([hidden])");
-            node.toggleAttribute("hidden", !hasVisibleMonth);
-            node.toggleAttribute("open", Boolean(hasVisibleMonth));
-          });
-
-          results?.setAttribute("hidden", "");
-          empty?.toggleAttribute("hidden", visibleItems.length > 0);
-          if (count) count.textContent = `${visibleItems.length} 篇文章`;
-          setArchivePreview(visibleItems[0]?.querySelector("[data-preview-trigger]"));
+          if (visibleResults.length > 0) {
+            showElement(results, "grid");
+          } else {
+            hideElement(results);
+          }
+          results?.classList.toggle("is-visible", visibleResults.length > 0);
+          if (visibleResults.length > 0) {
+            hideElement(empty);
+          } else {
+            showElement(empty);
+          }
+          if (count) count.textContent = `${visibleResults.length} 篇文章`;
+          applyReadState();
         };
 
         treeTriggers.forEach((trigger) => {
@@ -582,9 +673,86 @@ const totalArticles = articles.length;
             setArchivePreview(trigger);
           });
         });
+        resultItems.forEach((item) => {
+          item.querySelector("[data-result-link]")?.addEventListener("click", () => {
+            markReadArticle(item.getAttribute("data-slug"));
+            applyReadState();
+          });
+        });
+        const initialKeyword = new URLSearchParams(window.location.search).get("keyword");
+        if (input && initialKeyword) input.value = initialKeyword;
         input?.addEventListener("input", filterArchiveSearch);
-        results?.setAttribute("hidden", "");
+        hideElement(results);
+        applyReadState();
         filterArchiveSearch();
+      })();
+    </script>
+    <script is:inline>
+      (() => {
+        const input = document.querySelector("[data-archive-search]");
+        const layout = document.querySelector("[data-archive-layout]");
+        const tree = document.querySelector(".archive-tree");
+        const preview = document.querySelector("[data-archive-preview]");
+        const results = document.querySelector("[data-archive-results]");
+        const resultItems = Array.from(document.querySelectorAll("[data-archive-result]"));
+        const empty = document.querySelector("[data-archive-empty]");
+        const count = document.querySelector("[data-archive-count]");
+        const normalize = (value) => value.trim().toLowerCase();
+        const termsFor = (value) => normalize(value).split(/\s+/).filter(Boolean);
+        const show = (element, display = "") => {
+          if (!element) return;
+          element.hidden = false;
+          element.style.display = display;
+        };
+        const hide = (element) => {
+          if (!element) return;
+          element.hidden = true;
+          element.style.display = "none";
+        };
+        const syncSearchLayout = () => {
+          const terms = termsFor(input?.value ?? "");
+          if (!terms.length) {
+            layout?.classList.remove("is-searching");
+            show(tree);
+            show(preview, "grid");
+            hide(results);
+            hide(empty);
+            resultItems.forEach((item) => hide(item));
+            return;
+          }
+
+          let visibleCount = 0;
+          layout?.classList.add("is-searching");
+          hide(tree);
+          hide(preview);
+          resultItems.forEach((item) => {
+            const haystack = normalize(item.getAttribute("data-search") ?? "");
+            const visible = terms.every((term) => haystack.includes(term));
+            if (visible) {
+              show(item, "block");
+              visibleCount += 1;
+            } else {
+              hide(item);
+            }
+          });
+          if (visibleCount > 0) {
+            show(results, "grid");
+            results?.classList.add("is-visible");
+            hide(empty);
+          } else {
+            hide(results);
+            results?.classList.remove("is-visible");
+            show(empty);
+          }
+          if (count) count.textContent = `${visibleCount} 篇文章`;
+        };
+
+        const initialKeyword = new URLSearchParams(window.location.search).get("keyword");
+        if (input && initialKeyword && !input.value) input.value = initialKeyword;
+        input?.addEventListener("input", syncSearchLayout);
+        input?.form?.addEventListener("submit", syncSearchLayout);
+        window.addEventListener("pageshow", syncSearchLayout);
+        syncSearchLayout();
       })();
     </script>
   </body>
