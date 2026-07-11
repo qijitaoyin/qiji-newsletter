@@ -173,16 +173,25 @@ function Get-PixabayFallbackCandidates {
 
   $query = if ($env:PIXABAY_QUERY) { $env:PIXABAY_QUERY } else { "風景" }
   $encodedQuery = [System.Uri]::EscapeDataString($query)
-  $uri = "https://pixabay.com/api/?key=$ApiKey&q=$encodedQuery&lang=zh&image_type=photo&orientation=horizontal&safesearch=true&per_page=200&order=popular"
-
+  $maxPages = 4
+  if ($env:PIXABAY_MAX_PAGES -and $env:PIXABAY_MAX_PAGES -match "^\d+$") {
+    $maxPages = [Math]::Max(1, [Math]::Min(10, [int]$env:PIXABAY_MAX_PAGES))
+  }
+  $allHits = New-Object System.Collections.Generic.List[object]
   try {
-    $response = Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 30
-    return @($response.hits | Where-Object {
-      $_.id -and ($_.largeImageURL -or $_.webformatURL)
-    })
+    for ($page = 1; $page -le $maxPages; $page++) {
+      $uri = "https://pixabay.com/api/?key=$ApiKey&q=$encodedQuery&lang=zh&image_type=photo&orientation=horizontal&safesearch=true&per_page=200&page=$page&order=popular"
+      $response = Invoke-RestMethod -Uri $uri -Method Get -TimeoutSec 30
+      $hits = @($response.hits | Where-Object {
+        $_.id -and ($_.largeImageURL -or $_.webformatURL)
+      })
+      if ($hits.Count -eq 0) { break }
+      foreach ($hit in $hits) { $allHits.Add($hit) }
+    }
+    return @($allHits)
   } catch {
     Write-Warning "Cannot fetch Pixabay fallback images. $($_.Exception.Message)"
-    return @()
+    return @($allHits)
   }
 }
 

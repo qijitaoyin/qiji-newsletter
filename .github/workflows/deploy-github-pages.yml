@@ -95,6 +95,7 @@ jobs:
             各期電子報
             public/assets/articles
             public/assets/pixabay
+            src/data/pixabayFallbackImages.json
           key: qiji-import-cache-${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
           restore-keys: |
             qiji-import-cache-${{ runner.os }}-${{ github.ref_name }}-
