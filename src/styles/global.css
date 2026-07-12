@@ -3779,6 +3779,12 @@ body.is-review-frame .article-main {
     transform: translateX(0);
   }
 
+  body.is-article-menu-open .article-menu-toggle {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+  }
+
   body.is-article-menu-open .article-menu-backdrop {
     opacity: 1;
     pointer-events: auto;
