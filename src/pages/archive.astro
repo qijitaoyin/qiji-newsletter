@@ -586,10 +586,15 @@ const totalArticles = articles.length;
           treeTriggers.forEach((item) => item.classList.toggle("is-active", item === trigger));
           treeItems.forEach((item) => item.classList.toggle("is-selected", item.contains(trigger)));
           showElement(preview, "grid");
+          layout?.classList.add("has-preview");
+          if (window.matchMedia("(max-width: 680px)").matches) {
+            preview.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
         };
 
         const resetArchiveSearch = () => {
           layout?.classList.remove("is-searching");
+          layout?.classList.remove("has-preview");
           showElement(tree);
           hideElement(preview);
           treeItems.forEach((item) => item.removeAttribute("hidden"));

@@ -3523,8 +3523,23 @@ body.is-review-frame .article-main {
 
   .archive-tree {
     max-height: 58vh;
+    order: 1;
     overflow: auto;
     padding: 14px 14px 18px;
+  }
+
+  .archive-search-panel {
+    order: 2;
+    scroll-margin-top: 82px;
+  }
+
+  .archive-compact-layout.has-preview .archive-search-panel {
+    order: 1;
+  }
+
+  .archive-compact-layout.has-preview .archive-tree {
+    max-height: 36vh;
+    order: 2;
   }
 
   .archive-issue-section > header {
