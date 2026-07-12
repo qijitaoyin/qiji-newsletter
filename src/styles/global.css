@@ -3862,7 +3862,7 @@ body.is-review-frame .article-main {
   }
 
   .article-body {
-    order: 1;
+    order: 3;
   }
 
   .article-tools {
@@ -3870,9 +3870,9 @@ body.is-review-frame .article-main {
   }
 
   .article-ai-guide {
-    order: 3;
-    margin-bottom: 0;
-    margin-top: 28px;
+    order: 1;
+    margin-bottom: 22px;
+    margin-top: 0;
   }
 
   .article-pager a {
