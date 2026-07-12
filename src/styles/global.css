@@ -1083,6 +1083,15 @@ p {
   margin: 0;
 }
 
+.archive-preview h3 a {
+  color: inherit;
+}
+
+.archive-preview h3 a:hover,
+.archive-preview h3 a:focus-visible {
+  color: var(--gold);
+}
+
 .archive-preview .byline {
   margin: 0;
 }

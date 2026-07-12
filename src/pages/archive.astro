@@ -231,7 +231,11 @@ const totalArticles = articles.length;
                 <span data-preview-date>{initialIssue?.date}</span>
                 <span data-preview-category>{initialArticle?.category}</span>
               </p>
-              <h3 data-preview-title>{initialArticle?.title}</h3>
+              <h3>
+                <a href={pathFor(`/articles/${initialArticle?.slug}/`)} data-preview-title-href target="_blank" rel="noreferrer">
+                  <span data-preview-title>{initialArticle?.title}</span>
+                </a>
+              </h3>
               <p class="byline" data-preview-author>{initialArticle?.author || initialArticle?.readTime}</p>
               <p class="archive-preview-excerpt" data-preview-excerpt>{initialArticle?.excerpt}</p>
               <div class="archive-preview-body" data-preview-body>
@@ -562,6 +566,10 @@ const totalArticles = articles.length;
           link.setAttribute("href", href);
           link.setAttribute("target", "_blank");
           link.setAttribute("rel", "noreferrer");
+          const titleLink = preview.querySelector("[data-preview-title-href]");
+          titleLink.setAttribute("href", href);
+          titleLink.setAttribute("target", "_blank");
+          titleLink.setAttribute("rel", "noreferrer");
 
           const bodyTarget = preview.querySelector("[data-preview-body]");
           const snippets = keyword
@@ -577,6 +585,7 @@ const totalArticles = articles.length;
 
           treeTriggers.forEach((item) => item.classList.toggle("is-active", item === trigger));
           treeItems.forEach((item) => item.classList.toggle("is-selected", item.contains(trigger)));
+          showElement(preview, "grid");
         };
 
         const resetArchiveSearch = () => {
