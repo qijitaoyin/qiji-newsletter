@@ -288,10 +288,12 @@ const issueMenuGroups = issueArticles.reduce(
       });
 
       const articleMenuToggle = document.querySelector("[data-article-menu-toggle]");
+      const articleSidebar = document.getElementById("article-side-menu");
       const articleMenuCloseControls = Array.from(document.querySelectorAll("[data-article-menu-close]"));
       const setArticleMenuOpen = (isOpen) => {
         document.body.classList.toggle("is-article-menu-open", isOpen);
         articleMenuToggle?.setAttribute("aria-expanded", String(isOpen));
+        if (isOpen) articleSidebar?.scrollTo({ top: 0 });
       };
 
       articleMenuToggle?.addEventListener("click", () => {

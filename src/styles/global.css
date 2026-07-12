@@ -3573,9 +3573,9 @@ body.is-review-frame .article-main {
   }
 
   .article-issue-menu {
-    max-height: 48vh;
-    overflow: auto;
-    padding-right: 4px;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
   }
 
   .article-tools {
