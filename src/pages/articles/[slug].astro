@@ -115,7 +115,12 @@ const issueMenuGroups = issueArticles.reduce(
             aria-expanded="false"
             data-article-menu-toggle
           >
-            目錄
+            <span class="article-menu-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="article-menu-toggle-text">目錄</span>
           </button>
           <div class="article-menu-backdrop" data-article-menu-close></div>
           <aside id="article-side-menu" class="article-sidebar" aria-label="文章導覽">

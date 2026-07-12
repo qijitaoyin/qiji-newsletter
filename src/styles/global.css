@@ -3682,21 +3682,51 @@ body.is-review-frame .article-main {
 
   .article-menu-toggle {
     align-items: center;
-    background: var(--coffee);
-    border: 1px solid rgba(255, 255, 255, 0.42);
-    bottom: 18px;
+    background: rgba(91, 70, 57, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    bottom: 20px;
+    box-shadow: 0 10px 26px rgba(32, 25, 21, 0.18);
     color: #fff;
     cursor: pointer;
     display: inline-flex;
     font: inherit;
-    font-size: 0.92rem;
-    font-weight: 900;
-    height: 44px;
+    height: 42px;
     justify-content: center;
-    left: 16px;
+    left: 14px;
+    opacity: 0.88;
     position: fixed;
-    width: 58px;
+    transition: background 160ms ease, opacity 160ms ease, transform 160ms ease;
+    width: 42px;
     z-index: 42;
+  }
+
+  .article-menu-toggle:hover,
+  .article-menu-toggle:focus-visible {
+    background: rgba(91, 70, 57, 0.9);
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  .article-menu-toggle-icon {
+    display: grid;
+    gap: 4px;
+    width: 18px;
+  }
+
+  .article-menu-toggle-icon span {
+    background: currentColor;
+    display: block;
+    height: 2px;
+    width: 100%;
+  }
+
+  .article-menu-toggle-text {
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 
   .article-menu-backdrop {
@@ -3729,19 +3759,19 @@ body.is-review-frame .article-main {
 
   .article-sidebar {
     background: var(--page);
-    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
     bottom: 0;
-    box-shadow: -18px 0 42px rgba(32, 25, 21, 0.18);
+    box-shadow: 18px 0 42px rgba(32, 25, 21, 0.18);
     gap: 16px;
-    max-width: 330px;
+    left: 0;
+    max-width: 360px;
     overflow: auto;
-    padding: 16px 16px 24px;
+    padding: 18px 18px 28px;
     position: fixed;
-    right: 0;
     top: 0;
-    transform: translateX(104%);
+    transform: translateX(-104%);
     transition: transform 220ms ease;
-    width: min(86vw, 330px);
+    width: min(92vw, 360px);
     z-index: 41;
   }
 
@@ -3781,6 +3811,10 @@ body.is-review-frame .article-main {
   .article-pager a {
     min-height: 76px;
     padding: 16px;
+  }
+
+  .article-related {
+    margin-top: clamp(36px, 10vw, 58px);
   }
 
   .article-pager span {
