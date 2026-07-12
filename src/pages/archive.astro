@@ -173,7 +173,6 @@ const totalArticles = articles.length;
               <details
                 class="archive-year-node"
                 data-archive-year={yearGroup.year}
-                open={yearGroup.year === latestYear?.year}
               >
                 <summary>
                   <span>{yearGroup.year}</span>
@@ -184,7 +183,6 @@ const totalArticles = articles.length;
                     <details
                       class="archive-month-node"
                       data-archive-month={monthGroup.issue.id}
-                      open={monthGroup.issue.id === latestMonth?.issue.id}
                     >
                       <summary>
                         <span>{monthGroup.label}</span>
@@ -227,7 +225,7 @@ const totalArticles = articles.length;
           </nav>
 
           <aside class="archive-search-panel" aria-live="polite">
-            <article class="archive-preview" data-archive-preview>
+            <article class="archive-preview" data-archive-preview hidden>
               <p class="meta-line">
                 <span data-preview-issue>{initialIssue?.issueNumber}</span>
                 <span data-preview-date>{initialIssue?.date}</span>
@@ -584,7 +582,7 @@ const totalArticles = articles.length;
         const resetArchiveSearch = () => {
           layout?.classList.remove("is-searching");
           showElement(tree);
-          showElement(preview, "grid");
+          hideElement(preview);
           treeItems.forEach((item) => item.removeAttribute("hidden"));
           resultItems.forEach((item) => hideElement(item));
           monthNodes.forEach((node) => {
@@ -601,7 +599,8 @@ const totalArticles = articles.length;
           results?.classList.remove("is-visible");
           hideElement(empty);
           if (count) count.textContent = "預設顯示最新月份，展開年份或月份可瀏覽更多文章。";
-          setArchivePreview(treeTriggers[0]);
+          treeTriggers.forEach((item) => item.classList.remove("is-active"));
+          treeItems.forEach((item) => item.classList.remove("is-selected"));
         };
         const resultMatchesKeyword = (item, keyword) => {
           const terms = termsFor(keyword);
@@ -714,7 +713,7 @@ const totalArticles = articles.length;
           if (!terms.length) {
             layout?.classList.remove("is-searching");
             show(tree);
-            show(preview, "grid");
+            hide(preview);
             hide(results);
             hide(empty);
             resultItems.forEach((item) => hide(item));
