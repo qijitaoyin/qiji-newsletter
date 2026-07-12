@@ -3816,17 +3816,22 @@ body.is-review-frame .article-main {
   .article-sidebar {
     background: var(--page);
     border-right: 1px solid var(--line);
-    bottom: 0;
     box-shadow: 18px 0 42px rgba(32, 25, 21, 0.18);
     gap: 16px;
+    height: 100vh;
+    height: 100svh;
+    height: 100dvh;
     left: 0;
     max-width: 360px;
-    overflow: auto;
-    padding: 18px 18px 28px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 18px 18px max(42px, calc(28px + env(safe-area-inset-bottom)));
     position: fixed;
     top: 0;
     transform: translateX(-104%);
     transition: transform 220ms ease;
+    -webkit-overflow-scrolling: touch;
     width: min(92vw, 360px);
     z-index: 41;
   }
