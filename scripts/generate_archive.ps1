@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 6
+$importCacheVersion = 7
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -795,6 +795,23 @@ function Parse-LegacyHeader {
         $result.BodyParagraphs = $Paragraphs | Select-Object -Skip 3
       }
       $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join "、")
+      return $result
+    }
+    if (
+      $Paragraphs.Count -ge 4 -and
+      $Paragraphs[1].Length -le 64 -and
+      $Paragraphs[2].Length -le 64 -and
+      $Paragraphs[1] -match "[\u4e00-\u9fff]" -and
+      $Paragraphs[2] -match "[\u4e00-\u9fff]" -and
+      (Test-LegacyAuthorLine $Paragraphs[3])
+    ) {
+      $titleParts = @(
+        $Paragraphs[1].Trim("【】「」 "),
+        $Paragraphs[2].Trim("【】「」 ")
+      ) | Where-Object { $_ }
+      $result.Title = ($titleParts -join "")
+      $result.Author = Convert-LegacyAuthorLine $Paragraphs[3]
+      $result.BodyParagraphs = $Paragraphs | Select-Object -Skip 4
       return $result
     }
     if (

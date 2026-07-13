@@ -310,6 +310,9 @@ const excerptFromSections = (sections: ArticleSection[]) =>
 const withNormalizedTitleAndAuthor = (article: Article): Article => {
   const texts = flatArticleText(article).map((text) => text.trim()).filter(Boolean);
   const manualTitle = editorialOverrides.titles?.[article.slug]?.trim();
+  const manualAuthor = (editorialOverrides as { authors?: Record<string, string> }).authors?.[
+    article.slug
+  ]?.trim();
   const authorAppearsInBody = texts.some((text) => normalizeLabel(text) === normalizeLabel(article.author));
   const shouldSwapAuthorTitle =
     Boolean(article.author) &&
@@ -320,7 +323,7 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
     (looksLikeAuthor(article.title) || looksLikePersonName(article.title));
   const needsTitleNormalization =
     Boolean(manualTitle) || isBylineLikeTitle(article.title, article.category) || shouldSwapAuthorTitle;
-  const needsAuthorNormalization = !article.author;
+  const needsAuthorNormalization = Boolean(manualAuthor) || !article.author;
 
   if (!needsTitleNormalization && !needsAuthorNormalization) {
     return article;
@@ -365,7 +368,11 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
   ].filter(Boolean);
   const defaultAuthor = normalizeLabel(article.category) === normalizeLabel("編輯小語") ? "編輯部" : "";
   const inferredAuthor =
-    authorCandidates.find((candidate) => {
+    manualAuthor
+      ? manualAuthor
+      : !needsAuthorNormalization && !shouldSwapAuthorTitle
+      ? article.author
+      : authorCandidates.find((candidate) => {
         const text = candidate.trim();
         return (
           text !== inferredTitle &&
