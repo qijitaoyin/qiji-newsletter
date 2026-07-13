@@ -1,5 +1,8 @@
 {
   "maxTagsPerArticle": 5,
+  "excludedTags": [
+    "氣機導引"
+  ],
   "categoryTags": [
     "編輯小語",
     "如是我聞",
@@ -28,7 +31,6 @@
     { "label": "道德經", "aliases": ["道德經", "老子", "老君"] },
     { "label": "AI時代", "aliases": ["AI", "人工智慧", "ChatGPT", "Kimi", "NPC"] },
     { "label": "靜心", "aliases": ["靜心", "靜坐", "安定", "止念"] },
-    { "label": "氣機導引", "aliases": ["氣機導引", "導引", "行氣"] },
     { "label": "靈魂修煉", "aliases": ["靈魂", "靈性", "靈根", "靈魂修煉"] },
     { "label": "日常實修", "aliases": ["生活", "日常", "實修", "實踐"] },
     { "label": "文化研究", "aliases": ["文化", "文明", "傳統", "研究"] }

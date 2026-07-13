@@ -113,10 +113,22 @@
     if (!container) return;
     const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
     container.textContent = "";
-    article.tags.forEach((tag) => {
-      const link = make("a", "", tag);
-      link.href = withBase(`/tags/${tagByLabel[tag]?.slug || tag}/`);
-      container.appendChild(link);
+    const groupedTags = [
+      ["\u5c08\u6b04", article.tags.filter((tag) => (tagByLabel[tag]?.kind || "column") === "column")],
+      ["\u95dc\u9375\u5b57", article.tags.filter((tag) => tagByLabel[tag]?.kind === "keyword")]
+    ].filter(([, tags]) => tags.length > 0);
+
+    groupedTags.forEach(([title, tags]) => {
+      const group = make("div", "article-tag-group");
+      group.appendChild(make("span", "article-tag-group-title", title));
+      const list = make("div", "article-tag-list-items");
+      tags.forEach((tag) => {
+        const link = make("a", "", tag);
+        link.href = withBase(`/tags/${tagByLabel[tag]?.slug || tag}/`);
+        list.appendChild(link);
+      });
+      group.appendChild(list);
+      container.appendChild(group);
     });
   };
 

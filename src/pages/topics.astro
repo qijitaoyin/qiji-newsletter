@@ -9,6 +9,9 @@ const activeTags = articleTags
     count: publishedArticles.filter((article) => article.tags.includes(tag.label)).length
   }))
   .filter((tag) => tag.count > 0);
+
+const columnTags = activeTags.filter((tag) => tag.kind === "column");
+const keywordTags = activeTags.filter((tag) => tag.kind === "keyword");
 ---
 
 <html lang="zh-Hant">
@@ -51,14 +54,30 @@ const activeTags = articleTags
       </section>
 
       <section class="content-block topics-page" aria-label="主題列表">
-        <div class="topic-grid">
-          {activeTags.map((tag) => (
-            <a href={pathFor(`/tags/${tag.slug}/`)}>
-              <strong>#{tag.label}</strong>
-              <span>{tag.description}</span>
-              <em>{tag.count} 篇文章</em>
-            </a>
-          ))}
+        <div class="topic-section">
+          <h2>專欄</h2>
+          <div class="topic-grid">
+            {columnTags.map((tag) => (
+              <a href={pathFor(`/tags/${tag.slug}/`)}>
+                <strong>#{tag.label}</strong>
+                <span>{tag.description}</span>
+                <em>{tag.count} 篇文章</em>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div class="topic-section">
+          <h2>關鍵字</h2>
+          <div class="topic-grid">
+            {keywordTags.map((tag) => (
+              <a href={pathFor(`/tags/${tag.slug}/`)}>
+                <strong>#{tag.label}</strong>
+                <span>{tag.description}</span>
+                <em>{tag.count} 篇文章</em>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </main>
@@ -67,7 +86,7 @@ const activeTags = articleTags
       <div class="footer-inner">
         <strong>中華氣機導引文化研究會</strong>
         <p>10046台北市漢口街一段3號9樓</p>
-        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電話：<span>02-23111166</span> 傳真：<span>02-23757878</span></p>
         <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
         <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
       </div>

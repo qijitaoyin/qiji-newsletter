@@ -30,6 +30,7 @@ const typedPublishState = publishState as {
 
 type TagVocabulary = {
   maxTagsPerArticle?: number;
+  excludedTags?: string[];
   categoryTags?: string[];
   keywordTags?: { label: string; aliases: string[] }[];
 };
@@ -44,6 +45,10 @@ const compactTagLabel = (value = "") =>
     .trim()
     .toLowerCase();
 
+const excludedTagKeys = new Set(
+  (controlledTagVocabulary.excludedTags ?? []).map((label) => compactTagLabel(label))
+);
+
 const categoryCounts = new Map<string, number>();
 generatedArticles.forEach((article) => {
   const key = compactTagLabel(article.category);
@@ -53,9 +58,11 @@ generatedArticles.forEach((article) => {
 
 const controlledTagLabels = new Map<string, string>();
 (controlledTagVocabulary.categoryTags ?? []).forEach((label) => {
+  if (excludedTagKeys.has(compactTagLabel(label))) return;
   controlledTagLabels.set(compactTagLabel(label), label);
 });
 (controlledTagVocabulary.keywordTags ?? []).forEach((rule) => {
+  if (excludedTagKeys.has(compactTagLabel(rule.label))) return;
   controlledTagLabels.set(compactTagLabel(rule.label), rule.label);
 });
 
@@ -63,8 +70,18 @@ const manualTagValues = Object.values((editorialOverrides as { tags?: Record<str
   .flat()
   .filter(Boolean);
 manualTagValues.forEach((label) => {
+  if (excludedTagKeys.has(compactTagLabel(label))) return;
   controlledTagLabels.set(compactTagLabel(label), label);
 });
+
+const keywordTagKeys = new Set(
+  (controlledTagVocabulary.keywordTags ?? [])
+    .map((rule) => compactTagLabel(rule.label))
+    .filter((key) => key && !excludedTagKeys.has(key))
+);
+
+const tagKindFor = (label: string): ArticleTag["kind"] =>
+  keywordTagKeys.has(compactTagLabel(label)) ? "keyword" : "column";
 
 export type ArticleSection = {
   heading?: string;
@@ -141,6 +158,7 @@ export type ArticleTag = {
   label: string;
   slug: string;
   description: string;
+  kind: "column" | "keyword";
 };
 
 const articleOrder = (article: Article) =>
@@ -433,11 +451,13 @@ const keywordArticleCounts = new Map<string, number>();
 
 const canonicalControlledTag = (value = "") => {
   const key = compactTagLabel(value);
+  if (excludedTagKeys.has(key)) return "";
   return controlledTagLabels.get(key) ?? "";
 };
 
 const pushUniqueTag = (tags: string[], value = "", allowUnknown = false) => {
   if (tags.length >= maxControlledTagsPerArticle) return;
+  if (excludedTagKeys.has(compactTagLabel(value))) return;
   const canonical = canonicalControlledTag(value);
   const label = canonical || (allowUnknown ? value.trim() : "");
   if (!label) return;
@@ -611,7 +631,8 @@ export const articleTags: ArticleTag[] = Array.from(
     tags.push({
       label,
       slug,
-      description: tagDescriptions[label] ?? `${label} 文章索引。`
+      description: tagDescriptions[label] ?? `${label} 文章索引。`,
+      kind: tagKindFor(label)
     });
   }
   return tags;
