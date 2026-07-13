@@ -1,60 +1,29 @@
 ---
 import "../../styles/global.css";
+import { articles } from "../../data/articles";
 import { pathFor } from "../../utils/paths";
-import {
-  articleTags,
-  articles,
-  getAllArticlesByIssue,
-  getRelatedArticles
-} from "../../data/articles";
 
 export function getStaticPaths() {
   return articles.map((article) => ({
     params: { slug: article.slug },
-    props: { article }
+    props: {
+      slug: article.slug,
+      title: article.title,
+      excerpt: article.excerpt
+    }
   }));
 }
 
-const { article } = Astro.props;
-const relatedArticles = getRelatedArticles(article.slug);
-const issueArticles = getAllArticlesByIssue(article.issueId);
-const issueIndex = issueArticles.findIndex((item) => item.slug === article.slug);
-const previousArticle = issueIndex > 0 ? issueArticles[issueIndex - 1] : undefined;
-const nextArticle = issueIndex >= 0 && issueIndex < issueArticles.length - 1 ? issueArticles[issueIndex + 1] : undefined;
-const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
-const contentBlocks = article.contentBlocks ?? [];
-const hasContentBlocks = contentBlocks.length > 0;
-const displayTitle = article.title.replace(/([\u3400-\u9fff])[\s　]+(?=[\u3400-\u9fff])/g, "$1");
-const hasHeroImage = Boolean(article.image && !article.image.includes("/assets/qiji-logo"));
-const hasAiGuide = Boolean(article.aiSummary);
-const normalizeCategory = (category: string) => {
-  if (category.startsWith("如是我")) return "如是我聞";
-  if (category === "同頻共振時") return "導引專欄";
-  return category;
-};
-const articleCategory = normalizeCategory(article.category);
-const issueMenuGroups = issueArticles.reduce(
-  (groups, item) => {
-    const category = normalizeCategory(item.category);
-    const group = groups.find((entry) => entry.category === category);
-    if (group) {
-      group.items.push(item);
-    } else {
-      groups.push({ category, items: [item] });
-    }
-    return groups;
-  },
-  [] as { category: string; items: typeof issueArticles }[]
-);
+const { slug, title, excerpt } = Astro.props;
 ---
 
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-base-path={pathFor("/")}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={article.excerpt} />
+    <meta name="description" content={excerpt} />
     <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
-    <title>{article.title} - 氣機導引電子報</title>
+    <title>{title} - 氣機導引電子報</title>
   </head>
   <body>
     <header class="site-header">
@@ -80,30 +49,21 @@ const issueMenuGroups = issueArticles.reduce(
       </div>
     </header>
 
-    <main class="article-page">
+    <main class="article-page" data-article-page data-slug={slug} data-article-json={pathFor(`/data/articles/${slug}.json`)}>
       <article>
         <header class="article-hero">
-          <div class={`article-hero-grid${hasHeroImage ? "" : " has-no-cover"}`}>
+          <div class="article-hero-grid has-no-cover" data-article-hero-grid>
             <div class="article-hero-copy">
-              <p class="meta-line">
-                <span>{articleCategory}</span>
-                <span>{article.issue}</span>
-                <span>{article.readTime}</span>
-              </p>
-              <h1 class="title-fixed">{displayTitle}</h1>
-              {article.aiQuote && <p class="article-hero-quote">{article.aiQuote}</p>}
-              {article.subtitle && <p class="article-subtitle">{article.subtitle}</p>}
-              <p class="article-byline">
-                <span>{article.author}</span>
-                <time datetime={article.date}>{article.date}</time>
-              </p>
+              <p class="meta-line" data-article-meta></p>
+              <h1 class="title-fixed" data-article-title>{title}</h1>
+              <p class="article-hero-quote" data-article-quote hidden></p>
+              <p class="article-subtitle" data-article-subtitle hidden></p>
+              <p class="article-byline" data-article-byline></p>
             </div>
-            {hasHeroImage && (
-              <figure class="article-cover">
-                <img src={article.image} alt="" />
-                {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
-              </figure>
-            )}
+            <figure class="article-cover" data-article-cover hidden>
+              <img data-article-cover-img src="" alt="" />
+              <figcaption data-article-cover-caption hidden></figcaption>
+            </figure>
           </div>
         </header>
 
@@ -125,44 +85,25 @@ const issueMenuGroups = issueArticles.reduce(
           <div class="article-menu-backdrop" data-article-menu-close></div>
           <aside id="article-side-menu" class="article-sidebar" aria-label="文章導覽">
             <button class="article-menu-close" type="button" aria-label="關閉目錄" data-article-menu-close>×</button>
-            <nav class="article-sidebar-block article-issue-menu" aria-label="本期電子報目錄">
+            <nav class="article-sidebar-block article-issue-menu" aria-label="本期文章目錄">
               <strong>目錄</strong>
-              {issueMenuGroups.map((group) => (
-                <div class="article-issue-group">
-                  <span class="article-issue-group-title">{group.category}</span>
-                  {group.items.map((item) => (
-                    <a
-                      href={pathFor(`/articles/${item.slug}/`)}
-                      class:list={{ "is-current": item.slug === article.slug }}
-                      aria-current={item.slug === article.slug ? "page" : undefined}
-                    >
-                      {item.title}
-                    </a>
-                  ))}
-                </div>
-              ))}
+              <div data-article-issue-menu></div>
             </nav>
 
             <div class="article-sidebar-block">
               <strong>主題分類</strong>
-              <div class="article-tag-list">
-                {article.tags.map((tag) => (
-                  <a href={pathFor(`/tags/${tagByLabel[tag]?.slug ?? tag}/`)}>{tag}</a>
-                ))}
-              </div>
+              <div class="article-tag-list" data-article-tags></div>
             </div>
           </aside>
 
           <div class="article-main">
-            {hasAiGuide && (
-              <section class="article-ai-guide" aria-label={"AI \u6458\u8981"}>
-                <h2>{"AI \u6458\u8981"}</h2>
-                <p class="article-ai-summary">{article.aiSummary}</p>
-              </section>
-            )}
-            <div class="article-tools" aria-label="閱讀設定">
+            <section class="article-ai-guide" aria-label="AI 摘要" data-article-ai-guide hidden>
+              <h2>AI 摘要</h2>
+              <p class="article-ai-summary" data-article-ai-summary></p>
+            </section>
+            <div class="article-tools" aria-label="字級調整">
               <span>字級</span>
-              <div class="font-size-control" role="group" aria-label="選擇文章字級">
+              <div class="font-size-control" role="group" aria-label="文章字級">
                 <button type="button" data-font-size="small">小</button>
                 <button type="button" data-font-size="medium" class="is-active">中</button>
                 <button type="button" data-font-size="large">大</button>
@@ -170,143 +111,33 @@ const issueMenuGroups = issueArticles.reduce(
             </div>
 
             <div class="article-body" data-article-body data-font-size="medium">
-              {article.lede && <p class="article-lede">{article.lede}</p>}
-              {hasContentBlocks ? (
-                contentBlocks.map((block) => {
-                  if (block.type === "heading") {
-                    return <h2>{block.text}</h2>;
-                  }
-                  if (block.type === "image") {
-                    return (
-                      <figure class="article-inline-image">
-                        <img src={block.src} alt={block.caption ?? ""} loading="lazy" />
-                        {block.caption && <figcaption>{block.caption}</figcaption>}
-                      </figure>
-                    );
-                  }
-                  return <p>{block.text}</p>;
-                })
-              ) : (
-                article.sections.map((section, index) => (
-                  <section id={`section-${index + 1}`}>
-                    {section.heading && <h2>{section.heading}</h2>}
-                    {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-                  </section>
-                ))
-              )}
+              <p>文章載入中...</p>
             </div>
           </div>
         </div>
       </article>
 
-      <nav class:list={["article-pager", { "has-single-link": !previousArticle || !nextArticle }]} aria-label="上一篇與下一篇">
-        {previousArticle && (
-          <a href={pathFor(`/articles/${previousArticle.slug}/`)}>
-            <span>上一篇</span>
-            <strong>{previousArticle.title}</strong>
-          </a>
-        )}
-        {nextArticle && (
-          <a href={pathFor(`/articles/${nextArticle.slug}/`)}>
-            <span>下一篇</span>
-            <strong>{nextArticle.title}</strong>
-          </a>
-        )}
-      </nav>
+      <nav class="article-pager" aria-label="上一篇與下一篇" data-article-pager hidden></nav>
 
-      <section class="content-block article-related" aria-labelledby="related-title">
+      <section class="content-block article-related" aria-labelledby="related-title" data-article-related-section hidden>
         <div class="block-title">
           <h2 id="related-title">相關閱讀</h2>
         </div>
-        <div class="compact-grid">
-          {relatedArticles.map((item) => (
-            <article>
-              <a href={pathFor(`/articles/${item.slug}/`)}>
-                {item.image && !item.image.includes("/assets/qiji-logo") && <img src={item.image} alt="" />}
-                <div>
-                  <p class="meta-line"><span>{item.category}</span><span>{item.date}</span></p>
-                  <h3>{item.title}</h3>
-                  {(item.aiSummary || item.excerpt) && <p>{item.aiSummary || item.excerpt}</p>}
-                  <p class="byline">{item.author}</p>
-                </div>
-              </a>
-            </article>
-          ))}
-        </div>
+        <div class="compact-grid" data-article-related></div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <strong>中華氣機導引文化研究會</strong>
-        <p>10046台北市漢口街一段3號9樓</p>
+        <strong>社團法人中華氣機導引文化研究會</strong>
+        <p>10046台北市中正區重慶南路一段57號9樓之6</p>
         <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
         <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
-        <p class="footer-copy">中華氣機導引文化研究會 著作權所有 © QIJI-DAOYIN. All Rights Reserved.</p>
+        <p class="footer-copy">社團法人中華氣機導引文化研究會 版權所有 QIJI-DAOYIN. All Rights Reserved.</p>
       </div>
     </footer>
 
-    <script>
-      const isReviewFrame = new URLSearchParams(window.location.search).get("reviewFrame") === "1";
-      if (isReviewFrame) {
-        document.documentElement.classList.add("is-review-frame");
-        document.body.classList.add("is-review-frame");
-        document.querySelectorAll(".article-issue-menu a[href]").forEach((link) => {
-          const href = link.getAttribute("href");
-          if (!href) return;
-          const url = new URL(href, window.location.href);
-          url.searchParams.set("reviewFrame", "1");
-          link.setAttribute("href", `${url.pathname}${url.search}${url.hash}`);
-        });
-      }
-
-      const body = document.querySelector("[data-article-body]");
-      const controls = Array.from(document.querySelectorAll(".font-size-control [data-font-size]"));
-      const key = "qiji-article-font-size";
-      const applySize = (size) => {
-        if (!body) return;
-        body.setAttribute("data-font-size", size);
-        controls.forEach((control) => {
-          const isActive = control.getAttribute("data-font-size") === size;
-          control.classList.toggle("is-active", isActive);
-          control.setAttribute("aria-pressed", String(isActive));
-        });
-        window.localStorage.setItem(key, size);
-      };
-
-      const savedSize = window.localStorage.getItem(key);
-      if (savedSize === "small" || savedSize === "medium" || savedSize === "large") {
-        applySize(savedSize);
-      } else {
-        applySize("medium");
-      }
-
-      controls.forEach((control) => {
-        control.addEventListener("click", () => {
-          applySize(control.getAttribute("data-font-size") || "medium");
-        });
-      });
-
-      const articleMenuToggle = document.querySelector("[data-article-menu-toggle]");
-      const articleSidebar = document.getElementById("article-side-menu");
-      const articleMenuCloseControls = Array.from(document.querySelectorAll("[data-article-menu-close]"));
-      const setArticleMenuOpen = (isOpen) => {
-        document.body.classList.toggle("is-article-menu-open", isOpen);
-        articleMenuToggle?.setAttribute("aria-expanded", String(isOpen));
-        if (isOpen) articleSidebar?.scrollTo({ top: 0 });
-      };
-
-      articleMenuToggle?.addEventListener("click", () => {
-        setArticleMenuOpen(!document.body.classList.contains("is-article-menu-open"));
-      });
-      articleMenuCloseControls.forEach((control) => {
-        control.addEventListener("click", () => setArticleMenuOpen(false));
-      });
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") setArticleMenuOpen(false);
-      });
-
-    </script>
+    <script src={pathFor("/article-loader.js")}></script>
     <script src={pathFor("/mobile-header.js")}></script>
   </body>
 </html>
