@@ -6,6 +6,7 @@ import vm from "node:vm";
 const root = process.cwd();
 const generatedArticlesPath = path.join(root, "src/data/generatedArticles.ts");
 const aiMetadataPath = path.join(root, "src/data/aiMetadata.json");
+const tagVocabularyPath = path.join(root, "src/data/tagVocabulary.json");
 const reportPath = path.join(root, "reports/ai-metadata-report.json");
 
 const provider = process.env.AI_PROVIDER || (process.env.KIMI_API_KEY ? "kimi" : "openai");
@@ -33,6 +34,20 @@ const readJson = (filePath, fallback) => {
   if (!raw) return fallback;
   return JSON.parse(raw);
 };
+
+const tagVocabulary = readJson(tagVocabularyPath, {});
+const allowedAiTags = [
+  ...(tagVocabulary.categoryTags || []),
+  ...(tagVocabulary.keywordTags || []).map((rule) => rule.label)
+].filter(Boolean);
+const compactTagLabel = (value = "") =>
+  String(value)
+    .normalize("NFKC")
+    .replace(/[\s　·・．.／/｜|,，、:：;；「」『』()（）［\]\[\-—–_]+/g, "")
+    .trim()
+    .toLowerCase();
+const allowedAiTagMap = new Map(allowedAiTags.map((tag) => [compactTagLabel(tag), tag]));
+const allowedAiTagText = allowedAiTags.join("、");
 
 const extractExportedArray = (source, name) => {
   const startToken = `export const ${name} =`;
@@ -95,6 +110,17 @@ const normalizeStringArray = (value, maxItems) =>
     ? value.map((item) => String(item).trim()).filter(Boolean).slice(0, maxItems)
     : [];
 
+const normalizeAllowedTags = (value, maxItems) => {
+  const tags = [];
+  for (const item of normalizeStringArray(value, maxItems * 2)) {
+    const tag = allowedAiTagMap.get(compactTagLabel(item));
+    if (!tag || tags.includes(tag)) continue;
+    tags.push(tag);
+    if (tags.length >= maxItems) break;
+  }
+  return tags;
+};
+
 const buildPrompt = (article) => [
   "你是氣機導引電子報的繁體中文編輯助理，請根據文章內容產生網站用 AI metadata。",
   "只回傳 JSON，不要 Markdown，不要解釋。",
@@ -120,15 +146,16 @@ const requestMetadata = async (article) => {
   const prompt = [
     "You are helping a Traditional Chinese newsletter website generate review-only metadata.",
     "Return exactly one valid JSON object. Do not include Markdown, explanations, or code fences.",
-    'JSON schema: {"quote":"a highlighted sentence under 50 Chinese characters","tags":["2 to 5 short Traditional Chinese topic tags"],"summary":"a concise Traditional Chinese summary under 80 Chinese characters","themes":["3 to 6 short Traditional Chinese core themes"]}',
+    'JSON schema: {"quote":"a highlighted sentence under 50 Chinese characters","tags":["0 to 5 labels selected from the allowed tag list"],"summary":"a concise Traditional Chinese summary under 80 Chinese characters","themes":["3 to 6 short Traditional Chinese core themes"]}',
     "",
     "Rules:",
     "1. quote must be copied or lightly compressed from the article and stay under 50 Chinese characters.",
     "2. summary must be under 80 Chinese characters and describe the article, not the website.",
-    "3. tags should be reader-facing topic labels, not issue numbers, author names, or generic words.",
+    "3. tags must only use exact labels from the allowed tag list. Do not invent new tags.",
     "4. themes can be broader than tags, but still concise.",
     "5. Use Traditional Chinese for every value.",
     "6. If the article is too short, still return valid JSON with your best concise suggestions.",
+    `Allowed tag list: ${allowedAiTagText || "none"}`,
     "",
     `Category: ${article.category || ""}`,
     `Title: ${article.title || ""}`,
@@ -144,7 +171,7 @@ const requestMetadata = async (article) => {
       {
         role: "system",
         content:
-          'Return only valid JSON with keys "quote", "tags", "summary", and "themes". All values must be Traditional Chinese.'
+          'Return only valid JSON with keys "quote", "tags", "summary", and "themes". Tags must be exact labels from the allowed list.'
       },
       { role: "user", content: prompt }
     ],
@@ -183,7 +210,7 @@ const requestMetadata = async (article) => {
 
   return {
     quote: String(parsed.quote || "").trim().slice(0, 50),
-    tags: normalizeStringArray(parsed.tags, 5),
+    tags: normalizeAllowedTags(parsed.tags, 5),
     summary: String(parsed.summary || "").trim().slice(0, 80),
     themes: normalizeStringArray(parsed.themes, 6)
   };

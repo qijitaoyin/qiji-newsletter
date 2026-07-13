@@ -2,6 +2,7 @@ import { generatedArticles, generatedIssues } from "./generatedArticles";
 import editorialOverrides from "./editorialOverrides.json";
 import aiMetadata from "./aiMetadata.json";
 import publishState from "./publishState.json";
+import tagVocabulary from "./tagVocabulary.json";
 import { pathFor } from "../utils/paths";
 
 const typedAiMetadata = aiMetadata as {
@@ -26,6 +27,44 @@ const typedPublishState = publishState as {
   publicLatestIssueId?: string;
   reviewIssueId?: string;
 };
+
+type TagVocabulary = {
+  maxTagsPerArticle?: number;
+  categoryTags?: string[];
+  keywordTags?: { label: string; aliases: string[] }[];
+};
+
+const controlledTagVocabulary = tagVocabulary as TagVocabulary;
+const maxControlledTagsPerArticle = controlledTagVocabulary.maxTagsPerArticle ?? 5;
+
+const compactTagLabel = (value = "") =>
+  value
+    .normalize("NFKC")
+    .replace(/[\s　·・．.／/｜|,，、:：;；「」『』()（）［\]\[\-—–_]+/g, "")
+    .trim()
+    .toLowerCase();
+
+const categoryCounts = new Map<string, number>();
+generatedArticles.forEach((article) => {
+  const key = compactTagLabel(article.category);
+  if (!key) return;
+  categoryCounts.set(key, (categoryCounts.get(key) ?? 0) + 1);
+});
+
+const controlledTagLabels = new Map<string, string>();
+(controlledTagVocabulary.categoryTags ?? []).forEach((label) => {
+  controlledTagLabels.set(compactTagLabel(label), label);
+});
+(controlledTagVocabulary.keywordTags ?? []).forEach((rule) => {
+  controlledTagLabels.set(compactTagLabel(rule.label), rule.label);
+});
+
+const manualTagValues = Object.values((editorialOverrides as { tags?: Record<string, string[]> }).tags ?? {})
+  .flat()
+  .filter(Boolean);
+manualTagValues.forEach((label) => {
+  controlledTagLabels.set(compactTagLabel(label), label);
+});
 
 export type ArticleSection = {
   heading?: string;
@@ -374,6 +413,39 @@ const articleSearchText = (article: Article) =>
     .filter(Boolean)
     .join("\n");
 
+const articleKeywordText = (article: Article) => compactTagLabel(articleSearchText(article));
+
+const keywordMatchesText = (
+  text: string,
+  rule: { label: string; aliases: string[] }
+) => {
+  const aliases = [rule.label, ...(rule.aliases ?? [])].map(compactTagLabel).filter(Boolean);
+  return aliases.some((alias) => text.includes(alias));
+};
+
+const keywordArticleCounts = new Map<string, number>();
+(controlledTagVocabulary.keywordTags ?? []).forEach((rule) => {
+  const count = generatedArticles.filter((article) =>
+    keywordMatchesText(articleKeywordText(article), rule)
+  ).length;
+  keywordArticleCounts.set(rule.label, count);
+});
+
+const canonicalControlledTag = (value = "") => {
+  const key = compactTagLabel(value);
+  return controlledTagLabels.get(key) ?? "";
+};
+
+const pushUniqueTag = (tags: string[], value = "", allowUnknown = false) => {
+  if (tags.length >= maxControlledTagsPerArticle) return;
+  const canonical = canonicalControlledTag(value);
+  const label = canonical || (allowUnknown ? value.trim() : "");
+  if (!label) return;
+  const key = compactTagLabel(label);
+  if (!key || tags.some((tag) => compactTagLabel(tag) === key)) return;
+  tags.push(label);
+};
+
 const aiArticleMetadata = typedAiMetadata.articles ?? {};
 
 const metadataFor = (article: Article) => aiArticleMetadata[article.slug] ?? {};
@@ -383,24 +455,28 @@ const withAutoTags = (article: Article): Article => {
   const manualTags = editorialOverrides.tags?.[article.slug];
   const ai = metadataFor(article);
   const aiTags = ai.tags?.length ? ai.tags : typedAiMetadata.tags?.[article.slug];
-  const tags = new Set([article.category, ...article.tags]);
-  (manualTags?.length ? manualTags : aiTags ?? []).forEach((tag) => tags.add(tag));
-  let autoTagCount = 0;
+  const tags: string[] = [];
+  const categoryKey = compactTagLabel(article.category);
+  if ((categoryCounts.get(categoryKey) ?? 0) > 1) {
+    pushUniqueTag(tags, article.category, true);
+  }
 
-  for (const rule of autoTagRules) {
-    if (autoTagCount >= maxAutoTagsPerArticle) {
-      break;
-    }
+  (manualTags ?? []).forEach((tag) => pushUniqueTag(tags, tag, true));
+  article.tags.forEach((tag) => pushUniqueTag(tags, tag));
+  (aiTags ?? []).forEach((tag) => pushUniqueTag(tags, tag));
 
-    if (!tags.has(rule.label) && rule.pattern.test(text)) {
-      tags.add(rule.label);
-      autoTagCount += 1;
+  const compactText = compactTagLabel(text);
+  for (const rule of controlledTagVocabulary.keywordTags ?? []) {
+    if (tags.length >= maxControlledTagsPerArticle) break;
+    if ((keywordArticleCounts.get(rule.label) ?? 0) < 5) continue;
+    if (keywordMatchesText(compactText, rule)) {
+      pushUniqueTag(tags, rule.label);
     }
   }
 
   return {
     ...article,
-    tags: Array.from(tags),
+    tags,
     aiQuote: editorialOverrides.quotes?.[article.slug] ?? ai.quote ?? typedAiMetadata.quotes?.[article.slug],
     aiSummary: ai.summary ?? typedAiMetadata.summaries?.[article.slug],
     aiThemes: ai.themes ?? typedAiMetadata.themes?.[article.slug] ?? [],
