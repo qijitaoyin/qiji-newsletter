@@ -1,5 +1,7 @@
 {
-  "maxTagsPerArticle": 5,
+  "maxTagsPerArticle": 6,
+  "maxColumnTagsPerArticle": 1,
+  "maxKeywordTagsPerArticle": 5,
   "excludedTags": [
     "氣機導引"
   ],

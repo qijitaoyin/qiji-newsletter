@@ -30,13 +30,19 @@ const typedPublishState = publishState as {
 
 type TagVocabulary = {
   maxTagsPerArticle?: number;
+  maxColumnTagsPerArticle?: number;
+  maxKeywordTagsPerArticle?: number;
   excludedTags?: string[];
   categoryTags?: string[];
   keywordTags?: { label: string; aliases: string[] }[];
 };
 
 const controlledTagVocabulary = tagVocabulary as TagVocabulary;
-const maxControlledTagsPerArticle = controlledTagVocabulary.maxTagsPerArticle ?? 5;
+const maxColumnTagsPerArticle = controlledTagVocabulary.maxColumnTagsPerArticle ?? 1;
+const maxKeywordTagsPerArticle = controlledTagVocabulary.maxKeywordTagsPerArticle ?? 5;
+const maxControlledTagsPerArticle =
+  controlledTagVocabulary.maxTagsPerArticle ??
+  maxColumnTagsPerArticle + maxKeywordTagsPerArticle;
 
 const compactTagLabel = (value = "") =>
   value
@@ -470,6 +476,10 @@ const pushUniqueTag = (tags: string[], value = "", allowUnknown = false) => {
   if (!label) return;
   const key = compactTagLabel(label);
   if (!key || tags.some((tag) => compactTagLabel(tag) === key)) return;
+  const kind = tagKindFor(label);
+  const kindCount = tags.filter((tag) => tagKindFor(tag) === kind).length;
+  if (kind === "keyword" && kindCount >= maxKeywordTagsPerArticle) return;
+  if (kind === "column" && kindCount >= maxColumnTagsPerArticle) return;
   tags.push(label);
 };
 
