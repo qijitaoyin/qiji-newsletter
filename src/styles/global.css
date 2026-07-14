@@ -2574,7 +2574,8 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
 .review-metadata-fields {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(180px, 0.75fr) minmax(260px, 1.5fr) minmax(180px, 0.75fr);
   gap: 12px;
   margin: 0;
   padding: 14px;
@@ -2598,6 +2599,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 .review-metadata-fields textarea {
   width: 100%;
   min-width: 0;
+}
+
+.review-metadata-fields textarea {
+  min-height: 96px;
 }
 
 .review-import-change-report {
