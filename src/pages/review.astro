@@ -195,16 +195,14 @@ const normalizeCategory = (category: string) => {
             <iframe
               title="電腦版正式文章預覽"
               data-live-frame="desktop"
-              scrolling="no"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1`)}
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop`)}
             ></iframe>
           </div>
           <div class="review-live-preview review-live-preview-mobile" data-live-viewport-panel="mobile">
             <iframe
               title="手機版正式文章預覽"
               data-live-frame="mobile"
-              scrolling="no"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1`)}
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile`)}
             ></iframe>
           </div>
 
@@ -714,6 +712,10 @@ const normalizeCategory = (category: string) => {
 
       const resizeLiveFrame = (frame) => {
         if (!frame) return;
+        if (frame.getAttribute("data-live-frame") === "mobile") {
+          frame.style.height = "";
+          return;
+        }
         try {
           const doc = frame.contentDocument || frame.contentWindow?.document;
           if (!doc) return;
@@ -740,8 +742,12 @@ const normalizeCategory = (category: string) => {
         const article = syncSelectedArticle(slug);
         if (!article) return;
         liveFrames.forEach((frame) => {
-          if (article.frameUrl && frame.getAttribute("src") !== article.frameUrl) {
-            frame.setAttribute("src", article.frameUrl);
+          const viewport = frame.getAttribute("data-live-frame") || "desktop";
+          const frameUrl = article.frameUrl
+            ? `${article.frameUrl}${article.frameUrl.includes("?") ? "&" : "?"}reviewViewport=${viewport}`
+            : "";
+          if (frameUrl && frame.getAttribute("src") !== frameUrl) {
+            frame.setAttribute("src", frameUrl);
           } else {
             resizeLiveFrame(frame);
           }
@@ -1699,6 +1705,3 @@ const normalizeCategory = (category: string) => {
     </script>
   </body>
 </html>
-
-
-

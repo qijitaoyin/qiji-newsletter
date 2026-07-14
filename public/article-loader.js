@@ -2,7 +2,9 @@
   const page = document.querySelector("[data-article-page]");
   if (!page) return;
 
-  const isReviewFrame = new URLSearchParams(window.location.search).get("reviewFrame") === "1";
+  const searchParams = new URLSearchParams(window.location.search);
+  const isReviewFrame = searchParams.get("reviewFrame") === "1";
+  const reviewViewport = searchParams.get("reviewViewport") || "";
   const basePath = document.documentElement.dataset.basePath || "/";
   const articleUrl = page.getAttribute("data-article-json");
 
@@ -40,6 +42,7 @@
     if (!isReviewFrame) return href;
     const url = new URL(href, window.location.href);
     url.searchParams.set("reviewFrame", "1");
+    if (reviewViewport) url.searchParams.set("reviewViewport", reviewViewport);
     return `${url.pathname}${url.search}${url.hash}`;
   };
 
@@ -298,6 +301,10 @@
       if (isReviewFrame) {
         document.documentElement.classList.add("is-review-frame");
         document.body.classList.add("is-review-frame");
+        if (reviewViewport === "mobile") {
+          document.documentElement.classList.add("is-review-mobile-frame");
+          document.body.classList.add("is-review-mobile-frame");
+        }
       }
       initArticleControls();
       initArticleMenu();
