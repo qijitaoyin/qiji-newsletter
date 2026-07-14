@@ -287,6 +287,26 @@
     renderRelated(relatedArticles || []);
   };
 
+  const notifyReviewFrameReady = () => {
+    if (!isReviewFrame || !window.parent || window.parent === window) return;
+    window.requestAnimationFrame(() => {
+      const height = Math.max(
+        document.documentElement?.scrollHeight || 0,
+        document.body?.scrollHeight || 0,
+        document.querySelector(".article-page")?.scrollHeight || 0
+      );
+      window.parent.postMessage(
+        {
+          type: "qiji-review-frame-ready",
+          slug: page.dataset.slug || "",
+          viewport: reviewViewport,
+          height
+        },
+        window.location.origin
+      );
+    });
+  };
+
   fetch(articleUrl, { headers: { accept: "application/json" } })
     .then((response) => {
       if (!response.ok) throw new Error(`Article JSON not found: ${response.status}`);
@@ -308,5 +328,11 @@
       }
       initArticleControls();
       initArticleMenu();
+      document.querySelectorAll("img").forEach((image) => {
+        if (!image.complete) image.addEventListener("load", notifyReviewFrameReady, { once: true });
+      });
+      notifyReviewFrameReady();
+      window.setTimeout(notifyReviewFrameReady, 250);
+      window.setTimeout(notifyReviewFrameReady, 900);
     });
 })();

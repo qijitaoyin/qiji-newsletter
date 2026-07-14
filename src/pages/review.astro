@@ -788,6 +788,18 @@ const normalizeCategory = (category: string) => {
         }
       };
 
+      const resizeLiveFrameFromMessage = (message, source) => {
+        if (message?.type !== "qiji-review-frame-ready") return;
+        const frame = liveFrames.find((item) => item.contentWindow === source);
+        if (!frame || frame.getAttribute("data-live-frame") === "mobile") return;
+        const height = Number(message.height || 0);
+        if (height > 0) frame.style.height = `${Math.ceil(height) + 2}px`;
+        if (message.slug && message.slug !== (liveArticleSelect?.value || "")) {
+          syncSelectedArticle(message.slug);
+          renderReports();
+        }
+      };
+
       const resizeLiveFrames = () => {
         liveFrames.forEach(resizeLiveFrame);
       };
@@ -1535,6 +1547,10 @@ const normalizeCategory = (category: string) => {
       });
 
       window.addEventListener("resize", resizeLiveFrames);
+      window.addEventListener("message", (event) => {
+        if (event.origin !== window.location.origin) return;
+        resizeLiveFrameFromMessage(event.data, event.source);
+      });
 
       document.querySelectorAll("[data-report-form]").forEach((form) => {
         form.addEventListener("paste", async (event) => {

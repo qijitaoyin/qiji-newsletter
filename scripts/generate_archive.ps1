@@ -1495,6 +1495,12 @@ foreach ($issueDir in $issueDirs) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
+      if (-not $cachedArticle.image) {
+        $matchedIssueImage = Select-ArticleImage $images $sourceId $cachedArticle.title $order
+        if ($matchedIssueImage) {
+          $cachedArticle["image"] = $matchedIssueImage
+        }
+      }
       if ($cachedArticle.slug) {
         if ($seenSlugs.ContainsKey($cachedArticle.slug)) {
           $seenSlugs[$cachedArticle.slug] += 1
@@ -1682,6 +1688,11 @@ foreach ($issueDir in $issueDirs) {
     } elseif ($docxImages.Count -gt 0) {
       $heroImage = $docxImages[0].src
       $heroCaption = $docxImages[0].caption
+    } else {
+      $matchedIssueImage = Select-ArticleImage $images $sourceId $title $order
+      if ($matchedIssueImage) {
+        $heroImage = $matchedIssueImage
+      }
     }
     $sourceCaption = Get-ImageSourceCaption $paragraphs
     if (-not $heroCaption -and $sourceCaption) {
