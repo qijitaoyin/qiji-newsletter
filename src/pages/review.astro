@@ -135,12 +135,14 @@ const normalizeCategory = (category: string) => {
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
             <button type="button" data-submit-reimport>{"\u91cd\u65b0\u532f\u5165\u6700\u65b0 Word"}</button>
+            <div class="review-import-change-report" data-import-change-report></div>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{
   "status": "pending",
   "reports": [],
   "metadataOverrides": {
     "quotes": {},
+    "summaries": {},
     "tags": {}
   }
 }`}</pre>
@@ -173,6 +175,8 @@ const normalizeCategory = (category: string) => {
                     data-category={article.category}
                     data-author={article.author}
                     data-quote={article.aiQuote ?? ""}
+                    data-summary={article.aiSummary ?? ""}
+                    data-tags={JSON.stringify(article.tags ?? [])}
                     data-url={pathFor(`/articles/${article.slug}/`)}
                     data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
                   >
@@ -181,9 +185,6 @@ const normalizeCategory = (category: string) => {
                 ))}
               </select>
             </label>
-            <a data-live-open-link href={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/`)} target="_blank" rel="noreferrer">
-              開啟正式頁
-            </a>
           </div>
 
           <div class="review-live-tabs" role="tablist" aria-label="正式頁預覽版面">
@@ -230,6 +231,21 @@ const normalizeCategory = (category: string) => {
                 <span>修正意見</span>
                 <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
               </label>
+              <fieldset class="review-metadata-fields">
+                <legend>網站資料修正（選填）</legend>
+                <label>
+                  <span>金句</span>
+                  <input name="metadataQuote" value="" placeholder="需要改金句時填寫" />
+                </label>
+                <label>
+                  <span>摘要</span>
+                  <textarea name="metadataSummary" rows="1" placeholder="需要改 AI 摘要時填寫"></textarea>
+                </label>
+                <label>
+                  <span>分類標籤</span>
+                  <input name="metadataTags" value="" placeholder="用逗號、頓號或換行分隔" />
+                </label>
+              </fieldset>
               <div class="review-screenshot-paste" tabindex="0" data-screenshot-paste>
                 <strong>貼上截圖</strong>
                 <span>點這裡後按 Ctrl+V，或在意見欄直接貼上圖片</span>
@@ -537,7 +553,8 @@ const normalizeCategory = (category: string) => {
         slug: article.slug,
         title: article.title,
         category: normalizeCategory(article.category)
-      }))
+      })),
+      importChangeReportUrl: pathFor("/data/import-changed-files.json")
     }}>
       const storageKey = "qiji-review-approvals";
       const countNode = document.querySelector("[data-approval-count]");
@@ -561,7 +578,7 @@ const normalizeCategory = (category: string) => {
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
       const currentArticleLabel = document.querySelector("[data-current-article-label]");
-      const liveOpenLink = document.querySelector("[data-live-open-link]");
+      const importChangeReportNode = document.querySelector("[data-import-change-report]");
       const liveFrames = Array.from(document.querySelectorAll("[data-live-frame]"));
       const liveViewportTabs = Array.from(document.querySelectorAll("[data-live-viewport-tab]"));
       const liveViewportPanels = Array.from(document.querySelectorAll("[data-live-viewport-panel]"));
@@ -642,6 +659,28 @@ const normalizeCategory = (category: string) => {
         return lastRun;
       };
 
+      const renderImportChangeReport = (report) => {
+        if (!importChangeReportNode) return;
+        const files = Array.isArray(report?.changedFiles) ? report.changedFiles : [];
+        if (!files.length) {
+          importChangeReportNode.innerHTML = "本次匯入偵測到 <strong>0</strong> 個更新 Word 檔。";
+          return;
+        }
+        importChangeReportNode.innerHTML = `
+          <span>本次匯入偵測到 <strong>${files.length}</strong> 個更新 Word 檔：</span>
+          <ul>${files
+            .map((file) => `<li>${escapeHtml(file.fileName || file.relativePath || file.path || "")}</li>`)
+            .join("")}</ul>
+        `;
+      };
+
+      const fetchImportChangeReport = async () => {
+        if (!importChangeReportNode || !importChangeReportUrl) return;
+        const response = await fetch(`${importChangeReportUrl}?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`Import report ${response.status}`);
+        renderImportChangeReport(await response.json());
+      };
+
       const readReports = () => {
         try {
           const parsed = JSON.parse(window.localStorage.getItem(reportStorageKey) || "[]");
@@ -662,6 +701,21 @@ const normalizeCategory = (category: string) => {
           .replaceAll(">", "&gt;")
           .replaceAll('"', "&quot;");
 
+      const parseMetadataTags = (value = "") =>
+        String(value)
+          .split(/[\n,，、]/)
+          .map((tag) => tag.trim())
+          .filter(Boolean);
+
+      const parseOptionTags = (value = "") => {
+        try {
+          const parsed = JSON.parse(value || "[]");
+          return Array.isArray(parsed) ? parsed.map((tag) => String(tag).trim()).filter(Boolean) : [];
+        } catch {
+          return parseMetadataTags(value);
+        }
+      };
+
       const selectedArticleOption = (select = liveArticleSelect) =>
         select?.selectedOptions?.[0] || null;
 
@@ -671,6 +725,8 @@ const normalizeCategory = (category: string) => {
         category: option?.dataset.category || "",
         author: option?.dataset.author || "",
         quote: option?.dataset.quote || "",
+        summary: option?.dataset.summary || "",
+        tags: parseOptionTags(option?.dataset.tags || ""),
         url: option?.dataset.url || "",
         frameUrl: option?.dataset.frameUrl || option?.dataset.url || ""
       });
@@ -706,7 +762,6 @@ const normalizeCategory = (category: string) => {
         const article = articleFromOption(selectedArticleOption(liveArticleSelect));
         currentArticle = article;
         renderCurrentArticleLabel(article);
-        if (liveOpenLink && article.url) liveOpenLink.setAttribute("href", article.url);
         return article;
       };
 
@@ -778,13 +833,6 @@ const normalizeCategory = (category: string) => {
         return "標記 Word 已修";
       };
 
-      const extractMetadataQuote = (comment = "") => {
-        const text = String(comment).trim();
-        const explicit = text.match(/(?:^|\n)\s*(?:金句|重點金句|網站金句|採用金句|指定金句)[：:\s]+(.+)$/u);
-        if (explicit?.[1]?.trim()) return explicit[1].trim();
-        return "";
-      };
-
       const buildPublishPayload = () => {
         const reports = readReports();
         const completedReports = reports.filter((report) =>
@@ -794,11 +842,15 @@ const normalizeCategory = (category: string) => {
           !["done", "metadata"].includes(report.status)
         );
         const quotes = {};
+        const summaries = {};
         const tags = {};
 
         completedReports.forEach((report) => {
           if (report.metadataQuote) {
             quotes[report.articleSlug] = report.metadataQuote;
+          }
+          if (report.metadataSummary) {
+            summaries[report.articleSlug] = report.metadataSummary;
           }
           if (Array.isArray(report.metadataTags) && report.metadataTags.length) {
             tags[report.articleSlug] = report.metadataTags;
@@ -813,13 +865,18 @@ const normalizeCategory = (category: string) => {
           openReports,
           metadataOverrides: {
             quotes,
+            summaries,
             tags
           }
         };
       };
 
       const reportCardHtml = (report, compact = false, showArticleTitle = true) => {
-        const quoteCandidate = extractMetadataQuote(report.comment);
+        const hasMetadata = Boolean(
+          report.metadataQuote ||
+            report.metadataSummary ||
+            (Array.isArray(report.metadataTags) && report.metadataTags.length)
+        );
         return `
         <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${report.status === "metadata" ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
           <header>
@@ -830,15 +887,16 @@ const normalizeCategory = (category: string) => {
             <small>${reportStatusLabel(report.status)}</small>
           </header>
           <p>${escapeHtml(report.comment)}</p>
-          ${report.metadataQuote ? `<small>已採用金句：${escapeHtml(report.metadataQuote)}</small>` : ""}
-          ${!report.metadataQuote && quoteCandidate ? `<small>可採用為金句：${escapeHtml(quoteCandidate)}</small>` : ""}
-          ${report.status === "fixed" ? `<small>已記錄你修過 Word；請先重新執行匯入/重建，頁面預覽更新後再確認無誤。</small>` : ""}
-          ${report.screenshot ? `<small>截圖：${escapeHtml(report.screenshot)}</small>` : ""}
+          ${report.metadataQuote ? `<small>&#20154;&#24037;&#37329;&#21477;&#65306;${escapeHtml(report.metadataQuote)}</small>` : ""}
+          ${report.metadataSummary ? `<small>&#20154;&#24037;&#25688;&#35201;&#65306;${escapeHtml(report.metadataSummary)}</small>` : ""}
+          ${Array.isArray(report.metadataTags) && report.metadataTags.length ? `<small>&#20154;&#24037;&#27161;&#31844;&#65306;${escapeHtml(report.metadataTags.join(" / "))}</small>` : ""}
+          ${report.status === "fixed" ? `<small>&#24050;&#27161;&#35352;&#38656;&#20462; Word&#65307;&#37325;&#26032;&#21295;&#20837; Word &#24460;&#20877;&#27161;&#35352;&#23436;&#25104;&#12290;</small>` : ""}
+          ${report.screenshot ? `<small>&#25130;&#22294;&#65306;${escapeHtml(report.screenshot)}</small>` : ""}
           ${report.screenshotDataUrl ? `<img class="review-report-thumb" src="${escapeHtml(report.screenshotDataUrl)}" alt="校對截圖" />` : ""}
           ${compact ? "" : `
             <div class="review-task-card-actions">
               <button type="button" data-report-next="${escapeHtml(report.id)}">${reportPrimaryAction(report.status)}</button>
-              ${quoteCandidate ? `<button type="button" data-report-quote="${escapeHtml(report.id)}">採用為網站資料</button>` : ""}
+              ${hasMetadata ? `<button type="button" data-report-metadata="${escapeHtml(report.id)}">&#25505;&#29992;&#28858;&#32178;&#31449;&#36039;&#26009;</button>` : ""}
               <button type="button" data-report-remove="${escapeHtml(report.id)}">刪除此回報</button>
             </div>
           `}
@@ -921,15 +979,16 @@ const normalizeCategory = (category: string) => {
           if (submitPublishButton) {
             submitPublishButton.disabled = payload.openReports.length > 0;
             submitPublishButton.title = payload.openReports.length
-              ? "仍有待處理的修正意見，完成後才能正式發布。"
+              ? "Finish all open review reports before publishing."
               : "";
           }
           if (publishStatusNode) {
             const quoteCount = Object.keys(payload.metadataOverrides.quotes).length;
+            const summaryCount = Object.keys(payload.metadataOverrides.summaries).length;
             const tagCount = Object.keys(payload.metadataOverrides.tags).length;
             publishStatusNode.innerHTML = payload.openReports.length
-              ? `還有 <strong>${payload.openReports.length}</strong> 則待辦尚未完成；正式發布暫不可送出。`
-              : `可進入發布確認：已完成 <strong>${payload.reports.length}</strong> 則待辦，包含 <strong>${quoteCount}</strong> 筆人工金句、<strong>${tagCount}</strong> 筆人工標籤。`;
+              ? `&#36996;&#26377; <strong>${payload.openReports.length}</strong> &#21063;&#24453;&#36774;&#23578;&#26410;&#23436;&#25104;&#65307;&#23436;&#25104;&#24460;&#25165;&#33021;&#27491;&#24335;&#30332;&#24067;&#12290;`
+              : `&#24453;&#36774;&#24050;&#23436;&#25104;&#65307;&#21487;&#36865;&#20986;&#27491;&#24335;&#30332;&#24067;&#12290;&#24050;&#23436;&#25104; <strong>${payload.reports.length}</strong> &#21063;&#22238;&#22577;&#65292;&#21547; <strong>${quoteCount}</strong> &#21063;&#37329;&#21477;&#12289;<strong>${summaryCount}</strong> &#21063;&#25688;&#35201;&#12289;<strong>${tagCount}</strong> &#21063;&#27161;&#31844;&#20462;&#27491;&#12290;`;
           }
         }
       };
@@ -1504,6 +1563,9 @@ const normalizeCategory = (category: string) => {
             return;
           }
           const screenshot = form.dataset.screenshotName || "";
+          const metadataQuote = String(formData.get("metadataQuote") || "").trim();
+          const metadataSummary = String(formData.get("metadataSummary") || "").trim();
+          const metadataTags = parseMetadataTags(formData.get("metadataTags") || "");
           const report = {
             id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
             articleSlug: selectedArticle.slug,
@@ -1518,6 +1580,16 @@ const normalizeCategory = (category: string) => {
             status: "open",
             createdAt: new Date().toISOString()
           };
+          if (metadataQuote) report.metadataQuote = metadataQuote;
+          if (metadataSummary) report.metadataSummary = metadataSummary;
+          if (metadataTags.length) report.metadataTags = metadataTags;
+          if (metadataQuote || metadataSummary || metadataTags.length) {
+            report.originalMetadata = {
+              quote: selectedArticle.quote || "",
+              summary: selectedArticle.summary || "",
+              tags: selectedArticle.tags || []
+            };
+          }
           if (!report.comment) return;
           const reports = readReports();
           reports.push(report);
@@ -1539,23 +1611,22 @@ const normalizeCategory = (category: string) => {
       reportBoard?.addEventListener("click", (event) => {
         const nextButton = event.target.closest("[data-report-next]");
         const removeButton = event.target.closest("[data-report-remove]");
-        const quoteButton = event.target.closest("[data-report-quote]");
-        if (!nextButton && !removeButton && !quoteButton) return;
+        const metadataButton = event.target.closest("[data-report-metadata]");
+        if (!nextButton && !removeButton && !metadataButton) return;
         const id =
           nextButton?.dataset.reportNext ||
           removeButton?.dataset.reportRemove ||
-          quoteButton?.dataset.reportQuote ||
+          metadataButton?.dataset.reportMetadata ||
           "";
         const reports = readReports();
         const next = removeButton
           ? reports.filter((report) => report.id !== id)
           : reports.map((report) =>
               report.id === id
-                ? quoteButton
+                ? metadataButton
                   ? {
                       ...report,
                       status: "metadata",
-                      metadataQuote: extractMetadataQuote(report.comment),
                       metadataUpdatedAt: new Date().toISOString()
                     }
                   : {
@@ -1665,6 +1736,13 @@ const normalizeCategory = (category: string) => {
                 publishStatusNode.innerHTML = `\u672c\u6b21\u5efa\u7f6e\u5df2\u5b8c\u6210\uff0c\u4f46 <strong>Sync Google Drive source</strong> \u88ab\u7565\u904e\uff0c\u4ee3\u8868\u6c92\u6709\u91cd\u65b0\u540c\u6b65 Word\u3002\u8acb\u6aa2\u67e5 Google Apps Script reimport \u662f\u5426\u9001\u51fa <code>sync_drive=true</code>\u3002 <a href="${run.html_url}" target="_blank" rel="noreferrer">\u67e5\u770b\u4f5c\u696d</a>`;
               } else {
                 publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u5df2\u5b8c\u6210\u3002<a href="${refreshUrl}">\u91cd\u65b0\u6574\u7406\u672c\u9801</a>\u5f8c\uff0c\u5c31\u6703\u770b\u5230\u6700\u65b0 Word \u9810\u89bd\u3002`;
+                try {
+                  await fetchImportChangeReport();
+                } catch {
+                  if (importChangeReportNode) {
+                    importChangeReportNode.textContent = "匯入已完成；更新檔案清單會在重新整理後顯示。";
+                  }
+                }
               }
             } else if (publishStatusNode && run?.status === "completed") {
               publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u6c92\u6709\u6210\u529f\u3002\u8acb\u5230 <a href="${run.html_url || deployWorkflowUrl}" target="_blank" rel="noreferrer">GitHub Actions</a> \u67e5\u770b\u5931\u6557\u539f\u56e0\u3002`;

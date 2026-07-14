@@ -1440,6 +1440,7 @@ $seenSlugs = @{}
 $validationItems = New-Object System.Collections.Generic.List[object]
 $cacheHitCount = 0
 $cacheMissCount = 0
+$changedImportFiles = New-Object System.Collections.Generic.List[object]
 $approvalMap = @{}
 $correctionMap = @{}
 $approvalFingerprint = ""
@@ -1514,6 +1515,12 @@ foreach ($issueDir in $issueDirs) {
       continue
     }
     $cacheMissCount++
+    $changedImportFiles.Add([pscustomobject]@{
+      issueId = $issueId
+      fileName = $file.Name
+      relativePath = (Get-RelativePath $Root $file.FullName)
+      status = if ($cachedEntry) { "updated" } else { "new" }
+    })
 
     $validationStartIndex = $validationItems.Count
     $docxContent = Read-DocxContent $file $issueId (Join-Path $publicArticles $issueId) $imageIndex
@@ -1799,6 +1806,17 @@ foreach ($group in $duplicateGroups) {
 
 $reportDir = Join-Path $Root "reports"
 New-Item -ItemType Directory -Force -Path $reportDir | Out-Null
+$importChangedFilesReport = @{
+  generatedAt = (Get-Date).ToUniversalTime().ToString("o")
+  totalChanged = $changedImportFiles.Count
+  changedFiles = @($changedImportFiles.ToArray())
+}
+$importChangedReportJson = $importChangedFilesReport | ConvertTo-Json -Depth 8
+$importChangedReportPath = Join-Path $reportDir "import-changed-files.json"
+$importChangedReportJson | Set-Content -LiteralPath $importChangedReportPath -Encoding UTF8
+$publicDataDir = Join-Path $Root "public/data"
+New-Item -ItemType Directory -Force -Path $publicDataDir | Out-Null
+$importChangedReportJson | Set-Content -LiteralPath (Join-Path $publicDataDir "import-changed-files.json") -Encoding UTF8
 $reportJsonPath = Join-Path $reportDir "import-validation.json"
 $reportMdPath = Join-Path $reportDir "import-validation.md"
 $validationItems | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $reportJsonPath -Encoding UTF8
@@ -1901,3 +1919,4 @@ export const generatedReviewItems = $reviewJson satisfies ReviewItem[];
 Set-Content -LiteralPath $generatedReviewPath -Encoding UTF8 -Value $reviewContent
 Write-Host "Generated $($articles.Count) articles across $($issues.Count) issues."
 Write-Host "Article import cache: $cacheHitCount hit(s), $cacheMissCount rebuilt."
+Write-Host "Changed Word files: $($changedImportFiles.Count)"

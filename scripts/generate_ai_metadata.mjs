@@ -6,6 +6,7 @@ import vm from "node:vm";
 const root = process.cwd();
 const generatedArticlesPath = path.join(root, "src/data/generatedArticles.ts");
 const aiMetadataPath = path.join(root, "src/data/aiMetadata.json");
+const aiFeedbackExamplesPath = path.join(root, "src/data/aiFeedbackExamples.json");
 const tagVocabularyPath = path.join(root, "src/data/tagVocabulary.json");
 const reportPath = path.join(root, "reports/ai-metadata-report.json");
 
@@ -36,6 +37,10 @@ const readJson = (filePath, fallback) => {
 };
 
 const tagVocabulary = readJson(tagVocabularyPath, {});
+const aiFeedbackExamplesData = readJson(aiFeedbackExamplesPath, { examples: [] });
+const aiFeedbackExamples = Array.isArray(aiFeedbackExamplesData.examples)
+  ? aiFeedbackExamplesData.examples
+  : [];
 const allowedAiTags = [
   ...(tagVocabulary.categoryTags || []),
   ...(tagVocabulary.keywordTags || []).map((rule) => rule.label)
@@ -79,6 +84,27 @@ const articleText = (article, maxLength = 6000) => {
     .trim()
     .slice(0, maxLength);
 };
+
+const feedbackExamplesFor = (article, maxExamples = 4) =>
+  aiFeedbackExamples
+    .filter((example) => example?.corrected && example.slug !== article.slug)
+    .map((example) => ({
+      example,
+      score:
+        (example.category && article.category && example.category === article.category ? 2 : 0) +
+        (example.corrected?.quote ? 1 : 0) +
+        (example.corrected?.summary ? 1 : 0) +
+        (Array.isArray(example.corrected?.tags) && example.corrected.tags.length ? 1 : 0)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, maxExamples)
+    .map(({ example }) => ({
+      category: example.category || "",
+      title: example.title || "",
+      original: example.original || {},
+      humanCorrection: example.corrected || {},
+      reason: example.reason || ""
+    }));
 
 const contentHashFor = (article) => {
   const payload = {
@@ -143,6 +169,7 @@ const buildPrompt = (article) => [
 ].join("\n");
 
 const requestMetadata = async (article) => {
+  const feedbackExamples = feedbackExamplesFor(article);
   const prompt = [
     "You are helping a Traditional Chinese newsletter website generate review-only metadata.",
     "Return exactly one valid JSON object. Do not include Markdown, explanations, or code fences.",
@@ -157,6 +184,13 @@ const requestMetadata = async (article) => {
     "6. If the article is too short, still return valid JSON with your best concise suggestions.",
     `Allowed tag list: ${allowedAiTagText || "none"}`,
     "",
+    feedbackExamples.length
+      ? [
+          "Human correction examples from this website. Treat these as project-specific style guidance, not as model training:",
+          JSON.stringify(feedbackExamples, null, 2),
+          ""
+        ].join("\n")
+      : "",
     `Category: ${article.category || ""}`,
     `Title: ${article.title || ""}`,
     `Author: ${article.author || ""}`,

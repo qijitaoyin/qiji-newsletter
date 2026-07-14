@@ -2567,6 +2567,45 @@ body.is-review-frame .article-main {
   overflow-wrap: anywhere;
 }
 
+.review-metadata-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.review-metadata-fields legend {
+  padding: 0 6px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.review-metadata-fields label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.review-metadata-fields input,
+.review-metadata-fields textarea {
+  width: 100%;
+  min-width: 0;
+}
+
+.review-import-change-report {
+  flex-basis: 100%;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.review-import-change-report ul {
+  margin: 6px 0 0;
+  padding-left: 1.2rem;
+}
+
 .review-live-report-form textarea {
   min-height: 42px;
   resize: vertical;
@@ -3287,6 +3326,10 @@ body.is-review-frame .article-main {
 
   .review-info-grid,
   .review-report-form {
+    grid-template-columns: 1fr;
+  }
+
+  .review-metadata-fields {
     grid-template-columns: 1fr;
   }
 

@@ -515,7 +515,7 @@ const withAutoTags = (article: Article): Article => {
     ...article,
     tags,
     aiQuote: editorialOverrides.quotes?.[article.slug] ?? ai.quote ?? typedAiMetadata.quotes?.[article.slug],
-    aiSummary: ai.summary ?? typedAiMetadata.summaries?.[article.slug],
+    aiSummary: editorialOverrides.summaries?.[article.slug] ?? ai.summary ?? typedAiMetadata.summaries?.[article.slug],
     aiThemes: ai.themes ?? typedAiMetadata.themes?.[article.slug] ?? [],
     aiSimilarSlugs: ai.similarCandidates ?? typedAiMetadata.similar?.[article.slug] ?? []
   };
