@@ -389,25 +389,26 @@ p {
 .issue-list-heading {
   align-items: center;
   display: flex;
-  gap: clamp(14px, 2vw, 24px);
-  justify-content: center;
+  gap: 0;
   margin-bottom: clamp(14px, 1.8vw, 22px);
-  text-align: center;
 }
 
+.issue-list-heading h2,
 .issue-list-heading h3 {
-  color: var(--coffee);
-  font-family: "Noto Serif TC", "Songti TC", serif;
+  background: var(--coffee);
+  color: #fff;
   flex: 0 0 auto;
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.1rem, 1.55vw, 1.55rem);
   font-weight: 900;
+  letter-spacing: 0.02em;
   line-height: 1.2;
   margin: 0;
+  padding: 10px 22px;
 }
 
-.issue-list-heading::before,
 .issue-list-heading::after {
-  background: var(--line);
+  background: var(--line-dark);
   content: "";
   flex: 1 1 auto;
   height: 1px;
@@ -420,18 +421,11 @@ p {
 }
 
 .issue-card-grid-single {
-  grid-template-columns: minmax(280px, 560px);
-  justify-content: center;
-}
-
-.issue-editor-section {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1080px;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .issue-editor-grid {
-  grid-template-columns: minmax(0, 920px);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .issue-editor-grid .issue-card a {
@@ -446,6 +440,7 @@ p {
   aspect-ratio: 1.55;
 }
 
+.issue-editor-grid .issue-card h3,
 .issue-editor-grid .issue-card h4 {
   font-size: clamp(1.55rem, 2.4vw, 2.55rem);
 }
@@ -467,6 +462,7 @@ p {
   margin-top: 14px;
 }
 
+.issue-card h3,
 .issue-card h4 {
   font-family: "Noto Serif TC", "Songti TC", serif;
   font-size: clamp(1.2rem, 1.65vw, 1.65rem);
@@ -3301,10 +3297,6 @@ body.is-review-frame:not(.is-review-mobile-frame) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .issue-card-grid-single {
-    grid-template-columns: minmax(280px, 680px);
-  }
-
   .issue-editor-grid .issue-card a {
     grid-template-columns: 1fr;
   }
@@ -3538,7 +3530,9 @@ body.is-review-frame:not(.is-review-mobile-frame) {
     grid-template-columns: 1fr;
   }
 
-  .newest-post .block-title h2 {
+  .newest-post .block-title h2,
+  .issue-list-heading h2,
+  .issue-list-heading h3 {
     padding: 9px 16px;
   }
 

@@ -105,23 +105,19 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
         </div>
       </section>
 
-      <section class="content-block newest-post" id="newest" aria-labelledby="newest-title">
-        <div class="block-title">
-          <h2 id="newest-title">最新一期</h2>
-        </div>
-
+      <section class="content-block newest-post" id="newest" aria-label="最新一期">
         {editorNote && (
           <section class="issue-list-section issue-editor-section" aria-labelledby="issue-section-editor">
             <div class="issue-list-heading">
-              <h3 id="issue-section-editor">編輯小語</h3>
+              <h2 id="issue-section-editor">編輯小語</h2>
             </div>
             <div class="issue-card-grid issue-card-grid-single issue-editor-grid">
               <article class="issue-card">
                 <a href={pathFor(`/articles/${editorNote.slug}/`)}>
                   {hasArticleImage(editorNote.image) && <img src={editorNote.image} alt="" />}
                   <div>
-                    <p class="meta-line"><span>{editorNote.category}</span><span>{editorNote.author}</span></p>
-                    <h4>{editorNote.title}</h4>
+                    <p class="meta-line"><span>{editorNote.author}</span></p>
+                    <h3>{editorNote.title}</h3>
                     <p class="read-more">閱讀全文</p>
                   </div>
                 </a>
@@ -133,15 +129,15 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
         {groupedArticles.map((group) => (
           <section class="issue-list-section" aria-labelledby={`issue-section-${group.title}`} data-issue-list>
             <div class="issue-list-heading">
-              <h3 id={`issue-section-${group.title}`}>{group.title}</h3>
+              <h2 id={`issue-section-${group.title}`}>{group.title}</h2>
             </div>
             <div class="issue-card-grid">
               {group.articles.map((article, index) => (
                 <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
                   <a href={pathFor(`/articles/${article.slug}/`)}>
                     {hasArticleImage(article.image) && <img src={article.image} alt="" />}
-                    <p class="meta-line"><span>{article.category}</span><span>{article.author}</span></p>
-                    <h4>{article.title}</h4>
+                    <p class="meta-line"><span>{article.author}</span></p>
+                    <h3>{article.title}</h3>
                     <p class="read-more">閱讀全文</p>
                   </a>
                 </article>
