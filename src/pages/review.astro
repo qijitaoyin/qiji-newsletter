@@ -7,7 +7,7 @@ import {
   wordNormalizeItems,
   wordNormalizeSummary
 } from "../data/wordNormalizeReview";
-import { reviewIssueArticles, reviewIssueArchive } from "../data/articles";
+import { articleTags, reviewIssueArticles, reviewIssueArchive } from "../data/articles";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
 
@@ -59,6 +59,7 @@ const wordReviewGroups = wordNormalizeIssueIds
 
 const latestReviewArticles = reviewIssueArticles;
 const latestReviewArchive = reviewIssueArchive;
+const reviewTagSuggestions = articleTags.map((tag) => tag.label).sort((a, b) => a.localeCompare(b, "zh-Hant"));
 const normalizeCategory = (category: string) => {
   if (category.startsWith("如是我")) return "如是我聞";
   if (category === "同頻共振時") return "導引專欄";
@@ -233,19 +234,51 @@ const normalizeCategory = (category: string) => {
               </label>
               <fieldset class="review-metadata-fields">
                 <legend>網站資料修正（選填）</legend>
-                <label>
-                  <span>金句</span>
-                  <input name="metadataQuote" value="" placeholder="需要改金句時填寫" />
-                </label>
-                <label>
-                  <span>摘要</span>
-                  <textarea name="metadataSummary" rows="1" placeholder="需要改 AI 摘要時填寫"></textarea>
-                </label>
-                <label>
-                  <span>分類標籤</span>
-                  <input name="metadataTags" value="" placeholder="用逗號、頓號或換行分隔" />
-                </label>
+                <p class="review-metadata-note">
+                  這裡填寫的是校對建議，不會直接修改網站資料；上架人員確認採用後，才會在正式發布時一併寫入。
+                </p>
+                <div class="review-metadata-row">
+                  <div class="review-metadata-original">
+                    <span>目前 AI 金句</span>
+                    <strong data-original-metadata-quote>{latestReviewArticles[0]?.aiQuote ?? ""}</strong>
+                  </div>
+                  <label>
+                    <span>建議金句</span>
+                    <input name="metadataQuote" value="" placeholder="需要改金句時填寫" />
+                  </label>
+                </div>
+                <div class="review-metadata-row">
+                  <div class="review-metadata-original">
+                    <span>目前 AI 摘要</span>
+                    <strong data-original-metadata-summary>{latestReviewArticles[0]?.aiSummary ?? ""}</strong>
+                  </div>
+                  <label>
+                    <span>建議摘要</span>
+                    <textarea name="metadataSummary" rows="1" placeholder="需要改 AI 摘要時填寫"></textarea>
+                  </label>
+                </div>
+                <div class="review-metadata-row">
+                  <div class="review-metadata-original">
+                    <span>目前分類標籤</span>
+                    <strong data-original-metadata-tags>{(latestReviewArticles[0]?.tags ?? []).join("、")}</strong>
+                  </div>
+                  <label>
+                    <span>建議分類標籤（最多五組）</span>
+                    <input
+                      name="metadataTags"
+                      value=""
+                      list="review-tag-suggestions"
+                      autocomplete="off"
+                      placeholder="優先選既有標籤；用逗號、頓號或換行分隔"
+                      data-metadata-tags-input
+                    />
+                    <small data-tag-suggestion-hint>輸入時會提示相近既有標籤；真的沒有才新增。</small>
+                  </label>
+                </div>
               </fieldset>
+              <datalist id="review-tag-suggestions">
+                {reviewTagSuggestions.map((tag) => <option value={tag} />)}
+              </datalist>
               <div class="review-screenshot-paste" tabindex="0" data-screenshot-paste>
                 <strong>貼上截圖</strong>
                 <span>點這裡後按 Ctrl+V，或在意見欄直接貼上圖片</span>
@@ -554,6 +587,7 @@ const normalizeCategory = (category: string) => {
         title: article.title,
         category: normalizeCategory(article.category)
       })),
+      reviewTagSuggestions,
       importChangeReportUrl: pathFor("/data/import-changed-files.json")
     }}>
       const storageKey = "qiji-review-approvals";
@@ -583,6 +617,11 @@ const normalizeCategory = (category: string) => {
       const liveViewportTabs = Array.from(document.querySelectorAll("[data-live-viewport-tab]"));
       const liveViewportPanels = Array.from(document.querySelectorAll("[data-live-viewport-panel]"));
       const liveReportLists = Array.from(document.querySelectorAll("[data-live-article-report-list]"));
+      const originalMetadataQuoteNode = document.querySelector("[data-original-metadata-quote]");
+      const originalMetadataSummaryNode = document.querySelector("[data-original-metadata-summary]");
+      const originalMetadataTagsNode = document.querySelector("[data-original-metadata-tags]");
+      const metadataTagInputs = Array.from(document.querySelectorAll("[data-metadata-tags-input]"));
+      const tagSuggestionLabels = Array.from(new Set(reviewTagSuggestions || []));
       const deployWorkflowUrl =
         "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml";
       const deployWorkflowRunsApiUrl =
@@ -705,7 +744,40 @@ const normalizeCategory = (category: string) => {
         String(value)
           .split(/[\n,，、]/)
           .map((tag) => tag.trim())
-          .filter(Boolean);
+          .filter(Boolean)
+          .slice(0, 5);
+
+      const compactTagLabel = (value = "") =>
+        String(value)
+          .normalize("NFKC")
+          .replace(/[\s,，、/｜|;；:：・·。．.（）()［］[\]「」『』《》〈〉"']/g, "")
+          .toLowerCase();
+
+      const uniqueTags = (tags = []) => {
+        const seen = new Set();
+        return tags.filter((tag) => {
+          const key = compactTagLabel(tag);
+          if (!key || seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        });
+      };
+
+      const canonicalTag = (value = "") => {
+        const key = compactTagLabel(value);
+        return tagSuggestionLabels.find((tag) => compactTagLabel(tag) === key) || String(value).trim();
+      };
+
+      const parseSuggestedMetadataTags = (value = "") =>
+        uniqueTags(parseMetadataTags(value).map(canonicalTag)).slice(0, 5);
+
+      const replaceTailTags = (originalTags = [], suggestedTags = []) => {
+        const suggestions = uniqueTags(suggestedTags).slice(0, 5);
+        if (!suggestions.length) return [];
+        const base = uniqueTags(originalTags);
+        const kept = base.slice(0, Math.max(0, base.length - suggestions.length));
+        return uniqueTags([...kept, ...suggestions]);
+      };
 
       const parseOptionTags = (value = "") => {
         try {
@@ -744,6 +816,9 @@ const normalizeCategory = (category: string) => {
         if (titleNode) titleNode.textContent = article?.title || "";
         if (authorNode) authorNode.textContent = article?.author || "";
         if (quoteNode) quoteNode.textContent = article?.quote || "";
+        if (originalMetadataQuoteNode) originalMetadataQuoteNode.textContent = article?.quote || "";
+        if (originalMetadataSummaryNode) originalMetadataSummaryNode.textContent = article?.summary || "";
+        if (originalMetadataTagsNode) originalMetadataTagsNode.textContent = (article?.tags || []).join("、");
       };
 
       const slugFromArticleUrl = (value = "") => {
@@ -901,7 +976,8 @@ const normalizeCategory = (category: string) => {
           <p>${escapeHtml(report.comment)}</p>
           ${report.metadataQuote ? `<small>&#20154;&#24037;&#37329;&#21477;&#65306;${escapeHtml(report.metadataQuote)}</small>` : ""}
           ${report.metadataSummary ? `<small>&#20154;&#24037;&#25688;&#35201;&#65306;${escapeHtml(report.metadataSummary)}</small>` : ""}
-          ${Array.isArray(report.metadataTags) && report.metadataTags.length ? `<small>&#20154;&#24037;&#27161;&#31844;&#65306;${escapeHtml(report.metadataTags.join(" / "))}</small>` : ""}
+          ${Array.isArray(report.metadataTagSuggestions) && report.metadataTagSuggestions.length ? `<small>標籤建議：${escapeHtml(report.metadataTagSuggestions.join(" / "))}</small>` : ""}
+          ${Array.isArray(report.metadataTags) && report.metadataTags.length ? `<small>採用後標籤：${escapeHtml(report.metadataTags.join(" / "))}</small>` : ""}
           ${report.status === "fixed" ? `<small>&#24050;&#27161;&#35352;&#38656;&#20462; Word&#65307;&#37325;&#26032;&#21295;&#20837; Word &#24460;&#20877;&#27161;&#35352;&#23436;&#25104;&#12290;</small>` : ""}
           ${report.screenshot ? `<small>&#25130;&#22294;&#65306;${escapeHtml(report.screenshot)}</small>` : ""}
           ${report.screenshotDataUrl ? `<img class="review-report-thumb" src="${escapeHtml(report.screenshotDataUrl)}" alt="校對截圖" />` : ""}
@@ -1063,6 +1139,28 @@ const normalizeCategory = (category: string) => {
         delete form.dataset.screenshotDataUrl;
         form.querySelector("[data-screenshot-preview]")?.replaceChildren();
         form.querySelector("[data-screenshot-paste]")?.classList.remove("has-image");
+      };
+
+      const renderTagHint = (input) => {
+        const hint = input?.closest("label")?.querySelector("[data-tag-suggestion-hint]");
+        if (!hint) return;
+        const enteredTags = parseMetadataTags(input.value);
+        const lastInput = enteredTags.at(-1) || String(input.value || "").trim();
+        const lastKey = compactTagLabel(lastInput);
+        const suggestions = lastKey
+          ? tagSuggestionLabels
+              .filter((tag) => compactTagLabel(tag).includes(lastKey) || lastKey.includes(compactTagLabel(tag)))
+              .slice(0, 6)
+          : [];
+        if (enteredTags.length > 5) {
+          hint.textContent = "最多只能填五組標籤；系統送出時會保留前五組。";
+          hint.classList.add("is-warning");
+          return;
+        }
+        hint.classList.remove("is-warning");
+        hint.textContent = suggestions.length
+          ? `相近既有標籤：${suggestions.join("、")}`
+          : "輸入時會提示相近既有標籤；真的沒有才新增。";
       };
 
       const activeViewportLabel = () => {
@@ -1530,6 +1628,12 @@ const normalizeCategory = (category: string) => {
         });
       });
 
+      metadataTagInputs.forEach((input) => {
+        renderTagHint(input);
+        input.addEventListener("input", () => renderTagHint(input));
+        input.addEventListener("focus", () => renderTagHint(input));
+      });
+
       liveFrames.forEach((frame) => {
         frame.addEventListener("load", () => {
           try {
@@ -1581,7 +1685,8 @@ const normalizeCategory = (category: string) => {
           const screenshot = form.dataset.screenshotName || "";
           const metadataQuote = String(formData.get("metadataQuote") || "").trim();
           const metadataSummary = String(formData.get("metadataSummary") || "").trim();
-          const metadataTags = parseMetadataTags(formData.get("metadataTags") || "");
+          const suggestedMetadataTags = parseSuggestedMetadataTags(formData.get("metadataTags") || "");
+          const metadataTags = replaceTailTags(selectedArticle.tags || [], suggestedMetadataTags);
           const report = {
             id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
             articleSlug: selectedArticle.slug,
@@ -1598,8 +1703,11 @@ const normalizeCategory = (category: string) => {
           };
           if (metadataQuote) report.metadataQuote = metadataQuote;
           if (metadataSummary) report.metadataSummary = metadataSummary;
-          if (metadataTags.length) report.metadataTags = metadataTags;
-          if (metadataQuote || metadataSummary || metadataTags.length) {
+          if (metadataTags.length) {
+            report.metadataTags = metadataTags;
+            report.metadataTagSuggestions = suggestedMetadataTags;
+          }
+          if (metadataQuote || metadataSummary || suggestedMetadataTags.length) {
             report.originalMetadata = {
               quote: selectedArticle.quote || "",
               summary: selectedArticle.summary || "",

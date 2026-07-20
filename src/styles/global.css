@@ -2571,8 +2571,8 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 .review-metadata-fields {
   display: grid;
   grid-column: 1 / -1;
-  grid-template-columns: minmax(180px, 0.75fr) minmax(260px, 1.5fr) minmax(180px, 0.75fr);
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   margin: 0;
   padding: 14px;
   border: 1px solid var(--line);
@@ -2589,6 +2589,47 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   display: grid;
   gap: 6px;
   font-weight: 700;
+}
+
+.review-metadata-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.review-metadata-row {
+  background: #fffaf2;
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(180px, 0.82fr) minmax(260px, 1.18fr);
+  padding: 12px;
+}
+
+.review-metadata-original {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.review-metadata-original span,
+.review-metadata-fields small {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.review-metadata-original strong {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  min-height: 1.55em;
+  overflow-wrap: anywhere;
+}
+
+.review-metadata-fields small.is-warning {
+  color: #a85f00;
 }
 
 .review-metadata-fields input,
@@ -3332,6 +3373,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   }
 
   .review-metadata-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .review-metadata-row {
     grid-template-columns: 1fr;
   }
 
