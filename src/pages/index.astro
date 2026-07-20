@@ -132,8 +132,8 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
               <h2 id={`issue-section-${group.title}`}>{group.title}</h2>
             </div>
             <div class="issue-card-grid">
-              {group.articles.map((article, index) => (
-                <article class:list={["issue-card", { "issue-extra": index >= 3 }]}>
+              {group.articles.map((article) => (
+                <article class="issue-card">
                   <a href={pathFor(`/articles/${article.slug}/`)}>
                     {hasArticleImage(article.image) && <img src={article.image} alt="" />}
                     <p class="meta-line"><span>{article.author}</span></p>
@@ -143,13 +143,6 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                 </article>
               ))}
             </div>
-            {group.articles.length > 3 && (
-              <div class="issue-list-action">
-                <button class="issue-list-toggle" type="button" aria-expanded="false" data-issue-toggle>
-                  展開全部
-                </button>
-              </div>
-            )}
           </section>
         ))}
       </section>
@@ -212,48 +205,6 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
         });
         startTimer();
       }
-
-      document.querySelectorAll("[data-issue-list]").forEach((section) => {
-        const toggle = section.querySelector("[data-issue-toggle]");
-        if (!toggle) return;
-        const extraItems = Array.from(section.querySelectorAll(".issue-extra"));
-
-        extraItems.forEach((item) => {
-          item.style.maxHeight = "0px";
-          item.hidden = true;
-        });
-
-        toggle.addEventListener("click", () => {
-          const isExpanded = !section.classList.contains("is-expanded");
-          section.classList.toggle("is-expanded", isExpanded);
-
-          if (isExpanded) {
-            extraItems.forEach((item) => {
-              item.hidden = false;
-              item.style.maxHeight = "0px";
-            });
-            window.requestAnimationFrame(() => {
-              extraItems.forEach((item) => {
-                item.style.maxHeight = `${item.scrollHeight}px`;
-              });
-            });
-          } else {
-            extraItems.forEach((item) => {
-              item.style.maxHeight = "0px";
-            });
-            window.setTimeout(() => {
-              if (!section.classList.contains("is-expanded")) {
-                extraItems.forEach((item) => {
-                  item.hidden = true;
-                });
-              }
-            }, 420);
-          }
-
-          toggle.setAttribute("aria-expanded", String(isExpanded));
-          toggle.textContent = isExpanded ? "收合文章" : "展開全部";
-        });
-      });
 
       const throwbackRoot = document.querySelector("[data-throwback]");
       if (throwbackRoot) {

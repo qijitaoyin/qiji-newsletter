@@ -471,43 +471,6 @@ p {
   margin: 0 0 12px;
 }
 
-.issue-list-action {
-  display: flex;
-  justify-content: center;
-  padding-top: clamp(10px, 1.5vw, 16px);
-}
-
-.issue-list-toggle {
-  background: var(--page);
-  border: 1px solid var(--gold);
-  color: var(--coffee);
-  cursor: pointer;
-  font: inherit;
-  font-size: 1rem;
-  font-weight: 900;
-  min-height: 40px;
-  padding: 6px 16px;
-}
-
-.issue-list-toggle:hover,
-.issue-list-toggle:focus-visible {
-  background: var(--gold);
-  color: #fff;
-}
-
-.issue-extra {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition:
-    max-height 420ms ease,
-    opacity 260ms ease;
-}
-
-.issue-list-section.is-expanded .issue-extra {
-  opacity: 1;
-}
-
 .feature-banner {
   background: var(--coffee);
   color: #fff;
