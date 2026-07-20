@@ -1438,6 +1438,12 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   min-width: 0;
 }
 
+.article-hero-copy {
+  max-width: 100%;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
 .article-hero .meta-line {
   font-size: clamp(0.96rem, 1.08vw, 1.12rem);
   margin-bottom: 14px;
@@ -1451,8 +1457,9 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   line-height: 1.08;
   margin: 0 0 clamp(18px, 2vw, 28px);
   max-width: 100%;
-  text-wrap: balance;
-  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-wrap: wrap;
+  word-break: normal;
 }
 
 .article-hero-quote {
