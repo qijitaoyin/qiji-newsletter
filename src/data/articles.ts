@@ -307,6 +307,19 @@ const cleanInferredHeaderSections = (
     .filter((section) => section.heading || section.paragraphs.length > 0);
 };
 
+const cleanInferredHeaderContentBlocks = (
+  blocks: ArticleContentBlock[] | undefined,
+  valuesToRemove: string[],
+  category: string
+) => {
+  const removalKeys = new Set(valuesToRemove.filter(Boolean).map(normalizeLabel));
+  return blocks?.filter((block) => {
+    if (block.type !== "paragraph" && block.type !== "heading") return true;
+    const key = normalizeLabel(block.text);
+    return key && !removalKeys.has(key) && !isCategoryMarker(block.text, category);
+  });
+};
+
 const excerptFromSections = (sections: ArticleSection[]) =>
   sections
     .flatMap((section) => section.paragraphs)
@@ -330,9 +343,36 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
   const needsTitleNormalization =
     Boolean(manualTitle) || isBylineLikeTitle(article.title, article.category) || shouldSwapAuthorTitle;
   const needsAuthorNormalization = Boolean(manualAuthor) || !article.author;
+  const headerCleanedSections = cleanInferredHeaderSections(
+    article.sections,
+    [article.title, article.author],
+    article.category
+  );
+  const headerCleanedContentBlocks = cleanInferredHeaderContentBlocks(
+    article.contentBlocks,
+    [article.title, article.author],
+    article.category
+  );
+  const hasHeaderResidue = headerCleanedSections.length !== article.sections.length ||
+    headerCleanedSections.some((section, index) => {
+      const original = article.sections[index];
+      return (
+        section.heading !== original?.heading ||
+        section.paragraphs.length !== original.paragraphs.length ||
+        section.paragraphs.some((paragraph, paragraphIndex) => paragraph !== original.paragraphs[paragraphIndex])
+      );
+    }) ||
+    (headerCleanedContentBlocks?.length ?? 0) !== (article.contentBlocks?.length ?? 0);
 
   if (!needsTitleNormalization && !needsAuthorNormalization) {
-    return article;
+    return hasHeaderResidue
+      ? {
+          ...article,
+          excerpt: excerptFromSections(headerCleanedSections) || article.excerpt,
+          sections: headerCleanedSections,
+          contentBlocks: headerCleanedContentBlocks ?? article.contentBlocks
+        }
+      : article;
   }
 
   const titleIndex = texts.findIndex((text) => looksLikeTitle(text, article.category));
@@ -392,13 +432,19 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
     [article.title, article.author, inferredTitle, inferredAuthor, "編輯部"],
     article.category
   );
+  const contentBlocks = cleanInferredHeaderContentBlocks(
+    article.contentBlocks,
+    [article.title, article.author, inferredTitle, inferredAuthor, "編輯部"],
+    article.category
+  );
 
   return {
     ...article,
     title: inferredTitle,
     author: inferredAuthor,
     excerpt: excerptFromSections(sections) || article.excerpt,
-    sections
+    sections,
+    contentBlocks: contentBlocks ?? article.contentBlocks
   };
 };
 
@@ -521,6 +567,13 @@ const withAutoTags = (article: Article): Article => {
   };
 };
 
+const withEditorialCategory = (article: Article): Article => {
+  const category = (editorialOverrides as { categories?: Record<string, string> }).categories?.[
+    article.slug
+  ]?.trim();
+  return category ? { ...article, category } : article;
+};
+
 const withBasePaths = (article: Article): Article => ({
   ...article,
   homeAnchor: pathFor(article.homeAnchor),
@@ -540,6 +593,7 @@ const withBasePaths = (article: Article): Article => ({
 });
 
 export const articles: Article[] = generatedArticles
+  .map(withEditorialCategory)
   .map(withNormalizedTitleAndAuthor)
   .map(withAutoTags)
   .map(withBasePaths)
@@ -641,7 +695,7 @@ const fixedTagSlugs: Record<string, string> = {
 };
 
 export const articleTags: ArticleTag[] = Array.from(
-  new Set(publishedArticles.flatMap((article) => article.tags))
+  new Set(publishedArticles.flatMap((article) => [article.category, ...article.tags]))
 ).reduce((tags, label) => {
   const slug = fixedTagSlugs[label] ?? makeSlug(label);
   if (!tags.some((tag) => tag.slug === slug)) {

@@ -116,9 +116,14 @@
     if (!container) return;
     const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
     container.textContent = "";
+    const category = normalizeCategory(article.category || "");
+    const columnTags = category ? [category] : [];
+    const keywordTags = (article.tags || []).filter(
+      (tag) => tag !== category && tagByLabel[tag]?.kind === "keyword"
+    );
     const groupedTags = [
-      ["\u5c08\u6b04", article.tags.filter((tag) => (tagByLabel[tag]?.kind || "column") === "column")],
-      ["\u95dc\u9375\u5b57", article.tags.filter((tag) => tagByLabel[tag]?.kind === "keyword")]
+      ["\u5c08\u6b04", columnTags],
+      ["\u95dc\u9375\u5b57", keywordTags]
     ].filter(([, tags]) => tags.length > 0);
 
     groupedTags.forEach(([title, tags]) => {
@@ -126,8 +131,10 @@
       group.appendChild(make("span", "article-tag-group-title", title));
       const list = make("div", "article-tag-list-items");
       tags.forEach((tag) => {
+        const tagMeta = tagByLabel[tag];
         const link = make("a", "", tag);
-        link.href = withBase(`/tags/${tagByLabel[tag]?.slug || tag}/`);
+        link.href = tagMeta?.slug ? withBase(`/tags/${tagMeta.slug}/`) : "#";
+        if (!tagMeta?.slug) link.setAttribute("aria-disabled", "true");
         list.appendChild(link);
       });
       group.appendChild(list);

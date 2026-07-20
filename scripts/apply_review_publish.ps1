@@ -60,8 +60,8 @@ if (-not (Test-Path -LiteralPath $PublishFile)) {
   throw "Publish file not found: $PublishFile. Generate it from /review/ or provide it with -PublishFile."
 }
 
-$publish = Read-JsonFile $PublishFile '{ "metadataOverrides": { "quotes": {}, "summaries": {}, "tags": {} } }'
-$overrides = Read-JsonFile $OverridesFile '{ "quotes": {}, "summaries": {}, "tags": {} }'
+$publish = Read-JsonFile $PublishFile '{ "metadataOverrides": { "quotes": {}, "summaries": {}, "categories": {}, "tags": {} } }'
+$overrides = Read-JsonFile $OverridesFile '{ "quotes": {}, "summaries": {}, "categories": {}, "tags": {} }'
 $publishState = Read-JsonFile $PublishStateFile '{ "publicLatestIssueId": "202605", "reviewIssueId": "", "publishedAt": "" }'
 $feedback = Read-JsonFile $FeedbackFile '{ "version": 1, "examples": [] }'
 
@@ -71,6 +71,7 @@ if ($publish.status -eq "has-open-tasks") {
 
 Ensure-ObjectProperty $overrides "quotes"
 Ensure-ObjectProperty $overrides "summaries"
+Ensure-ObjectProperty $overrides "categories"
 Ensure-ObjectProperty $overrides "tags"
 if (-not $feedback.PSObject.Properties["examples"]) {
   $feedback | Add-Member -MemberType NoteProperty -Name "examples" -Value @()
@@ -79,6 +80,7 @@ $publishedIssueId = Resolve-PublishIssueId $publish
 
 $quoteCount = 0
 $summaryCount = 0
+$categoryCount = 0
 $tagCount = 0
 $feedbackCount = 0
 
@@ -118,6 +120,24 @@ if ($summaries) {
   }
 }
 
+$categories = $publish.metadataOverrides.categories
+if ($categories) {
+  foreach ($prop in $categories.PSObject.Properties) {
+    $slug = [string]$prop.Name
+    $value = [string]$prop.Value
+    if ([string]::IsNullOrWhiteSpace($slug) -or [string]::IsNullOrWhiteSpace($value)) {
+      continue
+    }
+
+    if ($overrides.categories.PSObject.Properties[$slug]) {
+      $overrides.categories.$slug = $value
+    } else {
+      $overrides.categories | Add-Member -MemberType NoteProperty -Name $slug -Value $value
+    }
+    $categoryCount += 1
+  }
+}
+
 $tags = $publish.metadataOverrides.tags
 if ($tags) {
   foreach ($prop in $tags.PSObject.Properties) {
@@ -141,7 +161,7 @@ if ($tags) {
 $existingFeedback = @($feedback.examples) | Where-Object { $_ }
 $newFeedback = New-Object System.Collections.Generic.List[object]
 foreach ($report in @($publish.reports)) {
-  $hasMetadata = $report.metadataQuote -or $report.metadataSummary -or @($report.metadataTags).Count -gt 0
+  $hasMetadata = $report.metadataQuote -or $report.metadataSummary -or $report.metadataCategory -or @($report.metadataTags).Count -gt 0
   if (-not $hasMetadata) {
     continue
   }
@@ -155,11 +175,13 @@ foreach ($report in @($publish.reports)) {
     original = [pscustomobject]@{
       quote = [string]$report.originalMetadata.quote
       summary = [string]$report.originalMetadata.summary
+      category = [string]$report.originalMetadata.category
       tags = @($report.originalMetadata.tags)
     }
     corrected = [pscustomobject]@{
       quote = [string]$report.metadataQuote
       summary = [string]$report.metadataSummary
+      category = [string]$report.metadataCategory
       tags = @($report.metadataTags)
     }
     reason = [string]$report.comment
@@ -206,6 +228,7 @@ Write-Host "Applied review publish file."
 Write-Host "Published issue: $publishedIssueId"
 Write-Host "Quote overrides: $quoteCount"
 Write-Host "Summary overrides: $summaryCount"
+Write-Host "Category overrides: $categoryCount"
 Write-Host "Tag overrides: $tagCount"
 Write-Host "AI feedback examples: $feedbackCount"
 Write-Host "Updated: $OverridesFile"
