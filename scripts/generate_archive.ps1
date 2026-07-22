@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 8
+$importCacheVersion = 10
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -43,11 +43,18 @@ $categoryRules = @(
 )
 
 function ConvertTo-PlainText {
-  param([string]$Text)
+  param([string]$Text, [switch]$PreserveLineBreaks)
   if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
   $value = [System.Net.WebUtility]::HtmlDecode($Text)
   $value = $value -replace "[\x00-\x08\x0B\x0C\x0E-\x1F]", ""
-  $value = $value -replace "\s+", " "
+  if ($PreserveLineBreaks) {
+    $value = $value -replace "\r\n?", "`n"
+    $value = $value -replace "[`t ]+", " "
+    $value = $value -replace " *`n *", "`n"
+    $value = $value -replace "`n{3,}", "`n`n"
+  } else {
+    $value = $value -replace "\s+", " "
+  }
   return $value.Trim()
 }
 
@@ -412,12 +419,12 @@ function Read-DocxParagraphs {
         if ($node.LocalName -eq "tab") {
           $parts.Add(" ")
         } elseif ($node.LocalName -eq "br") {
-          $parts.Add(" ")
+          $parts.Add("`n")
         } else {
           $parts.Add($node.InnerText)
         }
       }
-      $text = ConvertTo-PlainText ($parts -join "")
+      $text = ConvertTo-PlainText ($parts -join "") -PreserveLineBreaks
       if ($text) { $paragraphs.Add($text) }
     }
     return $paragraphs.ToArray()
@@ -436,12 +443,58 @@ function Get-DocxEntryText {
     if ($node.LocalName -eq "tab") {
       $parts.Add(" ")
     } elseif ($node.LocalName -eq "br") {
-      $parts.Add(" ")
+      $parts.Add("`n")
     } else {
       $parts.Add($node.InnerText)
     }
   }
-  return ConvertTo-PlainText ($parts -join "")
+  return ConvertTo-PlainText ($parts -join "") -PreserveLineBreaks
+}
+
+function Get-DocxParagraphStyleId {
+  param([System.Xml.XmlNode]$Paragraph, [System.Xml.XmlNamespaceManager]$Ns)
+  $style = $Paragraph.SelectSingleNode("./w:pPr/w:pStyle", $Ns)
+  if (-not $style) { return "" }
+  return $style.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+}
+
+function Test-DocxRunBold {
+  param([System.Xml.XmlNode]$Run, [System.Xml.XmlNamespaceManager]$Ns)
+  $bold = $Run.SelectSingleNode("./w:rPr/w:b", $Ns)
+  if (-not $bold) { return $false }
+  $value = $bold.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+  return (-not $value -or $value -notmatch "^(0|false|off)$")
+}
+
+function Test-DocxParagraphFullyBold {
+  param([System.Xml.XmlNode]$Paragraph, [System.Xml.XmlNamespaceManager]$Ns)
+  $textRuns = @($Paragraph.SelectNodes(".//w:r[.//w:t]", $Ns) | Where-Object {
+    $text = (Get-DocxEntryText $null $_ $Ns).Trim()
+    -not [string]::IsNullOrWhiteSpace($text)
+  })
+  if ($textRuns.Count -eq 0) { return $false }
+  foreach ($run in $textRuns) {
+    if (-not (Test-DocxRunBold $run $Ns)) { return $false }
+  }
+  return $true
+}
+
+function Test-ArticleQuoteStyle {
+  param([string]$StyleId, [string]$StyleName)
+  $value = "$StyleId $StyleName"
+  return ($value -match "(?i)quote|引述|古文|經典|經文")
+}
+
+function Test-ArticleQuoteStartMarker {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
+  return ($Text.Trim() -match "^【\s*(古文引述|經典引述|經文引述|引述開始)\s*】$")
+}
+
+function Test-ArticleQuoteEndMarker {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
+  return ($Text.Trim() -match "^【\s*(引述結束|古文引述結束|經典引述結束|經文引述結束)\s*】$")
 }
 
 function Resolve-DocxMediaTarget {
@@ -494,6 +547,30 @@ function Read-DocxContent {
       }
     }
 
+    $styleNameMap = @{}
+    $stylesEntry = $zip.GetEntry("word/styles.xml")
+    if ($stylesEntry) {
+      $styleReader = New-Object System.IO.StreamReader($stylesEntry.Open(), [System.Text.Encoding]::UTF8)
+      try {
+        [xml]$stylesXml = $styleReader.ReadToEnd()
+      } finally {
+        $styleReader.Dispose()
+      }
+      $styleNs = New-Object System.Xml.XmlNamespaceManager($stylesXml.NameTable)
+      $styleNs.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+      foreach ($style in $stylesXml.SelectNodes("//w:style", $styleNs)) {
+        $styleId = $style.GetAttribute("styleId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        if (-not $styleId) { continue }
+        $nameNode = $style.SelectSingleNode("./w:name", $styleNs)
+        $styleName = if ($nameNode) {
+          $nameNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        } else {
+          ""
+        }
+        $styleNameMap[$styleId] = $styleName
+      }
+    }
+
     $reader = New-Object System.IO.StreamReader($entry.Open(), [System.Text.Encoding]::UTF8)
     try {
       [xml]$xml = $reader.ReadToEnd()
@@ -506,8 +583,20 @@ function Read-DocxContent {
     $ns.AddNamespace("a", "http://schemas.openxmlformats.org/drawingml/2006/main")
     $ns.AddNamespace("r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships")
 
+    $inQuoteBlock = $false
+    $quoteBuffer = New-Object System.Collections.Generic.List[string]
+    $flushQuoteBlock = {
+      if ($quoteBuffer.Count -gt 0) {
+        $blocks.Add(@{
+          type = "quote"
+          text = ($quoteBuffer -join "`n`n")
+        })
+        $quoteBuffer.Clear()
+      }
+    }
     foreach ($p in $xml.SelectNodes("//w:body/w:p", $ns)) {
       foreach ($blip in $p.SelectNodes(".//a:blip", $ns)) {
+        & $flushQuoteBlock
         $rid = $blip.GetAttribute("embed", "http://schemas.openxmlformats.org/officeDocument/2006/relationships")
         if (-not $rid) { $rid = $blip.GetAttribute("link", "http://schemas.openxmlformats.org/officeDocument/2006/relationships") }
         if (-not $rid -or -not $relMap.ContainsKey($rid)) { continue }
@@ -550,10 +639,50 @@ function Read-DocxContent {
 
       $text = Get-DocxEntryText $xml $p $ns
       if ($text) {
+        if (Test-ArticleQuoteEndMarker $text) {
+          & $flushQuoteBlock
+          $inQuoteBlock = $false
+          continue
+        }
+        if (Test-ArticleQuoteStartMarker $text) {
+          & $flushQuoteBlock
+          $inQuoteBlock = $true
+          continue
+        }
+
         $paragraphs.Add($text)
-        $blocks.Add(@{ type = "paragraph"; text = $text })
+        $styleId = Get-DocxParagraphStyleId $p $ns
+        $styleName = if ($styleId -and $styleNameMap.ContainsKey($styleId)) { $styleNameMap[$styleId] } else { "" }
+        $isQuote = $inQuoteBlock -or (Test-ArticleQuoteStyle $styleId $styleName)
+        $inlineQuote = $false
+        $inlineQuoteText = $text
+        if ($text -match "^(古文引述|經典引述|經文引述|引述)\s*[：:]\s*(.+?)\s*$") {
+          $inlineQuote = $true
+          $inlineQuoteText = $Matches[2].Trim()
+        }
+
+        if ($isQuote -or $inlineQuote) {
+          if ($inlineQuoteText) {
+            if ($inlineQuote) {
+              & $flushQuoteBlock
+              $blocks.Add(@{ type = "quote"; text = $inlineQuoteText })
+            } else {
+              $quoteBuffer.Add($inlineQuoteText)
+            }
+          }
+        } else {
+          & $flushQuoteBlock
+          $blocks.Add(@{
+            type = "paragraph"
+            text = $text
+            isBold = Test-DocxParagraphFullyBold $p $ns
+            styleId = $styleId
+            styleName = $styleName
+          })
+        }
       }
     }
+    & $flushQuoteBlock
   } catch {
     Write-Warning "Cannot read DOCX content: $($File.FullName) ($($_.Exception.Message))"
     $warnings.Add("read-error:$($_.Exception.Message)")
@@ -870,12 +999,14 @@ function Parse-LegacyHeader {
 }
 
 function Test-ArticleSectionHeading {
-  param([string]$Text)
+  param([string]$Text, [bool]$IsBold = $false)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
 
   $value = $Text.Trim()
   if ($value.Length -gt 42) { return $false }
   if ($value -match "[。！？；：]$") { return $false }
+
+  if ($IsBold) { return $true }
 
   return (
     $value -match "^#{1,3}\s+\S+" -or
@@ -1105,6 +1236,18 @@ function Select-BodyBlocks {
         [void]$bodyQueue.Dequeue()
         $selected.Add($block)
       }
+    } elseif ($block.type -eq "quote") {
+      if (-not $started) {
+        if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
+          $started = $true
+        } else {
+          continue
+        }
+      }
+      if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
+        [void]$bodyQueue.Dequeue()
+      }
+      $selected.Add($block)
     } elseif ($started) {
       $selected.Add($block)
     }
@@ -1227,7 +1370,7 @@ function Convert-BlocksToDisplayBlocks {
       continue
     }
 
-    $looksHeading = Test-ArticleSectionHeading $block.text
+    $looksHeading = Test-ArticleSectionHeading $block.text ([bool]$block.isBold)
     if ($looksHeading) {
       $display.Add(@{ type = "heading"; text = $block.text })
     } else {

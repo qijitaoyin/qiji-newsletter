@@ -60,6 +60,7 @@ const wordReviewGroups = wordNormalizeIssueIds
 
 const latestReviewArticles = reviewIssueArticles;
 const latestReviewArchive = reviewIssueArchive;
+const reviewPreviewVersion = Date.now().toString();
 const reviewColumnSuggestions = Array.from(
   new Set([
     ...(tagVocabulary.categoryTags ?? []),
@@ -215,14 +216,14 @@ const normalizeCategory = (category: string) => {
             <iframe
               title="電腦版正式文章預覽"
               data-live-frame="desktop"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop`)}
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop&reviewVersion=${reviewPreviewVersion}`)}
             ></iframe>
           </div>
           <div class="review-live-preview review-live-preview-mobile" data-live-viewport-panel="mobile">
             <iframe
               title="手機版正式文章預覽"
               data-live-frame="mobile"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile`)}
+              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
             ></iframe>
           </div>
 
@@ -938,10 +939,11 @@ const normalizeCategory = (category: string) => {
         if (!slug) return;
         const article = syncSelectedArticle(slug);
         if (!article) return;
+        const previewVersion = Date.now().toString();
         liveFrames.forEach((frame) => {
           const viewport = frame.getAttribute("data-live-frame") || "desktop";
           const frameUrl = article.frameUrl
-            ? `${article.frameUrl}${article.frameUrl.includes("?") ? "&" : "?"}reviewViewport=${viewport}`
+            ? `${article.frameUrl}${article.frameUrl.includes("?") ? "&" : "?"}reviewViewport=${viewport}&reviewVersion=${previewVersion}`
             : "";
           if (frameUrl && frame.getAttribute("src") !== frameUrl) {
             frame.setAttribute("src", frameUrl);

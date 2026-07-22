@@ -158,9 +158,23 @@
 
     const blocks = article.contentBlocks || [];
     if (blocks.length > 0) {
+      const mergedBlocks = [];
       blocks.forEach((block) => {
+        const previous = mergedBlocks[mergedBlocks.length - 1];
+        if (block.type === "quote" && previous?.type === "quote") {
+          previous.text = [previous.text, block.text].filter(Boolean).join("\n\n");
+          return;
+        }
+        mergedBlocks.push({ ...block });
+      });
+
+      mergedBlocks.forEach((block) => {
         if (block.type === "heading") {
           body.appendChild(make("h2", "", block.text));
+          return;
+        }
+        if (block.type === "quote") {
+          body.appendChild(make("blockquote", "article-classic-quote", block.text));
           return;
         }
         if (block.type === "image") {

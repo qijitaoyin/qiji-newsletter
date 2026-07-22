@@ -1768,6 +1768,21 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   margin-bottom: 1.45em;
 }
 
+.article-classic-quote {
+  background: #f2ece2;
+  border: 1px solid #ded1bf;
+  color: var(--coffee);
+  font-family: "Noto Serif TC", "Songti TC", serif;
+  font-size: clamp(1.18rem, 1.45vw, 1.48rem);
+  font-weight: 800;
+  line-height: 1.9;
+  margin: clamp(28px, 4vw, 48px) auto;
+  max-width: 760px;
+  padding: clamp(18px, 3vw, 30px);
+  text-align: center;
+  white-space: pre-wrap;
+}
+
 .article-inline-image {
   margin: clamp(28px, 4vw, 48px) 0;
 }

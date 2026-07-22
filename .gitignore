@@ -2,6 +2,7 @@ node_modules/
 .astro/
 dist/
 .cache/
+.codex/
 
 # Local environment and credentials
 .env
@@ -13,6 +14,7 @@ dist/
 # Generated local handoff files
 review-publish.json
 review-approvals.local.json
+reports/import-changed-files.json
 .apps-script-publish/
 
 # Logs

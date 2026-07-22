@@ -96,7 +96,7 @@ export type ArticleSection = {
 
 export type ArticleContentBlock =
   | {
-      type: "heading" | "paragraph";
+      type: "heading" | "paragraph" | "quote";
       text: string;
     }
   | {
