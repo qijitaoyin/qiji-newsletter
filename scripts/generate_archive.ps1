@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 7
+$importCacheVersion = 8
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -869,14 +869,29 @@ function Parse-LegacyHeader {
   return $result
 }
 
+function Test-ArticleSectionHeading {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
+
+  $value = $Text.Trim()
+  if ($value.Length -gt 42) { return $false }
+  if ($value -match "[。！？；：]$") { return $false }
+
+  return (
+    $value -match "^#{1,3}\s+\S+" -or
+    $value -match "^【[^】]{1,36}】$" -or
+    $value -match "^[（(]\s*([一二三四五六七八九十百千]+|\d{1,2})\s*[)）]\s*\S+" -or
+    $value -match "^([一二三四五六七八九十百千]+|\d{1,2})[、.．]\s*\S+"
+  )
+}
+
 function Split-Sections {
   param([string[]]$Paragraphs)
   $sections = New-Object System.Collections.Generic.List[object]
   $current = @{ paragraphs = New-Object System.Collections.Generic.List[string] }
   for ($i = 0; $i -lt $Paragraphs.Count; $i++) {
     $text = $Paragraphs[$i]
-    $next = if ($i + 1 -lt $Paragraphs.Count) { $Paragraphs[$i + 1] } else { "" }
-    $looksHeading = ($text.Length -le 24 -and $next.Length -ge 30 -and $text -notmatch "[。！？；：]$")
+    $looksHeading = Test-ArticleSectionHeading $text
     if ($looksHeading -and $current.paragraphs.Count -gt 0) {
       $sections.Add(@{ paragraphs = $current.paragraphs.ToArray() })
       $current = @{ heading = $text; paragraphs = New-Object System.Collections.Generic.List[string] }
@@ -1212,14 +1227,7 @@ function Convert-BlocksToDisplayBlocks {
       continue
     }
 
-    $nextText = ""
-    for ($j = $i + 1; $j -lt $Blocks.Count; $j++) {
-      if ($Blocks[$j].type -eq "paragraph") {
-        $nextText = $Blocks[$j].text
-        break
-      }
-    }
-    $looksHeading = ($block.text.Length -le 24 -and $nextText.Length -ge 30 -and $block.text -notmatch "[。！？；：]$")
+    $looksHeading = Test-ArticleSectionHeading $block.text
     if ($looksHeading) {
       $display.Add(@{ type = "heading"; text = $block.text })
     } else {
