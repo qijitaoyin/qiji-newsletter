@@ -1773,7 +1773,7 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   border: 1px solid #ded1bf;
   color: var(--coffee);
   font-family: "Noto Serif TC", "Songti TC", serif;
-  font-size: clamp(1.18rem, 1.45vw, 1.48rem);
+  font-size: 1em;
   font-weight: 800;
   line-height: 1.9;
   margin: clamp(28px, 4vw, 48px) auto;
