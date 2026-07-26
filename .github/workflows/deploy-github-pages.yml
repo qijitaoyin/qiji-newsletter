@@ -1,6 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       run_ai:
@@ -30,11 +33,11 @@ on:
       sync_drive:
         description: "Sync Google Drive before build"
         required: true
-        default: "true"
+        default: "false"
         type: choice
         options:
-          - "true"
           - "false"
+          - "true"
       review_publish_json:
         description: "Optional JSON copied from /review/ publish confirmation"
         required: false
