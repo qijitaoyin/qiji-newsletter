@@ -7,10 +7,17 @@ import {
   wordNormalizeItems,
   wordNormalizeSummary
 } from "../data/wordNormalizeReview";
-import { articleTags, reviewIssueArticles, reviewIssueArchive } from "../data/articles";
+import {
+  articleTags,
+  latestIssueArchive,
+  latestIssueArticles,
+  reviewIssueId
+} from "../data/articles";
 import tagVocabulary from "../data/tagVocabulary.json";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
+const deployWorkflowUrl =
+  "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml";
 const importWorkflowUrl =
   "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/import-google-drive.yml";
 
@@ -46,12 +53,20 @@ const reasonLabels: Record<string, string> = {
   "unsupported-legacy-structure": "舊稿格式無法穩定判讀，需人工開啟 Word 修正或補成標準模板。"
 };
 
-const issueGroups = reviewIssueIds.map((issueId) => ({
-  issueId,
-  items: reviewItems.filter((item) => item.issueId === issueId)
-}));
+const issueGroups = reviewIssueIds
+  .filter((issueId) => issueId !== latestIssueArchive?.id)
+  .map((issueId) => ({
+    issueId,
+    items: reviewItems.filter((item) => item.issueId === issueId)
+  }))
+  .sort((a, b) => {
+    if (a.issueId === reviewIssueId) return -1;
+    if (b.issueId === reviewIssueId) return 1;
+    return b.issueId.localeCompare(a.issueId);
+  });
 
 const wordReviewGroups = wordNormalizeIssueIds
+  .filter((issueId) => issueId !== latestIssueArchive?.id)
   .map((issueId) => ({
     issueId,
     items: wordNormalizeItems.filter(
@@ -60,8 +75,8 @@ const wordReviewGroups = wordNormalizeIssueIds
   }))
   .filter((group) => group.items.length > 0);
 
-const latestReviewArticles = reviewIssueArticles;
-const latestReviewArchive = reviewIssueArchive;
+const latestReviewArticles = latestIssueArticles;
+const latestReviewArchive = latestIssueArchive;
 const reviewPreviewVersion = Date.now().toString();
 const reviewColumnSuggestions = Array.from(
   new Set([
@@ -155,10 +170,13 @@ const normalizeCategory = (category: string) => {
           </article>
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
-            <button type="button" data-submit-reimport>{"\u91cd\u65b0\u532f\u5165\u6700\u65b0 Word"}</button>
-            <a class="review-action-link" href={importWorkflowUrl} target="_blank" rel="noreferrer">
-              {"\u53ea\u540c\u6b65 Google Drive \u8207\u532f\u5165 Word"}
+            <a class="review-action-link" href={deployWorkflowUrl} target="_blank" rel="noreferrer">
+              {"更新校對草稿頁"}
             </a>
+            <a class="review-action-link review-action-link-secondary" href={importWorkflowUrl} target="_blank" rel="noreferrer">
+              {"只產生匯入檢查報告"}
+            </a>
+            <p class="review-action-note">修改 Word 後，請先更新校對草稿頁；確認無誤並處理完待辦後，再送出正式發布。</p>
             <div class="review-import-change-report" data-import-change-report></div>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{
@@ -203,7 +221,7 @@ const normalizeCategory = (category: string) => {
                     data-summary={article.aiSummary ?? ""}
                     data-tags={JSON.stringify(article.tags ?? [])}
                     data-url={pathFor(`/articles/${article.slug}/`)}
-                    data-frame-url={pathFor(`/articles/${article.slug}/?reviewFrame=1`)}
+                    data-frame-url={pathFor(`/review-articles/${article.slug}/?reviewFrame=1`)}
                   >
                     {article.title}
                   </option>
@@ -221,14 +239,14 @@ const normalizeCategory = (category: string) => {
             <iframe
               title="電腦版正式文章預覽"
               data-live-frame="desktop"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop&reviewVersion=${reviewPreviewVersion}`)}
+              src={pathFor(`/review-articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop&reviewVersion=${reviewPreviewVersion}`)}
             ></iframe>
           </div>
           <div class="review-live-preview review-live-preview-mobile" data-live-viewport-panel="mobile">
             <iframe
               title="手機版正式文章預覽"
               data-live-frame="mobile"
-              src={pathFor(`/articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
+              src={pathFor(`/review-articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
             ></iframe>
           </div>
 
@@ -374,7 +392,7 @@ const normalizeCategory = (category: string) => {
         </div>
       </section>
 
-      <section class="review-workflow" aria-label="Word 標準化狀態">
+      <section class="review-workflow review-word-normalize-workflow" aria-label="Word 標準化狀態">
         <h2>Word 標準化校對</h2>
         <p>
           這一區是舊稿整理用。系統會顯示它從 Word 前幾行推測出的分類、標題、作者、日期與首段。
@@ -400,7 +418,7 @@ const normalizeCategory = (category: string) => {
         </div>
       </section>
 
-      <section class="review-list" aria-label="Word 標準化校對清單">
+      <section class="review-list review-word-normalize-list" aria-label="Word 標準化校對清單">
         {wordReviewGroups.map((group) => (
           <section class="review-issue" id={`word-${group.issueId}`}>
             <header>
@@ -503,7 +521,7 @@ const normalizeCategory = (category: string) => {
         ))}
       </section>
 
-      <section class="review-workflow" aria-label="匯入校對狀態">
+      <section class="review-workflow review-import-review-workflow" aria-label="匯入校對狀態">
         <h2>正式匯入校對</h2>
         <p>
           這一區是實際上架流程的校對清單。按下「確認可上架」後，文章會被寫入核准 JSON；重新匯入後即可由系統視為校對通過。
@@ -528,7 +546,7 @@ const normalizeCategory = (category: string) => {
         </div>
       </section>
 
-      <section class="review-list" aria-label="匯入校對清單">
+      <section class="review-list review-import-review-list" aria-label="匯入校對清單">
         {issueGroups.map((group) => (
           <section class="review-issue" id={`issue-${group.issueId}`}>
             <header>
@@ -886,7 +904,7 @@ const normalizeCategory = (category: string) => {
         try {
           const url = new URL(value, window.location.href);
           const path = url.pathname.replace(/\/+$/, "");
-          return path.match(/\/articles\/([^/]+)$/)?.[1] || "";
+          return path.match(/\/(?:review-articles|articles)\/([^/]+)$/)?.[1] || "";
         } catch {
           return "";
         }
@@ -982,39 +1000,82 @@ const normalizeCategory = (category: string) => {
         return "標記 Word 已修";
       };
 
+      const metadataFields = [
+        { key: "quote", label: "金句", valueKey: "metadataQuote", payloadKey: "quotes" },
+        { key: "summary", label: "摘要", valueKey: "metadataSummary", payloadKey: "summaries" },
+        { key: "category", label: "專欄", valueKey: "metadataCategory", payloadKey: "categories" },
+        { key: "tags", label: "關鍵字", valueKey: "metadataTags", payloadKey: "tags", isArray: true }
+      ];
+
+      const reportMetadataItems = (report) =>
+        metadataFields
+          .map((field) => {
+            const value = report[field.valueKey];
+            const hasValue = field.isArray ? Array.isArray(value) && value.length > 0 : Boolean(value);
+            return hasValue ? { ...field, value } : null;
+          })
+          .filter(Boolean);
+
+      const metadataDecision = (report, key) => report.metadataDecisions?.[key] || "";
+
+      const isMetadataDecisionComplete = (report) => {
+        const items = reportMetadataItems(report);
+        return items.length > 0 && items.every((item) => metadataDecision(report, item.key));
+      };
+
+      const isReportClosed = (report) =>
+        report.status === "done" ||
+        report.status === "metadata" ||
+        (report.status === "open" && isMetadataDecisionComplete(report));
+
+      const acceptedMetadataItems = (report) =>
+        reportMetadataItems(report).filter((item) => metadataDecision(report, item.key) === "accepted");
+
+      const reportForPublish = (report) => {
+        if (!report.metadataDecisions) return report;
+        const next = { ...report };
+        delete next.metadataQuote;
+        delete next.metadataSummary;
+        delete next.metadataCategory;
+        delete next.metadataTags;
+        acceptedMetadataItems(report).forEach((item) => {
+          next[item.valueKey] = item.value;
+        });
+        return next;
+      };
+
       const buildPublishPayload = () => {
         const reports = readReports();
-        const completedReports = reports.filter((report) =>
-          ["done", "metadata"].includes(report.status)
-        );
-        const openReports = reports.filter((report) =>
-          !["done", "metadata"].includes(report.status)
-        );
+        const completedReports = reports.filter(isReportClosed);
+        const openReports = reports.filter((report) => !isReportClosed(report));
         const quotes = {};
         const summaries = {};
         const categories = {};
         const tags = {};
 
         completedReports.forEach((report) => {
-          if (report.metadataQuote) {
-            quotes[report.articleSlug] = report.metadataQuote;
+          if (report.status === "metadata" && !report.metadataDecisions) {
+            if (report.metadataQuote) quotes[report.articleSlug] = report.metadataQuote;
+            if (report.metadataSummary) summaries[report.articleSlug] = report.metadataSummary;
+            if (report.metadataCategory) categories[report.articleSlug] = report.metadataCategory;
+            if (Array.isArray(report.metadataTags) && report.metadataTags.length) {
+              tags[report.articleSlug] = report.metadataTags;
+            }
+            return;
           }
-          if (report.metadataSummary) {
-            summaries[report.articleSlug] = report.metadataSummary;
-          }
-          if (report.metadataCategory) {
-            categories[report.articleSlug] = report.metadataCategory;
-          }
-          if (Array.isArray(report.metadataTags) && report.metadataTags.length) {
-            tags[report.articleSlug] = report.metadataTags;
-          }
+          acceptedMetadataItems(report).forEach((item) => {
+            if (item.payloadKey === "quotes") quotes[report.articleSlug] = item.value;
+            if (item.payloadKey === "summaries") summaries[report.articleSlug] = item.value;
+            if (item.payloadKey === "categories") categories[report.articleSlug] = item.value;
+            if (item.payloadKey === "tags") tags[report.articleSlug] = item.value;
+          });
         });
 
         return {
           status: openReports.length ? "has-open-tasks" : "ready-to-publish",
           generatedAt: new Date().toISOString(),
           issueId: currentReviewIssueId,
-          reports: completedReports,
+          reports: completedReports.map(reportForPublish),
           openReports,
           metadataOverrides: {
             quotes,
@@ -1026,14 +1087,30 @@ const normalizeCategory = (category: string) => {
       };
 
       const reportCardHtml = (report, compact = false, showArticleTitle = true) => {
-        const hasMetadata = Boolean(
-          report.metadataQuote ||
-            report.metadataSummary ||
-            report.metadataCategory ||
-            (Array.isArray(report.metadataTags) && report.metadataTags.length)
-        );
+        const metadataItems = reportMetadataItems(report);
+        const metadataHtml = metadataItems
+          .map((item) => {
+            const value = Array.isArray(item.value) ? item.value.join(" / ") : item.value;
+            const decision = metadataDecision(report, item.key);
+            const decisionText =
+              decision === "accepted" ? "已採用" : decision === "rejected" ? "已拒絕" : "待確認";
+            return `
+              <div class="review-metadata-task${decision ? ` is-${decision}` : ""}">
+                <strong>${escapeHtml(item.label)}</strong>
+                <span>${escapeHtml(value)}</span>
+                ${compact ? `<em>${escapeHtml(decisionText)}</em>` : `
+                  <div>
+                    <button type="button" data-report-metadata-accept="${escapeHtml(report.id)}" data-metadata-field="${escapeHtml(item.key)}" ${decision ? "disabled" : ""}>採用此項</button>
+                    <button type="button" data-report-metadata-reject="${escapeHtml(report.id)}" data-metadata-field="${escapeHtml(item.key)}" ${decision ? "disabled" : ""}>拒絕此項</button>
+                    <em>${escapeHtml(decisionText)}</em>
+                  </div>
+                `}
+              </div>
+            `;
+          })
+          .join("");
         return `
-        <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${report.status === "metadata" ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
+        <article class="review-task-card${report.status === "done" ? " is-done" : ""}${report.status === "fixed" ? " is-fixed" : ""}${isReportClosed(report) ? " is-metadata" : ""}" data-report-id="${escapeHtml(report.id)}">
           <header>
             <div>
               <small>${escapeHtml(report.articleCategory || report.viewport || "校對回報")}</small>
@@ -1042,18 +1119,13 @@ const normalizeCategory = (category: string) => {
             <small>${reportStatusLabel(report.status)}</small>
           </header>
           <p>${escapeHtml(report.comment)}</p>
-          ${report.metadataQuote ? `<small>&#20154;&#24037;&#37329;&#21477;&#65306;${escapeHtml(report.metadataQuote)}</small>` : ""}
-          ${report.metadataSummary ? `<small>&#20154;&#24037;&#25688;&#35201;&#65306;${escapeHtml(report.metadataSummary)}</small>` : ""}
-          ${report.metadataCategory ? `<small>&#23560;&#27396;&#24314;&#35696;&#65306;${escapeHtml(report.metadataCategory)}</small>` : ""}
-          ${Array.isArray(report.metadataTagSuggestions) && report.metadataTagSuggestions.length ? `<small>&#38364;&#37749;&#23383;&#24314;&#35696;&#65306;${escapeHtml(report.metadataTagSuggestions.join(" / "))}</small>` : ""}
-          ${Array.isArray(report.metadataTags) && report.metadataTags.length ? `<small>&#25505;&#29992;&#24460;&#38364;&#37749;&#23383;&#65306;${escapeHtml(report.metadataTags.join(" / "))}</small>` : ""}
+          ${metadataHtml ? `<div class="review-metadata-task-list">${metadataHtml}</div>` : ""}
           ${report.status === "fixed" ? `<small>&#24050;&#27161;&#35352;&#38656;&#20462; Word&#65307;&#37325;&#26032;&#21295;&#20837; Word &#24460;&#20877;&#27161;&#35352;&#23436;&#25104;&#12290;</small>` : ""}
           ${report.screenshot ? `<small>&#25130;&#22294;&#65306;${escapeHtml(report.screenshot)}</small>` : ""}
           ${report.screenshotDataUrl ? `<img class="review-report-thumb" src="${escapeHtml(report.screenshotDataUrl)}" alt="校對截圖" />` : ""}
           ${compact ? "" : `
             <div class="review-task-card-actions">
               <button type="button" data-report-next="${escapeHtml(report.id)}">${reportPrimaryAction(report.status)}</button>
-              ${hasMetadata ? `<button type="button" data-report-metadata="${escapeHtml(report.id)}">&#25505;&#29992;&#28858;&#32178;&#31449;&#36039;&#26009;</button>` : ""}
               <button type="button" data-report-remove="${escapeHtml(report.id)}">刪除此回報</button>
             </div>
           `}
@@ -1061,7 +1133,7 @@ const normalizeCategory = (category: string) => {
       `;
       };
 
-      const isCompletedReport = (report) => ["done", "metadata"].includes(report.status);
+      const isCompletedReport = (report) => isReportClosed(report);
 
       const groupedReportsHtml = (reports) => {
         if (!reports.length) return '<p class="review-empty-state">目前沒有修正意見。</p>';
@@ -1827,22 +1899,31 @@ const normalizeCategory = (category: string) => {
       reportBoard?.addEventListener("click", (event) => {
         const nextButton = event.target.closest("[data-report-next]");
         const removeButton = event.target.closest("[data-report-remove]");
-        const metadataButton = event.target.closest("[data-report-metadata]");
-        if (!nextButton && !removeButton && !metadataButton) return;
+        const metadataAcceptButton = event.target.closest("[data-report-metadata-accept]");
+        const metadataRejectButton = event.target.closest("[data-report-metadata-reject]");
+        if (!nextButton && !removeButton && !metadataAcceptButton && !metadataRejectButton) return;
         const id =
           nextButton?.dataset.reportNext ||
           removeButton?.dataset.reportRemove ||
-          metadataButton?.dataset.reportMetadata ||
+          metadataAcceptButton?.dataset.reportMetadataAccept ||
+          metadataRejectButton?.dataset.reportMetadataReject ||
+          "";
+        const metadataField =
+          metadataAcceptButton?.dataset.metadataField ||
+          metadataRejectButton?.dataset.metadataField ||
           "";
         const reports = readReports();
         const next = removeButton
           ? reports.filter((report) => report.id !== id)
           : reports.map((report) =>
               report.id === id
-                ? metadataButton
+                ? metadataAcceptButton || metadataRejectButton
                   ? {
                       ...report,
-                      status: "metadata",
+                      metadataDecisions: {
+                        ...(report.metadataDecisions || {}),
+                        [metadataField]: metadataAcceptButton ? "accepted" : "rejected"
+                      },
                       metadataUpdatedAt: new Date().toISOString()
                     }
                   : {

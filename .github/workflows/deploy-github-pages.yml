@@ -121,9 +121,26 @@ jobs:
         shell: pwsh
         run: |
           if ("${{ inputs.sync_drive }}" -eq "true" -and $env:GOOGLE_DRIVE_REMOTE) {
+            Copy-Item -LiteralPath src/data/generatedArticles.ts -Destination $env:RUNNER_TEMP/generatedArticles.published.ts -Force
             ./scripts/generate_archive.ps1
           } else {
             Write-Host "No Google Drive remote configured; using committed generated data."
+          }
+
+      - name: Separate review draft from published data
+        if: ${{ inputs.sync_drive == 'true' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        shell: pwsh
+        run: |
+          $draft = Get-Content -LiteralPath src/data/generatedArticles.ts -Raw
+          $draft = $draft -replace 'generatedArticles', 'reviewDraftArticles'
+          $draft = $draft -replace 'generatedIssues', 'reviewDraftIssues'
+          Set-Content -LiteralPath src/data/reviewDraftArticles.ts -Value $draft -Encoding UTF8
+
+          if ([string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) {
+            Copy-Item -LiteralPath $env:RUNNER_TEMP/generatedArticles.published.ts -Destination src/data/generatedArticles.ts -Force
+            Write-Host "Synced Word is available in review draft data and import reports. Published article data was restored."
+          } else {
+            Write-Host "Publish confirmation provided; synced Word remains promoted as published article data."
           }
 
       - name: Generate AI metadata
@@ -166,14 +183,14 @@ jobs:
       - name: Persist review publish state
         if: ${{ inputs.review_publish_json != '' }}
         run: |
-          if git diff --quiet -- review-publish.json src/data/editorialOverrides.json src/data/publishState.json src/data/aiFeedbackExamples.json; then
+          if git diff --quiet -- review-publish.json src/data/editorialOverrides.json src/data/publishState.json src/data/aiFeedbackExamples.json src/data/generatedArticles.ts src/data/generatedReview.ts src/data/reviewDraftArticles.ts public/assets/articles public/data/import-changed-files.json; then
             echo "Review publish state unchanged."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add review-publish.json src/data/editorialOverrides.json src/data/publishState.json src/data/aiFeedbackExamples.json
+          git add review-publish.json src/data/editorialOverrides.json src/data/publishState.json src/data/aiFeedbackExamples.json src/data/generatedArticles.ts src/data/generatedReview.ts src/data/reviewDraftArticles.ts public/assets/articles public/data/import-changed-files.json
           git commit -m "Publish reviewed issue"
           git push
 

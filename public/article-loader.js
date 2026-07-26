@@ -15,6 +15,9 @@
     return `${basePath.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
   };
 
+  const reviewArticleUrl = withBase(`/data/review-articles/${page.dataset.slug}.json`);
+  const dataUrl = isReviewFrame ? reviewArticleUrl : articleUrl;
+
   const normalizeCategory = (category = "") => {
     if (category.startsWith("如是我")) return "如是我聞";
     return category;
@@ -38,7 +41,7 @@
   };
 
   const articleHref = (slug) => {
-    const href = withBase(`/articles/${slug}/`);
+    const href = withBase(isReviewFrame ? `/review-articles/${slug}/` : `/articles/${slug}/`);
     if (!isReviewFrame) return href;
     const url = new URL(href, window.location.href);
     url.searchParams.set("reviewFrame", "1");
@@ -325,7 +328,7 @@
     });
   };
 
-  fetch(articleUrl, { headers: { accept: "application/json" } })
+  fetch(dataUrl, { headers: { accept: "application/json" }, cache: isReviewFrame ? "no-store" : "default" })
     .then((response) => {
       if (!response.ok) throw new Error(`Article JSON not found: ${response.status}`);
       return response.json();

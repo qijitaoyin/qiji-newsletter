@@ -1,0 +1,144 @@
+---
+import "../../styles/global.css";
+import { reviewArticles } from "../../data/articles";
+import { pathFor } from "../../utils/paths";
+
+export function getStaticPaths() {
+  return reviewArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: {
+      slug: article.slug,
+      title: article.title,
+      excerpt: article.excerpt
+    }
+  }));
+}
+
+const { slug, title, excerpt } = Astro.props;
+---
+
+<html lang="zh-Hant" data-base-path={pathFor("/")}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={excerpt} />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
+    <title>{title} - 氣機導引電子報</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
+        <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>
+        <span class="brand-text">
+          <strong>氣機導引電子報</strong>
+          <small>Qiji Newsletter</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="主要導覽">
+          <a href={pathFor("/#newest")}>最新一期</a>
+          <a href={pathFor("/archive/")}>歷史期數</a>
+          <a href={pathFor("/topics/")}>主題分類</a>
+          <a href="https://www.qiji.org.tw/" target="_blank" rel="noreferrer">氣機導引官網</a>
+        </nav>
+        <form class="site-search" action={pathFor("/archive/")} aria-label="搜尋文章">
+          <input id="quick-keyword" name="keyword" type="search" placeholder="搜尋文章" />
+          <button type="submit" aria-label="搜尋">SEARCH</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="article-page" data-article-page data-slug={slug} data-article-json={pathFor(`/data/review-articles/${slug}.json`)}>
+      <article>
+        <header class="article-hero">
+          <div class="article-hero-grid has-no-cover" data-article-hero-grid>
+            <div class="article-hero-copy">
+              <p class="meta-line" data-article-meta></p>
+              <h1 class="title-fixed" data-article-title>{title}</h1>
+              <p class="article-hero-quote" data-article-quote hidden></p>
+              <p class="article-subtitle" data-article-subtitle hidden></p>
+              <p class="article-byline" data-article-byline></p>
+            </div>
+            <figure class="article-cover" data-article-cover hidden>
+              <img data-article-cover-img src="" alt="" />
+              <figcaption data-article-cover-caption hidden></figcaption>
+            </figure>
+          </div>
+        </header>
+
+        <div class="article-shell">
+          <button
+            class="article-menu-toggle"
+            type="button"
+            aria-controls="article-side-menu"
+            aria-expanded="false"
+            data-article-menu-toggle
+          >
+            <span class="article-menu-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="article-menu-toggle-text">目錄</span>
+          </button>
+          <div class="article-menu-backdrop" data-article-menu-close></div>
+          <aside id="article-side-menu" class="article-sidebar" aria-label="文章導覽">
+            <button class="article-menu-close" type="button" aria-label="關閉目錄" data-article-menu-close>×</button>
+            <nav class="article-sidebar-block article-issue-menu" aria-label="本期文章目錄">
+              <strong>目錄</strong>
+              <div data-article-issue-menu></div>
+            </nav>
+
+            <div class="article-sidebar-block">
+              <strong>主題分類</strong>
+              <div class="article-tag-list" data-article-tags></div>
+            </div>
+          </aside>
+
+          <div class="article-main">
+            <section class="article-ai-guide" aria-label="AI 摘要" data-article-ai-guide hidden>
+              <h2>AI 摘要</h2>
+              <p class="article-ai-summary" data-article-ai-summary></p>
+            </section>
+            <div class="article-tools" aria-label="字級調整">
+              <span>字級</span>
+              <div class="font-size-control" role="group" aria-label="文章字級">
+                <button type="button" data-font-size="small">小</button>
+                <button type="button" data-font-size="medium" class="is-active">中</button>
+                <button type="button" data-font-size="large">大</button>
+              </div>
+            </div>
+
+            <div class="article-body" data-article-body data-font-size="medium">
+              <p>文章載入中...</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <nav class="article-pager" aria-label="上一篇與下一篇" data-article-pager hidden></nav>
+
+      <section class="content-block article-related" aria-labelledby="related-title" data-article-related-section hidden>
+        <div class="block-title">
+          <h2 id="related-title">相關閱讀</h2>
+        </div>
+        <div class="compact-grid" data-article-related></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <strong>社團法人中華氣機導引文化研究會</strong>
+        <p>10046台北市中正區重慶南路一段57號9樓之6</p>
+        <p>電話：<span>02-23111166</span>　傳真：<span>02-23757878</span></p>
+        <p>電子信箱 <a href="mailto:chiji.taoyin@msa.hinet.net">chiji.taoyin@msa.hinet.net</a></p>
+        <p class="footer-copy">社團法人中華氣機導引文化研究會 版權所有 QIJI-DAOYIN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src={pathFor("/article-loader.js")}></script>
+    <script src={pathFor("/mobile-header.js")}></script>
+  </body>
+</html>

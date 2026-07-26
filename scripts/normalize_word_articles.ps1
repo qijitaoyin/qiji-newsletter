@@ -1,5 +1,6 @@
 ﻿param(
   [string]$Root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
+  [string]$SourceRoot = $env:QIJI_ARTICLE_SOURCE_ROOT,
   [switch]$DryRun
 )
 
@@ -8,7 +9,16 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-$sourceRoot = Join-Path $Root "各期電子報"
+$defaultQijitaoyinSourceRoot = "H:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報"
+if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
+  if (Test-Path -LiteralPath $defaultQijitaoyinSourceRoot) {
+    $SourceRoot = $defaultQijitaoyinSourceRoot
+  } else {
+    $SourceRoot = Join-Path $Root "各期電子報"
+  }
+}
+$sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
+Write-Host "Word source root: $sourceRoot"
 $reportDir = Join-Path $Root "reports"
 $generatedWordReviewPath = Join-Path $Root "src\data\generatedWordNormalizeReview.ts"
 New-Item -ItemType Directory -Force -Path $reportDir | Out-Null

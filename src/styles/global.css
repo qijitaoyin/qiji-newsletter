@@ -2174,6 +2174,31 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   display: block;
 }
 
+.review-mode-panel[data-review-mode-panel="legacy"].is-active {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-import-review-workflow {
+  order: 1;
+}
+
+.review-import-review-list {
+  order: 2;
+}
+
+.review-word-normalize-workflow {
+  order: 3;
+}
+
+.review-word-normalize-list {
+  order: 4;
+}
+
+.review-approval-panel {
+  order: 5;
+}
+
 .review-local-nav a {
   pointer-events: none;
 }
@@ -2355,6 +2380,60 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 .review-task-card small {
   color: var(--muted);
   font-weight: 800;
+}
+
+.review-metadata-task-list {
+  display: grid;
+  gap: 8px;
+}
+
+.review-metadata-task {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 72px minmax(0, 1fr) auto;
+  padding: 8px 10px;
+}
+
+.review-metadata-task span {
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.review-metadata-task div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.review-metadata-task button {
+  min-height: 32px;
+  padding: 5px 8px;
+}
+
+.review-metadata-task button:nth-child(n + 2) {
+  background: transparent;
+  color: var(--brown);
+}
+
+.review-metadata-task em {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.review-metadata-task.is-accepted {
+  border-color: rgba(66, 109, 71, 0.35);
+}
+
+.review-metadata-task.is-rejected {
+  opacity: 0.62;
 }
 
 .review-task-card-actions {
@@ -2738,14 +2817,26 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
 .review-summary-actions .review-action-link {
   align-items: center;
-  background: transparent;
+  background: var(--brown);
   border: 1px solid var(--brown);
-  color: var(--brown);
+  color: var(--paper);
   display: inline-flex;
   font-size: 0.9rem;
   font-weight: 900;
   min-height: 38px;
   padding: 7px 10px;
+}
+
+.review-summary-actions .review-action-link-secondary {
+  background: transparent;
+  color: var(--brown);
+}
+
+.review-action-note {
+  color: var(--muted);
+  flex-basis: 100%;
+  font-size: 0.82rem;
+  margin: 2px 0 0;
 }
 
 .review-summary-actions button:nth-of-type(n + 2) {

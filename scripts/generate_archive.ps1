@@ -1,5 +1,6 @@
 ﻿param(
-  [string]$Root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+  [string]$Root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
+  [string]$SourceRoot = $env:QIJI_ARTICLE_SOURCE_ROOT
 )
 
 $ErrorActionPreference = "Stop"
@@ -7,7 +8,16 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-$sourceRoot = Join-Path $Root "各期電子報"
+$defaultQijitaoyinSourceRoot = "H:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報"
+if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
+  if (Test-Path -LiteralPath $defaultQijitaoyinSourceRoot) {
+    $SourceRoot = $defaultQijitaoyinSourceRoot
+  } else {
+    $SourceRoot = Join-Path $Root "各期電子報"
+  }
+}
+$sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
+Write-Host "Article source root: $sourceRoot"
 $publicArticles = Join-Path $Root "public\assets\articles"
 $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
@@ -1654,6 +1664,7 @@ if (Test-Path -LiteralPath $importCachePath) {
 
 foreach ($issueDir in $issueDirs) {
   $issueId = ([regex]::Match($issueDir.Name, "20\d{4}")).Value
+  Write-Host "Importing issue $issueId from $($issueDir.FullName)"
   $year = $issueId.Substring(0, 4)
   $month = $issueId.Substring(4, 2)
   $issueNumber = Get-IssueNumber $issueId
@@ -1665,6 +1676,7 @@ foreach ($issueDir in $issueDirs) {
   $order = 0
   foreach ($file in $files) {
     $stem = [IO.Path]::GetFileNameWithoutExtension($file.Name)
+    Write-Host "  Reading $($file.Name)"
     $sourceId = Get-SourceId $issueId $stem
     $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint
     $cachedEntry = $cacheMap[[string]$signature.key]
@@ -1701,7 +1713,7 @@ foreach ($issueDir in $issueDirs) {
     $changedImportFiles.Add([pscustomobject]@{
       issueId = $issueId
       fileName = $file.Name
-      relativePath = (Get-RelativePath $Root $file.FullName)
+      relativePath = (Get-RelativePath $file.FullName $sourceRoot)
       status = if ($cachedEntry) { "updated" } else { "new" }
     })
 
