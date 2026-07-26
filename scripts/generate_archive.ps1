@@ -13,7 +13,7 @@ $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 10
+$importCacheVersion = 11
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -479,6 +479,25 @@ function Test-DocxParagraphFullyBold {
   return $true
 }
 
+function Get-DocxParagraphMaxFontSizeHalfPoints {
+  param([System.Xml.XmlNode]$Paragraph, [System.Xml.XmlNamespaceManager]$Ns)
+  $maxSize = 0
+  foreach ($sizeNode in $Paragraph.SelectNodes(".//w:rPr/w:sz", $Ns)) {
+    $value = $sizeNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+    $parsed = 0
+    if ([int]::TryParse($value, [ref]$parsed) -and $parsed -gt $maxSize) {
+      $maxSize = $parsed
+    }
+  }
+  return $maxSize
+}
+
+function Test-ArticleHeadingStyle {
+  param([string]$StyleId, [string]$StyleName)
+  $value = "$StyleId $StyleName"
+  return ($value -match "(?i)heading|標題|小標題")
+}
+
 function Test-ArticleQuoteStyle {
   param([string]$StyleId, [string]$StyleName)
   $value = "$StyleId $StyleName"
@@ -488,13 +507,13 @@ function Test-ArticleQuoteStyle {
 function Test-ArticleQuoteStartMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
-  return ($Text.Trim() -match "^【\s*(古文引述|經典引述|經文引述|引述開始)\s*】$")
+  return ($Text.Trim() -match "^【\s*(古文引述|引述古文|引述古文開始|經典引述|經文引述|引述開始)\s*】$")
 }
 
 function Test-ArticleQuoteEndMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
-  return ($Text.Trim() -match "^【\s*(引述結束|古文引述結束|經典引述結束|經文引述結束)\s*】$")
+  return ($Text.Trim() -match "^【\s*(引述結束|古文引述結束|引述古文結束|經典引述結束|經文引述結束)\s*】$")
 }
 
 function Resolve-DocxMediaTarget {
@@ -676,6 +695,8 @@ function Read-DocxContent {
             type = "paragraph"
             text = $text
             isBold = Test-DocxParagraphFullyBold $p $ns
+            isLargeFont = ((Get-DocxParagraphMaxFontSizeHalfPoints $p $ns) -ge 28)
+            isHeadingStyle = Test-ArticleHeadingStyle $styleId $styleName
             styleId = $styleId
             styleName = $styleName
           })
@@ -999,14 +1020,19 @@ function Parse-LegacyHeader {
 }
 
 function Test-ArticleSectionHeading {
-  param([string]$Text, [bool]$IsBold = $false)
+  param(
+    [string]$Text,
+    [bool]$IsBold = $false,
+    [bool]$IsLargeFont = $false,
+    [bool]$IsHeadingStyle = $false
+  )
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
 
   $value = $Text.Trim()
   if ($value.Length -gt 42) { return $false }
   if ($value -match "[。！？；：]$") { return $false }
 
-  if ($IsBold) { return $true }
+  if ($IsBold -or $IsLargeFont -or $IsHeadingStyle) { return $true }
 
   return (
     $value -match "^#{1,3}\s+\S+" -or
@@ -1370,7 +1396,7 @@ function Convert-BlocksToDisplayBlocks {
       continue
     }
 
-    $looksHeading = Test-ArticleSectionHeading $block.text ([bool]$block.isBold)
+    $looksHeading = Test-ArticleSectionHeading $block.text ([bool]$block.isBold) ([bool]$block.isLargeFont) ([bool]$block.isHeadingStyle)
     if ($looksHeading) {
       $display.Add(@{ type = "heading"; text = $block.text })
     } else {

@@ -60,9 +60,6 @@
     if (!byline) return;
     byline.textContent = "";
     if (article.author) byline.appendChild(make("span", "", article.author));
-    const time = make("time", "", article.date);
-    time.setAttribute("datetime", article.date || "");
-    byline.appendChild(time);
   };
 
   const renderCover = (article) => {

@@ -230,7 +230,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人類的語言與溝通劃分為三個維度的躍遷，這不僅是表達工具的升級，更是靈魂覺性與一體性智慧開展的深刻過程。",
         "tags":  [
                      "如是我聞",
@@ -243,7 +243,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7478924.jpg?v=7478924"
     },
     {
         "contentBlocks":  [
@@ -647,7 +647,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "垂直升降在教你們用命門呼吸。吸氣時尾閭往前，從湧泉收提上來，命門打開，脊椎打直，下巴內收，氣就上去了。吐氣時，命門往前，尾閭打開，吐氣，直下陰蹻（在腳跟），返湧泉。",
         "tags":  [
                      "如是我聞",
@@ -660,123 +660,11 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8362234.jpg?v=8362234"
     },
     {
         "contentBlocks":  [
-                              {
-                                  "text":  "第74章 司殺",
-                                  "type":  "quote"
-                              },
-                              {
-                                  "text":  "民不畏死，奈何以死懼之。\n若使民常畏死，而為奇者，吾得執而殺之，孰敢！常有司殺者殺。\n夫代司殺者殺，是謂代大匠斲。\n夫代大匠斲者，希有不傷其手矣！",
-                                  "type":  "quote"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "《道德經》第七十四章，看似談生死，實則從身體出發，談練功者的做人與如何面對生命的法則。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "民不畏死，奈何以死懼之。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "人遇到事情時，要先學會向內看見自己。就像練習理灰、埋炭、泡茶或練功，表面上是手腕的運用，其實是在練習靜心。做動作時，能否放鬆，能否向內走到鬆開自己。功夫就在這裡。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "假使事事講求效率，處處用力或控制，這種習慣會反映在做人、做事與生活之中。久而久之，是讓身體長期處於緊繃的狀態，最後連細胞都逐漸適應了這樣的環境。「奈何以死懼之」，等到身體發出警訊時，才開始害怕、焦慮，想方設法逼迫它改變，身體又怎會立即回應？所以，真正需要改變的，是自己面對生命的態度。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "若使民常畏死，而為奇者，吾得執而殺之，孰敢。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "所謂「奇」，就是偏離正常、偏離自然。身體所有的變化，都不是偶然。血壓升高、血醣波動、三酸甘油脂異常、眼壓高低、肢體痠痛等症狀，都是身體細胞在提醒我們，此刻面對外在環境的生活方式或情緒狀態，已經偏離了原本的平衡。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "然而，許多人一看到檢查數值異常，第一個反應便是急著把數值壓回正常值，此即是「吾得執而殺之」，卻未能靜下來思考自己。所謂「奇」者，正是身體細胞發出的訊息，提醒生命主人的方式。若一昧罔顧身體發出的警訊，以人為方式阻斷身體的訊號，如用藥阻斷或停止身體訊息，便是「吾得執而殺之」。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「孰敢？」倘若生命主人總是這般對待身體，往後細胞還敢發出警訊給你嗎？"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "常有司殺者殺"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「司殺者」即專門管理「殺」的法則。萬物有生滅輪迴，四時有寒來暑往，天地之間自有運行的法則。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "身體亦然。血壓本是動態數值，其中自有回調之機制，關鍵在於理解其自然運行，而非急於控制結果。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "練功更是如此。氣血的運行、呼吸的配合、每一個動作轉換都有其自然節奏與運作原理。假如有人試圖代替「司殺者」而妄加干預，任何多餘的介入，都可能打亂原本已在運行的系統。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "夫代司殺者殺，是謂代大匠斲。夫代大匠斲者，希有不傷其手矣。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "老子用木匠來比喻自然法則。真正的木匠知道木頭的紋理，也知道什麼時候該下斧、什麼時候該收手。"
-                              },
-                              {
-                                  "styleName":  "",
-                                  "styleId":  "",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "香道有香道的規矩，茶道有茶道的法度，練功也有其心法。前人留下來的，不只是形式，更是長時間累積的經驗與智慧傳承。若有人以自身意志取代自然運行的法則來決定生滅，就如同只談心靈語言，卻無法付諸實際行動，其內在尚未與眾生真正相融，仍停留在獨善其身的狀態。這樣的人不尊重自然運行的規律，反而成為自以為是的決斷者。此即所謂「代大匠斲」——以外行之手代替自然法則行事，如同不懂木工卻代替木匠砍削木材。外行代替內行，往往不是誤及他人，也讓自身逐漸失去對自然運行的感知力。"
-                              }
+
                           ],
         "date":  "2026.07.10",
         "order":  3,
@@ -789,7 +677,10 @@ export const generatedArticles = [
                          {
                              "paragraphs":  [
                                                 "第74章 司殺",
-                                                "民不畏死，奈何以死懼之。\n若使民常畏死，而為奇者，吾得執而殺之，孰敢！常有司殺者殺。\n夫代司殺者殺，是謂代大匠斲。\n夫代大匠斲者，希有不傷其手矣！",
+                                                "民不畏死，奈何以死懼之。",
+                                                "若使民常畏死，而為奇者，吾得執而殺之，孰敢！常有司殺者殺。",
+                                                "夫代司殺者殺，是謂代大匠斲。",
+                                                "夫代大匠斲者，希有不傷其手矣！",
                                                 "《道德經》第七十四章，看似談生死，實則從身體出發，談練功者的做人與如何面對生命的法則。",
                                                 "民不畏死，奈何以死懼之。",
                                                 "人遇到事情時，要先學會向內看見自己。就像練習理灰、埋炭、泡茶或練功，表面上是手腕的運用，其實是在練習靜心。做動作時，能否放鬆，能否向內走到鬆開自己。功夫就在這裡。",
@@ -810,8 +701,8 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
-        "excerpt":  "民不畏死，奈何以死懼之。\n若使民常畏死，而為奇者，吾得執而殺之，孰敢！常有司殺者殺。\n夫代司殺者殺，是謂代大匠斲。\n夫代大匠斲者，希有不傷其手矣！",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "《道德經》第七十四章，看似談生死，實則從身體出發，談練功者的做人與如何面對生命的法則。",
         "tags":  [
                      "體證道德經",
                      "道德經"
@@ -823,7 +714,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2552777.jpg?v=2552777"
     },
     {
         "contentBlocks":  [
@@ -1083,7 +974,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人總以為自己活在一個由物質組成的世界，但如果世界只是生命顯化的一個維度呢？《道德經》提出「道生一，一生二，二生三，三生萬物」，提供我們理解生命的視角。因此，從道、光、愛，理性、界樁到能量轉換，…",
         "tags":  [
                      "如是我聞",
@@ -1096,7 +987,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7772516.jpg?v=7772516"
     },
     {
         "contentBlocks":  [
@@ -1420,7 +1311,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人到底活在什麼頻率裡？又要怎麼從低維的認知、物質、界樁與執著之中，慢慢回到靈魂真正該走的路？很多人活著，好像很清楚自己在追求什麼，但再往深一點看，就會發現大部分的人，其實都活在被安排、被推動、…",
         "tags":  [
                      "如是我聞",
@@ -1433,7 +1324,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5415202.jpg?v=5415202"
     },
     {
         "contentBlocks":  [
@@ -1669,7 +1560,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "什麼是「於無明見己明」？又該怎麼做呢？用手掌來比方：手背這一面是「明」，是NPC，你被安排好照劇本走。手心這一面叫作「無明」。「無無明，亦無無明盡」，大家都耳熟能詳。然而，無明不是莫名其妙、說…",
         "tags":  [
                      "如是我聞"
@@ -1681,7 +1572,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6925567.jpg?v=6925567"
     },
     {
         "contentBlocks":  [
@@ -2312,7 +2203,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "今年開始，世界將有很大的改變，在我滿六十五歲那年，世界也會進入新的階段。你們要開始學會用「頻率」看世界，不只是看人，而是看陽光底下的一切。所有存在，本質都是頻率。",
         "tags":  [
                      "如是我聞",
@@ -2325,7 +2216,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6791984.jpg?v=6791984"
     },
     {
         "contentBlocks":  [
@@ -2459,7 +2350,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第245期 / 2026.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "黃仁勳近期在台灣頻繁展現親民作風，如逛夜市吃小吃、穿著標誌性的黑夾克到處串場，試圖將自己塑造成與台灣本土文化緊密結合的代表人物。這是一場精心策劃的公關策略，目的是為了獲取從底層人心到頂層產業界…",
         "tags":  [
                      "如是我聞",
@@ -2472,7 +2363,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202607-2607-3-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5336674.jpg?v=5336674"
     },
     {
         "contentBlocks":  [
@@ -4459,7 +4350,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "本期各篇文章從起式、收式的心法與做法，延伸至廣袤無涯的個人內在修煉，而本應在上一期刊出的專欄三〈山腳下的蘆葦〉看似與各文風格迥異，一內一外、一動一靜，然而它卻巧妙地與其他文章在無聲處悄悄交會─…",
         "tags":  [
                      "編輯小語"
@@ -4471,7 +4362,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5478471.jpg?v=5478471"
     },
     {
         "contentBlocks":  [
@@ -4611,7 +4502,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "道者，萬物之奧，善人之寶，不善人之所保。美言可以市尊，美行可以加人。人之不善，何棄之有？故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下…",
         "tags":  [
                      "體證道德經",
@@ -4624,7 +4515,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205426.jpg?v=5205426"
     },
     {
         "contentBlocks":  [
@@ -4740,7 +4631,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅…",
         "tags":  [
                      "圖靈集",
@@ -4753,7 +4644,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6570768.jpg?v=6570768"
     },
     {
         "contentBlocks":  [
@@ -4829,7 +4720,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…",
         "tags":  [
                      "山腳下的蘆葦",
@@ -4842,7 +4733,7 @@ export const generatedArticles = [
         "category":  "山腳下的蘆葦",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6476829.jpg?v=6476829"
     },
     {
         "contentBlocks":  [
@@ -5126,7 +5017,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整…",
         "tags":  [
                      "如是我聞"
@@ -5138,7 +5029,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4777410.jpg?v=4777410"
     },
     {
         "contentBlocks":  [
@@ -5366,7 +5257,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值…",
         "tags":  [
                      "如是我聞"
@@ -5378,7 +5269,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5432633.jpg?v=5432633"
     },
     {
         "contentBlocks":  [
@@ -5486,7 +5377,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大…",
         "tags":  [
                      "如是我聞"
@@ -5498,7 +5389,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5688356.jpg?v=5688356"
     },
     {
         "contentBlocks":  [
@@ -5814,7 +5705,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第234期 / 2025.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做…",
         "tags":  [
                      "如是我聞"
@@ -5826,7 +5717,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202508-2508-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1061327.jpg?v=1061327"
     },
     {
         "contentBlocks":  [
@@ -5878,7 +5769,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師的新書《大地瑰寶奇楠 古今香見—迎接嫁接時代》隆重出版了！這本書凝聚遠近相接引的因緣、集結眾多孜孜不倦的綿薄之力而成。從文字、圖片看，講的是作者二十年苦心孤詣進行奇楠嫁接的經驗與心得；從…",
         "tags":  [
                      "編輯小語"
@@ -5890,7 +5781,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6545366.jpg?v=6545366"
     },
     {
         "contentBlocks":  [
@@ -6046,7 +5937,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "就像大地會長出蘿蔔、人蔘，人類也不斷在生產創造。藝術家生產藝術品，宗教家講經，物理學家發現理論，數學家解方程式，思想家建構思想……這些產物，全都是本於道的頻率坍縮後的顯象。他們怎麼觀察，就是他…",
         "tags":  [
                      "如是我聞"
@@ -6058,7 +5949,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-2-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3544190.jpg?v=3544190"
     },
     {
         "contentBlocks":  [
@@ -6166,7 +6057,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我就是魔，我才不要讓你們像我，所以都叫你們像自己，而且做一個無限可能的自己。那麼，等你們當魔的時候，你就知道神是誰。沒有在魔的位置，永遠看不到神。欲成神必先成魔，這是一個大秘密，我講出來要被砍…",
         "tags":  [
                      "如是我聞"
@@ -6178,7 +6069,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7528184.jpg?v=7528184"
     },
     {
         "contentBlocks":  [
@@ -6342,7 +6233,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "大國者下流，天下之交。天下之牝，牝常以靜勝牡，以靜為下。故大國以下小國，則取小國；小國以下大國，則取大國。故或下以取，或下而取。大國不過欲兼畜人，小國不過欲入事人。夫兩者各得其所欲，大者宜為下…",
         "tags":  [
                      "體證道德經",
@@ -6355,7 +6246,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2675844.jpg?v=2675844"
     },
     {
         "contentBlocks":  [
@@ -6496,7 +6387,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我是磕頭拜師長大，都要包紅包給師父的。傳統的拜師教學體系，初階是門外弟子，或叫門外漢，是跟著大家在外面學習的人，平時除了學動作比劃外，還要做灑掃的工作。等學到能夠被認可跨越門檻的程度，就是入堂…",
         "tags":  [
                      "導引按蹻",
@@ -6509,7 +6400,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4834327.jpg?v=4834327"
     },
     {
         "contentBlocks":  [
@@ -6713,7 +6604,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "幸福無需追求，因為追求不到；你只要感覺，而不是想法。跟人接觸，如果都會覺得感恩，有這種感覺出現的時候，恭喜你，你已經慢慢進入一個重整的變化，慢慢變成了「人」了。每一個人身上一定有天、人、阿修羅…",
         "tags":  [
                      "如是我聞"
@@ -6725,7 +6616,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2568547.jpg?v=2568547"
     },
     {
         "contentBlocks":  [
@@ -6926,7 +6817,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "和張良維老師合作嫁接野生奇楠、復育沉香山的源起，是從1997年起我就開始幫張老師廣收海南、香港、廣東及雲南產地的沉香，一直到現在近30年了。",
         "tags":  [
                      "專欄文章"
@@ -6938,7 +6829,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-1-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1749508.jpg?v=1749508"
     },
     {
         "contentBlocks":  [
@@ -7046,7 +6937,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我從事身體自覺的功法教學已30餘年，在帶領學員透過動作進行身體自覺的探索，從體感的覺知到心理、精神的覺知過程中，我自己也不斷地提升自身的覺醒維度。為了提升教學效果，從《道藏》煉丹的概念，也嘗試…",
         "tags":  [
                      "專欄文章"
@@ -7058,7 +6949,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-1-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6858499.jpg?v=6858499"
     },
     {
         "contentBlocks":  [
@@ -7446,7 +7337,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "無極，是一門不靠記憶、思維的功法，它專門克制「想」，讓你進入一種與動作、內氣、外境完全融合的狀態。正如品香，真正的修行並非「聞」香，而是「與香合一」；只有對香產生強烈渴望，寸步不離，如同呼吸與…",
         "tags":  [
                      "如是我聞"
@@ -7458,7 +7349,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4931376.jpg?v=4931376"
     },
     {
         "contentBlocks":  [
@@ -7718,7 +7609,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第233期 / 2025.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "水是中性的載體，能與情緒、聲音甚至意念的頻率共振。由於人體超過八成是水，我們的情緒、思想與身體狀態無時無刻不在與水的頻率互動。當情緒動盪時，喝水不只是生理補給，更是一種清理內在能量、調和頻率的…",
         "tags":  [
                      "如是我聞"
@@ -7730,7 +7621,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202507-2507-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5750398.jpg?v=5750398"
     },
     {
         "contentBlocks":  [
@@ -7790,7 +7681,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第232期 / 2025.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "本期電子報四篇〈如是我聞〉上課記錄，兩篇專欄，雖是從不同的角度揭示練功要旨，但最終的目標，是「幹父之蠱」、「幹母之蠱」——藉此難得之身，把男性、女性歷代祖先留在我身上的基因，再次清洗乾淨。",
         "tags":  [
                      "編輯小語"
@@ -7802,7 +7693,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202506-2506-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4442337.jpg?v=4442337"
     },
     {
         "contentBlocks":  [
@@ -7966,7 +7857,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第232期 / 2025.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "三丹田論都包含在「道的周天運轉圖」裡。現在很多人都在漫天談覺性，我們講覺性，要從「真人」開始修練。人法地，地法天，天法道，道法自然，它是一個道序，天、地、人，不是天比地高、地比人高，天地人只是…",
         "tags":  [
                      "如是我聞"
@@ -7978,7 +7869,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202506-2506-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5554956.jpg?v=5554956"
     },
     {
         "contentBlocks":  [
@@ -8094,7 +7985,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第232期 / 2025.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "〈第六十章 治大國 〉治大國，若烹小鮮。以道蒞天下，其鬼不神；非其鬼不神，其神不傷人；非其神不傷人，聖人亦不傷人。夫兩不相傷，故德交歸焉。",
         "tags":  [
                      "體證道德經",
@@ -8107,7 +7998,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202506-2506-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-9811780.jpg?v=9811780"
     },
     {
         "contentBlocks":  [
@@ -8547,7 +8438,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第232期 / 2025.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "到目前爲止最偉大的身心靈學說體系，我都建構好了。其他關於身心靈的說法都有虛玄想像，甚至空洞無實的問題。而我所建立的這套體系，是我一生研究各種關於身心靈的學問，經過親身試驗和體證所創造的，並且帶…",
         "tags":  [
                      "如是我聞"
@@ -8559,7 +8450,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202506-2506-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2604387.jpg?v=2604387"
     },
     {
         "contentBlocks":  [
@@ -9251,7 +9142,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "剛開始，我們老大張老師扯著嗓門鄭重宣告2025年是成佛年，底下眾人不是竊竊私語：「又在說大話了！」就是呵呵癡笑：「別哄我們了啦！老師！您看我們行嗎？」今年到現在，才五月喔，在我們心目中，「成佛…",
         "tags":  [
                      "編輯小語"
@@ -9263,7 +9154,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1603641.jpg?v=1603641"
     },
     {
         "contentBlocks":  [
@@ -9459,7 +9350,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "治人事天，莫若嗇。夫唯嗇，是謂早服。重積德則無不克，無不克則莫知其極，莫知其極，可以有國；有國之母，可以長久，是謂深根固柢，長生久視之道。",
         "tags":  [
                      "體證道德經",
@@ -9472,7 +9363,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7408864.jpg?v=7408864"
     },
     {
         "contentBlocks":  [
@@ -9724,7 +9615,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這個世界吵吵鬧鬧在進行，其實都在「空」裡面發生。《金剛經》說：「凡所有相皆是虛妄，見諸相非相，即見如來。」如果能看見物質界的一切相都是隨時變化的空相，你就成佛了。",
         "tags":  [
                      "如是我聞"
@@ -9736,7 +9627,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-3-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7288091.jpg?v=7288091"
     },
     {
         "contentBlocks":  [
@@ -9876,7 +9767,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2月28日到3月2日，治療組學員到雪山坑參加三天二夜的密集課程，主題是腿與身體的關聯性，包括骨盆、膝蓋、腳踝、腳趾等。一來時間從容，大家在地靈人傑的環境中連結大自然的負熵，張老師提點蹲馬步拔草…",
         "tags":  [
                      "心田集",
@@ -9889,7 +9780,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6496639.jpg?v=6496639"
     },
     {
         "contentBlocks":  [
@@ -10061,7 +9952,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "頭痛醫頭，腰痛治腰，熟記人體結構的骨骼肌肉就懂得治療了嗎？2月28日到3月2日治療組在雪山坑舉辦三天二夜治療營隊，課程重心不全是技術操作，而在心法的傳授與實踐。張老師從治療者的學習觀念、態度與…",
         "tags":  [
                      "導引按蹻",
@@ -10074,7 +9965,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4915816.jpg?v=4915816"
     },
     {
         "contentBlocks":  [
@@ -10230,7 +10121,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "發現問題是一個人的能量，有程度才有問題，不同程度的人發現不同的問題。有能力的人發現外在的問題，能力更強的人發現自己的問題，連問題都沒有的人，一點程度都沒有，一輩子也就沒什麼，因爲你的認知覺得自…",
         "tags":  [
                      "如是我聞"
@@ -10242,7 +10133,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-3-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1144404.jpg?v=1144404"
     },
     {
         "contentBlocks":  [
@@ -10334,7 +10225,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "今年年初時，東醫氣機導引的屏東會館完成搬遷。我看到大家分享在屏東吃喝玩樂的照片，感覺就非常羨慕，心中想著有時間一定要去看看，所以當張老師敲定去屏東的時間後，我也跟育展帶著小孩一起來趟屏東之旅。",
         "tags":  [
                      "專欄文章"
@@ -10346,7 +10237,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7464190.jpg?v=7464190"
     },
     {
         "contentBlocks":  [
@@ -10654,7 +10545,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "眼前台灣社會因為統獨問題，全民嚴重撕裂，我要提醒大家，我們要站在自己認知的中國狀態裡，而不在藍綠的遊戲規則裡，藍綠兩黨把臺灣搞得這麼窄化，每天都在搞鬥爭，都在講那些低維的話題，真的毫無意義。我…",
         "tags":  [
                      "如是我聞"
@@ -10666,7 +10557,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-3-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-72366.jpg?v=72366"
     },
     {
         "contentBlocks":  [
@@ -10806,7 +10697,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第231期 / 2025.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練無極，當你練對，你就錯了。無極練真空，在真空後才能像一支機械錶，永動機。現在每班都會錄影無極的練習，我會在每個人的相同軌跡上再加上一個齒輪，讓他從勞力士變成百達斐麗錶。",
         "tags":  [
                      "如是我聞"
@@ -10818,7 +10709,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202505-2505-3-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4569248.jpg?v=4569248"
     },
     {
         "contentBlocks":  [
@@ -10878,7 +10769,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "台灣這幾年也開始流行追春天的繁花了！最早是櫻花，然後紫藤、流蘇、苦楝、油桐花⋯⋯。大家開始密切注意各地花訊，總比整天盯著狗屁倒灶的政治新聞有意思。多年前中國時報總編輯黃肇松先生曾說過，他做一輩…",
         "tags":  [
                      "編輯小語"
@@ -10890,7 +10781,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7390865.jpg?v=7390865"
     },
     {
         "contentBlocks":  [
@@ -11014,7 +10905,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "幾個月前，建珍推薦我參加2月28日到3月2日在雪山坑舉辦的第二梯次治療學工作坊，我毫不猶豫地答應了。因為我一直希望能更了解解剖學，特別是肌肉與骨骼的功能性。在這為期三天兩夜的工作坊中，張老師不…",
         "tags":  [
                      "導引按蹻",
@@ -11027,7 +10918,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205472.jpg?v=5205472"
     },
     {
         "contentBlocks":  [
@@ -11191,7 +11082,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "其政悶悶，其民淳淳；其政察察，其民缺缺。禍兮福之所倚，福兮禍之所伏。孰知其極？其無正。正復為奇，善復為妖，人之迷，其日固久。是以聖人方而不割，廉而不劌，真而不肆，光而不耀。",
         "tags":  [
                      "體證道德經",
@@ -11204,7 +11095,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5216722.jpg?v=5216722"
     },
     {
         "contentBlocks":  [
@@ -11272,7 +11163,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "加州的巨杉（giant sequoia）是世界上最大的樹，和北加州海岸的紅木是近親。紅木是世界上最高的樹種，巨杉是世界上體積最大的樹種，最大的巨杉直徑超過11公尺，高約80公尺，如果在樹樁上蓋…",
         "tags":  [
                      "山腳下的蘆葦",
@@ -11285,7 +11176,7 @@ export const generatedArticles = [
         "category":  "山腳下的蘆葦",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5701893.jpg?v=5701893"
     },
     {
         "contentBlocks":  [
@@ -11377,7 +11268,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "古典力學是以牛頓運動定律為基礎，在宏觀世界和低速狀態下，研究物體運動的基本學科，在研究速度不接近光速、質量不是非常大的宏觀物體時，古典力學提供了非常精確的結果。量子力學則是描述原子尺度及原子尺…",
         "tags":  [
                      "圖靈集",
@@ -11390,7 +11281,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7884039.jpg?v=7884039"
     },
     {
         "contentBlocks":  [
@@ -11610,7 +11501,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "圖片來源 / 國家實驗研究院網站https://www.niar.org.tw/xcscience/cont?xsmsid=0I148638629329404252\u0026sid=0J193509885517004464",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師根據六早班學員的習練，歸納出無極的三個要點，讓學員養成自己的修為，無極的三個重點包括：氣勢、留觸角、重。",
         "tags":  [
                      "如是我聞"
@@ -11622,7 +11513,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7289895.jpg?v=7289895"
     },
     {
         "contentBlocks":  [
@@ -11874,7 +11765,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人一定要擺脫所有尊嚴，我們最後面對的只是自己的灰燼，像一堆灰土的自己，真正剩下的才是真的。我們的學識、財物、地位等等都是假的，因為這些都不是你。",
         "tags":  [
                      "如是我聞"
@@ -11886,7 +11777,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5316836.jpg?v=5316836"
     },
     {
         "contentBlocks":  [
@@ -11978,7 +11869,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "以後的時代，財富不是看貨幣，是創造能量、創造想法、制定遊戲規則。一個人如果能為國家提出一個構想、作法，讓國家更好，那個人就是富豪，國家社會給他用不完的能量，子子孫孫世世代代都夠用。賺錢、生產商…",
         "tags":  [
                      "如是我聞"
@@ -11990,7 +11881,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7226150.jpg?v=7226150"
     },
     {
         "contentBlocks":  [
@@ -12650,7 +12541,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第230期 / 2025.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "114年3月10日週一下午在會館舉辦的讀書會，探討鼎爐、識及信等三項主題，許多同學參與討論，最後由臨時加入的張老師總結。讀書會後當晚，張老師緊扣讀書會主題延續討論。以下是上課內容片段精摘：",
         "tags":  [
                      "如是我聞"
@@ -12662,7 +12553,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202504-2504-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7095890.jpg?v=7095890"
     },
     {
         "contentBlocks":  [
@@ -12722,7 +12613,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練功，從初學到老參，一路都有很多「眉角」，但不論是哪些眉角，最後都歸結到「藏」。能「藏」，就有一種自然的、讓人望之儼然的氣勢。",
         "tags":  [
                      "編輯小語"
@@ -12734,7 +12625,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-839540.jpg?v=839540"
     },
     {
         "contentBlocks":  [
@@ -12914,7 +12805,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "以正治國，以奇用兵，以無事取天下。吾何以知其然哉？以此。天下多忌諱，而民彌貧；朝多利器，國家滋昏；人多伎巧，奇物滋起；法令滋彰，盜賊多有。故聖人云：我無為而民自化，我好靜而民自正，我無事而民自…",
         "tags":  [
                      "體證道德經",
@@ -12927,7 +12818,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7071028.jpg?v=7071028"
     },
     {
         "contentBlocks":  [
@@ -13059,7 +12950,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "無極的動作不是身形的變化，而是精神性變化，動作要做到你不知道自己在做動作，如魚不知道自己在水中游。練身體在練「藏」。陽是面子，陰是裡子。陽如果在檯面上，陰就是顯現、藏著的。以手為例，眼睛看著上…",
         "tags":  [
                      "心田集",
@@ -13072,7 +12963,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1838760.jpg?v=1838760"
     },
     {
         "contentBlocks":  [
@@ -13212,7 +13103,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "讓大腦停止思考的關鍵，不是強迫它「不想」，而是讓內心變得更廣闊。當你的內心強大到無懼任何變化時，無論外界如何動盪，你都能保持不動如山。這樣的人，不會被小事困擾，他們的目光總是放在更遠、更大的目…",
         "tags":  [
                      "如是我聞"
@@ -13224,7 +13115,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7215626.jpg?v=7215626"
     },
     {
         "contentBlocks":  [
@@ -13364,7 +13255,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "道家最重要的一個字當然是「道」，但道很抽象，假如道化成具象的行動，你們覺得用哪一個字形容最為貼切？應該不是「德」字，因為德是樣子，「道德」就是道的樣子，是名詞，不是動詞。我認為是「藏」字，道的…",
         "tags":  [
                      "如是我聞"
@@ -13376,7 +13267,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8095996.jpg?v=8095996"
     },
     {
         "contentBlocks":  [
@@ -13476,7 +13367,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第229期 / 2025.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "地有地理，拳有拳理，你要清楚自己動作的「理」在哪裡。如果建構不了這個理，動作只是在比劃空泛的形式而已，它是沒有用的。",
         "tags":  [
                      "如是我聞"
@@ -13488,7 +13379,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202503-2503-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7879029.jpg?v=7879029"
     },
     {
         "contentBlocks":  [
@@ -13545,7 +13436,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "無論是屏東靜心會館集體信念的緣分，還是「如是我聞」裡張老師提到的信，以及這麼多年來親眼看到張老師所有事的發生，信真的可以變成人類生命中的一把寶劍，讓你無往不利。這不是迷信，這是信光，透過全覺能…",
         "tags":  [
                      "編輯小語"
@@ -13557,7 +13448,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3982742.jpg?v=3982742"
     },
     {
         "contentBlocks":  [
@@ -13709,7 +13600,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這趟去大陸回來聲音很沙啞，把人蔘切片泡來喝，馬上改善。之所以想起放了很久的人蔘，是因到大陸開會時，看到一位多年未見的朋友，六七十歲仍滿頭茂密黑髮，因為他用奇楠加老人蔘，請人做中藥，長期服用。",
         "tags":  [
                      "如是我聞",
@@ -13722,7 +13613,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-3-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4571924.jpg?v=4571924"
     },
     {
         "contentBlocks":  [
@@ -13815,7 +13706,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "知者不言，言者不知。塞其兌，閉其門。挫其銳，解其紛，和其光，同其塵，是謂玄同。 故不可得而親，不可得而疏；不可得而利，不可得而害；不可得而貴，不可得而賤；故為天下貴。",
         "tags":  [
                      "體證道德經",
@@ -13828,7 +13719,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-4-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5507386.jpg?v=5507386"
     },
     {
         "contentBlocks":  [
@@ -13911,7 +13802,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "身體只不過是一個軀殼，像汽車的外殼一樣，身體也是最短暫的，健康是要把你的生命養好，不是把身體養好。一般人很膚淺，常說：「萬般皆是零，健康最重要」，他們指的是身體健康，之所以會這麼說，是因為他們…",
         "tags":  [
                      "圖靈集",
@@ -13924,7 +13815,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-4-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6651489.jpg?v=6651489"
     },
     {
         "contentBlocks":  [
@@ -14131,7 +14022,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我從2006年開始跟隨張良維老師學習氣機導引，於2009年創立屏東會館。2024年9月底時，惠瑛師姐捎來一則好消息，告訴我台北週二班品香小組的師兄姐們，預定於12月28日來屏東為我們舉辦一場香…",
         "tags":  [
                      "專欄文章"
@@ -14143,7 +14034,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5191252.jpg?v=5191252"
     },
     {
         "contentBlocks":  [
@@ -14477,7 +14368,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人有外氣、內氣、元氣、心氣及腦氣精之氣。外氣的管道來自口鼻，食物從嘴巴進入，經身體的機能運作而化生營氣、宗氣與衛氣，旨在固養肌肉，支援大腦耗能及身體的賀爾蒙、基礎代謝率等。氧氣不是體內可用的能…",
         "tags":  [
                      "如是我聞",
@@ -14490,7 +14381,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-3-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5092339.jpg?v=5092339"
     },
     {
         "contentBlocks":  [
@@ -14623,7 +14514,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第228期 / 2025.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "最近開始要跟時報出版社把我以前的一系列書籍重新出版，為何要挑在這時候重新出版？一方面是AI時代來臨，為人類喚醒覺性、開發覺性留下一條道路，另一方面也是沉香嫁接有了初步結果，人類也將進入野生沉香…",
         "tags":  [
                      "如是我聞",
@@ -14636,7 +14527,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202502-2502-3-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751891.jpg?v=2751891"
     },
     {
         "contentBlocks":  [
@@ -14696,7 +14587,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第227期 / 2025.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每年的一分鐘，看似容易，其實很難，短短的一分鐘，你要陳述怎樣的自己？像一首歌詞，流暢自在並充滿覺性。你是還在自我懺悔？自我鼓勵？的小我人心裡；還是我是一切，一切是我，覺性的道心裡。",
         "tags":  [
                      "編輯小語"
@@ -14708,7 +14599,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202501-2501-1-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7290599.jpg?v=7290599"
     },
     {
         "contentBlocks":  [
@@ -18975,7 +18866,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！",
         "tags":  [
                      "編輯小語"
@@ -18987,7 +18878,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7060467.jpg?v=7060467"
     },
     {
         "contentBlocks":  [
@@ -19167,7 +19058,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「含德之厚，比於赤子。毒蟲不螫，猛獸不據，攫鳥不搏。骨弱筋柔而握固，未知牝牡之合而脧作，精之至也。終日號而不嗄，和之至也。知和曰常，知常曰明。益生曰祥。心使氣曰強。物壯則老，是謂不道，不道早已…",
         "tags":  [
                      "體證道德經",
@@ -19180,7 +19071,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7452846.jpg?v=7452846"
     },
     {
         "contentBlocks":  [
@@ -19346,7 +19237,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治…",
         "tags":  [
                      "導引按蹻",
@@ -19359,7 +19250,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7483767.jpg?v=7483767"
     },
     {
         "contentBlocks":  [
@@ -19427,7 +19318,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名…",
         "tags":  [
                      "股海人生"
@@ -19439,7 +19330,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205415.jpg?v=5205415"
     },
     {
         "contentBlocks":  [
@@ -19619,7 +19510,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
         "tags":  [
                      "專欄文章"
@@ -19631,7 +19522,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205470.jpg?v=5205470"
     },
     {
         "contentBlocks":  [
@@ -20187,7 +20078,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？…",
         "tags":  [
                      "如是我聞",
@@ -20200,7 +20091,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5267305.jpg?v=5267305"
     },
     {
         "contentBlocks":  [
@@ -20500,7 +20391,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思…",
         "tags":  [
                      "如是我聞",
@@ -20513,7 +20404,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5276406.jpg?v=5276406"
     },
     {
         "contentBlocks":  [
@@ -20605,7 +20496,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第226期 / 2024.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…",
         "tags":  [
                      "導引香道"
@@ -20617,7 +20508,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202412-2412-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4001033.jpg?v=4001033"
     },
     {
         "contentBlocks":  [
@@ -20725,7 +20616,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "使我介然有知，行於大道，唯施是畏。大道甚夷，而民好徑。朝甚除，田甚蕪，倉甚虛；服文綵，帶利劍，厭飲食，財貨有餘；是為夸盜。非道也哉﹗",
         "tags":  [
                      "體證道德經",
@@ -20738,7 +20629,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4035180.jpg?v=4035180"
     },
     {
         "contentBlocks":  [
@@ -20822,7 +20713,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "十多年前某次參加三天兩夜活動，與治療偶然相遇的第一次，卻是無比慘痛的經驗。那日場地受限需要席地而坐，而我卻因不明原因突然無法盤腿，老師一開始就詢問有沒有人身體不適，身旁好心的同學居然幫我舉手，…",
         "tags":  [
                      "導引按蹻",
@@ -20835,7 +20726,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1869713.jpg?v=1869713"
     },
     {
         "contentBlocks":  [
@@ -20887,7 +20778,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "美國降息拉開了四海歡騰普天同慶的樂觀氣氛，然而讓大家下巴掉下來的是中國在九月二十六日中央政治局會議的神操作，形成一個奇觀是美國降息，人民幣升值，中國股市衝破頂。這項操作趕在十一長假前，中國指數…",
         "tags":  [
                      "股海人生"
@@ -20899,7 +20790,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4932006.jpg?v=4932006"
     },
     {
         "contentBlocks":  [
@@ -21207,7 +21098,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "財有天財，天給的叫做「天財」，像含金湯匙出生、買彩券中大獎。地有「地財」，物由地生，所有的商業物質買賣都叫「地財」。物品事業是以物易物，向你買東西的人欠缺物品，你也給他東西，誰也不欠誰。地財是…",
         "tags":  [
                      "如是我聞"
@@ -21219,7 +21110,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5622877.jpg?v=5622877"
     },
     {
         "contentBlocks":  [
@@ -21343,7 +21234,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "如果我們用85歲減去自己現有的年齡，這個數字就是自己人生僅存的假期。我們是否要忘了年齡，忘了存摺數字，忘了自我設限…，為人生為數不多的假期創造活躍性，讓自己每天都活在歡喜中。現代人被教育體制或…",
         "tags":  [
                      "心田集",
@@ -21356,7 +21247,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-24010-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4349712.jpg?v=4349712"
     },
     {
         "contentBlocks":  [
@@ -21784,7 +21675,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "你們要讀波粒二象論，這是顯學。物理學一百年來突飛猛進，從經典物理到量子物理，會是主導人類思想重要的改變。這不是從論語到孟子、再到王陽明這樣微小的改變，它是顛覆性的改變。",
         "tags":  [
                      "如是我聞",
@@ -21797,7 +21688,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2522545.jpg?v=2522545"
     },
     {
         "contentBlocks":  [
@@ -22129,7 +22020,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第224期 / 2024.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這幾天在雪山坑跟園藝專家一起剪樹。環境就像人需要整理，剪樹時每一刀都預留它未來的樣子，跟剪頭髮不一樣。剪頭髮是剪了又長再剪，剪樹是剪到一個程度以後，它就定型了。",
         "tags":  [
                      "如是我聞",
@@ -22142,7 +22033,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202410-2410-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5034431.jpg?v=5034431"
     },
     {
         "contentBlocks":  [
@@ -22186,7 +22077,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "昏沈沈的酷暑，但同學們的腳步沒有絲毫停頓或遲疑。各班自主練習，關於「道的周天運轉圖」的討論越來越多元，張老師在暑假前的課堂上看很多同學對「周天運轉圖」如何應用在日常工作生活應對進退的疏離感一直…",
         "tags":  [
                      "編輯小語"
@@ -22198,7 +22089,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1853121.jpg?v=1853121"
     },
     {
         "contentBlocks":  [
@@ -22298,7 +22189,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "中國道家認為人體是小宇宙，宇是空間，宙是時間，人體的內部結構及運行原理和大宇宙是相通的，也就是一切都是能量的轉換，有多少能量就有本事兌現多少事實。每個人天生本能都有身體的靈覺力，張老師在《身體…",
         "tags":  [
                      "心田集",
@@ -22311,7 +22202,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7047519.jpg?v=7047519"
     },
     {
         "contentBlocks":  [
@@ -22371,7 +22262,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "兩天三千點，十天砍掉五千點，台灣股市上演一場火力震撼秀，股民突然發現股票原來是會跌的，而且跌起來可以這麼快。AI熱潮正盛，對於美國軟著陸的預期也普遍成為共識的時候，為何出現這種晴天霹靂的跌法？…",
         "tags":  [
                      "股海人生"
@@ -22383,7 +22274,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7116899.jpg?v=7116899"
     },
     {
         "contentBlocks":  [
@@ -22467,7 +22358,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "非常非常感謝治療組組長建珍還有鈺晶的苦心規劃，促成了此次密集課程的開設成行。此時正當治療課程進行周年之後，在之前的定期課程中，張老師一面講授氣機導引及無極觀的治療哲學，一面導讀完整本基礎臨床按…",
         "tags":  [
                      "導引按蹻",
@@ -22480,7 +22371,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-4-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4620487.jpg?v=4620487"
     },
     {
         "contentBlocks":  [
@@ -22801,7 +22692,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人生步入晚年，你只剩下壽命，所以要跟壽命賽跑。你現在擁有的意義就是你活著，你死了就什麼都沒有意義了，除非你長智慧。長智慧了，到最後1分鐘都還擁有無限的未來，這叫「時空扭曲」。",
         "tags":  [
                      "如是我聞",
@@ -22814,7 +22705,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4905730.jpg?v=4905730"
     },
     {
         "contentBlocks":  [
@@ -22954,7 +22845,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第222期 / 2024.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第51章尊貴：「道生之，德畜之，物形之，勢成之。是以萬物莫不尊道而貴德。道之尊，德之貴，夫莫之命而常自然。故道生之，德畜之，長之育之，亭之毒之，養之覆之。生而不有，為而不恃，長而不宰。是謂玄德…",
         "tags":  [
                      "體證道德經",
@@ -22967,7 +22858,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202408-2408-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7395030.jpg?v=7395030"
     },
     {
         "contentBlocks":  [
@@ -23027,7 +22918,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第220期 / 2024.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "本期電子報的文章篇數較少，但每篇文稿的份量都很重，重，不是因為篇幅長，而是內容含金量很高，必須仔細地、慢慢品味。尤其是〈如是我聞——超越常人，成為超人〉，因為是從種子班張老師的上課逐字稿仔細裁…",
         "tags":  [
                      "編輯小語"
@@ -23039,7 +22930,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202406-2406-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4473760.jpg?v=4473760"
     },
     {
         "contentBlocks":  [
@@ -23609,7 +23500,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第220期 / 2024.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "身體的一切變化都來自因緣和合，不同的階段會有不同的自然變化，道家是不養生的。老子云：「治身，太上養神，其次養形，神清意平，百節皆寧，養生之本也。」身體的使用時間久了或使用率高了，自會產生不同的…",
         "tags":  [
                      "心田集",
@@ -23622,7 +23513,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202406-2406-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7845932.jpg?v=7845932"
     },
     {
         "contentBlocks":  [
@@ -24202,7 +24093,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第220期 / 2024.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "赫拉克利特說，萬物都有邏輯，只是它善於隱藏。能看見它的邏輯，就是看見它形而上的意義、看見它的作用力，也就能接收到它的波。任何一種物質都有波動，假如我們能把它還原為波粒二相論，在物質中看見波的狀…",
         "tags":  [
                      "如是我聞",
@@ -24215,7 +24106,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202406-2406-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5354952.jpg?v=5354952"
     },
     {
         "contentBlocks":  [
@@ -24475,7 +24366,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第220期 / 2024.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "聖人無常心，以百姓之心為心。善者吾善之，不善者吾亦善之，德善。信者吾信之，不信者吾亦信之，德信。聖人在天下，歙歙焉；為天下，渾其心。百姓皆注其耳目，聖人皆孩之。",
         "tags":  [
                      "體證道德經",
@@ -24488,7 +24379,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202406-2406-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7061542.jpg?v=7061542"
     },
     {
         "contentBlocks":  [
@@ -24540,7 +24431,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "自從莊子藉輪扁之口嘲諷所謂的聖賢之書，只是「古人之糟粕耳」，後代的知識份子就再三提醒自己，讀書求知，得要「舊學商量加邃密，新知培養轉深沉」。其實，「加邃密」、「轉深沉」的路徑，就是回到自己，跟…",
         "tags":  [
                      "編輯小語"
@@ -24552,7 +24443,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-9733930.jpg?v=9733930"
     },
     {
         "contentBlocks":  [
@@ -24636,7 +24527,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "今天的題目是「覺識覺」，如果仔細拆解的話，其中包含了「覺」、「識」、「覺識」、「識覺」、「覺識覺」、「識覺識」，這不是在玩文字遊戲，而是在說明生命的真相。「覺」、「識」過去已經很多人在談了，但…",
         "tags":  [
                      "圖靈集",
@@ -24649,7 +24540,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7515014.jpg?v=7515014"
     },
     {
         "contentBlocks":  [
@@ -24941,7 +24832,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人難免有病痛，病痛時除了看醫生外，還有另一種選擇——就是參加張老師的治療課程。張老師不僅教授治療的哲學，還以身作則當個案，讓我們練習治療技巧。這樣的課程不僅是一種學習，更是一種寶貴的體驗和成長…",
         "tags":  [
                      "導引按蹻",
@@ -24954,7 +24845,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7144784.jpg?v=7144784"
     },
     {
         "contentBlocks":  [
@@ -25006,7 +24897,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "有一次聊到意念與感受，疊加成為心態、信念、深層信仰，我很意外普遍來說大家對於這個過程似乎很陌生，只靠大腦會有聽不懂的狀況。從字面上不知所云，從生活、生命中的發生去感受，這個過程是隨時隨地在發生…",
         "tags":  [
                      "股海人生"
@@ -25018,7 +24909,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4166269.jpg?v=4166269"
     },
     {
         "contentBlocks":  [
@@ -25110,7 +25001,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "黃石公園是美國第一個國家公園，成立於1872年，黃石公園的動物和風景一樣有名，遊客來黃石公園，主要原因之一是來看各種野生動物，包括美洲野牛、棕熊、黑熊、麋鹿、山獅和灰狼，這些動物在歐洲人來美洲…",
         "tags":  [
                      "山腳下的蘆葦",
@@ -25123,7 +25014,7 @@ export const generatedArticles = [
         "category":  "山腳下的蘆葦",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2969357.jpg?v=2969357"
     },
     {
         "contentBlocks":  [
@@ -25687,7 +25578,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "On 16th March 2024, my father, Dr. Za-Chieh Moh, passed away at the age of 93 due to the unexpec…",
         "tags":  [
                      "觀行錄",
@@ -25700,7 +25591,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-8-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5238412.jpg?v=5238412"
     },
     {
         "contentBlocks":  [
@@ -26056,7 +25947,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "為學日益，為道日損。損之又損，以至於無為。無為而無不為。取天下常以無事，及其有事，不足以取天下。",
         "tags":  [
                      "體證道德經",
@@ -26069,7 +25960,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3835087.jpg?v=3835087"
     },
     {
         "contentBlocks":  [
@@ -26529,7 +26420,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "要了解人類思想的演化史，一定要讀書。我們現在談「識」與「覺」的區別，千萬不要以為讀書沒用，讀書得到的知識，要能佐證自己、幫助自己在某一種思考中得到邏輯性、證據性，藉以肯定自己的想法是在正確的方…",
         "tags":  [
                      "如是我聞",
@@ -26542,7 +26433,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5622876.jpg?v=5622876"
     },
     {
         "contentBlocks":  [
@@ -27718,7 +27609,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "去年10月，理事長鄧美玲因得知已成立15年的屏東會館面臨遷館，原屋主要出售場地，限期最晚今年6月前需搬遷，因為我曾與屏東會館合作過第一屆武林大會事宜，所以她請我做一個屏東會館的電子報專題。但美…",
         "tags":  [
                      "專欄文章"
@@ -27730,7 +27621,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7410561.jpg?v=7410561"
     },
     {
         "contentBlocks":  [
@@ -27854,7 +27745,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我常想，到底是因為練了功，才能有機會體會老師說的心法，才能感受甚麼是大腦不要想嗎?",
         "tags":  [
                      "練功筆記",
@@ -27867,7 +27758,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-4-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5995107.jpg?v=5995107"
     },
     {
         "contentBlocks":  [
@@ -28239,7 +28130,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第219期 / 2024.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們對外界環境「色聲香味觸」（又稱五塵，喻其具有染污性）的認知，是透過「眼耳鼻舌身」五根（器官）收受，形成「眼耳鼻舌身」五識（感知），此時第六識（意識）與之並起，加以「思惟」和「分別」，做出「…",
         "tags":  [
                      "練功筆記",
@@ -28252,7 +28143,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202405-2405-4-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6017351.jpg?v=6017351"
     },
     {
         "contentBlocks":  [
@@ -28336,7 +28227,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "展讀這一期電子報，各位可能都有一種卡卡的感覺吧？卡在哪？說不上來，但就是卡。",
         "tags":  [
                      "編輯小語"
@@ -28348,7 +28239,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1850879.jpg?v=1850879"
     },
     {
         "contentBlocks":  [
@@ -28449,7 +28340,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一切是因緣和合，張老師因車禍引發椎孔狹窄的劇痛，當所有醫生宣布只有風險未定的手術一條路，老師選擇以自身疼痛為教材，拿出多年所學的導引按蹻，整脊推拿的各種本事，帶著我們接觸治療學。只要你願意學習…",
         "tags":  [
                      "導引按蹻",
@@ -28462,7 +28353,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5542256.jpg?v=5542256"
     },
     {
         "contentBlocks":  [
@@ -28530,7 +28421,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "前幾天看了阮經天主演的《周處除三害》，近期的台灣電影佳作，情感張力都拉得剛好不會太過。劇中最搶眼的一個道具應該就是桂林仔阿嬤留下來的那一隻粉紅色小豬卡通錶，看得我也想去買一隻來戴！",
         "tags":  [
                      "股海人生"
@@ -28542,7 +28433,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5879654.jpg?v=5879654"
     },
     {
         "contentBlocks":  [
@@ -28690,7 +28581,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "最近日早班多了一位新同學呂麗卿，她是四晚班長，因工作繁忙缺課，偶而來日早補課，沒想到正式成為日早班一員，因她女兒大學畢業，才剛出國留學，周末多出時間不用照顧她。女兒是老天賜她度過人生低潮期的最…",
         "tags":  [
                      "導引采風錄"
@@ -28702,7 +28593,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4996198.jpg?v=4996198"
     },
     {
         "contentBlocks":  [
@@ -28796,7 +28687,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每個人有根性、識性和自性。「根性」來自與生俱來的DNA，是未受教育之前的我。「識性」是感官神經綜合區與大腦各部區域的認知，如習慣、感覺。「自性」則是放下根性與識性的感受。練功不能只為身根的養護…",
         "tags":  [
                      "練功筆記",
@@ -28809,7 +28700,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2363348.jpg?v=2363348"
     },
     {
         "contentBlocks":  [
@@ -28919,7 +28810,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "在道的周天循環中有百日築基、練精化氣、練炁化神、練神還虛，乃至練虛合道、道法自然六個階段，同時也會經歷換力期、換氣期和換意期。鼎、爐概念在此可視為行為論。通過身體做動作，從體神經系統鍛鍊專注到…",
         "tags":  [
                      "練功筆記",
@@ -28932,7 +28823,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-925747.jpg?v=925747"
     },
     {
         "contentBlocks":  [
@@ -29064,7 +28955,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第218期 / 2024.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "不出戶，知天下；不窺牖，見天道。其出彌遠，其知彌少。是以聖人不行而知，不見而名，不爲而成。",
         "tags":  [
                      "體證道德經",
@@ -29077,7 +28968,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202404-2404-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4931375.jpg?v=4931375"
     },
     {
         "contentBlocks":  [
@@ -29153,7 +29044,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "中研院院士、史學家許倬雲在接受媒體專訪時說：「現在全球性的問題是，人找不到目的，找不到人活著的意義。」",
         "tags":  [
                      "編輯小語"
@@ -29165,7 +29056,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6690385.jpg?v=6690385"
     },
     {
         "contentBlocks":  [
@@ -30372,7 +30263,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人工智能近期熱到發燙，帶來許多想像與希望。人類透過資料、模型，進行訓練、推理，想要模擬人類智能。但是人到底是什麼樣的物種？複製出人類大腦就能夠創造出擬人的智能嗎？",
         "tags":  [
                      "股海人生"
@@ -30384,7 +30275,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6185990.jpg?v=6185990"
     },
     {
         "contentBlocks":  [
@@ -30428,7 +30319,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每一次練無極功法，就是以身體為道場，像作法一樣，從入定開始，大腦不要想，收視返聽，把眼、耳、鼻、舌、身通通定在當下，眼覺耳覺鼻覺舌覺的能量連接覺知在身根的空裡，用沉香的作用力創造一個好的「境」…",
         "tags":  [
                      "練功筆記",
@@ -30441,7 +30332,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751920.jpg?v=2751920"
     },
     {
         "contentBlocks":  [
@@ -30493,7 +30384,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "年初三到老師家走春那天，幾位同學相約先到八德會館參加「五感人間」的香會。看到張老師的小孫女張相容睡得香甜，完全沒被我們這群七嘴八舌的姨婆吵到，圓圓的臉蛋有大將之風的沉穩，超極可愛。「五感人間」…",
         "tags":  [
                      "專欄文章"
@@ -30505,7 +30396,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8023047.jpg?v=8023047"
     },
     {
         "contentBlocks":  [
@@ -30605,7 +30496,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師從112年4月間開始傳授治療學，為大家注入活水，藉以啟動學習的熱情、活力，透過治療學格物致知。",
         "tags":  [
                      "導引按蹻",
@@ -30618,7 +30509,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2178502.jpg?v=2178502"
     },
     {
         "contentBlocks":  [
@@ -30718,7 +30609,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第217期 / 2024.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "天下有道，卻走馬以糞；天下無道，戎馬生於郊。禍莫大於不知足；咎莫大於欲得。故知足之足，常足矣。",
         "tags":  [
                      "體證道德經",
@@ -30731,7 +30622,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202403-2403-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5842346.jpg?v=5842346"
     },
     {
         "contentBlocks":  [
@@ -30815,7 +30706,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "從2020年起，種子班學員年終以一分鐘錄音總結一年的學習心得，並策勵未來。剛開始很多同學不以為然，抗拒排斥者多有。到今年，進入2024年了，我們也累積了四年的年終錄音，並從去年開始轉成文字，彙…",
         "tags":  [
                      "編輯小語"
@@ -30827,7 +30718,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751897.jpg?v=2751897"
     },
     {
         "contentBlocks":  [
@@ -31007,7 +30898,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練功的目的不是變成一個「拳師」，而是要成為「生命師」，要能解決生命的問題，學會解剖自己的框架，跳脫原來的思考模組，才能顛覆已知。若還存在「已知」就「無知」了。老子道德經的哲學思想是可藉以提昇練…",
         "tags":  [
                      "體證道德經",
@@ -31020,7 +30911,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4519341.jpg?v=4519341"
     },
     {
         "contentBlocks":  [
@@ -31648,7 +31539,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "平常沒機會接觸謝式冰，只知她家世顯赫，是第一屆武林盟主侯選人，台中會館提供者，張老師不時會以她為教案⋯⋯。這次用視訊遠距採訪她，讓我對她有更進一步的認識；此外，這回她願意接受採訪，暢談她如沉香…",
         "tags":  [
                      "導引采風錄"
@@ -31660,7 +31551,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2173791.jpg?v=2173791"
     },
     {
         "contentBlocks":  [
@@ -31784,7 +31675,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師在課堂上提到，為什麼一個極度理性、聰明又有世俗成就的人，站在一個出家人旁邊，即使是一個沒什麼道行的出家人，這個理性的人還是顯得很卑微？其實能有世俗成就的人，人生也經歷過許多挑戰、考驗，論…",
         "tags":  [
                      "圖靈集",
@@ -31797,7 +31688,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5933622.jpg?v=5933622"
     },
     {
         "contentBlocks":  [
@@ -31857,7 +31748,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我在治療課的角色是「病人」，一方面作為同學們實習的對象，另一方面藉此治療我的肩頸問題，目前肩頸痠痛、麻、無力的情況改善非常多，顯見同學們學習的效率很高，感謝老師和同學們的幫忙。",
         "tags":  [
                      "導引按蹻",
@@ -31870,7 +31761,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7264331.jpg?v=7264331"
     },
     {
         "contentBlocks":  [
@@ -32242,7 +32133,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "今年搬新家，新的環境也適應了。人入中年，都要當家人的依靠。但人生到了中段，還能有轉變的機會嗎？若沒有極強的動力，第一步很難跨出。練功上，只有堅持張老師的課一定要到，但後續的行動卻有如中年危機，…",
         "tags":  [
                      "專欄文章"
@@ -32254,7 +32145,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-2-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2630929.jpg?v=2630929"
     },
     {
         "contentBlocks":  [
@@ -33546,7 +33437,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第215期 / 2024.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "五晚種子班雖然是晚上的課，但當日午后就很熱閙，品香組的同學總是點上一爐好香、沏上好茶，讓同學能隨時加入，自在的參與，品香、喝茶、練無極、治療疼痛、分享生活大小事。時空裡有著五感覺察，有著相互參…",
         "tags":  [
                      "專欄文章"
@@ -33558,7 +33449,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202401-2401-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751916.jpg?v=2751916"
     },
     {
         "contentBlocks":  [
@@ -33626,7 +33517,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "詩聖杜甫震古鑠今的好詩無數，但個人覺得他寫得最溫柔、也最渾厚、開闊的是〈春夜喜雨〉裡面的這兩句「隨風潛入夜，潤物細無聲」。",
         "tags":  [
                      "編輯小語"
@@ -33638,7 +33529,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4368838.jpg?v=4368838"
     },
     {
         "contentBlocks":  [
@@ -33887,7 +33778,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "Looking back since my youth, the education I received is often times based on the pursual of exc…",
         "tags":  [
                      "觀行錄",
@@ -33900,7 +33791,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4790116.jpg?v=4790116"
     },
     {
         "contentBlocks":  [
@@ -34142,7 +34033,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "加州原來是加州灰熊的家鄉，但現在加州只剩下一隻灰熊了，就是在加州州旗上的那隻灰熊。",
         "tags":  [
                      "山腳下的蘆葦",
@@ -34155,7 +34046,7 @@ export const generatedArticles = [
         "category":  "山腳下的蘆葦",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4249038.jpg?v=4249038"
     },
     {
         "contentBlocks":  [
@@ -34207,7 +34098,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "不知不覺又到了年底，這樣胡謅瞎說居然也過了兩年。其實有一次寫到了「本來就這樣」，後面也不知道要再寫什麼。本來就這樣那還需要寫什麼？就是這樣啊。理解遊戲規則，知道錢是從空氣中變出來的，美國人怎麼…",
         "tags":  [
                      "股海人生"
@@ -34219,7 +34110,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805049.jpg?v=6805049"
     },
     {
         "contentBlocks":  [
@@ -34319,7 +34210,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "治療時，孰悉身體肌理的解剖知識能夠幫助治療疼痛，雖然這點與手療技術無關，也非治好疼痛的關鍵，但更深入判讀疼痛的結構至關重要。一個人的疼痛有許多不同層次，可能來自於內臟的問題、肌理肌脈的問題、內…",
         "tags":  [
                      "導引按蹻",
@@ -34332,7 +34223,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5384226.jpg?v=5384226"
     },
     {
         "contentBlocks":  [
@@ -34432,7 +34323,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練功必須要做到內三合及外三合，外三合是肩與胯合、肘與膝合、腕與踝合，守候丹田這中心點而合，將自己包覆其中而有對稱性，做到外三合，動作就不會張牙舞爪亂來，最後一場空；再來內三和是形與氣合、氣與意…",
         "tags":  [
                      "如是我聞",
@@ -34445,7 +34336,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5474856.jpg?v=5474856"
     },
     {
         "contentBlocks":  [
@@ -34657,7 +34548,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "開心這次有機會至程文政的牙科診所採訪，來到他的診所彷彿踏進不同時空，展開一段奇妙的五感體驗之旅！很難想像這是間牙科診所，文政的診所活像禪風書院，裡面擺設他經年累月的各式佛像及古董文物收藏，空間…",
         "tags":  [
                      "導引采風錄"
@@ -34669,7 +34560,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1982163.jpg?v=1982163"
     },
     {
         "contentBlocks":  [
@@ -34793,7 +34684,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "天下之至柔，馳騁天下之至堅。無有入無間，吾是以知無為之有益。不言之教，無為之益，天下希及之。",
         "tags":  [
                      "體證道德經",
@@ -34806,7 +34697,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7369465.jpg?v=7369465"
     },
     {
         "contentBlocks":  [
@@ -34882,7 +34773,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第214期 / 2023.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "最近看到十多年前在阿里山田野調查的照片，驚覺自己早忘了當時的模樣，照片裡的人雖然年輕，卻滿臉愁容，蒼白瘦弱，駝背又水腫，頹廢又病懨懨的。回想那時受到武俠小說的影響，總覺得應該去練個氣功什麼的來…",
         "tags":  [
                      "練功筆記",
@@ -34895,7 +34786,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202312-2312-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1618141.jpg?v=1618141"
     },
     {
         "contentBlocks":  [
@@ -34955,7 +34846,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "從前讀到《華嚴經》的「一即一切，一切即一」，只覺得文字很美，境界高遠，果然是理事圓融無礙的《華嚴經》。直到最近，張老師從「一切／道（域）／造化／虛」的維度切入，再談練精化氣、練氣化神、練神還虛…",
         "tags":  [
                      "編輯小語"
@@ -34967,7 +34858,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7553642.jpg?v=7553642"
     },
     {
         "contentBlocks":  [
@@ -35027,7 +34918,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "為什麼說時間是最好的解藥？並不是說隨著時間過去，所有事情都自然療瘉了，而是當時間的單位改變了，事情的優先順序、輕重緩急也跟著改變了。三歲時的你被搶走一顆糖，你會覺得全世界與你為敵；十歲時的你月…",
         "tags":  [
                      "圖靈集",
@@ -35040,7 +34931,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6921457.jpg?v=6921457"
     },
     {
         "contentBlocks":  [
@@ -35108,7 +34999,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這幾次都是繞著債務、貨幣的主題，簡單的以幾句濃縮的話簡化為資產與負債的同步性、資產流量價格決定資產總量總值，總值決定債務水準。但是如果這種正常的資產負債擴張不夠快，那就直接把錢生出來，拳頭大的…",
         "tags":  [
                      "股海人生"
@@ -35120,7 +35011,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4933524.jpg?v=4933524"
     },
     {
         "contentBlocks":  [
@@ -35324,7 +35215,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "劉雅君在40歲以前，是世俗稱羨的人生勝利組，國外留學回台工作，一路都在知名品牌外商服務，履歷非常漂亮。在法商L’Oreal化妝品公司因表現優異，被公司外派至日本品牌總部，擔任植村秀亞洲區品牌發…",
         "tags":  [
                      "導引采風錄"
@@ -35336,7 +35227,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205487.jpg?v=5205487"
     },
     {
         "contentBlocks":  [
@@ -35503,7 +35394,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第42章：「道生一，一生二，二生三，三生萬物。萬物負陰而抱陽，冲氣以為和。人之所惡，唯孤、寡、不穀，而王公以為稱。故物或損之而益，或益之而損。人之所教，我亦教之，強梁者不得其死，吾將以為教父。…",
         "tags":  [
                      "體證道德經",
@@ -35516,7 +35407,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4834324.jpg?v=4834324"
     },
     {
         "contentBlocks":  [
@@ -35624,7 +35515,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人是多元的，都寫在大腦網路裡；人其實是很單純的，除了腦；頭以下不會說謊，身體哪裡怎樣就怎樣，感覺真實，不會偽裝；但是大腦偏偏理性說不對，感性說對，大腦就是擺佈了這樣一個騙局，大腦為何要有這樣的…",
         "tags":  [
                      "如是我聞",
@@ -35637,7 +35528,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523336.jpg?v=7523336"
     },
     {
         "contentBlocks":  [
@@ -35697,7 +35588,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "剛開始練無極，我肯定是非常有極的。我在入門基礎薄弱的狀況下，卻拿出參加聯考的精神，把整套無極如同背書一樣背起來，然後再很有毅力的天天練習無極的動作。現在回想起來，這種求快又求好的精神，真的是摧…",
         "tags":  [
                      "練功筆記",
@@ -35710,7 +35601,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6538066.jpg?v=6538066"
     },
     {
         "contentBlocks":  [
@@ -35906,7 +35797,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第213期 / 2023.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "治療是傳遞訊息，破壞當下的不平衡，使其重新復原。施治者需信入自己，熟能生巧，先有實力再說話，手與意要同步，全然相信，分毫不差，才能命中要害，當下知道痛點·。誠懇的臉，才能讓別人相信。技巧要淺或…",
         "tags":  [
                      "導引按蹻",
@@ -35919,7 +35810,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202311-2311-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4408125.jpg?v=4408125"
     },
     {
         "contentBlocks":  [
@@ -35971,7 +35862,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「道在屎尿」，大家應該都知道，這是說明「道」這個自然法則無所不在，即便是眾人避之唯恐不及的屎尿，或微不足道的磚瓦、稊稗、螻蟻，也是「德充符」——道的圓滿體現。",
         "tags":  [
                      "編輯小語"
@@ -35983,7 +35874,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5707660.jpg?v=5707660"
     },
     {
         "contentBlocks":  [
@@ -36059,7 +35950,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "上次用一個比較誇張聳動的標題突顯了國家發行法幣幾千年來的一個本質，合法的轉移民間財富。當溫和手段無效時就必須哄騙加暴力，極端狀況下就是純粹的暴力，只求短期達成效果。",
         "tags":  [
                      "股海人生"
@@ -36071,7 +35962,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5276413.jpg?v=5276413"
     },
     {
         "contentBlocks":  [
@@ -36163,7 +36054,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師在課堂上極力推崇《奧本海默》這部電影，建議大家注意它的敘事手法和電影想要呈現的精神。",
         "tags":  [
                      "山腳下的蘆葦",
@@ -36176,7 +36067,7 @@ export const generatedArticles = [
         "category":  "山腳下的蘆葦",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7384393.jpg?v=7384393"
     },
     {
         "contentBlocks":  [
@@ -36316,7 +36207,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "現迷上用AI，問AI幫我找一種動物可以用來形容夫妻之間雖恩愛，卻彼此尊重有各自的空間，AI回答那就是「孔雀」！因為孔雀是一種享有盛名的美麗鳥類，但是雄孔雀和雌孔雀會各自獨立活動，並不常一起出現…",
         "tags":  [
                      "導引采風錄"
@@ -36328,7 +36219,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-724897.jpg?v=724897"
     },
     {
         "contentBlocks":  [
@@ -36508,7 +36399,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "無極在練自我，涵蓋入定、守靜、做空幾個概念，在起式和收式兩招之間持續做空守靜，守靜做空。",
         "tags":  [
                      "如是我聞",
@@ -36521,7 +36412,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1876375.jpg?v=1876375"
     },
     {
         "contentBlocks":  [
@@ -36661,7 +36552,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "還記得當年我跟太太宛真一起去逛士林夜市，一時心血來潮帶她去五十年老店王記青草茶，到這邊怎麼可以喝青草茶，一定要喝店家精心熬煮的苦茶，解煩助眠退心火。宛真沒喝過苦茶，看我一杯苦茶沒幾秒就喝掉一大…",
         "tags":  [
                      "練功筆記",
@@ -36674,7 +36565,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5438384.jpg?v=5438384"
     },
     {
         "contentBlocks":  [
@@ -36822,7 +36713,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第212期 / 2023.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第四十一章：上士聞道，勤而行之；中士聞道，若存若亡；下士聞道，大笑之。不笑不足以為道。故建言有之。明道若昧，進道若退，夷道若纇。上德若谷，大白若辱，廣德若不足，建德若偷，質德若渝。大方無隅，大…",
         "tags":  [
                      "體證道德經",
@@ -36835,7 +36726,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202310-2310-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751900.jpg?v=2751900"
     },
     {
         "contentBlocks":  [
@@ -36895,7 +36786,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人生的所有作為或者不作為，都在執行某一個選擇。選擇做，或不做，都會經過內在的盤算計較。要不要去參加公司的應酬？丈母娘送進急診室了，要不要去關心一下？",
         "tags":  [
                      "編輯小語"
@@ -36907,7 +36798,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1973524.jpg?v=1973524"
     },
     {
         "contentBlocks":  [
@@ -36967,7 +36858,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "你一出生就長得好可愛，八字又好重，大家都說你這輩子一定狠好命。你小時候好乖，好聽大人的話，大家都說你是乖寶寶。你上學了，你好聰明，考試常考一百分，你也好聽老師的話，時常當選模範生，是個標準的好…",
         "tags":  [
                      "圖靈集",
@@ -36980,7 +36871,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5482798.jpg?v=5482798"
     },
     {
         "contentBlocks":  [
@@ -38336,7 +38227,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "“Society assumes that specialization is natural, inevitable, and desirable.",
         "tags":  [
                      "觀行錄",
@@ -38349,7 +38240,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5548137.jpg?v=5548137"
     },
     {
         "contentBlocks":  [
@@ -38425,7 +38316,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "橋水創辦人Ray Dalio對貨幣的結論是這樣：All Currencies Have Been Devalued or Died。貨幣不是貶值就是消失。這是他研究了幾百年西方經濟金融史之後的…",
         "tags":  [
                      "股海人生"
@@ -38437,7 +38328,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7047112.jpg?v=7047112"
     },
     {
         "contentBlocks":  [
@@ -38498,7 +38389,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "進入氣機導引滿11年，在種子班練功也屆10年，面向張老師此生50年與宿世積累深不可測的功夫底蘊，一週二次的業餘10年，自己的程度也還只是個起步的孩子。孩子上課一直都記著筆記，記筆記是一種用文字…",
         "tags":  [
                      "練功筆記",
@@ -38511,7 +38402,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5363737.jpg?v=5363737"
     },
     {
         "contentBlocks":  [
@@ -38587,7 +38478,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "跟隨老師多年的弟子都知道，老師教任何一樣學問，絕對不會只有單一維度面向的操作步驟，而是讓學生有全方面的了解，包含表面的形式舉動，系統的運作邏輯，系統運行的哲學觀，還有實務的整體操作，經驗內化累…",
         "tags":  [
                      "導引按蹻",
@@ -38600,7 +38491,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4434787.jpg?v=4434787"
     },
     {
         "contentBlocks":  [
@@ -38692,7 +38583,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第211期 / 2023.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「反者，道之動」。反，就是旋轉，循環。道的一切活動，循環而已。日中則昃，月盈則蝕，天地消長如此，而況於人乎？你好了以後，一定開始壞，這是天之道。",
         "tags":  [
                      "體證道德經",
@@ -38705,7 +38596,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202309-2309-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523703.jpg?v=7523703"
     },
     {
         "contentBlocks":  [
@@ -38765,7 +38656,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "近代高僧虛雲老和尚在百多歲時曾遭土匪毆打，全身多處骨折，奄奄一息數日後緩緩復甦，但痛起來時他也總是躺在床上呻吟，一聽說有訪客，他可以馬上坐起來，盤起腿，一談三、四小時，全無病容。客人一走，他又…",
         "tags":  [
                      "編輯小語"
@@ -38777,7 +38668,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7289936.jpg?v=7289936"
     },
     {
         "contentBlocks":  [
@@ -38858,7 +38749,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一個人長期練功會從形而下的身體練到形而上的意識，練功主要練身根，身體是物質，但有空相的存在。所以要在空相中取得「制空權」。所謂「制空權」，是「將意識頻道轉到『空』的權利」。就是不要把大腦的想法…",
         "tags":  [
                      "練功筆記",
@@ -38871,7 +38762,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3247446.jpg?v=3247446"
     },
     {
         "contentBlocks":  [
@@ -39011,7 +38902,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "道德經第三十九章：昔之得一者：天得一以清，地得一以寧，神得一以靈，谷得一以盈，萬物得一以生，侯王得一以為天下貞。其致之也，謂天無以清將恐裂，地無以寧將恐廢，神無以靈將恐歇，谷無以盈將恐竭，萬物…",
         "tags":  [
                      "體證道德經",
@@ -39024,7 +38915,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7493503.jpg?v=7493503"
     },
     {
         "contentBlocks":  [
@@ -39180,7 +39071,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這次的採訪很特別，是東醫母女檔，不是夫妻檔！因為母親賴鈺晶的關係，羅星如早在國中時就跟著媽媽到會館上氣機導引入門課一期。羅星如目前雖然只有23歲，卻是個老靈魂，她坦言平時沒特別愛練功，卻喜歡聽…",
         "tags":  [
                      "導引采風錄"
@@ -39192,7 +39083,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5978744.jpg?v=5978744"
     },
     {
         "contentBlocks":  [
@@ -39252,7 +39143,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "之前探討的概念主要圍繞著週期兩個字，但是比較偏重較短的信貸週期上。自從二十年前網路泡沫，各國長期實施零利率疊加量化寬鬆政策後，股價與其說是反映基本面，不如說是反映資金與信心的變化。有題材、有資…",
         "tags":  [
                      "股海人生"
@@ -39264,7 +39155,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2605343.jpg?v=2605343"
     },
     {
         "contentBlocks":  [
@@ -39444,7 +39335,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一直受到漸漸腫脹變硬的上臂肌肉干擾，或趴、或坐、或臥、或捲曲……任何睡姿都無法入眠，起因是幾個小時前想幫老師按摩痛點，老師叫我先幫他調整腳踝，左右手掌必須用巧勁，才能托開跟骨、撐開距骨，經過一…",
         "tags":  [
                      "導引按蹻"
@@ -39456,7 +39347,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6554077.jpg?v=6554077"
     },
     {
         "contentBlocks":  [
@@ -39500,7 +39391,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "氣機導引的學習從身體出發，分為三階段：從第一階段藉由動作拓展身體結構，讓身體內在的空間更大，到第二階段理解空間作用力——學習動筋膜來讓身體內部空間產生作用力，經由內外合一的運作練身練心，到第三…",
         "tags":  [
                      "練功筆記",
@@ -39513,7 +39404,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6641881.jpg?v=6641881"
     },
     {
         "contentBlocks":  [
@@ -39645,7 +39536,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "年初練功房第一次課程上了些什麼，早已忘記，只記得當時的自己，彷彿掉進洞穴裡，怎麼掉進去的，不知道，但它就是這麼發生了。很快地過了年，年後上課前，大腦焦慮是否上課，身體卻是一貫如常進了練功房，就…",
         "tags":  [
                      "練功筆記"
@@ -39657,7 +39548,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2648221.jpg?v=2648221"
     },
     {
         "contentBlocks":  [
@@ -40018,7 +39909,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第210期 / 2023.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "六月底才開始去聽會館治療課，足足落後兩個月的進度，期許自己要更認真，每次上課，仔細跟聽老師連珠炮似的口語解釋，從頭到腳順著走完每條肌肉骨骼，深怕漏聽了任何細節。但每次老師講完就只能在一旁乾望著…",
         "tags":  [
                      "導引按蹻"
@@ -40030,7 +39921,7 @@ export const generatedArticles = [
         "category":  "導引按蹻",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202308-2308-3-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1441980.jpg?v=1441980"
     },
     {
         "contentBlocks":  [
@@ -40090,7 +39981,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第209期 / 2023.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "赤日炎炎，氣象部門警告小心前所未有的熱浪來襲。夏日本是萬物沛然生長的季節，有些國家還特別倡導「夏日不除草」，好讓躲在雜草叢中的稀有植物有延續生息的機會。但地球暖化導致的異常高溫，讓早已喪失生物…",
         "tags":  [
                      "編輯小語"
@@ -40102,7 +39993,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202307-2307-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7295591.jpg?v=7295591"
     },
     {
         "contentBlocks":  [
@@ -40202,7 +40093,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第209期 / 2023.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "虛實、陰陽、圓缺常常被拿來形容對立的兩種狀態，這兩種狀態卻又循環不已，是宇宙生生不息的真相。虛、陰、缺常常被當作負面解讀，而實、陽、圓是大家要追求的結果，但就宇宙的真相來說，真是大大的誤會了，…",
         "tags":  [
                      "圖靈集",
@@ -40215,7 +40106,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202307-2307-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7047898.jpg?v=7047898"
     },
     {
         "contentBlocks":  [
@@ -40331,7 +40222,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第209期 / 2023.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "跟張詒鵬同學十幾年了，但印象中不曾看過他的夫人，只聽同學談過他太太也是種子班學員。第一次有機會跟楊清雲近距離互動是去年九月跟著去雪山坑練功，她非常有耐性又温柔的指導我們這些菜鳥無極功法的每一個…",
         "tags":  [
                      "導引采風錄"
@@ -40343,7 +40234,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202307-2307-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7148053.jpg?v=7148053"
     },
     {
         "contentBlocks":  [
@@ -40483,7 +40374,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第209期 / 2023.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "生活的事物大分為兩種：一是耗能的事物，如：上班、運動、旅遊⋯⋯。這些並沒有不好，它們讓我們獲得樂趣、體能、薪水，只是要用我們的能量去換取。一是蓄能的事物，如：*品香、*品茗、聽大自然的聲音、欣…",
         "tags":  [
                      "如是我聞",
@@ -40496,7 +40387,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202307-2307-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6496305.jpg?v=6496305"
     },
     {
         "contentBlocks":  [
@@ -40748,7 +40639,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第209期 / 2023.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "上德不德，是以有德；下德不失德，是以無德。上德無為而無以為；下德無為而有以為。上仁為之而無以為；上義為之而有以為。上禮為之而莫之應，則攘臂而扔之。故失道而後德，失德而後仁，失仁而後義，失義而後…",
         "tags":  [
                      "體證道德經",
@@ -40761,7 +40652,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202307-2307-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8844310.jpg?v=8844310"
     },
     {
         "contentBlocks":  [
@@ -40813,7 +40704,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一生懸命的現代茶人總結唐代盧仝〈走筆謝孟諫議寄新茶〉（俗稱〈七碗茶歌〉）的觀點，而歸納出好茶的四個條件是：香、醇、氣、化，跟導引香道的三個層次：味道、氣、境界，頗有相契之意。放諸人生世事，大抵…",
         "tags":  [
                      "編輯小語"
@@ -40825,7 +40716,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5437057.jpg?v=5437057"
     },
     {
         "contentBlocks":  [
@@ -40984,7 +40875,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「將欲歙之，必固張之；將欲弱之，必固強之；將欲廢之，必固舉之；將欲奪之，必固興之。是謂微明。柔弱勝剛強，魚不可脫於淵，國之利器不可以示人。」",
         "tags":  [
                      "體證道德經",
@@ -40997,7 +40888,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5438382.jpg?v=5438382"
     },
     {
         "contentBlocks":  [
@@ -41083,7 +40974,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "導引香道的訓練有三個階段、三個層次，一聞味道、二聞氣、三聞境界。識香課從一開始，我們先認識各產區各品類的香，學會分辨它們的特色與差異。接下來，我們強調聞其氣而不聞其香，氣，就是作用力。也就是說…",
         "tags":  [
                      "導引香道"
@@ -41095,7 +40986,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6352298.jpg?v=6352298"
     },
     {
         "contentBlocks":  [
@@ -41235,7 +41126,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "導引是一套可以幫助我們從一週辛勤工作中釋放壓力的運動，並且找到全然的整合。學習導引需要多年的投入、決心和平常心。以下分享一些關於如何學習「學習」的基本觀念，希望能讓剛開始學習氣機導引的同學，在…",
         "tags":  [
                      "觀行錄",
@@ -41248,7 +41139,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7029695.jpg?v=7029695"
     },
     {
         "contentBlocks":  [
@@ -41313,7 +41204,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "功夫在練虛實，動作是用感覺學會的，萬般皆由意，半點不由身，由意念操作，不由身體，守住感覺的自性。動作變化中可能感覺實，也可能感覺虛，只要動作在哪裡，意就在哪裡，意念最後會帶動你的身體，這是全身…",
         "tags":  [
                      "心田集",
@@ -41326,7 +41217,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5824948.jpg?v=5824948"
     },
     {
         "contentBlocks":  [
@@ -41450,7 +41341,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "年紀越大，我們的心就要像營火一樣隨時撥一撥，讓它產生熊熊的熱情，你就會越活越有力量。",
         "tags":  [
                      "練功筆記"
@@ -41462,7 +41353,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2485587.jpg?v=2485587"
     },
     {
         "contentBlocks":  [
@@ -41633,7 +41524,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人腦會把外界訊息轉為記憶，有感覺記憶、短期記憶和長期記憶之別。記憶的運作是神經細胞活動的電子脈衝，經神經元彼此相接的突觸，神經遞質依訊號傳遞方向進行溝通聯繫。訊息停留短暫時間叫短期記憶，再到海…",
         "tags":  [
                      "如是我聞",
@@ -41646,7 +41537,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1590923.jpg?v=1590923"
     },
     {
         "contentBlocks":  [
@@ -41794,7 +41685,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "蔡進懋，人稱阿懋，有參加2020第二屆武林大會的學員，應該對台中及屏東團隊用原住民打扮及歌唱幫阿懋抬轎進場儀式，感到耳目一新；另外對當晚阿懋爐火純青的無極功法演練，感到印象深刻。阿懋在2019…",
         "tags":  [
                      "導引采風錄"
@@ -41806,7 +41697,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8449604.jpg?v=8449604"
     },
     {
         "contentBlocks":  [
@@ -41882,7 +41773,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "十多年前因緣際會接觸氣機導引，當時的我由於車禍受傷沒有得到妥善治療，一段時間下來走路姿勢受影響，也因代償而讓身體總是不舒服。有位讀書會的朋友曾練過氣機導引，她說練「交疊鬆身」應該會很有幫助，於…",
         "tags":  [
                      "練功筆記"
@@ -41894,7 +41785,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4926058.jpg?v=4926058"
     },
     {
         "contentBlocks":  [
@@ -42106,7 +41997,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第208期 / 2023.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "編按：本文原發表於班級群組，張老師閱後妙批：「格物有為，致知無為！格物存善去惡，致知任由本心！」",
         "tags":  [
                      "練功筆記"
@@ -42118,7 +42009,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202306-2306-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6747127.jpg?v=6747127"
     },
     {
         "contentBlocks":  [
@@ -42194,7 +42085,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每隔一段時間，張老師對種子班學員的稱謂都會隨機改換，最近上課的稱謂語是——你們這些畜生啊！",
         "tags":  [
                      "編輯小語"
@@ -42206,7 +42097,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4457347.jpg?v=4457347"
     },
     {
         "contentBlocks":  [
@@ -42275,7 +42166,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "凡一切透過語言、文字所傳遞的知識與學習，都不脫理性的範疇，但如何在理性的外表下，培養感性的內在實力，一種真正屬於自己的東西，一種超越生死的能量，這才是生命該追求的，才是活過的證據。理性的生活就…",
         "tags":  [
                      "圖靈集",
@@ -42288,7 +42179,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523339.jpg?v=7523339"
     },
     {
         "contentBlocks":  [
@@ -42356,7 +42247,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "就在五月初，美國出現了今年以來第三家倒閉的銀行，這次是資產規模排名第二十一的第一共和銀行。正當大家認為銀行倒閉危機已經過去，似乎新一輪的風險正逐漸展開，到底根本原因是什麼呢？",
         "tags":  [
                      "股海人生"
@@ -42368,7 +42259,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6945422.jpg?v=6945422"
     },
     {
         "contentBlocks":  [
@@ -42508,7 +42399,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "呂一慈雖人住彰化，卻常看她出現在台北會館，除了周六台中種子班，她目前還上台北周日種子班的課，還有每月一次的香道課。曾有的最高上課記錄，除了二堂種子班，還上二堂入門班及張老師道德經講座。一個星期…",
         "tags":  [
                      "導引采風錄"
@@ -42520,7 +42411,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4329551.jpg?v=4329551"
     },
     {
         "contentBlocks":  [
@@ -43083,7 +42974,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "在中國，有路邊的雜貨店推出ChatGPT的註冊服務，打出宣傳語：「安裝註冊，開機即用，最強ＡＩ軟件，一套獨立帳號。」ChatGPT時代來臨，知識取得愈來愈容易。而知易行難自古就是一個大挑戰，C…",
         "tags":  [
                      "練功筆記",
@@ -43096,7 +42987,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1894739.jpg?v=1894739"
     },
     {
         "contentBlocks":  [
@@ -43236,7 +43127,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "大象：「執大象，天下往。往而不害，安平太。樂與餌，過客止。道之出口，淡乎其無味，視之不足見，聽之不足聞，用之不足既。」",
         "tags":  [
                      "體證道德經",
@@ -43249,7 +43140,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4449408.jpg?v=4449408"
     },
     {
         "contentBlocks":  [
@@ -43294,7 +43185,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第207期 / 2023.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "17年前是從張老師口中得到沉香的相關訊息，也純粹因為好奇，不知所以，莫名的買到眾所皆知的好香——越南芽莊白棋楠。 從109年2月起，張老師開課，識香之旅啟程，就這樣開啟了我與氣機導引香道的緣份…",
         "tags":  [
                      "導引香道"
@@ -43306,7 +43197,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202305-2305-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5793345.jpg?v=5793345"
     },
     {
         "contentBlocks":  [
@@ -43374,7 +43265,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "入門班同學一定搞不懂，為什麼有時候會聽到說，我們這個學門叫做「氣機導引」，有時候又說是「無極（內息導引）」？勉強言之，「氣機導引」就是包含十八套功法動作的身體哲學，「無極（內息導引）」則是包含…",
         "tags":  [
                      "編輯小語"
@@ -43386,7 +43277,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8184409.jpg?v=8184409"
     },
     {
         "contentBlocks":  [
@@ -43462,7 +43353,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "三月金融市場的大新聞應該就是美國兩家銀行倒閉，以及老牌投資銀行瑞士信貸被購併的事件吧，似乎08年金融海嘯的劇本又將重演。政府快速介入，並且信誓旦旦保證有足夠工具與信心應對可能風險，暫時穩住市場…",
         "tags":  [
                      "股海人生"
@@ -43474,7 +43365,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2575418.jpg?v=2575418"
     },
     {
         "contentBlocks":  [
@@ -43662,7 +43553,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每個人的身體形成自己一生的樣子，我們探究其根源與運作，最後理解他即是「空」——從物質身體到精氣神，層層脫落，直到層次的提昇。人體的細胞本身就充滿空間，體內最細微的空間狀態是組織間隙，細胞間質，…",
         "tags":  [
                      "心田集",
@@ -43675,7 +43566,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2506441.jpg?v=2506441"
     },
     {
         "contentBlocks":  [
@@ -44182,7 +44073,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第一次跟鄭素蘭及姚崑宗夫妻檔近距離接觸，正好在他倆52周年結婚紀念日，那天一些師兄姊大家約去新店泡温泉，吃中飯，順便去內洞步道走走，沒想到那天正好也是他們的金婚紀念日！很難得看到像他們這樣結縭…",
         "tags":  [
                      "導引采風錄"
@@ -44194,7 +44085,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7246250.jpg?v=7246250"
     },
     {
         "contentBlocks":  [
@@ -44222,7 +44113,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "五感人間\n\n拉開鐵門，推開落地玻璃門，把室內電燈全部打開，走進廁所、練功房開抽風機換氣，拿起掃把將室內外地板掃過一遍，花草也確認澆水後，擦桌子整理玻璃商品櫃，點燃一捲紅土沉香環香，放在室外香爐…",
         "tags":  [
                      "導引香道"
@@ -44234,7 +44125,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523333.jpg?v=7523333"
     },
     {
         "contentBlocks":  [
@@ -44278,7 +44169,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "中樞神經大腦和週邊神經系統（感覺神經和運動神經）系統相連，人內心產生的執著、害怕、煩惱、七情六慾，就是從這些地方產生回饋作用。大腦對身體組織有極大影響力，如腦下垂體，它和全身的內分泌都有關。幾…",
         "tags":  [
                      "練功筆記"
@@ -44290,7 +44181,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4487466.jpg?v=4487466"
     },
     {
         "contentBlocks":  [
@@ -44646,7 +44537,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們對外界環境「色聲香味觸」（又稱五塵，喻其具有染污性）的認知，是透過「眼耳鼻舌身」五根（器官）收受，形成「眼耳鼻舌身」五識（感知），此時第六識（意識）與之併起，加以「思惟」和「分別」，做出「…",
         "tags":  [
                      "練功筆記"
@@ -44658,7 +44549,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6567931.jpg?v=6567931"
     },
     {
         "contentBlocks":  [
@@ -44790,7 +44681,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "成大：「大道氾兮，其可左右。萬物恃之而生而不辭，功成而不有，衣養萬物而不為主。常無欲，可名於小；萬物歸焉而不為主，可名為大。以其終不自為大，故能成其大。」",
         "tags":  [
                      "體證道德經",
@@ -44803,7 +44694,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4042535.jpg?v=4042535"
     },
     {
         "contentBlocks":  [
@@ -44847,7 +44738,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第206期 / 2023.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "3月26日至29日上雪山坑，第一天我和三位同學住在張老師寢室旁的房間。下午兩點多我們在房間內用聞香爐品香，隨後建珍等人先後聞香而至，大家席地而坐。五爐不同香材的香氣隨著溫度高低變化，加上時間的…",
         "tags":  [
                      "練功筆記"
@@ -44859,7 +44750,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202304-2304-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-936202.jpg?v=936202"
     },
     {
         "contentBlocks":  [
@@ -44911,7 +44802,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "都說天賦人權，這權，到底包含了什麼？總的來說，應該就是追求幸福的權利吧！而幸福，又該如何才能在充滿荊棘的現實世界完整實踐，並且不分種族地域，人人平等，也不受物質條件的限制？",
         "tags":  [
                      "編輯小語"
@@ -44923,7 +44814,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523337.jpg?v=7523337"
     },
     {
         "contentBlocks":  [
@@ -45039,7 +44930,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "誠則明、明則誠，自誠明謂之性；自明誠謂之教，兩個不同路線，一個本來如此，另一個慢慢練養。慢慢練養走的是知識、經驗、技術層面逐步摸索、累積，這也是人類獨有的特質，發達的大腦皮質讓人類能發展出超越…",
         "tags":  [
                      "股海人生"
@@ -45051,7 +44942,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6785380.jpg?v=6785380"
     },
     {
         "contentBlocks":  [
@@ -45111,7 +45002,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們常勸人家說該「放下」了，也常自我安慰說終於「解脫」了，真的有這麼簡單嗎？我們先來看看「放下」、「解脫」背後的邏輯，在執行「放下」這個動作之前要有個條件，就是要先「拿起來」，你要先拿起什麼東…",
         "tags":  [
                      "圖靈集",
@@ -45124,7 +45015,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5168755.jpg?v=5168755"
     },
     {
         "contentBlocks":  [
@@ -45360,7 +45251,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "莫仁維，人稱莫帥，也是第二屆武林盟主。何其有幸，他從二十四歲一接觸到氣機導引，就知道這是他一直在尋找的真功夫！兩年半前，他接管父親所創的工程顧問公司，員工有700多人。每天公事及會議不斷，但他…",
         "tags":  [
                      "導引采風錄"
@@ -45372,7 +45263,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4256712.jpg?v=4256712"
     },
     {
         "contentBlocks":  [
@@ -45434,7 +45325,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "今年從過年開始，就碰到了許多來自海外的緣分，除了在泰國舉辦工作坊，新一期入門班開課更有兩位來自俄羅斯的夫妻以線上的方式加入，這些來自海外的學員不約而同地對導引「具身認知觀」的概念有著高度的共鳴…",
         "tags":  [
                      "觀行錄",
@@ -45447,7 +45338,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-7-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4767366.jpg?v=4767366"
     },
     {
         "contentBlocks":  [
@@ -45579,7 +45470,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人之所以痛苦，是因為有「選擇」，要選擇就會對事物先做「分別」，有分別就起好惡，就有嚮往或逃避，嚮往但得不到，逃避卻無法脫離，就產生苦的感覺。",
         "tags":  [
                      "練功筆記"
@@ -45591,7 +45482,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7723423.jpg?v=7723423"
     },
     {
         "contentBlocks":  [
@@ -45739,7 +45630,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "氣機導引的身心修煉秉持著古法煉丹術的原則，由後天返回先天，藉假修真，並以現代思維的邏輯觀整合做法，令練功的實踐過程系統明確而完整。演練無極內息導引的核心在於起勢、功法動作和收勢三步驟，為本功法…",
         "tags":  [
                      "如是我聞",
@@ -45752,7 +45643,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2597732.jpg?v=2597732"
     },
     {
         "contentBlocks":  [
@@ -45940,7 +45831,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人的觀念來自大腦對事物的解讀與判斷，充滿了習性與根器的影響。像大腦的想像，眼耳鼻舌身意的根識運作，都會引發情緒作用，內心只是大腦錯誤的邏輯結果，讓人很難跳脫既有的觀念。",
         "tags":  [
                      "體證道德經",
@@ -45953,7 +45844,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7029568.jpg?v=7029568"
     },
     {
         "contentBlocks":  [
@@ -46045,7 +45936,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第205期 / 2023.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "老師要我們在自主練習時討論無極心法，藉此機會想想無極到底是什麼？我要怎麼樣將心法用到自己的身體上？週二早班同學共同參與討論與分享心得，俾使對無極的概念有更深入的了解，茲將討論內容略述如下：",
         "tags":  [
                      "練功筆記"
@@ -46057,7 +45948,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202303-2303-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1000444.jpg?v=1000444"
     },
     {
         "contentBlocks":  [
@@ -46133,7 +46024,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "春花爛漫，全台大爆發的雪梅開遍後，各色品種的櫻花也紛紛登場！台北內溝溪畔夾岸的櫻花步道，更是吸引無數賞櫻人。這個如今被政府納入重要景點的社區小角落，起源於一個女人對丈夫說：「為什麼我們的河岸不…",
         "tags":  [
                      "編輯小語"
@@ -46145,7 +46036,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7086194.jpg?v=7086194"
     },
     {
         "contentBlocks":  [
@@ -46373,7 +46264,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "對練功而言，身體如果脫離神經系統就乏善可陳，所謂與身體對話，是身體的成就要讓心聽見，大腦覺受心的感覺。如果用現代解剖學的語言來詮釋道家的三丹田，上丹田是腦神經系統，中丹田是自律神經、內分泌系統…",
         "tags":  [
                      "心田集",
@@ -46386,7 +46277,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4720661.jpg?v=4720661"
     },
     {
         "contentBlocks":  [
@@ -46534,7 +46425,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第32章「道常無名，樸，雖小」，和第37章「道常無為而無不為」，兩者是同樣的意思，但卻有不一樣的應用。我們現在把兩章合併起來講。",
         "tags":  [
                      "體證道德經",
@@ -46547,7 +46438,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3122169.jpg?v=3122169"
     },
     {
         "contentBlocks":  [
@@ -46623,7 +46514,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
         "tags":  [
                      "練功筆記",
@@ -46636,7 +46527,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1775874.jpg?v=1775874"
     },
     {
         "contentBlocks":  [
@@ -46768,7 +46659,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "洪明美已經八十二歲，兩個孫子的外婆，應該是種子班年紀最大的學員，但她的容貌及體態，看起來頂多七十，如果哪天我們要拍招生廣告，她是最佳代言人選。可以想像八十好幾，還可以蹲平抬腿且健步如飛，完全沒…",
         "tags":  [
                      "導引采風錄"
@@ -46780,7 +46671,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8305671.jpg?v=8305671"
     },
     {
         "contentBlocks":  [
@@ -46888,7 +46779,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "誠則明，明則誠，真要歸結到最後，古人大概也不會只有在術、數，技巧、方法上面打轉，大概就是「本來就是這樣」，很自然的一種反應而已吧。以前看到誠則明、明則誠，第一個反應其實是這不是TMD講廢話，左…",
         "tags":  [
                      "股海人生"
@@ -46900,7 +46791,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5612726.jpg?v=5612726"
     },
     {
         "contentBlocks":  [
@@ -47072,7 +46963,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2023 年1 月 28日，正值農曆春節連假期間，我因好友Tulaya Pornpiriyakulchai 的邀請，前往泰國舉辦了個人第一次的海外氣機導引工作坊。說起來，這個工作坊的起源，以及…",
         "tags":  [
                      "觀行錄",
@@ -47085,7 +46976,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3998914.jpg?v=3998914"
     },
     {
         "contentBlocks":  [
@@ -47145,7 +47036,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "農曆春節期間，學香的同學們會到張老師家拜年走春，每一年都是我很期待的日子。",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47157,7 +47048,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1339813.jpg?v=1339813"
     },
     {
         "contentBlocks":  [
@@ -47225,7 +47116,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "年初五走春，先到八德館，鎮館之寶—芽莊蟲漏映入眼簾，平日隔著玻璃櫃觀賞，今天容我將它捧在手中凝神端詳。外型像皇冠，又像山巒，每一道紋理，寫著生命的滄桑史。旁邊放著小塊芽莊殼，拿起打火機燒，一縷…",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47237,7 +47128,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7523341.jpg?v=7523341"
     },
     {
         "contentBlocks":  [
@@ -47289,7 +47180,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "如果不是老師，從不知人可以這樣活著，真實去感受生活中每個極致且在獨一無二的世界裡，老師常說你有什麼本事，拿的出來才是真的，不要空談。",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47301,7 +47192,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5000929.jpg?v=5000929"
     },
     {
         "contentBlocks":  [
@@ -47345,7 +47236,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2023年新春大年初五，跟著同學們一起到老師家拜年，這是我第一次參與這個「新春盛會」！來到東醫這個大家族，無論是入門班及種子班的學習，讓我先見識、經驗到了「身體」、「體覺」上的極致；四年前參與…",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47357,7 +47248,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7443631.jpg?v=7443631"
     },
     {
         "contentBlocks":  [
@@ -47417,7 +47308,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "被賣掉之後的拜年，因為不太知道被賣到什麼程度，總之先叫一聲媽比較實在，不會錯的。桌上擺了很多食物，廚房晃一圈之後我決定開始攻略桌上的食物，默默吃也絕對不會錯的，以下是心得感想：牛肉乾真是霹靂好…",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47429,7 +47320,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7235207.jpg?v=7235207"
     },
     {
         "contentBlocks":  [
@@ -47489,7 +47380,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "到老師家拜年是每年春節很期待的事，連著幾天的低溫，年初五意外的回暖，在暖和的冬陽下步行到八德會館，映入眼簾的是「玉兔迎春歲月慶、天地無私物自豐」的對聯和暐婷燦爛的笑容；屋內已有多位先到的同學，…",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47501,7 +47392,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2761595.jpg?v=2761595"
     },
     {
         "contentBlocks":  [
@@ -47553,7 +47444,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第204期 / 2023.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "年初五，步出小巨蛋捷運站的腳步輕盈，心是雀躍的。八德會館的五感人間品香活動猜想已近尾聲，決定直接去老師家。和傅校長在樓下閒聊等候時赫然發現，一直以為年高德劭的校長只大我一兩歲而已，她的白髮其實…",
         "tags":  [
                      "專欄文章/新春團拜"
@@ -47565,7 +47456,7 @@ export const generatedArticles = [
         "category":  "專欄文章/新春團拜",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202302-2302-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6835727.jpg?v=6835727"
     },
     {
         "contentBlocks":  [
@@ -47633,7 +47524,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
         "tags":  [
                      "專欄文章"
@@ -47645,7 +47536,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5759067.jpg?v=5759067"
     },
     {
         "contentBlocks":  [
@@ -47769,7 +47660,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
         "tags":  [
                      "專欄文章"
@@ -47781,7 +47672,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2451043.jpg?v=2451043"
     },
     {
         "contentBlocks":  [
@@ -47849,7 +47740,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
         "tags":  [
                      "專欄文章"
@@ -47861,7 +47752,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205460.jpg?v=5205460"
     },
     {
         "contentBlocks":  [
@@ -48041,7 +47932,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
         "tags":  [
                      "專欄文章"
@@ -48053,7 +47944,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6560507.jpg?v=6560507"
     },
     {
         "contentBlocks":  [
@@ -48113,7 +48004,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
         "tags":  [
                      "專欄文章"
@@ -48125,7 +48016,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6543167.jpg?v=6543167"
     },
     {
         "contentBlocks":  [
@@ -48241,7 +48132,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶…",
         "tags":  [
                      "體證道德經",
@@ -48254,7 +48145,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4432955.jpg?v=4432955"
     },
     {
         "contentBlocks":  [
@@ -48362,7 +48253,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主…",
         "tags":  [
                      "圖靈集",
@@ -48375,7 +48266,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805033.jpg?v=6805033"
     },
     {
         "contentBlocks":  [
@@ -48389,7 +48280,7 @@ export const generatedArticles = [
                               {
                                   "caption":  "",
                                   "type":  "image",
-                                  "src":  "/assets/articles/202301/202301-img-021.jpeg?v=904761"
+                                  "src":  "/assets/articles/202301/202301-img-021.jpeg?v=655360"
                               },
                               {
                                   "styleName":  "Normal",
@@ -48454,7 +48345,7 @@ export const generatedArticles = [
                        {
                            "caption":  "",
                            "type":  "image",
-                           "src":  "/assets/articles/202301/202301-img-021.jpeg?v=904761"
+                           "src":  "/assets/articles/202301/202301-img-021.jpeg?v=655360"
                        },
                        {
                            "caption":  "",
@@ -48490,7 +48381,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-9",
-        "image":  "/assets/articles/202301/202301-img-021.jpeg?v=904761"
+        "image":  "/assets/articles/202301/202301-img-021.jpeg?v=655360"
     },
     {
         "contentBlocks":  [
@@ -48566,7 +48457,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
         "tags":  [
                      "練功筆記",
@@ -48579,7 +48470,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4361016.jpg?v=4361016"
     },
     {
         "contentBlocks":  [
@@ -49112,7 +49003,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮…",
         "tags":  [
                      "專欄文章"
@@ -49124,7 +49015,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4364338.jpg?v=4364338"
     },
     {
         "contentBlocks":  [
@@ -49347,7 +49238,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的…",
         "tags":  [
                      "專欄文章"
@@ -49359,7 +49250,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-2-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7406536.jpg?v=7406536"
     },
     {
         "contentBlocks":  [
@@ -49643,7 +49534,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
         "tags":  [
                      "專欄文章"
@@ -49655,7 +49546,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-2-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6747126.jpg?v=6747126"
     },
     {
         "contentBlocks":  [
@@ -50123,7 +50014,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識…",
         "tags":  [
                      "專欄文章"
@@ -50135,7 +50026,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-2-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2604534.jpg?v=2604534"
     },
     {
         "contentBlocks":  [
@@ -50187,7 +50078,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
         "tags":  [
                      "專欄文章"
@@ -50199,7 +50090,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5824119.jpg?v=5824119"
     },
     {
         "contentBlocks":  [
@@ -50275,7 +50166,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
         "tags":  [
                      "專欄文章"
@@ -50287,7 +50178,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-594631.jpg?v=594631"
     },
     {
         "contentBlocks":  [
@@ -50339,7 +50230,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
         "tags":  [
                      "專欄文章"
@@ -50351,7 +50242,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-11",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805047.jpg?v=6805047"
     },
     {
         "contentBlocks":  [
@@ -50451,7 +50342,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第203期 / 2023.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
         "tags":  [
                      "專欄文章"
@@ -50463,7 +50354,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202301-2301-3-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2608425.jpg?v=2608425"
     },
     {
         "contentBlocks":  [
@@ -50523,7 +50414,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "擾攘不安的2022年接近尾聲了，新冠疫情加上俄烏戰爭，再加上越來越白熱化的訊息戰、經濟戰，人類之間彼此仇視、對抗的惡習，仍然嚴重扼殺了彼此苦心擘劃的種種。眼見世局如此，不論為法為戒，我們一樣是…",
         "tags":  [
                      "編輯小語"
@@ -50535,7 +50426,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6834474.jpg?v=6834474"
     },
     {
         "contentBlocks":  [
@@ -50611,7 +50502,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "棋楠紋路通常是一條條絲狀，油脂與纖維夾雜，像白棋這種生木棋楠就看得出來。棋楠埋在土裡，但時間不夠久，還沒有碳化，就叫作綠棋、紫棋，削下去有黏黏的感覺。黃土沉本身也是棋楠樹，以前把黃土沉都稱為黃…",
         "tags":  [
                      "導引香道"
@@ -50623,7 +50514,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5885979.jpg?v=5885979"
     },
     {
         "contentBlocks":  [
@@ -50699,7 +50590,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "回顧8年前的我，那時在銀行上班，某日中午外出吃飯，用餐間與鄰座閒聊，得知中正紀念堂有「氣機導引終身學習班」，我在想：好不容易才自學校畢業，怎麼會有無法畢業的課程呢？頗為好奇，於是去電詢問，因為…",
         "tags":  [
                      "練功筆記"
@@ -50711,7 +50602,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6757357.jpg?v=6757357"
     },
     {
         "contentBlocks":  [
@@ -50835,7 +50726,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "以道佐人主者，不以兵強天下。其事好還。師之所處，荊棘生焉。大軍之後，必有凶年。善者果而已，不敢以取強。果而勿矜，果而勿伐，果而勿驕。果而不得己，果而勿強。物壯則老，是謂不道。不道早已。",
         "tags":  [
                      "體證道德經",
@@ -50848,7 +50739,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5215537.jpg?v=5215537"
     },
     {
         "contentBlocks":  [
@@ -51044,7 +50935,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「識頻」不是學理的術語詞彙，是身體感悟的創見。每個人都有自己的識頻範圍，舉凡和自己產生連結的人事時地物，有頻率共振的連結，進入大腦網絡的換算範圍，起了作用，人才會受到影響。",
         "tags":  [
                      "心田集",
@@ -51057,7 +50948,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2605573.jpg?v=2605573"
     },
     {
         "contentBlocks":  [
@@ -51134,7 +51025,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "東拉西扯的扯淡了一段時間，不知不覺也就這樣過了快一年了。有時候扯得或許都飛到銀河系外去了，有時候也許會讓人有點困惑，氣機導引跟股票漲跌到底有啥關聯。鬼扯一年了，到年底再扯淡一次吧！",
         "tags":  [
                      "股海人生"
@@ -51146,7 +51037,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7546562.jpg?v=7546562"
     },
     {
         "contentBlocks":  [
@@ -51342,7 +51233,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "又到年底練功成果自我總檢討的時間，氣機導引武林盟主選舉連辦兩屆之後就停辦，因為「見群龍無首」，每個人都是武林盟主的思想引導，再續辦下去就沒什麼新意了。不過，現在檢視第一屆武林盟主莊朝傑當選之後…",
         "tags":  [
                      "導引采風錄"
@@ -51354,7 +51245,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5596385.jpg?v=5596385"
     },
     {
         "contentBlocks":  [
@@ -53551,7 +53442,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "端午，往年三寶會跟友人一起划龍舟。雖是老弱婦孺，同舟共濟下，曾與體育好手隊伍並駕齊驅，划出前三名次。疫情，龍舟賽不再，仍應景吃粽子。一樣是娘親備料，今年粽子少了父親巧手包製的味道。全員到齊討論…",
         "tags":  [
                      "練功筆記",
@@ -53564,7 +53455,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2139803.jpg?v=2139803"
     },
     {
         "contentBlocks":  [
@@ -53846,7 +53737,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第202期 / 2022.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "莫仁維承接中國工程學會111年年會時，打電話給我說要表演，我還沒有弄清楚怎麼回事就說：「好啊！」表演內容也沒問，有哪些人也不知，這是基於多年學員的信任，與他合辦活動的組織能力，以及當年被逼著表…",
         "tags":  [
                      "專欄文章"
@@ -53858,7 +53749,1002 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202212-2212-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2366663.jpg?v=2366663"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "font_8",
+                                  "styleId":  "font_8",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "〈第二十九章〉"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "將欲取天下而為之，吾見其不得已。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "天下神器，不可為也，不可執也。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "為者敗之，執者失之。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "故物或行或隨，或歔或吹，或強或羸，或載或隳。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "是以聖人去甚、去奢、去泰。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "人離自己多遠，離神器就多遠"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學、家庭、工作、歷練…，都是不得已而為之，結果什麼也得不到、帶不走，人生終究一場空。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「天下神器」指人。人之主為神，神性從人化生而來。所以人其實是乘載「神」的器皿。器是神進駐人間的形象。一般人都活在自己的個性、習性，把道理、知識、喜怒哀樂憂思悲恐驚、貪嗔癡慢疑，七情六慾等諸多罣礙都放在人這個器皿上，讓社會規章、觀感直接投影在自己身上。「神」遂被人性掩蓋，人的本質核心——自性無法顯現，神力就愈來愈耗弱。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "神器不可為，也不可執。「不可為」指不能強求，「執」指蠻幹、硬幹的作為。人愈強求，愈有為，只會在慾望中讓知識的執著蠻橫或情緒宣洩越來越肥大，最終是徒勞神魂，無法得到神的本體。人離自己多遠，距離神器就多遠。大腦愈單純，神愈旺，因為主體之神和客體的知識同時進駐在大腦，而練功是透過身體鍛鍊，燒練自己既有的執著、觀念、懷疑或認知，損之又損，使漸漸清澈，最後到達完全沒有恐懼、懷疑，凝煉出生命能的神器，活出身心靈的整體，活在神性中解脫一切，叫做「神」，自己就會成為神器的存在，神與器合而為一。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "用意主導器，神器相合"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "神欲取天下之際，有一種狀況或效能正在進行，人該如何？練精化氣的「精」是物質界慾望，不屬於身體本身。練氣化神，練心氣就是練神，化掉內心的恐懼、懷疑與不安，用靜抑制、淡化既定的習慣、觀念、價值，慢慢讓沒有想法、執著、罣礙的意（最接近神）來主導這個器，使神、器相合而成形——德性，「德」便是道的形。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "古代有肝腎同源之說，腎是先天之本，藏精之所；肝臟藏血，精血互生。肝與腎息息相關，都是默默承擔重任的器官。血液在肝臟進行解毒，再由腎臟排毒，驚恐煩躁最傷腎臟，熬夜則易傷肝，進而影響肺功能運作。如果肝血不足，會影響腎精的生成，而腎精虧損，也會影響肝血的滋養，所以養肝顧腎，神才會旺。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "中國養生論述對氣與呼吸作用，有六字訣導引法。導引呼吸的作用同於中藥、針灸，有補瀉的區分；吸氣為補，呼氣為瀉。氣的六種表現方式為：噓、呵、呼、呬、吹、唏，對應到肝、心、脾、肺、腎。其中，「吹」、「唏」都屬於腎臟。譬如，調理腎氣時，要留意腎的腎陽、腎陰之別。腎陽虛時，陰亢，用「歔」之，用慢；慢是溫、是暖，是氣慢。腎陰虛時，陽旺，用「吹」字，用快；吹是冷、快，冷是快速地呼氣、吐氣。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "練功時，無論是「或行或隨」、「歔(ㄒㄩ)或吹」、「或強或羸(ㄌㄟˊ)」、「或載或隳(ㄏㄨㄟ)」都是很自然的進行，既沒有刻意的作為，也不強求，只是處在一種平衡狀態。「或行或隨」是有時主動、有時被動；時而主導，時而相隨；有時在前，有時居後。「或歔或吹」指慢快、溫冷、補瀉。「或強或羸」，或快或慢。「或載或隳」載為補，隳為瀉；逆為補，順為瀉，是順、逆腹式呼吸的作用，用順行、逆行的補瀉概念，面對自己的安危。安是虛，指飽滿。危是不足，補其不足而損有餘。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "對道而言，一切都是餘食贅行、畫蛇添足。愈想要表現自己，愈有目的性時，反而會遠離功法的意義。所以，聖人「去甚」，不做剛猛而行柔弱；「去奢」不做畫蛇添足的小道之術；「去泰」不張揚凸顯自己，去除驕傲與執著，才能到達出神入化的入神化境。"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  0,
+        "title":  "聖人去甚、去奢、去泰",
+        "sourceId":  "2211-6",
+        "images":  [
+
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "〈第二十九章〉",
+                                                "將欲取天下而為之，吾見其不得已。",
+                                                "天下神器，不可為也，不可執也。",
+                                                "為者敗之，執者失之。",
+                                                "故物或行或隨，或歔或吹，或強或羸，或載或隳。",
+                                                "是以聖人去甚、去奢、去泰。",
+                                                "人離自己多遠，離神器就多遠",
+                                                "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學、家庭、工作、歷練…，都是不得已而為之，結果什麼也得不到、帶不走，人生終究一場空。",
+                                                "「天下神器」指人。人之主為神，神性從人化生而來。所以人其實是乘載「神」的器皿。器是神進駐人間的形象。一般人都活在自己的個性、習性，把道理、知識、喜怒哀樂憂思悲恐驚、貪嗔癡慢疑，七情六慾等諸多罣礙都放在人這個器皿上，讓社會規章、觀感直接投影在自己身上。「神」遂被人性掩蓋，人的本質核心——自性無法顯現，神力就愈來愈耗弱。",
+                                                "神器不可為，也不可執。「不可為」指不能強求，「執」指蠻幹、硬幹的作為。人愈強求，愈有為，只會在慾望中讓知識的執著蠻橫或情緒宣洩越來越肥大，最終是徒勞神魂，無法得到神的本體。人離自己多遠，距離神器就多遠。大腦愈單純，神愈旺，因為主體之神和客體的知識同時進駐在大腦，而練功是透過身體鍛鍊，燒練自己既有的執著、觀念、懷疑或認知，損之又損，使漸漸清澈，最後到達完全沒有恐懼、懷疑，凝煉出生命能的神器，活出身心靈的整體，活在神性中解脫一切，叫做「神」，自己就會成為神器的存在，神與器合而為一。",
+                                                "用意主導器，神器相合",
+                                                "神欲取天下之際，有一種狀況或效能正在進行，人該如何？練精化氣的「精」是物質界慾望，不屬於身體本身。練氣化神，練心氣就是練神，化掉內心的恐懼、懷疑與不安，用靜抑制、淡化既定的習慣、觀念、價值，慢慢讓沒有想法、執著、罣礙的意（最接近神）來主導這個器，使神、器相合而成形——德性，「德」便是道的形。",
+                                                "古代有肝腎同源之說，腎是先天之本，藏精之所；肝臟藏血，精血互生。肝與腎息息相關，都是默默承擔重任的器官。血液在肝臟進行解毒，再由腎臟排毒，驚恐煩躁最傷腎臟，熬夜則易傷肝，進而影響肺功能運作。如果肝血不足，會影響腎精的生成，而腎精虧損，也會影響肝血的滋養，所以養肝顧腎，神才會旺。",
+                                                "中國養生論述對氣與呼吸作用，有六字訣導引法。導引呼吸的作用同於中藥、針灸，有補瀉的區分；吸氣為補，呼氣為瀉。氣的六種表現方式為：噓、呵、呼、呬、吹、唏，對應到肝、心、脾、肺、腎。其中，「吹」、「唏」都屬於腎臟。譬如，調理腎氣時，要留意腎的腎陽、腎陰之別。腎陽虛時，陰亢，用「歔」之，用慢；慢是溫、是暖，是氣慢。腎陰虛時，陽旺，用「吹」字，用快；吹是冷、快，冷是快速地呼氣、吐氣。",
+                                                "練功時，無論是「或行或隨」、「歔(ㄒㄩ)或吹」、「或強或羸(ㄌㄟˊ)」、「或載或隳(ㄏㄨㄟ)」都是很自然的進行，既沒有刻意的作為，也不強求，只是處在一種平衡狀態。「或行或隨」是有時主動、有時被動；時而主導，時而相隨；有時在前，有時居後。「或歔或吹」指慢快、溫冷、補瀉。「或強或羸」，或快或慢。「或載或隳」載為補，隳為瀉；逆為補，順為瀉，是順、逆腹式呼吸的作用，用順行、逆行的補瀉概念，面對自己的安危。安是虛，指飽滿。危是不足，補其不足而損有餘。",
+                                                "對道而言，一切都是餘食贅行、畫蛇添足。愈想要表現自己，愈有目的性時，反而會遠離功法的意義。所以，聖人「去甚」，不做剛猛而行柔弱；「去奢」不做畫蛇添足的小道之術；「去泰」不張揚凸顯自己，去除驕傲與執著，才能到達出神入化的入神化境。"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學…",
+        "tags":  [
+                     "體證道德經",
+                     "道德經"
+                 ],
+        "author":  "文稿彙整、鄭雅靜",
+        "issueId":  "202211",
+        "slug":  "202211-2211-6",
+        "readTime":  "約 3 分鐘",
+        "category":  "體證道德經",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-6",
+        "image":  "/assets/pixabay/pixabay-5205442.jpg?v=5205442"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住："
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "誠者成也。"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  1,
+        "title":  "蔡育展",
+        "sourceId":  "2211-8",
+        "images":  [
+
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
+                                                "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
+                                                "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
+                                                "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
+                                                "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
+                                                "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
+                                                "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
+                                                "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
+                                                "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
+                                                "誠者成也。"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別…",
+        "tags":  [
+                     "股海人生"
+                 ],
+        "author":  "",
+        "issueId":  "202211",
+        "slug":  "202211-2211-8",
+        "readTime":  "約 2 分鐘",
+        "category":  "股海人生",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-8",
+        "image":  "/assets/pixabay/pixabay-4363763.jpg?v=4363763"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "從排斥到擁抱氣機"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「妻唱夫隨」的氣機機緣"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "夫妻由中西不同調轉成練功同好"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "開啓不同維度的問題解決"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "練功的建議及體會"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "採訪後記"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  2,
+        "title":  "黃坤瑛",
+        "sourceId":  "2211-9",
+        "images":  [
+
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
+                                                "從排斥到擁抱氣機",
+                                                "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
+                                                "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
+                                                "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
+                                                "「妻唱夫隨」的氣機機緣",
+                                                "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
+                                                "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
+                                                "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
+                                                "夫妻由中西不同調轉成練功同好",
+                                                "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
+                                                "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
+                                                "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
+                                                "開啓不同維度的問題解決",
+                                                "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
+                                                "練功的建議及體會",
+                                                "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
+                                                "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
+                                                "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
+                                                "採訪後記",
+                                                "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離…",
+        "tags":  [
+                     "導引采風錄"
+                 ],
+        "author":  "",
+        "issueId":  "202211",
+        "slug":  "202211-2211-9",
+        "readTime":  "約 5 分鐘",
+        "category":  "導引采風錄",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-9",
+        "image":  "/assets/pixabay/pixabay-4834325.jpg?v=4834325"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。"
+                              },
+                              {
+                                  "styleName":  "內文",
+                                  "styleId":  "內文",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  3,
+        "title":  "手揮無極刀，試解親情困（二）",
+        "sourceId":  "2211-2",
+        "images":  [
+
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
+                                                "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
+                                                "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
+                                                "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
+                                                "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
+                                                "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
+                                                "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
+        "tags":  [
+                     "練功筆記",
+                     "身體感知"
+                 ],
+        "author":  "游夙君",
+        "issueId":  "202211",
+        "slug":  "202211-2211-2",
+        "readTime":  "約 4 分鐘",
+        "category":  "練功筆記",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-2",
+        "image":  "/assets/pixabay/pixabay-5205439.jpg?v=5205439"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。"
+                              },
+                              {
+                                  "styleName":  "Normal",
+                                  "styleId":  "Normal.0",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  4,
+        "title":  "之二- 覺醒之路",
+        "sourceId":  "2211-3",
+        "images":  [
+
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
+                                                "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
+                                                "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
+                                                "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
+                                                "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
+                                                "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
+                                                "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
+                                                "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
+                                                "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
+                                                "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "圖片來源 / Pixabay",
+        "excerpt":  "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
+        "tags":  [
+                     "練功筆記"
+                 ],
+        "author":  "劉惠瑛",
+        "issueId":  "202211",
+        "slug":  "202211-2211-3",
+        "readTime":  "約 2 分鐘",
+        "category":  "練功筆記",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-3",
+        "image":  "/assets/pixabay/pixabay-955938.jpg?v=955938"
+    },
+    {
+        "contentBlocks":  [
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參加蕭先生書法講座有感，謹以此文與讀者分享。"
+                              },
+                              {
+                                  "caption":  "",
+                                  "type":  "image",
+                                  "src":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "一\n「我們都是遊走在迷狂世界上的亡靈。」(引自 賈曉偉: 亡靈記，首頁題記，2005。)"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "過往的記憶很零散，似碎片般漂浮而不沉沒。童年的記憶，母親的記憶，土地的 記憶；而父親的記憶呢？總是一團團模糊........."
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "如詩這般，酒，即便可以興、觀、羣、怨，但總化解、治癒不了那濃郁的鄉愁。 我的鄉愁似乎深藏在失智多年母親的眼神中，在意識邊陲迴盪閃爍的靈光；這溫和柔適卻帶點淚水的光，彷彿沒有對象，所以沒有任何東西會侵犯到它。光裡有愛，一種無私綻放的愛，一種不需言傳就能直接明白的慈悲的愛。不過，母親的眼神中似乎充滿著對我、對周遭世界的探問，甚至疑惑，你是誰?"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "二"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「所有書寫者都是倖存者，所有描述極權壓逼的語言，都是劫難過後的殘餘。」"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "(廖梅璇，2022.05.04，《聯合報》。〈烏俄戰爭中的五四〉)"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "時代的悲劇迫使人們顛沛流離，歷史的災難對於個人的生命造成無法抹除的傷痛。 這巨大的傷痛往往超出個人經驗能力所能承擔的範圍，更是語言所無法指認與負重的對象。這些災難與悲劇不僅席捲整個社會，也深刻影響一個家族或家庭成員的生離死別，乃至生死存亡的不幸命運。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "歷史的陰影往往銘刻在個人靈魂某處，而人為了好好活著，總會發展出某種防衛機轉來保護自己人格的完整與正常運作。做為外省第一代或者第二代人，與其說蕭春生老師背負著歷史的罪責來到世間，毋寧說他不得不扛起做為長子無法逃避的家族期待與倫理壓力，以及在父子之間與母子之間難以跨越的情感障礙和鴻溝。 問題是：他承受得起這些嗎？或者說，他如何將那創傷經驗轉化成好好活下去的毅力與勇氣?"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "這始終是個謎。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "三"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "書法做為一種美學修養工夫，是否與（童年）創傷經驗具有某種連結的可能?轉化在彼此之間可能產生何種作用？這才是問題的關鍵之處。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "依筆者極為短暫的接觸與道聽塗說，無論是親朋好友，甚至是朋友的朋友的朋友主動求字，或者是因某種情動觸發或觸景生情，乃至於午夜夢迴的感召與悸動而自行書寫，蕭老師的書寫特徵之一是「互為主體性」。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "也就是說，蕭老師的作品是生發且完成於自身與人、事、物、地、景......的互動過程，於其中，酒具備了關鍵性的中介作用，酒做為載體，開啟了主體間的心靈通道，引領彼此的交會通往原本潛藏的幽黯意識與幽微經驗。蕭老師以其豐富而詭異的想像力，並透過同理的沉浸而滲透人情事理，之中絕對是對生命有所感悟、 領悟的。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "換句話說，蕭老師的作品即是他的「生活世界」的某種變形的顯現。比方說，蕭老師的女兒樹珊曾就父親的作品《寫生》註記說：「寫生。寫生。爸爸用書法，寫著他的一生。」又，《玉壺買春》作品，更清楚闡明蕭老師在充滿友誼氛圍中的自在、瀟灑、品味與放蕩不羈。但凡此種種特質，或許可以「任性」二字予以統攝而貫穿其間。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "四"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "在人類歷史長河中，人與物之間早被劃出一道鴻溝，並讓一方受另一方支配；但究其實，物是人的身體的延伸，人的身體則是世界的延伸；而唯有身體才能填平這道鴻溝。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "從蕭老師的作品中，我感覺他的書寫的另一特徵是深蘊著「人文身體性」。「人文身體性」意味著以「氣化身體」在書寫，而非以認知的或理性的邏輯在書寫。也就是說，在書寫過程中，蕭老師的身體與筆、墨、硯、紙、水......等等物我之間渾為一體，一氣呵成；文字不像文字，圖案又不似圖案，而是在文圖交界混搭、交融處生成作品。渾為一體的基本功，乃是達致忘我、無我之境，既相忘於江湖；一氣呵成講究「氣虛」且長，寧靜悠遠，究竟幻化生成之機。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "蘇軾在《和董傳留別》中曾云：「粗繒大布裹生涯，腹有詩書氣自華」，此意或可為「人文身體性」與「氣化身體」增進幾分詮解。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "細加思量，蕭老師所實踐、展演的「人文身體性」書寫，或顯或隱的觸及自我與世界的緊密連結，或者斷裂。甚且，誠如羅伯托•埃斯波西托所揭示的：「人與物彼此折射出對方的命運，身體是阻止人成為物的抵抗之所。」(Roberto Esposito， 《人與物：從身體的視點出發》，2022)。換言之，蕭老師與書法彼此折射出、也造就了對方的命運，相互混融且又走出各自的界域；但他的「人文身體性」書寫， 阻止／抵抗自身成為「物」。蕭老師最終未從其生命內部爆裂，乃至粉碎，這代表物我一種融合，也就是人（蕭老師）與物（書法）的靈魂的融合。從這層意義來說，蕭老師一方面做為意識存在，另一方面也做為物體存在。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "譬如，在經典之作《文似看山不喜平》中，圖文交纏雜間、物我搓揉相滲，但這個作品卻有意又似無意間構成一個整體。依我之見，這件作品的重點並不在於「文似看山不喜平」這句話與類似山形圖案之間是否相稱或呼應，也不在於蕭老師是否將「文似看山不喜平」的本義或本意恰如其分地表現出來；其重點則在於觀者必須取消自己的視覺作用，停止認知的思考，將自己的身體移位到作品之中，也讓作品移位到身體之內；在「進」與「出」的雙重移位之間，正是「人文身體性」 的具體寫照，也是「觀」「看」蕭老師的作品的必要姿態。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "五"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "假使你不經過心智的過渡，用一種所謂「智的直觀」去觀照、凝視蕭老師的書寫， 恍惚之間你可能會覺得他的某些作品與乩童或靈媒（巫者）起乩時所畫的符咒有幾分神似，譬如，《獅子吼》、《妙造自然》、《在水一方》等等。這些作品並非一 般人工製造物，而是蕭老師靈魂之幻化的精神性／靈性生產，手與筆墨紙僅僅是個中介，從而蕭老師的作品彷彿隱藏某種「靈力」，直接、凌厲而不及掩耳目地沁入人的心志，呼喚人的情感，洞悉人的欲望，甚至震攝人的靈魂。換句話說， 彷如符咒一般，蕭老師的文字圖案不僅是種「靈象徵」，而且是「靈力的湧現」; 在作品與人心之間，在物質與精神之間，在肉體與靈魂之間，在蕭老師與你我之 間。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "從這個意義上來說，蕭老師的書法作品的第三個特徵，或可稱之為「靈象徵的湧現」。因而，我將蕭老師稱為「現代巫士」。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「巫士......所傳頌的野性思維帶著層層迴盪，始終在不可見、不可聽聞的空間中 召喚著，但這也是最基本的困難。」(黃冠閔，2018，頁 32)"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "承上所述，做為一位巫士，蕭老師其實是位掩蔽者，他不經心地將「天機」掩蔽在其作品中，天知，地知，但你我卻未必知曉。以下陳嘉映先生的這段話，或可進一步做為註腳。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "「神通過天穹而現象是一種展示，它讓人看見那自我掩蔽者。不過，它不是把掩 蔽者從其隱蔽中揪出來給人看，相反，它只有把掩蔽者深護於掩蔽中才得讓人看。 不可知的神就這樣透過天穹開敞而做為不可知者現象。」(轉引自陳嘉映著:《海 德格爾哲學概論》，頁 55，北京:三聯書店，2005。)"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "六"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "回望。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "我的傷口先於我存在。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "淚水未乾，和解已緩緩滋長，而愛早就在那兒。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "其實，我的沉重祇不過是一份難捨的眷戀。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "但有蕭老師「在」的地方，就有「春」天。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "大家邀蕭老師一起去「買春」吧。"
+                              },
+                              {
+                                  "styleName":  "預設值",
+                                  "styleId":  "預設值",
+                                  "isBold":  false,
+                                  "type":  "paragraph",
+                                  "text":  "比南方還南。吉。"
+                              }
+                          ],
+        "date":  "2022.11.10",
+        "order":  5,
+        "title":  "嫻言絮語",
+        "sourceId":  "2211-4",
+        "images":  [
+                       {
+                           "caption":  "",
+                           "type":  "image",
+                           "src":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
+                       }
+                   ],
+        "sections":  [
+                         {
+                             "paragraphs":  [
+                                                "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參加蕭先生書法講座有感，謹以此文與讀者分享。",
+                                                "一\n「我們都是遊走在迷狂世界上的亡靈。」(引自 賈曉偉: 亡靈記，首頁題記，2005。)",
+                                                "過往的記憶很零散，似碎片般漂浮而不沉沒。童年的記憶，母親的記憶，土地的 記憶；而父親的記憶呢？總是一團團模糊.........",
+                                                "如詩這般，酒，即便可以興、觀、羣、怨，但總化解、治癒不了那濃郁的鄉愁。 我的鄉愁似乎深藏在失智多年母親的眼神中，在意識邊陲迴盪閃爍的靈光；這溫和柔適卻帶點淚水的光，彷彿沒有對象，所以沒有任何東西會侵犯到它。光裡有愛，一種無私綻放的愛，一種不需言傳就能直接明白的慈悲的愛。不過，母親的眼神中似乎充滿著對我、對周遭世界的探問，甚至疑惑，你是誰?",
+                                                "二",
+                                                "「所有書寫者都是倖存者，所有描述極權壓逼的語言，都是劫難過後的殘餘。」",
+                                                "(廖梅璇，2022.05.04，《聯合報》。〈烏俄戰爭中的五四〉)",
+                                                "時代的悲劇迫使人們顛沛流離，歷史的災難對於個人的生命造成無法抹除的傷痛。 這巨大的傷痛往往超出個人經驗能力所能承擔的範圍，更是語言所無法指認與負重的對象。這些災難與悲劇不僅席捲整個社會，也深刻影響一個家族或家庭成員的生離死別，乃至生死存亡的不幸命運。",
+                                                "歷史的陰影往往銘刻在個人靈魂某處，而人為了好好活著，總會發展出某種防衛機轉來保護自己人格的完整與正常運作。做為外省第一代或者第二代人，與其說蕭春生老師背負著歷史的罪責來到世間，毋寧說他不得不扛起做為長子無法逃避的家族期待與倫理壓力，以及在父子之間與母子之間難以跨越的情感障礙和鴻溝。 問題是：他承受得起這些嗎？或者說，他如何將那創傷經驗轉化成好好活下去的毅力與勇氣?",
+                                                "這始終是個謎。",
+                                                "三",
+                                                "書法做為一種美學修養工夫，是否與（童年）創傷經驗具有某種連結的可能?轉化在彼此之間可能產生何種作用？這才是問題的關鍵之處。",
+                                                "依筆者極為短暫的接觸與道聽塗說，無論是親朋好友，甚至是朋友的朋友的朋友主動求字，或者是因某種情動觸發或觸景生情，乃至於午夜夢迴的感召與悸動而自行書寫，蕭老師的書寫特徵之一是「互為主體性」。",
+                                                "也就是說，蕭老師的作品是生發且完成於自身與人、事、物、地、景......的互動過程，於其中，酒具備了關鍵性的中介作用，酒做為載體，開啟了主體間的心靈通道，引領彼此的交會通往原本潛藏的幽黯意識與幽微經驗。蕭老師以其豐富而詭異的想像力，並透過同理的沉浸而滲透人情事理，之中絕對是對生命有所感悟、 領悟的。",
+                                                "換句話說，蕭老師的作品即是他的「生活世界」的某種變形的顯現。比方說，蕭老師的女兒樹珊曾就父親的作品《寫生》註記說：「寫生。寫生。爸爸用書法，寫著他的一生。」又，《玉壺買春》作品，更清楚闡明蕭老師在充滿友誼氛圍中的自在、瀟灑、品味與放蕩不羈。但凡此種種特質，或許可以「任性」二字予以統攝而貫穿其間。",
+                                                "四",
+                                                "在人類歷史長河中，人與物之間早被劃出一道鴻溝，並讓一方受另一方支配；但究其實，物是人的身體的延伸，人的身體則是世界的延伸；而唯有身體才能填平這道鴻溝。",
+                                                "從蕭老師的作品中，我感覺他的書寫的另一特徵是深蘊著「人文身體性」。「人文身體性」意味著以「氣化身體」在書寫，而非以認知的或理性的邏輯在書寫。也就是說，在書寫過程中，蕭老師的身體與筆、墨、硯、紙、水......等等物我之間渾為一體，一氣呵成；文字不像文字，圖案又不似圖案，而是在文圖交界混搭、交融處生成作品。渾為一體的基本功，乃是達致忘我、無我之境，既相忘於江湖；一氣呵成講究「氣虛」且長，寧靜悠遠，究竟幻化生成之機。",
+                                                "蘇軾在《和董傳留別》中曾云：「粗繒大布裹生涯，腹有詩書氣自華」，此意或可為「人文身體性」與「氣化身體」增進幾分詮解。",
+                                                "細加思量，蕭老師所實踐、展演的「人文身體性」書寫，或顯或隱的觸及自我與世界的緊密連結，或者斷裂。甚且，誠如羅伯托•埃斯波西托所揭示的：「人與物彼此折射出對方的命運，身體是阻止人成為物的抵抗之所。」(Roberto Esposito， 《人與物：從身體的視點出發》，2022)。換言之，蕭老師與書法彼此折射出、也造就了對方的命運，相互混融且又走出各自的界域；但他的「人文身體性」書寫， 阻止／抵抗自身成為「物」。蕭老師最終未從其生命內部爆裂，乃至粉碎，這代表物我一種融合，也就是人（蕭老師）與物（書法）的靈魂的融合。從這層意義來說，蕭老師一方面做為意識存在，另一方面也做為物體存在。",
+                                                "譬如，在經典之作《文似看山不喜平》中，圖文交纏雜間、物我搓揉相滲，但這個作品卻有意又似無意間構成一個整體。依我之見，這件作品的重點並不在於「文似看山不喜平」這句話與類似山形圖案之間是否相稱或呼應，也不在於蕭老師是否將「文似看山不喜平」的本義或本意恰如其分地表現出來；其重點則在於觀者必須取消自己的視覺作用，停止認知的思考，將自己的身體移位到作品之中，也讓作品移位到身體之內；在「進」與「出」的雙重移位之間，正是「人文身體性」 的具體寫照，也是「觀」「看」蕭老師的作品的必要姿態。",
+                                                "五",
+                                                "假使你不經過心智的過渡，用一種所謂「智的直觀」去觀照、凝視蕭老師的書寫， 恍惚之間你可能會覺得他的某些作品與乩童或靈媒（巫者）起乩時所畫的符咒有幾分神似，譬如，《獅子吼》、《妙造自然》、《在水一方》等等。這些作品並非一 般人工製造物，而是蕭老師靈魂之幻化的精神性／靈性生產，手與筆墨紙僅僅是個中介，從而蕭老師的作品彷彿隱藏某種「靈力」，直接、凌厲而不及掩耳目地沁入人的心志，呼喚人的情感，洞悉人的欲望，甚至震攝人的靈魂。換句話說， 彷如符咒一般，蕭老師的文字圖案不僅是種「靈象徵」，而且是「靈力的湧現」; 在作品與人心之間，在物質與精神之間，在肉體與靈魂之間，在蕭老師與你我之 間。",
+                                                "從這個意義上來說，蕭老師的書法作品的第三個特徵，或可稱之為「靈象徵的湧現」。因而，我將蕭老師稱為「現代巫士」。",
+                                                "「巫士......所傳頌的野性思維帶著層層迴盪，始終在不可見、不可聽聞的空間中 召喚著，但這也是最基本的困難。」(黃冠閔，2018，頁 32)",
+                                                "承上所述，做為一位巫士，蕭老師其實是位掩蔽者，他不經心地將「天機」掩蔽在其作品中，天知，地知，但你我卻未必知曉。以下陳嘉映先生的這段話，或可進一步做為註腳。",
+                                                "「神通過天穹而現象是一種展示，它讓人看見那自我掩蔽者。不過，它不是把掩 蔽者從其隱蔽中揪出來給人看，相反，它只有把掩蔽者深護於掩蔽中才得讓人看。 不可知的神就這樣透過天穹開敞而做為不可知者現象。」(轉引自陳嘉映著:《海 德格爾哲學概論》，頁 55，北京:三聯書店，2005。)",
+                                                "六",
+                                                "回望。",
+                                                "我的傷口先於我存在。",
+                                                "淚水未乾，和解已緩緩滋長，而愛早就在那兒。",
+                                                "其實，我的沉重祇不過是一份難捨的眷戀。",
+                                                "但有蕭老師「在」的地方，就有「春」天。",
+                                                "大家邀蕭老師一起去「買春」吧。",
+                                                "比南方還南。吉。"
+                                            ],
+                             "heading":  null
+                         }
+                     ],
+        "issue":  "第201期 / 2022.11電子報",
+        "imageCaption":  "",
+        "excerpt":  "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參…",
+        "tags":  [
+                     "專欄文章"
+                 ],
+        "author":  "余安邦",
+        "issueId":  "202211",
+        "slug":  "202211-2211-4",
+        "readTime":  "約 5 分鐘",
+        "category":  "專欄文章",
+        "sourceUrl":  "",
+        "homeAnchor":  "#article-202211-2211-4",
+        "image":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
     },
     {
         "contentBlocks":  [
@@ -53918,7 +54804,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢…",
         "tags":  [
                      "編輯小語"
@@ -53930,7 +54816,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202211-2211-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5622878.jpg?v=5622878"
     },
     {
         "contentBlocks":  [
@@ -53990,7 +54876,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這篇文章不是要談動作上如何蹲好馬步，而是要談「蹲好馬步」的狀態。蹲馬步不是為了蹲，蹲馬步是為了躍起，有個英文字poised 可以更精確地形容這個狀態。字典裡的解釋如下：「平衡；懸著；作好準備；…",
         "tags":  [
                      "圖靈集",
@@ -54003,7 +54889,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202211-2211-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-71870.jpg?v=71870"
     },
     {
         "contentBlocks":  [
@@ -54151,7 +55037,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學…",
         "tags":  [
                      "體證道德經",
@@ -54159,12 +55045,12 @@ export const generatedArticles = [
                  ],
         "author":  "文稿彙整、鄭雅靜",
         "issueId":  "202211",
-        "slug":  "202211-2211-6",
+        "slug":  "202211-2211-6-2",
         "readTime":  "約 3 分鐘",
         "category":  "體證道德經",
         "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-6",
-        "image":  ""
+        "homeAnchor":  "#article-202211-2211-6-2",
+        "image":  "/assets/pixabay/pixabay-6966889.jpg?v=6966889"
     },
     {
         "contentBlocks":  [
@@ -54359,11 +55245,11 @@ export const generatedArticles = [
                  ],
         "author":  "",
         "issueId":  "202211",
-        "slug":  "202211-2211-9",
+        "slug":  "202211-2211-9-2",
         "readTime":  "約 5 分鐘",
         "category":  "導引采風錄",
         "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-9",
+        "homeAnchor":  "#article-202211-2211-9-2",
         "image":  "/assets/articles/202211/202211-img-002.jpg?v=1017669"
     },
     {
@@ -54464,19 +55350,19 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別…",
         "tags":  [
                      "股海人生"
                  ],
         "author":  "",
         "issueId":  "202211",
-        "slug":  "202211-2211-8",
+        "slug":  "202211-2211-8-2",
         "readTime":  "約 2 分鐘",
         "category":  "股海人生",
         "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-8",
-        "image":  ""
+        "homeAnchor":  "#article-202211-2211-8-2",
+        "image":  "/assets/pixabay/pixabay-1031458.jpg?v=1031458"
     },
     {
         "contentBlocks":  [
@@ -54576,19 +55462,19 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
         "tags":  [
                      "練功筆記"
                  ],
         "author":  "劉惠瑛",
         "issueId":  "202211",
-        "slug":  "202211-2211-3",
+        "slug":  "202211-2211-3-2",
         "readTime":  "約 2 分鐘",
         "category":  "練功筆記",
         "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-3",
-        "image":  ""
+        "homeAnchor":  "#article-202211-2211-3-2",
+        "image":  "/assets/pixabay/pixabay-7071032.jpg?v=7071032"
     },
     {
         "contentBlocks":  [
@@ -54664,7 +55550,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
         "tags":  [
                      "練功筆記",
@@ -54672,12 +55558,12 @@ export const generatedArticles = [
                  ],
         "author":  "游夙君",
         "issueId":  "202211",
-        "slug":  "202211-2211-2",
+        "slug":  "202211-2211-2-2",
         "readTime":  "約 4 分鐘",
         "category":  "練功筆記",
         "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-2",
-        "image":  ""
+        "homeAnchor":  "#article-202211-2211-2-2",
+        "image":  "/assets/pixabay/pixabay-6981701.jpg?v=6981701"
     },
     {
         "contentBlocks":  [
@@ -55081,1007 +55967,12 @@ export const generatedArticles = [
                  ],
         "author":  "余安邦",
         "issueId":  "202211",
-        "slug":  "202211-2211-4",
-        "readTime":  "約 5 分鐘",
-        "category":  "專欄文章",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-4",
-        "image":  "/assets/articles/202211/202211-img-003.jpeg?v=84776"
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "font_8",
-                                  "styleId":  "font_8",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "〈第二十九章〉"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "將欲取天下而為之，吾見其不得已。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "天下神器，不可為也，不可執也。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "為者敗之，執者失之。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "故物或行或隨，或歔或吹，或強或羸，或載或隳。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "是以聖人去甚、去奢、去泰。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "人離自己多遠，離神器就多遠"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學、家庭、工作、歷練…，都是不得已而為之，結果什麼也得不到、帶不走，人生終究一場空。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「天下神器」指人。人之主為神，神性從人化生而來。所以人其實是乘載「神」的器皿。器是神進駐人間的形象。一般人都活在自己的個性、習性，把道理、知識、喜怒哀樂憂思悲恐驚、貪嗔癡慢疑，七情六慾等諸多罣礙都放在人這個器皿上，讓社會規章、觀感直接投影在自己身上。「神」遂被人性掩蓋，人的本質核心——自性無法顯現，神力就愈來愈耗弱。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "神器不可為，也不可執。「不可為」指不能強求，「執」指蠻幹、硬幹的作為。人愈強求，愈有為，只會在慾望中讓知識的執著蠻橫或情緒宣洩越來越肥大，最終是徒勞神魂，無法得到神的本體。人離自己多遠，距離神器就多遠。大腦愈單純，神愈旺，因為主體之神和客體的知識同時進駐在大腦，而練功是透過身體鍛鍊，燒練自己既有的執著、觀念、懷疑或認知，損之又損，使漸漸清澈，最後到達完全沒有恐懼、懷疑，凝煉出生命能的神器，活出身心靈的整體，活在神性中解脫一切，叫做「神」，自己就會成為神器的存在，神與器合而為一。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "用意主導器，神器相合"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "神欲取天下之際，有一種狀況或效能正在進行，人該如何？練精化氣的「精」是物質界慾望，不屬於身體本身。練氣化神，練心氣就是練神，化掉內心的恐懼、懷疑與不安，用靜抑制、淡化既定的習慣、觀念、價值，慢慢讓沒有想法、執著、罣礙的意（最接近神）來主導這個器，使神、器相合而成形——德性，「德」便是道的形。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "古代有肝腎同源之說，腎是先天之本，藏精之所；肝臟藏血，精血互生。肝與腎息息相關，都是默默承擔重任的器官。血液在肝臟進行解毒，再由腎臟排毒，驚恐煩躁最傷腎臟，熬夜則易傷肝，進而影響肺功能運作。如果肝血不足，會影響腎精的生成，而腎精虧損，也會影響肝血的滋養，所以養肝顧腎，神才會旺。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "中國養生論述對氣與呼吸作用，有六字訣導引法。導引呼吸的作用同於中藥、針灸，有補瀉的區分；吸氣為補，呼氣為瀉。氣的六種表現方式為：噓、呵、呼、呬、吹、唏，對應到肝、心、脾、肺、腎。其中，「吹」、「唏」都屬於腎臟。譬如，調理腎氣時，要留意腎的腎陽、腎陰之別。腎陽虛時，陰亢，用「歔」之，用慢；慢是溫、是暖，是氣慢。腎陰虛時，陽旺，用「吹」字，用快；吹是冷、快，冷是快速地呼氣、吐氣。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "練功時，無論是「或行或隨」、「歔(ㄒㄩ)或吹」、「或強或羸(ㄌㄟˊ)」、「或載或隳(ㄏㄨㄟ)」都是很自然的進行，既沒有刻意的作為，也不強求，只是處在一種平衡狀態。「或行或隨」是有時主動、有時被動；時而主導，時而相隨；有時在前，有時居後。「或歔或吹」指慢快、溫冷、補瀉。「或強或羸」，或快或慢。「或載或隳」載為補，隳為瀉；逆為補，順為瀉，是順、逆腹式呼吸的作用，用順行、逆行的補瀉概念，面對自己的安危。安是虛，指飽滿。危是不足，補其不足而損有餘。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "對道而言，一切都是餘食贅行、畫蛇添足。愈想要表現自己，愈有目的性時，反而會遠離功法的意義。所以，聖人「去甚」，不做剛猛而行柔弱；「去奢」不做畫蛇添足的小道之術；「去泰」不張揚凸顯自己，去除驕傲與執著，才能到達出神入化的入神化境。"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  0,
-        "title":  "聖人去甚、去奢、去泰",
-        "sourceId":  "2211-6",
-        "images":  [
-
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "〈第二十九章〉",
-                                                "將欲取天下而為之，吾見其不得已。",
-                                                "天下神器，不可為也，不可執也。",
-                                                "為者敗之，執者失之。",
-                                                "故物或行或隨，或歔或吹，或強或羸，或載或隳。",
-                                                "是以聖人去甚、去奢、去泰。",
-                                                "人離自己多遠，離神器就多遠",
-                                                "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學、家庭、工作、歷練…，都是不得已而為之，結果什麼也得不到、帶不走，人生終究一場空。",
-                                                "「天下神器」指人。人之主為神，神性從人化生而來。所以人其實是乘載「神」的器皿。器是神進駐人間的形象。一般人都活在自己的個性、習性，把道理、知識、喜怒哀樂憂思悲恐驚、貪嗔癡慢疑，七情六慾等諸多罣礙都放在人這個器皿上，讓社會規章、觀感直接投影在自己身上。「神」遂被人性掩蓋，人的本質核心——自性無法顯現，神力就愈來愈耗弱。",
-                                                "神器不可為，也不可執。「不可為」指不能強求，「執」指蠻幹、硬幹的作為。人愈強求，愈有為，只會在慾望中讓知識的執著蠻橫或情緒宣洩越來越肥大，最終是徒勞神魂，無法得到神的本體。人離自己多遠，距離神器就多遠。大腦愈單純，神愈旺，因為主體之神和客體的知識同時進駐在大腦，而練功是透過身體鍛鍊，燒練自己既有的執著、觀念、懷疑或認知，損之又損，使漸漸清澈，最後到達完全沒有恐懼、懷疑，凝煉出生命能的神器，活出身心靈的整體，活在神性中解脫一切，叫做「神」，自己就會成為神器的存在，神與器合而為一。",
-                                                "用意主導器，神器相合",
-                                                "神欲取天下之際，有一種狀況或效能正在進行，人該如何？練精化氣的「精」是物質界慾望，不屬於身體本身。練氣化神，練心氣就是練神，化掉內心的恐懼、懷疑與不安，用靜抑制、淡化既定的習慣、觀念、價值，慢慢讓沒有想法、執著、罣礙的意（最接近神）來主導這個器，使神、器相合而成形——德性，「德」便是道的形。",
-                                                "古代有肝腎同源之說，腎是先天之本，藏精之所；肝臟藏血，精血互生。肝與腎息息相關，都是默默承擔重任的器官。血液在肝臟進行解毒，再由腎臟排毒，驚恐煩躁最傷腎臟，熬夜則易傷肝，進而影響肺功能運作。如果肝血不足，會影響腎精的生成，而腎精虧損，也會影響肝血的滋養，所以養肝顧腎，神才會旺。",
-                                                "中國養生論述對氣與呼吸作用，有六字訣導引法。導引呼吸的作用同於中藥、針灸，有補瀉的區分；吸氣為補，呼氣為瀉。氣的六種表現方式為：噓、呵、呼、呬、吹、唏，對應到肝、心、脾、肺、腎。其中，「吹」、「唏」都屬於腎臟。譬如，調理腎氣時，要留意腎的腎陽、腎陰之別。腎陽虛時，陰亢，用「歔」之，用慢；慢是溫、是暖，是氣慢。腎陰虛時，陽旺，用「吹」字，用快；吹是冷、快，冷是快速地呼氣、吐氣。",
-                                                "練功時，無論是「或行或隨」、「歔(ㄒㄩ)或吹」、「或強或羸(ㄌㄟˊ)」、「或載或隳(ㄏㄨㄟ)」都是很自然的進行，既沒有刻意的作為，也不強求，只是處在一種平衡狀態。「或行或隨」是有時主動、有時被動；時而主導，時而相隨；有時在前，有時居後。「或歔或吹」指慢快、溫冷、補瀉。「或強或羸」，或快或慢。「或載或隳」載為補，隳為瀉；逆為補，順為瀉，是順、逆腹式呼吸的作用，用順行、逆行的補瀉概念，面對自己的安危。安是虛，指飽滿。危是不足，補其不足而損有餘。",
-                                                "對道而言，一切都是餘食贅行、畫蛇添足。愈想要表現自己，愈有目的性時，反而會遠離功法的意義。所以，聖人「去甚」，不做剛猛而行柔弱；「去奢」不做畫蛇添足的小道之術；「去泰」不張揚凸顯自己，去除驕傲與執著，才能到達出神入化的入神化境。"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學…",
-        "tags":  [
-                     "體證道德經",
-                     "道德經"
-                 ],
-        "author":  "文稿彙整、鄭雅靜",
-        "issueId":  "202211",
-        "slug":  "202211-2211-6-2",
-        "readTime":  "約 3 分鐘",
-        "category":  "體證道德經",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-6-2",
-        "image":  ""
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住："
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "誠者成也。"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  1,
-        "title":  "蔡育展",
-        "sourceId":  "2211-8",
-        "images":  [
-
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
-                                                "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
-                                                "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
-                                                "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
-                                                "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
-                                                "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
-                                                "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
-                                                "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
-                                                "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
-                                                "誠者成也。"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別…",
-        "tags":  [
-                     "股海人生"
-                 ],
-        "author":  "",
-        "issueId":  "202211",
-        "slug":  "202211-2211-8-2",
-        "readTime":  "約 2 分鐘",
-        "category":  "股海人生",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-8-2",
-        "image":  ""
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "從排斥到擁抱氣機"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「妻唱夫隨」的氣機機緣"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "夫妻由中西不同調轉成練功同好"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "開啓不同維度的問題解決"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "練功的建議及體會"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "採訪後記"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  2,
-        "title":  "黃坤瑛",
-        "sourceId":  "2211-9",
-        "images":  [
-
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
-                                                "從排斥到擁抱氣機",
-                                                "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
-                                                "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
-                                                "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
-                                                "「妻唱夫隨」的氣機機緣",
-                                                "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
-                                                "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
-                                                "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
-                                                "夫妻由中西不同調轉成練功同好",
-                                                "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
-                                                "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
-                                                "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
-                                                "開啓不同維度的問題解決",
-                                                "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
-                                                "練功的建議及體會",
-                                                "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
-                                                "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
-                                                "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
-                                                "採訪後記",
-                                                "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離…",
-        "tags":  [
-                     "導引采風錄"
-                 ],
-        "author":  "",
-        "issueId":  "202211",
-        "slug":  "202211-2211-9-2",
-        "readTime":  "約 5 分鐘",
-        "category":  "導引采風錄",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-9-2",
-        "image":  ""
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。"
-                              },
-                              {
-                                  "styleName":  "內文",
-                                  "styleId":  "內文",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  3,
-        "title":  "手揮無極刀，試解親情困（二）",
-        "sourceId":  "2211-2",
-        "images":  [
-
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
-                                                "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
-                                                "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
-                                                "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
-                                                "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
-                                                "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
-                                                "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
-        "tags":  [
-                     "練功筆記",
-                     "身體感知"
-                 ],
-        "author":  "游夙君",
-        "issueId":  "202211",
-        "slug":  "202211-2211-2-2",
-        "readTime":  "約 4 分鐘",
-        "category":  "練功筆記",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-2-2",
-        "image":  ""
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。"
-                              },
-                              {
-                                  "styleName":  "Normal",
-                                  "styleId":  "Normal.0",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  4,
-        "title":  "之二- 覺醒之路",
-        "sourceId":  "2211-3",
-        "images":  [
-
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
-                                                "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
-                                                "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
-                                                "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
-                                                "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
-                                                "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
-                                                "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
-                                                "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
-                                                "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
-                                                "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
-        "tags":  [
-                     "練功筆記"
-                 ],
-        "author":  "劉惠瑛",
-        "issueId":  "202211",
-        "slug":  "202211-2211-3-2",
-        "readTime":  "約 2 分鐘",
-        "category":  "練功筆記",
-        "sourceUrl":  "",
-        "homeAnchor":  "#article-202211-2211-3-2",
-        "image":  ""
-    },
-    {
-        "contentBlocks":  [
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參加蕭先生書法講座有感，謹以此文與讀者分享。"
-                              },
-                              {
-                                  "caption":  "",
-                                  "type":  "image",
-                                  "src":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "一\n「我們都是遊走在迷狂世界上的亡靈。」(引自 賈曉偉: 亡靈記，首頁題記，2005。)"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "過往的記憶很零散，似碎片般漂浮而不沉沒。童年的記憶，母親的記憶，土地的 記憶；而父親的記憶呢？總是一團團模糊........."
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "如詩這般，酒，即便可以興、觀、羣、怨，但總化解、治癒不了那濃郁的鄉愁。 我的鄉愁似乎深藏在失智多年母親的眼神中，在意識邊陲迴盪閃爍的靈光；這溫和柔適卻帶點淚水的光，彷彿沒有對象，所以沒有任何東西會侵犯到它。光裡有愛，一種無私綻放的愛，一種不需言傳就能直接明白的慈悲的愛。不過，母親的眼神中似乎充滿著對我、對周遭世界的探問，甚至疑惑，你是誰?"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "二"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「所有書寫者都是倖存者，所有描述極權壓逼的語言，都是劫難過後的殘餘。」"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "(廖梅璇，2022.05.04，《聯合報》。〈烏俄戰爭中的五四〉)"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "時代的悲劇迫使人們顛沛流離，歷史的災難對於個人的生命造成無法抹除的傷痛。 這巨大的傷痛往往超出個人經驗能力所能承擔的範圍，更是語言所無法指認與負重的對象。這些災難與悲劇不僅席捲整個社會，也深刻影響一個家族或家庭成員的生離死別，乃至生死存亡的不幸命運。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "歷史的陰影往往銘刻在個人靈魂某處，而人為了好好活著，總會發展出某種防衛機轉來保護自己人格的完整與正常運作。做為外省第一代或者第二代人，與其說蕭春生老師背負著歷史的罪責來到世間，毋寧說他不得不扛起做為長子無法逃避的家族期待與倫理壓力，以及在父子之間與母子之間難以跨越的情感障礙和鴻溝。 問題是：他承受得起這些嗎？或者說，他如何將那創傷經驗轉化成好好活下去的毅力與勇氣?"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "這始終是個謎。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "三"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "書法做為一種美學修養工夫，是否與（童年）創傷經驗具有某種連結的可能?轉化在彼此之間可能產生何種作用？這才是問題的關鍵之處。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "依筆者極為短暫的接觸與道聽塗說，無論是親朋好友，甚至是朋友的朋友的朋友主動求字，或者是因某種情動觸發或觸景生情，乃至於午夜夢迴的感召與悸動而自行書寫，蕭老師的書寫特徵之一是「互為主體性」。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "也就是說，蕭老師的作品是生發且完成於自身與人、事、物、地、景......的互動過程，於其中，酒具備了關鍵性的中介作用，酒做為載體，開啟了主體間的心靈通道，引領彼此的交會通往原本潛藏的幽黯意識與幽微經驗。蕭老師以其豐富而詭異的想像力，並透過同理的沉浸而滲透人情事理，之中絕對是對生命有所感悟、 領悟的。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "換句話說，蕭老師的作品即是他的「生活世界」的某種變形的顯現。比方說，蕭老師的女兒樹珊曾就父親的作品《寫生》註記說：「寫生。寫生。爸爸用書法，寫著他的一生。」又，《玉壺買春》作品，更清楚闡明蕭老師在充滿友誼氛圍中的自在、瀟灑、品味與放蕩不羈。但凡此種種特質，或許可以「任性」二字予以統攝而貫穿其間。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "四"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "在人類歷史長河中，人與物之間早被劃出一道鴻溝，並讓一方受另一方支配；但究其實，物是人的身體的延伸，人的身體則是世界的延伸；而唯有身體才能填平這道鴻溝。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "從蕭老師的作品中，我感覺他的書寫的另一特徵是深蘊著「人文身體性」。「人文身體性」意味著以「氣化身體」在書寫，而非以認知的或理性的邏輯在書寫。也就是說，在書寫過程中，蕭老師的身體與筆、墨、硯、紙、水......等等物我之間渾為一體，一氣呵成；文字不像文字，圖案又不似圖案，而是在文圖交界混搭、交融處生成作品。渾為一體的基本功，乃是達致忘我、無我之境，既相忘於江湖；一氣呵成講究「氣虛」且長，寧靜悠遠，究竟幻化生成之機。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "蘇軾在《和董傳留別》中曾云：「粗繒大布裹生涯，腹有詩書氣自華」，此意或可為「人文身體性」與「氣化身體」增進幾分詮解。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "細加思量，蕭老師所實踐、展演的「人文身體性」書寫，或顯或隱的觸及自我與世界的緊密連結，或者斷裂。甚且，誠如羅伯托•埃斯波西托所揭示的：「人與物彼此折射出對方的命運，身體是阻止人成為物的抵抗之所。」(Roberto Esposito， 《人與物：從身體的視點出發》，2022)。換言之，蕭老師與書法彼此折射出、也造就了對方的命運，相互混融且又走出各自的界域；但他的「人文身體性」書寫， 阻止／抵抗自身成為「物」。蕭老師最終未從其生命內部爆裂，乃至粉碎，這代表物我一種融合，也就是人（蕭老師）與物（書法）的靈魂的融合。從這層意義來說，蕭老師一方面做為意識存在，另一方面也做為物體存在。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "譬如，在經典之作《文似看山不喜平》中，圖文交纏雜間、物我搓揉相滲，但這個作品卻有意又似無意間構成一個整體。依我之見，這件作品的重點並不在於「文似看山不喜平」這句話與類似山形圖案之間是否相稱或呼應，也不在於蕭老師是否將「文似看山不喜平」的本義或本意恰如其分地表現出來；其重點則在於觀者必須取消自己的視覺作用，停止認知的思考，將自己的身體移位到作品之中，也讓作品移位到身體之內；在「進」與「出」的雙重移位之間，正是「人文身體性」 的具體寫照，也是「觀」「看」蕭老師的作品的必要姿態。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "五"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "假使你不經過心智的過渡，用一種所謂「智的直觀」去觀照、凝視蕭老師的書寫， 恍惚之間你可能會覺得他的某些作品與乩童或靈媒（巫者）起乩時所畫的符咒有幾分神似，譬如，《獅子吼》、《妙造自然》、《在水一方》等等。這些作品並非一 般人工製造物，而是蕭老師靈魂之幻化的精神性／靈性生產，手與筆墨紙僅僅是個中介，從而蕭老師的作品彷彿隱藏某種「靈力」，直接、凌厲而不及掩耳目地沁入人的心志，呼喚人的情感，洞悉人的欲望，甚至震攝人的靈魂。換句話說， 彷如符咒一般，蕭老師的文字圖案不僅是種「靈象徵」，而且是「靈力的湧現」; 在作品與人心之間，在物質與精神之間，在肉體與靈魂之間，在蕭老師與你我之 間。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "從這個意義上來說，蕭老師的書法作品的第三個特徵，或可稱之為「靈象徵的湧現」。因而，我將蕭老師稱為「現代巫士」。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「巫士......所傳頌的野性思維帶著層層迴盪，始終在不可見、不可聽聞的空間中 召喚著，但這也是最基本的困難。」(黃冠閔，2018，頁 32)"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "承上所述，做為一位巫士，蕭老師其實是位掩蔽者，他不經心地將「天機」掩蔽在其作品中，天知，地知，但你我卻未必知曉。以下陳嘉映先生的這段話，或可進一步做為註腳。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "「神通過天穹而現象是一種展示，它讓人看見那自我掩蔽者。不過，它不是把掩 蔽者從其隱蔽中揪出來給人看，相反，它只有把掩蔽者深護於掩蔽中才得讓人看。 不可知的神就這樣透過天穹開敞而做為不可知者現象。」(轉引自陳嘉映著:《海 德格爾哲學概論》，頁 55，北京:三聯書店，2005。)"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "六"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "回望。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "我的傷口先於我存在。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "淚水未乾，和解已緩緩滋長，而愛早就在那兒。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "其實，我的沉重祇不過是一份難捨的眷戀。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "但有蕭老師「在」的地方，就有「春」天。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "大家邀蕭老師一起去「買春」吧。"
-                              },
-                              {
-                                  "styleName":  "預設值",
-                                  "styleId":  "預設值",
-                                  "isBold":  false,
-                                  "type":  "paragraph",
-                                  "text":  "比南方還南。吉。"
-                              }
-                          ],
-        "date":  "2022.11.10",
-        "order":  5,
-        "title":  "嫻言絮語",
-        "sourceId":  "2211-4",
-        "images":  [
-                       {
-                           "caption":  "",
-                           "type":  "image",
-                           "src":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
-                       }
-                   ],
-        "sections":  [
-                         {
-                             "paragraphs":  [
-                                                "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參加蕭先生書法講座有感，謹以此文與讀者分享。",
-                                                "一\n「我們都是遊走在迷狂世界上的亡靈。」(引自 賈曉偉: 亡靈記，首頁題記，2005。)",
-                                                "過往的記憶很零散，似碎片般漂浮而不沉沒。童年的記憶，母親的記憶，土地的 記憶；而父親的記憶呢？總是一團團模糊.........",
-                                                "如詩這般，酒，即便可以興、觀、羣、怨，但總化解、治癒不了那濃郁的鄉愁。 我的鄉愁似乎深藏在失智多年母親的眼神中，在意識邊陲迴盪閃爍的靈光；這溫和柔適卻帶點淚水的光，彷彿沒有對象，所以沒有任何東西會侵犯到它。光裡有愛，一種無私綻放的愛，一種不需言傳就能直接明白的慈悲的愛。不過，母親的眼神中似乎充滿著對我、對周遭世界的探問，甚至疑惑，你是誰?",
-                                                "二",
-                                                "「所有書寫者都是倖存者，所有描述極權壓逼的語言，都是劫難過後的殘餘。」",
-                                                "(廖梅璇，2022.05.04，《聯合報》。〈烏俄戰爭中的五四〉)",
-                                                "時代的悲劇迫使人們顛沛流離，歷史的災難對於個人的生命造成無法抹除的傷痛。 這巨大的傷痛往往超出個人經驗能力所能承擔的範圍，更是語言所無法指認與負重的對象。這些災難與悲劇不僅席捲整個社會，也深刻影響一個家族或家庭成員的生離死別，乃至生死存亡的不幸命運。",
-                                                "歷史的陰影往往銘刻在個人靈魂某處，而人為了好好活著，總會發展出某種防衛機轉來保護自己人格的完整與正常運作。做為外省第一代或者第二代人，與其說蕭春生老師背負著歷史的罪責來到世間，毋寧說他不得不扛起做為長子無法逃避的家族期待與倫理壓力，以及在父子之間與母子之間難以跨越的情感障礙和鴻溝。 問題是：他承受得起這些嗎？或者說，他如何將那創傷經驗轉化成好好活下去的毅力與勇氣?",
-                                                "這始終是個謎。",
-                                                "三",
-                                                "書法做為一種美學修養工夫，是否與（童年）創傷經驗具有某種連結的可能?轉化在彼此之間可能產生何種作用？這才是問題的關鍵之處。",
-                                                "依筆者極為短暫的接觸與道聽塗說，無論是親朋好友，甚至是朋友的朋友的朋友主動求字，或者是因某種情動觸發或觸景生情，乃至於午夜夢迴的感召與悸動而自行書寫，蕭老師的書寫特徵之一是「互為主體性」。",
-                                                "也就是說，蕭老師的作品是生發且完成於自身與人、事、物、地、景......的互動過程，於其中，酒具備了關鍵性的中介作用，酒做為載體，開啟了主體間的心靈通道，引領彼此的交會通往原本潛藏的幽黯意識與幽微經驗。蕭老師以其豐富而詭異的想像力，並透過同理的沉浸而滲透人情事理，之中絕對是對生命有所感悟、 領悟的。",
-                                                "換句話說，蕭老師的作品即是他的「生活世界」的某種變形的顯現。比方說，蕭老師的女兒樹珊曾就父親的作品《寫生》註記說：「寫生。寫生。爸爸用書法，寫著他的一生。」又，《玉壺買春》作品，更清楚闡明蕭老師在充滿友誼氛圍中的自在、瀟灑、品味與放蕩不羈。但凡此種種特質，或許可以「任性」二字予以統攝而貫穿其間。",
-                                                "四",
-                                                "在人類歷史長河中，人與物之間早被劃出一道鴻溝，並讓一方受另一方支配；但究其實，物是人的身體的延伸，人的身體則是世界的延伸；而唯有身體才能填平這道鴻溝。",
-                                                "從蕭老師的作品中，我感覺他的書寫的另一特徵是深蘊著「人文身體性」。「人文身體性」意味著以「氣化身體」在書寫，而非以認知的或理性的邏輯在書寫。也就是說，在書寫過程中，蕭老師的身體與筆、墨、硯、紙、水......等等物我之間渾為一體，一氣呵成；文字不像文字，圖案又不似圖案，而是在文圖交界混搭、交融處生成作品。渾為一體的基本功，乃是達致忘我、無我之境，既相忘於江湖；一氣呵成講究「氣虛」且長，寧靜悠遠，究竟幻化生成之機。",
-                                                "蘇軾在《和董傳留別》中曾云：「粗繒大布裹生涯，腹有詩書氣自華」，此意或可為「人文身體性」與「氣化身體」增進幾分詮解。",
-                                                "細加思量，蕭老師所實踐、展演的「人文身體性」書寫，或顯或隱的觸及自我與世界的緊密連結，或者斷裂。甚且，誠如羅伯托•埃斯波西托所揭示的：「人與物彼此折射出對方的命運，身體是阻止人成為物的抵抗之所。」(Roberto Esposito， 《人與物：從身體的視點出發》，2022)。換言之，蕭老師與書法彼此折射出、也造就了對方的命運，相互混融且又走出各自的界域；但他的「人文身體性」書寫， 阻止／抵抗自身成為「物」。蕭老師最終未從其生命內部爆裂，乃至粉碎，這代表物我一種融合，也就是人（蕭老師）與物（書法）的靈魂的融合。從這層意義來說，蕭老師一方面做為意識存在，另一方面也做為物體存在。",
-                                                "譬如，在經典之作《文似看山不喜平》中，圖文交纏雜間、物我搓揉相滲，但這個作品卻有意又似無意間構成一個整體。依我之見，這件作品的重點並不在於「文似看山不喜平」這句話與類似山形圖案之間是否相稱或呼應，也不在於蕭老師是否將「文似看山不喜平」的本義或本意恰如其分地表現出來；其重點則在於觀者必須取消自己的視覺作用，停止認知的思考，將自己的身體移位到作品之中，也讓作品移位到身體之內；在「進」與「出」的雙重移位之間，正是「人文身體性」 的具體寫照，也是「觀」「看」蕭老師的作品的必要姿態。",
-                                                "五",
-                                                "假使你不經過心智的過渡，用一種所謂「智的直觀」去觀照、凝視蕭老師的書寫， 恍惚之間你可能會覺得他的某些作品與乩童或靈媒（巫者）起乩時所畫的符咒有幾分神似，譬如，《獅子吼》、《妙造自然》、《在水一方》等等。這些作品並非一 般人工製造物，而是蕭老師靈魂之幻化的精神性／靈性生產，手與筆墨紙僅僅是個中介，從而蕭老師的作品彷彿隱藏某種「靈力」，直接、凌厲而不及掩耳目地沁入人的心志，呼喚人的情感，洞悉人的欲望，甚至震攝人的靈魂。換句話說， 彷如符咒一般，蕭老師的文字圖案不僅是種「靈象徵」，而且是「靈力的湧現」; 在作品與人心之間，在物質與精神之間，在肉體與靈魂之間，在蕭老師與你我之 間。",
-                                                "從這個意義上來說，蕭老師的書法作品的第三個特徵，或可稱之為「靈象徵的湧現」。因而，我將蕭老師稱為「現代巫士」。",
-                                                "「巫士......所傳頌的野性思維帶著層層迴盪，始終在不可見、不可聽聞的空間中 召喚著，但這也是最基本的困難。」(黃冠閔，2018，頁 32)",
-                                                "承上所述，做為一位巫士，蕭老師其實是位掩蔽者，他不經心地將「天機」掩蔽在其作品中，天知，地知，但你我卻未必知曉。以下陳嘉映先生的這段話，或可進一步做為註腳。",
-                                                "「神通過天穹而現象是一種展示，它讓人看見那自我掩蔽者。不過，它不是把掩 蔽者從其隱蔽中揪出來給人看，相反，它只有把掩蔽者深護於掩蔽中才得讓人看。 不可知的神就這樣透過天穹開敞而做為不可知者現象。」(轉引自陳嘉映著:《海 德格爾哲學概論》，頁 55，北京:三聯書店，2005。)",
-                                                "六",
-                                                "回望。",
-                                                "我的傷口先於我存在。",
-                                                "淚水未乾，和解已緩緩滋長，而愛早就在那兒。",
-                                                "其實，我的沉重祇不過是一份難捨的眷戀。",
-                                                "但有蕭老師「在」的地方，就有「春」天。",
-                                                "大家邀蕭老師一起去「買春」吧。",
-                                                "比南方還南。吉。"
-                                            ],
-                             "heading":  null
-                         }
-                     ],
-        "issue":  "第201期 / 2022.11電子報",
-        "imageCaption":  "",
-        "excerpt":  "編按：雪山坑會所啟用時，隱居於台東池上山水間的書法家蕭春生先生，應張良維老師之請，特書〈專氣至柔〉、〈上善若水〉匾額兩幅，懸掛於練功房樓梯處，以示提醒。四早班學員、中研院民族所余安邦老師日前參…",
-        "tags":  [
-                     "專欄文章"
-                 ],
-        "author":  "余安邦",
-        "issueId":  "202211",
         "slug":  "202211-2211-4-2",
         "readTime":  "約 5 分鐘",
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202211-2211-4-2",
-        "image":  "/assets/articles/202211/202211-img-001.jpeg?v=84776"
+        "image":  "/assets/articles/202211/202211-img-003.jpeg?v=84776"
     },
     {
         "contentBlocks":  [
@@ -56141,7 +56032,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這個夏天，似乎是前所未見的悶熱酷烈！全球高溫，加上世局如火，整個島嶼都被燒得似要沸騰起來，除了冷氣房，簡直沒處可躲。所幸，我們還有一處山林道場，可清心、利降火，人一到，身疾心病馬上除。",
         "tags":  [
                      "編輯小語"
@@ -56153,7 +56044,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4526927.jpg?v=4526927"
     },
     {
         "contentBlocks":  [
@@ -56229,7 +56120,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "老子第26章 「重為輕根，靜為躁君；是以聖人終日行不離輜重，雖有榮觀，燕處超然。奈何萬乘之主，而以身輕天下？輕則失根，躁則失君。」",
         "tags":  [
                      "體證道德經",
@@ -56242,7 +56133,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6352289.jpg?v=6352289"
     },
     {
         "contentBlocks":  [
@@ -56406,7 +56297,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "真實人生是在事件過程中練習「感覺你的感覺」，讓感覺變成靈覺力。靈覺力是正覺，不是一時感覺，不能有罣礙。每個人都依自己的人生邏輯，植入名、利、權、情、慾、食、睡，形塑自己的生態環境。如果在識覺的…",
         "tags":  [
                      "心田集",
@@ -56419,7 +56310,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3714660.jpg?v=3714660"
     },
     {
         "contentBlocks":  [
@@ -56479,7 +56370,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "還是很熱鬧的一個月！利空環伺之下台股反而走出一波反彈，不管與國安基金是否有關，大週期中有小週期，如果能把握小週期的轉折，豈不是更好？下跌時躲開，短線反彈時還能賺他一波那就是神了吧？",
         "tags":  [
                      "股海人生"
@@ -56491,7 +56382,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6751783.jpg?v=6751783"
     },
     {
         "contentBlocks":  [
@@ -56615,7 +56506,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "滴滴！滴滴….早晨六點上班的鬧鐘聲響起，其實在響起之前，我已經醒來賴在床上，在床上感覺自己的身體是鬆的、心情也是鬆的，精神蠻飽滿的，似乎跟平時起床的感覺不太一樣，回想自己昨天傍晚才結束三天兩夜…",
         "tags":  [
                      "練功筆記"
@@ -56627,7 +56518,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6597237.jpg?v=6597237"
     },
     {
         "contentBlocks":  [
@@ -56679,7 +56570,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "氣機導引各種子班早在一年前就分成幾番人馬上下雪山坑，聽師兄姐帶回的印象似是，大雪山腳下一塊處女地，非常熱，建物裝修還待完成，庭院草坪還在培養，所植樹木也正在扎根中，周邊活動範圍有環山步道，蓊鬱…",
         "tags":  [
                      "練功筆記"
@@ -56691,7 +56582,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6525608.jpg?v=6525608"
     },
     {
         "contentBlocks":  [
@@ -56775,7 +56666,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第198期 / 2022.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "識香之旅進入越南土沉系列後，張老師時常強調土沉和碳化的關係，甚至可以說是如化石般的珍貴，四午品香小組透過影片與文章，重新複習化石、生物面的碳化，延伸我們對土沉的理解。",
         "tags":  [
                      "導引香道"
@@ -56787,7 +56678,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202208-2208-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4980696.jpg?v=4980696"
     },
     {
         "contentBlocks":  [
@@ -56839,7 +56730,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "6月11日張老師六十大壽。為老師祝壽，我們壓力很大，因為多年前張老師就說過，到了六十歲若還教不出學生，他就沒臉再教下去了。所以，該是我們總體檢驗學習成果的時候了！",
         "tags":  [
                      "編輯小語"
@@ -56851,7 +56742,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7779618.jpg?v=7779618"
     },
     {
         "contentBlocks":  [
@@ -56919,7 +56810,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這一個月以來台股出現了近年難得一見的連續跌勢，兩千點的震撼教育讓股民體驗了很久沒經歷過的空頭市場殺盤。神山與海王齊跌，權值共中小一色，跌到會懷疑股市是騙人的。「數」是一個很有趣的現象，假設投資…",
         "tags":  [
                      "股海人生"
@@ -56931,7 +56822,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-16",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4591006.jpg?v=4591006"
     },
     {
         "contentBlocks":  [
@@ -57023,7 +56914,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「維度」是科學上的名詞，是描述物件狀態所需的獨立參數（數學）或系統自由度（物理）的數量。我們看到了「自由度」這個詞，真是太高興了，無罣礙、無恐懼不就是為了自由嗎？用「維度」來描述「人生」這個物…",
         "tags":  [
                      "圖靈集",
@@ -57036,7 +56927,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-15",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-10349715.jpg?v=10349715"
     },
     {
         "contentBlocks":  [
@@ -57058,7 +56949,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  null,
         "tags":  [
                      "專欄文章",
@@ -57071,7 +56962,7 @@ export const generatedArticles = [
         "category":  "專欄文章/傳習錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-02",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2700397.jpg?v=2700397"
     },
     {
         "contentBlocks":  [
@@ -57478,7 +57369,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "東醫氣機導引透過練功養氣進行自我管理，也就是透過地水火風的管理，修練身、心、靈。地是指骨骼和肌肉，水是指血液和水濕，這是身體的範疇；風是指呼吸，屬心；火是指精神意識，屬靈。練功最後可熬煉出一種…",
         "tags":  [
                      "練功筆記"
@@ -57490,7 +57381,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-11",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-9645404.jpg?v=9645404"
     },
     {
         "contentBlocks":  [
@@ -57582,7 +57473,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "象元：「有物混成，先天地生。寂兮寥兮，獨立而不改，周行而不殆，可以為天下母。吾不知其名，字之曰道。強為之名：曰大。大曰逝，逝曰遠，遠曰反。故道大、天大、地大、人亦大。域中有四大，而人居其一焉。…",
         "tags":  [
                      "體證道德經",
@@ -57595,7 +57486,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-14",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5547295.jpg?v=5547295"
     },
     {
         "contentBlocks":  [
@@ -57679,7 +57570,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第197期 / 2022.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "品香要品出自己的意境、境界，將香氣的變化運作，匯聚在時空裡。可以在大自然的一塊石頭上自己品，或者約兩、三個人在樹下一起品。品香能創造出什麼樣的境，正是功夫所在，是大腦創出的意境。我們在練的，是…",
         "tags":  [
                      "導引香道"
@@ -57691,7 +57582,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202207-2207-13",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6746644.jpg?v=6746644"
     },
     {
         "contentBlocks":  [
@@ -57751,7 +57642,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們學道求道，道，到底是圓的扁的方的？古今以來，瞎子摸象的說法汗牛充棟。老子說得妙：道可道，非常道。嗯！有道理！可是，不懂的還是不懂啊！",
         "tags":  [
                      "編輯小語"
@@ -57763,7 +57654,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6620662.jpg?v=6620662"
     },
     {
         "contentBlocks":  [
@@ -57876,7 +57767,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "痛，是來自身體最真實的訊息，在我們透過動作感受九大關節的同時，這樣的訊息便會以不同的形式在不同的身體部位呈現；不論是脹痛、刺痛、絞痛甚至埋藏在深層的隱隱作痛，每一種痛，都夾帶著我們在生活中累積…",
         "tags":  [
                      "觀行錄",
@@ -57889,7 +57780,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1645078.jpg?v=1645078"
     },
     {
         "contentBlocks":  [
@@ -58292,7 +58183,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "前面幾次有點離題的以很簡短粗略的方式大概描述貨幣這個東西近百年來的幾個轉變，從這些轉變中可以感受人類集體意識的大變動，這次又是一個大轉折的開始。到底什麼樣的信仰、思維能協助人類再一次的成長、超…",
         "tags":  [
                      "股海人生"
@@ -58304,7 +58195,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2575767.jpg?v=2575767"
     },
     {
         "contentBlocks":  [
@@ -58388,7 +58279,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "修行的次第由具相的身體，無實質的精神，以至於虛、空，繼而達道、自然。道與自然層級太高，我難以體會，連個方向的蛛絲馬跡都無從得知。今謹將前三部分依老師上課內容，自己加以臆測，自湊成一個構圖，分享…",
         "tags":  [
                      "如是我聞/疑義相與析"
@@ -58400,7 +58291,7 @@ export const generatedArticles = [
         "category":  "如是我聞/疑義相與析",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5975574.jpg?v=5975574"
     },
     {
         "contentBlocks":  [
@@ -58457,7 +58348,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一趟累世的修行\n\n氣機導引的練功階段，「百日築基、練精化氣、練氣化神、練神還虛、練虛合道，道法自然」，以三個區塊環環相扣，分屬下丹田的「身」、中丹田的「心」、上丹田的「腦」，過程中包含「爐」、…",
         "tags":  [
                      "如是我聞",
@@ -58470,7 +58361,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4430472.jpg?v=4430472"
     },
     {
         "contentBlocks":  [
@@ -58594,7 +58485,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "企者不立，跨者不行。自見者不明，自是者不彰，自伐者無功，自矜者不長。其於道也，曰：餘食贅行。物或惡之，故有道者不處。",
         "tags":  [
                      "體證道德經",
@@ -58607,7 +58498,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7877306.jpg?v=7877306"
     },
     {
         "contentBlocks":  [
@@ -58667,7 +58558,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第196期 / 2022.06電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "原本和同學們一起複習「無極」的自主練功時段，近期轉變成討論張老師一直以來在課堂上所教的心法，也藉此機緣回顧自己練功十多年的一些體悟與收穫。「練精化氣」、「練氣化神」、「練神還虛」的進程，現階段…",
         "tags":  [
                      "練功筆記",
@@ -58680,7 +58571,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202206-2206-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4452356.jpg?v=4452356"
     },
     {
         "contentBlocks":  [
@@ -58740,7 +58631,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "疫情緊繃，剛好遇到張老師上山閉關潛修，我們卻沒得躲閃，還得在看得見的確診數字與看不見的病毒羽翅之間，繼續前行。張老師臨行前落下一句話——練功最後不是要得道成佛作上帝，而是成為「界域之主」！",
         "tags":  [
                      "編輯小語"
@@ -58752,7 +58643,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-950897.jpg?v=950897"
     },
     {
         "contentBlocks":  [
@@ -58820,7 +58711,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "不論是什麼樣的宗教、門派，修行到了最後，「不想」似乎都成為最高指導原則。既然是「不想」，那好像我也沒什麼好寫的，讀者也沒什麼好讀的，因為讀、寫都得「想」。但是不透過「想」又無法瞭解「不想」，我…",
         "tags":  [
                      "圖靈集",
@@ -58833,7 +58724,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4981195.jpg?v=4981195"
     },
     {
         "contentBlocks":  [
@@ -58917,7 +58808,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "土沉的形成，是沉香樹結油後自然倒下，埋於土石或沼澤中，纖維與植物酸腐朽褪盡，並與土壤中大量元素混合作用，使油質熟成醇化。由於結香後又被長期掩埋，經過大地再度分解，剝落掉銳氣與稜角，所以存留殘香…",
         "tags":  [
                      "導引香道"
@@ -58929,7 +58820,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2595578.jpg?v=2595578"
     },
     {
         "contentBlocks":  [
@@ -58989,7 +58880,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "貨幣的發明原本是為了要讓交易更為便利以增加經濟產出，讓人類在物資豐沛之餘能有更多時間思考生命這個課題。貨、幣，貨為主幣為從，幣如果不能轉化為生活所需的商品、勞務，轉化為生命的體驗與經歷，幣、紙…",
         "tags":  [
                      "股海人生"
@@ -59001,7 +58892,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-966732.jpg?v=966732"
     },
     {
         "contentBlocks":  [
@@ -59294,7 +59185,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「觀行錄」這個專欄的主旨，是希望透過簡短記錄筆者修習氣機導引二十多年的經驗，透過文字的形式簡短記錄；「觀」、「行」兩字分別代表學習導引中「由外向內」的體悟，以及在體悟後「由內向外」的生命實踐；…",
         "tags":  [
                      "觀行錄",
@@ -59307,7 +59198,7 @@ export const generatedArticles = [
         "category":  "觀行錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3256802.jpg?v=3256802"
     },
     {
         "contentBlocks":  [
@@ -59407,7 +59298,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "十多年前聽了一場演講後，登門拜師。面談不到二十分鐘，老師同意我來上課，卻說：「市面上類似的課程團體很多，你可以多比較，不一定要來這裡學。」不服輸的個性，讓我隔一天就開啟練功的里程碑。原來老師早…",
         "tags":  [
                      "練功筆記",
@@ -59420,7 +59311,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4508339.jpg?v=4508339"
     },
     {
         "contentBlocks":  [
@@ -60210,7 +60101,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "從懷素到弘一，自鋒芒畢露至內在規矩，究竟乃屬一己身體心性之煉養，或可稱之為小道，是宋儒所強調的獨善一己之身，是生命的單螺旋。",
         "tags":  [
                      "練功筆記"
@@ -60222,7 +60113,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-4-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4767365.jpg?v=4767365"
     },
     {
         "contentBlocks":  [
@@ -60319,7 +60210,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第195期 / 2022.05電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張：老師年前給大家春節大禮「觀行空」春聯，讓我聯想到默照禪。依觀來說，用「默」與「照」兩字來形容，照是「知有相也，知有念也。」默是「放捨諸相，離於念也」，要不住於任何一種現象。",
         "tags":  [
                      "如是我聞",
@@ -60332,7 +60223,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202205-2205-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-9352996.jpg?v=9352996"
     },
     {
         "contentBlocks":  [
@@ -60376,7 +60267,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "六祖惠能以南方獦獠之人登上五祖法堂，並且石破天驚地提出「菩提本無樹，明鏡亦非台。本來無一物，何處惹塵埃？」四句偈，將佛陀講道四十年的一切法要含攝其中。這是華夏大地孕育出來的法門龍象，在那個文字…",
         "tags":  [
                      "編輯小語"
@@ -60388,7 +60279,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-01",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6352293.jpg?v=6352293"
     },
     {
         "contentBlocks":  [
@@ -60609,7 +60500,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人經常是自己把自己困住的，面對你覺得合不來的人，是否可以內心沒有糾結，不產生對立？當你陷在某種表面形象中，或是堅持要怎樣做才能靜下心來，你的世界已經變窄，遠離無極。假如你是一棵沉香樹，你希望在…",
         "tags":  [
                      "導引香道"
@@ -60621,7 +60512,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-06-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6945421.jpg?v=6945421"
     },
     {
         "contentBlocks":  [
@@ -60705,7 +60596,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "最近一個很熱門的話題大概是俄羅斯要求以盧布購買天然氣以反制金融制裁，俄羅斯這個動作膽子很大，盤算得很遠。將貨幣與能源、實質商品連結，以硬通貨支持貨幣價值的威力有多大？是不是真的能反制核彈級的金…",
         "tags":  [
                      "股海人生"
@@ -60717,7 +60608,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5586503.jpg?v=5586503"
     },
     {
         "contentBlocks":  [
@@ -60889,7 +60780,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "大自然有春夏秋冬，人有生老病死，不同時期有不同的生命樣貌。道家的鼎爐之學用下、中、上三個丹田練養人之精氣神。「百日築基」概括人生的養生、學老、養病、學死，讓人在血肉個體中活出自己，最終返還道法…",
         "tags":  [
                      "心田集",
@@ -60902,7 +60793,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3755750.jpg?v=3755750"
     },
     {
         "contentBlocks":  [
@@ -61534,7 +61425,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "A：我發現學習認真的時候，我會很焦慮。我到底在怕什麼？怕我理解的是正確的嗎？功法到位嗎？⋯⋯諸如此類的擔心。我現在體力也不夠，常常這裡痛那裡痛，身體、時間等條件不允許，感覺跟不上，就會焦慮。這…",
         "tags":  [
                      "如是我聞",
@@ -61547,7 +61438,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-02",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805034.jpg?v=6805034"
     },
     {
         "contentBlocks":  [
@@ -61623,7 +61514,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "一位服務的媽媽不斷敘說她的房子要被強制執行了，房東要她簽下本票、每個月要扣薪水來償還之前欠繳的房租…..。她不斷敘說自己的擔心及害怕，堅信這樣的情節正在發生著，令她不知所措……！",
         "tags":  [
                      "練功筆記"
@@ -61635,7 +61526,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-04",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4331640.jpg?v=4331640"
     },
     {
         "contentBlocks":  [
@@ -61807,7 +61698,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每週二下課後留下來品香的二午品香小組，品著品著一晃已過了2年時光。第一任的組長傅金匙剛交棒給第二任的組長闕建珍，大家討論著是否有新的品香形式加入。我就想到不如來「出走」到陽明山上雅君的山屋（住…",
         "tags":  [
                      "導引香道"
@@ -61819,7 +61710,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-06",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5617066.jpg?v=5617066"
     },
     {
         "contentBlocks":  [
@@ -61919,7 +61810,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第194期 / 2022.04電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "六年前那場感動我的東醫氣機導引展演，開啟了我生命下半場更深遠的身心靈之旅。",
         "tags":  [
                      "練功筆記"
@@ -61931,7 +61822,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202204-2204-05",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751903.jpg?v=2751903"
     },
     {
         "contentBlocks":  [
@@ -62063,7 +61954,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "最近元宇宙meta-verse是很夯的話題，我們借題發揮一下，看看meta這個字和氣機導引到底有什麼關係。meta 本身是一個單字，代表「自身的」，例如，It’s a meta joke. 這…",
         "tags":  [
                      "圖靈集",
@@ -62076,7 +61967,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4586451.jpg?v=4586451"
     },
     {
         "contentBlocks":  [
@@ -62160,7 +62051,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "二月二十四日俄羅斯揮軍烏克蘭的行動，開啟了許多歷史事件的序幕。西方國家為避免引發第三次世界大戰，採取經濟、金融制裁取代軍事介入，其中一個方式就是將俄羅斯排除在美元貿易體系之外，試圖癱瘓俄羅斯的…",
         "tags":  [
                      "股海人生"
@@ -62172,7 +62063,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2507005.jpg?v=2507005"
     },
     {
         "contentBlocks":  [
@@ -62315,7 +62206,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "如果你看到James不跟他講話，會以為他是台灣人，但一聽到他開口說話，才驚覺他並不是本地人。James來自遙遠的大溪地，一個跟台灣位屬不同半球，坐飛機需長達三十幾個小時的島國，但他在周遊列國—…",
         "tags":  [
                      "導引采風錄"
@@ -62327,7 +62218,7 @@ export const generatedArticles = [
         "category":  "導引采風錄",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5319354.jpg?v=5319354"
     },
     {
         "contentBlocks":  [
@@ -62575,7 +62466,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「曲則全，枉則直，窪則盈，敝則新，少則得，多則惑。是以聖人抱一為天下式。不自見，故明；不自是，故彰；不自伐，故有功；不自矜，故長。夫唯不爭，故天下末能與之爭。古之所謂曲則全者，豈虛言哉﹗誠全而…",
         "tags":  [
                      "體證道德經",
@@ -62588,7 +62479,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7884049.jpg?v=7884049"
     },
     {
         "contentBlocks":  [
@@ -62792,7 +62683,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "A：每年都很期待大家到老師家走春，今年回娘家吃完午飯後來到老師家，看到大家像家人一樣的互相招呼，覺得是一種圓滿。老師過年前讓我們問自己三個問題，其中一個是「為什麼你要活著？」我想要活著的諸多理…",
         "tags":  [
                      "如是我聞",
@@ -62805,7 +62696,7 @@ export const generatedArticles = [
         "category":  "如是我聞",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5193953.jpg?v=5193953"
     },
     {
         "contentBlocks":  [
@@ -62946,7 +62837,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "過年連假後第一天， 同學5人一台車直奔雪山坑氣機導引山莊，張老師和師母也是同一天到達雪山坑。",
         "tags":  [
                      "練功筆記",
@@ -62959,7 +62850,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4251903.jpg?v=4251903"
     },
     {
         "contentBlocks":  [
@@ -63043,7 +62934,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第193期 / 2022.03電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "越南是世界沉香最主要產區，以蜜香樹占絕大多數，而蜜香樹其實都是棋楠種，所以結香有九成可視為棋楠。相較於韌皮部結油的殼沉，棋楠結香速度快得多，常有大塊結香，因此世界產量最多的沉香品類其實就是棋楠…",
         "tags":  [
                      "導引香道"
@@ -63055,7 +62946,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202203-2203-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7772514.jpg?v=7772514"
     },
     {
         "contentBlocks":  [
@@ -63107,7 +62998,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "《易經・革卦》談翻天覆地的變革，是下經指涉人間世事的34卦中，唯一元、亨、利、貞四德俱全的卦，意味著人為的變革，可配天地創造萬物之德。人為的變革，又因不同的維度，而有不同的影響層面。其中，君位…",
         "tags":  [
                      "編輯小語"
@@ -63119,7 +63010,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6858498.jpg?v=6858498"
     },
     {
         "contentBlocks":  [
@@ -63275,7 +63166,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "B：「早死早超生」，哈哈！既然是老師出了期末考題，我就先拋磚引玉，以免先講的人講完了，後面就不知所云啦！",
         "tags":  [
                      "如是我聞/疑義相與析"
@@ -63287,7 +63178,7 @@ export const generatedArticles = [
         "category":  "如是我聞/疑義相與析",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4921163.jpg?v=4921163"
     },
     {
         "contentBlocks":  [
@@ -63547,7 +63438,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "A：週五晚班有同學問：如何拉大個人「頻寬」？老師回答說：「在跟自己相反的地方，看到「道」在那裡。」有哪位同學可以說說自己的體會嗎？",
         "tags":  [
                      "如是我聞/疑義相與析"
@@ -63559,7 +63450,7 @@ export const generatedArticles = [
         "category":  "如是我聞/疑義相與析",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4189027.jpg?v=4189027"
     },
     {
         "contentBlocks":  [
@@ -63667,7 +63558,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "為啥在酒足飯飽之際，老師要跳出來，把小時候的玩樂無拘，鉅細靡遺地說與我們聽？是黃湯落肚，情不自禁，還是飯後餘興，沒他不行？",
         "tags":  [
                      "練功筆記"
@@ -63679,7 +63570,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805039.jpg?v=6805039"
     },
     {
         "contentBlocks":  [
@@ -63779,7 +63670,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "沉香中的某些成份會促進血清素與多巴胺的分泌，引發自律神經、與內分泌變化，帶動正向的情緒，讓人處於快樂、奮發的狀態，可稱之為正頻正向。不過相應於沉香於長期苦難中結香，有時沉香啟動的是一種屬於感慨…",
         "tags":  [
                      "導引香道"
@@ -63791,7 +63682,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8647829.jpg?v=8647829"
     },
     {
         "contentBlocks":  [
@@ -63923,7 +63814,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "維度（Dimension）又稱為次元，一維是線，線有長度。二維是一個平面，由長度和寬度而形成面積。三維是由長度和寬度再加上高度形成體積面，我們生活所處的就是三維空間。我們練功就是希望能身心靈的…",
         "tags":  [
                      "練功筆記"
@@ -63935,7 +63826,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4484329.jpg?v=4484329"
     },
     {
         "contentBlocks":  [
@@ -63995,7 +63886,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們生活在四維時空，但我們只能看到三維。一般是看不到自己所處的維度，只能看到以下的維度。所以我們看不到時間的流動。",
         "tags":  [
                      "練功筆記"
@@ -64007,7 +63898,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7087968.jpg?v=7087968"
     },
     {
         "contentBlocks":  [
@@ -64331,7 +64222,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "A：人藏的是根，是把一切藏在根裏面，只有根才能通天地之氣。我們要接地氣，在最低的地方，找到一個人真正的著落。老師說，好好去參。",
         "tags":  [
                      "如是我聞/疑義相與析"
@@ -64343,7 +64234,7 @@ export const generatedArticles = [
         "category":  "如是我聞/疑義相與析",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3803443.jpg?v=3803443"
     },
     {
         "contentBlocks":  [
@@ -64717,7 +64608,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「孔德之容，唯道是從。」「孔德」是太上——即「道」的形體狀態。以人來說，就是擁有超越存在的心。",
         "tags":  [
                      "體證道德經",
@@ -64730,7 +64621,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-10-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6945426.jpg?v=6945426"
     },
     {
         "contentBlocks":  [
@@ -64870,7 +64761,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「孔德之容，唯道是從。」「孔德」是太上——即「道」的形體狀態。以人來說，就是擁有超越存在的心。",
         "tags":  [
                      "體證道德經",
@@ -64883,7 +64774,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7209875.jpg?v=7209875"
     },
     {
         "contentBlocks":  [
@@ -65071,7 +64962,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "A：週五晚有同學問：如何拉大個人「頻寬」？老師回答說：「在跟自己相反的地方，看到『道』在那裡。」有哪位同學可以說說自己的體會？這跟老師講的「同人於野」又有什麼關係呢？",
         "tags":  [
                      "如是我聞/疑義相與析"
@@ -65083,7 +64974,7 @@ export const generatedArticles = [
         "category":  "如是我聞/疑義相與析",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6003727.jpg?v=6003727"
     },
     {
         "contentBlocks":  [
@@ -65175,7 +65066,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「不用力」要身、心、靈都不能用力。每一個無極動作的定點可以為一個樁步，在這一個樁步中每一塊肌肉不能用力，身體的不用力是希望力量不要跑到肌肉。心裡不要有情緒作用力，大腦的神識也回到不用力想狀態，…",
         "tags":  [
                      "身體書寫",
@@ -65188,7 +65079,7 @@ export const generatedArticles = [
         "category":  "身體書寫",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-13",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1127653.jpg?v=1127653"
     },
     {
         "contentBlocks":  [
@@ -65296,7 +65187,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第192期 / 2022.02電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "這段時間我在想，也許之前的文字感覺上有點離題了，主題是股市、財經，怎麼盡扯些不相干的貨殖列傳、范子計然，最後連孔明借東風都出來了，跟股市有何相干啊？股市不就是買啊賣的，盡扯這些幹嘛呢？",
         "tags":  [
                      "股海人生"
@@ -65308,7 +65199,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202202-2202-12",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1298095.jpg?v=1298095"
     },
     {
         "contentBlocks":  [
@@ -65376,7 +65267,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "編輯的工作就像編織，拿到什麼材料，就編出什麼樣的織品。這一期電子報，隱隱有點測試自己，也測試大家的意思。所以，一開始丟出每月專題的徵稿啟事，就沒打算積極邀稿。果然，不論是主動投稿的，或是熱心同…",
         "tags":  [
                      "編輯小語"
@@ -65388,7 +65279,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7062474.jpg?v=7062474"
     },
     {
         "contentBlocks":  [
@@ -65715,7 +65606,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "由於科技的進步，現在有許多食物是來自基因改良的農作物，人體細胞必須重新辨識，有些人體DNA無法辨認的有毒物質也隨之侵入人體，例如，地溝油。這些都是過去數百萬年人類生存演化史上沒有遇見過的物質；…",
         "tags":  [
                      "練功筆記"
@@ -65727,7 +65618,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2297204.jpg?v=2297204"
     },
     {
         "contentBlocks":  [
@@ -65859,7 +65750,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "道德經第二十章〈食母〉：「絕學無憂，唯之與阿，相去幾何？善之與惡，相去若何？人之所畏，不可不畏。荒兮其未央哉！眾人熙熙，如享太牢，如春登台。我獨泊兮，其未兆，如嬰兒之未孩；儡儡兮，若無所歸。眾…",
         "tags":  [
                      "體證道德經",
@@ -65872,7 +65763,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-8686902.jpg?v=8686902"
     },
     {
         "contentBlocks":  [
@@ -66085,7 +65976,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人一生下來就知道自己、擁有自我，也學會自我保護；開始離開父母走入社交團體，就知道人我的差別，會在意別人的眼光，在乎老師的目光、注意和稱讚。這一切都是天性使然，不必人教，我們自然就會，不同的只是…",
         "tags":  [
                      "練功筆記"
@@ -66097,7 +65988,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805048.jpg?v=6805048"
     },
     {
         "contentBlocks":  [
@@ -66413,7 +66304,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "前幾年，朋友從香港帶了本《香譜》（新纂香譜點校本）送我，我非常歡喜地研究。隨著中國經濟的崛起，香文化的受到重視，品香成雅好，沉香、香具、合香開始受到注目，唯《香譜》較少關注，因洪芻和陳氏的《香…",
         "tags":  [
                      "導引香道"
@@ -66425,7 +66316,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-11",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3746335.jpg?v=3746335"
     },
     {
         "contentBlocks":  [
@@ -66557,7 +66448,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "如果用二次元座標來描述一個人的狀態，我們可以這樣標示（能量，程度）。這裡要特別強調的是，「能量」和「程度」是分別的獨立參數，擁有各自的自由度，互不干擾的。每一個人都是獨一無二的存在，在座標上都…",
         "tags":  [
                      "圖靈集",
@@ -66570,7 +66461,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7071034.jpg?v=7071034"
     },
     {
         "contentBlocks":  [
@@ -66646,7 +66537,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「心識與宇宙作用的空間學，藉陰陽往來互動透視其機。」這是老師多年前對氣功下的定義，要講人能參贊天地化育，基本精神應該大概就是在這邊。講到空間學，就離不開時、位這兩個問題，在什麼時候要產生什麼作…",
         "tags":  [
                      "股海人生"
@@ -66658,7 +66549,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-12",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5265672.jpg?v=5265672"
     },
     {
         "contentBlocks":  [
@@ -66950,7 +66841,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第191期 / 2022.01電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "學員拎著包包，佝著腰，低頭從老師的音波底下碎步往外跑，老師的真意還繼續在空中迴盪，但他會小心不讓自己的叮嚀絆倒了要離開的腳。",
         "tags":  [
                      "練功筆記"
@@ -66962,7 +66853,7 @@ export const generatedArticles = [
         "category":  "練功筆記",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202201-2201-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2419532.jpg?v=2419532"
     },
     {
         "contentBlocks":  [
@@ -68337,7 +68228,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第190期 / 2021.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "編按：東醫家族人才輩出，但是，像育展這樣兼具強大的財經智能與深厚的人文思想素養，可謂是絕無僅有的了。育展在台北會館負責帶領大家學習安全進出股市，除了股市基本知識，他還常為張老師的課堂講述重點，…",
         "tags":  [
                      "股海人生"
@@ -68349,7 +68240,7 @@ export const generatedArticles = [
         "category":  "股海人生",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202112-2112-12",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7085714.jpg?v=7085714"
     },
     {
         "contentBlocks":  [
@@ -68484,7 +68375,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第190期 / 2021.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "學香和買香都得看時機，有人說20年後也還不晚，其實現在已經晚了。都說沉香水深，花再多錢買，最後可能都是錯的，何況現在的時空已經不是入場時機，就算你將一輩子的積蓄拿出來，也未必能買到一定數量的好…",
         "tags":  [
                      "導引香道"
@@ -68496,7 +68387,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202112-2112-12-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4569900.jpg?v=4569900"
     },
     {
         "contentBlocks":  [
@@ -68535,7 +68426,7 @@ export const generatedArticles = [
         "sourceId":  "2112-10",
         "images":  [
                        {
-                           "src":  "/assets/articles/202112/202112-img-017.jpeg?v=9710863",
+                           "src":  "/assets/articles/202112/202112-img-017.jpeg?v=9256960",
                            "caption":  ""
                        }
                    ],
@@ -68563,7 +68454,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202112-2112-10",
-        "image":  "/assets/articles/202112/202112-img-017.jpeg?v=9710863"
+        "image":  "/assets/articles/202112/202112-img-017.jpeg?v=9256960"
     },
     {
         "contentBlocks":  [
@@ -68679,7 +68570,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第190期 / 2021.12電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練精化氣在下丹田，以身體為爐，腦為鼎，鍛鍊身體，創造身體的空間。我們用十五年時間鍛鍊身體做動作，燒練大腦的雜亂念頭。所以練下丹田，做就對了！古人用禮、樂、射、御、書、術六藝訓練一個人的基本技能…",
         "tags":  [
                      "心田集",
@@ -68692,7 +68583,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202112-2112-13",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4995073.jpg?v=4995073"
     },
     {
         "contentBlocks":  [
@@ -68760,7 +68651,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "預告今秋第一波冷氣團將要來襲的週日傍晚，台北市中心高樓上，已經可以看到城市東北方的山陵線外，濃黑雲層正悄悄靠攏。而101附近的高樓塔群，燈，在薄暮中一盞一盞亮起。",
         "tags":  [
                      "編輯小語"
@@ -68772,7 +68663,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4927479.jpg?v=4927479"
     },
     {
         "contentBlocks":  [
@@ -68840,7 +68731,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "書寫是日常的習慣了，除了所思所感，也記錄夢境，以作為觀看自己的一種途徑。字裡行間的我跟書寫當下的我，相互映照，手記久了，對自己平日行事的模式漸漸能夠產生一種心知肚明。",
         "tags":  [
                      "專欄文章"
@@ -68852,7 +68743,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5391422.jpg?v=5391422"
     },
     {
         "contentBlocks":  [
@@ -68928,7 +68819,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們一路跟著張老師學工夫，到頭來發現工夫是學做人。讀書抄筆記是學習的慣性，分析剖論，各抒己見，重點還在自己的實踐工夫。馬王堆《老子》帛書出土後，有人拿自己身體做試煉，用「為」的修道形式，進行「…",
         "tags":  [
                      "專欄文章"
@@ -68940,7 +68831,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2751945.jpg?v=2751945"
     },
     {
         "contentBlocks":  [
@@ -69008,7 +68899,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "《道德經》有云：「知其白，守其黑，為天下式；為天下式，常德不忒，復歸於無極。」世事白與黑，無非陰、陽二氣之變化與感知，《易》云：「一陰一陽之謂道。」孤陰不生，獨陽不長，萬物負陰而抱陽，沖氣以為…",
         "tags":  [
                      "專欄文章"
@@ -69020,7 +68911,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4331689.jpg?v=4331689"
     },
     {
         "contentBlocks":  [
@@ -69136,7 +69027,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "應該是十幾年前吧，老師感慨有則廣告說，「心是人生最大的戰場」，看到我們傻愣愣的，老師接著說：「心是人生最大的道場！」當時我點點頭，覺得老師的“廣告詞”比較高明。",
         "tags":  [
                      "專欄文章"
@@ -69148,7 +69039,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2021-11-07",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5079683.jpg?v=5079683"
     },
     {
         "contentBlocks":  [
@@ -69472,7 +69363,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "慾望貪婪是無底深淵",
         "tags":  [
                      "專欄文章"
@@ -69484,7 +69375,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4873148.jpg?v=4873148"
     },
     {
         "contentBlocks":  [
@@ -69584,7 +69475,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人們在閱讀時，免不了沿著筆者所編織出來的字句遊歷在故事裡，或多或少也將自身的人生經驗帶入其中，但往往僅止於字面內容上的體會．然而，透過張老師《道德經》的步步引導，回頭再次閱讀《老人與海》這本經…",
         "tags":  [
                      "專欄文章"
@@ -69596,7 +69487,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4921164.jpg?v=4921164"
     },
     {
         "contentBlocks":  [
@@ -69680,7 +69571,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "不知道大家有沒有感覺，今年的一個月，感覺像是經歷一年一樣！整個世界的變化，似乎永遠沒有最快，只有更快！",
         "tags":  [
                      "專欄文章"
@@ -69692,7 +69583,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7537440.jpg?v=7537440"
     },
     {
         "contentBlocks":  [
@@ -69800,7 +69691,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "在現代生活裡找香的書寫，終於來到了宋朝。之所以那麼晚才寫，是因為每次看到有關宋朝生活訊息都非常地不爽（袂宋）。因為市場上關於宋朝生活的書，多到數不完，為什麼在這個時代，大家都在談宋朝，因為那是…",
         "tags":  [
                      "導引香道"
@@ -69812,7 +69703,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-13",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1869153.jpg?v=1869153"
     },
     {
         "contentBlocks":  [
@@ -69865,7 +69756,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "根據維基百科的定義：「境界用於區分各種領域、區域、環境。本意指地理空間界限，引申至人物所處的抽象領域層次如：哲學思想的高度、宗教信仰的修行修煉進度、內心所處環境（心境）。」境界是一種空間的概念…",
         "tags":  [
                      "圖靈集",
@@ -69878,7 +69769,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-12",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2583007.jpg?v=2583007"
     },
     {
         "contentBlocks":  [
@@ -70083,7 +69974,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "小方是一個今年剛滿九歲，留著短髮愛笑又愛吃的三年級小女生。平常總有著一堆不著邊際的有趣想法。最近她喜歡上了貓巧可這套書，這一天她抱著一本書提出了一個問題：",
         "tags":  [
                      "專欄文章"
@@ -70095,7 +69986,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3083862.jpg?v=3083862"
     },
     {
         "contentBlocks":  [
@@ -70155,7 +70046,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "氣機導引的野外教室已落成啟用，張老師也立即展開接近大自然的第一堂課，落實了東醫氣機導引飲食、起居、運動、情緒、接近大自然的概念。走進全台灣混沌靈力最強的原始森林中，打破六根的慣性，向大自然學習…",
         "tags":  [
                      "專欄文章"
@@ -70167,7 +70058,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205485.jpg?v=5205485"
     },
     {
         "contentBlocks":  [
@@ -70267,7 +70158,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第189期 / 2021.11電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "翻開功法「內臟篇」或「引體篇」，會發現只要提到身法動作，沉轉二字隨處可及。像「螺旋旋轉」功法，動作中強調身體往下時落胯、落湧泉，吐氣落腳跟，鬆腰坐胯。從踝、膝、胯、腰、椎、頸九大關節依序左旋或…",
         "tags":  [
                      "身體書寫",
@@ -70280,7 +70171,7 @@ export const generatedArticles = [
         "category":  "身體書寫",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202111-2111-14",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6256628.jpg?v=6256628"
     },
     {
         "contentBlocks":  [
@@ -70348,7 +70239,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "固定的專欄、固定幾位作者，對編輯來說，這是最安穩舒適的做法，可是，你自己知道，長久下去，這樣準死！東醫家族人才濟濟，個個是高手，有必要把大家一個個推出來站台亮相，所以，由編輯群設計的每月專題，…",
         "tags":  [
                      "編輯小語"
@@ -70360,7 +70251,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-9597901.jpg?v=9597901"
     },
     {
         "contentBlocks":  [
@@ -70420,7 +70311,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "中輟了一段時間，這次因為有了線上課程得以復課，讓我有著滿滿的感動。疫情時，所有日常完全改變，未來充滿不確定性。然而，看著線上課程的每一位教練，各個沉著穩健從容自在，還散發著就是要你學得會的強烈…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70432,7 +70323,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6819456.jpg?v=6819456"
     },
     {
         "contentBlocks":  [
@@ -70500,7 +70391,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "新冠肺炎疫情從三級降到二級，大家心情逐漸放鬆，學生們回到校園，一度停擺的各種課程陸續恢復正常，但是東醫氣機導引依舊視訊練功，每個人都篤定得很，甚至認為線上課程可以跨越地區限制，享受「天涯共此時…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70512,7 +70403,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7022341.jpg?v=7022341"
     },
     {
         "contentBlocks":  [
@@ -70564,7 +70455,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "以往在會館上老師的課，為免影響其他同學的視線，自知個子還算高，一般都選擇站在後面幾排，因此只能就看到的局部動作揣摩一二。近年隨著年齡增長，視力愈來越差，常有霧裡看花的感覺，往往只能跟著老師的動…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70576,7 +70467,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4452361.jpg?v=4452361"
     },
     {
         "contentBlocks":  [
@@ -70812,7 +70703,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "四個月的遠距野戰訓練",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70824,7 +70715,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2872096.jpg?v=2872096"
     },
     {
         "contentBlocks":  [
@@ -70892,7 +70783,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "小小年過七十才有機遇踏入東醫氣機導引的領域，當時身材僵硬之極如朽木(難雕)，由接受功法時的「激動」、跟教練練功時的「隨動」、到回家後的「不動」，日子忽忽也過了兩個多年頭，到現在才漸漸的懂了。",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70904,7 +70795,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5043573.jpg?v=5043573"
     },
     {
         "contentBlocks":  [
@@ -70964,7 +70855,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "因疫情嚴峻之故，孩子們自5月中旬開始居家線上學習，而我的氣機導引課程也適時地改為視訊上課。感謝玉玲和神助兩位教練在我不安浮動之時帶領我們練習，並逐步將課程調整為最適合學員的時間與模式，讓我有機…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -70976,7 +70867,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3496150.jpg?v=3496150"
     },
     {
         "contentBlocks":  [
@@ -71020,7 +70911,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "因為疫情，孩子們幾乎都在家上線工作，今年初先生也退休，四口之家24小時全部歸隊。原本白天我一人獨大，現在卻群雄割據，房門一關，自成一派，非屬必要，請勿打擾，尤其是孩子們不再是可愛的小小孩。當然…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -71032,7 +70923,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4854565.jpg?v=4854565"
     },
     {
         "contentBlocks":  [
@@ -71092,7 +70983,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "人生的發生是生命的課題，練氣機導引是為了修行悟道，十八套功法讓我們經歷不同的情境，讓我們看見自己，開啟悟道之門。",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -71104,7 +70995,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6352291.jpg?v=6352291"
     },
     {
         "contentBlocks":  [
@@ -71284,7 +71175,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "死亡，彷如冰封的夏日玫瑰，卻非最後一場破局，而是深秋苦楝枯葉編織新局的起手式。",
         "tags":  [
                      "專欄文章"
@@ -71296,7 +71187,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-13",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1951519.jpg?v=1951519"
     },
     {
         "contentBlocks":  [
@@ -71484,7 +71375,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "回想5月疫情初起時，各種消息難以判斷，令人不安！老師提醒大家安住練功，會館開始多時段的視訊練功課，紊亂的心，有了依歸！",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -71496,7 +71387,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-12",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7304644.jpg?v=7304644"
     },
     {
         "contentBlocks":  [
@@ -71564,7 +71455,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "2020年因著人生的第一場手術，之後在哥哥和大嫂推薦下，我走進了氣機導引的教室裹，開始了一場場與自己身體對話的歷程。",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -71576,7 +71467,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-11",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2619441.jpg?v=2619441"
     },
     {
         "contentBlocks":  [
@@ -71644,7 +71535,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "我們的情緒略可分兩個部分：一個是身體情緒，一個是大腦情緒。這是因為訊息從視丘進來而產生情緒的兩條路線，一條是經視丘直接到邊緣系統的杏仁核，直接到下視丘，影響自律神經系統及內分泌系統作用，這是直…",
         "tags":  [
                      "導引香道"
@@ -71656,7 +71547,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-13-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7384396.jpg?v=7384396"
     },
     {
         "contentBlocks":  [
@@ -71756,7 +71647,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "去年新冠疫情爆發以來，全球開始流行使用Zoom 等軟體開會，或連結各路人馬呈現各自的畫面，一起合唱或一起演奏音樂，感覺網路上一下子百花齊放。疫情使得大家儘量不出門、無法群聚，但運用新興軟體卻能…",
         "tags":  [
                      "專欄文章/視訊課的自由與孤獨"
@@ -71768,7 +71659,7 @@ export const generatedArticles = [
         "category":  "專欄文章/視訊課的自由與孤獨",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-10",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3083871.jpg?v=3083871"
     },
     {
         "contentBlocks":  [
@@ -71916,7 +71807,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "電影「一代宗師」有北方拳師宮寶森帶著女兒宮二逛金樓的橋段。女兒問爹：「您帶著親閨女逛堂子，這什麼說法？」宮寶森回答女兒：「這天底下的事，你不看他就沒了，看看無妨。」",
         "tags":  [
                      "心田集",
@@ -71929,7 +71820,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-15",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-454604.jpg?v=454604"
     },
     {
         "contentBlocks":  [
@@ -72053,7 +71944,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第188期 / 2021.10電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "老子講絕聖棄智、絕仁棄義，絕巧棄利，還有下一章講絕學無憂，都是正言若反，都是讓人完全「處虛」，不去追求沒有用的東西。",
         "tags":  [
                      "體證道德經",
@@ -72066,7 +71957,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202110-2110-14",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7129988.jpg?v=7129988"
     },
     {
         "contentBlocks":  [
@@ -72126,7 +72017,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "根據聯合國教科文組織統計，《道德經》是除了《聖經》以外被譯成外國文字發行量最多的經典著作。然而，《道德經》所涵蓋的思想範疇，與它的實踐層面，至今並未全然被理解，至於普遍的實踐，恐怕就更難企及了…",
         "tags":  [
                      "編輯小語"
@@ -72138,7 +72029,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7274247.jpg?v=7274247"
     },
     {
         "contentBlocks":  [
@@ -72507,7 +72398,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "張老師在視訊課提到「如果我再否定別人的意見，我罰一萬元。如果你們，罰一千元。」",
         "tags":  [
                      "身體書寫",
@@ -72520,7 +72411,7 @@ export const generatedArticles = [
         "category":  "身體書寫",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3035811.jpg?v=3035811"
     },
     {
         "contentBlocks":  [
@@ -72908,7 +72799,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "COVID-19流行期間，口罩是個人的基本防護，可幫助降低上呼吸道疾病感染性或萬一染病的嚴重程度。但戴上口罩也會讓人感到不適，增加呼吸阻力，莫名的心理壓力或導致身體局部過敏等。練氣機導引需要結…",
         "tags":  [
                      "心田集",
@@ -72921,7 +72812,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4657509.jpg?v=4657509"
     },
     {
         "contentBlocks":  [
@@ -73005,7 +72896,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "傳統上對沉香一直沒有系統化的分類方式，較常被引用的是《香乘》中提到的「熟結、生結、脫落、蟲漏」等四類，但這樣的分類並不周延。因為所謂熟結指的是樹木自然病變結香，生結是因刀斧外力所傷而結香，蟲漏…",
         "tags":  [
                      "導引香道"
@@ -73017,7 +72908,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5396426.jpg?v=5396426"
     },
     {
         "contentBlocks":  [
@@ -73173,7 +73064,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "《道德經》第17、21章這兩章的重點涉及到：一、氣是怎樣存在？二、至高無上的「生命本源」，是怎樣的存在？這跟物理學所發現的「波粒二相論」所探討的內容十分相近，也就是萬物的根源，物質界最小的存在…",
         "tags":  [
                      "體證道德經",
@@ -73186,7 +73077,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2818115.jpg?v=2818115"
     },
     {
         "contentBlocks":  [
@@ -73287,7 +73178,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第187期 / 2021.09電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "上一期的圖靈集，我們談到了練功的次第，那是從五年、十年、二十年甚至更長的時間軸來看，會有哪幾個階段的進展。假如每一次的練功只有20分鐘，那20分鐘內有沒有什麼樣的次第呢？那又是什麼樣的過程呢？…",
         "tags":  [
                      "圖靈集",
@@ -73300,7 +73191,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202109-2109-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7051801.jpg?v=7051801"
     },
     {
         "contentBlocks":  [
@@ -73368,7 +73259,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "新冠疫情所向披靡，全人類都被逼進前所未見的局面。氣機導引從5月15日上午十點半接到三級警戒政令後，立即宣布封館停課。隨後，五月底、六月初，入門班教練的視訊課，以及張老師對東醫家族大群體的視訊課…",
         "tags":  [
                      "編輯小語"
@@ -73380,7 +73271,7 @@ export const generatedArticles = [
         "category":  "編輯小語",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5536163.jpg?v=5536163"
     },
     {
         "contentBlocks":  [
@@ -73488,7 +73379,7 @@ export const generatedArticles = [
                               {
                                   "caption":  "",
                                   "type":  "image",
-                                  "src":  "/assets/articles/202108/202108-img-010.jpeg?v=2175942"
+                                  "src":  "/assets/articles/202108/202108-img-010.jpeg?v=1802240"
                               },
                               {
                                   "caption":  "",
@@ -73563,7 +73454,7 @@ export const generatedArticles = [
                        {
                            "caption":  "",
                            "type":  "image",
-                           "src":  "/assets/articles/202108/202108-img-010.jpeg?v=2175942"
+                           "src":  "/assets/articles/202108/202108-img-010.jpeg?v=1802240"
                        },
                        {
                            "caption":  "",
@@ -73663,7 +73554,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "剛踏進練功房時，自「認為」身體空間很大，也「認為」多數的入門功法很簡單；若遇到一些不擅長的功法，則選擇逃避，甚至不想練；雙人對練的推手功法，更常「認為」跟對手配合很麻煩，乾脆躲在同學背後，蒙混…",
         "tags":  [
                      "身體書寫",
@@ -73676,7 +73567,7 @@ export const generatedArticles = [
         "category":  "身體書寫",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-7",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2399711.jpg?v=2399711"
     },
     {
         "contentBlocks":  [
@@ -73848,7 +73739,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "疫情三級警戒期間重讀《紅樓夢》與《金瓶梅》是一件喜樂之事，在此紛亂的時刻，如何把持住內心深刻地凝視神性與人性，同時產生悲憫之心，小說引發的時空哲學，其實與現實是極為連結的。",
         "tags":  [
                      "導引香道"
@@ -73860,7 +73751,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3826124.jpg?v=3826124"
     },
     {
         "contentBlocks":  [
@@ -73984,7 +73875,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "做動作要理解三種語言：「由外而內」、「由內而外」、「內外合一」。「由外而內」是下丹田，由體神經主導動作的行止，如引體功法練習。「由內而外」是中丹田的開闔，由體呼吸、氣的帶動，如內臟功法練習。「…",
         "tags":  [
                      "心田集",
@@ -73997,7 +73888,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-5",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-7352990.jpg?v=7352990"
     },
     {
         "contentBlocks":  [
@@ -74090,7 +73981,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "越南香系很豐富，尤其南部產量大，也是好香的大宗產地，因此沉香研究者必須了解越南的地理、地質、產區分佈狀態；與惠安產區的寮國、柬埔寨、緬甸、泰國等其他四國相較，越南的香最豐富，涵蓋其他四國香系。…",
         "tags":  [
                      "導引香道"
@@ -74102,7 +73993,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5205478.jpg?v=5205478"
     },
     {
         "contentBlocks":  [
@@ -74314,7 +74205,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "老子《道德經》第十六章：「致虛極，守靜篤。萬物並作，吾以觀復。夫物芸芸，各復歸其根。歸根曰靜，是謂復命。復命曰常。知常曰明。不知常，妄作凶。知常容，容乃公，公乃全，全乃天，天乃道，道乃久。沒身…",
         "tags":  [
                      "體證道德經",
@@ -74327,7 +74218,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3638581.jpg?v=3638581"
     },
     {
         "contentBlocks":  [
@@ -74411,7 +74302,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第186期 / 2021.08電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "練功以來，我們聽過許多練功的階段論，像是「百日築基，十月懷胎，三年哺乳，九年面壁」、「練精化氣，練氣還神，練神還虛，練虛合道」、「移爐換鼎，移鼎換爐」、「下丹田，中丹田，上丹田」等，這些都是古…",
         "tags":  [
                      "圖靈集",
@@ -74424,7 +74315,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202108-2108-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-6805031.jpg?v=6805031"
     },
     {
         "contentBlocks":  [
@@ -74727,7 +74618,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "香，做為一種溝通物質，飄散的白煙宛若一條逃逸路線，連接著我們的現在、過去與未來。香頭透過觀看香的燃勢，為問事者答疑解惑，抵減人間殘酷；巫者追隨一襲白煙穿梭在天人之際，孕育著夢幻空間。",
         "tags":  [
                      "導引香道"
@@ -74739,7 +74630,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-4-3",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-1874262.jpg?v=1874262"
     },
     {
         "contentBlocks":  [
@@ -74927,7 +74818,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "品香、識香、悟香，使我們盡可能地接近不可見的真實，同時並非無視於其中味、道、氣的細膩、撩動，以及變化生成，還有勾引出對永遠不再的「往事」、「記憶」與「故土」的綿綿鄉愁。譬如，5月13日，在台芬…",
         "tags":  [
                      "導引香道"
@@ -74939,7 +74830,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-4-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4445818.jpg?v=4445818"
     },
     {
         "contentBlocks":  [
@@ -75151,7 +75042,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "道是一個什麼樣的狀態？一也。一動了以後，就是德。德動了以後，才是陰陽，才是仁義。萬物都是由道演化而來；但因為道越來越稀薄，才產生仁義禮智信等道德規範。若能回歸道的初始狀態，反而是混沌；這種人身…",
         "tags":  [
                      "體證道德經",
@@ -75164,7 +75055,7 @@ export const generatedArticles = [
         "category":  "體證道德經",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-5-2",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-5556580.jpg?v=5556580"
     },
     {
         "contentBlocks":  [
@@ -75224,7 +75115,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "記得在我四、五歲時曾被轎車輾過左腳掌，那段時間父親每天背我到診所治療，儘管我的左腳腫得像麵龜一樣，生來就好動的我，仍然每天拖著受傷的腳趴趴走找同伴玩．直到醫生警告我再不休息療養，以後左腳可能會…",
         "tags":  [
                      "身體書寫",
@@ -75237,7 +75128,7 @@ export const generatedArticles = [
         "category":  "身體書寫",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-9",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-2333797.jpg?v=2333797"
     },
     {
         "contentBlocks":  [
@@ -75361,7 +75252,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "每個人都會呼吸，小嬰兒從呱呱墜地後吸入第一口清氣，開啟了生命內環境和外環境的連結。生命需要陽光、空氣和水；空氣由口鼻、咽喉、氣管、支氣管直下進入肺泡而進行氣體交換，需要呼吸肌群的通力合作，也有…",
         "tags":  [
                      "心田集",
@@ -75374,7 +75265,7 @@ export const generatedArticles = [
         "category":  "心田集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-8",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-3638583.jpg?v=3638583"
     },
     {
         "contentBlocks":  [
@@ -75434,7 +75325,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "「愛不能放在對方身上」，課堂上初聽這句話，先是楞了幾秒，隨即明白了，明白了過去自以為的種種委屈，明白了一再重複的不明白。什麼是愛？什麼是愛的方式？我們傾注了一生心力在愛，愛彷彿是我們人生最重要…",
         "tags":  [
                      "圖靈集",
@@ -75447,7 +75338,7 @@ export const generatedArticles = [
         "category":  "圖靈集",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-6",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4052104.jpg?v=4052104"
     },
     {
         "contentBlocks":  [
@@ -75555,7 +75446,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "藥有針對性，生什麼病就吃什麼藥，不過每種藥都有它的副作用。沉香自古就是一味中藥，有它的藥性，但不會有副作用。由現代化學分析可了解沉香的主要成份，為沉香療效找到科學證據。不過沉香除了物質面，更重…",
         "tags":  [
                      "導引香道"
@@ -75567,7 +75458,7 @@ export const generatedArticles = [
         "category":  "導引香道",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-4-1",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4388198.jpg?v=4388198"
     },
     {
         "contentBlocks":  [
@@ -75931,7 +75822,7 @@ export const generatedArticles = [
                          }
                      ],
         "issue":  "第185期 / 2021.07電子報",
-        "imageCaption":  "",
+        "imageCaption":  "圖片來源 / Pixabay",
         "excerpt":  "冠狀病毒來勢洶洶，驟然打亂大家的生活。有些人面臨死亡、家庭破碎，更多的人頓時失去經濟來源，對不可預知的未來忐忑不安。感恩氣機導引多年來給予身心靈方面的鍛鍊，讓我們此時能安住心，並未因嚴峻的疫情…",
         "tags":  [
                      "專欄文章"
@@ -75943,7 +75834,7 @@ export const generatedArticles = [
         "category":  "專欄文章",
         "sourceUrl":  "",
         "homeAnchor":  "#article-202107-2107-2-4",
-        "image":  ""
+        "image":  "/assets/pixabay/pixabay-4540259.jpg?v=4540259"
     },
     {
         "contentBlocks":  [
@@ -76155,7 +76046,7 @@ export const generatedIssues = [
         "id":  "202607",
         "label":  "2026.07 電子報",
         "date":  "2026.07",
-        "image":  "/assets/articles/202607/202607-img-004.jpeg?v=178459",
+        "image":  "/assets/pixabay/pixabay-6925567.jpg?v=6925567",
         "title":  "無明即道心，在心與六根之間(五晚)"
     },
     {
@@ -76175,7 +76066,7 @@ export const generatedIssues = [
         "id":  "202508",
         "label":  "2025.08 電子報",
         "date":  "2025.08",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5432633.jpg?v=5432633",
         "title":  "之一- 在自己的真相裡成就"
     },
     {
@@ -76185,7 +76076,7 @@ export const generatedIssues = [
         "id":  "202507",
         "label":  "2025.07 電子報",
         "date":  "2025.07",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-1749508.jpg?v=1749508",
         "title":  "新書推薦"
     },
     {
@@ -76195,7 +76086,7 @@ export const generatedIssues = [
         "id":  "202506",
         "label":  "2025.06 電子報",
         "date":  "2025.06",
-        "image":  "/assets/articles/202506/202506-img-006.png?v=269089",
+        "image":  "/assets/pixabay/pixabay-2604387.jpg?v=2604387",
         "title":  "之一- 怎樣練出不想、不做的真功夫？"
     },
     {
@@ -76205,7 +76096,7 @@ export const generatedIssues = [
         "id":  "202505",
         "label":  "2025.05 電子報",
         "date":  "2025.05",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-7464190.jpg?v=7464190",
         "title":  "因機觸發"
     },
     {
@@ -76215,7 +76106,7 @@ export const generatedIssues = [
         "id":  "202504",
         "label":  "2025.04 電子報",
         "date":  "2025.04",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5316836.jpg?v=5316836",
         "title":  "之一- 想念一起，識能開，覺能關"
     },
     {
@@ -76225,7 +76116,7 @@ export const generatedIssues = [
         "id":  "202503",
         "label":  "2025.03 電子報",
         "date":  "2025.03",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-7215626.jpg?v=7215626",
         "title":  "之三- 成佛就是成就極致的自己"
     },
     {
@@ -76235,7 +76126,7 @@ export const generatedIssues = [
         "id":  "202502",
         "label":  "2025.02 電子報",
         "date":  "2025.02",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5191252.jpg?v=5191252",
         "title":  "南台灣的全覺能基地"
     },
     {
@@ -76255,7 +76146,7 @@ export const generatedIssues = [
         "id":  "202412",
         "label":  "2024.12 電子報",
         "date":  "2024.12",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5267305.jpg?v=5267305",
         "title":  "文稿彙整／二早班筆記小組"
     },
     {
@@ -76265,7 +76156,7 @@ export const generatedIssues = [
         "id":  "202410",
         "label":  "2024.10 電子報",
         "date":  "2024.10",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-4349712.jpg?v=4349712",
         "title":  "人生最後假期"
     },
     {
@@ -76275,7 +76166,7 @@ export const generatedIssues = [
         "id":  "202408",
         "label":  "2024.08 電子報",
         "date":  "2024.08",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
         "title":  "學而後知不足記三天兩夜治療課密集訓練"
     },
     {
@@ -76285,7 +76176,7 @@ export const generatedIssues = [
         "id":  "202406",
         "label":  "2024.06 電子報",
         "date":  "2024.06",
-        "image":  "/assets/articles/202406/202406-img-003.png?v=409263",
+        "image":  "/assets/pixabay/pixabay-5354952.jpg?v=5354952",
         "title":  "超越常人，成為超人"
     },
     {
@@ -76305,7 +76196,7 @@ export const generatedIssues = [
         "id":  "202404",
         "label":  "2024.04 電子報",
         "date":  "2024.04",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-2363348.jpg?v=2363348",
         "title":  "鄭雅靜"
     },
     {
@@ -76315,7 +76206,7 @@ export const generatedIssues = [
         "id":  "202403",
         "label":  "2024.03 電子報",
         "date":  "2024.03",
-        "image":  "/assets/articles/202403/202403-img-010.png?v=10268340",
+        "image":  "/assets/pixabay/pixabay-8023047.jpg?v=8023047",
         "title":  "歡聚一堂"
     },
     {
@@ -76335,7 +76226,7 @@ export const generatedIssues = [
         "id":  "202312",
         "label":  "2023.12 電子報",
         "date":  "2023.12",
-        "image":  "/assets/articles/202312/202312-img-005.png?v=166213",
+        "image":  "/assets/pixabay/pixabay-5474856.jpg?v=5474856",
         "title":  "柔以成勢，力藏於虛"
     },
     {
@@ -76345,7 +76236,7 @@ export const generatedIssues = [
         "id":  "202311",
         "label":  "2023.11 電子報",
         "date":  "2023.11",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-7523336.jpg?v=7523336",
         "title":  "林鈴宜"
     },
     {
@@ -76355,7 +76246,7 @@ export const generatedIssues = [
         "id":  "202310",
         "label":  "2023.10 電子報",
         "date":  "2023.10",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-1876375.jpg?v=1876375",
         "title":  "談無極的收式"
     },
     {
@@ -76365,7 +76256,7 @@ export const generatedIssues = [
         "id":  "202309",
         "label":  "2023.09 電子報",
         "date":  "2023.09",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5363737.jpg?v=5363737",
         "title":  "賴鈺晶"
     },
     {
@@ -76375,7 +76266,7 @@ export const generatedIssues = [
         "id":  "202308",
         "label":  "2023.08 電子報",
         "date":  "2023.08",
-        "image":  "/assets/articles/202308/202308-img-011.png?v=330413",
+        "image":  "/assets/pixabay/pixabay-6641881.jpg?v=6641881",
         "title":  "謝珪如"
     },
     {
@@ -76385,7 +76276,7 @@ export const generatedIssues = [
         "id":  "202307",
         "label":  "2023.07 電子報",
         "date":  "2023.07",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-6496305.jpg?v=6496305",
         "title":  "疑義相與析"
     },
     {
@@ -76395,7 +76286,7 @@ export const generatedIssues = [
         "id":  "202306",
         "label":  "2023.06 電子報",
         "date":  "2023.06",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-1590923.jpg?v=1590923",
         "title":  "動中守靜，讓「覺」醒來"
     },
     {
@@ -76405,7 +76296,7 @@ export const generatedIssues = [
         "id":  "202305",
         "label":  "2023.05 電子報",
         "date":  "2023.05",
-        "image":  "/assets/articles/202305/202305-img-006.jpeg?v=280787",
+        "image":  "/assets/pixabay/pixabay-1894739.jpg?v=1894739",
         "title":  "陳國華"
     },
     {
@@ -76415,7 +76306,7 @@ export const generatedIssues = [
         "id":  "202304",
         "label":  "2023.04 電子報",
         "date":  "2023.04",
-        "image":  "/assets/articles/202304/202304-img-003.jpg?v=280787",
+        "image":  "/assets/pixabay/pixabay-4487466.jpg?v=4487466",
         "title":  "之二- 不想」與「感覺」之間的距離"
     },
     {
@@ -76425,7 +76316,7 @@ export const generatedIssues = [
         "id":  "202303",
         "label":  "2023.03 電子報",
         "date":  "2023.03",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-2597732.jpg?v=2597732",
         "title":  "蔡進懋、謝神助"
     },
     {
@@ -76435,7 +76326,7 @@ export const generatedIssues = [
         "id":  "202302",
         "label":  "2023.02 電子報",
         "date":  "2023.02",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5000929.jpg?v=5000929",
         "title":  "之二- 井底蛙看世界"
     },
     {
@@ -76445,7 +76336,7 @@ export const generatedIssues = [
         "id":  "202301",
         "label":  "2023.01 電子報",
         "date":  "2023.01",
-        "image":  "/assets/articles/202301/202301-img-002.jpg?v=959195",
+        "image":  "/assets/pixabay/pixabay-7406536.jpg?v=7406536",
         "title":  "年終錄音側記／一晚班"
     },
     {
@@ -76465,7 +76356,7 @@ export const generatedIssues = [
         "id":  "202211",
         "label":  "2022.11 電子報",
         "date":  "2022.11",
-        "image":  "/assets/articles/202211/202211-img-003.jpeg?v=84776",
+        "image":  "/assets/pixabay/pixabay-1031458.jpg?v=1031458",
         "title":  "蔡育展"
     },
     {
@@ -76475,7 +76366,7 @@ export const generatedIssues = [
         "id":  "202208",
         "label":  "2022.08 電子報",
         "date":  "2022.08",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-6597237.jpg?v=6597237",
         "title":  "之一- 山林溪流間的無極體驗"
     },
     {
@@ -76485,7 +76376,7 @@ export const generatedIssues = [
         "id":  "202207",
         "label":  "2022.07 電子報",
         "date":  "2022.07",
-        "image":  "/assets/articles/202207/202207-img-032.jpg?v=4135613",
+        "image":  "/assets/pixabay/pixabay-9645404.jpg?v=9645404",
         "title":  "之一- 天地玄黃 四氣練養"
     },
     {
@@ -76495,7 +76386,7 @@ export const generatedIssues = [
         "id":  "202206",
         "label":  "2022.06 電子報",
         "date":  "2022.06",
-        "image":  "/assets/articles/202206/202206-img-002.png?v=1023105",
+        "image":  "/assets/pixabay/pixabay-4430472.jpg?v=4430472",
         "title":  "疑義相與析"
     },
     {
@@ -76515,7 +76406,7 @@ export const generatedIssues = [
         "id":  "202204",
         "label":  "2022.04 電子報",
         "date":  "2022.04",
-        "image":  "/assets/articles/202204/202204-img-004.jpeg?v=75674",
+        "image":  "/assets/pixabay/pixabay-6805034.jpg?v=6805034",
         "title":  "疑義相與析"
     },
     {
@@ -76525,7 +76416,7 @@ export const generatedIssues = [
         "id":  "202203",
         "label":  "2022.03 電子報",
         "date":  "2022.03",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-5193953.jpg?v=5193953",
         "title":  "疑義相與析"
     },
     {
@@ -76535,7 +76426,7 @@ export const generatedIssues = [
         "id":  "202202",
         "label":  "2022.02 電子報",
         "date":  "2022.02",
-        "image":  "/assets/articles/202202/202202-img-003.png?v=65005",
+        "image":  "/assets/pixabay/pixabay-6945426.jpg?v=6945426",
         "title":  "孔德之容 惟道是從"
     },
     {
@@ -76545,7 +76436,7 @@ export const generatedIssues = [
         "id":  "202201",
         "label":  "2022.01 電子報",
         "date":  "2022.01",
-        "image":  "/assets/articles/202201/202201-img-002.jpg?v=32795",
+        "image":  "/assets/pixabay/pixabay-7071034.jpg?v=7071034",
         "title":  "阿充"
     },
     {
@@ -76565,7 +76456,7 @@ export const generatedIssues = [
         "id":  "202111",
         "label":  "2021.11 電子報",
         "date":  "2021.11",
-        "image":  "/assets/articles/202111/202111-img-015.jpeg?v=103783",
+        "image":  "/assets/pixabay/pixabay-2583007.jpg?v=2583007",
         "title":  "阿充"
     },
     {
@@ -76575,7 +76466,7 @@ export const generatedIssues = [
         "id":  "202110",
         "label":  "2021.10 電子報",
         "date":  "2021.10",
-        "image":  "/assets/qiji-logo.png",
+        "image":  "/assets/pixabay/pixabay-7304644.jpg?v=7304644",
         "title":  "之十一- 不怕慢！只怕站！"
     },
     {
@@ -76585,7 +76476,7 @@ export const generatedIssues = [
         "id":  "202109",
         "label":  "2021.09 電子報",
         "date":  "2021.09",
-        "image":  "/assets/articles/202109/202109-img-012.jpeg?v=34181",
+        "image":  "/assets/pixabay/pixabay-5396426.jpg?v=5396426",
         "title":  "文稿彙整／識香課整理小組"
     },
     {
@@ -76595,7 +76486,7 @@ export const generatedIssues = [
         "id":  "202108",
         "label":  "2021.08 電子報",
         "date":  "2021.08",
-        "image":  "/assets/articles/202108/202108-img-008.jpeg?v=312154",
+        "image":  "/assets/pixabay/pixabay-5205478.jpg?v=5205478",
         "title":  "文稿彙整／識香課整理小組"
     },
     {
