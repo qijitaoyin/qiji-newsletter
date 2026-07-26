@@ -764,13 +764,35 @@ const normalizeCategory = (category: string) => {
         if (!importChangeReportNode) return;
         const files = Array.isArray(report?.changedFiles) ? report.changedFiles : [];
         if (!files.length) {
-          importChangeReportNode.innerHTML = "本次匯入偵測到 <strong>0</strong> 個更新 Word 檔。";
+          importChangeReportNode.innerHTML = "本次沒有偵測到需要重新匯入的 Word 檔。";
           return;
         }
+        const counts = files.reduce(
+          (summary, file) => {
+            if (file.status === "new") summary.new += 1;
+            else if (file.status === "updated") summary.updated += 1;
+            else summary.other += 1;
+            return summary;
+          },
+          { new: 0, updated: 0, other: 0 }
+        );
+        const parts = [
+          counts.updated ? `${counts.updated} 個內容變更` : "",
+          counts.new ? `${counts.new} 個首次納入` : "",
+          counts.other ? `${counts.other} 個重新匯入` : ""
+        ].filter(Boolean);
+        const statusLabel = (status) => {
+          if (status === "new") return "首次納入";
+          if (status === "updated") return "內容變更";
+          return "重新匯入";
+        };
         importChangeReportNode.innerHTML = `
-          <span>本次匯入偵測到 <strong>${files.length}</strong> 個更新 Word 檔：</span>
+          <span>本次重新匯入 <strong>${files.length}</strong> 個 Word 檔${parts.length ? `：${parts.join("、")}` : ""}。</span>
           <ul>${files
-            .map((file) => `<li>${escapeHtml(file.fileName || file.relativePath || file.path || "")}</li>`)
+            .map(
+              (file) =>
+                `<li><span class="review-import-status">${statusLabel(file.status)}</span>${escapeHtml(file.fileName || file.relativePath || file.path || "")}</li>`
+            )
             .join("")}</ul>
         `;
       };

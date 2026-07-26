@@ -2712,6 +2712,13 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   padding-left: 1.2rem;
 }
 
+.review-import-status {
+  display: inline-block;
+  margin-right: 0.45rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .review-live-report-form textarea {
   min-height: 42px;
   resize: vertical;
