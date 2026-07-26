@@ -11,6 +11,8 @@ import { articleTags, reviewIssueArticles, reviewIssueArchive } from "../data/ar
 import tagVocabulary from "../data/tagVocabulary.json";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
+const importWorkflowUrl =
+  "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/import-google-drive.yml";
 
 const statusLabels: Record<string, string> = {
   error: "不可上架",
@@ -154,6 +156,9 @@ const normalizeCategory = (category: string) => {
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
             <button type="button" data-submit-reimport>{"\u91cd\u65b0\u532f\u5165\u6700\u65b0 Word"}</button>
+            <a class="review-action-link" href={importWorkflowUrl} target="_blank" rel="noreferrer">
+              {"\u53ea\u540c\u6b65 Google Drive \u8207\u532f\u5165 Word"}
+            </a>
             <div class="review-import-change-report" data-import-change-report></div>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{

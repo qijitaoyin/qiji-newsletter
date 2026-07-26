@@ -2736,6 +2736,18 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   padding: 7px 10px;
 }
 
+.review-summary-actions .review-action-link {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 900;
+  min-height: 38px;
+  padding: 7px 10px;
+}
+
 .review-summary-actions button:nth-of-type(n + 2) {
   background: transparent;
   color: var(--brown);
