@@ -18,8 +18,6 @@ import tagVocabulary from "../data/tagVocabulary.json";
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
 const deployWorkflowUrl =
   "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml";
-const importWorkflowUrl =
-  "https://github.com/qijitaoyin/qiji-newsletter/actions/workflows/import-google-drive.yml";
 
 const statusLabels: Record<string, string> = {
   error: "不可上架",
@@ -170,13 +168,10 @@ const normalizeCategory = (category: string) => {
           </article>
           <div class="review-summary-actions">
             <span data-publish-status>尚未產生發布確認。</span>
-            <a class="review-action-link" href={deployWorkflowUrl} target="_blank" rel="noreferrer">
+            <button type="button" class="review-action-link" data-submit-reimport>
               {"更新校對草稿頁"}
-            </a>
-            <a class="review-action-link review-action-link-secondary" href={importWorkflowUrl} target="_blank" rel="noreferrer">
-              {"只產生匯入檢查報告"}
-            </a>
-            <p class="review-action-note">修改 Word 後，請先更新校對草稿頁；確認無誤並處理完待辦後，再送出正式發布。</p>
+            </button>
+            <p class="review-action-note">修改 Word 後，請按「更新校對草稿頁」。完成後這裡會顯示本次抓到的更新 Word 數量與檔名；確認無誤並處理完待辦後，再送出正式發布。</p>
             <div class="review-import-change-report" data-import-change-report></div>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{
@@ -1952,7 +1947,7 @@ const normalizeCategory = (category: string) => {
 
         if (!publishWebhookUrl) {
           if (publishStatusNode) {
-            publishStatusNode.textContent = "尚未設定正式發布中介。請先部署 Google Apps Script，並設定 PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL。";
+            publishStatusNode.textContent = "目前無法送出正式發布，請通知上架人員檢查發布設定。";
           }
           return;
         }
@@ -1987,7 +1982,7 @@ const normalizeCategory = (category: string) => {
       submitReimportButton?.addEventListener("click", async () => {
         if (!publishWebhookUrl) {
           if (publishStatusNode) {
-            publishStatusNode.textContent = "\u5c1a\u672a\u8a2d\u5b9a\u91cd\u65b0\u532f\u5165\u4e2d\u4ecb\u3002\u8acb\u5148\u90e8\u7f72 Google Apps Script\uff0c\u4e26\u8a2d\u5b9a PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL\u3002";
+            publishStatusNode.textContent = "目前無法更新校對草稿頁，請通知上架人員檢查匯入設定。";
           }
           return;
         }
@@ -2030,7 +2025,7 @@ const normalizeCategory = (category: string) => {
             if (publishStatusNode && run?.status === "completed" && run.conclusion === "success") {
               const wasSkipped = await syncDriveStepWasSkipped(run);
               if (wasSkipped) {
-                publishStatusNode.innerHTML = `\u672c\u6b21\u5efa\u7f6e\u5df2\u5b8c\u6210\uff0c\u4f46 <strong>Sync Google Drive source</strong> \u88ab\u7565\u904e\uff0c\u4ee3\u8868\u6c92\u6709\u91cd\u65b0\u540c\u6b65 Word\u3002\u8acb\u6aa2\u67e5 Google Apps Script reimport \u662f\u5426\u9001\u51fa <code>sync_drive=true</code>\u3002 <a href="${run.html_url}" target="_blank" rel="noreferrer">\u67e5\u770b\u4f5c\u696d</a>`;
+                publishStatusNode.innerHTML = `本次作業完成，但沒有重新同步 Google Drive 的 Word。請通知上架人員檢查更新設定。 <a href="${run.html_url}" target="_blank" rel="noreferrer">查看作業</a>`;
               } else {
                 publishStatusNode.innerHTML = `\u91cd\u65b0\u532f\u5165\u5df2\u5b8c\u6210\u3002<a href="${refreshUrl}">\u91cd\u65b0\u6574\u7406\u672c\u9801</a>\u5f8c\uff0c\u5c31\u6703\u770b\u5230\u6700\u65b0 Word \u9810\u89bd\u3002`;
                 try {
