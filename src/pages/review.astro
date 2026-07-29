@@ -552,7 +552,7 @@ const normalizeCategory = (category: string) => {
             <div class="review-items">
               {group.items.map((item) => (
                 <article
-                  class={`review-card status-${item.status}`}
+                  class={`review-card status-${item.status} ${item.image ? "has-thumb" : "has-no-thumb"}`}
                   data-import-review-card
                   data-approval-id={item.id}
                   data-source-modified={item.sourceModified}
@@ -565,15 +565,37 @@ const normalizeCategory = (category: string) => {
                   data-kind="import"
                 >
                   <div class="review-card-main">
-                    <p class="review-status">{statusLabels[item.status] ?? item.status}</p>
-                    <h3>{item.title || item.sourceId || "未命名文章"}</h3>
-                    <p class="review-meta">
-                      <span>{item.category || "分類待判斷"}</span>
-                      <span>{item.author || "作者待判斷"}</span>
-                      <span>{item.date || item.issueId}</span>
-                    </p>
+                    <div class="review-card-summary">
+                      <p class="review-status">{statusLabels[item.status] ?? item.status}</p>
+                      <div class="review-title-field">
+                        <span>標題</span>
+                        <h3>{item.title || item.sourceId || "未命名文章"}</h3>
+                      </div>
+                      <dl class="review-meta-grid">
+                        <div>
+                          <dt>分類</dt>
+                          <dd>{item.category || "分類待判斷"}</dd>
+                        </div>
+                        <div>
+                          <dt>作者</dt>
+                          <dd>{item.author || "作者待判斷"}</dd>
+                        </div>
+                        <div>
+                          <dt>日期</dt>
+                          <dd>{item.date || item.issueId}</dd>
+                        </div>
+                        <div>
+                          <dt>Word 檔</dt>
+                          <dd>{item.file?.split(/[\\/]/).pop() || item.sourceId || ""}</dd>
+                        </div>
+                      </dl>
+                    </div>
                     <div class="review-actions review-actions-inline">
-                      {item.slug && <a href={pathFor(`/articles/${item.slug}/`)}>閱讀預覽</a>}
+                      {item.slug && (
+                        <a href={pathFor(`/review-articles/${item.slug}/`)} target="_blank" rel="noreferrer">
+                          閱讀預覽
+                        </a>
+                      )}
                       {item.status !== "error" && <button type="button" data-approve-item>確認可上架</button>}
                       {item.status !== "error" && <button type="button" data-edit-item>局部修正</button>}
                       <button type="button" data-ignore-item>不需上架／忽略</button>
@@ -607,7 +629,10 @@ const normalizeCategory = (category: string) => {
                       </form>
                     )}
                     {item.excerpt && <p class="review-excerpt">{item.excerpt}</p>}
-                    <p class="review-file">{item.file}</p>
+                    <details class="review-file-detail">
+                      <summary>查看原始檔案路徑</summary>
+                      <p class="review-file">{item.file}</p>
+                    </details>
                   </div>
 
                   {item.image && (
@@ -1773,13 +1798,37 @@ const normalizeCategory = (category: string) => {
 
       const modeTabs = Array.from(document.querySelectorAll("[data-review-mode-tab]"));
       const modePanels = Array.from(document.querySelectorAll("[data-review-mode-panel]"));
+      const reviewModeStorageKey = "qiji-review-active-mode";
+      const activateReviewMode = (target = "current", options = {}) => {
+        const hasTarget = modeTabs.some((tab) => tab.getAttribute("data-review-mode-tab") === target);
+        const mode = hasTarget ? target : "current";
+        modeTabs.forEach((tab) => {
+          tab.classList.toggle("is-active", tab.getAttribute("data-review-mode-tab") === mode);
+        });
+        modePanels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.getAttribute("data-review-mode-panel") === mode);
+        });
+        if (!options.skipSave) {
+          try {
+            window.sessionStorage.setItem(reviewModeStorageKey, mode);
+          } catch {}
+        }
+      };
+      const initialReviewMode =
+        new URLSearchParams(window.location.search).get("mode") ||
+        (window.location.hash === "#legacy" ? "legacy" : "") ||
+        (() => {
+          try {
+            return window.sessionStorage.getItem(reviewModeStorageKey) || "";
+          } catch {
+            return "";
+          }
+        })();
+      activateReviewMode(initialReviewMode || "current", { skipSave: true });
       modeTabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           const target = tab.getAttribute("data-review-mode-tab");
-          modeTabs.forEach((item) => item.classList.toggle("is-active", item === tab));
-          modePanels.forEach((panel) => {
-            panel.classList.toggle("is-active", panel.getAttribute("data-review-mode-panel") === target);
-          });
+          activateReviewMode(target || "current");
         });
       });
 

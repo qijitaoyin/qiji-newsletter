@@ -7,6 +7,8 @@
   const reviewViewport = searchParams.get("reviewViewport") || "";
   const basePath = document.documentElement.dataset.basePath || "/";
   const articleUrl = page.getAttribute("data-article-json");
+  const isReviewArticlePage =
+    window.location.pathname.includes("/review-articles/") || articleUrl?.includes("/data/review-articles/");
 
   const withBase = (path) => {
     if (!path) return "";
@@ -41,7 +43,7 @@
   };
 
   const articleHref = (slug) => {
-    const href = withBase(isReviewFrame ? `/review-articles/${slug}/` : `/articles/${slug}/`);
+    const href = withBase(isReviewArticlePage || isReviewFrame ? `/review-articles/${slug}/` : `/articles/${slug}/`);
     if (!isReviewFrame) return href;
     const url = new URL(href, window.location.href);
     url.searchParams.set("reviewFrame", "1");

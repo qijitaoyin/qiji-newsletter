@@ -146,6 +146,44 @@ function Get-FileContentHash {
   }
 }
 
+function Get-TextContentHash {
+  param([string]$Text)
+  if ($null -eq $Text) { $Text = "" }
+  $sha = $null
+  try {
+    $sha = [System.Security.Cryptography.SHA256]::Create()
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($Text)
+    $hash = $sha.ComputeHash($bytes)
+    return ([System.BitConverter]::ToString($hash) -replace "-", "").ToLowerInvariant()
+  } finally {
+    if ($sha) { $sha.Dispose() }
+  }
+}
+
+function Get-NormalizedDocxTextForSignature {
+  param([string[]]$Paragraphs)
+  $normalized = @(
+    @($Paragraphs) |
+      ForEach-Object { ConvertTo-PlainText ([string]$_) -PreserveLineBreaks } |
+      Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+  )
+  return ($normalized -join "`n`n")
+}
+
+function Get-NormalizedDocxDisplayForSignature {
+  param([object[]]$Paragraphs)
+  $normalized = @(
+    @($Paragraphs) |
+      Where-Object { $_ -and -not [string]::IsNullOrWhiteSpace([string]$_.text) } |
+      ForEach-Object {
+        $text = ConvertTo-PlainText ([string]$_.text) -PreserveLineBreaks
+        $bold = if ($_.isBold) { "bold" } else { "normal" }
+        "$bold|$text"
+      }
+  )
+  return ($normalized -join "`n`n")
+}
+
 function New-PixabayFallbackStore {
   return @{
     policy = $pixabayFallbackPolicy
@@ -384,9 +422,15 @@ function Apply-PixabayFallbackImages {
 
 function Get-FileSignature {
   param([System.IO.FileInfo]$File, [string]$BasePath, [int]$CacheVersion, [string]$ApprovalFingerprint)
+  $paragraphs = Read-DocxParagraphs $File.FullName
+  $displayParagraphs = Read-DocxDisplaySignatureParagraphs $File.FullName
+  $textForSignature = Get-NormalizedDocxTextForSignature $paragraphs
+  $displayForSignature = Get-NormalizedDocxDisplayForSignature $displayParagraphs
   return @{
     key = Get-RelativePath $File.FullName $BasePath
     contentHash = Get-FileContentHash $File.FullName
+    contentTextHash = Get-TextContentHash $textForSignature
+    contentDisplayHash = Get-TextContentHash $displayForSignature
     length = $File.Length
     cacheVersion = $CacheVersion
     approvalFingerprint = $ApprovalFingerprint
@@ -396,12 +440,29 @@ function Get-FileSignature {
 function Test-CacheSignatureMatch {
   param([object]$Entry, [object]$Signature)
   if (-not $Entry -or -not $Entry.signature) { return $false }
+  if (
+    [string]$Entry.signature.key -ne [string]$Signature.key -or
+    [string]$Entry.signature.cacheVersion -ne [string]$Signature.cacheVersion -or
+    [string]$Entry.signature.approvalFingerprint -ne [string]$Signature.approvalFingerprint
+  ) {
+    return $false
+  }
+
+  $cachedDisplayHash = [string]$Entry.signature.contentDisplayHash
+  $currentDisplayHash = [string]$Signature.contentDisplayHash
+  if ($cachedDisplayHash -and $currentDisplayHash) {
+    return $cachedDisplayHash -eq $currentDisplayHash
+  }
+
+  $cachedTextHash = [string]$Entry.signature.contentTextHash
+  $currentTextHash = [string]$Signature.contentTextHash
+  if ($cachedTextHash -and $currentTextHash) {
+    return $cachedTextHash -eq $currentTextHash
+  }
+
   return (
-    [string]$Entry.signature.key -eq [string]$Signature.key -and
     [string]$Entry.signature.contentHash -eq [string]$Signature.contentHash -and
-    [string]$Entry.signature.length -eq [string]$Signature.length -and
-    [string]$Entry.signature.cacheVersion -eq [string]$Signature.cacheVersion -and
-    [string]$Entry.signature.approvalFingerprint -eq [string]$Signature.approvalFingerprint
+    [string]$Entry.signature.length -eq [string]$Signature.length
   )
 }
 
@@ -440,6 +501,61 @@ function Read-DocxParagraphs {
     return $paragraphs.ToArray()
   } catch {
     Write-Warning "Cannot read DOCX: $Path ($($_.Exception.Message))"
+    return @()
+  } finally {
+    if ($zip) { $zip.Dispose() }
+  }
+}
+
+function Read-DocxDisplaySignatureParagraphs {
+  param([string]$Path)
+  $zip = $null
+  try {
+    $stream = [System.IO.File]::Open($Path, [System.IO.FileMode]::Open, [System.IO.FileAccess]::Read, [System.IO.FileShare]::ReadWrite)
+    $zip = New-Object System.IO.Compression.ZipArchive($stream, [System.IO.Compression.ZipArchiveMode]::Read, $false)
+    $entry = $zip.GetEntry("word/document.xml")
+    if (-not $entry) { return @() }
+    $reader = New-Object System.IO.StreamReader($entry.Open(), [System.Text.Encoding]::UTF8)
+    try {
+      [xml]$xml = $reader.ReadToEnd()
+    } finally {
+      $reader.Dispose()
+    }
+
+    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $ns.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+    $paragraphs = New-Object System.Collections.Generic.List[object]
+    foreach ($p in $xml.SelectNodes("//w:body/w:p", $ns)) {
+      $parts = New-Object System.Collections.Generic.List[string]
+      $hasBoldText = $false
+      foreach ($run in $p.SelectNodes(".//w:r", $ns)) {
+        $runParts = New-Object System.Collections.Generic.List[string]
+        foreach ($node in $run.SelectNodes(".//w:t|.//w:tab|.//w:br", $ns)) {
+          if ($node.LocalName -eq "tab") {
+            $runParts.Add(" ")
+          } elseif ($node.LocalName -eq "br") {
+            $runParts.Add("`n")
+          } else {
+            $runParts.Add($node.InnerText)
+          }
+        }
+        $runText = $runParts -join ""
+        if (-not [string]::IsNullOrWhiteSpace($runText)) {
+          if (Test-DocxRunBold $run $ns) { $hasBoldText = $true }
+          $parts.Add($runText)
+        }
+      }
+      $text = ConvertTo-PlainText ($parts -join "") -PreserveLineBreaks
+      if ($text) {
+        $paragraphs.Add(@{
+          text = $text
+          isBold = $hasBoldText
+        })
+      }
+    }
+    return $paragraphs.ToArray()
+  } catch {
+    Write-Warning "Cannot read DOCX display signature: $Path ($($_.Exception.Message))"
     return @()
   } finally {
     if ($zip) { $zip.Dispose() }

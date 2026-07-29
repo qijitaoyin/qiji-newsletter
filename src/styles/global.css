@@ -3031,6 +3031,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   padding: 18px;
 }
 
+.review-card.has-no-thumb {
+  grid-template-columns: 1fr;
+}
+
 .review-card.status-error {
   border-left-color: #9d2d20;
 }
@@ -3086,7 +3090,52 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   font-size: clamp(1.25rem, 2vw, 2rem);
   letter-spacing: 0;
   line-height: 1.25;
-  margin: 0 0 8px;
+  margin: 0;
+}
+
+.review-card-summary {
+  display: grid;
+  gap: 12px;
+}
+
+.review-title-field {
+  display: grid;
+  gap: 4px;
+}
+
+.review-title-field > span,
+.review-meta-grid dt,
+.review-file-detail summary {
+  color: var(--brown);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.review-meta-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+}
+
+.review-meta-grid div {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(117, 92, 75, 0.16);
+  border-radius: 6px;
+  min-width: 0;
+  padding: 10px 12px;
+}
+
+.review-meta-grid dt {
+  margin: 0 0 4px;
+}
+
+.review-meta-grid dd {
+  color: var(--ink);
+  font-weight: 900;
+  line-height: 1.45;
+  margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .review-card-head {
@@ -3240,6 +3289,18 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   overflow-wrap: anywhere;
 }
 
+.review-file-detail {
+  border-top: 1px solid var(--line);
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+.review-file-detail summary {
+  cursor: pointer;
+  list-style-position: inside;
+  margin-bottom: 6px;
+}
+
 .review-thumb {
   margin: 0;
 }
@@ -3301,11 +3362,11 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   }
 
   .review-actions-inline {
-    border-top: 0;
-    grid-column: auto;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    border-top: 1px solid var(--line);
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    margin: 14px 0 20px;
+    padding-top: 14px;
   }
 
 .review-actions button,
@@ -3468,6 +3529,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
   .review-metadata-row {
     grid-template-columns: 1fr;
+  }
+
+  .review-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
 }
@@ -3893,6 +3958,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
   .review-summary,
   .review-card {
+    grid-template-columns: 1fr;
+  }
+
+  .review-meta-grid {
     grid-template-columns: 1fr;
   }
 
