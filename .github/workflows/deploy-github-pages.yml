@@ -70,7 +70,7 @@ jobs:
       AI_LIMIT: ${{ inputs.ai_limit }}
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
       PUBLIC_BASE_PATH: /
-      PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL }}
+      PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
       REVIEW_PUBLISH_JSON: ${{ inputs.review_publish_json }}
     steps:
       - name: Checkout
