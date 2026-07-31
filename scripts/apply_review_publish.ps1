@@ -26,6 +26,14 @@ function Ensure-ObjectProperty($Object, $Name) {
   }
 }
 
+function Set-ObjectProperty($Object, $Name, $Value) {
+  if ($Object.PSObject.Properties[$Name]) {
+    $Object.$Name = $Value
+  } else {
+    $Object | Add-Member -MemberType NoteProperty -Name $Name -Value $Value
+  }
+}
+
 function Resolve-OutputPath($Path) {
   if ([System.IO.Path]::IsPathRooted($Path)) {
     return $Path
@@ -214,9 +222,33 @@ if ($feedbackDirectory -and -not (Test-Path -LiteralPath $feedbackDirectory)) {
 $feedbackJson = $feedback | ConvertTo-Json -Depth 20
 [System.IO.File]::WriteAllText((Resolve-OutputPath $FeedbackFile), $feedbackJson, [System.Text.UTF8Encoding]::new($false))
 
-$publishState.publicLatestIssueId = $publishedIssueId
-$publishState.reviewIssueId = $publishedIssueId
-$publishState.publishedAt = (Get-Date).ToUniversalTime().ToString("o")
+Ensure-ObjectProperty $publishState "publishedIssues"
+$publishedAt = (Get-Date).ToUniversalTime().ToString("o")
+$currentPublicLatestIssueId = [string]$publishState.publicLatestIssueId
+if (-not $currentPublicLatestIssueId -or $publishedIssueId -gt $currentPublicLatestIssueId) {
+  $publishState.publicLatestIssueId = $publishedIssueId
+  $publishState.reviewIssueId = $publishedIssueId
+}
+$publishState.publishedAt = $publishedAt
+
+$articleSignatureMap = [pscustomobject]@{}
+$articleSignatureCount = 0
+$reviewApprovals = $publish.reviewApprovals
+if ($reviewApprovals -and $reviewApprovals.articleSignatures) {
+  foreach ($prop in @($reviewApprovals.articleSignatures.PSObject.Properties)) {
+    $sourceId = [string]$prop.Name
+    if ([string]::IsNullOrWhiteSpace($sourceId)) { continue }
+    Set-ObjectProperty $articleSignatureMap $sourceId $prop.Value
+    $articleSignatureCount += 1
+  }
+}
+if ($articleSignatureCount -gt 0) {
+  Set-ObjectProperty $publishState.publishedIssues $publishedIssueId ([pscustomobject]@{
+    issueId = $publishedIssueId
+    publishedAt = $publishedAt
+    articles = $articleSignatureMap
+  })
+}
 $stateDirectory = Split-Path -Parent $PublishStateFile
 if ($stateDirectory -and -not (Test-Path -LiteralPath $stateDirectory)) {
   New-Item -ItemType Directory -Path $stateDirectory | Out-Null

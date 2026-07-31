@@ -15,6 +15,7 @@ export type ReviewItem = {
   issueId: string;
   file: string;
   sourceModified: string;
+  sourceSignature?: string;
   slug: string;
   sourceId: string;
   title: string;

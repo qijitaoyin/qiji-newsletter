@@ -22,6 +22,7 @@ $publicArticles = Join-Path $Root "public\assets\articles"
 $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
+$publishStatePath = Join-Path $Root "src\data\publishState.json"
 $logoPath = "/assets/qiji-logo.png"
 $importCacheVersion = 11
 $importCacheDir = Join-Path $Root ".cache"
@@ -679,6 +680,24 @@ function Test-ArticleQuoteStartMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
   return ($Text.Trim() -match "^[【\[\［]\s*(古文引述|古文引述開始|引述古文|引述古文開始|經典引述|經典引述開始|經文引述|經文引述開始|引述開始)\s*[】\]\］]$")
+}
+
+function Get-ObjectPropertyValue {
+  param([object]$Object, [string]$Name)
+  if (-not $Object -or -not $Object.PSObject -or -not $Object.PSObject.Properties[$Name]) {
+    return $null
+  }
+  return $Object.PSObject.Properties[$Name].Value
+}
+
+function Get-StableArticleSignature {
+  param([object]$Signature)
+  if (-not $Signature) { return "" }
+  $displayHash = [string](Get-ObjectPropertyValue $Signature "contentDisplayHash")
+  $packageHash = [string](Get-ObjectPropertyValue $Signature "contentHash")
+  if ($displayHash -and $packageHash) { return "$displayHash::$packageHash" }
+  if ($displayHash) { return $displayHash }
+  return $packageHash
 }
 
 function Test-ArticleQuoteEndMarker {
@@ -1844,6 +1863,28 @@ if (Test-Path -LiteralPath $reviewApprovalsPath) {
   }
 }
 
+$publishedIssueBaselineMap = @{}
+if (Test-Path -LiteralPath $publishStatePath) {
+  try {
+    $publishStateData = Get-Content -LiteralPath $publishStatePath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $publishedIssues = Get-ObjectPropertyValue $publishStateData "publishedIssues"
+    if ($publishedIssues) {
+      foreach ($issueProp in @($publishedIssues.PSObject.Properties)) {
+        $issueId = [string]$issueProp.Name
+        $issueValue = $issueProp.Value
+        $articlesValue = Get-ObjectPropertyValue $issueValue "articles"
+        if (-not $articlesValue) { continue }
+        foreach ($articleProp in @($articlesValue.PSObject.Properties)) {
+          $publishedIssueBaselineMap["$issueId::$($articleProp.Name)"] = $articleProp.Value
+        }
+      }
+    }
+    Write-Host "Loaded published issue baselines: $($publishedIssueBaselineMap.Count) article signatures."
+  } catch {
+    Write-Warning "Cannot read published issue baselines: $publishStatePath ($($_.Exception.Message))"
+  }
+}
+
 $cacheMap = @{}
 $nextCacheEntries = @{}
 if (Test-Path -LiteralPath $importCachePath) {
@@ -1915,7 +1956,20 @@ foreach ($issueDir in $issueDirs) {
     $cacheMissCount++
     $sourceBaselineKey = "$issueId::$sourceId"
     $hasExistingGeneratedArticle = $existingGeneratedSourceKeys.ContainsKey($sourceBaselineKey)
-    if ($cachedEntry -or -not $hasExistingGeneratedArticle) {
+    $publishedBaseline = $publishedIssueBaselineMap[$sourceBaselineKey]
+    $publishedBaselineSignature = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "signature") } else { "" }
+    $currentStableSignature = Get-StableArticleSignature $signature
+    $isPublishedIssueArticle = [bool]$publishedBaseline
+    $isPublishedArticleChanged = $isPublishedIssueArticle -and ($publishedBaselineSignature -ne $currentStableSignature)
+
+    if ($isPublishedArticleChanged) {
+      $changedImportFiles.Add([pscustomobject]@{
+        issueId = $issueId
+        fileName = $file.Name
+        relativePath = (Get-RelativePath $file.FullName $sourceRoot)
+        status = "updated"
+      })
+    } elseif (-not $isPublishedIssueArticle -and ($cachedEntry -or -not $hasExistingGeneratedArticle)) {
       $changedImportFiles.Add([pscustomobject]@{
         issueId = $issueId
         fileName = $file.Name
@@ -1927,6 +1981,15 @@ foreach ($issueDir in $issueDirs) {
     }
 
     $validationStartIndex = $validationItems.Count
+    if ($isPublishedArticleChanged) {
+      $validationItems.Add(@{
+        issueId = $issueId
+        file = $file.FullName
+        severity = "warning"
+        type = "published-content-changed"
+        message = "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      })
+    }
     if ($null -eq $images) {
       $images = Copy-IssueImages $issueId $issueDir
       $imageIndex.Value = @($images).Count + 1
@@ -2269,6 +2332,18 @@ foreach ($key in $validationGroupMap.Keys) {
       ($fileKey -eq $_.sourceId -or $fileKey -match [regex]::Escape($_.sourceId))
     } |
     Select-Object -First 1
+  $articleSourceId = if ($article) { [string]$article.sourceId } else { "" }
+  $sourceSignature = ""
+  if ($articleSourceId) {
+    $relativeFileKey = if ($fileKey -and (Test-Path -LiteralPath $fileKey)) { Get-RelativePath $fileKey $sourceRoot } else { $fileKey }
+    $sourceCacheEntry = $nextCacheEntries[[string]$relativeFileKey]
+    if ($sourceCacheEntry -and $sourceCacheEntry.signature) {
+      $sourceSignature = Get-StableArticleSignature $sourceCacheEntry.signature
+    }
+  }
+  $publishedReviewBaseline = if ($articleSourceId) { $publishedIssueBaselineMap["$($first.issueId)::$articleSourceId"] } else { $null }
+  $publishedReviewSignature = if ($publishedReviewBaseline) { [string](Get-ObjectPropertyValue $publishedReviewBaseline "signature") } else { "" }
+  $isPublishedReviewUnchanged = $publishedReviewBaseline -and $sourceSignature -and ($publishedReviewSignature -eq $sourceSignature)
   $reviewId = "$($first.issueId)::${fileKey}"
   $hasError = @($groupItems | Where-Object { $_.severity -eq "error" }).Count -gt 0
   $approval = $approvalMap[$reviewId]
@@ -2277,13 +2352,14 @@ foreach ($key in $validationGroupMap.Keys) {
     $approvedModified = [string]$approval.sourceModified
     $isApproved = (-not $approvedModified -or $approvedModified -eq $sourceModified)
   }
-  $status = if ($hasError) { "error" } elseif ($isApproved) { "approved" } else { "needs-review" }
+  $status = if ($hasError -and -not $isPublishedReviewUnchanged) { "error" } elseif ($isApproved -or $isPublishedReviewUnchanged) { "approved" } else { "needs-review" }
   $reviewItems.Add(@{
     id = $reviewId
     status = $status
     issueId = $first.issueId
     file = $fileKey
     sourceModified = $sourceModified
+    sourceSignature = $sourceSignature
     slug = if ($article) { $article.slug } else { "" }
     sourceId = if ($article) { $article.sourceId } else { "" }
     title = if ($article) { $article.title } else { "" }

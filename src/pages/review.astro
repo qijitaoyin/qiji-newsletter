@@ -65,6 +65,7 @@ const issueGroups = reviewIssueIds
         )
       )
   }))
+  .filter((group) => group.items.some((item) => item.status !== "approved"))
   .sort((a, b) => {
     if (a.issueId === reviewIssueId) return -1;
     if (b.issueId === reviewIssueId) return 1;
@@ -584,6 +585,9 @@ const normalizeCategory = (category: string) => {
                   data-import-review-card
                   data-approval-id={item.id}
                   data-source-modified={item.sourceModified}
+                  data-source-signature={item.sourceSignature || ""}
+                  data-source-id={item.sourceId || ""}
+                  data-initial-status={item.status}
                   data-issue-id={item.issueId}
                   data-title={item.title || item.sourceId || "未命名文章"}
                   data-category={item.category || ""}
@@ -1380,6 +1384,8 @@ const normalizeCategory = (category: string) => {
       const toDecision = (card, decision) => ({
         id: card.dataset.approvalId || "",
         sourceModified: card.dataset.sourceModified || "",
+        sourceSignature: card.dataset.sourceSignature || "",
+        sourceId: card.dataset.sourceId || "",
         kind: card.dataset.kind || "import",
         decision,
         issueId: card.dataset.issueId || "",
@@ -1407,6 +1413,21 @@ const normalizeCategory = (category: string) => {
 
       const approvalPayload = (issueId = "") => {
         const approvals = approvalsForIssue(issueId);
+        const issueCards = Array.from(
+          document.querySelectorAll(`[data-import-review-card][data-issue-id="${issueId}"]`)
+        );
+        const articleSignatures = {};
+        issueCards.forEach((card) => {
+          const sourceId = card.dataset.sourceId || card.dataset.file || card.dataset.approvalId || "";
+          const signature = card.dataset.sourceSignature || "";
+          if (!sourceId || !signature) return;
+          articleSignatures[sourceId] = {
+            signature,
+            slug: card.dataset.slug || "",
+            title: card.dataset.title || "",
+            file: card.dataset.file || ""
+          };
+        });
         return {
         approvals: approvals
           .filter((item) => item.kind === "import" && item.decision === "approved")
@@ -1421,7 +1442,8 @@ const normalizeCategory = (category: string) => {
           .filter((item) => item.decision === "needs-fix")
           .map(({ kind, decision, issueId, title, category, author, date, file, decidedAt, ...fix }) => fix),
         notes: approvals.filter((item) => item.kind !== "import"),
-        issueId
+        issueId,
+        articleSignatures
       };
       };
 
@@ -1481,7 +1503,7 @@ const normalizeCategory = (category: string) => {
         const byId = new Map(approvals.map((item) => [item.id, item]));
         document.querySelectorAll("[data-approval-id]").forEach((card) => {
           const decision = byId.get(card.dataset.approvalId || "")?.decision;
-          const isApproved = decision === "approved";
+          const isApproved = decision === "approved" || (!decision && card.dataset.initialStatus === "approved");
           const isIgnored = decision === "ignored";
           const isCorrected = decision === "corrected";
           card.classList.toggle("status-approved", isApproved);
@@ -1511,7 +1533,8 @@ const normalizeCategory = (category: string) => {
       const cardDecision = (card) => {
         const approvals = readApprovals();
         const id = card.dataset.approvalId || "";
-        return approvals.find((item) => item.id === id)?.decision || "";
+        const decision = approvals.find((item) => item.id === id)?.decision || "";
+        return decision || (card.dataset.initialStatus === "approved" ? "approved" : "");
       };
 
       const updateLegacyIssueCounts = (issueSection) => {
@@ -2188,13 +2211,31 @@ const normalizeCategory = (category: string) => {
           const status = board?.querySelector("[data-legacy-issue-status]");
           const payload = {
             action: "publish-issue",
+            status: "ready-to-publish",
             generatedAt: new Date().toISOString(),
             issueId,
+            reports: [],
+            openReports: [],
+            metadataOverrides: {
+              quotes: {},
+              summaries: {},
+              categories: {},
+              tags: {}
+            },
             reviewApprovals: approvalPayload(issueId)
           };
           const openFixes = payload.reviewApprovals.fixes || [];
+          const issueCards = Array.from(board?.closest(".review-issue")?.querySelectorAll("[data-import-review-card]") || []);
+          const openCards = issueCards.filter((card) => {
+            const decision = cardDecision(card);
+            return decision !== "approved" && decision !== "ignored";
+          });
           if (openFixes.length) {
             if (status) status.textContent = `本期還有 ${openFixes.length} 則需回 Word 修正，不能發布。`;
+            return;
+          }
+          if (openCards.length) {
+            if (status) status.textContent = `本期還有 ${openCards.length} 篇尚未確認，不能發布。`;
             return;
           }
           if (!publishWebhookUrl) {
