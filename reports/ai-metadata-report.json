@@ -1,5 +1,59 @@
 {
-  "status": "skipped",
-  "reason": "OPENAI_API_KEY is not set",
-  "generatedAt": "2026-07-07T19:37:03.445Z"
+  "status": "done",
+  "generatedAt": "2026-07-30T11:32:53.653Z",
+  "provider": "ollama",
+  "apiBaseUrl": "http://127.0.0.1:11434",
+  "issueId": "202606",
+  "model": "qwen3.6:latest",
+  "count": 9,
+  "cacheHits": 9,
+  "generated": 0,
+  "errors": 0,
+  "results": [
+    {
+      "slug": "202606-2606-1",
+      "title": "編輯部",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-6",
+      "title": "人體四種能量",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-5",
+      "title": "心裡有數不算數",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-3",
+      "title": "天網恢恢，疏而不失",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-7",
+      "title": "從精氣神到道光文明",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-2",
+      "title": "靈魂覺醒",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-1",
+      "title": "界樁泯滅人性，理性提高生命維度——從身體練靈魂",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-4",
+      "title": "不斷地挖井、掘樁、拆台",
+      "status": "cache-hit"
+    },
+    {
+      "slug": "202606-2606-2-3",
+      "title": "盤點你的靈魂能量",
+      "status": "cache-hit"
+    }
+  ]
 }

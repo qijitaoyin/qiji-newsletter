@@ -34,6 +34,12 @@ function doPost(e) {
     const workflow = props.getProperty("GITHUB_WORKFLOW") || "deploy-github-pages.yml";
 
     if (payload.action === "reimport") {
+      const runAi = payload.runAi === true || payload.run_ai === "true" || payload.runAi === "true";
+      const paidAiConfirm =
+        payload.paidAiConfirm === true ||
+        payload.paid_ai_confirm === "true" ||
+        payload.paidAiConfirm === "true";
+
       dispatchWorkflow_({
         owner,
         repo,
@@ -41,8 +47,8 @@ function doPost(e) {
         workflow,
         branch,
         inputs: {
-          run_ai: "false",
-          paid_ai_confirm: "false",
+          run_ai: runAi ? "true" : "false",
+          paid_ai_confirm: paidAiConfirm ? "true" : "false",
           ai_issue_id: payload.issueId || props.getProperty("AI_ISSUE_ID") || "latest",
           ai_limit: "0",
           sync_drive: "true",

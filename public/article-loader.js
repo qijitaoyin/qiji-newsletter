@@ -144,6 +144,37 @@
     });
   };
 
+  const keywordTagsFor = (article, articleTags) => {
+    const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
+    const category = normalizeCategory(article.category || "");
+    return (article.tags || []).filter((tag) => tag !== category && tagByLabel[tag]?.kind === "keyword");
+  };
+
+  const renderReviewArticleAiPreview = (article, articleTags) => {
+    const section = document.querySelector("[data-review-article-ai-preview]");
+    if (!section) return;
+    const quote = article.aiQuote || "";
+    const summary = article.aiSummary || "";
+    const category = normalizeCategory(article.category || "");
+    const keywords = keywordTagsFor(article, articleTags);
+    const hasRequiredAiData = Boolean(quote && summary && keywords.length);
+
+    const quoteElement = section.querySelector("[data-review-article-quote]");
+    const summaryElement = section.querySelector("[data-review-article-summary]");
+    const categoryElement = section.querySelector("[data-review-article-category]");
+    const keywordElement = section.querySelector("[data-review-article-keywords]");
+    const emptyElement = section.querySelector("[data-review-article-ai-empty]");
+
+    if (quoteElement) quoteElement.textContent = quote;
+    if (summaryElement) summaryElement.textContent = summary;
+    if (categoryElement) categoryElement.textContent = category;
+    if (keywordElement) {
+      keywordElement.textContent = "";
+      keywords.forEach((tag) => keywordElement.appendChild(make("span", "", tag)));
+    }
+    if (emptyElement) emptyElement.hidden = hasRequiredAiData;
+  };
+
   const renderAi = (article) => {
     const section = document.querySelector("[data-article-ai-guide]");
     const summary = document.querySelector("[data-article-ai-summary]");
@@ -304,6 +335,7 @@
     renderCover(article);
     renderIssueMenu(article, issueArticles || []);
     renderTags(article, articleTags || []);
+    renderReviewArticleAiPreview(article, articleTags || []);
     renderAi(article);
     renderBody(article);
     renderPager(previousArticle, nextArticle);

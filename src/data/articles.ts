@@ -5,6 +5,8 @@ import aiMetadata from "./aiMetadata.json";
 import publishState from "./publishState.json";
 import tagVocabulary from "./tagVocabulary.json";
 import { pathFor } from "../utils/paths";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 
 const typedAiMetadata = aiMetadata as {
   quotes?: Record<string, string>;
@@ -575,10 +577,22 @@ const withEditorialCategory = (article: Article): Article => {
   return category ? { ...article, category } : article;
 };
 
+const hasLocalPublicAsset = (src = "") => {
+  if (!src.startsWith("/assets/")) return true;
+  const assetPath = src.split("?")[0].replace(/^\/+/, "");
+  return existsSync(join(process.cwd(), "public", assetPath));
+};
+
+const resolveArticleImage = (article: Article) => {
+  if (article.image && hasLocalPublicAsset(article.image)) return article.image;
+  const firstAvailableImage = article.images?.find((image) => image.src && hasLocalPublicAsset(image.src));
+  return firstAvailableImage?.src ?? "";
+};
+
 const withBasePaths = (article: Article): Article => ({
   ...article,
   homeAnchor: pathFor(article.homeAnchor),
-  image: pathFor(article.image),
+  image: pathFor(resolveArticleImage(article)),
   images: article.images?.map((image) => ({
     ...image,
     src: pathFor(image.src)

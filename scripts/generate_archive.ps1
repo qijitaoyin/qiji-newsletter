@@ -331,7 +331,11 @@ function Save-PixabayImageAsset {
 function Test-ValidPixabayAssetPath {
   param([string]$Path)
   if ([string]::IsNullOrWhiteSpace($Path)) { return $false }
-  return $Path -match "^/assets/pixabay/[^/?]+\.(jpg|jpeg|png|webp)(\?v=\d+)?$"
+  if ($Path -notmatch "^/assets/pixabay/[^/?]+\.(jpg|jpeg|png|webp)(\?v=\d+)?$") {
+    return $false
+  }
+  $assetPath = ($Path -split "\?")[0].TrimStart("/")
+  return Test-Path -LiteralPath (Join-Path $Root "public\$assetPath")
 }
 
 function Test-NeedsPixabayFallback {
@@ -347,6 +351,14 @@ function Test-NeedsPixabayFallback {
 
 function Apply-PixabayFallbackImages {
   param([System.Collections.Generic.List[object]]$Articles)
+
+  foreach ($article in @($Articles)) {
+    $image = [string]$article.image
+    if ($image -and $image.StartsWith("/assets/pixabay/") -and -not (Test-ValidPixabayAssetPath $image)) {
+      $article.image = ""
+      $article.imageCaption = ""
+    }
+  }
 
   $apiKey = [string]$env:PIXABAY_API_KEY
   if ([string]::IsNullOrWhiteSpace($apiKey)) {
@@ -421,17 +433,50 @@ function Apply-PixabayFallbackImages {
 }
 
 function Get-FileSignature {
-  param([System.IO.FileInfo]$File, [string]$BasePath, [int]$CacheVersion, [string]$ApprovalFingerprint)
+  param(
+    [System.IO.FileInfo]$File,
+    [string]$BasePath,
+    [int]$CacheVersion,
+    [string]$ApprovalFingerprint,
+    [object]$CachedEntry = $null
+  )
+  $key = Get-RelativePath $File.FullName $BasePath
+  $contentHash = Get-FileContentHash $File.FullName
+  $length = $File.Length
+  $cachedSignature = if ($CachedEntry -and $CachedEntry.signature) { $CachedEntry.signature } else { $null }
+  $canReuseDisplaySignature = (
+    $cachedSignature -and
+    [string]$cachedSignature.key -eq [string]$key -and
+    [string]$cachedSignature.cacheVersion -eq [string]$CacheVersion -and
+    [string]$cachedSignature.approvalFingerprint -eq [string]$ApprovalFingerprint -and
+    [string]$cachedSignature.contentHash -eq [string]$contentHash -and
+    [string]$cachedSignature.length -eq [string]$length -and
+    [string]$cachedSignature.contentTextHash -and
+    [string]$cachedSignature.contentDisplayHash
+  )
+
+  if ($canReuseDisplaySignature) {
+    return @{
+      key = $key
+      contentHash = $contentHash
+      contentTextHash = [string]$cachedSignature.contentTextHash
+      contentDisplayHash = [string]$cachedSignature.contentDisplayHash
+      length = $length
+      cacheVersion = $CacheVersion
+      approvalFingerprint = $ApprovalFingerprint
+    }
+  }
+
   $paragraphs = Read-DocxParagraphs $File.FullName
   $displayParagraphs = Read-DocxDisplaySignatureParagraphs $File.FullName
   $textForSignature = Get-NormalizedDocxTextForSignature $paragraphs
   $displayForSignature = Get-NormalizedDocxDisplayForSignature $displayParagraphs
   return @{
-    key = Get-RelativePath $File.FullName $BasePath
-    contentHash = Get-FileContentHash $File.FullName
+    key = $key
+    contentHash = $contentHash
     contentTextHash = Get-TextContentHash $textForSignature
     contentDisplayHash = Get-TextContentHash $displayForSignature
-    length = $File.Length
+    length = $length
     cacheVersion = $CacheVersion
     approvalFingerprint = $ApprovalFingerprint
   }
@@ -633,13 +678,13 @@ function Test-ArticleQuoteStyle {
 function Test-ArticleQuoteStartMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
-  return ($Text.Trim() -match "^【\s*(古文引述|引述古文|引述古文開始|經典引述|經文引述|引述開始)\s*】$")
+  return ($Text.Trim() -match "^[【\[\［]\s*(古文引述|古文引述開始|引述古文|引述古文開始|經典引述|經典引述開始|經文引述|經文引述開始|引述開始)\s*[】\]\］]$")
 }
 
 function Test-ArticleQuoteEndMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
-  return ($Text.Trim() -match "^【\s*(引述結束|古文引述結束|引述古文結束|經典引述結束|經文引述結束)\s*】$")
+  return ($Text.Trim() -match "^[【\[\［]\s*(引述結束|古文引述結束|引述古文結束|引述古文開結束|古文引述開結束|經典引述結束|經文引述結束)\s*[】\]\］]$")
 }
 
 function Resolve-DocxMediaTarget {
@@ -1389,14 +1434,33 @@ function Select-BodyBlocks {
         $selected.Add($block)
       }
     } elseif ($block.type -eq "quote") {
+      $quoteParagraphs = @(
+        ([string]$block.text -split "(?:\r?\n){2,}") |
+          ForEach-Object { ConvertTo-PlainText $_ -PreserveLineBreaks } |
+          Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+      )
+      $queueItems = @($bodyQueue.ToArray())
+      $quoteMatchesQueue = $quoteParagraphs.Count -gt 0 -and $queueItems.Count -ge $quoteParagraphs.Count
+      if ($quoteMatchesQueue) {
+        for ($quoteIndex = 0; $quoteIndex -lt $quoteParagraphs.Count; $quoteIndex++) {
+          if ([string]$queueItems[$quoteIndex] -ne [string]$quoteParagraphs[$quoteIndex]) {
+            $quoteMatchesQueue = $false
+            break
+          }
+        }
+      }
       if (-not $started) {
-        if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
+        if ($quoteMatchesQueue -or ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek())) {
           $started = $true
         } else {
           continue
         }
       }
-      if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
+      if ($quoteMatchesQueue) {
+        foreach ($quoteParagraph in $quoteParagraphs) {
+          if ($bodyQueue.Count -gt 0) { [void]$bodyQueue.Dequeue() }
+        }
+      } elseif ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
         [void]$bodyQueue.Dequeue()
       }
       $selected.Add($block)
@@ -1743,7 +1807,25 @@ $seenSlugs = @{}
 $validationItems = New-Object System.Collections.Generic.List[object]
 $cacheHitCount = 0
 $cacheMissCount = 0
+$cacheBaselineRebuildCount = 0
 $changedImportFiles = New-Object System.Collections.Generic.List[object]
+$existingGeneratedSourceKeys = @{}
+$existingGeneratedPath = Join-Path $Root "src/data/generatedArticles.ts"
+if (Test-Path -LiteralPath $existingGeneratedPath) {
+  try {
+    $currentGeneratedIssueId = ""
+    foreach ($line in [System.IO.File]::ReadLines($existingGeneratedPath)) {
+      if ($line -match '^\s*"issueId"\s*:\s*"(?<issue>20\d{4})"') {
+        $currentGeneratedIssueId = $Matches.issue
+      } elseif ($currentGeneratedIssueId -and $line -match '^\s*"sourceId"\s*:\s*"(?<source>[^"]+)"') {
+        $existingGeneratedSourceKeys["$currentGeneratedIssueId::$($Matches.source)"] = $true
+      }
+    }
+    Write-Host "Loaded existing article baseline: $($existingGeneratedSourceKeys.Count) source ids."
+  } catch {
+    Write-Warning "Cannot read existing article baseline: $existingGeneratedPath ($($_.Exception.Message))"
+  }
+}
 $approvalMap = @{}
 $correctionMap = @{}
 $approvalFingerprint = ""
@@ -1785,8 +1867,8 @@ foreach ($issueDir in $issueDirs) {
   $month = $issueId.Substring(4, 2)
   $issueNumber = Get-IssueNumber $issueId
   $files = Get-PreferredArticleFiles $issueDir $issueId
-  $images = Copy-IssueImages $issueId $issueDir
-  $imageIndex = [ref]($images.Count + 1)
+  $images = $null
+  $imageIndex = [ref]1
 
   $issueArticles = New-Object System.Collections.Generic.List[object]
   $order = 0
@@ -1794,13 +1876,18 @@ foreach ($issueDir in $issueDirs) {
     $stem = [IO.Path]::GetFileNameWithoutExtension($file.Name)
     Write-Host "  Reading $($file.Name)"
     $sourceId = Get-SourceId $issueId $stem
-    $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint
-    $cachedEntry = $cacheMap[[string]$signature.key]
+    $cacheKey = Get-RelativePath $file.FullName $sourceRoot
+    $cachedEntry = $cacheMap[[string]$cacheKey]
+    $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint $cachedEntry
     if ((Test-CacheSignatureMatch $cachedEntry $signature) -and $cachedEntry.article) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
       if (-not $cachedArticle.image) {
+        if ($null -eq $images) {
+          $images = Copy-IssueImages $issueId $issueDir
+          $imageIndex.Value = @($images).Count + 1
+        }
         $matchedIssueImage = Select-ArticleImage $images $sourceId $cachedArticle.title $order
         if ($matchedIssueImage) {
           $cachedArticle["image"] = $matchedIssueImage
@@ -1826,14 +1913,24 @@ foreach ($issueDir in $issueDirs) {
       continue
     }
     $cacheMissCount++
-    $changedImportFiles.Add([pscustomobject]@{
-      issueId = $issueId
-      fileName = $file.Name
-      relativePath = (Get-RelativePath $file.FullName $sourceRoot)
-      status = if ($cachedEntry) { "updated" } else { "new" }
-    })
+    $sourceBaselineKey = "$issueId::$sourceId"
+    $hasExistingGeneratedArticle = $existingGeneratedSourceKeys.ContainsKey($sourceBaselineKey)
+    if ($cachedEntry -or -not $hasExistingGeneratedArticle) {
+      $changedImportFiles.Add([pscustomobject]@{
+        issueId = $issueId
+        fileName = $file.Name
+        relativePath = (Get-RelativePath $file.FullName $sourceRoot)
+        status = if ($cachedEntry) { "updated" } else { "new" }
+      })
+    } else {
+      $cacheBaselineRebuildCount++
+    }
 
     $validationStartIndex = $validationItems.Count
+    if ($null -eq $images) {
+      $images = Copy-IssueImages $issueId $issueDir
+      $imageIndex.Value = @($images).Count + 1
+    }
     $docxContent = Read-DocxContent $file $issueId (Join-Path $publicArticles $issueId) $imageIndex
     $paragraphs = $docxContent.Paragraphs
     if (-not $paragraphs -or $paragraphs.Count -eq 0) { continue }
@@ -2125,6 +2222,7 @@ New-Item -ItemType Directory -Force -Path $reportDir | Out-Null
 $importChangedFilesReport = @{
   generatedAt = (Get-Date).ToUniversalTime().ToString("o")
   totalChanged = $changedImportFiles.Count
+  cacheBaselineRebuilt = $cacheBaselineRebuildCount
   changedFiles = @($changedImportFiles.ToArray())
 }
 $importChangedReportJson = $importChangedFilesReport | ConvertTo-Json -Depth 8
@@ -2235,4 +2333,7 @@ export const generatedReviewItems = $reviewJson satisfies ReviewItem[];
 Set-Content -LiteralPath $generatedReviewPath -Encoding UTF8 -Value $reviewContent
 Write-Host "Generated $($articles.Count) articles across $($issues.Count) issues."
 Write-Host "Article import cache: $cacheHitCount hit(s), $cacheMissCount rebuilt."
+if ($cacheBaselineRebuildCount -gt 0) {
+  Write-Host "Cache baseline rebuilt without user-facing Word changes: $cacheBaselineRebuildCount"
+}
 Write-Host "Changed Word files: $($changedImportFiles.Count)"

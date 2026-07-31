@@ -26,7 +26,7 @@ const { slug, title, excerpt } = Astro.props;
     <link rel="icon" href={pathFor("/assets/qiji-logo.png")} type="image/png" />
     <title>{title} - 氣機導引電子報</title>
   </head>
-  <body>
+  <body class="review-article-reading-page">
     <header class="site-header">
       <a class="brand" href={pathFor("/")} aria-label="氣機導引電子報首頁">
         <span class="brand-mark"><img src={pathFor("/assets/qiji-logo.png")} alt="" /></span>

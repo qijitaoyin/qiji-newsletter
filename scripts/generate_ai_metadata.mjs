@@ -5,10 +5,12 @@ import vm from "node:vm";
 
 const root = process.cwd();
 const generatedArticlesPath = path.join(root, "src/data/generatedArticles.ts");
+const reviewDraftArticlesPath = path.join(root, "src/data/reviewDraftArticles.ts");
 const aiMetadataPath = path.join(root, "src/data/aiMetadata.json");
 const aiFeedbackExamplesPath = path.join(root, "src/data/aiFeedbackExamples.json");
 const tagVocabularyPath = path.join(root, "src/data/tagVocabulary.json");
 const reportPath = path.join(root, "reports/ai-metadata-report.json");
+const importChangedReportPath = path.join(root, "public/data/import-changed-files.json");
 
 const provider = process.env.AI_PROVIDER || (process.env.KIMI_API_KEY ? "kimi" : "openai");
 const apiKey = process.env.KIMI_API_KEY || process.env.OPENAI_API_KEY || process.env.AI_API_KEY;
@@ -23,6 +25,11 @@ const model =
 const temperature = Number.parseFloat(
   process.env.AI_TEMPERATURE || (provider === "kimi" ? "0.6" : "0.2")
 );
+const aiRequestTimeoutMs = Number.parseInt(process.env.AI_REQUEST_TIMEOUT_MS || "180000", 10);
+const useOllamaNative =
+  provider === "ollama" ||
+  provider === "qwen" ||
+  /(^|\/\/)(127\.0\.0\.1|localhost):11434(\/|$)/.test(apiBaseUrl);
 const targetIssue = process.env.AI_ISSUE_ID || "latest";
 const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
@@ -54,15 +61,15 @@ const compactTagLabel = (value = "") =>
 const allowedAiTagMap = new Map(allowedAiTags.map((tag) => [compactTagLabel(tag), tag]));
 const allowedAiTagText = allowedAiTags.join("、");
 
-const extractExportedArray = (source, name) => {
+const extractExportedArray = (source, name, sourceLabel = "source file") => {
   const startToken = `export const ${name} =`;
   const start = source.indexOf(startToken);
-  if (start < 0) throw new Error(`Cannot find ${name} in generatedArticles.ts`);
+  if (start < 0) throw new Error(`Cannot find ${name} in ${sourceLabel}`);
 
   const arrayStart = source.indexOf("[", start);
   const endToken = `] satisfies`;
   const end = source.indexOf(endToken, arrayStart);
-  if (arrayStart < 0 || end < 0) throw new Error(`Cannot extract ${name} array`);
+  if (arrayStart < 0 || end < 0) throw new Error(`Cannot extract ${name} array from ${sourceLabel}`);
 
   const code = `(${source.slice(arrayStart, end + 1)})`;
   return vm.runInNewContext(code, {}, { timeout: 5000 });
@@ -122,6 +129,47 @@ const contentHashFor = (article) => {
 
 const sourceKeyFor = (article) =>
   [article.issueId, article.sourceId, article.slug].filter(Boolean).join(":");
+
+const fileStem = (value = "") =>
+  path.basename(String(value), path.extname(String(value))).trim();
+
+const normalizeSourceId = (value = "") =>
+  String(value)
+    .normalize("NFKC")
+    .replace(/\s+/g, "")
+    .toLowerCase();
+
+const readArticleBundle = (filePath, articleExportName, issueExportName) => {
+  if (!fs.existsSync(filePath)) return { articles: [], issues: [] };
+  const source = fs.readFileSync(filePath, "utf8");
+  return {
+    articles: extractExportedArray(source, articleExportName, path.relative(root, filePath)),
+    issues: extractExportedArray(source, issueExportName, path.relative(root, filePath))
+  };
+};
+
+const mergeArticlesBySlug = (...articleGroups) => {
+  const merged = new Map();
+  articleGroups.flat().forEach((article) => {
+    if (!article?.slug) return;
+    merged.set(article.slug, article);
+  });
+  return Array.from(merged.values());
+};
+
+const changedFilesForAi = () => {
+  const report = readJson(importChangedReportPath, { changedFiles: [] });
+  return Array.isArray(report.changedFiles)
+    ? report.changedFiles.filter((file) => file?.status === "new" || file?.status === "updated")
+    : [];
+};
+
+const articleMatchesChangedFile = (article, file) => {
+  if (!article?.issueId || !file?.issueId || article.issueId !== file.issueId) return false;
+  const stem = normalizeSourceId(fileStem(file.fileName || file.relativePath || file.path || ""));
+  const sourceId = normalizeSourceId(article.sourceId || "");
+  return Boolean(sourceId && stem.startsWith(sourceId));
+};
 
 const parseAiJson = (text) => {
   const trimmed = text.trim().replace(/^```json\s*/i, "").replace(/```$/i, "").trim();
@@ -196,19 +244,74 @@ const requestMetadata = async (article) => {
     `Author: ${article.author || ""}`,
     "",
     "Article text:",
-    articleText(article)
+    articleText(article, useOllamaNative ? 900 : 6000)
   ].join("\n");
+
+  const requestMessages = [
+    {
+      role: "system",
+      content:
+        'Return only valid JSON with keys "quote", "tags", "summary", and "themes". Tags must be exact labels from the allowed list.'
+    },
+    { role: "user", content: prompt }
+  ];
+
+  const requestWithTimeout = async (url, options) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), aiRequestTimeoutMs);
+    try {
+      return await fetch(url, { ...options, signal: controller.signal });
+    } finally {
+      clearTimeout(timeout);
+    }
+  };
+
+  if (useOllamaNative) {
+    const ollamaBaseUrl = apiBaseUrl.replace(/\/v1\/?$/, "").replace(/\/$/, "");
+    const response = await requestWithTimeout(`${ollamaBaseUrl}/api/chat`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        model,
+        messages: requestMessages,
+        stream: false,
+        think: false,
+        format: "json",
+        options: {
+          temperature,
+          num_ctx: 4096,
+          num_predict: 360
+        }
+      })
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`AI API failed for ${article.slug}: ${response.status} ${errorText}`);
+    }
+
+    const data = await response.json();
+    const text = data.message?.content || data.response || "";
+    if (!text.trim()) {
+      throw new Error(
+        `AI response is empty: done_reason=${data.done_reason || "unknown"} raw=${JSON.stringify(data).slice(0, 500)}`
+      );
+    }
+    const parsed = parseAiJson(text);
+
+    return {
+      quote: String(parsed.quote || "").trim().slice(0, 50),
+      tags: normalizeAllowedTags(parsed.tags, 5),
+      summary: String(parsed.summary || "").trim().slice(0, 80),
+      themes: normalizeStringArray(parsed.themes, 6)
+    };
+  }
 
   const requestBody = {
     model,
-    messages: [
-      {
-        role: "system",
-        content:
-          'Return only valid JSON with keys "quote", "tags", "summary", and "themes". Tags must be exact labels from the allowed list.'
-      },
-      { role: "user", content: prompt }
-    ],
+    messages: requestMessages,
     temperature,
     max_tokens: 700
   };
@@ -218,7 +321,7 @@ const requestMetadata = async (article) => {
     requestBody.thinking = { type: "disabled" };
   }
 
-  const response = await fetch(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
+  const response = await requestWithTimeout(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -326,16 +429,57 @@ const syncCompatibilityMaps = (metadata, slug, item) => {
   if (item.similarCandidates?.length) metadata.similar[slug] = item.similarCandidates;
 };
 
+const writeMetadataProgress = (metadata, results, issueId) => {
+  metadata.generatedAt = new Date().toISOString();
+  fs.writeFileSync(aiMetadataPath, JSON.stringify(metadata, null, 2), "utf8");
+  fs.writeFileSync(
+    reportPath,
+    JSON.stringify(
+      {
+        status: "running",
+        generatedAt: metadata.generatedAt,
+        provider,
+        apiBaseUrl,
+        issueId,
+        model,
+        count: results.length,
+        cacheHits: results.filter((result) => result.status === "cache-hit").length,
+        generated: results.filter((result) => result.status === "generated").length,
+        errors: results.filter((result) => result.status === "error").length,
+        results
+      },
+      null,
+      2
+    ),
+    "utf8"
+  );
+};
+
 const main = async () => {
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
 
-  const source = fs.readFileSync(generatedArticlesPath, "utf8");
-  const articles = extractExportedArray(source, "generatedArticles");
-  const issues = extractExportedArray(source, "generatedIssues");
+  const publishedBundle = readArticleBundle(
+    generatedArticlesPath,
+    "generatedArticles",
+    "generatedIssues"
+  );
+  const reviewBundle = readArticleBundle(
+    reviewDraftArticlesPath,
+    "reviewDraftArticles",
+    "reviewDraftIssues"
+  );
+  const articles = mergeArticlesBySlug(publishedBundle.articles, reviewBundle.articles);
+  const issues = [...reviewBundle.issues, ...publishedBundle.issues];
   const latestIssueId = issues[0]?.id;
   const issueId = targetIssue === "latest" ? latestIssueId : targetIssue;
+  const changedFiles = targetIssue === "changed" ? changedFilesForAi() : [];
   const candidates = articles
-    .filter((article) => !issueId || article.issueId === issueId)
+    .filter((article) => {
+      if (targetIssue === "changed") {
+        return changedFiles.some((file) => articleMatchesChangedFile(article, file));
+      }
+      return !issueId || article.issueId === issueId;
+    })
     .slice(0, limit > 0 ? limit : undefined);
 
   const metadata = normalizeMetadata(readJson(aiMetadataPath, {}));
@@ -422,10 +566,12 @@ const main = async () => {
     if (cacheHit) {
       syncCompatibilityMaps(metadata, slug, existing);
       results.push({ slug, title: article.title, status: "cache-hit" });
+      console.log(`[ai] cache-hit ${slug}`);
       continue;
     }
 
     try {
+      console.log(`[ai] generating ${slug}`);
       const generated = await requestMetadata(article);
       metadata.articles[slug] = {
         ...existing,
@@ -439,8 +585,12 @@ const main = async () => {
       };
       syncCompatibilityMaps(metadata, slug, metadata.articles[slug]);
       results.push({ slug, title: article.title, status: "generated", ...generated });
+      writeMetadataProgress(metadata, results, issueId);
+      console.log(`[ai] generated ${slug}`);
     } catch (error) {
       results.push({ slug, title: article.title, status: "error", error: error.message });
+      writeMetadataProgress(metadata, results, issueId);
+      console.log(`[ai] error ${slug}: ${error.message}`);
     }
   }
 
