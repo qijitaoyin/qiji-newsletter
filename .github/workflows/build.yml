@@ -44,13 +44,13 @@ jobs:
       - name: Sync Google Drive source
         if: ${{ env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
         shell: pwsh
-        run: ./scripts/sync_google_drive.ps1
+        run: ./scripts/sync_google_drive.ps1 -Destination (Join-Path $env:RUNNER_TEMP "source_articles")
 
       - name: Generate article data
         shell: pwsh
         run: |
           if ($env:GOOGLE_DRIVE_REMOTE) {
-            ./scripts/generate_archive.ps1
+            ./scripts/generate_archive.ps1 -SourceRoot (Join-Path $env:RUNNER_TEMP "source_articles")
           } else {
             Write-Host "No local article source folder found; using committed generated data."
           }
