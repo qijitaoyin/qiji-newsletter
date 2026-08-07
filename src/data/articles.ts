@@ -153,12 +153,16 @@ export type IssueArchive = {
 };
 
 export const publicLatestIssueId = typedPublishState.publicLatestIssueId || "202605";
-const newestGeneratedIssueId = reviewDraftIssues[0]?.id ?? generatedIssues[0]?.id ?? publicLatestIssueId;
+const newestReviewDraftIssueId =
+  reviewDraftIssues
+    .map((issue) => issue.id)
+    .filter(Boolean)
+    .sort((a, b) => b.localeCompare(a))[0] ?? "";
+const newestGeneratedIssueId = newestReviewDraftIssueId || generatedIssues[0]?.id || publicLatestIssueId;
 export const reviewIssueId =
-  typedPublishState.reviewIssueId ||
-  (newestGeneratedIssueId.localeCompare(publicLatestIssueId) > 0
-    ? newestGeneratedIssueId
-    : publicLatestIssueId);
+  newestReviewDraftIssueId.localeCompare(publicLatestIssueId) > 0
+    ? newestReviewDraftIssueId
+    : typedPublishState.reviewIssueId || publicLatestIssueId;
 
 const isPublishedIssue = (issueId: string) =>
   issueId.localeCompare(publicLatestIssueId) <= 0;

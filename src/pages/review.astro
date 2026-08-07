@@ -9,10 +9,11 @@ import {
 } from "../data/wordNormalizeReview";
 import {
   articleTags,
-  latestIssueArchive,
-  latestIssueArticles,
+  reviewIssueArchive,
+  reviewIssueArticles,
   reviewIssueId
 } from "../data/articles";
+import publishState from "../data/publishState.json";
 import tagVocabulary from "../data/tagVocabulary.json";
 
 const reviewPublishWebhookUrl = import.meta.env.PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL || "";
@@ -51,12 +52,31 @@ const reasonLabels: Record<string, string> = {
   "unsupported-legacy-structure": "舊稿格式無法穩定判讀，需人工開啟 Word 修正或補成標準模板。"
 };
 
+const typedPublishState = publishState as {
+  publicLatestIssueId?: string;
+  publishedIssues?: Record<string, unknown>;
+};
+const explicitlyPublishedIssueIds = new Set(
+  [
+    typedPublishState.publicLatestIssueId,
+    ...Object.keys(typedPublishState.publishedIssues ?? {})
+  ].filter(Boolean)
+);
+const hasPublishedContentChange = (item: (typeof reviewItems)[number]) =>
+  item.messages?.some((message) => message.type === "published-content-changed") ?? false;
+const shouldShowLegacyItem = (item: (typeof reviewItems)[number]) => {
+  if (item.issueId === reviewIssueId) return false;
+  if (item.status === "approved") return false;
+  if (!explicitlyPublishedIssueIds.has(item.issueId)) return true;
+  return hasPublishedContentChange(item);
+};
+
 const issueGroups = reviewIssueIds
-  .filter((issueId) => issueId !== latestIssueArchive?.id)
+  .filter((issueId) => issueId !== reviewIssueId)
   .map((issueId) => ({
     issueId,
     items: reviewItems
-      .filter((item) => item.issueId === issueId)
+      .filter((item) => item.issueId === issueId && shouldShowLegacyItem(item))
       .sort((a, b) =>
         (a.sourceId || a.slug || a.title || "").localeCompare(
           b.sourceId || b.slug || b.title || "",
@@ -65,7 +85,7 @@ const issueGroups = reviewIssueIds
         )
       )
   }))
-  .filter((group) => group.items.some((item) => item.status !== "approved"))
+  .filter((group) => group.items.length > 0)
   .sort((a, b) => {
     if (a.issueId === reviewIssueId) return -1;
     if (b.issueId === reviewIssueId) return 1;
@@ -73,7 +93,7 @@ const issueGroups = reviewIssueIds
   });
 
 const wordReviewGroups = wordNormalizeIssueIds
-  .filter((issueId) => issueId !== latestIssueArchive?.id)
+  .filter((issueId) => issueId !== reviewIssueId)
   .map((issueId) => ({
     issueId,
     items: wordNormalizeItems.filter(
@@ -82,8 +102,8 @@ const wordReviewGroups = wordNormalizeIssueIds
   }))
   .filter((group) => group.items.length > 0);
 
-const latestReviewArticles = latestIssueArticles;
-const latestReviewArchive = latestIssueArchive;
+const latestReviewArticles = reviewIssueArticles;
+const latestReviewArchive = reviewIssueArchive;
 const reviewPreviewVersion = Date.now().toString();
 const reviewColumnSuggestions = Array.from(
   new Set([

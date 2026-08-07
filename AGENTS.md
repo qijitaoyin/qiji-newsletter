@@ -16,3 +16,11 @@
 ## Homepage Scope
 
 - Do not change the homepage layout unless the user explicitly asks to edit the homepage in the current request.
+
+## Article Source Path
+
+- Word article imports must read from the qijitaoyin Google Drive path only:
+  `H:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報`
+- Do not infer the article source from the current project folder, Codex working directory, `G:`, or any local fallback copy.
+- If the `H:` source path is unavailable, stop and report that Google Drive/qijitaoyin is not mounted or synced. Do not silently fall back to `各期電子報` inside the project folder.
+- When checking whether a new issue such as `202608` exists, inspect the `H:` source path first.

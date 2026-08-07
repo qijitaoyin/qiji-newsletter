@@ -10,11 +10,10 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $defaultQijitaoyinSourceRoot = "H:\我的雲端硬碟\氣機導引\電子報新版網頁\各期電子報"
 if ([string]::IsNullOrWhiteSpace($SourceRoot)) {
-  if (Test-Path -LiteralPath $defaultQijitaoyinSourceRoot) {
-    $SourceRoot = $defaultQijitaoyinSourceRoot
-  } else {
-    $SourceRoot = Join-Path $Root "各期電子報"
-  }
+  $SourceRoot = $defaultQijitaoyinSourceRoot
+}
+if (-not (Test-Path -LiteralPath $SourceRoot)) {
+  throw "Article source root not found. Word articles must be read from qijitaoyin Google Drive: $defaultQijitaoyinSourceRoot"
 }
 $sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
 Write-Host "Article source root: $sourceRoot"
@@ -1219,10 +1218,12 @@ function Test-ArticleSectionHeading {
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
 
   $value = $Text.Trim()
+  if ($IsBold) { return $true }
+
   if ($value.Length -gt 42) { return $false }
   if ($value -match "[。！？；：]$") { return $false }
 
-  if ($IsBold -or $IsLargeFont -or $IsHeadingStyle) { return $true }
+  if ($IsLargeFont -or $IsHeadingStyle) { return $true }
 
   return (
     $value -match "^#{1,3}\s+\S+" -or

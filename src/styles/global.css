@@ -3078,6 +3078,27 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   padding: 26px 0 10px;
 }
 
+.review-import-review-list .review-issue {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-import-review-list .review-issue > header {
+  order: 0;
+}
+
+.review-import-review-list .review-legacy-preview {
+  order: 1;
+}
+
+.review-import-review-list .review-items {
+  order: 2;
+}
+
+.review-import-review-list .review-legacy-issue-board {
+  order: 3;
+}
+
 .review-issue > header {
   align-items: baseline;
   display: flex;
