@@ -65,10 +65,9 @@ jobs:
       AI_API_BASE_URL: ${{ vars.AI_API_BASE_URL }}
       AI_MODEL: ${{ vars.AI_MODEL }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-      AI_ALLOW_PAID_API: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && 'true' || 'false' }}
+      AI_ALLOW_PAID_API: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && 'true' || 'false' }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
-      AI_SOURCE_ROOT: ${{ runner.temp }}/source_articles
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
       PUBLIC_BASE_PATH: /
       PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
@@ -144,12 +143,19 @@ jobs:
             Write-Host "Publish confirmation provided; synced Word remains promoted as published article data."
           }
 
-      - name: Generate AI metadata
-        if: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+      - name: Generate AI metadata for synced draft
+        if: ${{ inputs.sync_drive == 'true' }}
+        env:
+          AI_ALLOW_PAID_API: "true"
+          AI_SOURCE_ROOT: ${{ runner.temp }}/source_articles
+        run: pnpm ai:metadata
+
+      - name: Generate AI metadata manually
+        if: ${{ inputs.sync_drive != 'true' && inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' }}
         run: pnpm ai:metadata
 
       - name: Persist AI metadata
-        if: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+        if: ${{ inputs.sync_drive == 'true' || inputs.run_ai == 'true' }}
         run: |
           if git diff --quiet -- src/data/aiMetadata.json; then
             echo "AI metadata unchanged."
