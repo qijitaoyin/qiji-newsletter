@@ -11,6 +11,10 @@ const aiFeedbackExamplesPath = path.join(root, "src/data/aiFeedbackExamples.json
 const tagVocabularyPath = path.join(root, "src/data/tagVocabulary.json");
 const reportPath = path.join(root, "reports/ai-metadata-report.json");
 const importChangedReportPath = path.join(root, "public/data/import-changed-files.json");
+const defaultSourceRoot = "H:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報";
+const aiSourceRoot = process.env.AI_SOURCE_ROOT || defaultSourceRoot;
+const aiWriteSidecar =
+  process.env.AI_WRITE_SIDECAR === "1" || process.env.AI_WRITE_SIDECAR === "true";
 
 const provider = process.env.AI_PROVIDER || (process.env.KIMI_API_KEY ? "kimi" : "openai");
 const apiKey = process.env.KIMI_API_KEY || process.env.OPENAI_API_KEY || process.env.AI_API_KEY;
@@ -193,6 +197,115 @@ const normalizeAllowedTags = (value, maxItems) => {
     if (tags.length >= maxItems) break;
   }
   return tags;
+};
+
+const cleanString = (value = "") => String(value || "").trim();
+
+const sourceIndexes = new Map();
+
+const walkFiles = (dirPath, files = []) => {
+  if (!fs.existsSync(dirPath)) return files;
+  for (const entry of fs.readdirSync(dirPath, { withFileTypes: true })) {
+    const entryPath = path.join(dirPath, entry.name);
+    if (entry.isDirectory()) {
+      walkFiles(entryPath, files);
+    } else {
+      files.push(entryPath);
+    }
+  }
+  return files;
+};
+
+const sourceRootForIssue = (issueId) => {
+  if (!aiSourceRoot || !fs.existsSync(aiSourceRoot)) return "";
+  const issueDir = path.join(aiSourceRoot, issueId);
+  return fs.existsSync(issueDir) ? issueDir : aiSourceRoot;
+};
+
+const sourceIndexForIssue = (issueId) => {
+  if (sourceIndexes.has(issueId)) return sourceIndexes.get(issueId);
+  const issueRoot = sourceRootForIssue(issueId);
+  const docxFiles = issueRoot
+    ? walkFiles(issueRoot).filter((filePath) => path.extname(filePath).toLowerCase() === ".docx")
+    : [];
+  const index = { issueRoot, docxFiles };
+  sourceIndexes.set(issueId, index);
+  return index;
+};
+
+const sourceDocxForArticle = (article) => {
+  const sourceId = normalizeSourceId(article.sourceId || "");
+  if (!sourceId || !article.issueId) return "";
+  const { docxFiles } = sourceIndexForIssue(article.issueId);
+  return (
+    docxFiles.find((filePath) => normalizeSourceId(fileStem(filePath)).startsWith(sourceId)) || ""
+  );
+};
+
+const sidecarCandidatesForArticle = (article) => {
+  const sourceDocx = sourceDocxForArticle(article);
+  const candidates = [];
+  if (sourceDocx) {
+    const dirPath = path.dirname(sourceDocx);
+    const stem = fileStem(sourceDocx);
+    candidates.push(
+      path.join(dirPath, `${stem}.metadata.json`),
+      path.join(dirPath, `${stem}.ai.json`)
+    );
+    if (article.sourceId) candidates.push(path.join(dirPath, `${article.sourceId}.metadata.json`));
+    if (article.slug) candidates.push(path.join(dirPath, `${article.slug}.metadata.json`));
+  }
+  const { issueRoot } = sourceIndexForIssue(article.issueId || "");
+  if (issueRoot) {
+    if (article.sourceId) candidates.push(path.join(issueRoot, `${article.sourceId}.metadata.json`));
+    if (article.slug) candidates.push(path.join(issueRoot, `${article.slug}.metadata.json`));
+  }
+  return [...new Set(candidates)];
+};
+
+const normalizeSidecarMetadata = (data) => {
+  const quote = cleanString(data.quote ?? data.aiQuote ?? data.goldQuote ?? "");
+  const summary = cleanString(data.summary ?? data.aiSummary ?? "");
+  const tags = normalizeAllowedTags(data.tags ?? data.keywordTags ?? data.keywords ?? [], 5);
+  const themes = normalizeStringArray(data.themes ?? data.aiThemes ?? tags, 6);
+  if (!quote || !summary || !tags.length) return null;
+  return { quote, summary, tags, themes };
+};
+
+const sidecarMetadataForArticle = (article) => {
+  for (const filePath of sidecarCandidatesForArticle(article)) {
+    if (!fs.existsSync(filePath)) continue;
+    const parsed = normalizeSidecarMetadata(readJson(filePath, {}));
+    if (parsed) return { ...parsed, sidecarPath: path.relative(root, filePath) };
+  }
+  return null;
+};
+
+const writeSidecarMetadataForArticle = (article, item) => {
+  if (!aiWriteSidecar) return "";
+  const sourceDocx = sourceDocxForArticle(article);
+  if (!sourceDocx) return "";
+  const sidecarPath = path.join(path.dirname(sourceDocx), `${fileStem(sourceDocx)}.metadata.json`);
+  fs.writeFileSync(
+    sidecarPath,
+    JSON.stringify(
+      {
+        slug: article.slug,
+        issueId: article.issueId,
+        sourceId: article.sourceId,
+        title: article.title,
+        quote: item.quote || "",
+        summary: item.summary || "",
+        tags: item.tags || [],
+        themes: item.themes || [],
+        updatedAt: new Date().toISOString()
+      },
+      null,
+      2
+    ),
+    "utf8"
+  );
+  return path.relative(root, sidecarPath);
 };
 
 const buildPrompt = (article) => [
@@ -444,6 +557,7 @@ const writeMetadataProgress = (metadata, results, issueId) => {
         model,
         count: results.length,
         cacheHits: results.filter((result) => result.status === "cache-hit").length,
+        sidecar: results.filter((result) => result.status === "sidecar").length,
         generated: results.filter((result) => result.status === "generated").length,
         errors: results.filter((result) => result.status === "error").length,
         results
@@ -453,6 +567,91 @@ const writeMetadataProgress = (metadata, results, issueId) => {
     ),
     "utf8"
   );
+};
+
+const cacheHitForArticle = (existing, sourceKey, contentHash) =>
+  existing &&
+  !force &&
+  existing.sourceKey === sourceKey &&
+  existing.contentHash === contentHash &&
+  existing.quote &&
+  existing.tags?.length &&
+  existing.summary &&
+  existing.themes?.length;
+
+const useSidecarMetadata = (metadata, article, existing, sourceKey, contentHash, sidecar) => {
+  metadata.articles[article.slug] = {
+    ...existing,
+    ...sidecar,
+    provider: "sidecar",
+    model: "sidecar",
+    apiBaseUrl: "",
+    sourceKey,
+    contentHash,
+    generatedAt: new Date().toISOString()
+  };
+  syncCompatibilityMaps(metadata, article.slug, metadata.articles[article.slug]);
+};
+
+const reuseMetadataWithoutApi = (metadata, candidates, issueId, reason) => {
+  const results = [];
+  let changed = false;
+
+  for (const article of candidates) {
+    const slug = article.slug;
+    const sourceKey = sourceKeyFor(article);
+    const contentHash = contentHashFor(article);
+    const existing = metadata.articles[slug];
+
+    if (cacheHitForArticle(existing, sourceKey, contentHash)) {
+      syncCompatibilityMaps(metadata, slug, existing);
+      results.push({ slug, title: article.title, status: "cache-hit" });
+      continue;
+    }
+
+    const sidecar = sidecarMetadataForArticle(article);
+    if (sidecar) {
+      useSidecarMetadata(metadata, article, existing, sourceKey, contentHash, sidecar);
+      changed = true;
+      results.push({ slug, title: article.title, status: "sidecar", sidecarPath: sidecar.sidecarPath });
+      continue;
+    }
+
+    if (existing) {
+      syncCompatibilityMaps(metadata, slug, existing);
+    }
+    results.push({ slug, title: article.title, status: "skipped", reason });
+  }
+
+  const generatedAt = new Date().toISOString();
+  metadata.generatedAt = generatedAt;
+  if (changed) {
+    fs.writeFileSync(aiMetadataPath, JSON.stringify(metadata, null, 2), "utf8");
+  }
+  fs.writeFileSync(
+    reportPath,
+    JSON.stringify(
+      {
+        status: "skipped",
+        reason,
+        generatedAt,
+        provider,
+        apiBaseUrl,
+        issueId,
+        model,
+        count: results.length,
+        cacheHits: results.filter((result) => result.status === "cache-hit").length,
+        sidecar: results.filter((result) => result.status === "sidecar").length,
+        skipped: results.filter((result) => result.status === "skipped").length,
+        results
+      },
+      null,
+      2
+    ),
+    "utf8"
+  );
+
+  console.log(`${reason}; reused cache/sidecar metadata where available.`);
 };
 
 const main = async () => {
@@ -487,64 +686,22 @@ const main = async () => {
   const touchedSlugs = new Set(candidates.map((article) => article.slug));
 
   if (!apiKey) {
-    fs.writeFileSync(
-      reportPath,
-      JSON.stringify(
-        {
-          status: "skipped",
-          reason: "KIMI_API_KEY, OPENAI_API_KEY, or AI_API_KEY is not set",
-          generatedAt: new Date().toISOString(),
-          issueId,
-          count: candidates.length
-        },
-        null,
-        2
-      ),
-      "utf8"
+    reuseMetadataWithoutApi(
+      metadata,
+      candidates,
+      issueId,
+      "KIMI_API_KEY, OPENAI_API_KEY, or AI_API_KEY is not set"
     );
-    console.log("No AI API key is set; skipped AI metadata generation.");
     return;
   }
 
   if (!allowPaidApi) {
-    for (const article of candidates) {
-      const existing = metadata.articles[article.slug];
-      if (existing) {
-        syncCompatibilityMaps(metadata, article.slug, existing);
-        results.push({ slug: article.slug, title: article.title, status: "cache-hit" });
-      } else {
-        results.push({
-          slug: article.slug,
-          title: article.title,
-          status: "skipped",
-          reason: "AI_ALLOW_PAID_API is not true"
-        });
-      }
-    }
-
-    const generatedAt = new Date().toISOString();
-    fs.writeFileSync(
-      reportPath,
-      JSON.stringify(
-        {
-          status: "skipped",
-          reason: "AI_ALLOW_PAID_API is not true; existing metadata was reused only",
-          generatedAt,
-          provider,
-          apiBaseUrl,
-          issueId,
-          model,
-          count: results.length,
-          cacheHits: results.filter((result) => result.status === "cache-hit").length,
-          skipped: results.filter((result) => result.status === "skipped").length,
-          results
-        },
-        null,
-        2
-      ),
-      "utf8"
+    reuseMetadataWithoutApi(
+      metadata,
+      candidates,
+      issueId,
+      "AI_ALLOW_PAID_API is not true; existing metadata and sidecar metadata were reused only"
     );
-    console.log("AI_ALLOW_PAID_API is not true; skipped paid AI calls and reused existing metadata.");
     return;
   }
 
@@ -553,20 +710,21 @@ const main = async () => {
     const sourceKey = sourceKeyFor(article);
     const contentHash = contentHashFor(article);
     const existing = metadata.articles[slug];
-    const cacheHit =
-      existing &&
-      !force &&
-      existing.sourceKey === sourceKey &&
-      existing.contentHash === contentHash &&
-      existing.quote &&
-      existing.tags?.length &&
-      existing.summary &&
-      existing.themes?.length;
+    const cacheHit = cacheHitForArticle(existing, sourceKey, contentHash);
 
     if (cacheHit) {
       syncCompatibilityMaps(metadata, slug, existing);
       results.push({ slug, title: article.title, status: "cache-hit" });
       console.log(`[ai] cache-hit ${slug}`);
+      continue;
+    }
+
+    const sidecar = sidecarMetadataForArticle(article);
+    if (sidecar) {
+      useSidecarMetadata(metadata, article, existing, sourceKey, contentHash, sidecar);
+      results.push({ slug, title: article.title, status: "sidecar", sidecarPath: sidecar.sidecarPath });
+      writeMetadataProgress(metadata, results, issueId);
+      console.log(`[ai] sidecar ${slug}`);
       continue;
     }
 
@@ -584,7 +742,8 @@ const main = async () => {
         generatedAt: new Date().toISOString()
       };
       syncCompatibilityMaps(metadata, slug, metadata.articles[slug]);
-      results.push({ slug, title: article.title, status: "generated", ...generated });
+      const sidecarPath = writeSidecarMetadataForArticle(article, metadata.articles[slug]);
+      results.push({ slug, title: article.title, status: "generated", sidecarPath, ...generated });
       writeMetadataProgress(metadata, results, issueId);
       console.log(`[ai] generated ${slug}`);
     } catch (error) {
@@ -611,6 +770,7 @@ const main = async () => {
         model,
         count: results.length,
         cacheHits: results.filter((result) => result.status === "cache-hit").length,
+        sidecar: results.filter((result) => result.status === "sidecar").length,
         generated: results.filter((result) => result.status === "generated").length,
         errors: results.filter((result) => result.status === "error").length,
         results

@@ -630,14 +630,38 @@ export const publishedIssueArchives = issueArchives.filter((issue) =>
   isPublishedIssue(issue.id)
 );
 
-const reviewDraftArticlesWithMetadata: Article[] = reviewDraftArticles
+const reviewCandidateArticles = (() => {
+  const bySlug = new Map<string, Article>();
+
+  generatedArticles
+    .filter((article) => article.issueId.localeCompare(publicLatestIssueId) > 0)
+    .forEach((article) => bySlug.set(article.slug, article));
+
+  reviewDraftArticles.forEach((article) => bySlug.set(article.slug, article));
+
+  return Array.from(bySlug.values());
+})();
+
+const reviewCandidateIssues = (() => {
+  const byId = new Map<string, IssueArchive>();
+
+  generatedIssues
+    .filter((issue) => issue.id.localeCompare(publicLatestIssueId) > 0)
+    .forEach((issue) => byId.set(issue.id, issue));
+
+  reviewDraftIssues.forEach((issue) => byId.set(issue.id, issue));
+
+  return Array.from(byId.values());
+})();
+
+const reviewDraftArticlesWithMetadata: Article[] = reviewCandidateArticles
   .map(withEditorialCategory)
   .map(withNormalizedTitleAndAuthor)
   .map(withAutoTags)
   .map(withBasePaths)
   .sort((a, b) => b.issueId.localeCompare(a.issueId) || compareArticlesInIssue(a, b));
 
-const reviewDraftIssueArchives: IssueArchive[] = reviewDraftIssues.map((issue) => ({
+const reviewDraftIssueArchives: IssueArchive[] = reviewCandidateIssues.map((issue) => ({
   ...issue,
   href: pathFor(issue.href),
   image: pathFor(issue.image)

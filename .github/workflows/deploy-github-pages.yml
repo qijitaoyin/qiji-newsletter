@@ -23,9 +23,9 @@ on:
           - "false"
           - "true"
       ai_issue_id:
-        description: "Issue id for AI metadata, or latest"
+        description: "Issue id for AI metadata, changed, or latest"
         required: true
-        default: "latest"
+        default: "changed"
       ai_limit:
         description: "Limit AI articles; 0 means no limit"
         required: true
@@ -65,9 +65,10 @@ jobs:
       AI_API_BASE_URL: ${{ vars.AI_API_BASE_URL }}
       AI_MODEL: ${{ vars.AI_MODEL }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-      AI_ALLOW_PAID_API: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && 'true' || 'false' }}
+      AI_ALLOW_PAID_API: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && 'true' || 'false' }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
+      AI_SOURCE_ROOT: ${{ runner.temp }}/source_articles
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
       PUBLIC_BASE_PATH: /
       PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
@@ -144,11 +145,11 @@ jobs:
           }
 
       - name: Generate AI metadata
-        if: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+        if: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
         run: pnpm ai:metadata
 
       - name: Persist AI metadata
-        if: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
+        if: ${{ (inputs.sync_drive == 'true' || (inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true')) && (env.KIMI_API_KEY != '' || env.OPENAI_API_KEY != '') }}
         run: |
           if git diff --quiet -- src/data/aiMetadata.json; then
             echo "AI metadata unchanged."
