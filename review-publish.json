@@ -1,13 +1,1 @@
-{
-  "status": "ready-to-publish",
-  "generatedAt": "2026-08-07T15:10:10.540Z",
-  "issueId": "202607",
-  "reports": [],
-  "openReports": [],
-  "metadataOverrides": {
-    "quotes": {},
-    "summaries": {},
-    "categories": {},
-    "tags": {}
-  }
-}
+{"status":"ready-to-publish","generatedAt":"2026-08-07T15:10:10.540Z","issueId":"202607","reports":[],"openReports":[],"metadataOverrides":{"quotes":{},"summaries":{},"categories":{},"tags":{}}}
