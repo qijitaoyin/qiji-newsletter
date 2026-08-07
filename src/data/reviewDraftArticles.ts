@@ -447,8 +447,8 @@ export const reviewDraftArticles = [
         "type": "paragraph"
       }
     ],
-    "title": "文章標題：你還在用自己表現自己嗎？",
-    "author": "作者：文稿彙整／林鈴宜",
+    "title": "你還在用自己表現自己嗎？",
+    "author": "文稿彙整／林鈴宜",
     "images": [],
     "category": "體證道德經",
     "tags": [

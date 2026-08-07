@@ -23,7 +23,7 @@ $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $publishStatePath = Join-Path $Root "src\data\publishState.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 11
+$importCacheVersion = 12
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -1350,17 +1350,24 @@ function Parse-ArticleTemplate {
     $looseAuthor = Get-TemplateFieldValueAny $looseMetaLines @("作者", "撰文", "文稿彙整", "文稿整理", "整理", "編輯", "口述", "文")
     $looseDate = Get-TemplateFieldValue $looseMetaLines "日期"
     $looseImageSource = Get-TemplateFieldValueAny $looseMetaLines @("圖片來源", "照片來源", "開頭圖片來源")
-    if ($looseCategory -and $looseTitle -and $looseAuthor -and $looseBodyIndex -ge 0) {
+    $lastLooseMetaLineIndex = -1
+    for ($i = 0; $i -lt $looseMetaLines.Count; $i++) {
+      if (Test-TemplateControlLine $looseMetaLines[$i]) {
+        $lastLooseMetaLineIndex = $i
+      }
+    }
+    if ($looseCategory -and $looseTitle -and $looseAuthor) {
       if (-not $looseDate) {
         $looseDate = "{0}.{1}.10" -f $IssueId.Substring(0, 4), $IssueId.Substring(4, 2)
       }
+      $looseBodyStart = if ($looseBodyIndex -ge 0) { $looseBodyIndex + 1 } else { $lastLooseMetaLineIndex + 1 }
       return @{
         HasTemplate = $true
         IsValid = $true
         IsLooseTemplate = $true
         Errors = @()
-        BodyStart = $looseBodyIndex + 1
-        BodyMarker = $Paragraphs[$looseBodyIndex]
+        BodyStart = $looseBodyStart
+        BodyMarker = if ($looseBodyIndex -ge 0) { $Paragraphs[$looseBodyIndex] } else { "" }
         Category = $looseCategory
         Title = $looseTitle
         Author = $looseAuthor
