@@ -19,11 +19,12 @@ $sourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path
 Write-Host "Article source root: $sourceRoot"
 $publicArticles = Join-Path $Root "public\assets\articles"
 $generatedPath = Join-Path $Root "src\data\generatedArticles.ts"
+$generatedReviewDraftPath = Join-Path $Root "src\data\reviewDraftArticles.ts"
 $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $publishStatePath = Join-Path $Root "src\data\publishState.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 12
+$importCacheVersion = 14
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -629,6 +630,33 @@ function Get-DocxParagraphStyleId {
   return $style.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
 }
 
+function Get-DocxParagraphNumbering {
+  param([System.Xml.XmlNode]$Paragraph, [System.Xml.XmlNamespaceManager]$Ns)
+  $numPr = $Paragraph.SelectSingleNode("./w:pPr/w:numPr", $Ns)
+  if (-not $numPr) { return $null }
+  $numIdNode = $numPr.SelectSingleNode("./w:numId", $Ns)
+  if (-not $numIdNode) { return $null }
+  $numId = $numIdNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+  if (-not $numId) { return $null }
+  $ilvlNode = $numPr.SelectSingleNode("./w:ilvl", $Ns)
+  $level = 0
+  if ($ilvlNode) {
+    [int]::TryParse($ilvlNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main"), [ref]$level) | Out-Null
+  }
+  return @{ numId = $numId; level = $level }
+}
+
+function Get-ArticleHeadingLevel {
+  param([string]$Text, [string]$StyleId = "", [string]$StyleName = "")
+  $value = if ($Text) { $Text.Trim() } else { "" }
+  $styleValue = "$StyleId $StyleName"
+  if ($styleValue -match "(?i)(heading\s*3|標題\s*3|小標題)") { return 3 }
+  if ($styleValue -match "(?i)(heading\s*2|標題\s*2)") { return 2 }
+  if ($value -match "^([一二三四五六七八九十百千]+|\d{1,2})[、.．]\s*\S+") { return 3 }
+  if ($value -match "^[（(]\s*([一二三四五六七八九十百千]+|\d{1,2})\s*[)）]\s*\S+") { return 3 }
+  return 2
+}
+
 function Test-DocxRunBold {
   param([System.Xml.XmlNode]$Run, [System.Xml.XmlNamespaceManager]$Ns)
   $bold = $Run.SelectSingleNode("./w:rPr/w:b", $Ns)
@@ -779,6 +807,43 @@ function Read-DocxContent {
       }
     }
 
+    $numToAbstract = @{}
+    $abstractLevelFormat = @{}
+    $numberingEntry = $zip.GetEntry("word/numbering.xml")
+    if ($numberingEntry) {
+      $numberingReader = New-Object System.IO.StreamReader($numberingEntry.Open(), [System.Text.Encoding]::UTF8)
+      try {
+        [xml]$numberingXml = $numberingReader.ReadToEnd()
+      } finally {
+        $numberingReader.Dispose()
+      }
+      $numberingNs = New-Object System.Xml.XmlNamespaceManager($numberingXml.NameTable)
+      $numberingNs.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+      foreach ($abstractNum in $numberingXml.SelectNodes("//w:abstractNum", $numberingNs)) {
+        $abstractId = $abstractNum.GetAttribute("abstractNumId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        if (-not $abstractId) { continue }
+        foreach ($levelNode in $abstractNum.SelectNodes("./w:lvl", $numberingNs)) {
+          $levelId = $levelNode.GetAttribute("ilvl", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+          if ($levelId -eq "") { $levelId = "0" }
+          $formatNode = $levelNode.SelectSingleNode("./w:numFmt", $numberingNs)
+          $format = if ($formatNode) {
+            $formatNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+          } else {
+            "decimal"
+          }
+          $abstractLevelFormat["$abstractId`:$levelId"] = $format
+        }
+      }
+      foreach ($numNode in $numberingXml.SelectNodes("//w:num", $numberingNs)) {
+        $numId = $numNode.GetAttribute("numId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        if (-not $numId) { continue }
+        $abstractNode = $numNode.SelectSingleNode("./w:abstractNumId", $numberingNs)
+        if ($abstractNode) {
+          $numToAbstract[$numId] = $abstractNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        }
+      }
+    }
+
     $reader = New-Object System.IO.StreamReader($entry.Open(), [System.Text.Encoding]::UTF8)
     try {
       [xml]$xml = $reader.ReadToEnd()
@@ -792,6 +857,7 @@ function Read-DocxContent {
     $ns.AddNamespace("r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships")
 
     $inQuoteBlock = $false
+    $numberCounters = @{}
     $quoteBuffer = New-Object System.Collections.Generic.List[string]
     $flushQuoteBlock = {
       if ($quoteBuffer.Count -gt 0) {
@@ -861,6 +927,7 @@ function Read-DocxContent {
         $paragraphs.Add($text)
         $styleId = Get-DocxParagraphStyleId $p $ns
         $styleName = if ($styleId -and $styleNameMap.ContainsKey($styleId)) { $styleNameMap[$styleId] } else { "" }
+        $numbering = Get-DocxParagraphNumbering $p $ns
         $isQuote = $inQuoteBlock -or (Test-ArticleQuoteStyle $styleId $styleName)
         $inlineQuote = $false
         $inlineQuoteText = $text
@@ -880,15 +947,47 @@ function Read-DocxContent {
           }
         } else {
           & $flushQuoteBlock
-          $blocks.Add(@{
-            type = "paragraph"
-            text = $text
-            isBold = Test-DocxParagraphFullyBold $p $ns
-            isLargeFont = ((Get-DocxParagraphMaxFontSizeHalfPoints $p $ns) -ge 28)
-            isHeadingStyle = Test-ArticleHeadingStyle $styleId $styleName
-            styleId = $styleId
-            styleName = $styleName
-          })
+          $isBold = Test-DocxParagraphFullyBold $p $ns
+          $isLargeFont = ((Get-DocxParagraphMaxFontSizeHalfPoints $p $ns) -ge 28)
+          $isHeadingStyle = Test-ArticleHeadingStyle $styleId $styleName
+          if ($numbering) {
+            $numId = [string]$numbering.numId
+            $level = [int]$numbering.level
+            $abstractId = if ($numToAbstract.ContainsKey($numId)) { [string]$numToAbstract[$numId] } else { "" }
+            $formatKey = "$abstractId`:$level"
+            $format = if ($abstractLevelFormat.ContainsKey($formatKey)) { [string]$abstractLevelFormat[$formatKey] } else { "decimal" }
+            $isOrdered = $format -ne "bullet"
+            $counterKey = "$numId`:$level"
+            if ($isOrdered) {
+              if (-not $numberCounters.ContainsKey($counterKey)) { $numberCounters[$counterKey] = 0 }
+              $numberCounters[$counterKey] = [int]$numberCounters[$counterKey] + 1
+            }
+            $blocks.Add(@{
+              type = "listItem"
+              text = $text
+              ordered = $isOrdered
+              level = $level
+              marker = if ($isOrdered) { "$($numberCounters[$counterKey])." } else { "•" }
+              styleId = $styleId
+              styleName = $styleName
+            })
+          } elseif (Test-ArticleSectionHeading $text -IsBold $isBold -IsLargeFont $isLargeFont -IsHeadingStyle $isHeadingStyle) {
+            $blocks.Add(@{
+              type = "heading"
+              text = $text
+              level = Get-ArticleHeadingLevel $text $styleId $styleName
+            })
+          } else {
+            $blocks.Add(@{
+              type = "paragraph"
+              text = $text
+              isBold = $isBold
+              isLargeFont = $isLargeFont
+              isHeadingStyle = $isHeadingStyle
+              styleId = $styleId
+              styleName = $styleName
+            })
+          }
         }
       }
     }
@@ -1218,12 +1317,12 @@ function Test-ArticleSectionHeading {
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
 
   $value = $Text.Trim()
-  if ($IsBold) { return $true }
+  if ($IsBold -or $IsHeadingStyle) { return $true }
 
   if ($value.Length -gt 42) { return $false }
   if ($value -match "[。！？；：]$") { return $false }
 
-  if ($IsLargeFont -or $IsHeadingStyle) { return $true }
+  if ($IsLargeFont) { return $true }
 
   return (
     $value -match "^#{1,3}\s+\S+" -or
@@ -1448,7 +1547,7 @@ function Select-BodyBlocks {
   $selected = New-Object System.Collections.Generic.List[object]
   $started = $false
   foreach ($block in $Blocks) {
-    if ($block.type -eq "paragraph") {
+    if ($block.type -eq "paragraph" -or $block.type -eq "listItem") {
       if (-not $started) {
         if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
           $started = $true
@@ -1615,7 +1714,11 @@ function Convert-BlocksToDisplayBlocks {
 
     $looksHeading = Test-ArticleSectionHeading $block.text ([bool]$block.isBold) ([bool]$block.isLargeFont) ([bool]$block.isHeadingStyle)
     if ($looksHeading) {
-      $display.Add(@{ type = "heading"; text = $block.text })
+      $display.Add(@{
+        type = "heading"
+        text = $block.text
+        level = Get-ArticleHeadingLevel $block.text ([string]$block.styleId) ([string]$block.styleName)
+      })
     } else {
       $display.Add($block)
     }
@@ -2408,6 +2511,10 @@ export const generatedIssues = $issuesJson satisfies IssueArchive[];
 "@
 
 Set-Content -LiteralPath $generatedPath -Encoding UTF8 -Value $content
+$reviewDraftContent = $content -replace 'generatedArticles', 'reviewDraftArticles'
+$reviewDraftContent = $reviewDraftContent -replace 'generatedIssues', 'reviewDraftIssues'
+Set-Content -LiteralPath $generatedReviewDraftPath -Encoding UTF8 -Value $reviewDraftContent
+
 $reviewContent = @"
 import type { ReviewItem } from "./review";
 

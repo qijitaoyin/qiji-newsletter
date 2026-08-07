@@ -189,6 +189,33 @@
     body.textContent = "";
     if (article.lede) body.appendChild(make("p", "article-lede", article.lede));
 
+    const headingLevelFromText = (text, fallback = 2) => {
+      const value = String(text || "").trim();
+      if (/^([一二三四五六七八九十百千]+|\d{1,2})[、.．]\s*\S+/.test(value)) return 3;
+      if (/^[（(]\s*([一二三四五六七八九十百千]+|\d{1,2})\s*[)）]\s*\S+/.test(value)) return 3;
+      return fallback;
+    };
+
+    const looksLikeLegacyHeading = (text) => {
+      const value = String(text || "").trim();
+      if (!value) return false;
+      if (headingLevelFromText(value, 0) >= 3) return true;
+      if (value.length > 42) return false;
+      if (/[。！？；：]$/.test(value)) return false;
+      return true;
+    };
+
+    const orderedTextItem = (text) => String(text || "").match(/^(\d{1,2})[.．、]\s*(.+)$/);
+    const colonListItem = (text) => String(text || "").trim().match(/^([^：:，,。！？；]{1,18})[：:]\s*(.+)$/);
+
+    const appendList = (parent, items, ordered) => {
+      if (items.length === 0) return;
+      const list = document.createElement(ordered ? "ol" : "ul");
+      list.className = "article-list";
+      items.forEach((itemText) => list.appendChild(make("li", "", itemText)));
+      parent.appendChild(list);
+    };
+
     const blocks = article.contentBlocks || [];
     if (blocks.length > 0) {
       const mergedBlocks = [];
@@ -201,16 +228,24 @@
         mergedBlocks.push({ ...block });
       });
 
+      let activeList = null;
+      const flushList = () => {
+        activeList = null;
+      };
+
       mergedBlocks.forEach((block) => {
         if (block.type === "heading") {
-          body.appendChild(make("h2", "", block.text));
+          flushList();
+          body.appendChild(make(Number(block.level) >= 3 ? "h3" : "h2", "", block.text));
           return;
         }
         if (block.type === "quote") {
+          flushList();
           body.appendChild(make("blockquote", "article-classic-quote", block.text));
           return;
         }
         if (block.type === "image") {
+          flushList();
           const figure = make("figure", "article-inline-image");
           const image = document.createElement("img");
           image.src = block.src;
@@ -221,6 +256,20 @@
           body.appendChild(figure);
           return;
         }
+        if (block.type === "listItem") {
+          const ordered = Boolean(block.ordered);
+          if (!activeList || activeList.tagName.toLowerCase() !== (ordered ? "ol" : "ul")) {
+            activeList = document.createElement(ordered ? "ol" : "ul");
+            activeList.className = "article-list";
+            body.appendChild(activeList);
+          }
+          const item = make("li", "", block.text);
+          const level = Number(block.level) || 0;
+          if (level > 0) item.style.marginLeft = `${Math.min(level, 3) * 1.5}em`;
+          activeList.appendChild(item);
+          return;
+        }
+        flushList();
         body.appendChild(make("p", "", block.text));
       });
       return;
@@ -229,10 +278,48 @@
     (article.sections || []).forEach((section, index) => {
       const sectionElement = document.createElement("section");
       sectionElement.id = `section-${index + 1}`;
-      if (section.heading) sectionElement.appendChild(make("h2", "", section.heading));
-      (section.paragraphs || []).forEach((paragraph) => {
+      if (section.heading) {
+        sectionElement.appendChild(make(headingLevelFromText(section.heading) >= 3 ? "h3" : "h2", "", section.heading));
+      }
+
+      const paragraphs = section.paragraphs || [];
+      for (let paragraphIndex = 0; paragraphIndex < paragraphs.length; paragraphIndex += 1) {
+        const paragraph = paragraphs[paragraphIndex];
+        const orderedMatch = orderedTextItem(paragraph);
+        if (orderedMatch) {
+          const items = [];
+          while (paragraphIndex < paragraphs.length) {
+            const match = orderedTextItem(paragraphs[paragraphIndex]);
+            if (!match) break;
+            items.push(match[2]);
+            paragraphIndex += 1;
+          }
+          paragraphIndex -= 1;
+          appendList(sectionElement, items, true);
+          continue;
+        }
+
+        const colonItems = [];
+        let scanIndex = paragraphIndex;
+        while (scanIndex < paragraphs.length) {
+          const match = colonListItem(paragraphs[scanIndex]);
+          if (!match) break;
+          colonItems.push(`${match[1]}：${match[2]}`);
+          scanIndex += 1;
+        }
+        if (colonItems.length >= 2) {
+          appendList(sectionElement, colonItems, false);
+          paragraphIndex = scanIndex - 1;
+          continue;
+        }
+
+        if (looksLikeLegacyHeading(paragraph)) {
+          sectionElement.appendChild(make(headingLevelFromText(paragraph) >= 3 ? "h3" : "h2", "", paragraph));
+          continue;
+        }
+
         sectionElement.appendChild(make("p", "", paragraph));
-      });
+      }
       body.appendChild(sectionElement);
     });
   };

@@ -1834,8 +1834,27 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   margin: 0 0 14px;
 }
 
+.article-body h3 {
+  color: var(--muted-brown);
+  font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  font-size: clamp(1.16rem, 1.25vw, 1.34rem);
+  font-weight: 900;
+  line-height: 1.45;
+  margin: 1.8em 0 0.7em;
+}
+
 .article-body p {
   margin-bottom: 1.45em;
+}
+
+.article-list {
+  margin: 0 0 1.7em 1.4em;
+  padding-left: 1.25em;
+}
+
+.article-list li {
+  margin-bottom: 0.85em;
+  padding-left: 0.25em;
 }
 
 .article-classic-quote {

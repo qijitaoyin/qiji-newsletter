@@ -101,6 +101,14 @@ export type ArticleContentBlock =
   | {
       type: "heading" | "paragraph" | "quote";
       text: string;
+      level?: number;
+    }
+  | {
+      type: "listItem";
+      text: string;
+      ordered?: boolean;
+      level?: number;
+      marker?: string;
     }
   | {
       type: "image";
