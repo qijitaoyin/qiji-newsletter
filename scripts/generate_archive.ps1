@@ -24,7 +24,7 @@ $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $publishStatePath = Join-Path $Root "src\data\publishState.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 14
+$importCacheVersion = 16
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -648,12 +648,11 @@ function Get-DocxParagraphNumbering {
 
 function Get-ArticleHeadingLevel {
   param([string]$Text, [string]$StyleId = "", [string]$StyleName = "")
-  $value = if ($Text) { $Text.Trim() } else { "" }
   $styleValue = "$StyleId $StyleName"
   if ($styleValue -match "(?i)(heading\s*3|標題\s*3|小標題)") { return 3 }
+  if ($styleValue -match "(?i)(subtitle|副標題)") { return 3 }
   if ($styleValue -match "(?i)(heading\s*2|標題\s*2)") { return 2 }
-  if ($value -match "^([一二三四五六七八九十百千]+|\d{1,2})[、.．]\s*\S+") { return 3 }
-  if ($value -match "^[（(]\s*([一二三四五六七八九十百千]+|\d{1,2})\s*[)）]\s*\S+") { return 3 }
+  if ($styleValue -match "(?i)(title|標題)") { return 2 }
   return 2
 }
 
@@ -694,7 +693,7 @@ function Get-DocxParagraphMaxFontSizeHalfPoints {
 function Test-ArticleHeadingStyle {
   param([string]$StyleId, [string]$StyleName)
   $value = "$StyleId $StyleName"
-  return ($value -match "(?i)heading|標題|小標題")
+  return ($value -match "(?i)(heading\s*[23]|標題\s*[23]|小標題|title|標題|subtitle|副標題)")
 }
 
 function Test-ArticleQuoteStyle {
@@ -970,6 +969,9 @@ function Read-DocxContent {
               marker = if ($isOrdered) { "$($numberCounters[$counterKey])." } else { "•" }
               styleId = $styleId
               styleName = $styleName
+              isBold = $isBold
+              isLargeFont = $isLargeFont
+              isHeadingStyle = $isHeadingStyle
             })
           } elseif (Test-ArticleSectionHeading $text -IsBold $isBold -IsLargeFont $isLargeFont -IsHeadingStyle $isHeadingStyle) {
             $blocks.Add(@{
@@ -1315,21 +1317,7 @@ function Test-ArticleSectionHeading {
     [bool]$IsHeadingStyle = $false
   )
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
-
-  $value = $Text.Trim()
-  if ($IsBold -or $IsHeadingStyle) { return $true }
-
-  if ($value.Length -gt 42) { return $false }
-  if ($value -match "[。！？；：]$") { return $false }
-
-  if ($IsLargeFont) { return $true }
-
-  return (
-    $value -match "^#{1,3}\s+\S+" -or
-    $value -match "^【[^】]{1,36}】$" -or
-    $value -match "^[（(]\s*([一二三四五六七八九十百千]+|\d{1,2})\s*[)）]\s*\S+" -or
-    $value -match "^([一二三四五六七八九十百千]+|\d{1,2})[、.．]\s*\S+"
-  )
+  return $IsHeadingStyle
 }
 
 function Split-Sections {
@@ -1547,7 +1535,7 @@ function Select-BodyBlocks {
   $selected = New-Object System.Collections.Generic.List[object]
   $started = $false
   foreach ($block in $Blocks) {
-    if ($block.type -eq "paragraph" -or $block.type -eq "listItem") {
+    if ($block.type -eq "paragraph" -or $block.type -eq "listItem" -or $block.type -eq "heading") {
       if (-not $started) {
         if ($bodyQueue.Count -gt 0 -and $block.text -eq $bodyQueue.Peek()) {
           $started = $true
@@ -2241,6 +2229,9 @@ foreach ($issueDir in $issueDirs) {
       Select-BlocksAfterText $docxContent.Blocks $template.BodyMarker
     } else {
       Select-BodyBlocks $docxContent.Blocks $bodyParagraphs
+    }
+    if ((@($bodyBlocks).Count -eq 0) -and @($bodyParagraphs).Count -gt 0) {
+      $bodyBlocks = Select-BodyBlocks $docxContent.Blocks $bodyParagraphs
     }
     $bodyBlocks = Remove-HeaderLikeBlocks $bodyBlocks $title $author $categoryInfo.Category
     $bodyBlocks = Resolve-ImageCaptions $bodyBlocks $blockWarnings
