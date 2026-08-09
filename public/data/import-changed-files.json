@@ -1,61 +1,6 @@
 {
-  "cacheBaselineRebuilt": 0,
-  "changedFiles": [
-    {
-      "issueId": "202605",
-      "fileName": "2605-4體證道德經.docx",
-      "relativePath": "202605/2605-4體證道德經.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-03二早班覺境，不困於境.docx",
-      "relativePath": "202207/2207-03二早班覺境，不困於境.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-04二晚班練掉你的死樣子.docx",
-      "relativePath": "202207/2207-04二晚班練掉你的死樣子.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-05四午班搞定自己.docx",
-      "relativePath": "202207/2207-05四午班搞定自己.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-06四晚班心若無事境自遷.docx",
-      "relativePath": "202207/2207-06四晚班心若無事境自遷.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-07五晚班最大的障礙是自己.docx",
-      "relativePath": "202207/2207-07五晚班最大的障礙是自己.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-08六早班沒有最高，只有更高.docx",
-      "relativePath": "202207/2207-08六早班沒有最高，只有更高.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-09台中班扮演自己，不是扮演任何角色.docx",
-      "relativePath": "202207/2207-09台中班扮演自己，不是扮演任何角色.docx",
-      "status": "new"
-    },
-    {
-      "issueId": "202207",
-      "fileName": "2207-10日早班無常才是常.docx",
-      "relativePath": "202207/2207-10日早班無常才是常.docx",
-      "status": "new"
-    }
-  ],
-  "totalChanged": 9,
-  "generatedAt": "2026-08-09T06:36:59.3352002Z"
+  "changedFiles": [],
+  "totalChanged": 0,
+  "cacheBaselineRebuilt": 9,
+  "generatedAt": "2026-08-09T11:47:02.4038591Z"
 }
