@@ -31,6 +31,14 @@ const throwbackCandidates = publishedArticles
 const throwbackFallback = throwbackCandidates[0];
 const throwbackPayload = JSON.stringify(throwbackCandidates).replace(/</g, "\\u003c");
 const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/assets/qiji-logo"));
+const formatHeroIssueLabel = (issue?: string) => {
+  const issueNumber = issue?.match(/\d+/)?.[0] ?? latestIssueArchive?.issueNumber;
+  return issueNumber ? `第${issueNumber}期電子報` : issue ?? "";
+};
+const formatHeroIssueDate = (date: string) => {
+  const [year, month, day] = date.split(/[./-]/);
+  return [year, Number(month), Number(day)].filter(Boolean).join(".");
+};
 ---
 
 <html lang="zh-Hant">
@@ -72,6 +80,10 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
             <article class:list={["hero-story", { "is-active": index === 0 }]} data-slide>
               {hasArticleImage(article.image) && <img src={article.image} alt="" />}
               <div class="hero-overlay"></div>
+              <div class="hero-issue-badge" aria-label={`${formatHeroIssueLabel(article.issue)} ${formatHeroIssueDate(article.date)}`}>
+                <span>{formatHeroIssueLabel(article.issue)}</span>
+                <time datetime={article.date}>{formatHeroIssueDate(article.date)}</time>
+              </div>
               <div class="hero-content">
                 <p class="meta-line">
                   <span>{article.category}</span>
@@ -86,7 +98,7 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                     <a class="hero-title-link" href={pathFor(`/articles/${article.slug}/`)}>{article.title}</a>
                   </h2>
                 )}
-                <p class="byline">{article.author || "氣機導引編輯部"}　{article.date}</p>
+                <p class="byline">{article.author || "氣機導引編輯部"}</p>
               </div>
             </article>
           ))}
@@ -119,7 +131,6 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                     <h3>{editorNote.title}</h3>
                     <div class="issue-card-footer">
                       <p class="meta-line"><span>{editorNote.author}</span></p>
-                      <p class="read-more">閱讀全文</p>
                     </div>
                   </div>
                 </a>
@@ -141,7 +152,6 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                     <h3>{article.title}</h3>
                     <div class="issue-card-footer">
                       <p class="meta-line"><span>{article.author}</span></p>
-                      <p class="read-more">閱讀全文</p>
                     </div>
                   </a>
                 </article>

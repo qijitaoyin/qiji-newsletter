@@ -219,6 +219,29 @@ main {
   z-index: 2;
 }
 
+.hero-issue-badge {
+  color: rgba(255, 255, 255, 0.92);
+  display: grid;
+  font-size: clamp(1.5rem, 3vw, 2.8rem);
+  font-weight: 900;
+  gap: 8px;
+  left: 50%;
+  letter-spacing: 0.08em;
+  line-height: 1.18;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: min(92vw, 680px);
+  z-index: 2;
+}
+
+.hero-issue-badge time {
+  font-size: 0.86em;
+  letter-spacing: 0.06em;
+}
+
 .meta-line {
   align-items: center;
   color: var(--gold);
@@ -4099,6 +4122,12 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   .hero-content {
     bottom: 62px;
     max-width: calc(100% - 40px);
+  }
+
+  .hero-issue-badge {
+    font-size: clamp(1.35rem, 6vw, 2rem);
+    top: 42%;
+    width: min(88vw, 420px);
   }
 
   .hero-content h1,
