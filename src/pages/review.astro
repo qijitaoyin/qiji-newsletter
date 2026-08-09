@@ -751,6 +751,23 @@ const normalizeCategory = (category: string) => {
         }
       };
 
+      const refreshReviewFramesForArticle = (slug = "") => {
+        if (!slug) return;
+        const frames = Array.from(
+          document.querySelectorAll("[data-live-frame], [data-legacy-viewport-panel]")
+        );
+        const token = Date.now().toString();
+        frames.forEach((frame) => {
+          const currentUrl = frame.getAttribute("src") || frame.dataset.frameSrc || "";
+          if (!currentUrl || !currentUrl.includes(`/review-articles/${slug}/`)) return;
+          const url = new URL(currentUrl, window.location.href);
+          url.searchParams.set("reviewOverrideVersion", token);
+          const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+          setFrameCandidate(frame, nextUrl);
+          if (frame.getAttribute("src")) frame.setAttribute("src", nextUrl);
+        });
+      };
+
       const isPanelActive = (element) =>
         Boolean(element?.closest("[data-review-mode-panel]")?.classList.contains("is-active"));
 
@@ -2223,6 +2240,7 @@ const normalizeCategory = (category: string) => {
           metadataRejectButton?.dataset.metadataField ||
           "";
         const reports = readReports();
+        const changedReport = reports.find((report) => report.id === id);
         const next = removeButton
           ? reports.filter((report) => report.id !== id)
           : reports.map((report) =>
@@ -2248,6 +2266,9 @@ const normalizeCategory = (category: string) => {
                 : report
             );
         writeReports(next);
+        if (metadataAcceptButton || metadataRejectButton) {
+          refreshReviewFramesForArticle(changedReport?.articleSlug || "");
+        }
         renderReports();
       });
 

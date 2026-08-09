@@ -9,6 +9,7 @@
   const articleUrl = page.getAttribute("data-article-json");
   const isReviewArticlePage =
     window.location.pathname.includes("/review-articles/") || articleUrl?.includes("/data/review-articles/");
+  const reviewReportStorageKey = "qiji-review-reports-v1";
 
   const withBase = (path) => {
     if (!path) return "";
@@ -23,6 +24,53 @@
   const normalizeCategory = (category = "") => {
     if (category.startsWith("如是我")) return "如是我聞";
     return category;
+  };
+
+  const normalizeAuthorDisplay = (value = "") =>
+    String(value || "").replace(
+      /^(文稿彙整|文稿整理|撰文|作者|整理|編輯|口述|文|彙整)、(.+)$/u,
+      "$1／$2"
+    );
+
+  const readReviewReports = () => {
+    try {
+      const reports = JSON.parse(window.localStorage.getItem(reviewReportStorageKey) || "[]");
+      return Array.isArray(reports) ? reports : [];
+    } catch {
+      return [];
+    }
+  };
+
+  const draftMetadataItems = [
+    ["quote", "metadataQuote", "aiQuote"],
+    ["summary", "metadataSummary", "aiSummary"],
+    ["category", "metadataCategory", "category"],
+    ["tags", "metadataTags", "tags"]
+  ];
+
+  const shouldApplyMetadataItem = (report, key) => {
+    const decision = report.metadataDecisions?.[key] || "";
+    if (decision) return decision === "accepted";
+    return report.status === "metadata";
+  };
+
+  const applyDraftMetadataOverrides = (article) => {
+    if (!isReviewArticlePage && !isReviewFrame) return article;
+    const reports = readReviewReports().filter((report) => report.articleSlug === article.slug);
+    if (!reports.length) return article;
+    const next = { ...article };
+    reports.forEach((report) => {
+      draftMetadataItems.forEach(([key, reportKey, articleKey]) => {
+        if (!shouldApplyMetadataItem(report, key)) return;
+        const value = report[reportKey];
+        if (Array.isArray(value)) {
+          if (value.length) next[articleKey] = value;
+          return;
+        }
+        if (value) next[articleKey] = value;
+      });
+    });
+    return next;
   };
 
   const cleanTitle = (title = "") =>
@@ -64,7 +112,8 @@
     const byline = document.querySelector("[data-article-byline]");
     if (!byline) return;
     byline.textContent = "";
-    if (article.author) byline.appendChild(make("span", "", article.author));
+    const author = normalizeAuthorDisplay(article.author);
+    if (author) byline.appendChild(make("span", "", author));
   };
 
   const renderCover = (article) => {
@@ -367,7 +416,7 @@
       copy.appendChild(meta);
       copy.appendChild(make("h3", "", item.title));
       if (item.aiSummary || item.excerpt) copy.appendChild(make("p", "", item.aiSummary || item.excerpt));
-      if (item.author) copy.appendChild(make("p", "byline", item.author));
+      if (item.author) copy.appendChild(make("p", "byline", normalizeAuthorDisplay(item.author)));
       link.appendChild(copy);
       card.appendChild(link);
       container.appendChild(card);
@@ -454,7 +503,12 @@
       if (!response.ok) throw new Error(`Article JSON not found: ${response.status}`);
       return response.json();
     })
-    .then(renderArticle)
+    .then((payload) =>
+      renderArticle({
+        ...payload,
+        article: applyDraftMetadataOverrides(payload.article || {})
+      })
+    )
     .catch(() => {
       const body = document.querySelector("[data-article-body]");
       if (body) body.innerHTML = "<p>文章載入失敗，請稍後再試。</p>";
