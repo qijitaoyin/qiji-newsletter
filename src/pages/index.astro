@@ -116,9 +116,11 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                 <a href={pathFor(`/articles/${editorNote.slug}/`)}>
                   {hasArticleImage(editorNote.image) && <img src={editorNote.image} alt="" />}
                   <div>
-                    <p class="meta-line"><span>{editorNote.author}</span></p>
                     <h3>{editorNote.title}</h3>
-                    <p class="read-more">閱讀全文</p>
+                    <div class="issue-card-footer">
+                      <p class="meta-line"><span>{editorNote.author}</span></p>
+                      <p class="read-more">閱讀全文</p>
+                    </div>
                   </div>
                 </a>
               </article>
@@ -136,9 +138,11 @@ const hasArticleImage = (image?: string) => Boolean(image && !image.includes("/a
                 <article class="issue-card">
                   <a href={pathFor(`/articles/${article.slug}/`)}>
                     {hasArticleImage(article.image) && <img src={article.image} alt="" />}
-                    <p class="meta-line"><span>{article.author}</span></p>
                     <h3>{article.title}</h3>
-                    <p class="read-more">閱讀全文</p>
+                    <div class="issue-card-footer">
+                      <p class="meta-line"><span>{article.author}</span></p>
+                      <p class="read-more">閱讀全文</p>
+                    </div>
                   </a>
                 </article>
               ))}

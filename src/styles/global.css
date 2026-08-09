@@ -459,7 +459,7 @@ p {
 
 .issue-card .meta-line {
   font-size: clamp(0.92rem, 1.1vw, 1rem);
-  margin-top: 14px;
+  margin: 0;
 }
 
 .issue-card h3,
@@ -469,6 +469,17 @@ p {
   font-weight: 800;
   line-height: 1.32;
   margin: 0 0 12px;
+}
+
+.issue-card-footer {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px clamp(28px, 3vw, 52px);
+}
+
+.issue-card-footer .read-more {
+  flex: 0 0 auto;
 }
 
 .feature-banner {
