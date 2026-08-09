@@ -270,7 +270,7 @@ const normalizeCategory = (category: string) => {
             <iframe
               title="手機版正式文章預覽"
               data-live-frame="mobile"
-              src={pathFor(`/review-articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
+              data-frame-src={pathFor(`/review-articles/${latestReviewArticles[0]?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
             ></iframe>
           </div>
 
@@ -571,13 +571,13 @@ const normalizeCategory = (category: string) => {
                   class="is-active"
                   data-legacy-viewport-panel="desktop"
                   loading="lazy"
-                  src={pathFor(`/review-articles/${group.items.find((item) => item.slug)?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop&reviewVersion=${reviewPreviewVersion}`)}
+                  data-frame-src={pathFor(`/review-articles/${group.items.find((item) => item.slug)?.slug ?? ""}/?reviewFrame=1&reviewViewport=desktop&reviewVersion=${reviewPreviewVersion}`)}
                 ></iframe>
                 <iframe
                   title={`${group.issueId} 舊稿手機版預覽`}
                   data-legacy-viewport-panel="mobile"
                   loading="lazy"
-                  src={pathFor(`/review-articles/${group.items.find((item) => item.slug)?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
+                  data-frame-src={pathFor(`/review-articles/${group.items.find((item) => item.slug)?.slug ?? ""}/?reviewFrame=1&reviewViewport=mobile&reviewVersion=${reviewPreviewVersion}`)}
                 ></iframe>
               </div>
             </section>
@@ -736,6 +736,40 @@ const normalizeCategory = (category: string) => {
       const deployWorkflowRunsApiUrl =
         "https://api.github.com/repos/qijitaoyin/qiji-newsletter/actions/workflows/deploy-github-pages.yml/runs?event=workflow_dispatch&branch=main&per_page=10";
       const sleep = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
+
+      const setFrameCandidate = (frame, url) => {
+        if (!frame || !url) return;
+        frame.dataset.frameSrc = url;
+      };
+
+      const loadFrameWhenNeeded = (frame, url = "") => {
+        if (!frame) return;
+        if (url) setFrameCandidate(frame, url);
+        const nextSrc = frame.dataset.frameSrc || "";
+        if (nextSrc && frame.getAttribute("src") !== nextSrc) {
+          frame.setAttribute("src", nextSrc);
+        }
+      };
+
+      const isPanelActive = (element) =>
+        Boolean(element?.closest("[data-review-mode-panel]")?.classList.contains("is-active"));
+
+      const isNearViewport = (element, margin = 900) => {
+        if (!element) return false;
+        const rect = element.getBoundingClientRect();
+        return rect.bottom >= -margin && rect.top <= window.innerHeight + margin;
+      };
+
+      const shouldLoadLegacyPreview = (issueSection) =>
+        isPanelActive(issueSection) && isNearViewport(issueSection);
+
+      const loadActiveLegacyPreview = (preview) => {
+        if (!preview || !isPanelActive(preview) || !isNearViewport(preview)) return;
+        const activePanel =
+          preview.querySelector("[data-legacy-viewport-panel].is-active") ||
+          preview.querySelector("[data-legacy-viewport-panel]");
+        loadFrameWhenNeeded(activePanel);
+      };
 
       const workflowStatusLabel = (run) => {
         if (!run) return "\u7b49\u5f85 GitHub Actions \u5efa\u7acb\u4f5c\u696d...";
@@ -1032,8 +1066,11 @@ const normalizeCategory = (category: string) => {
           const frameUrl = article.frameUrl
             ? `${article.frameUrl}${article.frameUrl.includes("?") ? "&" : "?"}reviewViewport=${viewport}&reviewVersion=${previewVersion}`
             : "";
-          if (frameUrl && frame.getAttribute("src") !== frameUrl) {
-            frame.setAttribute("src", frameUrl);
+          const panel = frame.closest("[data-live-viewport-panel]");
+          if (frameUrl && panel?.classList.contains("is-active")) {
+            loadFrameWhenNeeded(frame, frameUrl);
+          } else if (frameUrl) {
+            setFrameCandidate(frame, frameUrl);
           } else {
             resizeLiveFrame(frame);
           }
@@ -1048,6 +1085,8 @@ const normalizeCategory = (category: string) => {
         liveViewportPanels.forEach((panel) => {
           panel.classList.toggle("is-active", panel.getAttribute("data-live-viewport-panel") === viewport);
         });
+        const activeFrame = document.querySelector(`[data-live-viewport-panel="${viewport}"] [data-live-frame]`);
+        loadFrameWhenNeeded(activeFrame);
       };
 
       const reportStatusLabel = (status) => {
@@ -1602,7 +1641,12 @@ const normalizeCategory = (category: string) => {
           if (frame === sourceFrame) return;
           const viewport = frame.getAttribute("data-legacy-viewport-panel") || "desktop";
           const nextSrc = legacyFrameUrl(slug, viewport);
-          if (nextSrc && frame.getAttribute("src") !== nextSrc) frame.setAttribute("src", nextSrc);
+          if (!nextSrc) return;
+          if (frame.classList.contains("is-active") && shouldLoadLegacyPreview(issueSection)) {
+            loadFrameWhenNeeded(frame, nextSrc);
+          } else {
+            setFrameCandidate(frame, nextSrc);
+          }
         });
         updateLegacyIssueCounts(issueSection);
       };
@@ -1623,6 +1667,7 @@ const normalizeCategory = (category: string) => {
 
       const syncLegacyIssueFromFrame = (frame, slug = "") => {
         if (!frame) return;
+        loadFrameWhenNeeded(frame);
         const issueSection = frame.closest(".review-issue");
         const frameSlug =
           slug ||
@@ -1952,6 +1997,13 @@ const normalizeCategory = (category: string) => {
         modePanels.forEach((panel) => {
           panel.classList.toggle("is-active", panel.getAttribute("data-review-mode-panel") === mode);
         });
+        if (mode === "current") {
+          const activeLivePanel = liveViewportPanels.find((panel) => panel.classList.contains("is-active"));
+          loadFrameWhenNeeded(activeLivePanel?.querySelector("[data-live-frame]"));
+        }
+        if (mode === "legacy") {
+          document.querySelectorAll("[data-legacy-preview]").forEach(loadActiveLegacyPreview);
+        }
         if (!options.skipSave) {
           try {
             window.sessionStorage.setItem(reviewModeStorageKey, mode);
@@ -1996,9 +2048,26 @@ const normalizeCategory = (category: string) => {
               panel.classList.toggle("is-active", panel.getAttribute("data-legacy-viewport-panel") === viewport);
             });
             const activePanel = panels.find((panel) => panel.getAttribute("data-legacy-viewport-panel") === viewport);
+            loadFrameWhenNeeded(activePanel);
             syncLegacyIssueFromFrame(activePanel);
           });
         });
+      });
+
+      const legacyPreviewObserver =
+        "IntersectionObserver" in window
+          ? new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) loadActiveLegacyPreview(entry.target);
+                });
+              },
+              { rootMargin: "900px 0px" }
+            )
+          : null;
+
+      document.querySelectorAll("[data-legacy-preview]").forEach((preview) => {
+        legacyPreviewObserver?.observe(preview);
       });
 
       liveArticleSelect?.addEventListener("change", () => {

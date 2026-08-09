@@ -1252,12 +1252,15 @@ function Convert-LegacyAuthorLine {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
   $value = $Text.Trim()
+  if ($value -match "^(文稿彙整|文稿整理|撰文|作者|整理|編輯|口述|文|彙整)\s*[／/]\s*\S+") {
+    return (($value -replace "\s*[／/]\s*", "／") -replace "\s+", " ").Trim()
+  }
   if ($value -match "^[\u4e00-\u9fff](\s+[\u4e00-\u9fff]){1,4}$") {
     return ($value -replace "\s+", "")
   }
   $nameMatches = [regex]::Matches($value, "[\u4e00-\u9fff]{2,4}") |
     ForEach-Object { $_.Value } |
-    Where-Object { $_ -notin @("翻譯", "作者", "撰文", "整理", "編輯", "口述", "彙整") }
+    Where-Object { $_ -notin @("翻譯", "作者", "撰文", "整理", "編輯", "口述", "彙整", "文稿彙整", "文稿整理") }
   if ($value -match "Richard\s+Moh|Bob\s+Chang|Translated" -and $nameMatches.Count -gt 0) {
     return (($nameMatches | Select-Object -Unique) -join "、")
   }
