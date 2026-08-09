@@ -1,6 +1,15 @@
 {
-  "changedFiles": [],
-  "totalChanged": 0,
+  "generatedAt": "2026-08-09T17:11:11.3596536Z",
+  "changedFiles": [
+    {
+      "issueId": "202608",
+      "fileName": "2608-1編輯小語.docx",
+      "relativePath": "202608/2608-1編輯小語.docx",
+      "sourceId": "2608-1",
+      "stableSignature": "v2|57171d7a3175d89e7dce3f034ec548e26a31c74fd164a1403762f3129e90af32|",
+      "status": "updated"
+    }
+  ],
   "cacheBaselineRebuilt": 9,
-  "generatedAt": "2026-08-09T12:26:03.5969015Z"
+  "totalChanged": 1
 }
