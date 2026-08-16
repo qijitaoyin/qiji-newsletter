@@ -476,8 +476,13 @@ p {
 
 .issue-card img {
   aspect-ratio: 1.48;
+  margin-bottom: clamp(22px, 3vw, 42px);
   object-fit: cover;
   width: 100%;
+}
+
+.issue-editor-grid .issue-card img {
+  margin-bottom: 0;
 }
 
 .issue-card .meta-line {
