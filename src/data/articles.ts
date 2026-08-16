@@ -31,6 +31,8 @@ const typedPublishState = publishState as {
   reviewIssueId?: string;
 };
 
+const previewFallbackImage = "/assets/pixabay/pixabay-7779618.jpg?v=7779618";
+
 type TagVocabulary = {
   maxTagsPerArticle?: number;
   maxColumnTagsPerArticle?: number;
@@ -598,7 +600,7 @@ const hasLocalPublicAsset = (src = "") => {
 const resolveArticleImage = (article: Article) => {
   if (article.image && hasLocalPublicAsset(article.image)) return article.image;
   const firstAvailableImage = article.images?.find((image) => image.src && hasLocalPublicAsset(image.src));
-  return firstAvailableImage?.src ?? "";
+  return firstAvailableImage?.src ?? previewFallbackImage;
 };
 
 const withBasePaths = (article: Article): Article => ({

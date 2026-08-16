@@ -448,24 +448,17 @@ p {
 }
 
 .issue-editor-grid {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .issue-editor-grid .issue-card a {
-  align-items: center;
-  display: grid;
-  gap: clamp(22px, 3vw, 42px);
-  grid-template-columns: minmax(260px, 1.05fr) minmax(240px, 0.95fr);
-  padding-bottom: 22px;
-}
-
-.issue-editor-grid .issue-card img {
-  aspect-ratio: 1.55;
+  display: block;
+  padding-bottom: 14px;
 }
 
 .issue-editor-grid .issue-card h3,
 .issue-editor-grid .issue-card h4 {
-  font-size: clamp(1.55rem, 2.4vw, 2.55rem);
+  font-size: clamp(1.09rem, 1.68vw, 1.79rem);
 }
 
 .issue-card a {
@@ -481,10 +474,6 @@ p {
   width: 100%;
 }
 
-.issue-editor-grid .issue-card img {
-  margin-bottom: 0;
-}
-
 .issue-card .meta-line {
   font-size: clamp(0.92rem, 1.1vw, 1rem);
   margin: 0;
@@ -493,7 +482,7 @@ p {
 .issue-card h3,
 .issue-card h4 {
   font-family: "Noto Serif TC", "Songti TC", serif;
-  font-size: clamp(1.55rem, 2.4vw, 2.55rem);
+  font-size: clamp(1.09rem, 1.68vw, 1.79rem);
   font-weight: 800;
   line-height: 1.32;
   margin: 0 0 12px;
@@ -3918,6 +3907,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   }
 
   .issue-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .issue-editor-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
