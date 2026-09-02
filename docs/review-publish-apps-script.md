@@ -52,6 +52,7 @@ RUN_AI=false
 PAID_AI_CONFIRM=false
 AI_ISSUE_ID=latest
 AI_LIMIT=0
+ALLOWED_ORIGINS=https://newsletter.qiji.org.tw,https://qiji-newsletter.pages.dev
 ```
 
 Keep `PAID_AI_CONFIRM=false` unless you intentionally want GitHub Actions to

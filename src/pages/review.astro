@@ -1192,6 +1192,7 @@ const normalizeCategory = (category: string) => {
         });
 
         return {
+          sourceOrigin: window.location.origin,
           status: openReports.length ? "has-open-tasks" : "ready-to-publish",
           generatedAt: new Date().toISOString(),
           issueId: currentReviewIssueId,
@@ -2321,6 +2322,7 @@ const normalizeCategory = (category: string) => {
           const status = board?.querySelector("[data-legacy-issue-status]");
           const payload = {
             action: "publish-issue",
+            sourceOrigin: window.location.origin,
             status: "ready-to-publish",
             generatedAt: new Date().toISOString(),
             issueId,
@@ -2407,6 +2409,7 @@ const normalizeCategory = (category: string) => {
             headers: { "Content-Type": "text/plain" },
             body: JSON.stringify({
               action: "reimport",
+              sourceOrigin: window.location.origin,
               issueId: "latest",
               runAi: false,
               requestedAt: new Date().toISOString()

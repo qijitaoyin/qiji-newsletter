@@ -72,6 +72,9 @@ jobs:
       PUBLIC_BASE_PATH: /
       PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
       REVIEW_PUBLISH_JSON: ${{ inputs.review_publish_json }}
+      CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -203,6 +206,10 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      - name: Deploy the same build to Cloudflare Pages
+        if: ${{ env.CLOUDFLARE_PAGES_PROJECT != '' && env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != '' }}
+        run: pnpm dlx wrangler pages deploy dist --project-name="$CLOUDFLARE_PAGES_PROJECT" --branch=main
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -18,6 +18,7 @@
  * - PAID_AI_CONFIRM: false
  * - AI_ISSUE_ID: latest
  * - AI_LIMIT: 0
+ * - ALLOWED_ORIGINS: https://newsletter.qiji.org.tw,https://qiji-newsletter.pages.dev
  */
 
 function doPost(e) {
@@ -32,6 +33,7 @@ function doPost(e) {
     const token = requiredProp_(props, "GITHUB_TOKEN");
     const branch = props.getProperty("GITHUB_BRANCH") || "main";
     const workflow = props.getProperty("GITHUB_WORKFLOW") || "deploy-github-pages.yml";
+    validateOrigin_(payload, props);
 
     if (payload.action === "reimport") {
       const runAi = payload.runAi === true || payload.run_ai === "true" || payload.runAi === "true";
@@ -138,6 +140,20 @@ function getPayloadText_(e) {
 function validatePayload_(payload) {
   if (!payload || typeof payload !== "object") {
     throw new Error("Payload must be a JSON object.");
+  }
+}
+
+function validateOrigin_(payload, props) {
+  const configured =
+    props.getProperty("ALLOWED_ORIGINS") ||
+    "https://newsletter.qiji.org.tw,https://qiji-newsletter.pages.dev";
+  const allowed = configured
+    .split(",")
+    .map((value) => value.trim().replace(/\/$/, ""))
+    .filter(Boolean);
+  const sourceOrigin = String(payload.sourceOrigin || "").trim().replace(/\/$/, "");
+  if (!sourceOrigin || !allowed.includes(sourceOrigin)) {
+    throw new Error(`Request origin is not allowed: ${sourceOrigin || "missing"}`);
   }
 }
 

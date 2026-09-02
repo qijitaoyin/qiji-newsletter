@@ -195,7 +195,6 @@ const totalArticles = articles.length;
                           return (
                             <li
                               data-archive-tree-item
-                              data-search={`${getSearchText(article)} ${issue?.label ?? ""} ${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
                             >
                               <button
                                 type="button"
@@ -206,7 +205,6 @@ const totalArticles = articles.length;
                                 data-issue={`${issue?.issueNumber ?? ""} ${issue?.date ?? ""}`}
                                 data-excerpt={article.excerpt}
                                 data-preview={getPreviewText(article)}
-                                data-fulltext={getSearchText(article)}
                                 data-bodytext={getBodySearchText(article)}
                                 data-href={href}
                               >
