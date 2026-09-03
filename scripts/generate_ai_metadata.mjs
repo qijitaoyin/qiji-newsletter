@@ -52,16 +52,18 @@ const aiFeedbackExamplesData = readJson(aiFeedbackExamplesPath, { examples: [] }
 const aiFeedbackExamples = Array.isArray(aiFeedbackExamplesData.examples)
   ? aiFeedbackExamplesData.examples
   : [];
-const allowedAiTags = [
-  ...(tagVocabulary.categoryTags || []),
-  ...(tagVocabulary.keywordTags || []).map((rule) => rule.label)
-].filter(Boolean);
 const compactTagLabel = (value = "") =>
   String(value)
     .normalize("NFKC")
     .replace(/[\s　·・．.／/｜|,，、:：;；「」『』()（）［\]\[\-—–_]+/g, "")
     .trim()
     .toLowerCase();
+const excludedAiTagKeys = new Set(
+  (tagVocabulary.excludedTags || []).map(compactTagLabel).filter(Boolean)
+);
+const allowedAiTags = (tagVocabulary.keywordTags || [])
+  .map((rule) => rule.label)
+  .filter((label) => label && !excludedAiTagKeys.has(compactTagLabel(label)));
 const allowedAiTagMap = new Map(allowedAiTags.map((tag) => [compactTagLabel(tag), tag]));
 const allowedAiTagText = allowedAiTags.join("、");
 
@@ -339,11 +341,12 @@ const requestMetadata = async (article) => {
     "Rules:",
     "1. quote must be copied or lightly compressed from the article and stay under 50 Chinese characters.",
     "2. summary must be under 80 Chinese characters and describe the article, not the website.",
-    "3. tags must only use exact labels from the allowed tag list. Do not invent new tags.",
-    "4. themes can be broader than tags, but still concise.",
-    "5. Use Traditional Chinese for every value.",
-    "6. If the article is too short, still return valid JSON with your best concise suggestions.",
-    `Allowed tag list: ${allowedAiTagText || "none"}`,
+    "3. tags must only use exact labels from the allowed keyword tag list. Do not invent new tags.",
+    "4. Do not use the website, organization, method, author, teacher, date, issue, or article category as a tag.",
+    "5. themes can be broader than tags, but still concise.",
+    "6. Use Traditional Chinese for every value.",
+    "7. If the article is too short, still return valid JSON with your best concise suggestions.",
+    `Allowed keyword tag list: ${allowedAiTagText || "none"}`,
     "",
     feedbackExamples.length
       ? [

@@ -10,6 +10,7 @@
     "sync:drive": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync_google_drive.ps1",
     "review:apply": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/apply_review_publish.ps1",
     "ai:metadata": "node scripts/generate_ai_metadata.mjs",
+    "check:tags": "node scripts/check_article_tags.mjs",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1"
   },

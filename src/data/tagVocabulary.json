@@ -2,7 +2,11 @@
   "maxTagsPerArticle": 6,
   "maxColumnTagsPerArticle": 1,
   "maxKeywordTagsPerArticle": 5,
-  "excludedTags": [],
+  "excludedTags": [
+    "氣機導引",
+    "東醫",
+    "張良維"
+  ],
   "categoryTags": [
     "編輯小語",
     "如是我聞",
@@ -149,24 +153,6 @@
         "文明",
         "傳統",
         "研究"
-      ]
-    },
-    {
-      "label": "東醫",
-      "aliases": [
-        "東醫"
-      ]
-    },
-    {
-      "label": "氣機導引",
-      "aliases": [
-        "氣機導引"
-      ]
-    },
-    {
-      "label": "張良維",
-      "aliases": [
-        "張良維"
       ]
     },
     {

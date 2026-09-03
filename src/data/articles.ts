@@ -60,13 +60,6 @@ const excludedTagKeys = new Set(
   (controlledTagVocabulary.excludedTags ?? []).map((label) => compactTagLabel(label))
 );
 
-const categoryCounts = new Map<string, number>();
-generatedArticles.forEach((article) => {
-  const key = compactTagLabel(article.category);
-  if (!key) return;
-  categoryCounts.set(key, (categoryCounts.get(key) ?? 0) + 1);
-});
-
 const controlledTagLabels = new Map<string, string>();
 (controlledTagVocabulary.categoryTags ?? []).forEach((label) => {
   if (excludedTagKeys.has(compactTagLabel(label))) return;
@@ -556,10 +549,7 @@ const withAutoTags = (article: Article): Article => {
   const ai = metadataFor(article);
   const aiTags = ai.tags?.length ? ai.tags : typedAiMetadata.tags?.[article.slug];
   const tags: string[] = [];
-  const categoryKey = compactTagLabel(article.category);
-  if ((categoryCounts.get(categoryKey) ?? 0) > 1) {
-    pushUniqueTag(tags, article.category, true);
-  }
+  pushUniqueTag(tags, article.category, true);
 
   (manualTags ?? []).forEach((tag) => pushUniqueTag(tags, tag, true));
   article.tags.forEach((tag) => pushUniqueTag(tags, tag));
