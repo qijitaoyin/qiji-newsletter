@@ -9,6 +9,7 @@
     "clean:source": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean_source_files.ps1",
     "sync:drive": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync_google_drive.ps1",
     "review:apply": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/apply_review_publish.ps1",
+    "assets:optimize": "node scripts/optimize_deploy_images.mjs",
     "ai:metadata": "node scripts/generate_ai_metadata.mjs",
     "check:tags": "node scripts/check_article_tags.mjs",
     "build": "astro build",
@@ -17,6 +18,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "astro": "^5.9.2",
+    "sharp": "^0.34.5",
     "typescript": "^5.8.3"
   }
 }

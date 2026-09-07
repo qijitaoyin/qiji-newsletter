@@ -155,19 +155,6 @@ const normalizeCategory = (category: string) => {
     </header>
 
     <main class="review-page">
-      <section class="review-hero">
-        <p class="meta-line">
-          <span>Google Drive 匯入</span>
-          <span>Word 標準化</span>
-          <span>人工校對確認</span>
-        </p>
-        <h1>上架校對</h1>
-        <p>
-          這裡列出最新一期校對、上架人員待辦與舊稿整理。校對意見會先集中成待辦；上架人員確認修正完成後，再產生發布核准檔。
-          金句與分類標籤屬於網站附加資料，不會寫回 Word 正文。
-        </p>
-      </section>
-
       <div class="review-mode-tabs" role="tablist" aria-label="校對模式">
         <button type="button" class="is-active" data-review-mode-tab="current">最新一期校對</button>
         <button type="button" data-review-mode-tab="legacy">舊稿整理</button>
@@ -178,9 +165,6 @@ const normalizeCategory = (category: string) => {
         <div>
           <p class="review-kicker">最新一期校對</p>
           <h2>{latestReviewArchive?.issueNumber ?? "最新一期"} / {latestReviewArchive?.date ?? ""}</h2>
-          <p>
-          校對者可在同一篇文章內切換電腦版與手機版預覽，直接留下修正意見與截圖。上架人員處理完每一則待辦後，再從統計區送出正式發布。
-          </p>
         </div>
         <div class="review-summary review-current-summary" aria-label="最新一期校對統計">
           <article class="review-stat is-review">
@@ -233,7 +217,8 @@ const normalizeCategory = (category: string) => {
         <div class="review-live-panel">
           <div class="review-live-controls">
             <label>
-              <span>文章</span>
+              <span>最新一期校對</span>
+              <strong>{latestReviewArchive?.issueNumber ?? "最新一期"} / {latestReviewArchive?.date ?? ""}</strong>
               <select name="articleSlug" data-review-article-select>
                 {latestReviewArticles.map((article) => (
                   <option
@@ -296,7 +281,7 @@ const normalizeCategory = (category: string) => {
               </div>
               <label class="review-report-wide">
                 <span>修正意見</span>
-                <textarea name="comment" rows="1" required placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
+                <textarea name="comment" rows="1" placeholder="直接寫要修改的地方；可先貼截圖，再補文字。"></textarea>
               </label>
               <fieldset class="review-metadata-fields">
                 <legend>網站資料修正（選填）</legend>
@@ -2206,7 +2191,18 @@ const normalizeCategory = (category: string) => {
               tags: keywordTagsFromTags(selectedArticle.tags || [])
             };
           }
-          if (!report.comment) return;
+          const hasReportContent = Boolean(
+            report.comment ||
+            metadataQuote ||
+            metadataSummary ||
+            suggestedMetadataCategory ||
+            suggestedMetadataTags.length
+          );
+          if (!hasReportContent) {
+            const result = form.querySelector("[data-report-result]");
+            if (result) result.textContent = "請填寫修正意見或任一網站資料修正欄位";
+            return;
+          }
           const reports = readReports();
           reports.push(report);
           writeReports(reports);

@@ -2635,6 +2635,11 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   font-weight: 900;
 }
 
+.review-live-controls strong {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
 .review-live-controls select,
 .review-live-report-form input,
 .review-live-report-form select,
@@ -3989,8 +3994,10 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
   .review-hero p:not(.meta-line),
   .review-mode-tabs,
+  .review-current-workspace,
   .review-task-board,
   .review-summary-actions,
+  .review-live-tabs,
   .review-live-tabs [data-live-viewport-tab="desktop"],
   .review-live-preview[data-live-viewport-panel="desktop"] {
     display: none;
@@ -4005,6 +4012,7 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   }
 
   .review-live-controls {
+    display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
   }

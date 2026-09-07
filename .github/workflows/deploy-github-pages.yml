@@ -130,6 +130,9 @@ jobs:
             Write-Host "No Google Drive remote configured; using committed generated data."
           }
 
+      - name: Optimize oversized article images
+        run: pnpm assets:optimize
+
       - name: Separate review draft from published data
         if: ${{ inputs.sync_drive == 'true' && env.GOOGLE_DRIVE_REMOTE != '' }}
         shell: pwsh
