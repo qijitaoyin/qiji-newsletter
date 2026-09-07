@@ -207,7 +207,11 @@ function Get-NormalizedDocxDisplayForSignature {
       ForEach-Object {
         $text = ConvertTo-PlainText ([string]$_.text) -PreserveLineBreaks
         $bold = if ($_.isBold) { "bold" } else { "normal" }
-        "$bold|$text"
+        $styleId = [string]$_.styleId
+        $styleName = [string]$_.styleName
+        $numbering = [string]$_.numbering
+        $fontSize = [string]$_.fontSize
+        "$bold|$fontSize|$styleId|$styleName|$numbering|$text"
       }
   )
   return ($normalized -join "`n`n")
@@ -532,6 +536,7 @@ function Get-FileSignature {
     [string]$cachedSignature.length -eq [string]$length -and
     [string]$cachedSignature.contentTextHash -and
     [string]$cachedSignature.contentDisplayHash -and
+    [string]$cachedSignature.contentStructureHash -and
     ($cachedSignature.PSObject.Properties.Name -contains "contentMediaHash")
   )
 
@@ -541,6 +546,9 @@ function Get-FileSignature {
       contentHash = $contentHash
       contentTextHash = [string]$cachedSignature.contentTextHash
       contentDisplayHash = [string]$cachedSignature.contentDisplayHash
+      contentStructureHash = [string]$cachedSignature.contentStructureHash
+      contentArticleHash = [string]$cachedSignature.contentArticleHash
+      publishedEquivalentSignature = [string]$cachedSignature.publishedEquivalentSignature
       contentMediaHash = [string]$cachedSignature.contentMediaHash
       length = $length
       cacheVersion = $CacheVersion
@@ -557,6 +565,7 @@ function Get-FileSignature {
     contentHash = $contentHash
     contentTextHash = Get-TextContentHash $textForSignature
     contentDisplayHash = Get-TextContentHash $displayForSignature
+    contentStructureHash = Get-TextContentHash $displayForSignature
     contentMediaHash = Get-DocxMediaSignatureHash $File.FullName
     length = $length
     cacheVersion = $CacheVersion
@@ -575,10 +584,17 @@ function Test-CacheSignatureMatch {
     return $false
   }
 
-  $cachedDisplayHash = [string]$Entry.signature.contentDisplayHash
-  $currentDisplayHash = [string]$Signature.contentDisplayHash
-  if ($cachedDisplayHash -and $currentDisplayHash) {
-    return $cachedDisplayHash -eq $currentDisplayHash
+  $cachedStructureHash = [string]$Entry.signature.contentStructureHash
+  $currentStructureHash = [string]$Signature.contentStructureHash
+  if ($cachedStructureHash -and $currentStructureHash) {
+    return $cachedStructureHash -eq $currentStructureHash
+  }
+
+  if ($currentStructureHash -and -not $cachedStructureHash) {
+    return (
+      [string]$Entry.signature.contentHash -eq [string]$Signature.contentHash -and
+      [string]$Entry.signature.length -eq [string]$Signature.length
+    )
   }
 
   $cachedTextHash = [string]$Entry.signature.contentTextHash
@@ -642,6 +658,61 @@ function Read-DocxDisplaySignatureParagraphs {
     $zip = New-Object System.IO.Compression.ZipArchive($stream, [System.IO.Compression.ZipArchiveMode]::Read, $false)
     $entry = $zip.GetEntry("word/document.xml")
     if (-not $entry) { return @() }
+    $styleNameMap = @{}
+    $stylesEntry = $zip.GetEntry("word/styles.xml")
+    if ($stylesEntry) {
+      $stylesReader = New-Object System.IO.StreamReader($stylesEntry.Open(), [System.Text.Encoding]::UTF8)
+      try {
+        [xml]$stylesXml = $stylesReader.ReadToEnd()
+      } finally {
+        $stylesReader.Dispose()
+      }
+      $stylesNs = New-Object System.Xml.XmlNamespaceManager($stylesXml.NameTable)
+      $stylesNs.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+      foreach ($style in $stylesXml.SelectNodes("//w:style", $stylesNs)) {
+        $styleId = $style.GetAttribute("styleId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        if (-not $styleId) { continue }
+        $nameNode = $style.SelectSingleNode("./w:name", $stylesNs)
+        $styleNameMap[$styleId] = if ($nameNode) {
+          $nameNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        } else {
+          ""
+        }
+      }
+    }
+    $numToAbstract = @{}
+    $abstractLevelFormat = @{}
+    $numberingEntry = $zip.GetEntry("word/numbering.xml")
+    if ($numberingEntry) {
+      $numberingReader = New-Object System.IO.StreamReader($numberingEntry.Open(), [System.Text.Encoding]::UTF8)
+      try {
+        [xml]$numberingXml = $numberingReader.ReadToEnd()
+      } finally {
+        $numberingReader.Dispose()
+      }
+      $numberingNs = New-Object System.Xml.XmlNamespaceManager($numberingXml.NameTable)
+      $numberingNs.AddNamespace("w", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+      foreach ($abstractNum in $numberingXml.SelectNodes("//w:abstractNum", $numberingNs)) {
+        $abstractId = $abstractNum.GetAttribute("abstractNumId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        foreach ($levelNode in $abstractNum.SelectNodes("./w:lvl", $numberingNs)) {
+          $levelId = $levelNode.GetAttribute("ilvl", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+          if ($levelId -eq "") { $levelId = "0" }
+          $formatNode = $levelNode.SelectSingleNode("./w:numFmt", $numberingNs)
+          $abstractLevelFormat["$abstractId`:$levelId"] = if ($formatNode) {
+            $formatNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+          } else {
+            "decimal"
+          }
+        }
+      }
+      foreach ($numNode in $numberingXml.SelectNodes("//w:num", $numberingNs)) {
+        $numId = $numNode.GetAttribute("numId", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        $abstractNode = $numNode.SelectSingleNode("./w:abstractNumId", $numberingNs)
+        if ($numId -and $abstractNode) {
+          $numToAbstract[$numId] = $abstractNode.GetAttribute("val", "http://schemas.openxmlformats.org/wordprocessingml/2006/main")
+        }
+      }
+    }
     $reader = New-Object System.IO.StreamReader($entry.Open(), [System.Text.Encoding]::UTF8)
     try {
       [xml]$xml = $reader.ReadToEnd()
@@ -674,9 +745,24 @@ function Read-DocxDisplaySignatureParagraphs {
       }
       $text = ConvertTo-PlainText ($parts -join "") -PreserveLineBreaks
       if ($text) {
+        $styleId = Get-DocxParagraphStyleId $p $ns
+        $styleName = if ($styleId -and $styleNameMap.ContainsKey($styleId)) { [string]$styleNameMap[$styleId] } else { "" }
+        $numberingInfo = Get-DocxParagraphNumbering $p $ns
+        $numbering = ""
+        if ($numberingInfo) {
+          $numId = [string]$numberingInfo.numId
+          $level = [string]$numberingInfo.level
+          $abstractId = if ($numToAbstract.ContainsKey($numId)) { [string]$numToAbstract[$numId] } else { "" }
+          $format = if ($abstractLevelFormat.ContainsKey("$abstractId`:$level")) { [string]$abstractLevelFormat["$abstractId`:$level"] } else { "decimal" }
+          $numbering = "$numId`:$level`:$format"
+        }
         $paragraphs.Add(@{
           text = $text
           isBold = $hasBoldText
+          fontSize = Get-DocxParagraphMaxFontSizeHalfPoints $p $ns
+          styleId = $styleId
+          styleName = $styleName
+          numbering = $numbering
         })
       }
     }
@@ -804,12 +890,51 @@ function Get-ObjectPropertyValue {
 function Get-StableArticleSignature {
   param([object]$Signature)
   if (-not $Signature) { return "" }
+  $publishedEquivalentSignature = [string](Get-ObjectPropertyValue $Signature "publishedEquivalentSignature")
+  if ($publishedEquivalentSignature) { return $publishedEquivalentSignature }
+  $articleHash = [string](Get-ObjectPropertyValue $Signature "contentArticleHash")
   $displayHash = [string](Get-ObjectPropertyValue $Signature "contentDisplayHash")
   $textHash = [string](Get-ObjectPropertyValue $Signature "contentTextHash")
   $mediaHash = [string](Get-ObjectPropertyValue $Signature "contentMediaHash")
+  if ($articleHash) { return "v3|$articleHash|$mediaHash" }
   $bodyHash = if ($displayHash) { $displayHash } else { $textHash }
   if (-not $bodyHash) { return "" }
   return "v2|$bodyHash|$mediaHash"
+}
+
+function Get-ArticleVisibleContentHash {
+  param([object]$Article)
+  if (-not $Article) { return "" }
+
+  $parts = New-Object System.Collections.Generic.List[string]
+  # Editorial corrections can normalize category, author, and date without the
+  # Word source changing. The title and rendered body blocks are the visible
+  # source content that should move an article back into review.
+  foreach ($name in @("title")) {
+    $value = ConvertTo-PlainText ([string](Get-ObjectPropertyValue $Article $name)) -PreserveLineBreaks
+    $parts.Add("meta|$name|$value")
+  }
+
+  foreach ($block in @(ConvertTo-ArrayValue (Get-ObjectPropertyValue $Article "contentBlocks"))) {
+    if (-not $block) { continue }
+    $type = [string](Get-ObjectPropertyValue $block "type")
+    $text = ConvertTo-PlainText ([string](Get-ObjectPropertyValue $block "text")) -PreserveLineBreaks
+    $level = [string](Get-ObjectPropertyValue $block "level")
+    $ordered = [string](Get-ObjectPropertyValue $block "ordered")
+    $marker = [string](Get-ObjectPropertyValue $block "marker")
+    $src = [string](Get-ObjectPropertyValue $block "src")
+    $caption = ConvertTo-PlainText ([string](Get-ObjectPropertyValue $block "caption")) -PreserveLineBreaks
+    $parts.Add("block|$type|$level|$ordered|$marker|$text|$src|$caption")
+  }
+
+  return Get-TextContentHash ($parts -join "`n")
+}
+
+function Get-StableSignatureMediaPart {
+  param([string]$Signature)
+  if ([string]::IsNullOrWhiteSpace($Signature)) { return "" }
+  if ($Signature -match "^v[23]\|[^|]*\|(?<media>.*)$") { return [string]$Matches.media }
+  return ""
 }
 
 function Get-LegacyStableSignatureBodyPart {
@@ -2039,6 +2164,7 @@ $cacheMissCount = 0
 $cacheBaselineRebuildCount = 0
 $changedImportFiles = New-Object System.Collections.Generic.List[object]
 $existingGeneratedSourceKeys = @{}
+$existingGeneratedArticleMap = @{}
 $existingGeneratedPath = Join-Path $Root "src/data/generatedArticles.ts"
 if (Test-Path -LiteralPath $existingGeneratedPath) {
   try {
@@ -2051,6 +2177,10 @@ if (Test-Path -LiteralPath $existingGeneratedPath) {
         $existingSourceId = [string](Get-ObjectPropertyValue $existingArticle "sourceId")
         if ($existingIssueId -and $existingSourceId) {
           $existingGeneratedSourceKeys["$existingIssueId::$existingSourceId"] = $true
+          $existingSlug = [string](Get-ObjectPropertyValue $existingArticle "slug")
+          if ($existingSlug) {
+            $existingGeneratedArticleMap[$existingSlug] = $existingArticle
+          }
         }
       }
     } else {
@@ -2196,6 +2326,14 @@ foreach ($issueDir in $issueDirs) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
+      $relativePath = Get-RelativePath $file.FullName $sourceRoot
+      $sourceBaselineKey = Get-PublishedBaselineKey $issueId $sourceId $relativePath
+      $publishedBaseline = $publishedIssueBaselineMap[$sourceBaselineKey]
+      $publishedBaselineSignature = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "signature") } else { "" }
+      $publishedSlug = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "slug") } else { "" }
+      if ($publishedSlug) {
+        $cachedArticle["slug"] = $publishedSlug
+      }
       if (-not $cachedArticle.image) {
         if ($null -eq $images) {
           $images = Copy-IssueImages $issueId $issueDir
@@ -2217,13 +2355,20 @@ foreach ($issueDir in $issueDirs) {
       foreach ($cachedValidation in @(ConvertTo-ArrayValue $cachedEntry.validationItems)) {
         $validationItems.Add((ConvertTo-PlainObject $cachedValidation))
       }
-      $relativePath = Get-RelativePath $file.FullName $sourceRoot
-      $sourceBaselineKey = Get-PublishedBaselineKey $issueId $sourceId $relativePath
+      $signature["contentArticleHash"] = Get-ArticleVisibleContentHash $cachedArticle
+      $referenceSlug = if ($publishedSlug) { $publishedSlug } else { [string]$cachedArticle.slug }
+      $referenceArticle = if ($referenceSlug) { $existingGeneratedArticleMap[$referenceSlug] } else { $null }
+      $visibleContentMatches = $referenceArticle -and (
+        (Get-ArticleVisibleContentHash $referenceArticle) -eq [string]$signature.contentArticleHash
+      )
+      $mediaMatches = (-not $publishedBaseline) -or (
+        (Get-StableSignatureMediaPart $publishedBaselineSignature) -eq [string]$signature.contentMediaHash
+      )
+      if ($publishedBaseline -and $visibleContentMatches -and $mediaMatches) {
+        $signature["publishedEquivalentSignature"] = $publishedBaselineSignature
+      }
       $currentStableSignature = Get-StableArticleSignature $signature
-      $publishedBaseline = $publishedIssueBaselineMap[$sourceBaselineKey]
-      $publishedBaselineSignature = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "signature") } else { "" }
-      $hasExistingGeneratedArticle = $existingGeneratedSourceKeys.ContainsKey($sourceBaselineKey)
-      if ($publishedBaseline -and -not (Test-StableArticleSignatureMatch $publishedBaselineSignature $currentStableSignature)) {
+      if ($publishedBaseline -and (-not $visibleContentMatches -or -not $mediaMatches)) {
         $changedImportFiles.Add([pscustomobject]@{
           issueId = $issueId
           fileName = $file.Name
@@ -2239,6 +2384,24 @@ foreach ($issueDir in $issueDirs) {
           type = "published-content-changed"
           message = "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
         })
+      } elseif (-not $publishedBaseline -and -not (Test-IssueIsAtOrBeforePublicLatest $issueId) -and -not $referenceArticle) {
+        $changedImportFiles.Add([pscustomobject]@{
+          issueId = $issueId
+          fileName = $file.Name
+          relativePath = $relativePath
+          sourceId = $sourceId
+          stableSignature = $currentStableSignature
+          status = "new"
+        })
+      } elseif (-not $publishedBaseline -and -not (Test-IssueIsAtOrBeforePublicLatest $issueId) -and -not $visibleContentMatches) {
+        $changedImportFiles.Add([pscustomobject]@{
+          issueId = $issueId
+          fileName = $file.Name
+          relativePath = $relativePath
+          sourceId = $sourceId
+          stableSignature = $currentStableSignature
+          status = "updated"
+        })
       } elseif (-not $publishedBaseline -and (Test-IssueIsAtOrBeforePublicLatest $issueId)) {
         Add-PublishedBaselineRepair $issueId $sourceId $currentStableSignature ([string]$cachedArticle.slug) $relativePath
       }
@@ -2253,48 +2416,12 @@ foreach ($issueDir in $issueDirs) {
     $cacheMissCount++
     $relativePath = Get-RelativePath $file.FullName $sourceRoot
     $sourceBaselineKey = Get-PublishedBaselineKey $issueId $sourceId $relativePath
-    $hasExistingGeneratedArticle = $existingGeneratedSourceKeys.ContainsKey($sourceBaselineKey)
+    $hasExistingGeneratedArticle = $false
     $publishedBaseline = $publishedIssueBaselineMap[$sourceBaselineKey]
     $publishedBaselineSignature = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "signature") } else { "" }
-    $currentStableSignature = Get-StableArticleSignature $signature
     $isPublishedIssueArticle = [bool]$publishedBaseline
     $isKnownPublishedWithoutBaseline = (-not $isPublishedIssueArticle) -and (Test-IssueIsAtOrBeforePublicLatest $issueId)
-    $isPublishedArticleChanged = $isPublishedIssueArticle -and -not (Test-StableArticleSignatureMatch $publishedBaselineSignature $currentStableSignature)
-
-    if ($isPublishedArticleChanged) {
-      $changedImportFiles.Add([pscustomobject]@{
-        issueId = $issueId
-        fileName = $file.Name
-        relativePath = $relativePath
-        sourceId = $sourceId
-        stableSignature = $currentStableSignature
-        status = "updated"
-      })
-    } elseif ($isKnownPublishedWithoutBaseline) {
-      $cacheBaselineRebuildCount++
-    } elseif (-not $isPublishedIssueArticle -and ($cachedEntry -or -not $hasExistingGeneratedArticle)) {
-      $changedImportFiles.Add([pscustomobject]@{
-        issueId = $issueId
-        fileName = $file.Name
-        relativePath = $relativePath
-        sourceId = $sourceId
-        stableSignature = $currentStableSignature
-        status = if ($cachedEntry) { "updated" } else { "new" }
-      })
-    } else {
-      $cacheBaselineRebuildCount++
-    }
-
     $validationStartIndex = $validationItems.Count
-    if ($isPublishedArticleChanged) {
-      $validationItems.Add(@{
-        issueId = $issueId
-        file = $file.FullName
-        severity = "warning"
-        type = "published-content-changed"
-        message = "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
-      })
-    }
     if ($null -eq $images) {
       $images = Copy-IssueImages $issueId $issueDir
       $imageIndex.Value = @($images).Count + 1
@@ -2421,13 +2548,15 @@ foreach ($issueDir in $issueDirs) {
         (-not $authorKey -or $paragraphText.Length -gt 64 -or ($paragraphKey -ne $authorKey -and $paragraphAuthorKey -ne $authorKey))
     })
 
-    $slug = Get-Slug $issueId $sourceId $title
+    $publishedSlugForArticle = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "slug") } else { "" }
+    $slug = if ($publishedSlugForArticle) { $publishedSlugForArticle } else { Get-Slug $issueId $sourceId $title }
     if ($seenSlugs.ContainsKey($slug)) {
       $seenSlugs[$slug] += 1
       $slug = "$slug-$($seenSlugs[$slug])"
     } else {
       $seenSlugs[$slug] = 1
     }
+    $hasExistingGeneratedArticle = $existingGeneratedArticleMap.ContainsKey($slug)
 
     $blockWarnings = New-Object System.Collections.Generic.List[string]
     foreach ($warning in $docxContent.Warnings) { $blockWarnings.Add($warning) }
@@ -2504,6 +2633,77 @@ foreach ($issueDir in $issueDirs) {
       tags = $categoryInfo.Tags
       order = $order
     }
+
+    $signature["contentArticleHash"] = Get-ArticleVisibleContentHash $article
+    $currentStableSignature = Get-StableArticleSignature $signature
+    $publishedSlug = if ($publishedBaseline) { [string](Get-ObjectPropertyValue $publishedBaseline "slug") } else { "" }
+    $referenceArticle = if ($isPublishedIssueArticle -and $publishedSlug) {
+      $existingGeneratedArticleMap[$publishedSlug]
+    } elseif ($isPublishedIssueArticle) {
+      $existingGeneratedArticleMap[$slug]
+    } elseif ($cachedEntry -and $cachedEntry.article) {
+      Normalize-CachedArticle $cachedEntry.article
+    } else {
+      $null
+    }
+    $referenceArticleHash = if ($referenceArticle) { Get-ArticleVisibleContentHash $referenceArticle } else { "" }
+    $visibleContentMatches = $referenceArticleHash -and ($referenceArticleHash -eq [string]$signature.contentArticleHash)
+    $referenceMediaSignature = if ($isPublishedIssueArticle) {
+      $publishedBaselineSignature
+    } elseif ($cachedEntry -and $cachedEntry.signature) {
+      Get-StableArticleSignature $cachedEntry.signature
+    } else {
+      ""
+    }
+    $mediaMatches = (-not $referenceMediaSignature) -or (
+      (Get-StableSignatureMediaPart $referenceMediaSignature) -eq [string]$signature.contentMediaHash
+    )
+    $isPublishedArticleChanged = $isPublishedIssueArticle -and (-not $visibleContentMatches -or -not $mediaMatches)
+    $isDraftArticleChanged = (-not $isPublishedIssueArticle) -and $cachedEntry -and (-not $visibleContentMatches -or -not $mediaMatches)
+
+    if ($isPublishedIssueArticle -and -not $isPublishedArticleChanged) {
+      $signature["publishedEquivalentSignature"] = $publishedBaselineSignature
+      $currentStableSignature = Get-StableArticleSignature $signature
+    } elseif ($isPublishedArticleChanged) {
+      $changedImportFiles.Add([pscustomobject]@{
+        issueId = $issueId
+        fileName = $file.Name
+        relativePath = $relativePath
+        sourceId = $sourceId
+        stableSignature = $currentStableSignature
+        status = "updated"
+      })
+      $validationItems.Add(@{
+        issueId = $issueId
+        file = $file.FullName
+        severity = "warning"
+        type = "published-content-changed"
+        message = "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+      })
+    } elseif ($isKnownPublishedWithoutBaseline) {
+      $cacheBaselineRebuildCount++
+    } elseif ($isDraftArticleChanged) {
+      $changedImportFiles.Add([pscustomobject]@{
+        issueId = $issueId
+        fileName = $file.Name
+        relativePath = $relativePath
+        sourceId = $sourceId
+        stableSignature = $currentStableSignature
+        status = "updated"
+      })
+    } elseif (-not $isPublishedIssueArticle -and -not $cachedEntry -and -not $hasExistingGeneratedArticle) {
+      $changedImportFiles.Add([pscustomobject]@{
+        issueId = $issueId
+        fileName = $file.Name
+        relativePath = $relativePath
+        sourceId = $sourceId
+        stableSignature = $currentStableSignature
+        status = "new"
+      })
+    } elseif (-not $isPublishedIssueArticle -and -not $visibleContentMatches) {
+      $cacheBaselineRebuildCount++
+    }
+
     if ($isKnownPublishedWithoutBaseline) {
       Add-PublishedBaselineRepair $issueId $sourceId $currentStableSignature $slug $relativePath
     }
@@ -2579,7 +2779,7 @@ foreach ($article in $articles) {
 }
 
 $duplicateGroups = $articles |
-  Group-Object issueId, title |
+  Group-Object { "$($_.issueId)`0$($_.title)" } |
   Where-Object { $_.Count -gt 1 }
 foreach ($group in $duplicateGroups) {
   $validationItems.Add(@{

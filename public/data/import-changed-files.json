@@ -1,15 +1,63 @@
 {
-  "generatedAt": "2026-08-09T17:11:11.3596536Z",
+  "cacheBaselineRebuilt": 0,
+  "totalChanged": 7,
+  "generatedAt": "2026-09-07T14:48:52.2691529Z",
   "changedFiles": [
     {
-      "issueId": "202608",
-      "fileName": "2608-1編輯小語.docx",
-      "relativePath": "202608/2608-1編輯小語.docx",
-      "sourceId": "2608-1",
-      "stableSignature": "v2|57171d7a3175d89e7dce3f034ec548e26a31c74fd164a1403762f3129e90af32|",
-      "status": "updated"
+      "issueId": "202609",
+      "fileName": "2609-2-1如是我聞20140727.docx",
+      "relativePath": "202609\\2609-2-1如是我聞20140727.docx",
+      "sourceId": "2609-2-1",
+      "stableSignature": "v3|f1fcd4351df9917dae7bfc08946fe5285c118090de6b52f5ecfb3b43c402a95f|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-2-2如是我聞20200518.docx",
+      "relativePath": "202609\\2609-2-2如是我聞20200518.docx",
+      "sourceId": "2609-2-2",
+      "stableSignature": "v3|309600b220bd298826c524c57e416d148cf336a5121c98decbbce417b2dfa5c6|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-2-3如是我聞20260717五晚.docx",
+      "relativePath": "202609\\2609-2-3如是我聞20260717五晚.docx",
+      "sourceId": "2609-2-3",
+      "stableSignature": "v3|254a25b0436acd87e2896cc047c0d42a791ccf6299847721109433dde763b3cc|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-2-4如是我聞20260720一晚.docx",
+      "relativePath": "202609\\2609-2-4如是我聞20260720一晚.docx",
+      "sourceId": "2609-2-4",
+      "stableSignature": "v3|288744f95e78d79df8580ad200501a667aea3df752d35c6212ce6e18f09ba41c|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-2-5如是我聞20260721二早.docx",
+      "relativePath": "202609\\2609-2-5如是我聞20260721二早.docx",
+      "sourceId": "2609-2-5",
+      "stableSignature": "v3|0ee0782cfdb35d487b9223ad264efee7f77c4260122b4ca574241866fc3a95fa|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-2-6如是我聞20260721二晚.docx",
+      "relativePath": "202609\\2609-2-6如是我聞20260721二晚.docx",
+      "sourceId": "2609-2-6",
+      "stableSignature": "v3|8e3746bbc15a68bab92fadbc9d59d854a428736104c7186d534f8bf540ad7f03|",
+      "status": "new"
+    },
+    {
+      "issueId": "202609",
+      "fileName": "2609-3柔弱76.docx",
+      "relativePath": "202609\\2609-3柔弱76.docx",
+      "sourceId": "2609-3",
+      "stableSignature": "v3|3374e7d0c0a8e90b90f9e7826e98222837ab61c055f4b1eb6b9b2bca6ad88a22|",
+      "status": "new"
     }
-  ],
-  "cacheBaselineRebuilt": 9,
-  "totalChanged": 1
+  ]
 }

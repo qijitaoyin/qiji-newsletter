@@ -2,6 +2,121 @@ import type { ReviewItem } from "./review";
 
 export const generatedReviewItems = [
   {
+    "id": "202609::2609-2-3",
+    "category": "如是我・聞",
+    "sourceId": "2609-2-3",
+    "file": "2609-2-3",
+    "image": "",
+    "title": "六根的性能量",
+    "sourceSignature": "",
+    "sourceModified": "",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：如是我・聞",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202609-2609-2-3",
+    "author": "文稿彙整／五晚班",
+    "excerpt": "你每天聞香，卻無法感應，因為你不知道什麼叫頻率；你聽過量子糾纏、疊加態、粒子、觀察者效應，腦袋裝了一堆名詞，就自以為理解宇宙。這些如果沒有回到身體，只會讓你掉進另一個幻想裡。你用一個空相解釋另…",
+    "date": "2026.09.10",
+    "issueId": "202609"
+  },
+  {
+    "id": "202609::2609-2-1",
+    "category": "如是我・聞之一",
+    "sourceId": "2609-2-1",
+    "file": "2609-2-1",
+    "image": "",
+    "title": "周天運轉的能量轉換過程",
+    "sourceSignature": "",
+    "sourceModified": "",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：如是我・聞之一",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202609-2609-2-1",
+    "author": "文稿修潤、楊清雲",
+    "excerpt": "很多人以為練氣功是在練身體，其實練氣功不只是練肌肉、骨骼，更重要的在牽動性情、改變人格，真正練的是心。改變性格，境界自然改變。「道」和「術」不同，動作、方法是術，術所追求的精神意義是道。「道」…",
+    "date": "2026.09.10",
+    "issueId": "202609"
+  },
+  {
+    "id": "202609::2609-2-4",
+    "category": "如是我・聞",
+    "sourceId": "2609-2-4",
+    "file": "2609-2-4",
+    "image": "",
+    "title": "開啟人類新文明",
+    "sourceSignature": "",
+    "sourceModified": "",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：如是我・聞",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202609-2609-2-4",
+    "author": "文稿修潤、一晚班",
+    "excerpt": "我們只是藉著無極，去探索一個千古難題：人到底是什麼？只要你活著，不管做哪一行，最後都會問：「這一切到底為什麼？」事情來到你面前，你就得面對。有些事你知道原因，有些不知道；更麻煩的是，有些事明明…",
+    "date": "2026.09.10",
+    "issueId": "202609"
+  },
+  {
+    "id": "202609::2609-2-5",
+    "category": "如是我・聞",
+    "sourceId": "2609-2-5",
+    "file": "2609-2-5",
+    "image": "",
+    "title": "心能量在靜頻狀態下的鏡面作用",
+    "sourceSignature": "",
+    "sourceModified": "",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：如是我・聞",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202609-2609-2-5",
+    "author": "文稿彙整／二早班",
+    "excerpt": "能量的運轉，是一道順著方向由下往上轉（識空圖），同時另一道順著方向由上往下轉（性空圖），這在形態上稱為「螺旋」。在完整的螺旋體系中，當第一圈開始旋轉時，最後一圈會在同一時間、完全同步地跟著旋轉…",
+    "date": "2026.09.10",
+    "issueId": "202609"
+  },
+  {
+    "id": "202609::2609-2-2",
+    "category": "如是我・聞",
+    "sourceId": "2609-2-2",
+    "file": "2609-2-2",
+    "image": "",
+    "title": "白天當殭屍，晚上做自己",
+    "sourceSignature": "",
+    "sourceModified": "",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：如是我・聞",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202609-2609-2-2",
+    "author": "文稿修潤、李明",
+    "excerpt": "你不要以為自己很了不起，其實你分分秒秒都被綁在現在的生活狀態裡：上班、下班，面對家庭、孩子，如行屍走肉般。其實這是你最大的報應，你還以為沒事。但有事才精彩，不管好事、壞事，至少你在動，有不同的…",
+    "date": "2026.09.10",
+    "issueId": "202609"
+  },
+  {
     "status": "error",
     "image": "",
     "messages": [
