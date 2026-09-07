@@ -232,7 +232,7 @@ const normalizeCategory = (category: string) => {
                     data-url={pathFor(`/articles/${article.slug}/`)}
                     data-frame-url={pathFor(`/review-articles/${article.slug}/?reviewFrame=1`)}
                   >
-                    {article.title}
+                    {normalizeCategory(article.category)}｜{article.title}
                   </option>
                 ))}
               </select>

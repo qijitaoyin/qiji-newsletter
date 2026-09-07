@@ -2616,7 +2616,7 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 .review-live-controls {
   align-items: end;
   border-bottom: 1px solid var(--line);
-  display: none;
+  display: grid;
   gap: 12px;
   grid-template-columns: minmax(0, 1fr) auto;
   padding: 16px;
