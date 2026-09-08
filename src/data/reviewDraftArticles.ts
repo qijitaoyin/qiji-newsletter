@@ -62,7 +62,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿彙整／二早班",
+    "author": "文稿彙整 / 二早班",
     "slug": "202609-2609-2-5",
     "sourceId": "2609-2-5",
     "image": "",
@@ -1145,7 +1145,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿彙整／鄭雅靜",
+    "author": "文稿彙整 / 鄭雅靜",
     "slug": "202609-2609-3",
     "sourceId": "2609-3",
     "image": "",
@@ -1377,7 +1377,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿修潤、一晚班",
+    "author": "文稿修潤 / 一晚班",
     "slug": "202609-2609-2-4",
     "sourceId": "2609-2-4",
     "image": "",
@@ -1877,7 +1877,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿修潤、楊清雲",
+    "author": "文稿修潤 / 楊清雲",
     "slug": "202609-2609-2-1",
     "sourceId": "2609-2-1",
     "image": "",
@@ -2017,7 +2017,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿修潤、李明",
+    "author": "文稿修潤 / 李明",
     "slug": "202609-2609-2-2",
     "sourceId": "2609-2-2",
     "image": "",
@@ -2359,7 +2359,7 @@ export const reviewDraftArticles = [
       }
     ],
     "sourceUrl": "",
-    "author": "文稿彙整／五晚班",
+    "author": "文稿彙整 / 五晚班",
     "slug": "202609-2609-2-3",
     "sourceId": "2609-2-3",
     "image": "",

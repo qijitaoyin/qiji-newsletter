@@ -198,6 +198,9 @@ try {
   if (-not $fixture) { throw "Cannot find the 2609-2-5 regression fixture." }
   $fixturePath = Join-Path $issue609 $fixture.Name
   Copy-Item -LiteralPath $fixture.FullName -Destination $fixturePath
+  $authorFixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202609") -File -Filter "2609-2-1*.docx" | Select-Object -First 1
+  if (-not $authorFixture) { throw "Cannot find the 2609-2-1 author regression fixture." }
+  Copy-Item -LiteralPath $authorFixture.FullName -Destination $issue609
 
   $initial = Invoke-TestImport $sandboxRoot $fixtureRoot
   if (@($initial.changedFiles | Where-Object { $_.issueId -eq "202608" }).Count -ne 0) {
@@ -207,8 +210,23 @@ try {
     throw "Duplicate 2408-4 source ids were matched to the wrong published articles."
   }
   $initial609 = @($initial.changedFiles | Where-Object { $_.issueId -eq "202609" })
-  if ($initial609.Count -ne 1 -or $initial609[0].status -ne "new") {
+  if ($initial609.Count -ne 2 -or @($initial609 | Where-Object { $_.status -ne "new" }).Count -ne 0) {
     throw "A cached article missing from generated data was not reported as new."
+  }
+  $authorDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
+  $authorDraftMatch = [regex]::Match($authorDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
+  if (-not $authorDraftMatch.Success) { throw "Cannot read author regression output." }
+  $authorDraftArticles = @($authorDraftMatch.Groups["json"].Value | ConvertFrom-Json)
+  $authorArticle = $authorDraftArticles | Where-Object { $_.issueId -eq "202609" -and $_.sourceId -eq "2609-2-1" } | Select-Object -First 1
+  $expectedAuthor = (-join @(0x6587, 0x7A3F, 0x4FEE, 0x6F64 | ForEach-Object { [char]$_ })) + " / " + (-join @(0x694A, 0x6E05, 0x96F2 | ForEach-Object { [char]$_ }))
+  $actualAuthor = if ($authorArticle) { [string]$authorArticle.author } else { "" }
+  if (
+    -not $authorArticle -or
+    -not $actualAuthor.Contains($expectedAuthor) -or
+    $actualAuthor -match '[、，,／｜|＆&]' -or
+    $actualAuthor -match '(?<! )/|/(?! )'
+  ) {
+    throw "Author separators were not normalized to slash: $actualAuthor"
   }
   $reviewRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\generatedReview.ts") -Raw -Encoding UTF8
   if ($reviewRaw -match '"type"\s*:\s*"possible-duplicate"') {
@@ -291,6 +309,7 @@ try {
   Write-Host "PASS: distinct article titles are not grouped as duplicates."
   Write-Host "PASS: package metadata noise does not produce a false update."
   Write-Host "PASS: visible paragraph text changes are reported."
+  Write-Host "PASS: author separators are normalized to slash."
 } finally {
   $resolvedTestRoot = [System.IO.Path]::GetFullPath($testRoot)
   if ($resolvedTestRoot.StartsWith($tempBase, [System.StringComparison]::OrdinalIgnoreCase) -and (Test-Path -LiteralPath $resolvedTestRoot)) {

@@ -24,7 +24,7 @@ $generatedReviewPath = Join-Path $Root "src\data\generatedReview.ts"
 $reviewApprovalsPath = Join-Path $Root "review-approvals.json"
 $publishStatePath = Join-Path $Root "src\data\publishState.json"
 $logoPath = "/assets/qiji-logo.png"
-$importCacheVersion = 16
+$importCacheVersion = 17
 $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
@@ -1363,7 +1363,7 @@ function Test-LegacyAuthorLine {
   $value = $Text.Trim()
   if ($value.Length -gt 64) { return $false }
   if ($value -match "[。！？；]$") { return $false }
-  if ($value -match "^(文|整理|撰文|作者|編輯|口述|彙整)[／/：:]") { return $true }
+  if ($value -match "^(文稿修潤|文稿彙整|文字彙整|文稿整理|文|整理|撰文|作者|編輯|口述|彙整)[、，,／/：:]") { return $true }
   if ($value -match "莫仁維|張尊堡|Richard\s+Moh|Bob\s+Chang") { return $true }
   if ($value -match "^[\u4e00-\u9fff](\s+[\u4e00-\u9fff]){1,4}$") { return $true }
   if ($value -match "^[\u4e00-\u9fff]{2,4}([、，,／/\s和與][\u4e00-\u9fff]{2,4}){0,4}$") { return $true }
@@ -1374,30 +1374,37 @@ function Test-LegacyKnownAuthorLine {
   param([string]$Text)
   if (-not (Test-LegacyAuthorLine $Text)) { return $false }
   $value = $Text.Trim()
-  if ($value -match "^(文|整理|撰文|作者|編輯|口述|彙整)[／/：:]") { return $true }
+  if ($value -match "^(文稿修潤|文稿彙整|文字彙整|文稿整理|文|整理|撰文|作者|編輯|口述|彙整)[、，,／/：:]") { return $true }
   if ($value -match "莫仁維|張尊堡|Richard\s+Moh|Bob\s+Chang") { return $true }
   if ($value -match "^[\u4e00-\u9fff]{2,4}([、，,／/\s和與][\u4e00-\u9fff]{2,4}){1,4}$") { return $true }
   return $false
 }
 
+function Normalize-ArticleAuthor {
+  param([string]$Text)
+  if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
+  $value = (($Text -replace "\s+", " ").Trim() -replace "\s*(、|，|,|／|/|｜|\||＆|&)\s*", " / ")
+  return (($value -replace "(?:\s*/\s*){2,}", " / ").Trim())
+}
+
 function Convert-LegacyAuthorLine {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
-  $value = $Text.Trim()
-  if ($value -match "^(文稿彙整|文稿整理|撰文|作者|整理|編輯|口述|文|彙整)\s*[／/]\s*\S+") {
-    return (($value -replace "\s*[／/]\s*", "／") -replace "\s+", " ").Trim()
+  $value = Normalize-ArticleAuthor $Text
+  if ($value -match "^(文稿修潤|文稿彙整|文字彙整|文稿整理|撰文|作者|整理|編輯|口述|文|彙整)\s*/\s*\S+") {
+    return $value
   }
   if ($value -match "^[\u4e00-\u9fff](\s+[\u4e00-\u9fff]){1,4}$") {
     return ($value -replace "\s+", "")
   }
   $nameMatches = [regex]::Matches($value, "[\u4e00-\u9fff]{2,4}") |
     ForEach-Object { $_.Value } |
-    Where-Object { $_ -notin @("翻譯", "作者", "撰文", "整理", "編輯", "口述", "彙整", "文稿彙整", "文稿整理") }
+    Where-Object { $_ -notin @("翻譯", "作者", "撰文", "整理", "編輯", "口述", "彙整", "文稿修潤", "文稿彙整", "文字彙整", "文稿整理") }
   if ($value -match "Richard\s+Moh|Bob\s+Chang|Translated" -and $nameMatches.Count -gt 0) {
-    return (($nameMatches | Select-Object -Unique) -join "、")
+    return (($nameMatches | Select-Object -Unique) -join " / ")
   }
   if ($value -match "^[\u4e00-\u9fff]{2,4}([、，,／/\s和與][\u4e00-\u9fff]{2,4}){1,4}$" -and $nameMatches.Count -gt 0) {
-    return (($nameMatches | Select-Object -Unique) -join "、")
+    return (($nameMatches | Select-Object -Unique) -join " / ")
   }
   return $value
 }
@@ -1463,7 +1470,7 @@ function Parse-LegacyHeader {
         $authorParts.Add((Convert-LegacyAuthorLine $Paragraphs[4]))
         $skip = 5
       }
-      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join "、")
+      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join " / ")
       $result.BodyParagraphs = $Paragraphs | Select-Object -Skip $skip
       return $result
     }
@@ -1477,7 +1484,7 @@ function Parse-LegacyHeader {
       } else {
         $result.BodyParagraphs = $Paragraphs | Select-Object -Skip 3
       }
-      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join "、")
+      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join " / ")
       return $result
     }
     if (
@@ -1514,7 +1521,7 @@ function Parse-LegacyHeader {
         $authorParts.Add((Convert-LegacyAuthorLine $Paragraphs[4]))
         $skip = 5
       }
-      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join "、")
+      $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join " / ")
       $result.BodyParagraphs = $Paragraphs | Select-Object -Skip $skip
       return $result
     }
@@ -1545,7 +1552,7 @@ function Parse-LegacyHeader {
     } else {
       $result.BodyParagraphs = $Paragraphs | Select-Object -Skip 3
     }
-    $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join "、")
+    $result.Author = (($authorParts | Where-Object { $_ } | Select-Object -Unique) -join " / ")
     return $result
   }
 
