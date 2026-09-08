@@ -2330,7 +2330,11 @@ foreach ($issueDir in $issueDirs) {
     $cachedEntry = $cacheMap[[string]$cacheKey]
     $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint $cachedEntry
     $requireStructureSignature = -not (Test-IssueIsAtOrBeforePublicLatest $issueId)
-    if ((Test-CacheSignatureMatch $cachedEntry $signature $requireStructureSignature) -and $cachedEntry.article) {
+    # Always parse the current unpublished issue from the actual DOCX. Cache
+    # signatures can prove that the package is unchanged, but they cannot
+    # prove that an article cached by an older parser interpreted Word styles
+    # correctly. Published archive issues still use the cache for performance.
+    if ((-not $requireStructureSignature) -and (Test-CacheSignatureMatch $cachedEntry $signature $false) -and $cachedEntry.article) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
@@ -2654,7 +2658,7 @@ foreach ($issueDir in $issueDirs) {
       # current DOCX package hash. During the one-time structure upgrade, use
       # the checked-in generated article as the review baseline instead.
       $existingGeneratedArticleMap[$slug]
-    } elseif ($cachedEntry -and $cachedEntry.article) {
+    } elseif ((-not $requireStructureSignature) -and $cachedEntry -and $cachedEntry.article) {
       Normalize-CachedArticle $cachedEntry.article
     } else {
       $null
@@ -2672,7 +2676,7 @@ foreach ($issueDir in $issueDirs) {
       (Get-StableSignatureMediaPart $referenceMediaSignature) -eq [string]$signature.contentMediaHash
     )
     $isPublishedArticleChanged = $isPublishedIssueArticle -and (-not $visibleContentMatches -or -not $mediaMatches)
-    $isDraftArticleChanged = (-not $isPublishedIssueArticle) -and $cachedEntry -and (-not $visibleContentMatches -or -not $mediaMatches)
+    $isDraftArticleChanged = (-not $isPublishedIssueArticle) -and $hasExistingGeneratedArticle -and (-not $visibleContentMatches -or -not $mediaMatches)
 
     if ($isPublishedIssueArticle -and -not $isPublishedArticleChanged) {
       $signature["publishedEquivalentSignature"] = $publishedBaselineSignature
@@ -2704,7 +2708,7 @@ foreach ($issueDir in $issueDirs) {
         stableSignature = $currentStableSignature
         status = "updated"
       })
-    } elseif (-not $isPublishedIssueArticle -and -not $cachedEntry -and -not $hasExistingGeneratedArticle) {
+    } elseif (-not $isPublishedIssueArticle -and -not $hasExistingGeneratedArticle) {
       $changedImportFiles.Add([pscustomobject]@{
         issueId = $issueId
         fileName = $file.Name

@@ -230,6 +230,23 @@ try {
     throw "An unpublished issue reused a stale legacy cache article instead of rebuilding its Word structure."
   }
 
+  # A cache created by the current schema can still contain stale parser
+  # output. The active unpublished issue must not trust that article payload.
+  $currentPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot "202609"
+  $currentCacheRetry = Invoke-TestImport $sandboxRoot $fixtureRoot
+  if ([int]$currentCacheRetry.totalChanged -ne 0) {
+    throw "Reparsing an unchanged unpublished issue reported a false content change."
+  }
+  $currentDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
+  $currentDraftMatch = [regex]::Match($currentDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
+  if (-not $currentDraftMatch.Success) { throw "Cannot read current-cache regression output." }
+  $currentDraftArticles = @($currentDraftMatch.Groups["json"].Value | ConvertFrom-Json)
+  $currentArticle = $currentDraftArticles | Where-Object { $_.issueId -eq "202609" } | Select-Object -First 1
+  $restoredCurrentBlock = $currentArticle.contentBlocks | Where-Object { $_.text -eq $currentPoisonedHeading } | Select-Object -First 1
+  if (-not $restoredCurrentBlock -or $restoredCurrentBlock.type -ne "heading") {
+    throw "An unpublished issue reused stale article output from a current-format cache."
+  }
+
   $mutation = Set-FirstStyledParagraphStyle $fixturePath "Normal"
   $changedToNormal = Invoke-TestImport $sandboxRoot $fixtureRoot
   if ([int]$changedToNormal.totalChanged -ne 1 -or $changedToNormal.changedFiles[0].issueId -ne "202609") {
