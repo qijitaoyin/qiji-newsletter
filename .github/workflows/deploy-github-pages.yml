@@ -68,6 +68,7 @@ jobs:
       AI_ALLOW_PAID_API: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && 'true' || 'false' }}
       AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
+      SYNC_DRIVE_ENABLED: ${{ github.event_name == 'push' || inputs.sync_drive == 'true' }}
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
       PUBLIC_BASE_PATH: /
       PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
@@ -115,7 +116,7 @@ jobs:
           printf '%s' "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
 
       - name: Sync Google Drive source
-        if: ${{ inputs.sync_drive == 'true' && env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
         timeout-minutes: 60
         shell: pwsh
         run: ./scripts/sync_google_drive.ps1 -Destination (Join-Path $env:RUNNER_TEMP "source_articles")
@@ -123,7 +124,7 @@ jobs:
       - name: Generate article data
         shell: pwsh
         run: |
-          if ("${{ inputs.sync_drive }}" -eq "true" -and $env:GOOGLE_DRIVE_REMOTE) {
+          if ($env:SYNC_DRIVE_ENABLED -eq "true" -and $env:GOOGLE_DRIVE_REMOTE) {
             Copy-Item -LiteralPath src/data/generatedArticles.ts -Destination $env:RUNNER_TEMP/generatedArticles.published.ts -Force
             ./scripts/generate_archive.ps1 -SourceRoot (Join-Path $env:RUNNER_TEMP "source_articles")
           } else {
@@ -134,7 +135,7 @@ jobs:
         run: pnpm assets:optimize
 
       - name: Separate review draft from published data
-        if: ${{ inputs.sync_drive == 'true' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.GOOGLE_DRIVE_REMOTE != '' }}
         shell: pwsh
         run: |
           $draft = Get-Content -LiteralPath src/data/generatedArticles.ts -Raw
@@ -150,7 +151,7 @@ jobs:
           }
 
       - name: Generate AI metadata for synced draft
-        if: ${{ inputs.sync_drive == 'true' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' }}
         env:
           AI_ALLOW_PAID_API: "true"
           AI_SOURCE_ROOT: ${{ runner.temp }}/source_articles
@@ -161,7 +162,7 @@ jobs:
         run: pnpm ai:metadata
 
       - name: Persist AI metadata
-        if: ${{ inputs.sync_drive == 'true' || inputs.run_ai == 'true' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' || inputs.run_ai == 'true' }}
         run: |
           if git diff --quiet -- src/data/aiMetadata.json; then
             echo "AI metadata unchanged."
