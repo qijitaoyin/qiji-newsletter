@@ -574,7 +574,11 @@ function Get-FileSignature {
 }
 
 function Test-CacheSignatureMatch {
-  param([object]$Entry, [object]$Signature)
+  param(
+    [object]$Entry,
+    [object]$Signature,
+    [bool]$RequireStructureSignature = $false
+  )
   if (-not $Entry -or -not $Entry.signature) { return $false }
   if (
     [string]$Entry.signature.key -ne [string]$Signature.key -or
@@ -591,6 +595,9 @@ function Test-CacheSignatureMatch {
   }
 
   if ($currentStructureHash -and -not $cachedStructureHash) {
+    if ($RequireStructureSignature) {
+      return $false
+    }
     return (
       [string]$Entry.signature.contentHash -eq [string]$Signature.contentHash -and
       [string]$Entry.signature.length -eq [string]$Signature.length
@@ -2322,7 +2329,8 @@ foreach ($issueDir in $issueDirs) {
     $cacheKey = Get-RelativePath $file.FullName $sourceRoot
     $cachedEntry = $cacheMap[[string]$cacheKey]
     $signature = Get-FileSignature $file $sourceRoot $importCacheVersion $approvalFingerprint $cachedEntry
-    if ((Test-CacheSignatureMatch $cachedEntry $signature) -and $cachedEntry.article) {
+    $requireStructureSignature = -not (Test-IssueIsAtOrBeforePublicLatest $issueId)
+    if ((Test-CacheSignatureMatch $cachedEntry $signature $requireStructureSignature) -and $cachedEntry.article) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
@@ -2640,6 +2648,11 @@ foreach ($issueDir in $issueDirs) {
     $referenceArticle = if ($isPublishedIssueArticle -and $publishedSlug) {
       $existingGeneratedArticleMap[$publishedSlug]
     } elseif ($isPublishedIssueArticle) {
+      $existingGeneratedArticleMap[$slug]
+    } elseif ($requireStructureSignature -and $hasExistingGeneratedArticle) {
+      # Legacy cache entries can contain a stale parsed article paired with a
+      # current DOCX package hash. During the one-time structure upgrade, use
+      # the checked-in generated article as the review baseline instead.
       $existingGeneratedArticleMap[$slug]
     } elseif ($cachedEntry -and $cachedEntry.article) {
       Normalize-CachedArticle $cachedEntry.article

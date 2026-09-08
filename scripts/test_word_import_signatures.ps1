@@ -45,6 +45,22 @@ function Convert-TestCacheToLegacyFormat {
   [System.IO.File]::WriteAllText($cachePath, ($cache | ConvertTo-Json -Depth 20), [System.Text.UTF8Encoding]::new($false))
 }
 
+function Set-TestLegacyCacheHeadingToParagraph {
+  param([string]$Root, [string]$IssueId)
+  $cachePath = Join-Path $Root ".cache\article-import-cache.json"
+  $cache = Get-Content -LiteralPath $cachePath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $entry = @($cache.entries | Where-Object { [string]$_.signature.key -match "^$([regex]::Escape($IssueId))[\\/]" }) | Select-Object -First 1
+  if (-not $entry) { throw "Cannot find cache entry for issue $IssueId." }
+  $block = @($entry.article.contentBlocks | Where-Object { $_.type -eq "heading" }) | Select-Object -First 1
+  if (-not $block) { throw "Cannot find cached heading block for issue $IssueId." }
+  $block.type = "paragraph"
+  if ($block.PSObject.Properties["level"]) {
+    $block.PSObject.Properties.Remove("level")
+  }
+  [System.IO.File]::WriteAllText($cachePath, ($cache | ConvertTo-Json -Depth 20), [System.Text.UTF8Encoding]::new($false))
+  return [string]$block.text
+}
+
 function Remove-TestIssueFromArticleModule {
   param([string]$Path, [string]$ArticleExport, [string]$IssueExport, [string]$IssueId)
   $source = Get-Content -LiteralPath $Path -Raw -Encoding UTF8
@@ -199,9 +215,19 @@ try {
     throw "Distinct article titles were collapsed into one duplicate group."
   }
   Convert-TestCacheToLegacyFormat $sandboxRoot
+  $legacyPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot "202609"
   $unchanged = Invoke-TestImport $sandboxRoot $fixtureRoot
   if ([int]$unchanged.totalChanged -ne 0) {
     throw "Unchanged import reported changes: $($unchanged.changedFiles.fileName -join ', ')"
+  }
+  $legacyDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
+  $legacyDraftMatch = [regex]::Match($legacyDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
+  if (-not $legacyDraftMatch.Success) { throw "Cannot read legacy-cache regression output." }
+  $legacyDraftArticles = @($legacyDraftMatch.Groups["json"].Value | ConvertFrom-Json)
+  $legacyArticle = $legacyDraftArticles | Where-Object { $_.issueId -eq "202609" } | Select-Object -First 1
+  $restoredLegacyBlock = $legacyArticle.contentBlocks | Where-Object { $_.text -eq $legacyPoisonedHeading } | Select-Object -First 1
+  if (-not $restoredLegacyBlock -or $restoredLegacyBlock.type -ne "heading") {
+    throw "An unpublished issue reused a stale legacy cache article instead of rebuilding its Word structure."
   }
 
   $mutation = Set-FirstStyledParagraphStyle $fixturePath "Normal"
@@ -239,6 +265,7 @@ try {
   }
 
   Write-Host "PASS: unchanged documents produce zero updates."
+  Write-Host "PASS: stale legacy cache is rebuilt for unpublished issues."
   Write-Host "PASS: cached articles missing from generated data are reported as new."
   Write-Host "PASS: paragraph style changes invalidate the import cache."
   Write-Host "PASS: restoring Title/Heading style renders a heading."
