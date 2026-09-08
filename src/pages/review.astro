@@ -679,7 +679,8 @@ const normalizeCategory = (category: string) => {
       })),
       reviewColumnSuggestions,
       reviewKeywordSuggestions,
-      importChangeReportUrl: pathFor("/data/import-changed-files.json")
+      importChangeReportUrl: pathFor("/data/import-changed-files.json"),
+      reportApiUrl: pathFor("/api/review-reports")
     }}>
       const storageKey = "qiji-review-approvals";
       const countNode = document.querySelector("[data-approval-count]");
@@ -693,6 +694,9 @@ const normalizeCategory = (category: string) => {
       const copyButton = document.querySelector("[data-copy-approvals]");
       const clearButton = document.querySelector("[data-clear-approvals]");
       const reportStorageKey = "qiji-review-reports-v1";
+      let reportsCache = [];
+      let reportSyncError = "";
+      let reportsLoaded = false;
       const reportBoard = document.querySelector("[data-report-board]");
       const reportCountNode = document.querySelector("[data-report-count]");
       const reportDoneCountNode = document.querySelector("[data-report-done-count]");
@@ -887,7 +891,7 @@ const normalizeCategory = (category: string) => {
         renderImportChangeReport(await response.json());
       };
 
-      const readReports = () => {
+      const readLegacyReports = () => {
         try {
           const parsed = JSON.parse(window.localStorage.getItem(reportStorageKey) || "[]");
           return Array.isArray(parsed) ? parsed : [];
@@ -896,8 +900,72 @@ const normalizeCategory = (category: string) => {
         }
       };
 
-      const writeReports = (reports) => {
-        window.localStorage.setItem(reportStorageKey, JSON.stringify(reports));
+      const readReports = () => reportsCache;
+
+      const reportRequest = async (method, body) => {
+        const response = await fetch(reportApiUrl, {
+          method,
+          cache: "no-store",
+          headers: {
+            "content-type": "application/json",
+            "x-qiji-review": "1"
+          },
+          body: body ? JSON.stringify(body) : undefined
+        });
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          const message = response.status === 413
+            ? "截圖檔案過大，請縮小後再送出"
+            : "共用修正意見儲存失敗，請稍後再試";
+          throw new Error(message);
+        }
+        return payload;
+      };
+
+      const createSharedReport = async (report) => {
+        const payload = await reportRequest("POST", { report });
+        return payload.report || report;
+      };
+
+      const updateSharedReport = async (report) => {
+        const payload = await reportRequest("PATCH", { report });
+        return payload.report || report;
+      };
+
+      const deleteSharedReport = (id) => reportRequest("DELETE", { id });
+      const clearSharedReports = () => reportRequest("DELETE", { issueId: currentReviewIssueId, all: true });
+
+      const loadSharedReports = async () => {
+        const response = await fetch(`${reportApiUrl}?issueId=${encodeURIComponent(currentReviewIssueId)}&t=${Date.now()}`, {
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error(`Review reports ${response.status}`);
+        const payload = await response.json();
+        const remoteReports = Array.isArray(payload.reports) ? payload.reports : [];
+        const remoteIds = new Set(remoteReports.map((report) => report.id));
+        const allLegacyReports = readLegacyReports();
+        const legacyIssueId = (report) =>
+          String(report.issueId || report.articleSlug || "").match(/^20\d{4}/)?.[0] || "";
+        const legacyReports = allLegacyReports.filter(
+          (report) => legacyIssueId(report) === currentReviewIssueId && !remoteIds.has(report.id)
+        );
+        const migratedReports = [];
+        for (const legacy of legacyReports) {
+          migratedReports.push(await createSharedReport({ ...legacy, issueId: currentReviewIssueId }));
+        }
+        if (legacyReports.length) {
+          const migratedIds = new Set(legacyReports.map((report) => report.id));
+          const remainingLegacy = allLegacyReports.filter((report) => !migratedIds.has(report.id));
+          if (remainingLegacy.length) {
+            window.localStorage.setItem(reportStorageKey, JSON.stringify(remainingLegacy));
+          } else {
+            window.localStorage.removeItem(reportStorageKey);
+          }
+        }
+        reportsCache = [...remoteReports, ...migratedReports].sort((a, b) =>
+          String(a.createdAt || "").localeCompare(String(b.createdAt || ""))
+        );
+        reportsLoaded = true;
       };
 
       const escapeHtml = (value = "") =>
@@ -1297,7 +1365,10 @@ const normalizeCategory = (category: string) => {
         if (reportDoneCountNode) reportDoneCountNode.textContent = String(doneCount);
 
         if (reportBoard) {
-          reportBoard.innerHTML = groupedReportsHtml(reports);
+          const errorHtml = reportSyncError
+            ? `<p class="review-empty-state">${escapeHtml(reportSyncError)}</p>`
+            : "";
+          reportBoard.innerHTML = errorHtml + groupedReportsHtml(reports);
         }
 
         const activeSlug = currentArticle?.slug || liveArticleSelect?.value || "";
@@ -1312,19 +1383,27 @@ const normalizeCategory = (category: string) => {
           const payload = buildPublishPayload();
           publishPreviewNode.textContent = JSON.stringify(payload, null, 2);
           if (submitPublishButton) {
-            submitPublishButton.disabled = payload.openReports.length > 0;
-            submitPublishButton.title = payload.openReports.length
-              ? "Finish all open review reports before publishing."
-              : "";
+            submitPublishButton.disabled = !reportsLoaded || Boolean(reportSyncError) || payload.openReports.length > 0;
+            submitPublishButton.title = !reportsLoaded
+              ? "正在讀取共用修正意見"
+              : reportSyncError
+                ? "共用修正意見讀取失敗"
+                : payload.openReports.length
+                  ? "Finish all open review reports before publishing."
+                  : "";
           }
           if (publishStatusNode) {
             const quoteCount = Object.keys(payload.metadataOverrides.quotes).length;
             const summaryCount = Object.keys(payload.metadataOverrides.summaries).length;
             const categoryCount = Object.keys(payload.metadataOverrides.categories).length;
             const tagCount = Object.keys(payload.metadataOverrides.tags).length;
-            publishStatusNode.innerHTML = payload.openReports.length
-              ? `&#36996;&#26377; <strong>${payload.openReports.length}</strong> &#21063;&#24453;&#36774;&#23578;&#26410;&#23436;&#25104;&#65307;&#23436;&#25104;&#24460;&#25165;&#33021;&#27491;&#24335;&#30332;&#24067;&#12290;`
-              : `&#24453;&#36774;&#24050;&#23436;&#25104;&#65307;&#21487;&#36865;&#20986;&#27491;&#24335;&#30332;&#24067;&#12290;&#24050;&#23436;&#25104; <strong>${payload.reports.length}</strong> &#21063;&#22238;&#22577;&#65292;&#21547; <strong>${quoteCount}</strong> &#21063;&#37329;&#21477;&#12289;<strong>${summaryCount}</strong> &#21063;&#25688;&#35201;&#12289;<strong>${categoryCount}</strong> &#21063;&#23560;&#27396;&#12289;<strong>${tagCount}</strong> &#21063;&#38364;&#37749;&#23383;&#20462;&#27491;&#12290;`;
+            publishStatusNode.innerHTML = !reportsLoaded
+              ? "正在讀取共用修正意見…"
+              : reportSyncError
+                ? escapeHtml(reportSyncError)
+                : payload.openReports.length
+                  ? `&#36996;&#26377; <strong>${payload.openReports.length}</strong> &#21063;&#24453;&#36774;&#23578;&#26410;&#23436;&#25104;&#65307;&#23436;&#25104;&#24460;&#25165;&#33021;&#27491;&#24335;&#30332;&#24067;&#12290;`
+                  : `&#24453;&#36774;&#24050;&#23436;&#25104;&#65307;&#21487;&#36865;&#20986;&#27491;&#24335;&#30332;&#24067;&#12290;&#24050;&#23436;&#25104; <strong>${payload.reports.length}</strong> &#21063;&#22238;&#22577;&#65292;&#21547; <strong>${quoteCount}</strong> &#21063;&#37329;&#21477;&#12289;<strong>${summaryCount}</strong> &#21063;&#25688;&#35201;&#12289;<strong>${categoryCount}</strong> &#21063;&#23560;&#27396;&#12289;<strong>${tagCount}</strong> &#21063;&#38364;&#37749;&#23383;&#20462;&#27491;&#12290;`;
           }
         }
       };
@@ -2141,7 +2220,7 @@ const normalizeCategory = (category: string) => {
           }
         });
 
-        form.addEventListener("submit", (event) => {
+        form.addEventListener("submit", async (event) => {
           event.preventDefault();
           const formData = new FormData(form);
           const selectedArticle = currentArticle?.slug
@@ -2166,6 +2245,7 @@ const normalizeCategory = (category: string) => {
             articleCategory: selectedArticle.category,
             articleAuthor: selectedArticle.author,
             articleUrl: selectedArticle.url,
+            issueId: currentReviewIssueId,
             viewport: String(formData.get("viewport") || activeViewportLabel()).trim(),
             comment: String(formData.get("comment") || "").trim(),
             screenshot,
@@ -2203,24 +2283,40 @@ const normalizeCategory = (category: string) => {
             if (result) result.textContent = "請填寫修正意見或任一網站資料修正欄位";
             return;
           }
-          const reports = readReports();
-          reports.push(report);
-          writeReports(reports);
-          form.reset();
-          clearScreenshotOnForm(form);
-          syncLiveArticle(selectedSlug);
-          const result = form.querySelector("[data-report-result]");
-          if (result) {
-            result.textContent = "已加入待辦清單";
-            window.setTimeout(() => {
-              result.textContent = "";
-            }, 2400);
+          if (!reportsLoaded) {
+            const result = form.querySelector("[data-report-result]");
+            if (result) result.textContent = "正在讀取共用修正意見，請稍候再送出";
+            return;
           }
-          renderReports();
+          const result = form.querySelector("[data-report-result]");
+          const submitButton = form.querySelector('button[type="submit"]');
+          if (JSON.stringify(report).length > 1_500_000) {
+            if (result) result.textContent = "截圖檔案過大，請縮小後再送出";
+            return;
+          }
+          if (submitButton) submitButton.disabled = true;
+          try {
+            const savedReport = await createSharedReport(report);
+            reportsCache.push(savedReport);
+            form.reset();
+            clearScreenshotOnForm(form);
+            syncLiveArticle(selectedSlug);
+            if (result) {
+              result.textContent = "已儲存，所有校對人員都能看到";
+              window.setTimeout(() => {
+                result.textContent = "";
+              }, 3000);
+            }
+            renderReports();
+          } catch (error) {
+            if (result) result.textContent = error.message || "共用修正意見儲存失敗，請稍後再試";
+          } finally {
+            if (submitButton) submitButton.disabled = false;
+          }
         });
       });
 
-      reportBoard?.addEventListener("click", (event) => {
+      reportBoard?.addEventListener("click", async (event) => {
         const nextButton = event.target.closest("[data-report-next]");
         const removeButton = event.target.closest("[data-report-remove]");
         const metadataAcceptButton = event.target.closest("[data-report-metadata-accept]");
@@ -2262,11 +2358,23 @@ const normalizeCategory = (category: string) => {
                     }
                 : report
             );
-        writeReports(next);
-        if (metadataAcceptButton || metadataRejectButton) {
-          refreshReviewFramesForArticle(changedReport?.articleSlug || "");
+        try {
+          if (removeButton) {
+            await deleteSharedReport(id);
+          } else {
+            const updatedReport = next.find((report) => report.id === id);
+            await updateSharedReport(updatedReport);
+          }
+          reportsCache = next;
+          reportSyncError = "";
+          if (metadataAcceptButton || metadataRejectButton) {
+            refreshReviewFramesForArticle(changedReport?.articleSlug || "");
+          }
+          renderReports();
+        } catch (error) {
+          reportSyncError = error.message || "共用修正意見更新失敗，請稍後再試";
+          renderReports();
         }
-        renderReports();
       });
 
       submitPublishButton?.addEventListener("click", async () => {
@@ -2452,9 +2560,20 @@ const normalizeCategory = (category: string) => {
         }
       });
 
-      clearReportsButton?.addEventListener("click", () => {
-        writeReports([]);
-        renderReports();
+      clearReportsButton?.addEventListener("click", async () => {
+        if (!window.confirm("確定要清空本期所有人的修正意見嗎？")) return;
+        clearReportsButton.disabled = true;
+        try {
+          await clearSharedReports();
+          reportsCache = [];
+          reportSyncError = "";
+          renderReports();
+        } catch (error) {
+          reportSyncError = error.message || "無法清空共用修正意見";
+          renderReports();
+        } finally {
+          clearReportsButton.disabled = false;
+        }
       });
 
       const mobileReviewQuery = window.matchMedia("(max-width: 680px)");
@@ -2466,6 +2585,16 @@ const normalizeCategory = (category: string) => {
       syncLiveViewport(mobileReviewQuery.matches ? "mobile" : "desktop");
       mobileReviewQuery.addEventListener?.("change", applyMobileReviewMode);
       renderReports();
+      loadSharedReports()
+        .then(() => {
+          reportSyncError = "";
+          renderReports();
+        })
+        .catch((error) => {
+          reportSyncError = "無法讀取共用修正意見，請重新整理後再試";
+          console.error(error);
+          renderReports();
+        });
       renderApprovals();
       window.setTimeout(resizeLiveFrames, 250);
     </script>
