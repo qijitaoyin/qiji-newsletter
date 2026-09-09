@@ -54,6 +54,11 @@ concurrency:
 
 jobs:
   build:
+    # The review webhook first commits the confirmation, then dispatches this
+    # workflow with the full payload. Do not deploy that intermediate commit:
+    # it would queue behind the dispatched run, use a stale checkout, and race
+    # with the metadata/publish commits created by the dispatched run.
+    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Update review publish confirmation') }}
     runs-on: ubuntu-latest
     env:
       RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
