@@ -1293,6 +1293,10 @@ function Get-Slug {
 
 function Get-CategoryInfo {
   param([string]$Title)
+  if ($Title -match "如是我[\s　.．・·•、]*聞") {
+    $rule = $categoryRules | Where-Object { $_.Category -eq "如是我聞" } | Select-Object -First 1
+    return @{ Category = $rule.Category; Tags = $rule.Tags }
+  }
   foreach ($rule in $categoryRules) {
     if ($Title -match $rule.Pattern) {
       return @{ Category = $rule.Category; Tags = $rule.Tags }
@@ -1385,6 +1389,17 @@ function Normalize-ArticleAuthor {
   if ([string]::IsNullOrWhiteSpace($Text)) { return "" }
   $value = (($Text -replace "\s+", " ").Trim() -replace "\s*(、|，|,|／|/|｜|\||＆|&)\s*", " / ")
   return (($value -replace "(?:\s*/\s*){2,}", " / ").Trim())
+}
+
+function Resolve-CategoryInfo {
+  param([object]$CategoryInfo)
+  $rawCategory = ([string]$CategoryInfo.Category).Trim()
+  if (-not $rawCategory) { return $CategoryInfo }
+  $matched = Get-CategoryInfo $rawCategory
+  if ($matched.Category -ne "專欄文章" -or $rawCategory -eq "專欄文章") {
+    return $matched
+  }
+  return $CategoryInfo
 }
 
 function Convert-LegacyAuthorLine {
@@ -2531,6 +2546,7 @@ foreach ($issueDir in $issueDirs) {
         Tags = @($correctedCategory)
       }
     }
+    $categoryInfo = Resolve-CategoryInfo $categoryInfo
     $author = $headerAuthor
     if (-not $template.HasTemplate) {
       foreach ($p in $paragraphs | Select-Object -First 5) {
@@ -2747,6 +2763,14 @@ foreach ($issueDir in $issueDirs) {
   for ($i = 0; $i -lt $orderedIssueArticles.Count; $i++) {
     $orderedIssueArticles[$i]["order"] = $i
     $articles.Add($orderedIssueArticles[$i])
+  }
+}
+
+foreach ($article in $articles) {
+  if ([string]$article.category -match "如是我[\s　.．・·•、]*聞") {
+    $article["category"] = "如是我聞"
+    $otherTags = @($article.tags | Where-Object { [string]$_ -notmatch "如是我[\s　.．・·•、]*聞" })
+    $article["tags"] = @(@("如是我聞") + $otherTags | Select-Object -Unique)
   }
 }
 

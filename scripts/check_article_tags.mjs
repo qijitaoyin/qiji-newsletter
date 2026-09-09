@@ -15,6 +15,7 @@ const compact = (value = "") =>
     .toLowerCase();
 
 const errors = [];
+const canonicalRushiCategory = "如是我聞";
 const excluded = new Set((vocabulary.excludedTags || []).map(compact));
 const categories = new Set((vocabulary.categoryTags || []).map(compact));
 const keywordLabels = (vocabulary.keywordTags || []).map((rule) => rule.label);
@@ -54,6 +55,12 @@ const builtIndexPath = path.join(root, "dist/data/article-index.json");
 if (fs.existsSync(builtIndexPath)) {
   const builtIndex = JSON.parse(fs.readFileSync(builtIndexPath, "utf8"));
   for (const article of builtIndex.articles || []) {
+    if (
+      compact(article.category).startsWith(compact(canonicalRushiCategory)) &&
+      article.category !== canonicalRushiCategory
+    ) {
+      errors.push(`${article.slug} contains non-canonical category: ${article.category}`);
+    }
     const tags = Array.isArray(article.tags) ? article.tags : [];
     if (tags.length > (vocabulary.maxTagsPerArticle ?? 6)) {
       errors.push(`${article.slug} has too many published tags: ${tags.length}`);

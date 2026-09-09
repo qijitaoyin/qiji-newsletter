@@ -575,10 +575,14 @@ const withAutoTags = (article: Article): Article => {
 };
 
 const withEditorialCategory = (article: Article): Article => {
-  const category = (editorialOverrides as { categories?: Record<string, string> }).categories?.[
+  const overrideCategory = (editorialOverrides as { categories?: Record<string, string> }).categories?.[
     article.slug
   ]?.trim();
-  return category ? { ...article, category } : article;
+  const category = overrideCategory || article.category;
+  const canonicalCategory = normalizeLabel(category).startsWith(normalizeLabel("如是我聞"))
+    ? "如是我聞"
+    : category;
+  return canonicalCategory !== article.category ? { ...article, category: canonicalCategory } : article;
 };
 
 const hasLocalPublicAsset = (src = "") => {
