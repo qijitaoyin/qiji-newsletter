@@ -1,1 +1,183 @@
-{"sourceOrigin":"https://newsletter.qiji.org.tw","status":"ready-to-publish","generatedAt":"2026-09-11T05:29:33.849Z","issueId":"202609","reports":[],"openReports":[],"metadataOverrides":{"quotes":{},"summaries":{},"categories":{},"tags":{}}}
+{
+  "sourceOrigin": "https://newsletter.qiji.org.tw",
+  "status": "ready-to-publish",
+  "generatedAt": "2026-09-11T11:52:41.6573699Z",
+  "issueId": "202609",
+  "reports": [
+    {
+      "id": "1788872115089-3460e4f2daf8d8",
+      "articleSlug": "202609-2609-2-1",
+      "articleTitle": "周天運轉的能量轉換過程",
+      "articleCategory": "如是我・聞之一",
+      "articleAuthor": "文稿修潤、楊清雲",
+      "articleUrl": "/articles/202609-2609-2-1/",
+      "viewport": "手機版",
+      "comment": "文稿修潤/楊清雲（/ 代替），每一篇文章都要改。",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-09-08T12:55:15.089Z",
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:09.968Z"
+    },
+    {
+      "id": "1788872496218-5210611d5f9f1",
+      "articleSlug": "202609-2609-1",
+      "articleTitle": "靜待繁華落盡時",
+      "articleCategory": "編輯小語",
+      "articleAuthor": "編輯部",
+      "articleUrl": "/articles/202609-2609-1/",
+      "viewport": "電腦版",
+      "comment": "",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "open",
+      "createdAt": "2026-09-08T13:01:36.218Z",
+      "originalMetadata": {
+        "quote": "須待繁花落盡時，真功夫可以無限複製在每個人身上。",
+        "summary": "本期導讀以末世之感開篇，強調在變動世界中讓心成為鏡子，從身體覺醒之路引動能量躍遷，不被「識」奪境，方能開創人類新文明。",
+        "category": "編輯小語",
+        "tags": [
+          "覺醒",
+          "周天",
+          "維度",
+          "AI時代",
+          "生命修煉"
+        ]
+      },
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:08.595Z",
+      "metadataDecisions": {
+        "quote": "accepted"
+      },
+      "metadataUpdatedAt": "2026-09-11T01:49:23.549Z",
+      "quote": "再高明的心法做法，如果不能成為自己，也只是繁花一現，秀而不實，終是一場空"
+    },
+    {
+      "id": "1788872919893-962165ca129c5",
+      "articleSlug": "202609-2609-2-1",
+      "articleTitle": "周天運轉的能量轉換過程",
+      "articleCategory": "如是我・聞之一",
+      "articleAuthor": "文稿修潤、楊清雲",
+      "articleUrl": "/articles/202609-2609-2-1/",
+      "viewport": "手機版",
+      "comment": "文稿修潤、楊清雲，「、」改「/」",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-09-08T13:08:39.893Z",
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:10.206Z"
+    },
+    {
+      "id": "1788873353687-245a1e96bf6388",
+      "articleSlug": "202609-2609-2-1",
+      "articleTitle": "周天運轉的能量轉換過程",
+      "articleCategory": "如是我・聞之一",
+      "articleAuthor": "文稿修潤、楊清雲",
+      "articleUrl": "/articles/202609-2609-2-1/",
+      "viewport": "電腦版",
+      "comment": "文稿修潤、楊清雲，請改為：文稿修潤／楊清雲。以下各篇皆如此。",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-09-08T13:15:53.687Z",
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:08.924Z"
+    },
+    {
+      "id": "1788876240757-606282002dd65",
+      "articleSlug": "202609-2609-2-2",
+      "articleTitle": "白天當殭屍，晚上做自己",
+      "articleCategory": "如是我・聞",
+      "articleAuthor": "文稿修潤、李明",
+      "articleUrl": "/articles/202609-2609-2-2/",
+      "viewport": "電腦版",
+      "comment": "作者請如上文例，改成「文稿修潤／李明」",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-09-08T14:04:00.757Z",
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:09.167Z"
+    },
+    {
+      "id": "1788881542894-65d7369a30c498",
+      "articleSlug": "202609-2609-2-3",
+      "articleTitle": "六根的性能量",
+      "articleCategory": "如是我・聞",
+      "articleAuthor": "文稿彙整／五晚班",
+      "articleUrl": "/articles/202609-2609-2-3/",
+      "viewport": "電腦版",
+      "comment": "",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "open",
+      "createdAt": "2026-09-08T15:32:22.894Z",
+      "originalMetadata": {
+        "quote": "你連自己的肝都看不見，卻說你看見人生、看見未來、看見別人的問題，其實你只是看見自己的想法。",
+        "summary": "從六根自性談性能量覺醒，批判知識空相，強調身體沉思與感知解析度的提升，以體能量轉化性能量，突破認知界樁。",
+        "category": "如是我・聞",
+        "tags": [
+          "頻率",
+          "身體感知",
+          "覺醒",
+          "生命修煉",
+          "日常實修"
+        ]
+      },
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:09.438Z",
+      "metadataDecisions": {
+        "summary": "accepted"
+      },
+      "metadataUpdatedAt": "2026-09-11T01:49:57.085Z",
+      "summary": "從六根自性談性能量覺醒，批判徒有知識卻無法落實創造，強調身體沉思與感知解析度的提升，以體能量轉化性能量，突破認知界樁。"
+    },
+    {
+      "id": "1788882953668-4cf888ab1d281",
+      "articleSlug": "202609-2609-2-5",
+      "articleTitle": "心能量在靜頻狀態下的鏡面作用",
+      "articleCategory": "如是我・聞",
+      "articleAuthor": "文稿彙整／二早班",
+      "articleUrl": "/articles/202609-2609-2-5/",
+      "viewport": "電腦版",
+      "comment": "",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "open",
+      "createdAt": "2026-09-08T15:55:53.668Z",
+      "originalMetadata": {
+        "quote": "螺旋是有維度的：颱風是一種低維度的物質螺旋，DNA是更高端的抽象雙股螺旋，宇宙全部都是螺旋狀。",
+        "summary": "闡述螺旋與糾纏態為宇宙能量運轉核心，強調覺性超越AI算力，並以靜頻鏡面結合元神性光，開啟覺性文明之修煉路徑。",
+        "category": "如是我・聞",
+        "tags": [
+          "覺醒",
+          "頻率",
+          "維度",
+          "周天",
+          "靈魂修煉"
+        ]
+      },
+      "issueId": "202609",
+      "updatedAt": "2026-09-11T11:51:09.701Z",
+      "metadataDecisions": {
+        "quote": "accepted"
+      },
+      "metadataUpdatedAt": "2026-09-11T01:49:59.419Z",
+      "quote": "意即元神，當元神與六根在自性裡投影出的心融合時稱為「靜頻」。靜頻如一面雙面鏡，向上這面迎接收集來自天空的性光。性光往下照，會射穿背面的黑暗，釋放被識神禁錮的靈魂。"
+    }
+  ],
+  "openReports": [],
+  "metadataOverrides": {
+    "quotes": {
+      "202609-2609-1": "再高明的心法做法，如果不能成為自己，也只是繁花一現，秀而不實，終是一場空",
+      "202609-2609-2-5": "意即元神，當元神與六根在自性裡投影出的心融合時稱為「靜頻」。靜頻如一面雙面鏡，向上這面迎接收集來自天空的性光。性光往下照，會射穿背面的黑暗，釋放被識神禁錮的靈魂。"
+    },
+    "summaries": {
+      "202609-2609-2-3": "從六根自性談性能量覺醒，批判徒有知識卻無法落實創造，強調身體沉思與感知解析度的提升，以體能量轉化性能量，突破認知界樁。"
+    },
+    "categories": {},
+    "tags": {}
+  }
+}
