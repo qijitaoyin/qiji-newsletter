@@ -1,7 +1,7 @@
 {
   "publicLatestIssueId": "202609",
   "reviewIssueId": "202609",
-  "publishedAt": "2026-09-09T22:20:04.0599593Z",
+  "publishedAt": "2026-09-11T05:37:07.3857322Z",
   "publishedIssues": {
     "202608": {
       "issueId": "202608",
@@ -6720,6 +6720,125 @@
           "signature": "v2|5db70153028d9697424b1b050efd3b8b50161c0d80d616d23febb9e87887e88a|",
           "slug": "202107-2107-9",
           "baselineRepairedAt": "2026-08-09T11:47:02.3341883Z"
+        }
+      }
+    },
+    "202609": {
+      "issueId": "202609",
+      "publishedAt": "09/09/2026 22:20:04",
+      "baselineRepairedAt": "2026-09-11T05:36:52.3083195Z",
+      "articles": {
+        "2609-1::7b92a5977abe6228": {
+          "sourceId": "2609-1",
+          "pathHash": "7b92a5977abe6228",
+          "signature": "v3|89b157be6462d49c570528eef1bbd289e30e1593360e2d055abc94d07f4db509|",
+          "slug": "202609-2609-1",
+          "baselineRepairedAt": "2026-09-11T05:36:52.3169385Z"
+        },
+        "2609-2-1::afa3689da5268fc6": {
+          "sourceId": "2609-2-1",
+          "pathHash": "afa3689da5268fc6",
+          "signature": "v3|8a86a4e40239d2b6d0c0f1c0dac45da3e6f01ea726609f1ab324053fda9b95ba|",
+          "slug": "202609-2609-2-1",
+          "baselineRepairedAt": "2026-09-11T05:36:52.338325Z"
+        },
+        "2609-2-2::b443d44e9e7ea5f6": {
+          "sourceId": "2609-2-2",
+          "pathHash": "b443d44e9e7ea5f6",
+          "signature": "v3|309600b220bd298826c524c57e416d148cf336a5121c98decbbce417b2dfa5c6|",
+          "slug": "202609-2609-2-2",
+          "baselineRepairedAt": "2026-09-11T05:36:52.3695788Z"
+        },
+        "2609-2-3::2d827a0edd9df875": {
+          "sourceId": "2609-2-3",
+          "pathHash": "2d827a0edd9df875",
+          "signature": "v3|254a25b0436acd87e2896cc047c0d42a791ccf6299847721109433dde763b3cc|",
+          "slug": "202609-2609-2-3",
+          "baselineRepairedAt": "2026-09-11T05:36:52.4175869Z"
+        },
+        "2609-2-4::9a21991bb3eb292d": {
+          "sourceId": "2609-2-4",
+          "pathHash": "9a21991bb3eb292d",
+          "signature": "v3|288744f95e78d79df8580ad200501a667aea3df752d35c6212ce6e18f09ba41c|",
+          "slug": "202609-2609-2-4",
+          "baselineRepairedAt": "2026-09-11T05:36:52.5254224Z"
+        },
+        "2609-2-5::673b10006e68a4cd": {
+          "sourceId": "2609-2-5",
+          "pathHash": "673b10006e68a4cd",
+          "signature": "v3|0ee0782cfdb35d487b9223ad264efee7f77c4260122b4ca574241866fc3a95fa|",
+          "slug": "202609-2609-2-5",
+          "baselineRepairedAt": "2026-09-11T05:36:52.5704015Z"
+        },
+        "2609-2-6::c7049153cec4c796": {
+          "sourceId": "2609-2-6",
+          "pathHash": "c7049153cec4c796",
+          "signature": "v3|8e3746bbc15a68bab92fadbc9d59d854a428736104c7186d534f8bf540ad7f03|",
+          "slug": "202609-2609-2-6",
+          "baselineRepairedAt": "2026-09-11T05:36:52.6297667Z"
+        },
+        "2609-3::7cb7d62e38e50598": {
+          "sourceId": "2609-3",
+          "pathHash": "7cb7d62e38e50598",
+          "signature": "v3|3374e7d0c0a8e90b90f9e7826e98222837ab61c055f4b1eb6b9b2bca6ad88a22|",
+          "slug": "202609-2609-3",
+          "baselineRepairedAt": "2026-09-11T05:36:52.6494089Z"
+        },
+        "2609-1": {
+          "sourceId": "2609-1",
+          "pathHash": "",
+          "signature": "v3|89b157be6462d49c570528eef1bbd289e30e1593360e2d055abc94d07f4db509|",
+          "slug": "202609-2609-1",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8660981Z"
+        },
+        "2609-2-1": {
+          "sourceId": "2609-2-1",
+          "pathHash": "",
+          "signature": "v3|8a86a4e40239d2b6d0c0f1c0dac45da3e6f01ea726609f1ab324053fda9b95ba|",
+          "slug": "202609-2609-2-1",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8665551Z"
+        },
+        "2609-2-2": {
+          "sourceId": "2609-2-2",
+          "pathHash": "",
+          "signature": "v3|309600b220bd298826c524c57e416d148cf336a5121c98decbbce417b2dfa5c6|",
+          "slug": "202609-2609-2-2",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8668473Z"
+        },
+        "2609-2-3": {
+          "sourceId": "2609-2-3",
+          "pathHash": "",
+          "signature": "v3|254a25b0436acd87e2896cc047c0d42a791ccf6299847721109433dde763b3cc|",
+          "slug": "202609-2609-2-3",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8671108Z"
+        },
+        "2609-2-4": {
+          "sourceId": "2609-2-4",
+          "pathHash": "",
+          "signature": "v3|288744f95e78d79df8580ad200501a667aea3df752d35c6212ce6e18f09ba41c|",
+          "slug": "202609-2609-2-4",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8674085Z"
+        },
+        "2609-2-5": {
+          "sourceId": "2609-2-5",
+          "pathHash": "",
+          "signature": "v3|0ee0782cfdb35d487b9223ad264efee7f77c4260122b4ca574241866fc3a95fa|",
+          "slug": "202609-2609-2-5",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8676362Z"
+        },
+        "2609-2-6": {
+          "sourceId": "2609-2-6",
+          "pathHash": "",
+          "signature": "v3|8e3746bbc15a68bab92fadbc9d59d854a428736104c7186d534f8bf540ad7f03|",
+          "slug": "202609-2609-2-6",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8679201Z"
+        },
+        "2609-3": {
+          "sourceId": "2609-3",
+          "pathHash": "",
+          "signature": "v3|3374e7d0c0a8e90b90f9e7826e98222837ab61c055f4b1eb6b9b2bca6ad88a22|",
+          "slug": "202609-2609-3",
+          "baselineRepairedAt": "2026-09-11T05:37:01.8681416Z"
         }
       }
     }
