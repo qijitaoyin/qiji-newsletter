@@ -99,6 +99,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Test review metadata overrides
+        run: pnpm test:review-metadata
+
       - name: Restore import cache
         uses: actions/cache@v4
         with:

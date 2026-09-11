@@ -10,6 +10,7 @@
   const isReviewArticlePage =
     window.location.pathname.includes("/review-articles/") || articleUrl?.includes("/data/review-articles/");
   const reviewReportStorageKey = "qiji-review-reports-v1";
+  const reviewMetadataOverrides = globalThis.QijiReviewMetadataOverrides;
 
   const withBase = (path) => {
     if (!path) return "";
@@ -41,36 +42,25 @@
     }
   };
 
-  const draftMetadataItems = [
-    ["quote", "metadataQuote", "aiQuote"],
-    ["summary", "metadataSummary", "aiSummary"],
-    ["category", "metadataCategory", "category"],
-    ["tags", "metadataTags", "tags"]
-  ];
-
-  const shouldApplyMetadataItem = (report, key) => {
-    const decision = report.metadataDecisions?.[key] || "";
-    if (decision) return decision === "accepted";
-    return report.status === "metadata";
+  const loadDraftMetadataReports = async (article) => {
+    if (!isReviewArticlePage && !isReviewFrame) return [];
+    if (reviewMetadataOverrides) {
+      try {
+        return await reviewMetadataOverrides.loadSharedReports({
+          fetchImpl: window.fetch.bind(window),
+          endpoint: withBase("/api/review-reports"),
+          issueId: reviewMetadataOverrides.issueIdFromArticle(article)
+        });
+      } catch (error) {
+        console.warn("Unable to load shared review metadata; using browser fallback.", error);
+      }
+    }
+    return readReviewReports();
   };
 
-  const applyDraftMetadataOverrides = (article) => {
-    if (!isReviewArticlePage && !isReviewFrame) return article;
-    const reports = readReviewReports().filter((report) => report.articleSlug === article.slug);
-    if (!reports.length) return article;
-    const next = { ...article };
-    reports.forEach((report) => {
-      draftMetadataItems.forEach(([key, reportKey, articleKey]) => {
-        if (!shouldApplyMetadataItem(report, key)) return;
-        const value = report[reportKey];
-        if (Array.isArray(value)) {
-          if (value.length) next[articleKey] = value;
-          return;
-        }
-        if (value) next[articleKey] = value;
-      });
-    });
-    return next;
+  const applyDraftMetadataOverrides = (article, reports) => {
+    if (!reviewMetadataOverrides || (!isReviewArticlePage && !isReviewFrame)) return article;
+    return reviewMetadataOverrides.apply(article, reports);
   };
 
   const cleanTitle = (title = "") =>
@@ -503,12 +493,14 @@
       if (!response.ok) throw new Error(`Article JSON not found: ${response.status}`);
       return response.json();
     })
-    .then((payload) =>
+    .then(async (payload) => {
+      const article = payload.article || {};
+      const reports = await loadDraftMetadataReports(article);
       renderArticle({
         ...payload,
-        article: applyDraftMetadataOverrides(payload.article || {})
-      })
-    )
+        article: applyDraftMetadataOverrides(article, reports)
+      });
+    })
     .catch(() => {
       const body = document.querySelector("[data-article-body]");
       if (body) body.innerHTML = "<p>文章載入失敗，請稍後再試。</p>";
