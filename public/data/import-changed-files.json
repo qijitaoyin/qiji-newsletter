@@ -1,6 +1,95 @@
 {
+  "changedFiles": [
+    {
+      "issueId": "202610",
+      "fileName": "2610-1編輯小語.docx",
+      "relativePath": "202610/2610-1編輯小語.docx",
+      "sourceId": "2610-1",
+      "stableSignature": "v3|314b1c643af49cc852b386442ea44fbb3ab1208ad992c85b5b6a691472a08b0c|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-2-1溫故知新20140619.docx",
+      "relativePath": "202610/2610-2-1溫故知新20140619.docx",
+      "sourceId": "2610-2-1",
+      "stableSignature": "v3|de744c50da340e1d85d7a8a2ea7bc72438923386e0414668678f0cd5d1879747|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-2-2溫故知新20200525課程筆記.docx",
+      "relativePath": "202610/2610-2-2溫故知新20200525課程筆記.docx",
+      "sourceId": "2610-2-2",
+      "stableSignature": "v3|00ab21d6f67df5a42883fbd2b696d1e00d0074f74b56354dd023577bb1b336e8|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-1如是我聞之一260903-08.docx",
+      "relativePath": "202610/2610-3-1如是我聞之一260903-08.docx",
+      "sourceId": "2610-3-1",
+      "stableSignature": "v3|370729e9c0854e04f7b7a6c6dcce16ba1bae97188fc332598dc490b15c331493|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-2如是我聞20260903四晚.docx",
+      "relativePath": "202610/2610-3-2如是我聞20260903四晚.docx",
+      "sourceId": "2610-3-2",
+      "stableSignature": "v3|42b8bb11a8da89b1c61d8472f435ce2a9e699e77d7605bd302b3582ac6a02109|6982b561555c56209c821fbfc56ac8c19a086b582ac7898356db5d4684187bb8",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-3如是我聞260908二晚.docx",
+      "relativePath": "202610/2610-3-3如是我聞260908二晚.docx",
+      "sourceId": "2610-3-3",
+      "stableSignature": "v3|7b4ac93cfdbbbd3c293d27a882aa326f2c81b84f4df7718ac705beeb1c3aa95d|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-4如是我聞20260914一晚.docx",
+      "relativePath": "202610/2610-3-4如是我聞20260914一晚.docx",
+      "sourceId": "2610-3-4",
+      "stableSignature": "v3|0591a628c9178b21d2f4946c34e4c126f171411953828c3b6015c2b2efa6d5a4|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-5如是我聞20260917 四午.docx",
+      "relativePath": "202610/2610-3-5如是我聞20260917 四午.docx",
+      "sourceId": "2610-3-5",
+      "stableSignature": "v3|581dbfc399d721071b753d0c6a013e1cc61bbab22e4e3ac253a715f110f08e3c|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-6如是我聞20260920日早.docx",
+      "relativePath": "202610/2610-3-6如是我聞20260920日早.docx",
+      "sourceId": "2610-3-6",
+      "stableSignature": "v3|8837e5f34448a8e57a0b04c667a6e98583947f12ab1d093179721b07d5f7ee0b|",
+      "status": "new"
+    },
+    {
+      "issueId": "202610",
+      "fileName": "2610-4體證道德經077.docx",
+      "relativePath": "202610/2610-4體證道德經077.docx",
+      "sourceId": "2610-4",
+      "stableSignature": "v3|93545ada6b5f7656ee47b73405a8a95062db85e2c8e5004868c532e9ba16410e|",
+      "status": "new"
+    },
+    {
+      "issueId": "202607",
+      "fileName": "2607-2六月雪山坑三天兩夜紀實.docx",
+      "relativePath": "202607/2607-2六月雪山坑三天兩夜紀實.docx",
+      "sourceId": "2607-2",
+      "stableSignature": "v3|f2d0e812774a462c0c2d47d4187021671a3afa065850da15059e8a26d0f2b25a|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518",
+      "status": "updated"
+    }
+  ],
   "cacheBaselineRebuilt": 0,
-  "changedFiles": [],
-  "generatedAt": "2026-09-11T11:59:04.3876313Z",
-  "totalChanged": 0
+  "totalChanged": 11,
+  "generatedAt": "2026-10-09T15:49:09.1658040Z"
 }
