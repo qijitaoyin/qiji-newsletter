@@ -593,8 +593,9 @@ const hasLocalPublicAsset = (src = "") => {
 
 const resolveArticleImage = (article: Article) => {
   if (article.image && hasLocalPublicAsset(article.image)) return article.image;
-  const firstAvailableImage = article.images?.find((image) => image.src && hasLocalPublicAsset(image.src));
-  return firstAvailableImage?.src ?? previewFallbackImage;
+  // Images embedded after body content begins belong only to the article body.
+  // They must never be promoted to title artwork by the display layer.
+  return previewFallbackImage;
 };
 
 const withBasePaths = (article: Article): Article => ({

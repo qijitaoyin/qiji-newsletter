@@ -429,7 +429,9 @@ function Test-NeedsPixabayFallback {
     $Article.imageCaption = ""
     return $true
   }
-  return (-not $Article.image -or $Article.image -eq $logoPath) -and @($Article.images).Count -eq 0
+  # Inline Word images do not count as title artwork. Only an explicitly
+  # selected pre-body/standalone image may prevent the Pixabay fallback.
+  return (-not $Article.image -or $Article.image -eq $logoPath)
 }
 
 function Apply-PixabayFallbackImages {
@@ -441,12 +443,6 @@ function Apply-PixabayFallbackImages {
       $article.image = ""
       $article.imageCaption = ""
     }
-  }
-
-  $apiKey = [string]$env:PIXABAY_API_KEY
-  if ([string]::IsNullOrWhiteSpace($apiKey)) {
-    Write-Host "Pixabay fallback disabled: PIXABAY_API_KEY is not set."
-    return
   }
 
   $missingImageArticles = @($Articles | Where-Object { Test-NeedsPixabayFallback $_ })
@@ -463,28 +459,45 @@ function Apply-PixabayFallbackImages {
     }
   }
 
+  $unresolvedArticles = New-Object System.Collections.Generic.List[object]
+  $applied = 0
+  foreach ($article in $missingImageArticles) {
+    $slug = [string]$article.slug
+    $existing = $store.articles[$slug]
+    if ($existing -and $existing.path -and (Test-ValidPixabayAssetPath ([string]$existing.path))) {
+      $article.image = [string]$existing.path
+      $article.imageCaption = if ($existing.caption) { [string]$existing.caption } else { "圖片來源 / Pixabay" }
+      $applied += 1
+      continue
+    }
+    if ($existing -and $existing.path) {
+      Write-Warning "Pixabay fallback: replacing invalid cached path for $slug."
+      $store.articles.Remove($slug)
+    }
+    $unresolvedArticles.Add($article)
+  }
+
+  if ($unresolvedArticles.Count -eq 0) {
+    Save-PixabayFallbackStore $store
+    Write-Host "Pixabay fallback: applied $applied cached image(s)."
+    return
+  }
+
+  $apiKey = [string]$env:PIXABAY_API_KEY
+  if ([string]::IsNullOrWhiteSpace($apiKey)) {
+    Save-PixabayFallbackStore $store
+    Write-Host "Pixabay fallback disabled for $($unresolvedArticles.Count) article(s): PIXABAY_API_KEY is not set."
+    return
+  }
+
   $candidates = @(Get-PixabayFallbackCandidates $apiKey | Sort-Object { Get-Random })
   if ($candidates.Count -eq 0) {
     Write-Warning "Pixabay fallback: no candidates returned."
     return
   }
 
-  $applied = 0
-  foreach ($article in $missingImageArticles) {
+  foreach ($article in $unresolvedArticles) {
     $slug = [string]$article.slug
-    $existing = $store.articles[$slug]
-
-    if ($existing -and $existing.path -and (Test-ValidPixabayAssetPath ([string]$existing.path))) {
-      $assetPath = [string]$existing.path
-      $article.image = $assetPath
-      $article.imageCaption = if ($existing.caption) { [string]$existing.caption } else { "圖片來源 / Pixabay" }
-      $applied += 1
-      continue
-    } elseif ($existing -and $existing.path) {
-      Write-Warning "Pixabay fallback: replacing invalid cached path for $slug."
-      $store.articles.Remove($slug)
-    }
-
     $candidate = $candidates | Where-Object { -not $usedIds.Contains([string]$_.id) } | Select-Object -First 1
     if (-not $candidate) {
       Write-Warning "Pixabay fallback: image pool exhausted before assigning $slug."
@@ -2595,16 +2608,37 @@ foreach ($issueDir in $issueDirs) {
 
     $blockWarnings = New-Object System.Collections.Generic.List[string]
     foreach ($warning in $docxContent.Warnings) { $blockWarnings.Add($warning) }
+    # Resolve captions before locating the body boundary so an image placed
+    # before the first real body block can become title artwork without also
+    # being rendered a second time inside the article.
+    $resolvedDocxBlocks = Resolve-ImageCaptions $docxContent.Blocks $blockWarnings
     $bodyBlocks = if ($template.HasTemplate -and $template.BodyMarker) {
-      Select-BlocksAfterText $docxContent.Blocks $template.BodyMarker
+      Select-BlocksAfterText $resolvedDocxBlocks $template.BodyMarker
     } else {
-      Select-BodyBlocks $docxContent.Blocks $bodyParagraphs
+      Select-BodyBlocks $resolvedDocxBlocks $bodyParagraphs
     }
     if ((@($bodyBlocks).Count -eq 0) -and @($bodyParagraphs).Count -gt 0) {
-      $bodyBlocks = Select-BodyBlocks $docxContent.Blocks $bodyParagraphs
+      $bodyBlocks = Select-BodyBlocks $resolvedDocxBlocks $bodyParagraphs
     }
     $bodyBlocks = Remove-HeaderLikeBlocks $bodyBlocks $title $author $categoryInfo.Category
-    $bodyBlocks = Resolve-ImageCaptions $bodyBlocks $blockWarnings
+
+    $firstBodyContentBlock = @($bodyBlocks | Where-Object { $_.type -ne "image" } | Select-Object -First 1)
+    $preBodyImages = New-Object System.Collections.Generic.List[object]
+    if ($firstBodyContentBlock.Count -gt 0) {
+      foreach ($block in $resolvedDocxBlocks) {
+        if ([object]::ReferenceEquals($block, $firstBodyContentBlock[0])) { break }
+        if ($block.type -eq "image") { $preBodyImages.Add($block) }
+      }
+    }
+
+    $bodyContentStart = 0
+    $bodyBlockArray = @($bodyBlocks)
+    while ($bodyContentStart -lt $bodyBlockArray.Count -and $bodyBlockArray[$bodyContentStart].type -eq "image") {
+      $bodyContentStart++
+    }
+    if ($bodyContentStart -gt 0) {
+      $bodyBlocks = @($bodyBlockArray | Select-Object -Skip $bodyContentStart)
+    }
     $contentBlocks = Convert-BlocksToDisplayBlocks $bodyBlocks
     foreach ($warning in $blockWarnings) {
       $validationItems.Add(@{
@@ -2616,15 +2650,11 @@ foreach ($issueDir in $issueDirs) {
       })
     }
     $articleImages = @($contentBlocks | Where-Object { $_.type -eq "image" })
-    $docxImages = @($docxContent.Images)
     $heroImage = ""
     $heroCaption = ""
-    if ($articleImages.Count -gt 0) {
-      $heroImage = $articleImages[0].src
-      $heroCaption = $articleImages[0].caption
-    } elseif ($docxImages.Count -gt 0) {
-      $heroImage = $docxImages[0].src
-      $heroCaption = $docxImages[0].caption
+    if ($preBodyImages.Count -gt 0) {
+      $heroImage = $preBodyImages[0].src
+      $heroCaption = $preBodyImages[0].caption
     } else {
       $matchedIssueImage = Select-ArticleImage $images $sourceId $title $order
       if ($matchedIssueImage) {
@@ -2637,14 +2667,7 @@ foreach ($issueDir in $issueDirs) {
     } elseif (-not $heroCaption -and $template.HasTemplate -and $template.ImageSource) {
       $heroCaption = "圖片來源 / $($template.ImageSource)"
     }
-    $allArticleImages = @($articleImages)
-    if ($docxImages.Count -gt 0) {
-      foreach ($image in $docxImages) {
-        if (-not (@($allArticleImages | Where-Object { $_.src -eq $image.src }).Count -gt 0)) {
-          $allArticleImages += $image
-        }
-      }
-    }
+    $allArticleImages = @($resolvedDocxBlocks | Where-Object { $_.type -eq "image" })
 
     $readMinutes = [Math]::Max(2, [Math]::Ceiling((($bodyParagraphs | ForEach-Object { $_.Length } | Measure-Object -Sum).Sum) / 650))
     $article = @{
