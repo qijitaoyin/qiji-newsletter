@@ -669,6 +669,7 @@ const normalizeCategory = (category: string) => {
       </div>
     </main>
 
+    <script src={pathFor("/review-metadata-overrides.js")}></script>
     <script define:vars={{
       publishWebhookUrl: reviewPublishWebhookUrl,
       currentReviewIssueId: latestReviewArchive?.id ?? "latest",
@@ -976,8 +977,9 @@ const normalizeCategory = (category: string) => {
           .replaceAll('"', "&quot;");
 
       const parseMetadataTags = (value = "") =>
+        globalThis.QijiReviewMetadataOverrides?.parseTags(value, 5) ??
         String(value)
-          .split(/[\n,，、]/)
+          .split(/[\n,，、/／]/)
           .map((tag) => tag.trim())
           .filter(Boolean)
           .slice(0, 5);

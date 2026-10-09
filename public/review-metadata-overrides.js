@@ -6,6 +6,24 @@
     ["tags", "metadataTags", "tags"]
   ];
 
+  const parseTags = (value = "", limit = 5) =>
+    String(value)
+      .split(/[\n,，、/／]/)
+      .map((tag) => tag.trim())
+      .filter(Boolean)
+      .slice(0, limit);
+
+  const keywordTagsFor = ({ article = {}, articleTags = [], category = "", allowUnknown = false } = {}) => {
+    const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
+    return (Array.isArray(article.tags) ? article.tags : [])
+      .map((tag) => String(tag || "").trim())
+      .filter((tag) => {
+        if (!tag || tag === category) return false;
+        const metadata = tagByLabel[tag];
+        return metadata?.kind === "keyword" || (allowUnknown && !metadata);
+      });
+  };
+
   const issueIdFromArticle = (article = {}) => {
     const explicit = String(article.issueId || "").trim();
     if (/^20\d{4}$/.test(explicit)) return explicit;
@@ -48,5 +66,11 @@
     return Array.isArray(payload?.reports) ? payload.reports : [];
   };
 
-  global.QijiReviewMetadataOverrides = Object.freeze({ apply, issueIdFromArticle, loadSharedReports });
+  global.QijiReviewMetadataOverrides = Object.freeze({
+    apply,
+    issueIdFromArticle,
+    keywordTagsFor,
+    loadSharedReports,
+    parseTags
+  });
 })(globalThis);

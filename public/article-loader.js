@@ -159,9 +159,7 @@
     container.textContent = "";
     const category = normalizeCategory(article.category || "");
     const columnTags = category ? [category] : [];
-    const keywordTags = (article.tags || []).filter(
-      (tag) => tag !== category && tagByLabel[tag]?.kind === "keyword"
-    );
+    const keywordTags = keywordTagsFor(article, articleTags);
     const groupedTags = [
       ["\u5c08\u6b04", columnTags],
       ["\u95dc\u9375\u5b57", keywordTags]
@@ -184,9 +182,19 @@
   };
 
   const keywordTagsFor = (article, articleTags) => {
-    const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
     const category = normalizeCategory(article.category || "");
-    return (article.tags || []).filter((tag) => tag !== category && tagByLabel[tag]?.kind === "keyword");
+    if (reviewMetadataOverrides?.keywordTagsFor) {
+      return reviewMetadataOverrides.keywordTagsFor({
+        article,
+        articleTags,
+        category,
+        allowUnknown: isReviewFrame
+      });
+    }
+    const tagByLabel = Object.fromEntries(articleTags.map((tag) => [tag.label, tag]));
+    return (article.tags || []).filter(
+      (tag) => tag !== category && (tagByLabel[tag]?.kind === "keyword" || (isReviewFrame && !tagByLabel[tag]))
+    );
   };
 
   const renderReviewArticleAiPreview = (article, articleTags) => {

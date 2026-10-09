@@ -5,6 +5,37 @@ await import(`../public/review-metadata-overrides.js?test=${Date.now()}`);
 const metadata = globalThis.QijiReviewMetadataOverrides;
 assert.ok(metadata, "review metadata helper should be available");
 
+const expectedKeywords = ["周天", "橫膈膜", "周天運轉", "內臟力", "八大原理"];
+assert.deepEqual(
+  metadata.parseTags("周天 / 橫膈膜 / 周天運轉 / 內臟力 / 八大原理"),
+  expectedKeywords,
+  "ASCII slash must be accepted as a keyword separator"
+);
+assert.deepEqual(
+  metadata.parseTags("周天／橫膈膜、周天運轉，內臟力,八大原理"),
+  expectedKeywords,
+  "full-width slash and existing separators must remain interoperable"
+);
+assert.deepEqual(
+  metadata.keywordTagsFor({
+    article: { category: "溫故知新", tags: expectedKeywords },
+    articleTags: [{ label: "周天", kind: "keyword", slug: "zhou-tian" }],
+    category: "溫故知新",
+    allowUnknown: true
+  }),
+  expectedKeywords,
+  "review preview must retain accepted keywords that are not yet in the generated tag catalog"
+);
+assert.deepEqual(
+  metadata.keywordTagsFor({
+    article: { category: "溫故知新", tags: expectedKeywords },
+    articleTags: [{ label: "周天", kind: "keyword", slug: "zhou-tian" }],
+    category: "溫故知新"
+  }),
+  ["周天"],
+  "regular article rendering must keep the generated tag catalog restriction"
+);
+
 const oldArticle = {
   slug: "202609-2609-1",
   issueId: "202609",
