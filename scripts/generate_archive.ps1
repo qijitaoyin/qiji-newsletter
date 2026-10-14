@@ -2399,7 +2399,11 @@ foreach ($issueDir in $issueDirs) {
         }
       }
       $issueArticles.Add($cachedArticle)
-      foreach ($cachedValidation in @(ConvertTo-ArrayValue $cachedEntry.validationItems)) {
+      $cacheableValidationItems = @(
+        ConvertTo-ArrayValue $cachedEntry.validationItems |
+          Where-Object { [string](Get-ObjectPropertyValue $_ "type") -ne "published-content-changed" }
+      )
+      foreach ($cachedValidation in $cacheableValidationItems) {
         $validationItems.Add((ConvertTo-PlainObject $cachedValidation))
       }
       $signature["contentArticleHash"] = Get-ArticleVisibleContentHash $cachedArticle
@@ -2455,7 +2459,7 @@ foreach ($issueDir in $issueDirs) {
       $nextCacheEntries[[string]$signature.key] = @{
         signature = $signature
         article = $cachedArticle
-        validationItems = @(ConvertTo-ArrayValue $cachedEntry.validationItems)
+        validationItems = $cacheableValidationItems
       }
       $order++
       continue
@@ -2775,10 +2779,14 @@ foreach ($issueDir in $issueDirs) {
     for ($validationIndex = $validationStartIndex; $validationIndex -lt $validationItems.Count; $validationIndex++) {
       $fileValidationItems.Add($validationItems[$validationIndex])
     }
+    $cacheableFileValidationItems = @(
+      $fileValidationItems.ToArray() |
+        Where-Object { [string](Get-ObjectPropertyValue $_ "type") -ne "published-content-changed" }
+    )
     $nextCacheEntries[[string]$signature.key] = @{
       signature = $signature
       article = $article
-      validationItems = @($fileValidationItems.ToArray())
+      validationItems = $cacheableFileValidationItems
     }
     $order++
   }

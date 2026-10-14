@@ -219,6 +219,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Verify old-draft visibility
+        run: pnpm test:review-legacy
+
       - name: Deploy the same build to Cloudflare Pages
         if: ${{ env.CLOUDFLARE_PAGES_PROJECT != '' && env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != '' }}
         run: pnpm dlx wrangler pages deploy dist --project-name="$CLOUDFLARE_PAGES_PROJECT" --branch=main

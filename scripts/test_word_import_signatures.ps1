@@ -151,12 +151,48 @@ function Add-FirstStyledParagraphTextSuffix {
   }
 }
 
+function Add-TestStalePublishedChangeWarning {
+  param([string]$Root, [string]$IssueId)
+  $cachePath = Join-Path $Root ".cache\article-import-cache.json"
+  $cache = Get-Content -LiteralPath $cachePath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $entry = @($cache.entries | Where-Object { [string]$_.signature.key -match "^$([regex]::Escape($IssueId))[\\/]" }) | Select-Object -First 1
+  if (-not $entry) { throw "Cannot find cache entry for issue $IssueId." }
+  $existing = @($entry.validationItems | Where-Object { [string]$_.type -ne "published-content-changed" })
+  $entry.validationItems = @($existing + [pscustomobject]@{
+    issueId = $IssueId
+    file = "stale-cache-fixture.docx"
+    severity = "warning"
+    type = "published-content-changed"
+    message = "stale test warning"
+  })
+  [System.IO.File]::WriteAllText($cachePath, ($cache | ConvertTo-Json -Depth 20), [System.Text.UTF8Encoding]::new($false))
+}
+
+function Assert-NoPublishedChangeWarning {
+  param([string]$Root, [string]$IssueId)
+  $reviewPath = Join-Path $Root "src\data\generatedReview.ts"
+  $reviewSource = Get-Content -LiteralPath $reviewPath -Raw -Encoding UTF8
+  $reviewMatch = [regex]::Match($reviewSource, 'export const generatedReviewItems = (?<json>[\s\S]*?) satisfies ReviewItem\[\];')
+  if (-not $reviewMatch.Success) { throw "Cannot parse generated review regression output." }
+  $reviewItems = @($reviewMatch.Groups["json"].Value | ConvertFrom-Json)
+  $staleItems = @(
+    $reviewItems | Where-Object {
+      [string]$_.issueId -eq $IssueId -and
+      @($_.messages | Where-Object { [string]$_.type -eq "published-content-changed" }).Count -gt 0
+    }
+  )
+  if ($staleItems.Count -gt 0) {
+    throw "A stale published-content-changed warning survived for issue $IssueId."
+  }
+}
+
 $tempBase = [System.IO.Path]::GetTempPath().TrimEnd('\')
 $testRoot = Join-Path $tempBase ("qiji-word-import-test-" + [guid]::NewGuid().ToString("N"))
 $fixtureRoot = Join-Path $testRoot "source"
 $sandboxRoot = Join-Path $testRoot "site"
 
 try {
+  $testDraftIssueId = "209912"
   New-Item -ItemType Directory -Force -Path $fixtureRoot, $sandboxRoot | Out-Null
   foreach ($relativePath in @(
     "src\data\generatedArticles.ts",
@@ -169,8 +205,8 @@ try {
   )) {
     Copy-TestFile $relativePath $sandboxRoot
   }
-  Remove-TestIssueFromArticleModule (Join-Path $sandboxRoot "src\data\generatedArticles.ts") "generatedArticles" "generatedIssues" "202609"
-  Remove-TestIssueFromArticleModule (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") "reviewDraftArticles" "reviewDraftIssues" "202609"
+  Remove-TestIssueFromArticleModule (Join-Path $sandboxRoot "src\data\generatedArticles.ts") "generatedArticles" "generatedIssues" $testDraftIssueId
+  Remove-TestIssueFromArticleModule (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") "reviewDraftArticles" "reviewDraftIssues" $testDraftIssueId
   $baselineRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\generatedArticles.ts") -Raw -Encoding UTF8
   $baselineMatch = [regex]::Match($baselineRaw, 'export const generatedArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $baselineMatch.Success) { throw "Synthetic generated article baseline is invalid." }
@@ -182,8 +218,8 @@ try {
 
   $issue408 = Join-Path $fixtureRoot "202408"
   $issue608 = Join-Path $fixtureRoot "202608"
-  $issue609 = Join-Path $fixtureRoot "202609"
-  New-Item -ItemType Directory -Force -Path $issue408, $issue608, $issue609 | Out-Null
+  $testDraftIssueDir = Join-Path $fixtureRoot $testDraftIssueId
+  New-Item -ItemType Directory -Force -Path $issue408, $issue608, $testDraftIssueDir | Out-Null
   $fixtures408 = @(Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202408") -File -Filter "2408-4*.docx")
   if ($fixtures408.Count -ne 2) { throw "Cannot find both duplicate-source-id 2408-4 fixtures." }
   foreach ($fixture408 in $fixtures408) {
@@ -196,12 +232,13 @@ try {
   }
   $fixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202609") -File -Filter "2609-2-5*.docx" | Select-Object -First 1
   if (-not $fixture) { throw "Cannot find the 2609-2-5 regression fixture." }
-  $fixturePath = Join-Path $issue609 $fixture.Name
+  $fixturePath = Join-Path $testDraftIssueDir $fixture.Name
   Copy-Item -LiteralPath $fixture.FullName -Destination $fixturePath
   $authorFixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202609") -File -Filter "2609-2-1*.docx" | Select-Object -First 1
   if (-not $authorFixture) { throw "Cannot find the 2609-2-1 author regression fixture." }
-  Copy-Item -LiteralPath $authorFixture.FullName -Destination $issue609
+  Copy-Item -LiteralPath $authorFixture.FullName -Destination $testDraftIssueDir
 
+  Add-TestStalePublishedChangeWarning $sandboxRoot "202608"
   $initial = Invoke-TestImport $sandboxRoot $fixtureRoot
   if (@($initial.changedFiles | Where-Object { $_.issueId -eq "202608" }).Count -ne 0) {
     throw "Unchanged 2608 content was falsely reported on cache migration."
@@ -209,15 +246,16 @@ try {
   if (@($initial.changedFiles | Where-Object { $_.issueId -eq "202408" }).Count -ne 0) {
     throw "Duplicate 2408-4 source ids were matched to the wrong published articles."
   }
-  $initial609 = @($initial.changedFiles | Where-Object { $_.issueId -eq "202609" })
-  if ($initial609.Count -ne 2 -or @($initial609 | Where-Object { $_.status -ne "new" }).Count -ne 0) {
+  Assert-NoPublishedChangeWarning $sandboxRoot "202608"
+  $initialDraft = @($initial.changedFiles | Where-Object { $_.issueId -eq $testDraftIssueId })
+  if ($initialDraft.Count -ne 2 -or @($initialDraft | Where-Object { $_.status -ne "new" }).Count -ne 0) {
     throw "A cached article missing from generated data was not reported as new."
   }
   $authorDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
   $authorDraftMatch = [regex]::Match($authorDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $authorDraftMatch.Success) { throw "Cannot read author regression output." }
   $authorDraftArticles = @($authorDraftMatch.Groups["json"].Value | ConvertFrom-Json)
-  $authorArticle = $authorDraftArticles | Where-Object { $_.issueId -eq "202609" -and $_.sourceId -eq "2609-2-1" } | Select-Object -First 1
+  $authorArticle = $authorDraftArticles | Where-Object { $_.issueId -eq $testDraftIssueId -and $_.sourceId -eq "2609-2-1" } | Select-Object -First 1
   $expectedAuthor = (-join @(0x6587, 0x7A3F, 0x4FEE, 0x6F64 | ForEach-Object { [char]$_ })) + " / " + (-join @(0x694A, 0x6E05, 0x96F2 | ForEach-Object { [char]$_ }))
   $actualAuthor = if ($authorArticle) { [string]$authorArticle.author } else { "" }
   if (
@@ -233,16 +271,17 @@ try {
     throw "Distinct article titles were collapsed into one duplicate group."
   }
   Convert-TestCacheToLegacyFormat $sandboxRoot
-  $legacyPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot "202609"
+  $legacyPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot $testDraftIssueId
   $unchanged = Invoke-TestImport $sandboxRoot $fixtureRoot
   if ([int]$unchanged.totalChanged -ne 0) {
     throw "Unchanged import reported changes: $($unchanged.changedFiles.fileName -join ', ')"
   }
+  Assert-NoPublishedChangeWarning $sandboxRoot "202608"
   $legacyDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
   $legacyDraftMatch = [regex]::Match($legacyDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $legacyDraftMatch.Success) { throw "Cannot read legacy-cache regression output." }
   $legacyDraftArticles = @($legacyDraftMatch.Groups["json"].Value | ConvertFrom-Json)
-  $legacyArticle = $legacyDraftArticles | Where-Object { $_.issueId -eq "202609" } | Select-Object -First 1
+  $legacyArticle = $legacyDraftArticles | Where-Object { $_.issueId -eq $testDraftIssueId } | Select-Object -First 1
   $restoredLegacyBlock = $legacyArticle.contentBlocks | Where-Object { $_.text -eq $legacyPoisonedHeading } | Select-Object -First 1
   if (-not $restoredLegacyBlock -or $restoredLegacyBlock.type -ne "heading") {
     throw "An unpublished issue reused a stale legacy cache article instead of rebuilding its Word structure."
@@ -250,7 +289,7 @@ try {
 
   # A cache created by the current schema can still contain stale parser
   # output. The active unpublished issue must not trust that article payload.
-  $currentPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot "202609"
+  $currentPoisonedHeading = Set-TestLegacyCacheHeadingToParagraph $sandboxRoot $testDraftIssueId
   $currentCacheRetry = Invoke-TestImport $sandboxRoot $fixtureRoot
   if ([int]$currentCacheRetry.totalChanged -ne 0) {
     throw "Reparsing an unchanged unpublished issue reported a false content change."
@@ -259,7 +298,7 @@ try {
   $currentDraftMatch = [regex]::Match($currentDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $currentDraftMatch.Success) { throw "Cannot read current-cache regression output." }
   $currentDraftArticles = @($currentDraftMatch.Groups["json"].Value | ConvertFrom-Json)
-  $currentArticle = $currentDraftArticles | Where-Object { $_.issueId -eq "202609" } | Select-Object -First 1
+  $currentArticle = $currentDraftArticles | Where-Object { $_.issueId -eq $testDraftIssueId } | Select-Object -First 1
   $restoredCurrentBlock = $currentArticle.contentBlocks | Where-Object { $_.text -eq $currentPoisonedHeading } | Select-Object -First 1
   if (-not $restoredCurrentBlock -or $restoredCurrentBlock.type -ne "heading") {
     throw "An unpublished issue reused stale article output from a current-format cache."
@@ -267,13 +306,13 @@ try {
 
   $mutation = Set-FirstStyledParagraphStyle $fixturePath "Normal"
   $changedToNormal = Invoke-TestImport $sandboxRoot $fixtureRoot
-  if ([int]$changedToNormal.totalChanged -ne 1 -or $changedToNormal.changedFiles[0].issueId -ne "202609") {
+  if ([int]$changedToNormal.totalChanged -ne 1 -or $changedToNormal.changedFiles[0].issueId -ne $testDraftIssueId) {
     throw "Changing a paragraph style to Normal was not reported exactly once."
   }
 
   [void](Set-FirstStyledParagraphStyle $fixturePath $mutation.originalStyleId)
   $changedBackToHeading = Invoke-TestImport $sandboxRoot $fixtureRoot
-  if ([int]$changedBackToHeading.totalChanged -ne 1 -or $changedBackToHeading.changedFiles[0].issueId -ne "202609") {
+  if ([int]$changedBackToHeading.totalChanged -ne 1 -or $changedBackToHeading.changedFiles[0].issueId -ne $testDraftIssueId) {
     throw "Changing the paragraph back to its heading style was not reported exactly once."
   }
 
@@ -281,7 +320,7 @@ try {
   $draftMatch = [regex]::Match($draftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $draftMatch.Success) { throw "Cannot read generated review draft fixture." }
   $draftArticles = $draftMatch.Groups["json"].Value | ConvertFrom-Json
-  $article = $draftArticles | Where-Object { $_.issueId -eq "202609" -and $_.sourceId -eq "2609-2-5" } | Select-Object -First 1
+  $article = $draftArticles | Where-Object { $_.issueId -eq $testDraftIssueId -and $_.sourceId -eq "2609-2-5" } | Select-Object -First 1
   $block = $article.contentBlocks | Where-Object { $_.text -eq $mutation.text } | Select-Object -First 1
   if (-not $block -or $block.type -ne "heading") {
     throw "The restored Word heading style did not render as a heading."
@@ -295,7 +334,7 @@ try {
 
   Add-FirstStyledParagraphTextSuffix $fixturePath " IMPORT_TEST"
   $textChanged = Invoke-TestImport $sandboxRoot $fixtureRoot
-  if ([int]$textChanged.totalChanged -ne 1 -or $textChanged.changedFiles[0].issueId -ne "202609") {
+  if ([int]$textChanged.totalChanged -ne 1 -or $textChanged.changedFiles[0].issueId -ne $testDraftIssueId) {
     throw "Visible paragraph text change was not reported exactly once."
   }
 
@@ -305,6 +344,7 @@ try {
   Write-Host "PASS: paragraph style changes invalidate the import cache."
   Write-Host "PASS: restoring Title/Heading style renders a heading."
   Write-Host "PASS: unchanged 2608 content is not falsely reported."
+  Write-Host "PASS: stale published-change warnings are discarded on repeated imports."
   Write-Host "PASS: duplicate source ids use their published slugs without cross-matching."
   Write-Host "PASS: distinct article titles are not grouped as duplicates."
   Write-Host "PASS: package metadata noise does not produce a false update."

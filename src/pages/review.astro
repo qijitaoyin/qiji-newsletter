@@ -93,7 +93,9 @@ const issueGroups = reviewIssueIds
   });
 
 const wordReviewGroups = wordNormalizeIssueIds
-  .filter((issueId) => issueId !== reviewIssueId)
+  .filter(
+    (issueId) => issueId !== reviewIssueId && !explicitlyPublishedIssueIds.has(issueId)
+  )
   .map((issueId) => ({
     issueId,
     items: wordNormalizeItems.filter(
