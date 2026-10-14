@@ -1,7 +1,7 @@
 {
   "publicLatestIssueId": "202610",
   "reviewIssueId": "202610",
-  "publishedAt": "2026-10-09T15:49:15.6819257Z",
+  "publishedAt": "2026-10-14T01:52:15.4487119Z",
   "publishedIssues": {
     "202608": {
       "issueId": "202608",
@@ -138,148 +138,13 @@
     },
     "202607": {
       "issueId": "202607",
-      "publishedAt": "08/09/2026 06:37:05",
-      "baselineRepairedAt": "2026-08-09T11:46:52.763795Z",
+      "publishedAt": "2026-10-14T01:52:15.4487119Z",
       "articles": {
-        "2607-1::29c9c992e25c8b38": {
-          "sourceId": "2607-1",
-          "pathHash": "29c9c992e25c8b38",
-          "signature": "v2|82741802e97a8a8ec372cc42c89c191bf4dfa3b47f1906dd6a8550a381be6b53|5405b1e7e07cb43180b92aad01a2b5939bf8b674d83a5c976deed4ea5b3ebad0",
-          "slug": "202607-2607-1",
-          "baselineRepairedAt": "2026-08-09T11:46:52.7648437Z"
-        },
-        "2607-2::d74850c941e1825a": {
-          "sourceId": "2607-2",
-          "pathHash": "d74850c941e1825a",
-          "signature": "v2|cb929543a97a6db6296d5e3328847c1bff2a2243e9346317a33e00a7774d9250|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518",
-          "slug": "202607-2607-2",
-          "baselineRepairedAt": "2026-08-09T11:46:52.7848772Z"
-        },
-        "2607-3-1::8d03dac0d75956c8": {
-          "sourceId": "2607-3-1",
-          "pathHash": "8d03dac0d75956c8",
-          "signature": "v2|9484bf9517ddd76a47d63d05059f4b80c6e0657b1e590274ce3b85840ce0fecc|",
-          "slug": "202607-2607-3-1",
-          "baselineRepairedAt": "2026-08-09T11:46:52.8122792Z"
-        },
-        "2607-3-2::e4ac70e6b92eb864": {
-          "sourceId": "2607-3-2",
-          "pathHash": "e4ac70e6b92eb864",
-          "signature": "v2|ab3334d1eee2ccab6630a525da90bb6e6c4bb7bd18bbe5c7926db0acf451dc8e|",
-          "slug": "202607-2607-3-2",
-          "baselineRepairedAt": "2026-08-09T11:46:52.8312325Z"
-        },
-        "2607-3-3::7cba8907cb2a4d60": {
-          "sourceId": "2607-3-3",
-          "pathHash": "7cba8907cb2a4d60",
-          "signature": "v2|abd446cb875a892b7076e435309a0cfb41c852beff56eab31e730efc52919f40|",
-          "slug": "202607-2607-3-3",
-          "baselineRepairedAt": "2026-08-09T11:46:52.8883087Z"
-        },
-        "2607-3-4::4269d0a2c05acbb5": {
-          "sourceId": "2607-3-4",
-          "pathHash": "4269d0a2c05acbb5",
-          "signature": "v2|ccd2cb3cb51790fe4b8706c6700eee7f1ce736e6f288b56e1ea4358ae158b377|",
-          "slug": "202607-2607-3-4",
-          "baselineRepairedAt": "2026-08-09T11:46:52.925649Z"
-        },
-        "2607-3-5::6d98c40ac9f3b052": {
-          "sourceId": "2607-3-5",
-          "pathHash": "6d98c40ac9f3b052",
-          "signature": "v2|cf0d0d6c2c978e8f3c363fbb515aaae39786f5456396b5c069c3ee121bfcc1ab|",
-          "slug": "202607-2607-3-5",
-          "baselineRepairedAt": "2026-08-09T11:46:52.9840569Z"
-        },
-        "2607-3-6::1299dc9785db0d6f": {
-          "sourceId": "2607-3-6",
-          "pathHash": "1299dc9785db0d6f",
-          "signature": "v2|3f0db39e55830b17ef99d7281b06cadfa2ec25dda8a63a231b46ec9d13724452|",
-          "slug": "202607-2607-3-6",
-          "baselineRepairedAt": "2026-08-09T11:46:53.012724Z"
-        },
-        "2607-3-7::e164c59110f72de1": {
-          "sourceId": "2607-3-7",
-          "pathHash": "e164c59110f72de1",
-          "signature": "v2|6251ad058664bfa839dcc9769389d12bd5b1cbc64a06587ee9ec60ab65b64e09|",
-          "slug": "202607-2607-3-7",
-          "baselineRepairedAt": "2026-08-09T11:46:53.0422079Z"
-        },
-        "2607-4::458a59c69c81e905": {
-          "sourceId": "2607-4",
-          "pathHash": "458a59c69c81e905",
-          "signature": "v2|8d09d3b48ad61853a883f59da4c7b741ca2ce4f1c04c00fe372d8cacac126ebd|",
-          "slug": "202607-2607-4",
-          "baselineRepairedAt": "2026-08-09T11:46:53.0629995Z"
-        },
-        "2607-1": {
-          "sourceId": "2607-1",
-          "pathHash": "",
-          "signature": "v2|82741802e97a8a8ec372cc42c89c191bf4dfa3b47f1906dd6a8550a381be6b53|5405b1e7e07cb43180b92aad01a2b5939bf8b674d83a5c976deed4ea5b3ebad0",
-          "slug": "202607-2607-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1460296Z"
-        },
         "2607-2": {
-          "sourceId": "2607-2",
-          "pathHash": "",
-          "signature": "v2|cb929543a97a6db6296d5e3328847c1bff2a2243e9346317a33e00a7774d9250|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518",
+          "signature": "v3|f2d0e812774a462c0c2d47d4187021671a3afa065850da15059e8a26d0f2b25a|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518",
           "slug": "202607-2607-2",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1464414Z"
-        },
-        "2607-3-1": {
-          "sourceId": "2607-3-1",
-          "pathHash": "",
-          "signature": "v2|9484bf9517ddd76a47d63d05059f4b80c6e0657b1e590274ce3b85840ce0fecc|",
-          "slug": "202607-2607-3-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1468931Z"
-        },
-        "2607-3-2": {
-          "sourceId": "2607-3-2",
-          "pathHash": "",
-          "signature": "v2|ab3334d1eee2ccab6630a525da90bb6e6c4bb7bd18bbe5c7926db0acf451dc8e|",
-          "slug": "202607-2607-3-2",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1473043Z"
-        },
-        "2607-3-3": {
-          "sourceId": "2607-3-3",
-          "pathHash": "",
-          "signature": "v2|abd446cb875a892b7076e435309a0cfb41c852beff56eab31e730efc52919f40|",
-          "slug": "202607-2607-3-3",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1477469Z"
-        },
-        "2607-3-4": {
-          "sourceId": "2607-3-4",
-          "pathHash": "",
-          "signature": "v2|ccd2cb3cb51790fe4b8706c6700eee7f1ce736e6f288b56e1ea4358ae158b377|",
-          "slug": "202607-2607-3-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1481668Z"
-        },
-        "2607-3-5": {
-          "sourceId": "2607-3-5",
-          "pathHash": "",
-          "signature": "v2|cf0d0d6c2c978e8f3c363fbb515aaae39786f5456396b5c069c3ee121bfcc1ab|",
-          "slug": "202607-2607-3-5",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1486037Z"
-        },
-        "2607-3-6": {
-          "sourceId": "2607-3-6",
-          "pathHash": "",
-          "signature": "v2|3f0db39e55830b17ef99d7281b06cadfa2ec25dda8a63a231b46ec9d13724452|",
-          "slug": "202607-2607-3-6",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1498785Z"
-        },
-        "2607-3-7": {
-          "sourceId": "2607-3-7",
-          "pathHash": "",
-          "signature": "v2|6251ad058664bfa839dcc9769389d12bd5b1cbc64a06587ee9ec60ab65b64e09|",
-          "slug": "202607-2607-3-7",
-          "baselineRepairedAt": "2026-08-09T11:47:02.150348Z"
-        },
-        "2607-4": {
-          "sourceId": "2607-4",
-          "pathHash": "",
-          "signature": "v2|8d09d3b48ad61853a883f59da4c7b741ca2ce4f1c04c00fe372d8cacac126ebd|",
-          "slug": "202607-2607-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1507954Z"
+          "title": "見自己見天地見眾生——六月雪山坑團練紀實",
+          "file": "/home/runner/work/_temp/source_articles/202607/2607-2六月雪山坑三天兩夜紀實.docx"
         }
       }
     },
@@ -6839,6 +6704,153 @@
           "signature": "v3|3374e7d0c0a8e90b90f9e7826e98222837ab61c055f4b1eb6b9b2bca6ad88a22|",
           "slug": "202609-2609-3",
           "baselineRepairedAt": "2026-09-11T05:37:01.8681416Z"
+        }
+      }
+    },
+    "202610": {
+      "issueId": "202610",
+      "publishedAt": "10/09/2026 15:49:15",
+      "baselineRepairedAt": "2026-10-14T01:51:55.0930594Z",
+      "articles": {
+        "2610-1::157296fec9903ea6": {
+          "sourceId": "2610-1",
+          "pathHash": "157296fec9903ea6",
+          "signature": "v3|314b1c643af49cc852b386442ea44fbb3ab1208ad992c85b5b6a691472a08b0c|",
+          "slug": "202610-2610-1",
+          "baselineRepairedAt": "2026-10-14T01:51:55.112976Z"
+        },
+        "2610-2-1::b904410df6293635": {
+          "sourceId": "2610-2-1",
+          "pathHash": "b904410df6293635",
+          "signature": "v3|de744c50da340e1d85d7a8a2ea7bc72438923386e0414668678f0cd5d1879747|",
+          "slug": "202610-2610-2-1",
+          "baselineRepairedAt": "2026-10-14T01:51:55.1730358Z"
+        },
+        "2610-2-2::f1a4fe2e8023f08e": {
+          "sourceId": "2610-2-2",
+          "pathHash": "f1a4fe2e8023f08e",
+          "signature": "v3|00ab21d6f67df5a42883fbd2b696d1e00d0074f74b56354dd023577bb1b336e8|",
+          "slug": "202610-2610-2-2",
+          "baselineRepairedAt": "2026-10-14T01:51:55.2639815Z"
+        },
+        "2610-3-1::5ad19bcd8715fe58": {
+          "sourceId": "2610-3-1",
+          "pathHash": "5ad19bcd8715fe58",
+          "signature": "v3|370729e9c0854e04f7b7a6c6dcce16ba1bae97188fc332598dc490b15c331493|",
+          "slug": "202610-2610-3-1",
+          "baselineRepairedAt": "2026-10-14T01:51:55.4286337Z"
+        },
+        "2610-3-2::d287fa68080abada": {
+          "sourceId": "2610-3-2",
+          "pathHash": "d287fa68080abada",
+          "signature": "v3|42b8bb11a8da89b1c61d8472f435ce2a9e699e77d7605bd302b3582ac6a02109|6982b561555c56209c821fbfc56ac8c19a086b582ac7898356db5d4684187bb8",
+          "slug": "202610-2610-3-2",
+          "baselineRepairedAt": "2026-10-14T01:51:55.5060053Z"
+        },
+        "2610-3-3::93da820edc6fd329": {
+          "sourceId": "2610-3-3",
+          "pathHash": "93da820edc6fd329",
+          "signature": "v3|7b4ac93cfdbbbd3c293d27a882aa326f2c81b84f4df7718ac705beeb1c3aa95d|",
+          "slug": "202610-2610-3-3",
+          "baselineRepairedAt": "2026-10-14T01:51:55.5634521Z"
+        },
+        "2610-3-4::ca899084e6674298": {
+          "sourceId": "2610-3-4",
+          "pathHash": "ca899084e6674298",
+          "signature": "v3|0591a628c9178b21d2f4946c34e4c126f171411953828c3b6015c2b2efa6d5a4|",
+          "slug": "202610-2610-3-4",
+          "baselineRepairedAt": "2026-10-14T01:51:55.7464276Z"
+        },
+        "2610-3-5::2a2c323f5ca01e7e": {
+          "sourceId": "2610-3-5",
+          "pathHash": "2a2c323f5ca01e7e",
+          "signature": "v3|581dbfc399d721071b753d0c6a013e1cc61bbab22e4e3ac253a715f110f08e3c|",
+          "slug": "202610-2610-3-5",
+          "baselineRepairedAt": "2026-10-14T01:51:55.823289Z"
+        },
+        "2610-3-6::eebddbcee7e1a2b1": {
+          "sourceId": "2610-3-6",
+          "pathHash": "eebddbcee7e1a2b1",
+          "signature": "v3|8837e5f34448a8e57a0b04c667a6e98583947f12ab1d093179721b07d5f7ee0b|",
+          "slug": "202610-2610-3-6",
+          "baselineRepairedAt": "2026-10-14T01:51:55.9321919Z"
+        },
+        "2610-4::2342944e898b316b": {
+          "sourceId": "2610-4",
+          "pathHash": "2342944e898b316b",
+          "signature": "v3|93545ada6b5f7656ee47b73405a8a95062db85e2c8e5004868c532e9ba16410e|",
+          "slug": "202610-2610-4",
+          "baselineRepairedAt": "2026-10-14T01:51:55.9770133Z"
+        },
+        "2610-1": {
+          "sourceId": "2610-1",
+          "pathHash": "",
+          "signature": "v3|314b1c643af49cc852b386442ea44fbb3ab1208ad992c85b5b6a691472a08b0c|",
+          "slug": "202610-2610-1",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0498052Z"
+        },
+        "2610-2-1": {
+          "sourceId": "2610-2-1",
+          "pathHash": "",
+          "signature": "v3|de744c50da340e1d85d7a8a2ea7bc72438923386e0414668678f0cd5d1879747|",
+          "slug": "202610-2610-2-1",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0505365Z"
+        },
+        "2610-2-2": {
+          "sourceId": "2610-2-2",
+          "pathHash": "",
+          "signature": "v3|00ab21d6f67df5a42883fbd2b696d1e00d0074f74b56354dd023577bb1b336e8|",
+          "slug": "202610-2610-2-2",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0510077Z"
+        },
+        "2610-3-1": {
+          "sourceId": "2610-3-1",
+          "pathHash": "",
+          "signature": "v3|370729e9c0854e04f7b7a6c6dcce16ba1bae97188fc332598dc490b15c331493|",
+          "slug": "202610-2610-3-1",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0514697Z"
+        },
+        "2610-3-2": {
+          "sourceId": "2610-3-2",
+          "pathHash": "",
+          "signature": "v3|42b8bb11a8da89b1c61d8472f435ce2a9e699e77d7605bd302b3582ac6a02109|6982b561555c56209c821fbfc56ac8c19a086b582ac7898356db5d4684187bb8",
+          "slug": "202610-2610-3-2",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0518973Z"
+        },
+        "2610-3-3": {
+          "sourceId": "2610-3-3",
+          "pathHash": "",
+          "signature": "v3|7b4ac93cfdbbbd3c293d27a882aa326f2c81b84f4df7718ac705beeb1c3aa95d|",
+          "slug": "202610-2610-3-3",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0523267Z"
+        },
+        "2610-3-4": {
+          "sourceId": "2610-3-4",
+          "pathHash": "",
+          "signature": "v3|0591a628c9178b21d2f4946c34e4c126f171411953828c3b6015c2b2efa6d5a4|",
+          "slug": "202610-2610-3-4",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0527851Z"
+        },
+        "2610-3-5": {
+          "sourceId": "2610-3-5",
+          "pathHash": "",
+          "signature": "v3|581dbfc399d721071b753d0c6a013e1cc61bbab22e4e3ac253a715f110f08e3c|",
+          "slug": "202610-2610-3-5",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0532217Z"
+        },
+        "2610-3-6": {
+          "sourceId": "2610-3-6",
+          "pathHash": "",
+          "signature": "v3|8837e5f34448a8e57a0b04c667a6e98583947f12ab1d093179721b07d5f7ee0b|",
+          "slug": "202610-2610-3-6",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0536649Z"
+        },
+        "2610-4": {
+          "sourceId": "2610-4",
+          "pathHash": "",
+          "signature": "v3|93545ada6b5f7656ee47b73405a8a95062db85e2c8e5004868c532e9ba16410e|",
+          "slug": "202610-2610-4",
+          "baselineRepairedAt": "2026-10-14T01:52:09.0540892Z"
         }
       }
     }
