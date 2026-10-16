@@ -114,13 +114,13 @@ jobs:
         shell: pwsh
         run: |
           pnpm test:review-scope
-          pnpm test:review-scope-sync
+          pwsh -NoProfile -File scripts/test_review_import_scope.ps1
 
       - name: Test Word image and Pixabay rules
         shell: pwsh
         run: |
-          pnpm test:word-images
-          pnpm test:pixabay-images
+          pwsh -NoProfile -File scripts/test_word_image_placement.ps1
+          pwsh -NoProfile -File scripts/test_pixabay_image_rules.ps1
 
       - name: Restore import cache
         uses: actions/cache@v4
