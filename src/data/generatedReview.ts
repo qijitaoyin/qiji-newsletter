@@ -5812,193 +5812,193 @@ export const generatedReviewItems = [
     ]
   },
   {
-    "file": "/home/runner/work/_temp/source_articles/202508/2508-5山腳下的蘆葦.docx",
-    "slug": "202508-2508-5",
-    "author": "",
-    "id": "202508::/home/runner/work/_temp/source_articles/202508/2508-5山腳下的蘆葦.docx",
-    "sourceModified": "",
-    "status": "needs-review",
+    "image": "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
+    "sourceSignature": "",
+    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…",
+    "category": "山腳下的蘆葦",
     "sourceId": "2508-5",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-5",
+    "sourceModified": "",
     "messages": [
       {
-        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "severity": "warning",
         "type": "legacy-template-missing",
-        "severity": "warning"
+        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入"
       },
       {
-        "message": "缺少作者，已留空",
+        "severity": "warning",
         "type": "missing-author",
-        "severity": "warning"
+        "message": "缺少作者，已留空"
       }
     ],
-    "sourceSignature": "",
-    "title": "傅冶中",
-    "image": "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "山腳下的蘆葦",
-    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-1如是我聞之一.docx",
-    "slug": "202508-2508-2-1",
-    "author": "文稿彙整 / 日早班",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-1如是我聞之一.docx",
-    "sourceModified": "2026-10-14T02:26:49.8590000Z",
-    "status": "needs-review",
-    "sourceId": "2508-2-1",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|98561209887bbc53d1e5f6ac3011e3936eae734e4e9bcd1355549c3a57f91740|",
-    "title": "在自己的真相裡成就",
-    "image": "/assets/pixabay/pixabay-7085714.jpg?v=7085714",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "如是我聞",
-    "excerpt": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-2如是我聞之二.docx",
-    "slug": "202508-2508-2-2",
-    "author": "文稿彙整 / 二晚班",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-2如是我聞之二.docx",
-    "sourceModified": "2026-10-14T02:27:30.3550000Z",
-    "status": "needs-review",
-    "sourceId": "2508-2-2",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|42b7fc645e466b592681361552911ef47b65f941d0657d977d27098adcac0bd8|",
-    "title": "調陰陽，得元氣，養靈魂",
-    "image": "/assets/pixabay/pixabay-6858498.jpg?v=6858498",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "如是我聞",
-    "excerpt": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-3如是我聞之三.docx",
-    "slug": "202508-2508-2-3",
-    "author": "文稿彙整 / 二晚班",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-3如是我聞之三.docx",
-    "sourceModified": "2026-10-14T02:45:34.6960000Z",
-    "status": "needs-review",
-    "sourceId": "2508-2-3",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|018df8087dd5f4782563ce8611689c5d790ce1aa95be9a6487e613207c42da6b|",
-    "title": "從起式、收式窺探無極絕世神功的堂奧",
-    "image": "/assets/pixabay/pixabay-1973524.jpg?v=1973524",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "如是我聞",
-    "excerpt": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-4如是我聞之四.docx",
-    "slug": "202508-2508-2-4",
-    "author": "文稿彙整 / 一晚班",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-4如是我聞之四.docx",
-    "sourceModified": "2026-10-14T02:53:47.9050000Z",
-    "status": "needs-review",
-    "sourceId": "2508-2-4",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|dff7a56483277e54a2f0e2461bd6a294a00e7e0bd65fcc206f6d2404287ca738|",
-    "title": "超越邏輯，解構再重塑",
-    "image": "/assets/pixabay/pixabay-1775874.jpg?v=1775874",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "如是我聞",
-    "excerpt": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-3體證道德經《第62章》道奧.docx",
-    "slug": "202508-2508-3",
-    "author": "文稿彙整 / 賴鈺晶",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-3體證道德經《第62章》道奧.docx",
-    "sourceModified": "2026-10-14T03:00:03.3880000Z",
-    "status": "needs-review",
-    "sourceId": "2508-3",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|771ed367b5497744a5911c909ea1430f8dfd7b5241cb245622213ec32518c2d2|",
-    "title": "以道養生，善與不善皆有所得",
-    "image": "/assets/pixabay/pixabay-3826118.jpg?v=3826118",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "體證道德經",
-    "excerpt": "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因…"
-  },
-  {
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-4圖靈集.docx",
-    "slug": "202508-2508-4",
-    "author": "阿充",
-    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-4圖靈集.docx",
-    "sourceModified": "2026-10-16T03:28:42.3940000Z",
-    "status": "needs-review",
-    "sourceId": "2508-4",
-    "messages": [
-      {
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
-        "type": "published-content-changed",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|912c783a5593ae601583c6ed039919213243399b2b8d213bef44382aba5a698a|",
-    "title": "腳底的奧秘",
-    "image": "/assets/pixabay/pixabay-2819023.jpg?v=2819023",
-    "issueId": "202508",
-    "date": "2025.08.10",
-    "category": "圖靈集",
-    "excerpt": "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅…"
-  },
-  {
-    "file": "2508-5",
-    "slug": "202508-2508-5",
     "author": "",
-    "id": "202508::2508-5",
-    "sourceModified": "",
+    "title": "傅冶中",
+    "file": "/home/runner/work/_temp/source_articles/202508/2508-5山腳下的蘆葦.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/_temp/source_articles/202508/2508-5山腳下的蘆葦.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-7085714.jpg?v=7085714",
+    "sourceSignature": "v3|98561209887bbc53d1e5f6ac3011e3936eae734e4e9bcd1355549c3a57f91740|",
+    "excerpt": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值…",
+    "category": "如是我聞",
+    "sourceId": "2508-2-1",
     "status": "needs-review",
-    "sourceId": "2508-5",
+    "issueId": "202508",
+    "slug": "202508-2508-2-1",
+    "sourceModified": "2026-10-14T02:26:49.8590000Z",
     "messages": [
       {
-        "message": "文章缺少作者：傅冶中",
-        "type": "missing-author",
-        "severity": "warning"
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
     ],
-    "sourceSignature": "",
-    "title": "傅冶中",
-    "image": "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
-    "issueId": "202508",
+    "author": "文稿彙整 / 日早班",
+    "title": "在自己的真相裡成就",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-1如是我聞之一.docx",
     "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-1如是我聞之一.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-6858498.jpg?v=6858498",
+    "sourceSignature": "v3|42b7fc645e466b592681361552911ef47b65f941d0657d977d27098adcac0bd8|",
+    "excerpt": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大…",
+    "category": "如是我聞",
+    "sourceId": "2508-2-2",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-2-2",
+    "sourceModified": "2026-10-14T02:27:30.3550000Z",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      }
+    ],
+    "author": "文稿彙整 / 二晚班",
+    "title": "調陰陽，得元氣，養靈魂",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-2如是我聞之二.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-2如是我聞之二.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-1973524.jpg?v=1973524",
+    "sourceSignature": "v3|018df8087dd5f4782563ce8611689c5d790ce1aa95be9a6487e613207c42da6b|",
+    "excerpt": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做…",
+    "category": "如是我聞",
+    "sourceId": "2508-2-3",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-2-3",
+    "sourceModified": "2026-10-14T02:45:34.6960000Z",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      }
+    ],
+    "author": "文稿彙整 / 二晚班",
+    "title": "從起式、收式窺探無極絕世神功的堂奧",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-3如是我聞之三.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-3如是我聞之三.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-1775874.jpg?v=1775874",
+    "sourceSignature": "v3|dff7a56483277e54a2f0e2461bd6a294a00e7e0bd65fcc206f6d2404287ca738|",
+    "excerpt": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整…",
+    "category": "如是我聞",
+    "sourceId": "2508-2-4",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-2-4",
+    "sourceModified": "2026-10-14T02:53:47.9050000Z",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      }
+    ],
+    "author": "文稿彙整 / 一晚班",
+    "title": "超越邏輯，解構再重塑",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-4如是我聞之四.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-2-4如是我聞之四.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-3826118.jpg?v=3826118",
+    "sourceSignature": "v3|771ed367b5497744a5911c909ea1430f8dfd7b5241cb245622213ec32518c2d2|",
+    "excerpt": "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因…",
+    "category": "體證道德經",
+    "sourceId": "2508-3",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-3",
+    "sourceModified": "2026-10-14T03:00:03.3880000Z",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      }
+    ],
+    "author": "文稿彙整 / 賴鈺晶",
+    "title": "以道養生，善與不善皆有所得",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-3體證道德經《第62章》道奧.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-3體證道德經《第62章》道奧.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-2819023.jpg?v=2819023",
+    "sourceSignature": "v3|912c783a5593ae601583c6ed039919213243399b2b8d213bef44382aba5a698a|",
+    "excerpt": "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅…",
+    "category": "圖靈集",
+    "sourceId": "2508-4",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-4",
+    "sourceModified": "2026-10-16T03:28:42.3940000Z",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
+      }
+    ],
+    "author": "阿充",
+    "title": "腳底的奧秘",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-4圖靈集.docx",
+    "date": "2025.08.10",
+    "id": "202508::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202508/2508-4圖靈集.docx"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
+    "sourceSignature": "",
+    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…",
     "category": "山腳下的蘆葦",
-    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…"
+    "sourceId": "2508-5",
+    "status": "needs-review",
+    "issueId": "202508",
+    "slug": "202508-2508-5",
+    "sourceModified": "",
+    "messages": [
+      {
+        "severity": "warning",
+        "type": "missing-author",
+        "message": "文章缺少作者：傅冶中"
+      }
+    ],
+    "author": "",
+    "title": "傅冶中",
+    "file": "2508-5",
+    "date": "2025.08.10",
+    "id": "202508::2508-5"
   },
   {
     "image": "/assets/pixabay/pixabay-957569.jpg?v=957569",
