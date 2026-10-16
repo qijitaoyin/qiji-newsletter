@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "AI metadata check could not run because Node.js is unavailable." >&2
+  echo "Push stopped. Run the project from the configured Codex/Node environment and try again." >&2
+  exit 1
+fi
+
+echo "Checking changed article AI metadata before push..."
+node scripts/check_changed_ai_metadata.mjs

@@ -35,6 +35,7 @@
 - Reuse existing valid metadata. Generate only missing metadata for new or genuinely changed articles; do not regenerate an entire archive by default.
 - Codex must not directly run a paid AI API unless the user explicitly asks. Local Ollama/Qwen/KIMI-compatible generation is preferred for local work.
 - The production review-sync workflow may use its configured KIMI secret only when an imported article lacks required metadata. An ordinary push must not regenerate metadata unnecessarily.
+- Before any local commit or push that includes imported review data, run `pnpm run check:ai-metadata`. It must verify every article marked `new` or `updated` has current content-hash-matched AI metadata, including a quote, summary, controlled keyword, and themes. If it fails, use the local metadata workflow to fill only those targets, rerun the check, and do not push until it passes. Keep this repository's `core.hooksPath` set to `.githooks` so the tracked pre-push guard enforces the same rule.
 - Never print, commit, or expose API tokens, `.env` files, or credentials.
 - Keep article image selection, attribution, and fallback behavior deterministic enough that a failed image lookup cannot erase an article or overwrite an unrelated article's image.
 

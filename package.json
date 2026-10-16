@@ -11,6 +11,7 @@
     "review:apply": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/apply_review_publish.ps1",
     "assets:optimize": "node scripts/optimize_deploy_images.mjs",
     "ai:metadata": "node scripts/generate_ai_metadata.mjs",
+    "check:ai-metadata": "node scripts/check_changed_ai_metadata.mjs",
     "check:tags": "node scripts/check_article_tags.mjs",
     "test:review-metadata": "node scripts/test_review_metadata_overrides.mjs",
     "test:word-images": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test_word_image_placement.ps1",
@@ -18,6 +19,7 @@
     "test:pixabay-images": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test_pixabay_image_rules.ps1",
     "test:review-legacy": "node scripts/test_review_legacy_visibility.mjs",
     "test:review-scope": "node scripts/test_scoped_review_import.mjs",
+    "test:ai-metadata-check": "node scripts/test_changed_ai_metadata_check.mjs",
     "test:review-scope-sync": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test_review_import_scope.ps1",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1"
