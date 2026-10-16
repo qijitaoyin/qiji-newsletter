@@ -1,15 +1,47 @@
 {
   "cacheBaselineRebuilt": 0,
+  "totalChanged": 5,
   "changedFiles": [
     {
       "issueId": "202508",
-      "fileName": "2508-1編輯小語.docx",
-      "relativePath": "202508/2508-1編輯小語.docx",
-      "sourceId": "2508-1",
-      "stableSignature": "v3|ec19114e120f13a2224268c78804064a97c0937af242b34cb0aabc9324048d5d|",
+      "fileName": "2508-2-1如是我聞之一.docx",
+      "relativePath": "202508\\2508-2-1如是我聞之一.docx",
+      "sourceId": "2508-2-1",
+      "stableSignature": "v3|98561209887bbc53d1e5f6ac3011e3936eae734e4e9bcd1355549c3a57f91740|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202508",
+      "fileName": "2508-2-2如是我聞之二.docx",
+      "relativePath": "202508\\2508-2-2如是我聞之二.docx",
+      "sourceId": "2508-2-2",
+      "stableSignature": "v3|42b7fc645e466b592681361552911ef47b65f941d0657d977d27098adcac0bd8|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202508",
+      "fileName": "2508-2-3如是我聞之三.docx",
+      "relativePath": "202508\\2508-2-3如是我聞之三.docx",
+      "sourceId": "2508-2-3",
+      "stableSignature": "v3|018df8087dd5f4782563ce8611689c5d790ce1aa95be9a6487e613207c42da6b|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202508",
+      "fileName": "2508-2-4如是我聞之四.docx",
+      "relativePath": "202508\\2508-2-4如是我聞之四.docx",
+      "sourceId": "2508-2-4",
+      "stableSignature": "v3|dff7a56483277e54a2f0e2461bd6a294a00e7e0bd65fcc206f6d2404287ca738|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202508",
+      "fileName": "2508-3體證道德經《第62章》道奧.docx",
+      "relativePath": "202508\\2508-3體證道德經《第62章》道奧.docx",
+      "sourceId": "2508-3",
+      "stableSignature": "v3|771ed367b5497744a5911c909ea1430f8dfd7b5241cb245622213ec32518c2d2|",
       "status": "updated"
     }
   ],
-  "totalChanged": 1,
-  "generatedAt": "2026-10-14T01:52:09.1098067Z"
+  "generatedAt": "2026-10-16T00:58:22.4124858Z"
 }

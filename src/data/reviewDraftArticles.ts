@@ -16122,9 +16122,118 @@ export const reviewDraftArticles = [
     ]
   },
   {
+    "image": "/assets/pixabay/pixabay-5478471.jpg?v=5478471",
+    "order": 0,
+    "tags": [
+      "編輯小語"
+    ],
+    "issueId": "202508",
+    "excerpt": "本期各篇文章從起式、收式的心法與做法，延伸至廣袤無涯的個人內在修煉，而本應在上一期刊出的專欄三〈山腳下的蘆葦〉看似與各文風格迥異，一內一外、一動一靜，然而它卻巧妙地與其他文章在無聲處悄悄交會─…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
+    "category": "編輯小語",
+    "date": "2025.08.10",
+    "title": "在內外之間，看見完整的自己",
+    "homeAnchor": "#article-202508-2508-1",
+    "author": "編輯部",
+    "slug": "202508-2508-1",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "text": "有時，我們走進山林，是為了離開人群；",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "有時，我們沉靜練功，是為了返身向內。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "本期各篇文章從起式、收式的心法與做法，延伸至廣袤無涯的個人內在修煉，而本應在上一期刊出的專欄三〈山腳下的蘆葦〉看似與各文風格迥異，一內一外、一動一靜，然而它卻巧妙地與其他文章在無聲處悄悄交會──交會於那個我們都在尋找的地方：覺知的源頭。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "〈如是我聞〉各篇如同夢中的法語，指引我們從「起式」走入內在宇宙，穿越筋膜與氣機的流動，抵達靈空的深處。那是一條不為仿效哪尊神佛，而是為了活出自我本能的修煉之路。不是形式的堆疊，而是知其白、守其黑，一步一腳印的真修行。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "而〈山腳下的蘆葦〉，則將我們帶回真實的土地──那個曾經萬物共生、真實語言尚未被抹滅的時代，伊希，一位失去名字的原住民，在世界末端的清晨被發現，也在文明的邊緣靜靜消逝。他身上的寧靜與堅忍，是未經識性扭曲的自然智慧。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "我們常問：什麼是文化？什麼是修行？",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "或許答案不在高遠處，而是在那些安靜地、真實地、活著的存在裡。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "無論是伊希的山野，還是練功者的內景，真正值得凝視的，是那個沒有被格式化的自己。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "願你翻開本期的文字，如同一次緩慢的起式──從歷史走向當下，從山腳走進心中。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "願我們都能在看似對立的兩端之間，走出一條既是身體，也是靈魂的修行之路。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 2 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
           "有時，我們走進山林，是為了離開人群；",
           "有時，我們沉靜練功，是為了返身向內。",
@@ -16136,377 +16245,246 @@ export const reviewDraftArticles = [
           "無論是伊希的山野，還是練功者的內景，真正值得凝視的，是那個沒有被格式化的自己。",
           "願你翻開本期的文字，如同一次緩慢的起式──從歷史走向當下，從山腳走進心中。",
           "願我們都能在看似對立的兩端之間，走出一條既是身體，也是靈魂的修行之路。"
-        ]
+        ],
+        "heading": null
       }
     ],
-    "issue": "第234期 / 2025.08電子報",
-    "homeAnchor": "#article-202508-2508-1",
-    "order": 0,
-    "slug": "202508-2508-1",
-    "contentBlocks": [
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "有時，我們走進山林，是為了離開人群；",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "有時，我們沉靜練功，是為了返身向內。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "本期各篇文章從起式、收式的心法與做法，延伸至廣袤無涯的個人內在修煉，而本應在上一期刊出的專欄三〈山腳下的蘆葦〉看似與各文風格迥異，一內一外、一動一靜，然而它卻巧妙地與其他文章在無聲處悄悄交會──交會於那個我們都在尋找的地方：覺知的源頭。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "〈如是我聞〉各篇如同夢中的法語，指引我們從「起式」走入內在宇宙，穿越筋膜與氣機的流動，抵達靈空的深處。那是一條不為仿效哪尊神佛，而是為了活出自我本能的修煉之路。不是形式的堆疊，而是知其白、守其黑，一步一腳印的真修行。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "而〈山腳下的蘆葦〉，則將我們帶回真實的土地──那個曾經萬物共生、真實語言尚未被抹滅的時代，伊希，一位失去名字的原住民，在世界末端的清晨被發現，也在文明的邊緣靜靜消逝。他身上的寧靜與堅忍，是未經識性扭曲的自然智慧。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "我們常問：什麼是文化？什麼是修行？",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "或許答案不在高遠處，而是在那些安靜地、真實地、活著的存在裡。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "無論是伊希的山野，還是練功者的內景，真正值得凝視的，是那個沒有被格式化的自己。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "願你翻開本期的文字，如同一次緩慢的起式──從歷史走向當下，從山腳走進心中。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      },
-      {
-        "isLargeFont": true,
-        "type": "paragraph",
-        "text": "願我們都能在看似對立的兩端之間，走出一條既是身體，也是靈魂的修行之路。",
-        "styleName": "",
-        "isBold": false,
-        "styleId": "",
-        "isHeadingStyle": false
-      }
-    ],
-    "excerpt": "本期各篇文章從起式、收式的心法與做法，延伸至廣袤無涯的個人內在修煉，而本應在上一期刊出的專欄三〈山腳下的蘆葦〉看似與各文風格迥異，一內一外、一動一靜，然而它卻巧妙地與其他文章在無聲處悄悄交會─…",
-    "image": "/assets/pixabay/pixabay-7384396.jpg?v=7384396",
-    "sourceId": "2508-1",
-    "author": "編輯部",
-    "imageCaption": "圖片來源 / Pixabay",
-    "date": "2025.08.10",
-    "category": "編輯小語",
-    "sourceUrl": "",
-    "tags": [
-      "編輯小語"
-    ],
-    "issueId": "202508",
-    "readTime": "約 2 分鐘",
-    "images": [],
-    "title": "在內外之間，看見完整的自己"
+    "sourceId": "2508-1"
   },
   {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-2-1",
-    "excerpt": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值…",
-    "homeAnchor": "#article-202508-2508-2-1",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值觀等等，對抗自然賦予你的貪、嗔、癡、慢、疑本能。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "type": "heading",
-        "text": "貪、嗔、癡、慢、疑才是真相",
-        "level": 2
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人有魔性也有神性。魔是自然本能，渴了喝水，餓了吃飯。但你不會喝水喝到水中毒，吃飯吃到撐不下。因為隨著人類大腦演化，額葉皮質發展出理性，最後會產生一種自律，吃飽了，就不要再吃了。理性會節制你的欲望跟本能。所謂「欲無欲」，就是我不餓，就不吃了；「為無為」，盡量去做，就像獅子、老虎奮力捕捉獵物，實在抓不到就垂頭喪氣再找下個目標。該做就去做，結果會怎樣就怎樣，這就是理性。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "只是經過後天的教育與生活經驗，人類額葉皮質裝進各種知識與觀點，它們並不是你面對自然欲望學習而來，對你人生其實沒什麼意義。論語、孟子等儒家經典，因為切中普遍的人性弱點，統治者正好用來管理人民，所以有「半部論語治天下」之說。正因為人類的理性被社會馴化之後就不敢直面自己的本能慾望、自己的魔性，才會製造出強大的金箍咒，一戴上就取不下來。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "其實孔子講到的人性缺點，那才是真相，人類的真實就在那裡。你身上唯一的真相不是你的想法，而是你的貪、嗔、癡、慢、疑。人的真相是魔，能坦然面對真實的自己，才能看到你的理性，也才能讓你的神性發展出來。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "從理性發展神性",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "然而我們常把自己的理性變成錄音機，變成被催眠的對象，自願被套住，到哪裡都帶著既定視角，從未用自己的本真去看。當你對一件事持反對意見，代表你的大腦理性區被植入某種催眠，形成一種感覺，並不是來自你的貪、嗔、癡、慢、疑。因為貪、嗔、癡、慢、疑的感覺，並不會帶有否定性或對立感，比如肚子很餓時，不管食物好不好吃、喜不喜歡，你都不會排斥。又比如很貪心的人，只要有錢就會去賺，沒什麼忌諱。如果存在對立感，那就不是真正的你，而是皮質區被催眠，灌入很多道理，產生了金箍咒。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "每個人一定有自己的性格表徵，寫在DNA裡面，難以改變，這叫嗔。有些性格表徵會讓你常踢到鐵板，於是你的理性就會告訴自己，以後這個性格出來的時候，要放慢一點⋯⋯你會這樣去修正，這叫演化。皮質區理性的厲害之處，不是能減少你的嗔，而是它的制約力會越來越高。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "比如有個東西你很想要，你希望對方給你線結果對方沒給，你的嗔心就出現，產生對他的怨。這時理性會出來告訴你，這是你自己的需求，因為對方沒滿足你，所以你才產生怨。當你能在魔性中看到自己，你的理性就會逐漸長大，等理性一直膨脹，神性也越來越大，吸光魔性所需的營養，直到完全主導所有的魔性。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "先成魔後成神，讓神與魔共同完成你的生命",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "神性是一種祝福，人類可以從理性中發展出對貪、嗔、癡、慢、疑本質的超越，再超越成對人的喜愛、認同與支持，那才有價值。演化到最後，不能只有自己快樂，而要盡量跟別人分享快樂，獨樂樂不如眾樂樂。人類的完美在於知道如何互助，共耕共食，不自私，理性應該往這個方向演化。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人的進步永遠都是先成魔後成神，先在錯中看見自己，才會找到對的自己。只有看到自己的錯，看到自己的魔，你才能改錯成神。所以你們練功錄影就是要你看自己的影像，特別注意自己沒把握、交代不清楚的地方，對比你回憶中我做動作的影像，才能看出自己錯在哪裡，未來也才能在我的動作上看到你要的正確性。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "如果能把這套邏輯聽進去、用出來，你都不用去聽佛經、背論語，你幾乎不用任何努力，就會很快樂，因為行住坐臥，不管做什麼，都是真正的自己。你知道理性是為自己的真相而存在，所以不用掩飾。真相就是魔性，沒有成魔，就看不到理性之上的神，讓它們共同完成你的生命。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "隨時充滿感覺，讓理性接受磨練",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "外科醫生動手術，絕對不是要殺人，一樣拿著刀，一樣割肉，他和殺人凶手差別在哪裡？他在救人，雙手充滿理性的愛，差別在理性。人類發展理性做自己要做的事，醫生學會拿刀救人，不是讀了論語佛經，而是讀了醫學，學到專業技術。如何在每個當下讓自己的理性不斷演化，最後就成神了，天地和合，天人合一，人生不再有衝突，看到什麼都不會對立，人就安定了。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "既然你來這裡是修覺性的，我就必須讓你知道覺性是什麼，你不能說你的覺性就是「我覺得這樣，就這樣做」，那是不行的。只要你「認為是什麼」的時候，你就危險了，那叫「動輒得咎」。那個「動」就是你的想法上來了，那不是真念，真念是貪、嗔、癡、慢、疑，想法是你的定義，你認為的對錯、好壞。這種對立的念頭一出來，你馬上變成戴上金箍咒的孫悟空。所以一定要提醒自己，只要一覺得有跟自己對立、討厭的念頭出來，馬上就知道起了這樣的心了，要告訴自己：那不是我。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "我們生來不就是要把真相搞清楚，你貪什麼？貪吃、貪玩、貪利、貪安定、貪自在，不管貪什麼，根源在你的真相是貪。在那個貪裡面，你要去學會你的理性、你的神性。人類皮質區為什麼在身體正前方最高點，就是讓你聚焦遠方，在最高處思考。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練功要產生覺能，覺能是工具、是開始。一個人最重要是隨時充滿感覺，破一切識，看到什麼，先找到真相的自己，而不是看別人怎麼定義，或是看這件事情對我有什麼危險、有什麼好處。這些都不要看，要看到自己貪嗔癡慢疑，找出該如何對焦。假如能從中把自己找出來，那就坦然交棒給理性，這樣你的理性才有機會受到訓練。如果大腦在認為，看見什麼，就以為那是真的，你的覺就會被帶走。其實帶走你的，不是任何事、任何人，而是你的認知。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人的偉大在理性，感性只是工具、戰場。你必須先誠實於感性、誠實於魔性、誠實於自己的人性，才有辦法真正去磨練屬於自己的理性，也就是額葉皮質。但卻用額葉皮質不斷去記憶、去看，形成你的見解，其實那不過是別人餵給你的東西。就像博物館導覽員收集很多資料，再配合口才，形成一套說法去向人解說。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "等在情緒到來之前",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "我們就這樣活在理性被綁架的假象裡，編織人世間共同的騙局，綁定怎樣叫好人、壞人，什麼叫犯法，什麼叫成就？你常用理性到皮質區去運算，而不相信杏仁核做的真相表達，因為你生命裡有太多複雜的故事，把個人的直覺複雜化了，也就沒有真正的自己。你的理性裝了各種垃圾來管理自己，只知道遵循外面的遊戲規則，卻不在真相規則裡，沒有為自己活過。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "你知道人是怎麼在被作用著，就會發現自己的情緒從何而來，先在那邊等著。要能控制情緒，就得在情緒沒來之前就知道，先等著情緒。你要能控制自己，就得超越自己，除此沒其他辦法。假如你不相信，就去找一個很討厭的人約他等一下見面，你一定知道到時的情緒會如何。所以人可以超越情緒，是因為換算了自己的未來與過去，所以當下可以投影那個未來。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "讓你的人性本質成為正向力量",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "中國道家最後追求的就是天人合一，就是你可以在天、在人、在地的任何一個維度思考；你可以外在於自己，也可以內化於自己。學習逐漸完整拼湊出自己的真相，最終成就在真相裡外的無限可能，這在道家叫出陽神，能夠靈魂出竅。這並不是靈魂跑出去看著自己肉體，而是能看清一切的客觀，不再只是三度空間的看見，而能夠看到全面。這種學習，才是真正的能力，而你身上所有的問題都不再是阻礙，因為這些境內的事情透過境外的力量都可以解決。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "所以你要在任何事情面前，在眼耳鼻舌聲意的六根世界裡，包括大腦的無明，都可以看到自己的真相，然後又該怎樣在自己的真誠下去發展理性。透過改變這個生態的過程，改變自己的慣性邏輯，你才能夠觀察過去和未來、感覺與認知、大腦的杏仁核與皮質之間的關係，知道人是怎麼在被作用著。對這些都了然於胸，而這些作用隨時隨地都被你看見，你就全然活在你自己身上的真相，看見的是整個虛空的運轉功能。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "等到那一天，你的人性本質就會給你很大的回饋，可以變成正向力量，而不再是透支。於是當你貪的時候，你只要稍微有所得，就感到一種滿足；當你嗔的時候，你不是生氣，而是一種對自己的滿意；當你癡的時候，你會發現自己勇往直前，沒有恐懼；當你傲慢的時候，你感覺到的是一種了然於胸的坦然；當你疑的時候，你會發現自己的信光，正轉向一種更遙遠、更高維度的探索。理性最終到松果體，它才是理性之主。大腦皮質不過是後天第六意識的組構體，松果體才是靈魂往來之所，存在於無限的過去、無限的未來，反映出你的當下。（本文依250706日早班課程紀錄修潤裁剪而成）",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
+    "image": "/assets/pixabay/pixabay-1752433.jpg?v=1752433",
     "order": 1,
-    "slug": "202508-2508-2-1",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "文稿彙整 / 日早班",
-    "images": [],
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "readTime": "約 6 分鐘",
-    "title": "之一- 在自己的真相裡成就",
+    "issueId": "202508",
+    "excerpt": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
     "category": "如是我聞",
-    "image": "/assets/pixabay/pixabay-7085714.jpg?v=7085714",
+    "date": "2025.08.10",
+    "title": "在自己的真相裡成就",
+    "homeAnchor": "#article-202508-2508-2-1",
+    "author": "文稿彙整 / 日早班",
+    "slug": "202508-2508-2-1",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "text": "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值觀等等，對抗自然賦予你的貪、嗔、癡、慢、疑本能。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "貪、嗔、癡、慢、疑才是真相"
+      },
+      {
+        "text": "人有魔性也有神性。魔是自然本能，渴了喝水，餓了吃飯。但你不會喝水喝到水中毒，吃飯吃到撐不下。因為隨著人類大腦演化，額葉皮質發展出理性，最後會產生一種自律，吃飽了，就不要再吃了。理性會節制你的欲望跟本能。所謂「欲無欲」，就是我不餓，就不吃了；「為無為」，盡量去做，就像獅子、老虎奮力捕捉獵物，實在抓不到就垂頭喪氣再找下個目標。該做就去做，結果會怎樣就怎樣，這就是理性。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "只是經過後天的教育與生活經驗，人類額葉皮質裝進各種知識與觀點，它們並不是你面對自然欲望學習而來，對你人生其實沒什麼意義。論語、孟子等儒家經典，因為切中普遍的人性弱點，統治者正好用來管理人民，所以有「半部論語治天下」之說。正因為人類的理性被社會馴化之後就不敢直面自己的本能慾望、自己的魔性，才會製造出強大的金箍咒，一戴上就取不下來。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "其實孔子講到的人性缺點，那才是真相，人類的真實就在那裡。你身上唯一的真相不是你的想法，而是你的貪、嗔、癡、慢、疑。人的真相是魔，能坦然面對真實的自己，才能看到你的理性，也才能讓你的神性發展出來。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "從理性發展神性"
+      },
+      {
+        "text": "然而我們常把自己的理性變成錄音機，變成被催眠的對象，自願被套住，到哪裡都帶著既定視角，從未用自己的本真去看。當你對一件事持反對意見，代表你的大腦理性區被植入某種催眠，形成一種感覺，並不是來自你的貪、嗔、癡、慢、疑。因為貪、嗔、癡、慢、疑的感覺，並不會帶有否定性或對立感，比如肚子很餓時，不管食物好不好吃、喜不喜歡，你都不會排斥。又比如很貪心的人，只要有錢就會去賺，沒什麼忌諱。如果存在對立感，那就不是真正的你，而是皮質區被催眠，灌入很多道理，產生了金箍咒。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "每個人一定有自己的性格表徵，寫在DNA裡面，難以改變，這叫嗔。有些性格表徵會讓你常踢到鐵板，於是你的理性就會告訴自己，以後這個性格出來的時候，要放慢一點⋯⋯你會這樣去修正，這叫演化。皮質區理性的厲害之處，不是能減少你的嗔，而是它的制約力會越來越高。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "比如有個東西你很想要，你希望對方給你線結果對方沒給，你的嗔心就出現，產生對他的怨。這時理性會出來告訴你，這是你自己的需求，因為對方沒滿足你，所以你才產生怨。當你能在魔性中看到自己，你的理性就會逐漸長大，等理性一直膨脹，神性也越來越大，吸光魔性所需的營養，直到完全主導所有的魔性。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "先成魔後成神，讓神與魔共同完成你的生命"
+      },
+      {
+        "text": "神性是一種祝福，人類可以從理性中發展出對貪、嗔、癡、慢、疑本質的超越，再超越成對人的喜愛、認同與支持，那才有價值。演化到最後，不能只有自己快樂，而要盡量跟別人分享快樂，獨樂樂不如眾樂樂。人類的完美在於知道如何互助，共耕共食，不自私，理性應該往這個方向演化。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "人的進步永遠都是先成魔後成神，先在錯中看見自己，才會找到對的自己。只有看到自己的錯，看到自己的魔，你才能改錯成神。所以你們練功錄影就是要你看自己的影像，特別注意自己沒把握、交代不清楚的地方，對比你回憶中我做動作的影像，才能看出自己錯在哪裡，未來也才能在我的動作上看到你要的正確性。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "如果能把這套邏輯聽進去、用出來，你都不用去聽佛經、背論語，你幾乎不用任何努力，就會很快樂，因為行住坐臥，不管做什麼，都是真正的自己。你知道理性是為自己的真相而存在，所以不用掩飾。真相就是魔性，沒有成魔，就看不到理性之上的神，讓它們共同完成你的生命。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "隨時充滿感覺，讓理性接受磨練"
+      },
+      {
+        "text": "外科醫生動手術，絕對不是要殺人，一樣拿著刀，一樣割肉，他和殺人凶手差別在哪裡？他在救人，雙手充滿理性的愛，差別在理性。人類發展理性做自己要做的事，醫生學會拿刀救人，不是讀了論語佛經，而是讀了醫學，學到專業技術。如何在每個當下讓自己的理性不斷演化，最後就成神了，天地和合，天人合一，人生不再有衝突，看到什麼都不會對立，人就安定了。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "既然你來這裡是修覺性的，我就必須讓你知道覺性是什麼，你不能說你的覺性就是「我覺得這樣，就這樣做」，那是不行的。只要你「認為是什麼」的時候，你就危險了，那叫「動輒得咎」。那個「動」就是你的想法上來了，那不是真念，真念是貪、嗔、癡、慢、疑，想法是你的定義，你認為的對錯、好壞。這種對立的念頭一出來，你馬上變成戴上金箍咒的孫悟空。所以一定要提醒自己，只要一覺得有跟自己對立、討厭的念頭出來，馬上就知道起了這樣的心了，要告訴自己：那不是我。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "我們生來不就是要把真相搞清楚，你貪什麼？貪吃、貪玩、貪利、貪安定、貪自在，不管貪什麼，根源在你的真相是貪。在那個貪裡面，你要去學會你的理性、你的神性。人類皮質區為什麼在身體正前方最高點，就是讓你聚焦遠方，在最高處思考。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功要產生覺能，覺能是工具、是開始。一個人最重要是隨時充滿感覺，破一切識，看到什麼，先找到真相的自己，而不是看別人怎麼定義，或是看這件事情對我有什麼危險、有什麼好處。這些都不要看，要看到自己貪嗔癡慢疑，找出該如何對焦。假如能從中把自己找出來，那就坦然交棒給理性，這樣你的理性才有機會受到訓練。如果大腦在認為，看見什麼，就以為那是真的，你的覺就會被帶走。其實帶走你的，不是任何事、任何人，而是你的認知。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "人的偉大在理性，感性只是工具、戰場。你必須先誠實於感性、誠實於魔性、誠實於自己的人性，才有辦法真正去磨練屬於自己的理性，也就是額葉皮質。但卻用額葉皮質不斷去記憶、去看，形成你的見解，其實那不過是別人餵給你的東西。就像博物館導覽員收集很多資料，再配合口才，形成一套說法去向人解說。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "等在情緒到來之前"
+      },
+      {
+        "text": "我們就這樣活在理性被綁架的假象裡，編織人世間共同的騙局，綁定怎樣叫好人、壞人，什麼叫犯法，什麼叫成就？你常用理性到皮質區去運算，而不相信杏仁核做的真相表達，因為你生命裡有太多複雜的故事，把個人的直覺複雜化了，也就沒有真正的自己。你的理性裝了各種垃圾來管理自己，只知道遵循外面的遊戲規則，卻不在真相規則裡，沒有為自己活過。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "你知道人是怎麼在被作用著，就會發現自己的情緒從何而來，先在那邊等著。要能控制情緒，就得在情緒沒來之前就知道，先等著情緒。你要能控制自己，就得超越自己，除此沒其他辦法。假如你不相信，就去找一個很討厭的人約他等一下見面，你一定知道到時的情緒會如何。所以人可以超越情緒，是因為換算了自己的未來與過去，所以當下可以投影那個未來。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "讓你的人性本質成為正向力量"
+      },
+      {
+        "text": "中國道家最後追求的就是天人合一，就是你可以在天、在人、在地的任何一個維度思考；你可以外在於自己，也可以內化於自己。學習逐漸完整拼湊出自己的真相，最終成就在真相裡外的無限可能，這在道家叫出陽神，能夠靈魂出竅。這並不是靈魂跑出去看著自己肉體，而是能看清一切的客觀，不再只是三度空間的看見，而能夠看到全面。這種學習，才是真正的能力，而你身上所有的問題都不再是阻礙，因為這些境內的事情透過境外的力量都可以解決。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所以你要在任何事情面前，在眼耳鼻舌聲意的六根世界裡，包括大腦的無明，都可以看到自己的真相，然後又該怎樣在自己的真誠下去發展理性。透過改變這個生態的過程，改變自己的慣性邏輯，你才能夠觀察過去和未來、感覺與認知、大腦的杏仁核與皮質之間的關係，知道人是怎麼在被作用著。對這些都了然於胸，而這些作用隨時隨地都被你看見，你就全然活在你自己身上的真相，看見的是整個虛空的運轉功能。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "等到那一天，你的人性本質就會給你很大的回饋，可以變成正向力量，而不再是透支。於是當你貪的時候，你只要稍微有所得，就感到一種滿足；當你嗔的時候，你不是生氣，而是一種對自己的滿意；當你癡的時候，你會發現自己勇往直前，沒有恐懼；當你傲慢的時候，你感覺到的是一種了然於胸的坦然；當你疑的時候，你會發現自己的信光，正轉向一種更遙遠、更高維度的探索。理性最終到松果體，它才是理性之主。大腦皮質不過是後天第六意識的組構體，松果體才是靈魂往來之所，存在於無限的過去、無限的未來，反映出你的當下。（本文依250706日早班課程紀錄修潤裁剪而成）",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 6 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
           "在我這裡，你就是你，享有充分的自由。我把你看成一隻野猴，而不是戴了金箍咒的孫悟空。但如果你硬是把金箍咒戴到自己頭上，我也莫可奈何。哪種金箍咒？就是事情一來，你自動下載一堆莫名的規矩、禮儀、價值觀等等，對抗自然賦予你的貪、嗔、癡、慢、疑本能。",
           "貪、嗔、癡、慢、疑才是真相",
@@ -16534,135 +16512,127 @@ export const reviewDraftArticles = [
           "中國道家最後追求的就是天人合一，就是你可以在天、在人、在地的任何一個維度思考；你可以外在於自己，也可以內化於自己。學習逐漸完整拼湊出自己的真相，最終成就在真相裡外的無限可能，這在道家叫出陽神，能夠靈魂出竅。這並不是靈魂跑出去看著自己肉體，而是能看清一切的客觀，不再只是三度空間的看見，而能夠看到全面。這種學習，才是真正的能力，而你身上所有的問題都不再是阻礙，因為這些境內的事情透過境外的力量都可以解決。",
           "所以你要在任何事情面前，在眼耳鼻舌聲意的六根世界裡，包括大腦的無明，都可以看到自己的真相，然後又該怎樣在自己的真誠下去發展理性。透過改變這個生態的過程，改變自己的慣性邏輯，你才能夠觀察過去和未來、感覺與認知、大腦的杏仁核與皮質之間的關係，知道人是怎麼在被作用著。對這些都了然於胸，而這些作用隨時隨地都被你看見，你就全然活在你自己身上的真相，看見的是整個虛空的運轉功能。",
           "等到那一天，你的人性本質就會給你很大的回饋，可以變成正向力量，而不再是透支。於是當你貪的時候，你只要稍微有所得，就感到一種滿足；當你嗔的時候，你不是生氣，而是一種對自己的滿意；當你癡的時候，你會發現自己勇往直前，沒有恐懼；當你傲慢的時候，你感覺到的是一種了然於胸的坦然；當你疑的時候，你會發現自己的信光，正轉向一種更遙遠、更高維度的探索。理性最終到松果體，它才是理性之主。大腦皮質不過是後天第六意識的組構體，松果體才是靈魂往來之所，存在於無限的過去、無限的未來，反映出你的當下。（本文依250706日早班課程紀錄修潤裁剪而成）"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-2-2",
-    "excerpt": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大…",
-    "homeAnchor": "#article-202508-2508-2-2",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大腦的「覺性」，從腦幹到間腦、到松果體、到靈魂。肌骨靠穀氣所養；筋膜靠元氣所養，元氣不足就養不了靈魂，所以要修煉元氣。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "修煉元氣最終要達成「三花（華）聚頂」、「五氣朝元」。「三華聚頂」就是元精、元氣、元神三種生命的精華都匯聚到靈魂；「五氣朝元」就是五行之氣——肝、心、脾、肺、腎，通通回到丹田、回到元氣。一般運動只能增加氣血循環，在體內運轉穀氣，供養肌骨；練無極，則是動作緩慢，讓氣血循環平順、心跳接近正常，在體內運轉元氣，供養靈魂。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "調和自體陰陽得元氣",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練筋膜到一定程度，要能控制最強的筋膜——海底筋膜。海底筋膜包括睾丸膜，要練到馬陰藏相，無寒自縮，意即縮陰功。古代帝王所練陰陽術是藉由不斷的攪動精氣，又不斷的回收到靈魂深處，此即「練精還腦」，最後回饋到靈魂。這是藉身體自然本能修練正心純意的覺性。這在《素女經》有清楚記載，但因其中有一套繁複的儀軌，非一般人所能練成，我們取其意即可。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人的陰陽是可以調動的，用陰陽對話，產生內分泌、荷爾蒙的變化。男性有女性荷爾蒙，女性有男性荷爾蒙，可藉此調和原本太過陽剛或陰柔的氣質。簡言之，在宇宙就是暗能量、暗物質跟顯物質之間的概念。可見為陽，不可見為陰，它都存在宇宙中，也在人體內本自具足，只是你拿不到、成就不了。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人體的自體陰陽在肉身為氣血，在內臟為心腎，在精神為識覺，無極功法就是調整「陰陽平秘」。人有返還陰陽的可能，松果體就是日月相交的能量，分泌生長激素，是第三隻眼，有無限思考的力量，所以人有無限可能，只是大腦理性壓制了松果體。練陰陽之術可激發身體爭取宇宙無形的能量，補充DHEA（脫氫表雄酮，是一種人體自然產生的激素）。譬如卵巢萎縮的人，若得到DHEA的能量補益，即可活化卵巢功能，重新分泌動情激素、青春素，使枯木生華、再度回春。這調和陰陽的神功不假外求，人人皆可自成。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練功旨在不斷淨化身心靈，練成純精、純氣、純神，純化的過程為元丹，精純無比。修練的重點就是去雜念，煉丹練成精髓、精華，最終三華聚頂，這樣就能頻道全開，得到宇宙之力，人生的一切變得清清楚楚；看人如看螞蟻在撿麵包屑，把螞蟻丟到麵包店，牠一樣只會撿麵包屑，不會成為麵包店老闆，因爲牠永遠只停留在螞蟻的維度，看不到其他的生命可能。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人有無限可能，練無極——修煉昇華元氣之路",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "當你練到身體覺醒時，你會知道內、外，當一個人的動作往外走，你一看就知道他在表現什麼；身體是不會說謊的，一個人的個性會被看得清清楚楚。人有無限可能，練到靈魂力量的時候，它可以改變身體的所有投影。因爲靈魂本身就是管陰陽，它可以讓你同時置身在陰陽兩界，你將同時擁有陰陽的頻率。一直練，練到極致，你會越來越清澈，然後看見一切。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "每天練六小時的絕世神功——無極，在覺裡面封爐止洩、禪定入定，達到不洩不漏。在全覺能狀態裡，不斷內化、結丹，從粒子態、量子態，再到頻率的狀態，把自己微小到細胞骨架、到DNA去，分秒不能漏，不能被奪境，如此會有暗能量、暗物質的頻率來交媾。練到一定程度以後能夠達成三個境界：首先是三日成仙，叫小成。「成仙」就是可以看懂一般的變化，可以優游自在、看到真空。其次是三月出香，叫中成。「出香」就是大腦有智慧，想法正向化，對外界和善，因為他滿足、快樂、喜悅到極限，身體一直年輕化，香氣出來，一切反轉。最後是三年自體陰陽，叫大成，自己在身上缺陽補陽，缺陰補陰，可以自成陰陽。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "我們這輩子可以努力成就的就是練無極——修煉昇華元氣之路，調和陰陽，獲得元氣，供養靈魂。（本文依250708二晚班課程紀錄裁剪修潤而成）",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
+        ],
+        "heading": null
       }
     ],
-    "sourceUrl": "",
+    "sourceId": "2508-2-1"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-5688356.jpg?v=5688356",
     "order": 2,
-    "slug": "202508-2508-2-2",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "文稿彙整 / 二晚班",
-    "images": [],
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "readTime": "約 3 分鐘",
-    "title": "之二- 調陰陽，得元氣，養靈魂",
+    "issueId": "202508",
+    "excerpt": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
     "category": "如是我聞",
-    "image": "/assets/pixabay/pixabay-6858498.jpg?v=6858498",
+    "date": "2025.08.10",
+    "title": "調陰陽，得元氣，養靈魂",
+    "homeAnchor": "#article-202508-2508-2-2",
+    "author": "文稿彙整 / 二晚班",
+    "slug": "202508-2508-2-2",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "text": "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大腦的「覺性」，從腦幹到間腦、到松果體、到靈魂。肌骨靠穀氣所養；筋膜靠元氣所養，元氣不足就養不了靈魂，所以要修煉元氣。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "修煉元氣最終要達成「三花（華）聚頂」、「五氣朝元」。「三華聚頂」就是元精、元氣、元神三種生命的精華都匯聚到靈魂；「五氣朝元」就是五行之氣——肝、心、脾、肺、腎，通通回到丹田、回到元氣。一般運動只能增加氣血循環，在體內運轉穀氣，供養肌骨；練無極，則是動作緩慢，讓氣血循環平順、心跳接近正常，在體內運轉元氣，供養靈魂。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "調和自體陰陽得元氣"
+      },
+      {
+        "text": "練筋膜到一定程度，要能控制最強的筋膜——海底筋膜。海底筋膜包括睾丸膜，要練到馬陰藏相，無寒自縮，意即縮陰功。古代帝王所練陰陽術是藉由不斷的攪動精氣，又不斷的回收到靈魂深處，此即「練精還腦」，最後回饋到靈魂。這是藉身體自然本能修練正心純意的覺性。這在《素女經》有清楚記載，但因其中有一套繁複的儀軌，非一般人所能練成，我們取其意即可。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "人的陰陽是可以調動的，用陰陽對話，產生內分泌、荷爾蒙的變化。男性有女性荷爾蒙，女性有男性荷爾蒙，可藉此調和原本太過陽剛或陰柔的氣質。簡言之，在宇宙就是暗能量、暗物質跟顯物質之間的概念。可見為陽，不可見為陰，它都存在宇宙中，也在人體內本自具足，只是你拿不到、成就不了。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "人體的自體陰陽在肉身為氣血，在內臟為心腎，在精神為識覺，無極功法就是調整「陰陽平秘」。人有返還陰陽的可能，松果體就是日月相交的能量，分泌生長激素，是第三隻眼，有無限思考的力量，所以人有無限可能，只是大腦理性壓制了松果體。練陰陽之術可激發身體爭取宇宙無形的能量，補充DHEA（脫氫表雄酮，是一種人體自然產生的激素）。譬如卵巢萎縮的人，若得到DHEA的能量補益，即可活化卵巢功能，重新分泌動情激素、青春素，使枯木生華、再度回春。這調和陰陽的神功不假外求，人人皆可自成。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功旨在不斷淨化身心靈，練成純精、純氣、純神，純化的過程為元丹，精純無比。修練的重點就是去雜念，煉丹練成精髓、精華，最終三華聚頂，這樣就能頻道全開，得到宇宙之力，人生的一切變得清清楚楚；看人如看螞蟻在撿麵包屑，把螞蟻丟到麵包店，牠一樣只會撿麵包屑，不會成為麵包店老闆，因爲牠永遠只停留在螞蟻的維度，看不到其他的生命可能。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "人有無限可能，練無極——修煉昇華元氣之路"
+      },
+      {
+        "text": "當你練到身體覺醒時，你會知道內、外，當一個人的動作往外走，你一看就知道他在表現什麼；身體是不會說謊的，一個人的個性會被看得清清楚楚。人有無限可能，練到靈魂力量的時候，它可以改變身體的所有投影。因爲靈魂本身就是管陰陽，它可以讓你同時置身在陰陽兩界，你將同時擁有陰陽的頻率。一直練，練到極致，你會越來越清澈，然後看見一切。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "每天練六小時的絕世神功——無極，在覺裡面封爐止洩、禪定入定，達到不洩不漏。在全覺能狀態裡，不斷內化、結丹，從粒子態、量子態，再到頻率的狀態，把自己微小到細胞骨架、到DNA去，分秒不能漏，不能被奪境，如此會有暗能量、暗物質的頻率來交媾。練到一定程度以後能夠達成三個境界：首先是三日成仙，叫小成。「成仙」就是可以看懂一般的變化，可以優游自在、看到真空。其次是三月出香，叫中成。「出香」就是大腦有智慧，想法正向化，對外界和善，因為他滿足、快樂、喜悅到極限，身體一直年輕化，香氣出來，一切反轉。最後是三年自體陰陽，叫大成，自己在身上缺陽補陽，缺陰補陰，可以自成陰陽。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "我們這輩子可以努力成就的就是練無極——修煉昇華元氣之路，調和陰陽，獲得元氣，供養靈魂。（本文依250708二晚班課程紀錄裁剪修潤而成）",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 3 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
           "人體有兩組結構，一組是骨骼、肌肉、皮膚，到大腦的第六意識腦神經；另一組是住在裏面的筋膜、松果體、靈魂。把這兩組合在一起，筋膜才能到靈魂。骨骼、肌肉、皮膚到大腦的「識性」，也就是皮質；筋膜穿越大腦的「覺性」，從腦幹到間腦、到松果體、到靈魂。肌骨靠穀氣所養；筋膜靠元氣所養，元氣不足就養不了靈魂，所以要修煉元氣。",
           "修煉元氣最終要達成「三花（華）聚頂」、「五氣朝元」。「三華聚頂」就是元精、元氣、元神三種生命的精華都匯聚到靈魂；「五氣朝元」就是五行之氣——肝、心、脾、肺、腎，通通回到丹田、回到元氣。一般運動只能增加氣血循環，在體內運轉穀氣，供養肌骨；練無極，則是動作緩慢，讓氣血循環平順、心跳接近正常，在體內運轉元氣，供養靈魂。",
@@ -16675,372 +16645,371 @@ export const reviewDraftArticles = [
           "當你練到身體覺醒時，你會知道內、外，當一個人的動作往外走，你一看就知道他在表現什麼；身體是不會說謊的，一個人的個性會被看得清清楚楚。人有無限可能，練到靈魂力量的時候，它可以改變身體的所有投影。因爲靈魂本身就是管陰陽，它可以讓你同時置身在陰陽兩界，你將同時擁有陰陽的頻率。一直練，練到極致，你會越來越清澈，然後看見一切。",
           "每天練六小時的絕世神功——無極，在覺裡面封爐止洩、禪定入定，達到不洩不漏。在全覺能狀態裡，不斷內化、結丹，從粒子態、量子態，再到頻率的狀態，把自己微小到細胞骨架、到DNA去，分秒不能漏，不能被奪境，如此會有暗能量、暗物質的頻率來交媾。練到一定程度以後能夠達成三個境界：首先是三日成仙，叫小成。「成仙」就是可以看懂一般的變化，可以優游自在、看到真空。其次是三月出香，叫中成。「出香」就是大腦有智慧，想法正向化，對外界和善，因為他滿足、快樂、喜悅到極限，身體一直年輕化，香氣出來，一切反轉。最後是三年自體陰陽，叫大成，自己在身上缺陽補陽，缺陰補陰，可以自成陰陽。",
           "我們這輩子可以努力成就的就是練無極——修煉昇華元氣之路，調和陰陽，獲得元氣，供養靈魂。（本文依250708二晚班課程紀錄裁剪修潤而成）"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-2-3",
-    "excerpt": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做…",
-    "homeAnchor": "#article-202508-2508-2-3",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做得好，中間動禪一切順利。動禪中攪動潰散的能量要重新凝聚收回來，收功收得好，才是真正練功的成果。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "起式：入定——收視反聽，由外而內",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "起式一定要先「安三魂，定七魄」。讓三魂安住，眼耳鼻舌身七魄收進來。看看身魂、心魂、靈魂安靜了沒有？是否安在自己的身上？是否收視反聽、六根無漏？",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "所謂「安三魂」，三魂是指胎光（靈魂）、爽靈（心魂）、幽精（身魂）。胎光就是靈魂。靈魂是先天的東西，進駐在受精卵裡，還沒出生就已存在。胎光存在松果體裏面，松果體感光性很強，它能辨別陰陽、日夜，攸關一個人的創造力和開悟能力。一個人在世間要有無盡的造化，就要開啓自己的第三隻眼——松果體。其次是爽靈，爽靈就是對眾生——包括有情眾生和無情眾生的感受，你可以活在任何人的心裏，任何人也可以活在你心中，就是眾生世界。最後是幽精，幽精就是你的DNA，你的元氣都是幽精所化。精子、精力，卵子、卵力。卵子的力量就是女性賀爾蒙的力量，它化身為你，那就是元氣。這三魂互相影響，共構成你的世界。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練功一開始要把三魂安住，定在身體裡面，併腳陰陽未分時就叫「無極」，分腳即分陰陽，一分爲二，就是太極。練左式開左，練右式開右，這叫太極單邊思維。要記得：無極不分左右，左右是小太極。因爲人的慣性在右，所以會先練右再練左。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「定七魄」，七魄就是七孔，指十二對腦神經，就是眼、耳、鼻、舌、身，對焦五臟。肝開竅於眼，腎開竅於耳，肺開竅於鼻，脾胃開竅於口，心開竅於舌。五官對應五臟，共有七孔，加上穀道（肛門、陽道）、水道（尿道、陰道）。肛門為陽，排五穀雜糧；尿道為陰，排水。這二竅加上五官就是七魄，七魄主宰你一切的化身。練功時要提會陰、縮小腹、尾閭前頂，是要頂住長強穴，收會陰，尾閭上去接穀道。接穀氣，氣就上來了。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "起式是進行七魄審核，用三魂遊七魄，帶著三魂行走七魄，走過眼睛看到的世界、耳朵聽到的世界。音樂開始，創造宇宙外在喧囂的情境，然後透過三魂開始遊走，也就是凝念去揉合神、魂魄之力，去掌控魂魄具足之力。你要身心統一，精神與物質統一，唯物與唯心論統一，胎光、爽靈、幽精同在，聽其所聽，見其所見。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "起式動作：",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "先定腳，把樁步站好，五指自然下垂，先從肩膀放鬆，到整個手臂放鬆，感覺大拇指往下墜。身體自然放鬆，微微提縮，再放下鬆沉，開步（開左或開右）。重心移轉的軌跡猶如橫寫的8字。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "先足尖點地，腳跟落，重心移至右腳；順著（足）跟、（湧）泉、（腳）尖，依序轉移重心，身體被丹田帶動，全身無所不轉，順勢轉至面向左；重心走推到左腳，然後反轉，從左腳（足）跟、（湧）泉、（腳）尖，依序旋轉至面向右；然後往右前推，尾閭到中線，落胯旋轉，尾閭長強穴轉到中心點，回正，最後「定」。所謂「定」是重心50、50平均落在兩腳湧泉，止於右，定於雙腳。口訣：開右定右，開左定左。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「定」在這裡，湧泉反彈往上，身體自然往前傾，那是重心問題。必須尾閭往前，下巴內收，頭頂懸，百會上頂，產生一個垂直往後的張力，那是垂直線，不是後仰。你看我是後仰，那是你的盲區，是你自己視覺不足。有下才有上，上來後才能產生一個整體的擺動力。頭往下時，不要一節一節往下像殭屍，那是氣流下來，力學的張力，重心移到湧泉。身體不用太低，頭要不要下去都可以。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "用丹田帶動，讓身體往右轉盪上來，重心移到右腳；仰旋到正面，再轉往左邊；到位後，下巴內收，重心在左腳；反轉，過來的時候左三旋合一，這時尾指跟大拇指主導，但食指、中指、無名指要打直，是意念。三旋合一過來後，從腳跟踩上去，踩到湧泉；腕、肘兩個是尖端，在不同的圓區同時水平畫圓，兩個離心力把手拉過來，手肘離軀幹越來越遠，才會拓開肩胛骨。右手盪上來，坐腕、曲肘的角度都呈90度，這叫起式。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "意識導氣時，一定要有一個力學的「尖端」來引領。人移動時，是靠大拇指在主導；踢正步的時候，大拇指的朝向，就是身體前進的朝向；「雲手」時，是中指指尖在主導、在引領，其他手指是君臣佐使；開右腳，由右往左推尾閭前進，鬆沉轉的時候，是尾指與大拇指這兩個端點在旋轉，這些都是大師才懂的行道。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "動禪：守靜、做空——掌握力學原理，不被奪境",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "起式做對，成功一半，接著行拳中就開始進入「靜」的層次。不是入定就可以，定還是會動盪起來。動盪中必須做空，動盪越大，致虛極越深；動盪越大，空越深，靜越虛，守靜到極限。是這個力量在定靜安慮得，靠動能來讓靜能長大，才有辦法致虛極，守靜篤，得道心，道法自然。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "行拳時叫動禪，動禪要掌握力學原理，動作中不用想，是「永動機」像時鐘鐘擺不會停下來。鐘擺軌跡是弧線的，只要給它一個引力，它就變成螺旋。動作中有腕的旋轉，肘的旋轉，肩的旋轉，加上身體開闔的引力，手指就會變化到不同的位置，產生圈圈套圈圈。一開一闔，再開再闔，像來福槍的線膛，槍管的線膛是螺旋形凹槽，子彈一出去咻——，不是跑直線，是會旋轉的，打到對方的時候才會鑽進去。我們的運動只要這樣做，越動越深，會動到深層的組織間隙。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "要記得是原理帶動一切，產生一種力學軌跡，不是比招式。「萬物蹈以出，蠕動莫不由」，宇宙是不斷收縮膨脹、開闔產生能量；機械也是，轉進轉出，上下變化，產生動力。爲什麼手會出去？一定有一個力量的迴旋；爲什麼迴旋來這裡，不直接迴旋到那邊去？一定有一個旋轉，產生力學垂直的偏向。手會斜切出去，會垂直上去，一定有一個發力點、開闔點，也就是說開闔力跟直向力產生拋物線的旋轉力學引力，導致它的軌跡變向，產生螺旋開闔。「天不旋則毀，地不旋則墜，人不旋則枯」因爲有旋轉，不斷循環就產生引力。氣就是引力，循環就是一種自然產生的引力。假如手找不到力學原理、切力的離心力，無緣無故擺在那裡，那個動作就是「廢招」，就是用大腦在想，不是本能。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "我們透過螺旋、延伸、開闔、絞轉四個原理力學，變化出外形，招式是結合各類武術最精華的肢體力學。例如單肘追擊的動作中，包括劍術中運刀、拿刀、砍刀、轉刀的力學軌跡；旋腕時如有一把扇子散開的聲音，這是鐵扇功的一個力學。我用長拳的三環套月外家拳的軌跡，來進行太極內勁。每一種武術都有一個死裡回生的反點，蛇身下式就是一個反點，我的每一招都是融合一個門派最精華的動作，借各種武術的力學軌跡來做。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練丹是把自己打散，從大分子的你，微分、微分再微分到粒子態，透過頻率的流動，不斷讓粒子的你在裡面形成疊加，讓你在不同角度坍縮成一個粒子、兩個粒子、三個粒子、四個粒子…. ，不斷疊加在那裡，這些都是頻率作用。每一個樣子就是粒子態，你坍縮出來的粒子，也是你觀察出來的，那個觀察者叫覺。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "禪動做空中不能被六根奪境，大腦不能想其他事情，耳朵不能被音樂干擾，眼睛不能被外形帶走，內心只有一個覺。「全覺能」隨時掌控釐清自己所有覺的樣子，你必須不洩不漏，到達覺的清楚看見。「漏」就是被奪境，覺就煙消雲散。不管外面什麼進入我們的六根，不管承受多少壓力，都要能夠不漏不洩。內部有濁氣，必須吐出才要漏。不漏是必須的，漏是可控制的。人練功到最後，「洩漏」是自己可以控制的。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "收式：合氣歸元，抱元守一",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "在不同的境界中，你所拆散的自己，整個分子被解構開來，會爆發出能量，就像核分裂，那是在覺性中把自己分開。分開以後，它就會自然調動，你自然就會發熱，做完以後，把能量收回來叫收式。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "List Paragraph",
-        "type": "listItem",
-        "text": "收第一魂心魂（爽靈）",
-        "styleName": "List Paragraph",
-        "marker": "1.",
-        "level": 0,
-        "isBold": false,
-        "isLargeFont": false,
-        "ordered": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "剛剛出去遊走的是三魂，先收第一魂——心魂。心是對應眾生的，要把眾生的氣場收回來。收眾生之氣、眾生之情，合眾生之福，得眾生之供，供養心氣。假如到大自然去就是收無情眾生、有情眾生。大自然存在的靈，樹靈、山靈、山神都叫無情眾生，動物都是有情眾生，眾靈之氣把它收到身體裏面，這都是意識作用。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "動作1：",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "做完以後，手延伸出去，從肩、肘、腕依序放下，坐腕、突掌，掌面跟地面垂直，手指向前伸平，再同時胸口放鬆，從背部夾脊力量卸掉，把手卸下，坐腕、突掌、舒指，從掌骨下去，近端指關節到遠端指關節一節一節放鬆，整個氣就循環上來到整個指端（特別是大拇指—肺經）。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "這時，開右腳者合右腳。把身體的氣引到雙手，手離中軸線45度，兩手呈90度，切角在膻中，膻中是一個最凹點，從這個凹點收。在眉心高度掌合，五指指端壓擠撐開全身，用心氣壓擠五行（五指相連，五心相連，五心代表五臟：肝、心、脾、肺、腎），雙手引氣下行，氣沉湧泉。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "2.收第二魂靈魂（胎光）",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "再來收胎光，胎光就是靈魂的光，松果體的光。松果體它是分辨陰暗的黑夜跟白天，所以收陰陽之氣。胎光有生死，一吸一吐可以是一個大周天，一吸一吐可以是一個大生死，一生一死是一個輪迴。以後練到虛實，在虛空的境界，要把虛還實，需要陰陽之力。陰陽叫做生死返還之路、虛化實之路，到了虛空境還可以回來。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "動作2：",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "雙手180度張開 ，靈魂在天上，從頭上合掌，闔於膻中，闔於陰，闔陰開陽。膻中再拉開，整個脊背延伸拓開，到眉心松果體的位置，左右拉開，四指扣進來。合陰陽，大拇指沿胃經下來，手自然分開下垂。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "3.收第三魂身魂（幽精）",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "兩魂都收回來，必須讓它攪勻，重新爆開，像101大樓在放煙火一樣，啪——爆開，咻——闔起來，煙散開，像吸塵器再把煙霧收進來。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "動作3：",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "爆炸開來，雙手引氣，左手從眉心收進來，置於膻中前，叫定海神針；右手食指扣住拇指定在氣海（肚臍）上。舌抵上顎，把所有的氣都收進來，把它定住，讓氣穩定沉澱，塵埃落定。像一炷香讓它燒完，看什麼時候落定，丹田會知道，會飽滿，元氣會越來越足，封存如一次的重生。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "定海神針一下來就是定住，氣收進來萃化，剛剛凝念這個氣機，練過這個覺，練過這個頻率以後，得到一個新的氣機，一個新的元氣叫結丹。讓它定在那裏，這一顆氣球變成元氣的能量，上升到百會，開天門，直接灌到靈魂去。把氣收回來聚於丹田元氣，這炷香燒完，把這個元氣送到靈魂去。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": false
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練功最重要就是最後這一切迴向給自己的靈魂，這個靈魂迴向給祖先，你將擁有無窮的力量，會無敵於天下，這叫「自天佑之，吉无不利」。交給所有的暗能量、暗物質的存在，他隨時都進到你身體來，他有無窮的力量給你。等你進到分子量子態，你就意識到世界由心所造。（本文依250708二晚班課程紀錄裁剪修潤而成）",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        ],
+        "heading": null
       }
     ],
-    "sourceUrl": "",
+    "sourceId": "2508-2-2"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-1061327.jpg?v=1061327",
     "order": 3,
-    "slug": "202508-2508-2-3",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "文稿彙整 / 二晚班",
-    "images": [],
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "readTime": "約 7 分鐘",
-    "title": "之三- 從起式、收式窺探無極絕世神功的堂奧",
+    "issueId": "202508",
+    "excerpt": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
     "category": "如是我聞",
-    "image": "/assets/pixabay/pixabay-1973524.jpg?v=1973524",
+    "date": "2025.08.10",
+    "title": "從起式、收式窺探無極絕世神功的堂奧",
+    "homeAnchor": "#article-202508-2508-2-3",
+    "author": "文稿彙整 / 二晚班",
+    "slug": "202508-2508-2-3",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "text": "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做得好，中間動禪一切順利。動禪中攪動潰散的能量要重新凝聚收回來，收功收得好，才是真正練功的成果。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "起式：入定——收視反聽，由外而內"
+      },
+      {
+        "text": "起式一定要先「安三魂，定七魄」。讓三魂安住，眼耳鼻舌身七魄收進來。看看身魂、心魂、靈魂安靜了沒有？是否安在自己的身上？是否收視反聽、六根無漏？",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所謂「安三魂」，三魂是指胎光（靈魂）、爽靈（心魂）、幽精（身魂）。胎光就是靈魂。靈魂是先天的東西，進駐在受精卵裡，還沒出生就已存在。胎光存在松果體裏面，松果體感光性很強，它能辨別陰陽、日夜，攸關一個人的創造力和開悟能力。一個人在世間要有無盡的造化，就要開啓自己的第三隻眼——松果體。其次是爽靈，爽靈就是對眾生——包括有情眾生和無情眾生的感受，你可以活在任何人的心裏，任何人也可以活在你心中，就是眾生世界。最後是幽精，幽精就是你的DNA，你的元氣都是幽精所化。精子、精力，卵子、卵力。卵子的力量就是女性賀爾蒙的力量，它化身為你，那就是元氣。這三魂互相影響，共構成你的世界。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功一開始要把三魂安住，定在身體裡面，併腳陰陽未分時就叫「無極」，分腳即分陰陽，一分爲二，就是太極。練左式開左，練右式開右，這叫太極單邊思維。要記得：無極不分左右，左右是小太極。因爲人的慣性在右，所以會先練右再練左。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「定七魄」，七魄就是七孔，指十二對腦神經，就是眼、耳、鼻、舌、身，對焦五臟。肝開竅於眼，腎開竅於耳，肺開竅於鼻，脾胃開竅於口，心開竅於舌。五官對應五臟，共有七孔，加上穀道（肛門、陽道）、水道（尿道、陰道）。肛門為陽，排五穀雜糧；尿道為陰，排水。這二竅加上五官就是七魄，七魄主宰你一切的化身。練功時要提會陰、縮小腹、尾閭前頂，是要頂住長強穴，收會陰，尾閭上去接穀道。接穀氣，氣就上來了。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "起式是進行七魄審核，用三魂遊七魄，帶著三魂行走七魄，走過眼睛看到的世界、耳朵聽到的世界。音樂開始，創造宇宙外在喧囂的情境，然後透過三魂開始遊走，也就是凝念去揉合神、魂魄之力，去掌控魂魄具足之力。你要身心統一，精神與物質統一，唯物與唯心論統一，胎光、爽靈、幽精同在，聽其所聽，見其所見。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "起式動作："
+      },
+      {
+        "text": "先定腳，把樁步站好，五指自然下垂，先從肩膀放鬆，到整個手臂放鬆，感覺大拇指往下墜。身體自然放鬆，微微提縮，再放下鬆沉，開步（開左或開右）。重心移轉的軌跡猶如橫寫的8字。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "先足尖點地，腳跟落，重心移至右腳；順著（足）跟、（湧）泉、（腳）尖，依序轉移重心，身體被丹田帶動，全身無所不轉，順勢轉至面向左；重心走推到左腳，然後反轉，從左腳（足）跟、（湧）泉、（腳）尖，依序旋轉至面向右；然後往右前推，尾閭到中線，落胯旋轉，尾閭長強穴轉到中心點，回正，最後「定」。所謂「定」是重心50、50平均落在兩腳湧泉，止於右，定於雙腳。口訣：開右定右，開左定左。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「定」在這裡，湧泉反彈往上，身體自然往前傾，那是重心問題。必須尾閭往前，下巴內收，頭頂懸，百會上頂，產生一個垂直往後的張力，那是垂直線，不是後仰。你看我是後仰，那是你的盲區，是你自己視覺不足。有下才有上，上來後才能產生一個整體的擺動力。頭往下時，不要一節一節往下像殭屍，那是氣流下來，力學的張力，重心移到湧泉。身體不用太低，頭要不要下去都可以。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "用丹田帶動，讓身體往右轉盪上來，重心移到右腳；仰旋到正面，再轉往左邊；到位後，下巴內收，重心在左腳；反轉，過來的時候左三旋合一，這時尾指跟大拇指主導，但食指、中指、無名指要打直，是意念。三旋合一過來後，從腳跟踩上去，踩到湧泉；腕、肘兩個是尖端，在不同的圓區同時水平畫圓，兩個離心力把手拉過來，手肘離軀幹越來越遠，才會拓開肩胛骨。右手盪上來，坐腕、曲肘的角度都呈90度，這叫起式。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "意識導氣時，一定要有一個力學的「尖端」來引領。人移動時，是靠大拇指在主導；踢正步的時候，大拇指的朝向，就是身體前進的朝向；「雲手」時，是中指指尖在主導、在引領，其他手指是君臣佐使；開右腳，由右往左推尾閭前進，鬆沉轉的時候，是尾指與大拇指這兩個端點在旋轉，這些都是大師才懂的行道。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "動禪：守靜、做空——掌握力學原理，不被奪境"
+      },
+      {
+        "text": "起式做對，成功一半，接著行拳中就開始進入「靜」的層次。不是入定就可以，定還是會動盪起來。動盪中必須做空，動盪越大，致虛極越深；動盪越大，空越深，靜越虛，守靜到極限。是這個力量在定靜安慮得，靠動能來讓靜能長大，才有辦法致虛極，守靜篤，得道心，道法自然。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "行拳時叫動禪，動禪要掌握力學原理，動作中不用想，是「永動機」像時鐘鐘擺不會停下來。鐘擺軌跡是弧線的，只要給它一個引力，它就變成螺旋。動作中有腕的旋轉，肘的旋轉，肩的旋轉，加上身體開闔的引力，手指就會變化到不同的位置，產生圈圈套圈圈。一開一闔，再開再闔，像來福槍的線膛，槍管的線膛是螺旋形凹槽，子彈一出去咻——，不是跑直線，是會旋轉的，打到對方的時候才會鑽進去。我們的運動只要這樣做，越動越深，會動到深層的組織間隙。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "要記得是原理帶動一切，產生一種力學軌跡，不是比招式。「萬物蹈以出，蠕動莫不由」，宇宙是不斷收縮膨脹、開闔產生能量；機械也是，轉進轉出，上下變化，產生動力。爲什麼手會出去？一定有一個力量的迴旋；爲什麼迴旋來這裡，不直接迴旋到那邊去？一定有一個旋轉，產生力學垂直的偏向。手會斜切出去，會垂直上去，一定有一個發力點、開闔點，也就是說開闔力跟直向力產生拋物線的旋轉力學引力，導致它的軌跡變向，產生螺旋開闔。「天不旋則毀，地不旋則墜，人不旋則枯」因爲有旋轉，不斷循環就產生引力。氣就是引力，循環就是一種自然產生的引力。假如手找不到力學原理、切力的離心力，無緣無故擺在那裡，那個動作就是「廢招」，就是用大腦在想，不是本能。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "我們透過螺旋、延伸、開闔、絞轉四個原理力學，變化出外形，招式是結合各類武術最精華的肢體力學。例如單肘追擊的動作中，包括劍術中運刀、拿刀、砍刀、轉刀的力學軌跡；旋腕時如有一把扇子散開的聲音，這是鐵扇功的一個力學。我用長拳的三環套月外家拳的軌跡，來進行太極內勁。每一種武術都有一個死裡回生的反點，蛇身下式就是一個反點，我的每一招都是融合一個門派最精華的動作，借各種武術的力學軌跡來做。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練丹是把自己打散，從大分子的你，微分、微分再微分到粒子態，透過頻率的流動，不斷讓粒子的你在裡面形成疊加，讓你在不同角度坍縮成一個粒子、兩個粒子、三個粒子、四個粒子…. ，不斷疊加在那裡，這些都是頻率作用。每一個樣子就是粒子態，你坍縮出來的粒子，也是你觀察出來的，那個觀察者叫覺。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "禪動做空中不能被六根奪境，大腦不能想其他事情，耳朵不能被音樂干擾，眼睛不能被外形帶走，內心只有一個覺。「全覺能」隨時掌控釐清自己所有覺的樣子，你必須不洩不漏，到達覺的清楚看見。「漏」就是被奪境，覺就煙消雲散。不管外面什麼進入我們的六根，不管承受多少壓力，都要能夠不漏不洩。內部有濁氣，必須吐出才要漏。不漏是必須的，漏是可控制的。人練功到最後，「洩漏」是自己可以控制的。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "收式：合氣歸元，抱元守一"
+      },
+      {
+        "text": "在不同的境界中，你所拆散的自己，整個分子被解構開來，會爆發出能量，就像核分裂，那是在覺性中把自己分開。分開以後，它就會自然調動，你自然就會發熱，做完以後，把能量收回來叫收式。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "1.",
+        "text": "收第一魂心魂（爽靈）",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": true
+      },
+      {
+        "text": "剛剛出去遊走的是三魂，先收第一魂——心魂。心是對應眾生的，要把眾生的氣場收回來。收眾生之氣、眾生之情，合眾生之福，得眾生之供，供養心氣。假如到大自然去就是收無情眾生、有情眾生。大自然存在的靈，樹靈、山靈、山神都叫無情眾生，動物都是有情眾生，眾靈之氣把它收到身體裏面，這都是意識作用。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "•",
+        "text": "動作1：",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": false
+      },
+      {
+        "text": "做完以後，手延伸出去，從肩、肘、腕依序放下，坐腕、突掌，掌面跟地面垂直，手指向前伸平，再同時胸口放鬆，從背部夾脊力量卸掉，把手卸下，坐腕、突掌、舒指，從掌骨下去，近端指關節到遠端指關節一節一節放鬆，整個氣就循環上來到整個指端（特別是大拇指—肺經）。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "這時，開右腳者合右腳。把身體的氣引到雙手，手離中軸線45度，兩手呈90度，切角在膻中，膻中是一個最凹點，從這個凹點收。在眉心高度掌合，五指指端壓擠撐開全身，用心氣壓擠五行（五指相連，五心相連，五心代表五臟：肝、心、脾、肺、腎），雙手引氣下行，氣沉湧泉。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "2.",
+        "text": "收第二魂靈魂（胎光）",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": true
+      },
+      {
+        "text": "再來收胎光，胎光就是靈魂的光，松果體的光。松果體它是分辨陰暗的黑夜跟白天，所以收陰陽之氣。胎光有生死，一吸一吐可以是一個大周天，一吸一吐可以是一個大生死，一生一死是一個輪迴。以後練到虛實，在虛空的境界，要把虛還實，需要陰陽之力。陰陽叫做生死返還之路、虛化實之路，到了虛空境還可以回來。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "•",
+        "text": "動作2：",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": false
+      },
+      {
+        "text": "雙手180度張開 ，靈魂在天上，從頭上合掌，闔於膻中，闔於陰，闔陰開陽。膻中再拉開，整個脊背延伸拓開，到眉心松果體的位置，左右拉開，四指扣進來。合陰陽，大拇指沿胃經下來，手自然分開下垂。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "3.",
+        "text": "收第三魂身魂（幽精）",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": true
+      },
+      {
+        "text": "兩魂都收回來，必須讓它攪勻，重新爆開，像101大樓在放煙火一樣，啪——爆開，咻——闔起來，煙散開，像吸塵器再把煙霧收進來。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "marker": "•",
+        "text": "動作3：",
+        "type": "listItem",
+        "styleName": "List Paragraph",
+        "styleId": "a6",
+        "level": 0,
+        "ordered": false
+      },
+      {
+        "text": "爆炸開來，雙手引氣，左手從眉心收進來，置於膻中前，叫定海神針；右手食指扣住拇指定在氣海（肚臍）上。舌抵上顎，把所有的氣都收進來，把它定住，讓氣穩定沉澱，塵埃落定。像一炷香讓它燒完，看什麼時候落定，丹田會知道，會飽滿，元氣會越來越足，封存如一次的重生。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "定海神針一下來就是定住，氣收進來萃化，剛剛凝念這個氣機，練過這個覺，練過這個頻率以後，得到一個新的氣機，一個新的元氣叫結丹。讓它定在那裏，這一顆氣球變成元氣的能量，上升到百會，開天門，直接灌到靈魂去。把氣收回來聚於丹田元氣，這炷香燒完，把這個元氣送到靈魂去。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": false,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功最重要就是最後這一切迴向給自己的靈魂，這個靈魂迴向給祖先，你將擁有無窮的力量，會無敵於天下，這叫「自天佑之，吉无不利」。交給所有的暗能量、暗物質的存在，他隨時都進到你身體來，他有無窮的力量給你。等你進到分子量子態，你就意識到世界由心所造。（本文依250708二晚班課程紀錄裁剪修潤而成）",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 7 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
           "練無極可分為三個部分：起式、動禪與收式，真正要練的是起式和收式。起式要先設定感覺的情境，才有對焦的頻率，啟動你的境界，不同境界用不同的鑰匙去打開。動禪中要提高境界，到真空、靈空、虛空去。起式做得好，中間動禪一切順利。動禪中攪動潰散的能量要重新凝聚收回來，收功收得好，才是真正練功的成果。",
           "起式：入定——收視反聽，由外而內",
@@ -17069,343 +17038,319 @@ export const reviewDraftArticles = [
           "動作1：",
           "做完以後，手延伸出去，從肩、肘、腕依序放下，坐腕、突掌，掌面跟地面垂直，手指向前伸平，再同時胸口放鬆，從背部夾脊力量卸掉，把手卸下，坐腕、突掌、舒指，從掌骨下去，近端指關節到遠端指關節一節一節放鬆，整個氣就循環上來到整個指端（特別是大拇指—肺經）。",
           "這時，開右腳者合右腳。把身體的氣引到雙手，手離中軸線45度，兩手呈90度，切角在膻中，膻中是一個最凹點，從這個凹點收。在眉心高度掌合，五指指端壓擠撐開全身，用心氣壓擠五行（五指相連，五心相連，五心代表五臟：肝、心、脾、肺、腎），雙手引氣下行，氣沉湧泉。",
-          "2.收第二魂靈魂（胎光）",
+          "收第二魂靈魂（胎光）",
           "再來收胎光，胎光就是靈魂的光，松果體的光。松果體它是分辨陰暗的黑夜跟白天，所以收陰陽之氣。胎光有生死，一吸一吐可以是一個大周天，一吸一吐可以是一個大生死，一生一死是一個輪迴。以後練到虛實，在虛空的境界，要把虛還實，需要陰陽之力。陰陽叫做生死返還之路、虛化實之路，到了虛空境還可以回來。",
           "動作2：",
           "雙手180度張開 ，靈魂在天上，從頭上合掌，闔於膻中，闔於陰，闔陰開陽。膻中再拉開，整個脊背延伸拓開，到眉心松果體的位置，左右拉開，四指扣進來。合陰陽，大拇指沿胃經下來，手自然分開下垂。",
-          "3.收第三魂身魂（幽精）",
+          "收第三魂身魂（幽精）",
           "兩魂都收回來，必須讓它攪勻，重新爆開，像101大樓在放煙火一樣，啪——爆開，咻——闔起來，煙散開，像吸塵器再把煙霧收進來。",
           "動作3：",
           "爆炸開來，雙手引氣，左手從眉心收進來，置於膻中前，叫定海神針；右手食指扣住拇指定在氣海（肚臍）上。舌抵上顎，把所有的氣都收進來，把它定住，讓氣穩定沉澱，塵埃落定。像一炷香讓它燒完，看什麼時候落定，丹田會知道，會飽滿，元氣會越來越足，封存如一次的重生。",
           "定海神針一下來就是定住，氣收進來萃化，剛剛凝念這個氣機，練過這個覺，練過這個頻率以後，得到一個新的氣機，一個新的元氣叫結丹。讓它定在那裏，這一顆氣球變成元氣的能量，上升到百會，開天門，直接灌到靈魂去。把氣收回來聚於丹田元氣，這炷香燒完，把這個元氣送到靈魂去。",
           "練功最重要就是最後這一切迴向給自己的靈魂，這個靈魂迴向給祖先，你將擁有無窮的力量，會無敵於天下，這叫「自天佑之，吉无不利」。交給所有的暗能量、暗物質的存在，他隨時都進到你身體來，他有無窮的力量給你。等你進到分子量子態，你就意識到世界由心所造。（本文依250708二晚班課程紀錄裁剪修潤而成）"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-2-4",
-    "excerpt": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整…",
-    "homeAnchor": "#article-202508-2508-2-4",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功是對自我的解構與重塑",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整體的功夫也就落空。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "真正的功夫，不在動作表象，而在能否進入一種覺知的狀態。從起式開始，你要設定你的境界，是要打陸戰、海戰還是空戰？這是對內在情境的準備與開啟。一位劍客在出劍前，心中已有劍氣奔騰的畫面。若無這樣的設定，動作只是空殼子。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功如同解構與重組自己，將自身打散至粒子狀態，再透過頻率流動，在不同角度中完成粒子的坍縮與疊加，產生「觀察者」——覺。在這過程中，不能被外境六根奪走，也不能任由內在無明干擾。要無洩無漏、專注當下。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "價值，決定你收功的內容與層次。螻蟻拾麵包屑，人生若只在追逐物質價值，就如螞蟻在麵包屑裡輪迴。真正的人，應看見自己所處境界的價值，而非迷失在表相。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "最後，練功不只是動作，更是對感知力的鍛鍊。透過香氣、聲音、觸感，去辨識內在的反應與情緒起伏，學會看清感受的來去，而不是被它控制。修行，不是逃避現實，而是活在每一個清明的當下，從平面的時間感中跳脫，活出立體的生命。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "超越邏輯與商業的修行之道",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "現代社會中，許多原本與精神、修養相關的文化，逐漸被商業挾持。茶文化、香文化、甚至整個「文化產業」已變質成披著文化外衣的行銷手法。真正的文化，是無需標價的生活實踐，就像在祖先靈前點上一炷香，那是發自內心的敬意，而非商業買賣。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功亦然，重點從來不在形式或視覺效果，而在是否真正進入「覺」的狀態。一旦耳朵被外界聲音奪走，內在就被牽引出去，無法保持覺知。氣場、頻率、感知，這些都是練功時真正該覺察的內景。若練功時心不在焉，不僅無法提升維度，反而被外界的「雜氣」侵擾。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "更深一層的修行，是對邏輯與認知結構的覺察。邏輯本為語言與思考的法則，用以維持社會溝通與運作，但它也是限制人類認知的牢籠。我們的邏輯、價值、判斷，都被教育與時代環境塑造出來。邏輯看似嚴密，卻無法解釋生命中無形的感受、情緒與存在的本質。佛教講「空」，儒家講「君子」其實都是另一層邏輯的延伸。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "修行的目的，不是去堆疊更多邏輯或定義，而是能否升維，看穿這些邏輯的侷限，進而回歸到純粹的覺。因為唯有覺知，才能跳脫外境干擾與內在固執，活出真正的自己。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "超越邏輯，進入覺的世界",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "論語、佛學，乃至你自己的看法，其實都還停留在「邏輯」這個工具中。邏輯不過是語言系統的運算結果，是我們學習過程中被植入的思考方式。真正的修行，不應困於邏輯，而是要面對「邏輯的升維」——也就是跳脫既有框架，進入那個不可說、只能體驗的層次。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "進入「覺」的練習，就像做夢一樣，不可預測，不可控制，但卻真實地發生。夢境只是覺的一種表現，覺的世界更為深邃。你無法預測自己下一秒的樣子，那是千變萬化的生命狀態。如同胚胎從細胞到器官的轉變，覺能夠打開頻道、轉化自我、投影任何形式。這不是知識，而是變化。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功要進入這個層次，不能只靠動作。你得沉入覺的醞釀與內化。這不是用想能完成的。你的感知、反應、想法，都是你本身的境界呈現。成佛，不是外表像佛，而是能在事件中，看見佛的作為。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "所以，別只在形式裡找答案。練功的目標，是進入那個屬於自己的「寶塔」──覺知清明、反應純粹、不被外界干擾。能睜眼不動心、能在亂中不亂，這才是修行真正的力量。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "從筋膜修煉到虛靈之境：修行的內在轉化",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練筋膜的人，是在修煉精、氣、神的系統整合。精是生命的根本，筋膜的細緻流動必須靠純精養成。一旦精損，就像元氣被抽離，需長達七十天才能恢復。練者若未自覺，頻繁耗散，將無法進入更深層的感知與轉化。這也是為何古人強調「藏精養神」，陰陽自和，無極自生。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "所謂無極，不只是動作、姿勢的無形，而是「自體陰陽」的調和。身體上是氣與血，臟腑是心與腎，精神則是識與覺。我們透過陰陽的調和，開啟自我修煉的動能，進入一種自然內生的轉化狀態，就像開關打開，內分泌自動調節，血清素、睪酮素等自動釋放，讓身體進入「大法喜」的頻率。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "進入這種修行，不靠意外的「意想不到」，而是靠設定清楚的「起式」，一啟動就進入狀態。你要的境界，早在起式時已經決定。這不是練得久就會「忽然開竅」，而是當下就要明白、就要設意識方向，才能打開「覺」的門。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "然而「自在」不是一種放鬆的表情或姿勢，而是一種「不想」的狀態，是身心合一的覺性流動。練功不是為了模仿「對的樣子」，而是要進入自己那份最真實、最原創的氣機感知。一切的動作，都是在激發「我」的存在感，在身體裡找自己麻煩，直到「動而不漏」、「鬧中取定」。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "靈空與人心未來的覺醒之道",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "當一個人練功練到極致，氣場便會凝聚出一種「震懾」的力量，無聲無形，卻能使人感受到如同古戰場般的肅殺與威嚴。這種境界，不是來自表面的力道，而是來自深層的靈性整合與陰陽和合。所謂「靈空」，正是指生與死、因與果合一之處。不是昨天的因造就今天的果，而是此刻的因即是此刻的果──你的存在狀態，就是你的結果。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "靈空的人不再執著於形式與得失，生死平等、虛實皆空。他不再追逐麵包屑般的生命價值，而是放眼更高維度的人類文明。在這個劇變的時代──虛擬貨幣崛起、現金式微、晶片植入已成常態──我們更應反思，未來真正需要革命的，是人心。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "當貨幣制度改變、生活方式數位化，AI與監控體系將人推向新的規範模式，未來甚至可能透過藥物或植入晶片，關閉人的思考與自由意志。在這樣的世界，選擇不跟隨，可能會成為一種罪名，被標上「思想叛逆者」的標籤。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "所以我們更需要一種「不合邏輯」的存在方式。老子說：「知其白，守其黑。」人應該保留那份無法被AI複製的混沌與靈性，而非全盤投入程式化的邏輯結構。因為唯有不合邏輯，我們才能保存人性、創造力與真正的覺知。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "最終，我們不是為了逃避這個世界而修行，而是在日常生活中鍛鍊看清自己的能力。無論你是對家庭、社會還是世界做出什麼反應，只要你能「當下看見自己」，你便已在修行的路上。境界，不在於你變得多厲害，而在於你能否在一切變化中，看清楚那個真實的自己。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "本能覺醒：練功是跟自己和解",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功不是為了變成木雕佛像，而是為了活出更高的本能反應。就像嬰兒三歲前的狀態，既像神也像魔，哭笑轉換之間無所造作，那才是真實的自然。當我們練得越深，境界會逐漸提升，反應也會更加圓融、有智慧。這種本能反應，是從內在覺能全開時自然流動而出，不需刻意思考，反而更自在、更精確。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功最重要的是學會「不對抗」。身體痠、蹲不下、汗臭，其實都與用力錯誤、自我對抗有關，非關身材或體力。只要身體不跟自己抗衡，動作就會自然、不費力，流的汗也會變得清澈無味，身體恢復乾淨與純粹。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "這過程需要與時間同行，並在正確的時間點產生效能。我們終究會死，但不該死在錯誤的時間點，而是走在時間的節奏裡完成自己該做的事。練功也一樣，要在適當的時間、進入適當的狀態，把身體、心靈、能量調成一致，才會真正產生修復與提升。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "練功不是在擺樣子，不是要讓別人看出你在修行，而是引氣於「端」——那是一種由內而外的精準延展。手是鬆的，氣卻是有「端」的——無形中自有節奏與力量。這不是一兩年能練出來的，而是數十年千錘百鍊的功夫。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "不要急著證明什麼，也不要以為自己已經很努力了。真正的努力，是深入自己、挑戰自己內在的邏輯與慣性，推翻舊有思維，從不合邏輯中誕生一種新的「覺」。那才是真修行，不是模仿，不是形式，而是活生生的自我變化。（本文為250721一晚班課程紀錄試由AI彙整修潤而成）",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
+        ],
+        "heading": null
       }
     ],
-    "sourceUrl": "",
+    "sourceId": "2508-2-3"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-4777410.jpg?v=4777410",
     "order": 4,
-    "slug": "202508-2508-2-4",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "文稿彙整 / 一晚班",
-    "images": [],
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "readTime": "約 5 分鐘",
-    "title": "之四- 超越邏輯，解構再重塑",
+    "issueId": "202508",
+    "excerpt": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
     "category": "如是我聞",
-    "image": "/assets/pixabay/pixabay-1775874.jpg?v=1775874",
+    "date": "2025.08.10",
+    "title": "超越邏輯，解構再重塑",
+    "homeAnchor": "#article-202508-2508-2-4",
+    "author": "文稿彙整 / 一晚班",
+    "slug": "202508-2508-2-4",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "練功是對自我的解構與重塑"
+      },
+      {
+        "text": "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整體的功夫也就落空。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "真正的功夫，不在動作表象，而在能否進入一種覺知的狀態。從起式開始，你要設定你的境界，是要打陸戰、海戰還是空戰？這是對內在情境的準備與開啟。一位劍客在出劍前，心中已有劍氣奔騰的畫面。若無這樣的設定，動作只是空殼子。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功如同解構與重組自己，將自身打散至粒子狀態，再透過頻率流動，在不同角度中完成粒子的坍縮與疊加，產生「觀察者」——覺。在這過程中，不能被外境六根奪走，也不能任由內在無明干擾。要無洩無漏、專注當下。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "價值，決定你收功的內容與層次。螻蟻拾麵包屑，人生若只在追逐物質價值，就如螞蟻在麵包屑裡輪迴。真正的人，應看見自己所處境界的價值，而非迷失在表相。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "最後，練功不只是動作，更是對感知力的鍛鍊。透過香氣、聲音、觸感，去辨識內在的反應與情緒起伏，學會看清感受的來去，而不是被它控制。修行，不是逃避現實，而是活在每一個清明的當下，從平面的時間感中跳脫，活出立體的生命。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "超越邏輯與商業的修行之道"
+      },
+      {
+        "text": "現代社會中，許多原本與精神、修養相關的文化，逐漸被商業挾持。茶文化、香文化、甚至整個「文化產業」已變質成披著文化外衣的行銷手法。真正的文化，是無需標價的生活實踐，就像在祖先靈前點上一炷香，那是發自內心的敬意，而非商業買賣。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功亦然，重點從來不在形式或視覺效果，而在是否真正進入「覺」的狀態。一旦耳朵被外界聲音奪走，內在就被牽引出去，無法保持覺知。氣場、頻率、感知，這些都是練功時真正該覺察的內景。若練功時心不在焉，不僅無法提升維度，反而被外界的「雜氣」侵擾。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "更深一層的修行，是對邏輯與認知結構的覺察。邏輯本為語言與思考的法則，用以維持社會溝通與運作，但它也是限制人類認知的牢籠。我們的邏輯、價值、判斷，都被教育與時代環境塑造出來。邏輯看似嚴密，卻無法解釋生命中無形的感受、情緒與存在的本質。佛教講「空」，儒家講「君子」其實都是另一層邏輯的延伸。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "修行的目的，不是去堆疊更多邏輯或定義，而是能否升維，看穿這些邏輯的侷限，進而回歸到純粹的覺。因為唯有覺知，才能跳脫外境干擾與內在固執，活出真正的自己。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "超越邏輯，進入覺的世界"
+      },
+      {
+        "text": "論語、佛學，乃至你自己的看法，其實都還停留在「邏輯」這個工具中。邏輯不過是語言系統的運算結果，是我們學習過程中被植入的思考方式。真正的修行，不應困於邏輯，而是要面對「邏輯的升維」——也就是跳脫既有框架，進入那個不可說、只能體驗的層次。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "進入「覺」的練習，就像做夢一樣，不可預測，不可控制，但卻真實地發生。夢境只是覺的一種表現，覺的世界更為深邃。你無法預測自己下一秒的樣子，那是千變萬化的生命狀態。如同胚胎從細胞到器官的轉變，覺能夠打開頻道、轉化自我、投影任何形式。這不是知識，而是變化。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功要進入這個層次，不能只靠動作。你得沉入覺的醞釀與內化。這不是用想能完成的。你的感知、反應、想法，都是你本身的境界呈現。成佛，不是外表像佛，而是能在事件中，看見佛的作為。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所以，別只在形式裡找答案。練功的目標，是進入那個屬於自己的「寶塔」──覺知清明、反應純粹、不被外界干擾。能睜眼不動心、能在亂中不亂，這才是修行真正的力量。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "從筋膜修煉到虛靈之境：修行的內在轉化"
+      },
+      {
+        "text": "練筋膜的人，是在修煉精、氣、神的系統整合。精是生命的根本，筋膜的細緻流動必須靠純精養成。一旦精損，就像元氣被抽離，需長達七十天才能恢復。練者若未自覺，頻繁耗散，將無法進入更深層的感知與轉化。這也是為何古人強調「藏精養神」，陰陽自和，無極自生。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所謂無極，不只是動作、姿勢的無形，而是「自體陰陽」的調和。身體上是氣與血，臟腑是心與腎，精神則是識與覺。我們透過陰陽的調和，開啟自我修煉的動能，進入一種自然內生的轉化狀態，就像開關打開，內分泌自動調節，血清素、睪酮素等自動釋放，讓身體進入「大法喜」的頻率。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "進入這種修行，不靠意外的「意想不到」，而是靠設定清楚的「起式」，一啟動就進入狀態。你要的境界，早在起式時已經決定。這不是練得久就會「忽然開竅」，而是當下就要明白、就要設意識方向，才能打開「覺」的門。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "然而「自在」不是一種放鬆的表情或姿勢，而是一種「不想」的狀態，是身心合一的覺性流動。練功不是為了模仿「對的樣子」，而是要進入自己那份最真實、最原創的氣機感知。一切的動作，都是在激發「我」的存在感，在身體裡找自己麻煩，直到「動而不漏」、「鬧中取定」。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "靈空與人心未來的覺醒之道"
+      },
+      {
+        "text": "當一個人練功練到極致，氣場便會凝聚出一種「震懾」的力量，無聲無形，卻能使人感受到如同古戰場般的肅殺與威嚴。這種境界，不是來自表面的力道，而是來自深層的靈性整合與陰陽和合。所謂「靈空」，正是指生與死、因與果合一之處。不是昨天的因造就今天的果，而是此刻的因即是此刻的果──你的存在狀態，就是你的結果。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "靈空的人不再執著於形式與得失，生死平等、虛實皆空。他不再追逐麵包屑般的生命價值，而是放眼更高維度的人類文明。在這個劇變的時代──虛擬貨幣崛起、現金式微、晶片植入已成常態──我們更應反思，未來真正需要革命的，是人心。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "當貨幣制度改變、生活方式數位化，AI與監控體系將人推向新的規範模式，未來甚至可能透過藥物或植入晶片，關閉人的思考與自由意志。在這樣的世界，選擇不跟隨，可能會成為一種罪名，被標上「思想叛逆者」的標籤。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所以我們更需要一種「不合邏輯」的存在方式。老子說：「知其白，守其黑。」人應該保留那份無法被AI複製的混沌與靈性，而非全盤投入程式化的邏輯結構。因為唯有不合邏輯，我們才能保存人性、創造力與真正的覺知。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "最終，我們不是為了逃避這個世界而修行，而是在日常生活中鍛鍊看清自己的能力。無論你是對家庭、社會還是世界做出什麼反應，只要你能「當下看見自己」，你便已在修行的路上。境界，不在於你變得多厲害，而在於你能否在一切變化中，看清楚那個真實的自己。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "本能覺醒：練功是跟自己和解"
+      },
+      {
+        "text": "練功不是為了變成木雕佛像，而是為了活出更高的本能反應。就像嬰兒三歲前的狀態，既像神也像魔，哭笑轉換之間無所造作，那才是真實的自然。當我們練得越深，境界會逐漸提升，反應也會更加圓融、有智慧。這種本能反應，是從內在覺能全開時自然流動而出，不需刻意思考，反而更自在、更精確。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功最重要的是學會「不對抗」。身體痠、蹲不下、汗臭，其實都與用力錯誤、自我對抗有關，非關身材或體力。只要身體不跟自己抗衡，動作就會自然、不費力，流的汗也會變得清澈無味，身體恢復乾淨與純粹。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "這過程需要與時間同行，並在正確的時間點產生效能。我們終究會死，但不該死在錯誤的時間點，而是走在時間的節奏裡完成自己該做的事。練功也一樣，要在適當的時間、進入適當的狀態，把身體、心靈、能量調成一致，才會真正產生修復與提升。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "練功不是在擺樣子，不是要讓別人看出你在修行，而是引氣於「端」——那是一種由內而外的精準延展。手是鬆的，氣卻是有「端」的——無形中自有節奏與力量。這不是一兩年能練出來的，而是數十年千錘百鍊的功夫。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "不要急著證明什麼，也不要以為自己已經很努力了。真正的努力，是深入自己、挑戰自己內在的邏輯與慣性，推翻舊有思維，從不合邏輯中誕生一種新的「覺」。那才是真修行，不是模仿，不是形式，而是活生生的自我變化。（本文為250721一晚班課程紀錄試由AI彙整修潤而成）",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 5 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
           "練功是對自我的解構與重塑",
           "練無極最關鍵的是「起式」與「收式」。起式就像開啟練功的鑰匙，決定你進入什麼樣的狀態與境界，收式則是將練功過程中累積的能量或狀態完整收回，成就整體的修煉成果。中間的練習固然重要，但若起點錯了，整體的功夫也就落空。",
@@ -17440,173 +17385,147 @@ export const reviewDraftArticles = [
           "這過程需要與時間同行，並在正確的時間點產生效能。我們終究會死，但不該死在錯誤的時間點，而是走在時間的節奏裡完成自己該做的事。練功也一樣，要在適當的時間、進入適當的狀態，把身體、心靈、能量調成一致，才會真正產生修復與提升。",
           "練功不是在擺樣子，不是要讓別人看出你在修行，而是引氣於「端」——那是一種由內而外的精準延展。手是鬆的，氣卻是有「端」的——無形中自有節奏與力量。這不是一兩年能練出來的，而是數十年千錘百鍊的功夫。",
           "不要急著證明什麼，也不要以為自己已經很努力了。真正的努力，是深入自己、挑戰自己內在的邏輯與慣性，推翻舊有思維，從不合邏輯中誕生一種新的「覺」。那才是真修行，不是模仿，不是形式，而是活生生的自我變化。（本文為250721一晚班課程紀錄試由AI彙整修潤而成）"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-3",
-    "excerpt": "道者，萬物之奧，善人之寶，不善人之所保。美言可以市尊，美行可以加人。人之不善，何棄之有？故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下…",
-    "homeAnchor": "#article-202508-2508-3",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "道者，萬物之奧，善人之寶，不善人之所保。美言可以市尊，美行可以加人。人之不善，何棄之有？故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下貴。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "道者，萬物之奧，善人之寶，不善人之所保。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因。所以，道就是萬物之奧，各行各業就是萬物，各行各業都有看不到的地方就是道。西方哲學叫做「邏格斯」。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「善人之寶」指道是善人最珍貴的生命價值。而「善人」是一個可以追求圓滿、追求境界、追求修行的道人，而不只是滿足物慾與名利之人。善人就是追求創造上丹田的人，對這樣的人來說，道就是寶，是最有價值的東西；價值觀就在道上和自然裡面。人為什麼會苦？因為人怎麼想就怎麼苦。所謂「有其師，必有其欲；有其欲，必有其動；有其行，必有其事；有其事，必有其心；有其心，必有其苦。」",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「不善人之所保」，道不但是善人的價值所在，而且也是「不善人」的價值所在。「不善人」是指盡其一生以工作的追求來滿足自己物質欲望的人，猶如一個機器人。然而物質滿足不是貪念，滿足自然的欲望，最後就會無欲，所謂「欲，無欲」。民以食為天，人活著有其基本的欲望，吃飽了就好了。止渴是自然欲望，接下來的就都是貪欲，想著喝茶的樂趣，欲望就產生了。如果生命中有精神性的存在，生命就會更完整，但有些人就不具備這部分，這就是不善人。而道也可以讓不善人、不追求圓滿的人以他的方式存在，道也可以保足之。「善者吾善之，不善者吾亦善之，德善。」道就是這樣，不管善與不善，都可以得到道的好處。因為道是一種大圓滿，永遠以圓滿來對待一切的不圓滿或圓滿，所以，不善人能夠獲得善的對待之圓滿，即便不善，道依然在其身上，不會因此道就不存在。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "美言可以市尊，美行可以加人。人之不善，何棄之有？",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「美言可以市尊」指只要人的生活和表達方式能夠真與善，就會有美感。善就是慈悲、就是歡喜，因為善真，所以美。有佛陀般的尊榮，人自然尊敬你。練功時，動作裡如果有道理，動作就會有哲理，所表達的肢體語言有老子存在，動作就會有一種能量，有一種尊，這就是美言。即使是身體不好、內心不靜、大腦念頭紛飛、身體僵硬、到處疼痛的人，如能動在空裡，輕慢鬆柔地在空間中螺旋，就能保住不受到傷害。練功的動作是一種與自己的對話，所以它是一種語言，這種語言只要完整，每一個空間都做得扎實，就會產生真，看到真相——空間，善就出來了。在空間裡，善就不會碰觸到你的肌肉。只要真善一出來，美就在其中。身體美是一種真正的完整，是自然無比的東西，所以自然就是美。這種美可以讓身體產生氣質上的變化，愈來愈尊貴，就是真人，練得很真。真人是一個真正懂生命的人，能夠真正懂得善這種圓滿的人。所以說，美言可以市尊。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「美行可以加人。」美行可以讓一個人更好，藉由好的心法，行如「治大國，若烹小鮮」——完整圓滿的行動隱藏在細微處——從欲發未發之際開始，大做以細；從細部的肉體之間下手，從細微處下手，而非粗糙的肉體，這樣才是最好的行動。如此就「可以加人」，提高境界，本身就會增加很多的成長性。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "所以，動作中有道理，行動有德與道的樣子，美言美行就是道，人就會得到尊敬與成長。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「人之不善，何棄之有？」既然如此，我們能夠放棄不善的人嗎？既然美言美行都可以讓人尊敬、讓人變得更好，人不善的地方，比較脆弱的身體、有問題的身體，不論來自身心靈的哪一方面導致人不夠圓滿、不夠完整、不夠健康，又怎麼能夠拋棄他呢？氣機導引就是用心練功，不放棄任何人，轉心、轉念，然後用身體參與，最終練在扭轉內心與念頭。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「故立天子，至三公」，立天子就是傾聽自己的執著，例如：我要禪定、我要解脫、我要信佛、我要成佛……，這些都是立天子。置三公，就是持很多戒律、規矩。「雖有拱璧以先駟馬」，拱璧，就是以翡翠進貢，意為用各種不同的奇珍異寶(人生物質的追求)，來豢養自己的內心。駟馬，是裝載著金銀珠寶的馬車。人欲求各種物質，爭名牟利，與其把自己搞得那麼累，「不如坐進此道」，處於萬物之道。走進自己最初衷、走進生命最原始的本源——你到底要來幹什麼？去探尋你生命之初——你下來真的需要這些東西嗎？我們要從根源之處找到自己的覺察。萬物發生都是一場空，身體也是空，所有的法一切都是空，唯一存在的就是自己的覺察，我們要能夠覺察自己生命最終的根源。人活著一輩子所發生的事、所做的事，都只是坐進此道的助緣。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下貴。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「古之所以貴此道者何？」從古至今為什麼有這麼多人坐進此道？為什麼會把道看得這麼重？因為只要在道的作用中，就求什麼得什麼。因為在自然法則中，種瓜得瓜，有求必應，在大地上播什麼種就生什麼果。怎麼做就怎麼收穫，因就等於果，因為「坐進此道」。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「有罪以免邪？」有罪就是業障，只要在道的自然法則中就可以免除。只要好好守住道的法則，就什麼罪都沒了，什麼苦都不見了。只要照著自然法則，身體就健康了。身體受的罪，痠痛、失眠、肚子痛、不安…等就會自然消失。「故為天下貴。」所以不管是善人或不善的人都以道為貴；只要用道來述說肢體的語言，就能獲得生命中最根本、最原始的尊嚴；用道來進行一種真正自然的運轉活動，這就是養生。而道行是五維度的，超越時間的；道行是你要專心一致做久才能感受到的，不是以理性去想道行是什麼。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        ],
+        "heading": null
       }
     ],
-    "sourceUrl": "",
+    "sourceId": "2508-2-4"
+  },
+  {
+    "image": "/assets/pixabay/pixabay-5205426.jpg?v=5205426",
     "order": 5,
-    "slug": "202508-2508-3",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "文稿彙整 / 賴鈺晶",
-    "images": [],
     "tags": [
       "體證道德經",
       "道德經"
     ],
-    "readTime": "約 4 分鐘",
-    "title": "以道養生，善與不善皆有所得",
+    "issueId": "202508",
+    "excerpt": "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因…",
+    "images": [],
+    "sourceUrl": "",
+    "imageCaption": "圖片來源 / Pixabay",
     "category": "體證道德經",
-    "image": "/assets/pixabay/pixabay-3826118.jpg?v=3826118",
+    "date": "2025.08.10",
+    "title": "以道養生，善與不善皆有所得",
+    "homeAnchor": "#article-202508-2508-3",
+    "author": "文稿彙整 / 賴鈺晶",
+    "slug": "202508-2508-3",
+    "issue": "第234期 / 2025.08電子報",
+    "contentBlocks": [
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "道者，萬物之奧，善人之寶，不善人之所保。"
+      },
+      {
+        "text": "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因。所以，道就是萬物之奧，各行各業就是萬物，各行各業都有看不到的地方就是道。西方哲學叫做「邏格斯」。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「善人之寶」指道是善人最珍貴的生命價值。而「善人」是一個可以追求圓滿、追求境界、追求修行的道人，而不只是滿足物慾與名利之人。善人就是追求創造上丹田的人，對這樣的人來說，道就是寶，是最有價值的東西；價值觀就在道上和自然裡面。人為什麼會苦？因為人怎麼想就怎麼苦。所謂「有其師，必有其欲；有其欲，必有其動；有其行，必有其事；有其事，必有其心；有其心，必有其苦。」",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「不善人之所保」，道不但是善人的價值所在，而且也是「不善人」的價值所在。「不善人」是指盡其一生以工作的追求來滿足自己物質欲望的人，猶如一個機器人。然而物質滿足不是貪念，滿足自然的欲望，最後就會無欲，所謂「欲，無欲」。民以食為天，人活著有其基本的欲望，吃飽了就好了。止渴是自然欲望，接下來的就都是貪欲，想著喝茶的樂趣，欲望就產生了。如果生命中有精神性的存在，生命就會更完整，但有些人就不具備這部分，這就是不善人。而道也可以讓不善人、不追求圓滿的人以他的方式存在，道也可以保足之。「善者吾善之，不善者吾亦善之，德善。」道就是這樣，不管善與不善，都可以得到道的好處。因為道是一種大圓滿，永遠以圓滿來對待一切的不圓滿或圓滿，所以，不善人能夠獲得善的對待之圓滿，即便不善，道依然在其身上，不會因此道就不存在。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "美言可以市尊，美行可以加人。人之不善，何棄之有？"
+      },
+      {
+        "text": "「美言可以市尊」指只要人的生活和表達方式能夠真與善，就會有美感。善就是慈悲、就是歡喜，因為善真，所以美。有佛陀般的尊榮，人自然尊敬你。練功時，動作裡如果有道理，動作就會有哲理，所表達的肢體語言有老子存在，動作就會有一種能量，有一種尊，這就是美言。即使是身體不好、內心不靜、大腦念頭紛飛、身體僵硬、到處疼痛的人，如能動在空裡，輕慢鬆柔地在空間中螺旋，就能保住不受到傷害。練功的動作是一種與自己的對話，所以它是一種語言，這種語言只要完整，每一個空間都做得扎實，就會產生真，看到真相——空間，善就出來了。在空間裡，善就不會碰觸到你的肌肉。只要真善一出來，美就在其中。身體美是一種真正的完整，是自然無比的東西，所以自然就是美。這種美可以讓身體產生氣質上的變化，愈來愈尊貴，就是真人，練得很真。真人是一個真正懂生命的人，能夠真正懂得善這種圓滿的人。所以說，美言可以市尊。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「美行可以加人。」美行可以讓一個人更好，藉由好的心法，行如「治大國，若烹小鮮」——完整圓滿的行動隱藏在細微處——從欲發未發之際開始，大做以細；從細部的肉體之間下手，從細微處下手，而非粗糙的肉體，這樣才是最好的行動。如此就「可以加人」，提高境界，本身就會增加很多的成長性。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "所以，動作中有道理，行動有德與道的樣子，美言美行就是道，人就會得到尊敬與成長。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「人之不善，何棄之有？」既然如此，我們能夠放棄不善的人嗎？既然美言美行都可以讓人尊敬、讓人變得更好，人不善的地方，比較脆弱的身體、有問題的身體，不論來自身心靈的哪一方面導致人不夠圓滿、不夠完整、不夠健康，又怎麼能夠拋棄他呢？氣機導引就是用心練功，不放棄任何人，轉心、轉念，然後用身體參與，最終練在扭轉內心與念頭。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。"
+      },
+      {
+        "text": "「故立天子，至三公」，立天子就是傾聽自己的執著，例如：我要禪定、我要解脫、我要信佛、我要成佛……，這些都是立天子。置三公，就是持很多戒律、規矩。「雖有拱璧以先駟馬」，拱璧，就是以翡翠進貢，意為用各種不同的奇珍異寶(人生物質的追求)，來豢養自己的內心。駟馬，是裝載著金銀珠寶的馬車。人欲求各種物質，爭名牟利，與其把自己搞得那麼累，「不如坐進此道」，處於萬物之道。走進自己最初衷、走進生命最原始的本源——你到底要來幹什麼？去探尋你生命之初——你下來真的需要這些東西嗎？我們要從根源之處找到自己的覺察。萬物發生都是一場空，身體也是空，所有的法一切都是空，唯一存在的就是自己的覺察，我們要能夠覺察自己生命最終的根源。人活著一輩子所發生的事、所做的事，都只是坐進此道的助緣。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下貴。"
+      },
+      {
+        "text": "「古之所以貴此道者何？」從古至今為什麼有這麼多人坐進此道？為什麼會把道看得這麼重？因為只要在道的作用中，就求什麼得什麼。因為在自然法則中，種瓜得瓜，有求必應，在大地上播什麼種就生什麼果。怎麼做就怎麼收穫，因就等於果，因為「坐進此道」。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      },
+      {
+        "text": "「有罪以免邪？」有罪就是業障，只要在道的自然法則中就可以免除。只要好好守住道的法則，就什麼罪都沒了，什麼苦都不見了。只要照著自然法則，身體就健康了。身體受的罪，痠痛、失眠、肚子痛、不安…等就會自然消失。「故為天下貴。」所以不管是善人或不善的人都以道為貴；只要用道來述說肢體的語言，就能獲得生命中最根本、最原始的尊嚴；用道來進行一種真正自然的運轉活動，這就是養生。而道行是五維度的，超越時間的；道行是你要專心一致做久才能感受到的，不是以理性去想道行是什麼。",
+        "styleId": "",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "isHeadingStyle": false,
+        "isBold": false,
+        "styleName": ""
+      }
+    ],
+    "readTime": "約 4 分鐘",
     "sections": [
       {
-        "heading": null,
         "paragraphs": [
-          "道者，萬物之奧，善人之寶，不善人之所保。美言可以市尊，美行可以加人。人之不善，何棄之有？故立天子，置三公，雖有拱璧以先駟馬，不如坐進此道。古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下貴。",
           "道者，萬物之奧，善人之寶，不善人之所保。",
           "道就是自然，就是氣，道就是空間，道者萬物之根基。世界上各行各業都有其「奧」，奧是無法看得到的、是基礎根基，有「藏」的概念，根深固蒂。樹之所以高大，是因為奧在地底下，從地底下才可以窺知高大的原因。所以，道就是萬物之奧，各行各業就是萬物，各行各業都有看不到的地方就是道。西方哲學叫做「邏格斯」。",
           "「善人之寶」指道是善人最珍貴的生命價值。而「善人」是一個可以追求圓滿、追求境界、追求修行的道人，而不只是滿足物慾與名利之人。善人就是追求創造上丹田的人，對這樣的人來說，道就是寶，是最有價值的東西；價值觀就在道上和自然裡面。人為什麼會苦？因為人怎麼想就怎麼苦。所謂「有其師，必有其欲；有其欲，必有其動；有其行，必有其事；有其事，必有其心；有其心，必有其苦。」",
@@ -17621,141 +17540,136 @@ export const reviewDraftArticles = [
           "古之所以貴此道者何？不曰：求以得，有罪以免邪？故為天下貴。",
           "「古之所以貴此道者何？」從古至今為什麼有這麼多人坐進此道？為什麼會把道看得這麼重？因為只要在道的作用中，就求什麼得什麼。因為在自然法則中，種瓜得瓜，有求必應，在大地上播什麼種就生什麼果。怎麼做就怎麼收穫，因就等於果，因為「坐進此道」。",
           "「有罪以免邪？」有罪就是業障，只要在道的自然法則中就可以免除。只要好好守住道的法則，就什麼罪都沒了，什麼苦都不見了。只要照著自然法則，身體就健康了。身體受的罪，痠痛、失眠、肚子痛、不安…等就會自然消失。「故為天下貴。」所以不管是善人或不善的人都以道為貴；只要用道來述說肢體的語言，就能獲得生命中最根本、最原始的尊嚴；用道來進行一種真正自然的運轉活動，這就是養生。而道行是五維度的，超越時間的；道行是你要專心一致做久才能感受到的，不是以理性去想道行是什麼。"
-        ]
+        ],
+        "heading": null
       }
-    ]
+    ],
+    "sourceId": "2508-3"
   },
   {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-4",
-    "excerpt": "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅…",
+    "author": "",
+    "date": "2025.08.10",
+    "sourceUrl": "",
     "homeAnchor": "#article-202508-2508-4",
+    "title": "阿充",
+    "slug": "202508-2508-4",
+    "images": [],
     "contentBlocks": [
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅是動力的源頭，也是掌控方向的源頭。今天就以我的身體經驗和理解所及，和大家分享所觀察到腳底的故事。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "樁",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "大家聽過「站樁」吧？「樁」在哪裡？從腳底打進地面去的。有形的樁其實不存在，卻存在一種無形的樁，那是一種「覺」，感覺兩條腿各綁著一根木樁插進土地裡，誰也推不倒你。這種「覺」發生在腳底，就是所謂的「湧泉長根」，湧泉長根了，樹才會穩，才能隨風擺動，功法招式就如同是在身上吹過的各種不同方向大小不同的風。「樁」是假的，但是「樁」的感覺是真的，效用更是如假包換，因為你的「覺」調整了你的身體，讓你的地基如同「打樁」一般堅固。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "投影面",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "我們平時不是雙腳站立就是單腳站立，當雙腳站立時，投影面就是兩腳掌中間所圍成的四邊形，單腳站立時投影面就是腳掌本身。單腳站立時的投影面比雙腳站立時小了許多，所以單腳站立的難度會比較高，因為身體的重心（中軸線）必須時時落在投影面上，否則就會失去重心。失去重心有兩種結果，一是倒下，然後重新結構身體，再找回重心；二是靠肌肉的力量撐住失去重心的結構，如果是瞬間大量的出力會造成肌肉的拉傷，如果是長期的肌肉代償出力則會造成肌肉的僵硬、沾黏。總之，只要掌握好中軸線和投影面的關係，肌肉就可以處在放鬆的狀態，這才只是練功的基本條件。掌握這樣的關係和力量大小無關，它就是一種整體的感覺，感覺身體的關節該如何擺放，擺放的結果腳底會知道，最後由腳底來打分數。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "方向性",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "人體的各個關節有其功能性和局限性，比如說膝關節無法左右旋轉，踝關節旋轉的角度有限，髖關節可以旋轉的角度最大。什麼叫做卡住了？就是關節動不了，唯一的解法就是腳底跟著動，旋轉腳掌的方向，整個身體就被解鎖開了。腳有分實腳、虛腳，虛腳要調整方向很簡單，實腳就需要一些功夫了，我們通常說「沉轉」，沉著轉，中軸線如果落在湧泉的話就會很好轉，像圓規畫圓，也像陀螺在旋轉。所以說腳底的旋轉就掌握了身體的方向性，每一個功法都和腳掌的方向息息相關，否則你就會自己卡住自己。練功就是自己找自己麻煩的過程，也是自己化解自己麻煩的過程，所以腳掌既是麻煩製造者也是麻煩化解者，轉個方向就沒事了。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "作用力與反作用力",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "依據牛頓第三定律，當兩個物體交互作用時，彼此施加於對方的力，其大小相等、方向相反。腳底和地面作用，就會產生反作用力，我們如何利用這股反作用力來移動我們身體，無論是縱向或橫向的移動，都要依賴腳底的功夫。俗語說「蹲得越低，跳得越高」，應該是指那種瞬間發力的狀態，而不是指先蹲著等在那裡，那一定是跳不起來的。可以想像一個跳高選手要蹬起來的那一瞬間，一定先有一個強大向下踩的力量，然後產生一個同樣強大的反作用力將他的身體帶起來。練功也是一樣，我們既要上下移動，也會左右移動，這力量從哪裡來？從腳底的反作用力而來，所以腳底功夫就變得無比重要，何時該發力、發力的方向為何？換句話說，就是腳底何時該沉、沉的方向為何？所謂功夫到家，就是可以藉著反作用力帶動肢體動作，如此就可以做到毫不費力，這才是進入氣功態的先決條件。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "螺旋",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
+        "isBold": false,
         "text": "前面提到的反作用力是一種直線運動，但是我們練功時比直線運動複雜多了，所以氣機導引提出了螺旋、延伸、開闔、絞轉四大原理。螺旋是二維的旋轉加上第三維的直線運動所形成的三度空間運動，螺旋可以說是自然界最省力、最有效率的一種運動，子彈的飛行就是一種螺旋運動。肢體的動作也一樣，會自然傾向螺旋運動，因為最省力、最接近自然，但是螺旋從何而起？一切從腳底而起。前面提到的「沉轉」，就像是把螺絲釘轉進地裡，而「提轉」就像是把螺絲釘轉出來，這些動作都來自腳底的感覺，這感覺會轉化成真正的螺旋力，帶動全身依序而轉動。若要把延伸、開闔、絞轉都歸納為螺旋也不為過，只是半徑、方向不同的螺旋而已，所以說一切功法的最大的秘訣就是螺旋，如果每次練功都能感受螺旋力帶著你走，那肯定是有點功夫了。沒有腳底就沒有螺旋，所以說沒有腳底就沒有功夫。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "音樂有「樂譜」，用五線譜來表示；如果一套功法有「功譜」的話，我覺得應該用腳底來表示，因為腳底隱含最多的功法訊息。在每一個不同時間點，如果可以量化腳底不同的區域和地面接觸的力量及方向，其實就可以描繪出連續的肢體動作，甚至是手指尖的細部動作，因為螺旋是會貫串到末梢的。練功就是在練「覺性」，我們可以先從腳踏實地的「腳底」開始，利用功法來找自己麻煩，然後透過腳底觸覺回饋系統來調整身體，讓身體越來越自在。練功應作如是觀，其實滿好玩的！",
-        "styleName": "Normal",
         "isBold": false,
-        "isLargeFont": true
+        "text": "音樂有「樂譜」，用五線譜來表示；如果一套功法有「功譜」的話，我覺得應該用腳底來表示，因為腳底隱含最多的功法訊息。在每一個不同時間點，如果可以量化腳底不同的區域和地面接觸的力量及方向，其實就可以描繪出連續的肢體動作，甚至是手指尖的細部動作，因為螺旋是會貫串到末梢的。練功就是在練「覺性」，我們可以先從腳踏實地的「腳底」開始，利用功法來找自己麻煩，然後透過腳底觸覺回饋系統來調整身體，讓身體越來越自在。練功應作如是觀，其實滿好玩的！",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "Normal.0",
+        "styleName": "Normal"
       }
     ],
-    "sourceUrl": "",
-    "order": 6,
-    "slug": "202508-2508-4",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "",
-    "images": [],
     "tags": [
       "圖靈集",
       "AI時代"
     ],
     "readTime": "約 3 分鐘",
-    "title": "阿充",
-    "category": "圖靈集",
-    "image": "/assets/pixabay/pixabay-2819023.jpg?v=2819023",
+    "issue": "第234期 / 2025.08電子報",
     "sections": [
       {
         "heading": null,
@@ -17774,94 +17688,94 @@ export const reviewDraftArticles = [
           "音樂有「樂譜」，用五線譜來表示；如果一套功法有「功譜」的話，我覺得應該用腳底來表示，因為腳底隱含最多的功法訊息。在每一個不同時間點，如果可以量化腳底不同的區域和地面接觸的力量及方向，其實就可以描繪出連續的肢體動作，甚至是手指尖的細部動作，因為螺旋是會貫串到末梢的。練功就是在練「覺性」，我們可以先從腳踏實地的「腳底」開始，利用功法來找自己麻煩，然後透過腳底觸覺回饋系統來調整身體，讓身體越來越自在。練功應作如是觀，其實滿好玩的！"
         ]
       }
-    ]
+    ],
+    "image": "/assets/pixabay/pixabay-6570768.jpg?v=6570768",
+    "sourceId": "2508-4",
+    "issueId": "202508",
+    "imageCaption": "圖片來源 / Pixabay",
+    "category": "圖靈集",
+    "order": 6,
+    "excerpt": "人站在大地上，身體和大地唯一接觸的地方就是腳底，所以說腳底的觸覺時時在發生，但是一般人缺乏訓練和敏感度，不知道腳底有許多故事正在發生。腳底除了是訓練觸覺的重要場所之外，也是肢體動作的源頭，不僅…"
   },
   {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202508",
-    "sourceId": "2508-5",
-    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…",
+    "author": "",
+    "date": "2025.08.10",
+    "sourceUrl": "",
     "homeAnchor": "#article-202508-2508-5",
+    "title": "傅冶中",
+    "slug": "202508-2508-5",
+    "images": [],
     "contentBlocks": [
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積約為167平方公里。這塊被聯邦立法保護的荒野，現在無人居住，可以做為露營、爬山的地點，有瀑布和茂密的森林。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "這位伊希先生有什麼特別之處嗎？為什麼國家森林的一部分由他的名字來命名？因為他被認為是美國的最後一位原始原住民，但其實伊希不是他的名字，伊希不願意說自己的名字，「伊希」在雅希語中是男人的意思，於是加大的人類學教授就叫他伊希。因為雅希族的文化，自己不能叫自己的名字，必須先讓其他人來介紹自己，但他是最後一位雅希人，已經沒人可以介紹他了，所以他的名字到死都是未知的。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "伊希在1911年夏天的清晨被人發現，當時他已經50歲，母親在1911年春天去世，妻子在幾年前過世，父親去世更早，他失去所有的親人，他從山𥚃走到小城Oroville附近被人發現，因為當時雅希人已經絕跡大約50年了，發現了一位沒有和白人接觸過的原住民是一件新聞，所以伊希立刻被加州大學的教授們接到舊金山校區的人類學博物館做助手，紀錄雅希語，4年後伊希因為肺結核病逝，享年54歲。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "雖然現在的伊希荒野是個無人區，其實這塊土地是雅希族人和其他原住民部落生活的地方，以前大約有一萬五千人左右定居在拉森國家森林，非常熱鬧。雅希族主要的定居點在伊希荒野，約有400人左右，他們是靠土地生活的原住民，對動植物的瞭解很深，對環境的保護也做得很好，動植物種類十分豐富，許多現在已經絕跡的大型動物，例如加州灰熊、大角羚羊、野牛和灰狼，數量很多。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "白人在1848年進入他們居住的地區，他們和其他動植物的厄運就開始了。1848年初，加州發現金礦，大量淘金人口湧入中谷地區北部，同時美墨戰爭，美國得到加州，到1850年加州更通過印第安人「保護」法，規定印第安人不能告白人；不如說這是印第安人奴役法。於是在法律通過後約10年左右，到1860年，加州的原住民人口就從15萬人遽降至約3萬人左右，幾近滅絕，為什麼還留下一些原住民呢？ 主要原因是當時農業勞動力十分短缺，男性原住民做為奴工，提供非常有效的免費勞動力。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
+        "isBold": false,
         "text": "在1848年左右，白人定居者來到雅希族的生活地區，他們砍樹耕種，剝奪了雅希人的主食，松子和橡實，他們在河裡淘金，又蓋水庫，破壞了鮭魚的棲息地，鮭魚也是雅希人的主食之一，雅希人因為飢餓，偷襲農場的牛羊，農場主報復，雅希族面臨滅頂之災，定居者在山裏用獵犬尋找並獵殺雅希人，最後只有十幾人逃離。這群人在深山裏生活了幾十年，人數漸漸減少，最終只剩下伊希一人，獨存於世。",
-        "styleName": "預設值",
-        "isBold": false,
-        "isLargeFont": true
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       },
       {
         "isHeadingStyle": false,
-        "styleId": "預設值",
-        "type": "paragraph",
-        "text": "伊希在1916年去世，象徵著一個古老時代的結束，那是一個人類與萬物比較平等共存的時代，國家公園之父繆爾（Muir) 晚年曾說：「他們遠遠優於我們自詡的文明」，深深地懷念那個已逝去的世界。",
-        "styleName": "預設值",
         "isBold": false,
-        "isLargeFont": true
+        "text": "伊希在1916年去世，象徵著一個古老時代的結束，那是一個人類與萬物比較平等共存的時代，國家公園之父繆爾（Muir) 晚年曾說：「他們遠遠優於我們自詡的文明」，深深地懷念那個已逝去的世界。",
+        "type": "paragraph",
+        "isLargeFont": true,
+        "styleId": "預設值",
+        "styleName": "預設值"
       }
     ],
-    "sourceUrl": "",
-    "order": 7,
-    "slug": "202508-2508-5",
-    "date": "2025.08.10",
-    "issue": "第234期 / 2025.08電子報",
-    "author": "",
-    "images": [],
     "tags": [
       "山腳下的蘆葦",
       "靈魂修煉"
     ],
     "readTime": "約 2 分鐘",
-    "title": "傅冶中",
-    "category": "山腳下的蘆葦",
-    "image": "/assets/pixabay/pixabay-4620487.jpg?v=4620487",
+    "issue": "第234期 / 2025.08電子報",
     "sections": [
       {
         "heading": null,
@@ -17875,7 +17789,14 @@ export const reviewDraftArticles = [
           "伊希在1916年去世，象徵著一個古老時代的結束，那是一個人類與萬物比較平等共存的時代，國家公園之父繆爾（Muir) 晚年曾說：「他們遠遠優於我們自詡的文明」，深深地懷念那個已逝去的世界。"
         ]
       }
-    ]
+    ],
+    "image": "/assets/pixabay/pixabay-6476829.jpg?v=6476829",
+    "sourceId": "2508-5",
+    "issueId": "202508",
+    "imageCaption": "圖片來源 / Pixabay",
+    "category": "山腳下的蘆葦",
+    "order": 7,
+    "excerpt": "加州的伊希荒野位在北加州中谷平原的北部山區山腳下的地方，是拉森國家森林、拉森國家公園生態系的一部分，在1984年由國會立法命名，用來紀念一位雅希族（Yahi）的原住民伊希（Ishi)，全部面積…"
   },
   {
     "imageCaption": "圖片來源 / Pixabay",
@@ -76616,6 +76537,86 @@ export const reviewDraftArticles = [
   {
     "imageCaption": "圖片來源 / Pixabay",
     "issueId": "202211",
+    "sourceId": "2211-1",
+    "excerpt": "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢…",
+    "homeAnchor": "#article-202211-2211-1",
+    "contentBlocks": [
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢竟還有一個我在，所以越過「沒什麼」之後，就要朝向下一個目標——把「我」也摧毀了。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "要把自己的「了不起」徹底摧毀，沒經過生活日常千百次在起心動念上的練習，還真不容易清乾淨，因為它伴隨著太多的「自我重要感」——那是支撐我們生存的必要意識，但同時它也障礙了我們感知和接納「我」之外的「他者」。所以，接下來還有一個更關鍵的練習，當任何感覺、想法、念頭出現的時候，要立即、馬上告訴自己「那不是我」！",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "「那不是我！」雖然也還有「我」，但那個「我」的界線卻越來越模糊了，從「我」抽離出來，我們跟「無我」「有他」的距離就越來越靠近了。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "文字繞口，說來說去還在概念上打轉，重要的是時時刻刻的練習，在對境起心的時候，抓住每個機會，把馬步蹲好。氣機導引是實踐的功夫，一步練到了，下一步該怎麼走，就很清楚了。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "肉體生命有限，無限成長的生命卻不會停止，透過這些實踐的功夫，每時每刻都在顛覆、質疑前一分鐘的自己，能這樣活著，真是太有趣了！",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      }
+    ],
+    "sourceUrl": "",
+    "order": 0,
+    "slug": "202211-2211-1",
+    "date": "2022.11.10",
+    "issue": "第201期 / 2022.11電子報",
+    "author": "",
+    "images": [],
+    "tags": [
+      "編輯小語"
+    ],
+    "readTime": "約 2 分鐘",
+    "title": "編輯部",
+    "category": "編輯小語",
+    "image": "/assets/pixabay/pixabay-5586504.jpg?v=5586504",
+    "sections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢竟還有一個我在，所以越過「沒什麼」之後，就要朝向下一個目標——把「我」也摧毀了。",
+          "要把自己的「了不起」徹底摧毀，沒經過生活日常千百次在起心動念上的練習，還真不容易清乾淨，因為它伴隨著太多的「自我重要感」——那是支撐我們生存的必要意識，但同時它也障礙了我們感知和接納「我」之外的「他者」。所以，接下來還有一個更關鍵的練習，當任何感覺、想法、念頭出現的時候，要立即、馬上告訴自己「那不是我」！",
+          "「那不是我！」雖然也還有「我」，但那個「我」的界線卻越來越模糊了，從「我」抽離出來，我們跟「無我」「有他」的距離就越來越靠近了。",
+          "文字繞口，說來說去還在概念上打轉，重要的是時時刻刻的練習，在對境起心的時候，抓住每個機會，把馬步蹲好。氣機導引是實踐的功夫，一步練到了，下一步該怎麼走，就很清楚了。",
+          "肉體生命有限，無限成長的生命卻不會停止，透過這些實踐的功夫，每時每刻都在顛覆、質疑前一分鐘的自己，能這樣活著，真是太有趣了！"
+        ]
+      }
+    ]
+  },
+  {
+    "imageCaption": "圖片來源 / Pixabay",
+    "issueId": "202211",
     "sourceId": "2211-3",
     "excerpt": "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
     "homeAnchor": "#article-202211-2211-3",
@@ -76740,6 +76741,107 @@ export const reviewDraftArticles = [
           "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
           "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
           "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
+        ]
+      }
+    ]
+  },
+  {
+    "imageCaption": "圖片來源 / Pixabay",
+    "issueId": "202211",
+    "sourceId": "2211-2",
+    "excerpt": "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
+    "homeAnchor": "#article-202211-2211-2-2",
+    "contentBlocks": [
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "內文",
+        "type": "paragraph",
+        "text": "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——",
+        "styleName": "內文",
+        "isBold": false,
+        "isLargeFont": true
+      }
+    ],
+    "sourceUrl": "",
+    "order": 1,
+    "slug": "202211-2211-2-2",
+    "date": "2022.11.10",
+    "issue": "第201期 / 2022.11電子報",
+    "author": "游夙君",
+    "images": [],
+    "tags": [
+      "練功筆記",
+      "身體感知"
+    ],
+    "readTime": "約 4 分鐘",
+    "title": "手揮無極刀，試解親情困（二）",
+    "category": "練功筆記",
+    "image": "/assets/pixabay/pixabay-6710413.jpg?v=6710413",
+    "sections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
+          "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
+          "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
+          "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
+          "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
+          "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
+          "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
         ]
       }
     ]
@@ -77138,6 +77240,137 @@ export const reviewDraftArticles = [
   {
     "imageCaption": "圖片來源 / Pixabay",
     "issueId": "202211",
+    "sourceId": "2211-3",
+    "excerpt": "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
+    "homeAnchor": "#article-202211-2211-3-2",
+    "contentBlocks": [
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      }
+    ],
+    "sourceUrl": "",
+    "order": 2,
+    "slug": "202211-2211-3-2",
+    "date": "2022.11.10",
+    "issue": "第201期 / 2022.11電子報",
+    "author": "劉惠瑛",
+    "images": [],
+    "tags": [
+      "練功筆記",
+      "身體感知"
+    ],
+    "readTime": "約 2 分鐘",
+    "title": "之二- 覺醒之路",
+    "category": "練功筆記",
+    "image": "/assets/pixabay/pixabay-7071032.jpg?v=7071032",
+    "sections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
+          "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
+          "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
+          "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
+          "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
+          "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
+          "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
+          "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
+          "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
+          "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
+        ]
+      }
+    ]
+  },
+  {
+    "imageCaption": "圖片來源 / Pixabay",
+    "issueId": "202211",
     "sourceId": "2211-6",
     "excerpt": "我們閱讀《道德經》，要運用智慧。本篇在講人。「將」，讀音為ㄐㄧㄤˋ或ㄐㄧㄤ，都指同一件事。「已」是停止，「不得已」就是停不下來。人一生不管做甚麼都是不得已，不得已而生，自少至長，汲汲營營於求學…",
     "homeAnchor": "#article-202211-2211-6",
@@ -77322,688 +77555,6 @@ export const reviewDraftArticles = [
           "中國養生論述對氣與呼吸作用，有六字訣導引法。導引呼吸的作用同於中藥、針灸，有補瀉的區分；吸氣為補，呼氣為瀉。氣的六種表現方式為：噓、呵、呼、呬、吹、唏，對應到肝、心、脾、肺、腎。其中，「吹」、「唏」都屬於腎臟。譬如，調理腎氣時，要留意腎的腎陽、腎陰之別。腎陽虛時，陰亢，用「歔」之，用慢；慢是溫、是暖，是氣慢。腎陰虛時，陽旺，用「吹」字，用快；吹是冷、快，冷是快速地呼氣、吐氣。",
           "練功時，無論是「或行或隨」、「歔(ㄒㄩ)或吹」、「或強或羸(ㄌㄟˊ)」、「或載或隳(ㄏㄨㄟ)」都是很自然的進行，既沒有刻意的作為，也不強求，只是處在一種平衡狀態。「或行或隨」是有時主動、有時被動；時而主導，時而相隨；有時在前，有時居後。「或歔或吹」指慢快、溫冷、補瀉。「或強或羸」，或快或慢。「或載或隳」載為補，隳為瀉；逆為補，順為瀉，是順、逆腹式呼吸的作用，用順行、逆行的補瀉概念，面對自己的安危。安是虛，指飽滿。危是不足，補其不足而損有餘。",
           "對道而言，一切都是餘食贅行、畫蛇添足。愈想要表現自己，愈有目的性時，反而會遠離功法的意義。所以，聖人「去甚」，不做剛猛而行柔弱；「去奢」不做畫蛇添足的小道之術；「去泰」不張揚凸顯自己，去除驕傲與執著，才能到達出神入化的入神化境。"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202211",
-    "sourceId": "2211-8",
-    "excerpt": "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別…",
-    "homeAnchor": "#article-202211-2211-8",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "誠者成也。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
-    "order": 4,
-    "slug": "202211-2211-8",
-    "date": "2022.11.10",
-    "issue": "第201期 / 2022.11電子報",
-    "author": "",
-    "images": [],
-    "tags": [
-      "股海人生"
-    ],
-    "readTime": "約 2 分鐘",
-    "title": "蔡育展",
-    "category": "股海人生",
-    "image": "/assets/pixabay/pixabay-6561222.jpg?v=6561222",
-    "sections": [
-      {
-        "heading": null,
-        "paragraphs": [
-          "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
-          "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
-          "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
-          "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
-          "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
-          "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
-          "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
-          "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
-          "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
-          "誠者成也。"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202211",
-    "sourceId": "2211-9",
-    "excerpt": "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離…",
-    "homeAnchor": "#article-202211-2211-9",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "從排斥到擁抱氣機",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "「妻唱夫隨」的氣機機緣",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "夫妻由中西不同調轉成練功同好",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "開啓不同維度的問題解決",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "練功的建議及體會",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "採訪後記",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
-    "order": 5,
-    "slug": "202211-2211-9",
-    "date": "2022.11.10",
-    "issue": "第201期 / 2022.11電子報",
-    "author": "",
-    "images": [],
-    "tags": [
-      "導引采風錄"
-    ],
-    "readTime": "約 5 分鐘",
-    "title": "黃坤瑛",
-    "category": "導引采風錄",
-    "image": "/assets/pixabay/pixabay-2751891.jpg?v=2751891",
-    "sections": [
-      {
-        "heading": null,
-        "paragraphs": [
-          "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
-          "從排斥到擁抱氣機",
-          "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
-          "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
-          "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
-          "「妻唱夫隨」的氣機機緣",
-          "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
-          "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
-          "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
-          "夫妻由中西不同調轉成練功同好",
-          "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
-          "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
-          "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
-          "開啓不同維度的問題解決",
-          "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
-          "練功的建議及體會",
-          "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
-          "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
-          "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
-          "採訪後記",
-          "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202211",
-    "sourceId": "2211-1",
-    "excerpt": "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢…",
-    "homeAnchor": "#article-202211-2211-1",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢竟還有一個我在，所以越過「沒什麼」之後，就要朝向下一個目標——把「我」也摧毀了。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "要把自己的「了不起」徹底摧毀，沒經過生活日常千百次在起心動念上的練習，還真不容易清乾淨，因為它伴隨著太多的「自我重要感」——那是支撐我們生存的必要意識，但同時它也障礙了我們感知和接納「我」之外的「他者」。所以，接下來還有一個更關鍵的練習，當任何感覺、想法、念頭出現的時候，要立即、馬上告訴自己「那不是我」！",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "「那不是我！」雖然也還有「我」，但那個「我」的界線卻越來越模糊了，從「我」抽離出來，我們跟「無我」「有他」的距離就越來越靠近了。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "文字繞口，說來說去還在概念上打轉，重要的是時時刻刻的練習，在對境起心的時候，抓住每個機會，把馬步蹲好。氣機導引是實踐的功夫，一步練到了，下一步該怎麼走，就很清楚了。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "肉體生命有限，無限成長的生命卻不會停止，透過這些實踐的功夫，每時每刻都在顛覆、質疑前一分鐘的自己，能這樣活著，真是太有趣了！",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
-    "order": 0,
-    "slug": "202211-2211-1",
-    "date": "2022.11.10",
-    "issue": "第201期 / 2022.11電子報",
-    "author": "",
-    "images": [],
-    "tags": [
-      "編輯小語"
-    ],
-    "readTime": "約 2 分鐘",
-    "title": "編輯部",
-    "category": "編輯小語",
-    "image": "/assets/pixabay/pixabay-5586504.jpg?v=5586504",
-    "sections": [
-      {
-        "heading": null,
-        "paragraphs": [
-          "氣機導引的訓練經過「百日築基」、「練精化氣」、「練氣化神」再到「練神還虛」，就要攀登另一個高峰——把自己的所有厲害、了不起，融化、摧毀，變成「沒什麼」！「沒什麼」，只是把自己縮小了、矮化了，畢竟還有一個我在，所以越過「沒什麼」之後，就要朝向下一個目標——把「我」也摧毀了。",
-          "要把自己的「了不起」徹底摧毀，沒經過生活日常千百次在起心動念上的練習，還真不容易清乾淨，因為它伴隨著太多的「自我重要感」——那是支撐我們生存的必要意識，但同時它也障礙了我們感知和接納「我」之外的「他者」。所以，接下來還有一個更關鍵的練習，當任何感覺、想法、念頭出現的時候，要立即、馬上告訴自己「那不是我」！",
-          "「那不是我！」雖然也還有「我」，但那個「我」的界線卻越來越模糊了，從「我」抽離出來，我們跟「無我」「有他」的距離就越來越靠近了。",
-          "文字繞口，說來說去還在概念上打轉，重要的是時時刻刻的練習，在對境起心的時候，抓住每個機會，把馬步蹲好。氣機導引是實踐的功夫，一步練到了，下一步該怎麼走，就很清楚了。",
-          "肉體生命有限，無限成長的生命卻不會停止，透過這些實踐的功夫，每時每刻都在顛覆、質疑前一分鐘的自己，能這樣活著，真是太有趣了！"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202211",
-    "sourceId": "2211-2",
-    "excerpt": "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
-    "homeAnchor": "#article-202211-2211-2-2",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "內文",
-        "type": "paragraph",
-        "text": "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——",
-        "styleName": "內文",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
-    "order": 1,
-    "slug": "202211-2211-2-2",
-    "date": "2022.11.10",
-    "issue": "第201期 / 2022.11電子報",
-    "author": "游夙君",
-    "images": [],
-    "tags": [
-      "練功筆記",
-      "身體感知"
-    ],
-    "readTime": "約 4 分鐘",
-    "title": "手揮無極刀，試解親情困（二）",
-    "category": "練功筆記",
-    "image": "/assets/pixabay/pixabay-6710413.jpg?v=6710413",
-    "sections": [
-      {
-        "heading": null,
-        "paragraphs": [
-          "面對病痛帶來的諸多動盪，是平靜以對或是捲入家人互動劇情中，端賴三寶能否覺、止於一念與不斷放下的瞬間。",
-          "院內是老人家眼裡日復一日的昏天暗地，即使換成單人病房，對疫情的恐懼，加上失去時間感，經常在家人工作忙碌時連環call，重複訴說想要回家的渴求，鼓勵話語會被打槍，於是日子轉換成家人輪流上場問候的視訊中度過。而三寶以屎尿為題：是否成形、大小多少等問候，同時嘗試「練痟話」，在緊繃中創造鬆的可能性。很快地在院近滿月，個把月的醫療多少發揮效用：可自行進食、持助行器勉強站立與極為緩慢的移動。然脊椎手術的傷口未癒、左手左腳依舊是低張力，仍得依程序出院。老人家如願回家靜養，然而返家後的生活也成了家人們的挑戰。",
-          "老人家原本的急性子在病痛的衝擊下，變成如同10倍速快轉播放的影片，還得隨傳隨到，若不符期待，便會招來一頓罵。初始，大家盡量依其心意滿足需求，時間拉長、次數頻繁的急，不斷擠壓家人們原本就已忙碌的生活步調，也消磨耐性，口氣難免不佳，或者乾脆不應不理......。二寶一家人平時與老人家同住。二寶日常樂於助人，自老人家生病後，不知為何與家人疏遠，雖然也會幫忙，就是不肯靠近老人家，5月下旬跟著白沙屯媽祖8天7夜繞境，進香去了。一寶身為長子責任感重，在院陪病時間長，即使後來請看護協助，仍得兼顧工作及家庭生活，舉凡回院複診、復健評估等仍由南北奔波的一寶一肩扛下。一寶跳脫不了不符老人家期待、責罵聲而來的傳統孝道框架，加上種種不確定性，難眠、納差、消瘦不少。嫂嫂們各有工作及兒女需要照顧。這一切三寶看在眼裡，也在這些因角色、處境、觀念等不同而相互擠壓的情境中，盡量當橋樑也擋子彈。「原待在穩固房子裡的三寶，突然的地震，發現地板上有了小裂痕，隨即攙扶老人家離開」的夢境，加上很早就離家生活又深感過往很少陪伴老人家的三寶，遂下了決定：假日返家，不會開車的三寶自行以按摩身心、推輪椅外出散心、接下田邊雜事等瑣碎，也清楚這一切都是為自己而做。",
-          "五月底，天濛濛亮的假日清晨，看看天色，聽聽鳥叫聲，做了引體旋天後，三寶便依老人家的指示，到田中央荔枝樹上採收以分送鄰居親友。除了全身包緊緊，邊採邊閃躲，還得辨識樹上的臭屁蟲是裝死還是活體，以免被噴射臭液襲擊。採收完接著到田埂除草......。以為苦的田地工作，晨起陽光下草葉上的露珠、風陣陣而來的稻浪、燕子展翅迎風飛翔、蟲鳥蛙鳴聲中等忘我融入田間風景的瞬間，按摩了三寶體力勞動與來回奔波，以及承接家人們既有的生活負荷外，又面對老人家病痛而生壓力、被擠壓的身心空間。然由於病痛帶來的衝擊過於巨大，一點點風吹草動，都容易成為壓垮駱駝的最後一根稻草。家，不一定是避風港，更多時候是個張力場，風暴一個接一個來......。",
-          "這天中午準備用餐時，因早先三寶沒找到他要的東西，老人家拖著羸弱的身軀，步態不穩地往樓上移動，身心負荷已到極限的三寶見狀說著：「你踮遮咧創啥？」「提物件。」「我已經幫你揣過了！」老人家依舊自顧自地往上移動，此時三寶一付——我跟你拚了——大聲吼「逐家攏誠艱苦，你到底是欲創啥？」「我家己來揣敢講袂使？」「等咧你若跋倒是欲按怎？」「阿無我去死死，恁攏快活啊！」從未在爸媽面前說過髒話的三寶，話到嘴邊停格一秒後，仍決定使出吃奶的力氣、拉大嗓門飆罵「考妣啊！」隨後嫂子以用餐來轉移老人家的焦點......。原先吵吵鬧鬧，下一秒一哄而散，獨自坐在客廳的三寶，瞬間如同大自然裡的颱風眼，無風無雨，無比寧靜。",
-          "距離三寶家門前不遠處是一座廢墟花園，原本是爬滿小花蔓澤蘭、破窗效應而成的垃圾場，約莫十年前由三寶與二寶兒子高梁及鄰居的幾個小蘿蔔頭整理。整理過程一度被陌生的長輩誤解是佔地，由於老人家在鄰里間給人印象是實在又有分寸，三寶搬出至親、一臉誠懇說明用意後，誤會冰釋。之後完成好幾大袋的垃圾清運，再地植幾棵親手從種子孵成的小樹苗，後來又有鳥播種的羅漢松、狀元紅，如今都長得比三寶高，三寶有多高？不到兩張大鼓相疊的高度！娘親及隔壁嬸嬸有時也會在此種花蒔草，花木扶疏，心曠神怡！這天下午三寶在花園修剪花木，忽焉有隻大紅紋鳳蝶現身，展翅約有90mm，在花木間緩緩來回穿梭，時而在龍吐珠上翩翩飛舞，沒想到後來鳳蝶悄然圍繞三寶近身飛了幾圈，屏氣凝神中，再飛回花木間，似向停在射干上的白頭翁致意後離開。由於未曾看過如此大而緩慢飛著的鳳蝶，這整個過程讓他心更定。隔天，偶然聽到廣播：前披頭四成員保羅・麥卡尼（Paul McCartney）有次接受採訪表示，因乳癌過世的妻子曾經以一隻松鼠的模樣回來。有些人對此嗤之以鼻，甚至歸咎於他吸食迷幻藥的幻覺；但也有許多人共鳴，相信親人曾以昆蟲動物的形式重返人間。另外，台灣也有類似的民間傳說，三寶也相信蝴蝶是老奶奶的化身，是回來探望家人的訊息，告訴他一切安好。也因此放掉罪惡，擔起罵至親的責任，持續原定的瑣碎份內事及承受迎面而來的種種。這天之後，原本不參與協助復健的家人動了起來，隔壁叔嬸有空檔也會下田幫忙......。",
-          "一周之後是端午前夕，三寶對著大門外的天空像狼般嚎叫，望見身後的至親面露微笑，感受成了張力場的家添了一絲絲新的氣息，意識到原本行事正經的自己竟也有了瘋癲的面貌，閃現祖師爺畫虎難課堂影像。思緒飄向當年初入門時，感覺祖師爺實在很愛講話，有時上課會不耐煩，某回被說：「你是不是找錯廟了？」三寶明白：若有神，神也是在自己心中。因著喜歡練功，也就繼續待下，練功房成了矛盾擺盪過程的自我整合空間，之後漸漸感受到話與話之間的祖師爺可以化不可能為可能，此成了三寶眼中的畫虎難。這時聽到聲音來到身旁的娃兒小狐狸，兩人相視一笑，一起嚎叫......。 ——待續——"
-        ]
-      }
-    ]
-  },
-  {
-    "imageCaption": "圖片來源 / Pixabay",
-    "issueId": "202211",
-    "sourceId": "2211-3",
-    "excerpt": "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
-    "homeAnchor": "#article-202211-2211-3-2",
-    "contentBlocks": [
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      },
-      {
-        "isHeadingStyle": false,
-        "styleId": "Normal.0",
-        "type": "paragraph",
-        "text": "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！",
-        "styleName": "Normal",
-        "isBold": false,
-        "isLargeFont": true
-      }
-    ],
-    "sourceUrl": "",
-    "order": 2,
-    "slug": "202211-2211-3-2",
-    "date": "2022.11.10",
-    "issue": "第201期 / 2022.11電子報",
-    "author": "劉惠瑛",
-    "images": [],
-    "tags": [
-      "練功筆記",
-      "身體感知"
-    ],
-    "readTime": "約 2 分鐘",
-    "title": "之二- 覺醒之路",
-    "category": "練功筆記",
-    "image": "/assets/pixabay/pixabay-7071032.jpg?v=7071032",
-    "sections": [
-      {
-        "heading": null,
-        "paragraphs": [
-          "我很喜歡上張老師的課，每個禮拜二都期待來被張老師狠狠敲一下，整個人好像又充滿能量可以継續螻蟻人生。",
-          "說老實話，氣機導引的課程對我個人肢體的開發、人生的探索乃至婚姻的經營都有很大的幫助。我多年吵吵鬧鬧的婚姻關係，現在每週二都會達到和諧的高峰。",
-          "張老師是我們人生的導師，他管的事情很多，涵蓋我們生活的大小事，包山包海。從身材太胖要減肥、頭髮太白要染髮，要我們無所事事喝下午茶、爬山旅遊的生活型態要改進。",
-          "他教我們練無極、學品香識香、教我們如何面對生老病死、教我們這輩子要懂得「道」，甚至為我們這些五體不勤、又老又醜又沒錢的學員，建造雪山坑山莊。帶領平均年齡60歲以上的歐吉桑、歐巴桑學員，走入山林接觸大自然，更親身帶領一群旱鴨子奔向瀑布的激流中。",
-          "喜歡聽課、參與活動、向來能混就混而沒有運動細胞的我，要學會無極，是比登天還難的事。張老師的話，我很認真地聽，聽得很清楚但又似懂非懂。自以為打著種子班菜鳥的名義，一次又一次地混到今天。練會無極，對我而言跟減肥一樣難。但是該面對的還是得面對！九月中秋在雪山坑練功時，老師一句「妳不認真」敲醒我！我也意識到如果不認真學無極，應該無臉並且也混不下去了。",
-          "説來慚愧，我連站椿、落胯都學不會，更遑論記得無極要如何比劃，自忖是後段班學員。記得剛入會館時，我好像劉姥姥進大觀園，老師的功法和心法對我而言，是極具吸引魅力的。但是學不會的害怕和挫折感，可能不是大家所能理解的。課堂上，美其名跟著老師練無極，其實心裏是很不踏實的，比手劃腳、頭轉來轉去，想要比得像一點。抱著永遠學不會的心態，兩、三年過去了，自己還是個大菜鳥。",
-          "老師說我們是搭直升機直接上山頂的幸福菜鳥學員。我也覺得我們是在會館開花結果最美好的時刻，吊車尾進入種子班的。",
-          "被老師敲醒後，自己突然頓悟，如果自己沒有想學會的意念，誰能幫得了你？老師殷殷切切的一聲聲「要跟上啊」、「你要好好學呀」、「練練就會了啊」！又恐嚇說：「我很忍耐你們這樣不用心不用功的啦⋯⋯」、「要趕快加油啊」！",
-          "在氣機導引裡到處都是貴人。感謝如璧好姐妹，我學不會她比我更著急，每個禮拜跟我約時間練習。怡萍也常常鼓勵我這扶不起的阿斗。",
-          "為了寫這篇電子報我失眠了好久，也很怕這篇文章是史上最沒內容的電子報投稿，但我畢竟硬著頭皮勇敢面對了。我已經在學習的路途上了，努力往前，做就對了，練就會了！"
         ]
       }
     ]
@@ -78400,6 +77951,136 @@ export const reviewDraftArticles = [
     ]
   },
   {
+    "imageCaption": "圖片來源 / Pixabay",
+    "issueId": "202211",
+    "sourceId": "2211-8",
+    "excerpt": "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別…",
+    "homeAnchor": "#article-202211-2211-8",
+    "contentBlocks": [
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "誠者成也。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      }
+    ],
+    "sourceUrl": "",
+    "order": 4,
+    "slug": "202211-2211-8",
+    "date": "2022.11.10",
+    "issue": "第201期 / 2022.11電子報",
+    "author": "",
+    "images": [],
+    "tags": [
+      "股海人生"
+    ],
+    "readTime": "約 2 分鐘",
+    "title": "蔡育展",
+    "category": "股海人生",
+    "image": "/assets/pixabay/pixabay-6561222.jpg?v=6561222",
+    "sections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "上次提到如果先放下多空、好壞，先以價格變動的數為主，依循數的進退轉折，暫時以此取代個人判斷。那是不是新聞也別看了，基本面完全不用分析，大腦也乾脆放著不必用了，這樣叫一個石頭、西瓜來也沒什麼差別了！",
+          "不去想是一個權宜之計，以訊號為主其實也只是過程中的一段而已，只是一個止的階段。知止、定靜安慮得。知止為的是開啟另一個程序。儒家更多強調用，身心性命之後內明外用，更重視作用，重視人事，走向入世。",
+          "個人分析與自身經驗值、腦神經與身心迴路關聯性極高。同一個訊息，在每個人身上產生的解讀不同。對於一個訊息，即使兩個人同時理解為利多，我的利多跟你的利多不會一樣。就算一樣，在不同個體上作用不同。在小蔡身上是蚍蜉的作用，到馬斯克身上就能撼樹。吹萬不同，而使其自已也，講得或許就是這種現象。吹萬不同，就不必侷限在個人的認知分析中，整體呈現的狀態為何比較重要。",
+          "注意力從一個點拿開，會開始注意到整體，注意到整體，資料量不會侷限在自身經驗值，演算模式也將開展、多元化。定靜安慮得，重要的是最後的得。那個得就不會是慣性與衝動的結果。整個過程中還是有慮、有得，不去想、知止，其實感官反而會打開，以前看不到訊息，想不到的思維模式會看到，會建立。以前為何看不到？其實是因為不斷重複已過濾的資訊，以同樣的的模式演算，出來的結果就自然會大同小異。",
+          "人類的感知系統，能感知到的資訊量與訊號模式，其實超越我們目前的認知。但是人類建立起來的腦神經、內分泌迴路，一方面協助人類適應甚至克服環境限制，但是另一方面也讓人類過度依賴模式、工具，反而無法感知到周圍許多的訊息流，本能的部分不斷的弱化。以金融市場來說，人類就會非常重視訊息的不對稱性(只有我知道)，與有效性(分析正確與否)，而忽略訊息作用的兩面性，有陰有陽，有正有反，不斷推移消長轉化。其他動物怎麼做？大腦不發達，那就只能感知。就像候鳥不需要看The Weather Channel，就能知道何時要遷徙了，直接接收地球給的訊號就行。",
+          "要再講下去又要扯到腦神經、內分泌、解剖學，會讓人昏了頭。古人內證得到的是實在的東西，不是玄學，也非八股，限於當時的環境，能使用的語言有限。這邊先以一段文字暫時打住：",
+          "「自誠明，謂之性；自明誠，謂之教。誠則明矣，明則誠矣。",
+          "至誠之道，可以前知。國家將興，必有禎祥；國家將亡，必有妖孽。見乎蓍龜，動乎四體。禍福將至：善，必先知之；不善，必先知之。故至誠如神。",
+          "誠者非自成己而已也，所以成物也。成己，仁也；成物，知也。」",
+          "誠者成也。"
+        ]
+      }
+    ]
+  },
+  {
     "imageCaption": "",
     "issueId": "202211",
     "sourceId": "2211-5",
@@ -78495,6 +78176,246 @@ export const reviewDraftArticles = [
           "一般人聞香、靜坐，香是香，靜坐是靜坐，並沒有真正進入香裡面，把自己的神魂作用出來。什麼叫「品味」？就是去品那個味，用靈性去萃取，用意識去想像、去發展，在時空中創造完整。如此每一口氣、每一次聞香都是淬鍊，這才是真正的安靜，如禪定一般。這樣你內在豐富，腦細胞在淨土世界中，即使人老了也很美，很有氣場。",
           "沉香是一種大自然的正氣，家中或工作場所點沉香粉或線香，可以改變情境，讓空間淨化，變成一塊淨土，所有進來的人，腦細胞都會進入這氣味分子裡面而安靜下來。平日可把土沉裝在小罐中隨身攜帶，方便隨時打開來聞，類似古代的香囊。如慢慢深入土沉世界，理解它的能量對身心的作用力，並開啟嗅覺的靈敏度。每天這樣拿沉香來聞，你對話的是時空，聞的不只是味，也是作用力，這叫香道。香道就是嗅覺之道，就是內心之道，這才是我們最要學習的。",
           "我們常聽音樂、看表演、欣賞山水、吃美食，來經營耳朵、眼睛、嘴巴，但對鼻子，卻只順其自然，我們不重視氣味，對鼻子欠缺經營。其實嗅覺直通大腦，作用到海馬迴與杏仁核，而鼻子在五官中間，聯繫眼睛、耳朵、嘴巴。練鼻子這個中心點，不只是練呼吸，也是練情感，連眼睛、耳朵、嘴巴都練到。"
+        ]
+      }
+    ]
+  },
+  {
+    "imageCaption": "圖片來源 / Pixabay",
+    "issueId": "202211",
+    "sourceId": "2211-9",
+    "excerpt": "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離…",
+    "homeAnchor": "#article-202211-2211-9",
+    "contentBlocks": [
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "從排斥到擁抱氣機",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "「妻唱夫隨」的氣機機緣",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "夫妻由中西不同調轉成練功同好",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "開啓不同維度的問題解決",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "練功的建議及體會",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "採訪後記",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      },
+      {
+        "isHeadingStyle": false,
+        "styleId": "Normal.0",
+        "type": "paragraph",
+        "text": "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！",
+        "styleName": "Normal",
+        "isBold": false,
+        "isLargeFont": true
+      }
+    ],
+    "sourceUrl": "",
+    "order": 5,
+    "slug": "202211-2211-9",
+    "date": "2022.11.10",
+    "issue": "第201期 / 2022.11電子報",
+    "author": "",
+    "images": [],
+    "tags": [
+      "導引采風錄"
+    ],
+    "readTime": "約 5 分鐘",
+    "title": "黃坤瑛",
+    "category": "導引采風錄",
+    "image": "/assets/pixabay/pixabay-2751891.jpg?v=2751891",
+    "sections": [
+      {
+        "heading": null,
+        "paragraphs": [
+          "鍾宛真和蔡育展不是種子班唯一的夫妻檔，氣機資歷也不深，2016初進入門班，2019才進種子班直接與張老師學習，但他們兩位都是非常有潛力且有獨特體會及成長的夫妻檔。他們與張老師非常投緣，因住家離張老師家不遠，所以常有機會到張老師家裡泡茶聊天，同時向老師請益。",
+          "從排斥到擁抱氣機",
+          "2016年鍾宛真因溜滑板車摔傷膝蓋韌帶，在華頓MBA同學聚會上碰到莫仁維教練。莫教練那時剛在八德館開入門班，邀請她來體驗氣機導引。本來她覺得這是「老人運動」，還一直找藉口推託，但最後實在拗不過莫教練的盛情邀約，只好來試上看看，反正她因腳傷，也沒辦法做其他運動。上完第一堂體驗課後，她立即愛上這種運動方式！因為整堂課下來，雖然動作緩慢卻讓她全身大汗，而且膝蓋的傷完全不妨礙運動，所以下課後毫不猶豫就報名參加。",
+          "剛開始鍾宛真也只是把氣機導引當成另一項運動而已，對氣機導引的全然改觀是參加了2017年9月第一次為入門班辦的三天二夜活動。聽張老師親授九大關節之道，對她無疑是一大震憾，因為以前從來沒聽過或想過九大關節間的相互作用關係及連結。活動結束後，她深刻體會氣機導引不只是運動，還是結合古人智慧及文化結晶的哲學，從此她更加努力跟著教練們學習各種功法。",
+          "她笑說會參加三天二夜活動也是天註定，那時她剛入門未滿一年，本來也不想參加，是莫教練先斬後奏，直接幫她報名後才告訴她。當時她小孩還小，哪有時間在週末遠遊，所以派蔡育展代她去參加說明會。蔡育展在說明會中，覺得張老師對身體結構及功法作用的理解非常獨特，鼓勵鍾宛真參加，並答應周末幫忙照顧小孩，才造就這段氣機之旅。之後舉辦的三天二夜活動，她都會排除萬難參加，並出資鼓勵同仁參加，希望同仁同她一般可以感受氣機導引對身體的好！",
+          "「妻唱夫隨」的氣機機緣",
+          "鍾宛真與蔡育展未接觸氣機前，兩人的喜好或見解是一西一中，差異頗大：蔡育展熟讀四書五經，鍾宛真則看不懂文言文。但在氣機學習之旅，鍾宛真反而領先蔡育展一步，蔡育展是在鍾宛真進入門班二年後才加入。之前他因工作關係無法上課，而且當時他也在學太極拳，覺得沒必要重新學習氣機導引。後來看到鍾宛真的改變，也常聽她說起上課狀況，那時因工作壓力及投資理念不合，身心都有些狀況，離開証券公司自營部，轉成自由投資者後，才有心力與鍾宛真一起加入氣機導引行列。",
+          "鍾宛真於2019年4月參加三天二夜活動後，被張老師講授的心法大大感動，想更進一步學習張老師的智慧。於是請教練徵詢張老師的意見。張老師只說了句「確定嗎？」就讓她掙扎了一整個周末，因為聽說在張老師面前，心中的惡念都藏不住，善良的偽裝都會被拆穿，所以她實在不知道自己能不能承受這樣的上課方式。最後還是決定加入種子班學習至今。她自覺若沒有莫教練的督促及蔡育展的鼓勵，她可能就錯過了跟張老師的緣份及翻轉人生下半場的機會。",
+          "蔡育展則因臉皮薄，久聞張老師上課不時會修理學員，怕夫妻一起上種子班會被張老師調侃。直到疫情期間，有機會上張老師的線上課，才體會到張老師課程的精髓，因此在2021也加入種子班。問蔡育展太極拳與氣機導引的不同，他認為太極是一門武術，著重練身體的部份，不像氣機導引強調修練身心靈整合！",
+          "夫妻由中西不同調轉成練功同好",
+          "在受氣機導引薰陶前，他們夫妻一中一西，非常不同調，也常常因中西價值觀的不同而爭吵。鍾宛真笑說，她看不懂文言文，之前從來不讀四書五經，跟一般女人一樣愛買名牌衣服鞋子和包包。相反的，蔡育展平時就愛讀古文經典，講話動不動就吊書袋，對衣服名品一點興趣都沒有。",
+          "跟張老師學習後，鍾宛真開始對東方文化及老祖宗的身心靈修練智慧有濃厚興趣。她最大的改變是對名牌不再心動，卻愛上閨蜜口中的爛木頭「沉香」，她與閨蜜好友聊得來的話題好像也愈來愈少，她的喜好及價值觀變得愈來愈東方。",
+          "蔡育展的最大改變則是開始會笑了！鍾宛真說蔡育展以前是一個完全不會笑的男人，他是一個憤世嫉俗的假文青，雖在金融界服務，但卻非常看不慣金融圈多數人的趨炎附勢和利慾薰心，覺得自己是清流，是懷才不遇的上等人。蔡育展坦言開始上張老師的種子班後，才充份體會所謂的「心物一元」，身體、感覺及想法間如何交互影響。以前自己看很多書，但都只限於書本的知識及文字的理解，雖知道，但身體卻做不到，身體卡住，心也卡住，看很多事都不順眼。現在蔡育展體會到，一切都要回歸身體的動作，身體做到了，內分泌會改變，情緒及想法也會跟著改變。以前蔡育展會比較急於想証明自己與別人的不同，個性比較剛強不知變通，現在的他變得比較柔軟、放鬆，知道此路不通不是硬鑽，就像練無極，稍微放鬆轉一下或繞一下，就可以海濶天空！",
+          "開啓不同維度的問題解決",
+          "鍾宛真說剛開始上種子班時，真的很多都聽不懂，她不時會問老師一些現在看起來很白痴的問題，如什麼是慈悲，怎麼懺悔，如何讓自己真的變好而不是自我感覺良好，為什麼沒有好壞對錯等等，也非常感謝張老師很有耐心的回覆。除了上課聽心法，她還喜歡跟老師聊天，學習用更高維度來解決人生的問題。她舉例公司前一陣子有一員工離職，加入老員工之前自立門戶的公司，並且經營同樣客戶和產品來跟她競爭。她自認平時待員工不薄，卻遭到這樣的背叛，讓她感覺非常憤怒。在自我糾結了一陣子後，跟張老師請益如何有智慧的處理這類事情。本以為張老師會說「放下」「轉念」之類，結果張老師卻說員工有能力成立新公司，應該感到與有榮焉，而且如果真的是人才，趕快投資員工創立的公司，讓他們幫你開拓市場，安心當股東分享利潤才最省時省力，否則凡事都要自己做多累啊！鍾宛真聽完茅塞頓開，立即將張老師的建議付諸行動，隔週馬上召開業務員大會，跟同仁分享並鼓勵內部創業的想法。",
+          "練功的建議及體會",
+          "問夫妻二人除了上課，平時在家會不會一起練功，他們認為練功是很個人的事，是自己與身體的獨處與對話，所以通常是各練各的。蔡育展通常會在每天股市收盤後或晚上睡前練20-30分鐘，他的習慣是每天選幾個不同動作但反覆練習。鍾宛真除了張老師種子班的課，另外還上三堂入門課，一周至少練三～四次以上，其他時間她通常會「無極」從頭練到尾。夫妻倆除個性，練功方式也不太相同。",
+          "蔡育展可能是台灣第一個可以把氣機導引功法八大原理「開闔、螺旋、延伸、絞轉」「靜心、旋轉、壓縮、共振」運用到股市技術線形分析的人。股票K線或KD、MACD線圖，真的一波波像「無極」動作般，雖時時變化中，卻又有跡可循，壓到極致必會反彈，所謂反者道之動！",
+          "夫妻倆雖然年資淺，練功卻非常認真，也參加品香課程，提升靈性的開發。兩位給入門班的建議是一定要持續練功，熬過初期大腿痛，膝蓋痠的日子，才能體會身體變化的好處，同時覺知到日常生活中習慣的改變。畢竟身體沾黏少了，鬆開了，心境就會不同！",
+          "採訪後記",
+          "這是第一次嘗試訪問夫妻檔，訪談過程覺得在蔡育展與鍾宛真身上，彷彿看到射雕英雄傳中的郭靖及黃蓉現身，在沉靜與慧黠的對比中，卻充滿著攜手共行之情。歡喜看到這對佳偶因學習氣機導引讓夫妻相處更加融洽，對生命的態度有著更圓融與開闊的心境！"
         ]
       }
     ]
@@ -102875,14 +102796,14 @@ export const reviewDraftIssues = [
     "articleCount": 9
   },
   {
-    "issueNumber": "第234期",
-    "image": "/assets/pixabay/pixabay-7384396.jpg?v=7384396",
-    "title": "在內外之間，看見完整的自己",
-    "id": "202508",
     "label": "2025.08 電子報",
+    "image": "/assets/pixabay/pixabay-5478471.jpg?v=5478471",
+    "id": "202508",
     "href": "/issues/202508/",
     "date": "2025.08",
-    "articleCount": 8
+    "title": "在內外之間，看見完整的自己",
+    "articleCount": 8,
+    "issueNumber": "第234期"
   },
   {
     "issueNumber": "第233期",

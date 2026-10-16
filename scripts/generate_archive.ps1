@@ -1,9 +1,12 @@
 ﻿param(
   [string]$Root = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
-  [string]$SourceRoot = $env:QIJI_ARTICLE_SOURCE_ROOT
+  [string]$SourceRoot = $env:QIJI_ARTICLE_SOURCE_ROOT,
+  [string[]]$IssueIds = @()
 )
 
 $ErrorActionPreference = "Stop"
+
+. (Join-Path $PSScriptRoot "pixabay_image_rules.ps1")
 
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -29,7 +32,7 @@ $importCacheDir = Join-Path $Root ".cache"
 $importCachePath = Join-Path $importCacheDir "article-import-cache.json"
 $pixabayFallbackPath = Join-Path $Root "src\data\pixabayFallbackImages.json"
 $pixabayFallbackAssetDir = Join-Path $Root "public\assets\pixabay"
-$pixabayFallbackPolicy = "nature-landscape-v2"
+$pixabayFallbackPolicy = "nature-landscape-v3"
 
 $skipDirectoryNames = @(
   "pic", "pics", "picture", "pictures", "images", "image", "圖", "圖片", "圖片檔", "五感圖片", "傳習錄圖片", "網站",
@@ -286,7 +289,9 @@ function Read-PixabayFallbackStore {
       return New-PixabayFallbackStore
     }
     $store = ConvertTo-PlainObject ($raw | ConvertFrom-Json)
-    if (-not $store.ContainsKey("policy") -or [string]$store["policy"] -ne $pixabayFallbackPolicy) {
+    if ([string]$store["policy"] -eq "nature-landscape-v2") {
+      $store["policy"] = $pixabayFallbackPolicy
+    } elseif (-not $store.ContainsKey("policy") -or [string]$store["policy"] -ne $pixabayFallbackPolicy) {
       Write-Host "Pixabay fallback: resetting cached images for policy $pixabayFallbackPolicy."
       return New-PixabayFallbackStore
     }
@@ -309,53 +314,11 @@ function Save-PixabayFallbackStore {
   [System.IO.File]::WriteAllText($pixabayFallbackPath, $json, [System.Text.UTF8Encoding]::new($false))
 }
 
-function Test-NaturalLandscapePixabayCandidate {
-  param([object]$Candidate)
-
-  $rawTags = [string]$Candidate.tags
-  if ([string]::IsNullOrWhiteSpace($rawTags)) { return $false }
-
-  $tags = @(
-    $rawTags -split "," |
-      ForEach-Object { $_.Trim().ToLowerInvariant() } |
-      Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
-  )
-
-  $allowedTags = @(
-    "nature", "landscape", "scenery", "mountain", "mountains", "forest", "woods", "tree", "trees",
-    "lake", "river", "waterfall", "ocean", "sea", "beach", "coast", "sky", "cloud", "clouds",
-    "sunrise", "sunset", "valley", "meadow", "grass", "field", "flower", "flowers", "wilderness",
-    "desert", "snow", "winter", "autumn", "spring", "summer", "island", "cliff", "rock", "rocks",
-    "自然", "風景", "景色", "山", "森林", "樹", "湖", "河", "瀑布", "海", "海岸", "天空", "雲",
-    "日出", "日落", "草原", "花", "沙漠", "雪"
-  )
-
-  $blockedTags = @(
-    "people", "person", "human", "man", "woman", "child", "girl", "boy", "portrait", "face", "body",
-    "city", "urban", "street", "road", "highway", "bridge", "building", "architecture", "house",
-    "home", "room", "interior", "church", "temple", "tower", "castle", "car", "vehicle", "bus",
-    "train", "bicycle", "bike", "boat", "ship", "airplane", "plane", "table", "chair", "bench",
-    "fence", "lamp", "computer", "phone", "robot", "food", "coffee", "cup", "book", "money",
-    "business", "office", "人", "人物", "人像", "城市", "街", "道路", "建築", "房子", "室內",
-    "橋", "車", "船", "飛機", "桌", "椅", "電腦", "手機", "咖啡", "辦公"
-  )
-
-  foreach ($tag in $tags) {
-    if ($blockedTags -contains $tag) { return $false }
-  }
-
-  foreach ($tag in $tags) {
-    if ($allowedTags -contains $tag) { return $true }
-  }
-
-  return $false
-}
-
 function Get-PixabayFallbackCandidates {
   param([string]$ApiKey)
   if ([string]::IsNullOrWhiteSpace($ApiKey)) { return @() }
 
-  $query = if ($env:PIXABAY_QUERY) { $env:PIXABAY_QUERY } else { "nature landscape mountain forest lake" }
+  $query = if ($env:PIXABAY_QUERY) { $env:PIXABAY_QUERY } else { "natural landscape wilderness" }
   $encodedQuery = [System.Uri]::EscapeDataString($query)
   $maxPages = 4
   if ($env:PIXABAY_MAX_PAGES -and $env:PIXABAY_MAX_PAGES -match "^\d+$") {
@@ -490,7 +453,9 @@ function Apply-PixabayFallbackImages {
     return
   }
 
-  $candidates = @(Get-PixabayFallbackCandidates $apiKey | Sort-Object { Get-Random })
+  $candidates = @(Get-PixabayFallbackCandidates $apiKey | Sort-Object `
+    @{ Expression = { Get-PixabayCandidateQualityScore $_ }; Descending = $true },
+    @{ Expression = { [long]$_.id }; Ascending = $true })
   if ($candidates.Count -eq 0) {
     Write-Warning "Pixabay fallback: no candidates returned."
     return
@@ -516,6 +481,10 @@ function Apply-PixabayFallbackImages {
         caption = $caption
         pageUrl = [string]$candidate.pageURL
         user = [string]$candidate.user
+        tags = [string]$candidate.tags
+        imageWidth = [int]$candidate.imageWidth
+        imageHeight = [int]$candidate.imageHeight
+        query = if ($env:PIXABAY_QUERY) { [string]$env:PIXABAY_QUERY } else { "natural landscape wilderness" }
       }
       $applied += 1
     } catch {
@@ -2194,7 +2163,11 @@ function Get-PreferredArticleFiles {
 }
 
 $issueDirs = Get-ChildItem -Path $sourceRoot -Recurse -Directory |
-  Where-Object { $_.Name -match "^(20\d{4})" -and -not (Test-SkippedDirectoryPath $_) } |
+  Where-Object {
+    $_.Name -match "^(20\d{4})" -and
+    -not (Test-SkippedDirectoryPath $_) -and
+    ($IssueIds.Count -eq 0 -or $_.Name -in $IssueIds)
+  } |
   Sort-Object Name -Descending
 
 $articles = New-Object System.Collections.Generic.List[object]

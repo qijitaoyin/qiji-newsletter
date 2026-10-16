@@ -1,6 +1,12 @@
 param(
   [string]$Remote = $env:GOOGLE_DRIVE_REMOTE,
   [string]$Destination = "",
+  [ValidateSet("all", "latest-unpublished", "new-legacy", "published", "issue")]
+  [string]$Scope = "all",
+  [string]$PublicLatestIssueId = "",
+  [string]$SpecificIssueId = "",
+  [string[]]$KnownIssueIds = @(),
+  [string]$SelectionFile = "",
   [switch]$DryRun
 )
 
@@ -29,6 +35,62 @@ if (-not $rclone) {
 
 New-Item -ItemType Directory -Force -Path $Destination | Out-Null
 
+$remoteIssueFolders = @(
+  & rclone lsf $Remote --dirs-only --max-depth 1 |
+    ForEach-Object { ([string]$_).Trim().TrimEnd('/') } |
+    Where-Object { $_ -match '^20\d{4}$' } |
+    Sort-Object -Unique
+)
+if ($LASTEXITCODE -ne 0) {
+  throw "rclone could not list Google Drive issue folders (exit code $LASTEXITCODE)"
+}
+
+$selectedIssueIds = switch ($Scope) {
+  "latest-unpublished" {
+    @($remoteIssueFolders | Where-Object { $_ -gt $PublicLatestIssueId } | Sort-Object -Descending | Select-Object -First 1)
+  }
+  "published" {
+    if ([string]::IsNullOrWhiteSpace($PublicLatestIssueId)) {
+      throw "PublicLatestIssueId is required for the published scope."
+    }
+    @($remoteIssueFolders | Where-Object { $_ -le $PublicLatestIssueId } | Sort-Object)
+  }
+  "new-legacy" {
+    if ([string]::IsNullOrWhiteSpace($PublicLatestIssueId)) {
+      throw "PublicLatestIssueId is required for the new-legacy scope."
+    }
+    $known = @($KnownIssueIds | Where-Object { $_ -match '^20\d{4}$' } | Sort-Object -Unique)
+    @(
+      $remoteIssueFolders |
+        Where-Object { $_ -le $PublicLatestIssueId -and $_ -notin $known } |
+        Sort-Object
+    )
+  }
+  "issue" {
+    if ([string]::IsNullOrWhiteSpace($SpecificIssueId) -or $SpecificIssueId -notmatch '^20\d{4}$') {
+      throw "SpecificIssueId is required for the issue scope."
+    }
+    if ($SpecificIssueId -notin $remoteIssueFolders) {
+      throw "Issue folder $SpecificIssueId was not found in Google Drive."
+    }
+    @($SpecificIssueId)
+  }
+  default { @($remoteIssueFolders) }
+}
+
+if ($SelectionFile) {
+  $selectionParent = Split-Path -Parent $SelectionFile
+  if ($selectionParent) { New-Item -ItemType Directory -Force -Path $selectionParent | Out-Null }
+  [ordered]@{
+    scope = $Scope
+    publicLatestIssueId = $PublicLatestIssueId
+    specificIssueId = $SpecificIssueId
+    knownIssueIds = @($KnownIssueIds | Sort-Object -Unique)
+    availableIssueIds = @($remoteIssueFolders)
+    selectedIssueIds = @($selectedIssueIds)
+  } | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath $SelectionFile -Encoding UTF8
+}
+
 $ignoredFolders = @(
   "draft",
   "drafts",
@@ -42,10 +104,7 @@ $ignoredFolders = @(
   (-join @([char]0x6821, [char]0x7A3F, [char]0x4E2D)) # jiao gao zhong
 )
 
-$arguments = @(
-  "sync",
-  $Remote,
-  $Destination,
+$commonArguments = @(
   "--create-empty-src-dirs",
   "--exclude", ".DS_Store",
   "--exclude", "._*",
@@ -59,22 +118,35 @@ $arguments = @(
 )
 
 foreach ($folder in $ignoredFolders) {
-  $arguments += @("--exclude", "$folder/**")
-  $arguments += @("--exclude", "**/$folder/**")
+  $commonArguments += @("--exclude", "$folder/**")
+  $commonArguments += @("--exclude", "**/$folder/**")
 }
 
-$arguments += "--verbose"
+$commonArguments += "--verbose"
 
 if ($DryRun) {
-  $arguments += "--dry-run"
+  $commonArguments += "--dry-run"
 }
 
 Write-Host "Syncing Google Drive source..."
 Write-Host "Remote: $Remote"
 Write-Host "Destination: $Destination"
+Write-Host "Scope: $Scope"
+Write-Host "Selected issue folders: $($selectedIssueIds -join ', ')"
 Write-Host "Ignored staging folders: $($ignoredFolders -join ', ')"
 
-& rclone @arguments
-if ($LASTEXITCODE -ne 0) {
-  throw "rclone sync failed with exit code $LASTEXITCODE"
+if ($Scope -eq "all") {
+  & rclone sync $Remote $Destination @commonArguments
+  if ($LASTEXITCODE -ne 0) {
+    throw "rclone sync failed with exit code $LASTEXITCODE"
+  }
+} else {
+  foreach ($issueId in $selectedIssueIds) {
+    $issueDestination = Join-Path $Destination $issueId
+    New-Item -ItemType Directory -Force -Path $issueDestination | Out-Null
+    & rclone sync "$Remote/$issueId" $issueDestination @commonArguments
+    if ($LASTEXITCODE -ne 0) {
+      throw "rclone sync failed for issue $issueId with exit code $LASTEXITCODE"
+    }
+  }
 }

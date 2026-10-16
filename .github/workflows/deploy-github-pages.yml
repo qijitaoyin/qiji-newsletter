@@ -58,7 +58,13 @@ jobs:
     # workflow with the full payload. Do not deploy that intermediate commit:
     # it would queue behind the dispatched run, use a stale checkout, and race
     # with the metadata/publish commits created by the dispatched run.
-    if: ${{ github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'Update review publish confirmation') }}
+    if: >-
+      ${{ github.event_name != 'push' || (
+        !startsWith(github.event.head_commit.message, 'Update review publish confirmation') &&
+        !startsWith(github.event.head_commit.message, 'Update review draft import') &&
+        !startsWith(github.event.head_commit.message, 'Update AI metadata') &&
+        !startsWith(github.event.head_commit.message, 'Publish reviewed issue')
+      ) }}
     runs-on: ubuntu-latest
     env:
       RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
@@ -71,13 +77,15 @@ jobs:
       AI_MODEL: ${{ vars.AI_MODEL }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
       AI_ALLOW_PAID_API: ${{ inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' && 'true' || 'false' }}
-      AI_ISSUE_ID: ${{ inputs.ai_issue_id }}
+      AI_ISSUE_ID: ${{ (inputs.ai_issue_id == 'published' || inputs.ai_issue_id == 'new-legacy') && 'changed' || inputs.ai_issue_id }}
       AI_LIMIT: ${{ inputs.ai_limit }}
-      SYNC_DRIVE_ENABLED: ${{ github.event_name == 'push' || inputs.sync_drive == 'true' }}
+      SYNC_DRIVE_ENABLED: ${{ inputs.sync_drive == 'true' }}
       PUBLIC_SITE_URL: https://newsletter.qiji.org.tw
       PUBLIC_BASE_PATH: /
       PUBLIC_REVIEW_PUBLISH_WEBHOOK_URL: ${{ vars.REVIEW_PUBLISH_WEBHOOK_URL || secrets.REVIEW_PUBLISH_WEBHOOK_URL }}
       REVIEW_PUBLISH_JSON: ${{ inputs.review_publish_json }}
+      REQUESTED_IMPORT_TARGET: ${{ inputs.ai_issue_id }}
+      REVIEW_IMPORT_RAN: "false"
       CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -101,6 +109,18 @@ jobs:
 
       - name: Test review metadata overrides
         run: pnpm test:review-metadata
+
+      - name: Test scoped review imports
+        shell: pwsh
+        run: |
+          pnpm test:review-scope
+          pnpm test:review-scope-sync
+
+      - name: Test Word image and Pixabay rules
+        shell: pwsh
+        run: |
+          pnpm test:word-images
+          pnpm test:pixabay-images
 
       - name: Restore import cache
         uses: actions/cache@v4
@@ -127,14 +147,86 @@ jobs:
         if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.RCLONE_CONFIG_CONTENT != '' && env.GOOGLE_DRIVE_REMOTE != '' }}
         timeout-minutes: 60
         shell: pwsh
-        run: ./scripts/sync_google_drive.ps1 -Destination (Join-Path $env:RUNNER_TEMP "source_articles")
+        run: |
+          $publishState = Get-Content -LiteralPath src/data/publishState.json -Raw | ConvertFrom-Json
+          $scope = "all"
+          if ($env:GITHUB_EVENT_NAME -eq "workflow_dispatch") {
+            if (-not [string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) { $scope = "issue" }
+            elseif ($env:REQUESTED_IMPORT_TARGET -eq "latest") { $scope = "latest-unpublished" }
+            elseif ($env:REQUESTED_IMPORT_TARGET -eq "new-legacy") { $scope = "new-legacy" }
+            elseif ($env:REQUESTED_IMPORT_TARGET -eq "published") { $scope = "published" }
+            elseif ($env:REQUESTED_IMPORT_TARGET -match '^20\d{4}$') { $scope = "issue" }
+          }
+          $knownIssueIds = @(
+            @("src/data/generatedArticles.ts", "src/data/reviewDraftArticles.ts") |
+              Where-Object { Test-Path -LiteralPath $_ } |
+              ForEach-Object { Select-String -LiteralPath $_ -Pattern '"issueId"\s*:\s*"(20\d{4})"' -AllMatches } |
+              ForEach-Object { $_.Matches } |
+              ForEach-Object { $_.Groups[1].Value } |
+              Sort-Object -Unique
+          )
+          $selection = Join-Path $env:RUNNER_TEMP "review-import-selection.json"
+          $sourceCacheRoot = Join-Path $env:GITHUB_WORKSPACE "各期電子報"
+          ./scripts/sync_google_drive.ps1 `
+            -Destination $sourceCacheRoot `
+            -Scope $scope `
+            -PublicLatestIssueId ([string]$publishState.publicLatestIssueId) `
+            -SpecificIssueId ([string]$env:REQUESTED_IMPORT_TARGET) `
+            -KnownIssueIds $knownIssueIds `
+            -SelectionFile $selection
+          "REVIEW_IMPORT_SCOPE=$scope" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "REVIEW_IMPORT_SELECTION=$selection" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "REVIEW_SOURCE_ROOT=$sourceCacheRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Generate article data
         shell: pwsh
         run: |
           if ($env:SYNC_DRIVE_ENABLED -eq "true" -and $env:GOOGLE_DRIVE_REMOTE) {
+            $selection = Get-Content -LiteralPath $env:REVIEW_IMPORT_SELECTION -Raw | ConvertFrom-Json
+            $selectedIssueIds = @($selection.selectedIssueIds)
+            if ($env:REVIEW_IMPORT_SCOPE -ne "all" -and $selectedIssueIds.Count -eq 0) {
+              Write-Host "No issue folder matched scope '$env:REVIEW_IMPORT_SCOPE'; keeping current review draft unchanged."
+              $emptyReport = [ordered]@{
+                generatedAt = (Get-Date).ToUniversalTime().ToString("o")
+                totalChanged = 0
+                cacheBaselineRebuilt = 0
+                changedFiles = @()
+                scope = $env:REVIEW_IMPORT_SCOPE
+              } | ConvertTo-Json -Depth 4
+              New-Item -ItemType Directory -Force -Path public/data | Out-Null
+              New-Item -ItemType Directory -Force -Path reports | Out-Null
+              Set-Content -LiteralPath public/data/import-changed-files.json -Value $emptyReport -Encoding UTF8
+              Set-Content -LiteralPath reports/import-changed-files.json -Value $emptyReport -Encoding UTF8
+              exit 0
+            }
             Copy-Item -LiteralPath src/data/generatedArticles.ts -Destination $env:RUNNER_TEMP/generatedArticles.published.ts -Force
-            ./scripts/generate_archive.ps1 -SourceRoot (Join-Path $env:RUNNER_TEMP "source_articles")
+            Copy-Item -LiteralPath src/data/reviewDraftArticles.ts -Destination $env:RUNNER_TEMP/reviewDraftArticles.previous.ts -Force
+            if (-not [string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) {
+              $publishedBase = Get-Content -LiteralPath src/data/generatedArticles.ts -Raw
+              $publishedBase = $publishedBase -replace 'generatedArticles', 'reviewDraftArticles'
+              $publishedBase = $publishedBase -replace 'generatedIssues', 'reviewDraftIssues'
+              Set-Content -LiteralPath $env:RUNNER_TEMP/reviewDraftArticles.previous.ts -Value $publishedBase -Encoding UTF8
+            }
+            Copy-Item -LiteralPath src/data/generatedReview.ts -Destination $env:RUNNER_TEMP/generatedReview.previous.ts -Force
+            if (Test-Path -LiteralPath .cache/article-import-cache.json) {
+              Copy-Item -LiteralPath .cache/article-import-cache.json -Destination $env:RUNNER_TEMP/article-import-cache.previous.json -Force
+            }
+            $generateArguments = @{ SourceRoot = $env:REVIEW_SOURCE_ROOT }
+            if ($env:REVIEW_IMPORT_SCOPE -ne "all") {
+              $generateArguments.IssueIds = $selectedIssueIds
+            }
+            ./scripts/generate_archive.ps1 @generateArguments
+            if ($env:REVIEW_IMPORT_SCOPE -ne "all") {
+              node scripts/merge_scoped_review_import.mjs `
+                --selection=$env:REVIEW_IMPORT_SELECTION `
+                --previousDraft=$env:RUNNER_TEMP/reviewDraftArticles.previous.ts `
+                --previousReview=$env:RUNNER_TEMP/generatedReview.previous.ts `
+                --previousCache=$env:RUNNER_TEMP/article-import-cache.previous.json `
+                --generated=src/data/generatedArticles.ts `
+                --generatedReview=src/data/generatedReview.ts `
+                --cache=.cache/article-import-cache.json
+            }
+            "REVIEW_IMPORT_RAN=true" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           } else {
             Write-Host "No Google Drive remote configured; using committed generated data."
           }
@@ -143,7 +235,7 @@ jobs:
         run: pnpm assets:optimize
 
       - name: Separate review draft from published data
-        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.GOOGLE_DRIVE_REMOTE != '' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.GOOGLE_DRIVE_REMOTE != '' && env.REVIEW_IMPORT_RAN == 'true' }}
         shell: pwsh
         run: |
           $draft = Get-Content -LiteralPath src/data/generatedArticles.ts -Raw
@@ -159,15 +251,29 @@ jobs:
           }
 
       - name: Generate AI metadata for synced draft
-        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' }}
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.REVIEW_IMPORT_RAN == 'true' }}
         env:
           AI_ALLOW_PAID_API: "true"
-          AI_SOURCE_ROOT: ${{ runner.temp }}/source_articles
+          AI_SOURCE_ROOT: ${{ github.workspace }}/各期電子報
         run: pnpm ai:metadata
 
       - name: Generate AI metadata manually
         if: ${{ inputs.sync_drive != 'true' && inputs.run_ai == 'true' && inputs.paid_ai_confirm == 'true' }}
         run: pnpm ai:metadata
+
+      - name: Persist synced review draft
+        if: ${{ env.SYNC_DRIVE_ENABLED == 'true' && env.REVIEW_IMPORT_RAN == 'true' && inputs.review_publish_json == '' }}
+        run: |
+          if git diff --quiet -- src/data/reviewDraftArticles.ts src/data/generatedReview.ts src/data/publishState.json src/data/aiMetadata.json public/assets/articles public/data/import-changed-files.json; then
+            echo "Review draft unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/reviewDraftArticles.ts src/data/generatedReview.ts src/data/publishState.json src/data/aiMetadata.json public/assets/articles public/data/import-changed-files.json
+          git commit -m "Update review draft import"
+          git push
 
       - name: Persist AI metadata
         if: ${{ env.SYNC_DRIVE_ENABLED == 'true' || inputs.run_ai == 'true' }}
