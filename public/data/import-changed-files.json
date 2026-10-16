@@ -1,5 +1,5 @@
 {
-  "totalChanged": 6,
+  "totalChanged": 7,
   "changedFiles": [
     {
       "issueId": "202508",
@@ -48,8 +48,16 @@
       "sourceId": "2508-4",
       "stableSignature": "v3|912c783a5593ae601583c6ed039919213243399b2b8d213bef44382aba5a698a|",
       "status": "updated"
+    },
+    {
+      "issueId": "202508",
+      "fileName": "2508-5山腳下的蘆葦.docx",
+      "relativePath": "202508/2508-5山腳下的蘆葦.docx",
+      "sourceId": "2508-5",
+      "stableSignature": "v3|7b6b2d9c3cf7e1e04fa18378014186e5ed71072a5981447b1d6055f0bec959d0|7c44feb294c7cd7875d14b1c820dc94159a1b62502659ff2655d16d6b9f93485",
+      "status": "updated"
     }
   ],
-  "cacheBaselineRebuilt": 0,
-  "generatedAt": "2026-10-16T03:37:53.0302287Z"
+  "generatedAt": "2026-10-16T05:28:33.0754843Z",
+  "cacheBaselineRebuilt": 0
 }
