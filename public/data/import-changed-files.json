@@ -1,63 +1,15 @@
 {
-  "totalChanged": 7,
+  "generatedAt": "2026-10-17T18:29:48.3991580Z",
+  "totalChanged": 1,
   "changedFiles": [
     {
-      "issueId": "202508",
-      "fileName": "2508-2-1如是我聞之一.docx",
-      "relativePath": "202508/2508-2-1如是我聞之一.docx",
-      "sourceId": "2508-2-1",
-      "stableSignature": "v3|98561209887bbc53d1e5f6ac3011e3936eae734e4e9bcd1355549c3a57f91740|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-2-2如是我聞之二.docx",
-      "relativePath": "202508/2508-2-2如是我聞之二.docx",
-      "sourceId": "2508-2-2",
-      "stableSignature": "v3|42b7fc645e466b592681361552911ef47b65f941d0657d977d27098adcac0bd8|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-2-3如是我聞之三.docx",
-      "relativePath": "202508/2508-2-3如是我聞之三.docx",
-      "sourceId": "2508-2-3",
-      "stableSignature": "v3|018df8087dd5f4782563ce8611689c5d790ce1aa95be9a6487e613207c42da6b|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-2-4如是我聞之四.docx",
-      "relativePath": "202508/2508-2-4如是我聞之四.docx",
-      "sourceId": "2508-2-4",
-      "stableSignature": "v3|dff7a56483277e54a2f0e2461bd6a294a00e7e0bd65fcc206f6d2404287ca738|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-3體證道德經《第62章》道奧.docx",
-      "relativePath": "202508/2508-3體證道德經《第62章》道奧.docx",
-      "sourceId": "2508-3",
-      "stableSignature": "v3|771ed367b5497744a5911c909ea1430f8dfd7b5241cb245622213ec32518c2d2|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-4圖靈集.docx",
-      "relativePath": "202508/2508-4圖靈集.docx",
-      "sourceId": "2508-4",
-      "stableSignature": "v3|912c783a5593ae601583c6ed039919213243399b2b8d213bef44382aba5a698a|",
-      "status": "updated"
-    },
-    {
-      "issueId": "202508",
-      "fileName": "2508-5山腳下的蘆葦.docx",
-      "relativePath": "202508/2508-5山腳下的蘆葦.docx",
-      "sourceId": "2508-5",
-      "stableSignature": "v3|7b6b2d9c3cf7e1e04fa18378014186e5ed71072a5981447b1d6055f0bec959d0|7c44feb294c7cd7875d14b1c820dc94159a1b62502659ff2655d16d6b9f93485",
+      "issueId": "202610",
+      "fileName": "2610-3-5如是我聞20260917 四午.docx",
+      "relativePath": "202610/2610-3-5如是我聞20260917 四午.docx",
+      "sourceId": "2610-3-5",
+      "stableSignature": "v3|a8e52228adf2f196b22a475b2ce1c332eaf6842294b860edc3e38e2cde3f159f|",
       "status": "updated"
     }
   ],
-  "generatedAt": "2026-10-16T05:28:33.0754843Z",
   "cacheBaselineRebuilt": 0
 }
