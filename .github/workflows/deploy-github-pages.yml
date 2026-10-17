@@ -149,14 +149,12 @@ jobs:
         shell: pwsh
         run: |
           $publishState = Get-Content -LiteralPath src/data/publishState.json -Raw | ConvertFrom-Json
-          $scope = "all"
-          if ($env:GITHUB_EVENT_NAME -eq "workflow_dispatch") {
-            if (-not [string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) { $scope = "issue" }
-            elseif ($env:REQUESTED_IMPORT_TARGET -eq "latest") { $scope = "latest" }
-            elseif ($env:REQUESTED_IMPORT_TARGET -eq "new-legacy") { $scope = "new-legacy" }
-            elseif ($env:REQUESTED_IMPORT_TARGET -eq "published") { $scope = "published" }
-            elseif ($env:REQUESTED_IMPORT_TARGET -match '^20\d{4}$') { $scope = "issue" }
-          }
+          . ./scripts/resolve_review_import_request.ps1
+          $importRequest = Resolve-ReviewImportRequest `
+            -EventName $env:GITHUB_EVENT_NAME `
+            -RequestedImportTarget $env:REQUESTED_IMPORT_TARGET `
+            -ReviewPublishJson $env:REVIEW_PUBLISH_JSON
+          $scope = [string]$importRequest.Scope
           $knownIssueIds = @(
             @("src/data/generatedArticles.ts", "src/data/reviewDraftArticles.ts") |
               Where-Object { Test-Path -LiteralPath $_ } |
@@ -171,12 +169,13 @@ jobs:
             -Destination $sourceCacheRoot `
             -Scope $scope `
             -PublicLatestIssueId ([string]$publishState.publicLatestIssueId) `
-            -SpecificIssueId ([string]$env:REQUESTED_IMPORT_TARGET) `
+            -SpecificIssueId ([string]$importRequest.SpecificIssueId) `
             -KnownIssueIds $knownIssueIds `
             -SelectionFile $selection
           "REVIEW_IMPORT_SCOPE=$scope" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           "REVIEW_IMPORT_SELECTION=$selection" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           "REVIEW_SOURCE_ROOT=$sourceCacheRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "AI_ISSUE_ID=$($importRequest.AiIssueId)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Generate article data
         shell: pwsh

@@ -1,6 +1,7 @@
 $ErrorActionPreference = "Stop"
 $root = Join-Path ([System.IO.Path]::GetTempPath()) ("qiji-review-scope-" + [guid]::NewGuid().ToString("N"))
 $global:qijiReviewScopeCommands = New-Object System.Collections.Generic.List[string]
+. (Join-Path $PSScriptRoot "resolve_review_import_request.ps1")
 
 function global:rclone {
   $arguments = @($args)
@@ -13,6 +14,38 @@ function global:rclone {
 }
 
 try {
+  $latestRequest = Resolve-ReviewImportRequest `
+    -EventName "workflow_dispatch" `
+    -RequestedImportTarget "latest"
+  if ($latestRequest.Scope -ne "latest" -or $latestRequest.SpecificIssueId -ne "latest") {
+    throw "Latest refresh request was resolved incorrectly."
+  }
+
+  $publishRequest = Resolve-ReviewImportRequest `
+    -EventName "workflow_dispatch" `
+    -RequestedImportTarget "latest" `
+    -ReviewPublishJson '{"issueId":"202610","status":"ready-to-publish"}'
+  if (
+    $publishRequest.Scope -ne "issue" -or
+    $publishRequest.SpecificIssueId -ne "202610" -or
+    $publishRequest.AiIssueId -ne "202610"
+  ) {
+    throw "Publish request did not use the issueId from its payload."
+  }
+
+  $invalidPublishFailed = $false
+  try {
+    Resolve-ReviewImportRequest `
+      -EventName "workflow_dispatch" `
+      -RequestedImportTarget "latest" `
+      -ReviewPublishJson '{"issueId":"latest"}' | Out-Null
+  } catch {
+    $invalidPublishFailed = $true
+  }
+  if (-not $invalidPublishFailed) {
+    throw "Invalid publish issueId was accepted."
+  }
+
   New-Item -ItemType Directory -Force -Path $root | Out-Null
   $selection = Join-Path $root "latest.json"
   & (Join-Path $PSScriptRoot "sync_google_drive.ps1") `
