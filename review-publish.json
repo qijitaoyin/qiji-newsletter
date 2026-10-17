@@ -1,1 +1,14 @@
-{"action":"publish-issue","sourceOrigin":"https://newsletter.qiji.org.tw","status":"ready-to-publish","generatedAt":"2026-10-14T01:47:00.996Z","issueId":"202607","reports":[],"openReports":[],"metadataOverrides":{"quotes":{},"summaries":{},"categories":{},"tags":{}},"reviewApprovals":{"approvals":[{"id":"202607::/home/runner/work/_temp/source_articles/202607/2607-2六月雪山坑三天兩夜紀實.docx","sourceModified":"2026-08-08T03:31:13.0240000Z","sourceSignature":"v3|f2d0e812774a462c0c2d47d4187021671a3afa065850da15059e8a26d0f2b25a|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518","sourceId":"2607-2"}],"corrections":[],"ignores":[],"fixes":[],"notes":[],"issueId":"202607","articleSignatures":{"2607-2":{"signature":"v3|f2d0e812774a462c0c2d47d4187021671a3afa065850da15059e8a26d0f2b25a|3837a39cab6e05ecd2c8d57ec38fca7816c5091af0e4b75ca5e677fc597d9518","slug":"202607-2607-2","title":"見自己見天地見眾生——六月雪山坑團練紀實","file":"/home/runner/work/_temp/source_articles/202607/2607-2六月雪山坑三天兩夜紀實.docx"}}}}
+{
+  "sourceOrigin": "https://newsletter.qiji.org.tw",
+  "status": "ready-to-publish",
+  "generatedAt": "2026-10-17T19:07:20.608Z",
+  "issueId": "202610",
+  "reports": [],
+  "openReports": [],
+  "metadataOverrides": {
+    "quotes": {},
+    "summaries": {},
+    "categories": {},
+    "tags": {}
+  }
+}
