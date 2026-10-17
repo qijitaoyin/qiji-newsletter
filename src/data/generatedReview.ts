@@ -5978,96 +5978,73 @@ export const generatedReviewItems = [
     "sourceModified": "2026-10-16T03:50:37.6500000Z"
   },
   {
-    "status": "needs-review",
-    "file": "/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
-    "issueId": "202610",
     "sourceSignature": "",
+    "date": "2026.10.10",
+    "title": "從身體的覺，到物質深處的虛空",
+    "author": "文稿彙整 / 四晚班",
+    "category": "如是我聞",
+    "sourceId": "2610-3-2",
+    "issueId": "202610",
+    "file": "/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
+    "id": "202610::/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
+    "slug": "202610-2610-3-2",
+    "sourceModified": "",
+    "status": "needs-review",
     "messages": [
       {
-        "type": "content-warning",
+        "message": "圖片無標題：/assets/articles/202610/202610-img-001.png?v=153854",
         "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202610/202610-img-001.png?v=153854"
+        "type": "content-warning"
       }
     ],
     "excerpt": "人生如果沒有壓力、沒有風險，做什麼事情都在自己預定的範圍裡，未必是好事。因為生命很多精彩的地方，往往發生在意料之外；你從未想到，甚至跟你的意願完全不同，可就在那個地方，你偏偏碰到一個新世界。",
-    "slug": "202610-2610-3-2",
-    "sourceId": "2610-3-2",
-    "title": "從身體的覺，到物質深處的虛空",
-    "image": "/assets/pixabay/pixabay-2598177.jpg?v=2598177",
-    "id": "202610::/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
-    "date": "2026.10.10",
-    "category": "如是我聞",
-    "sourceModified": "",
-    "author": "文稿彙整 / 四晚班"
+    "image": "/assets/pixabay/pixabay-2598177.jpg?v=2598177"
   },
   {
-    "status": "needs-review",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-5如是我聞20260917 四午.docx",
-    "issueId": "202610",
-    "sourceSignature": "v3|a8e52228adf2f196b22a475b2ce1c332eaf6842294b860edc3e38e2cde3f159f|",
-    "messages": [
-      {
-        "type": "published-content-changed",
-        "severity": "warning",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
-      }
-    ],
-    "excerpt": "我們談練氣，不能先把氣想成一條神祕的線，也不能把經脈當成身體裡面藏著一根看不見的管子。真正要先理解的，是身體本身就是一個龐大而綿密的網絡，而筋膜正是這個網絡最接近身體實相的基礎。筋膜不是單純的…",
-    "slug": "202610-2610-3-5",
-    "sourceId": "2610-3-5",
-    "title": "信力念力與結丹",
-    "image": "/assets/pixabay/pixabay-4540259.jpg?v=4540259",
-    "id": "202610::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-5如是我聞20260917 四午.docx",
-    "date": "2026.10.10",
-    "category": "如是我聞",
-    "sourceModified": "2026-10-17T18:24:04.1210000Z",
-    "author": "文稿彙整 / 四午班"
-  },
-  {
-    "status": "needs-review",
-    "file": "2610-2-1",
-    "issueId": "202610",
     "sourceSignature": "",
+    "date": "2026.10.10",
+    "title": "橫膈膜與氣機循環",
+    "author": "文稿修潤 / 楊清雲",
+    "category": "溫故知新",
+    "sourceId": "2610-2-1",
+    "issueId": "202610",
+    "file": "2610-2-1",
+    "id": "202610::2610-2-1",
+    "slug": "202610-2610-2-1",
+    "sourceModified": "",
+    "status": "needs-review",
     "messages": [
       {
-        "type": "unknown-category",
+        "message": "分類不在既有分類清單：溫故知新",
         "severity": "warning",
-        "message": "分類不在既有分類清單：溫故知新"
+        "type": "unknown-category"
       }
     ],
     "excerpt": "橫膈膜一啟動，就像火車的蒸汽一樣，所有的能量都能啟動。內臟屬自律神經，需要電源讓五臟六腑運轉，產生能量，這個啟動能量的電源就來自橫膈膜。橫膈膜往下壓縮，內臟就產生鼓動性。往下壓縮，是靠空氣擠壓…",
-    "slug": "202610-2610-2-1",
-    "sourceId": "2610-2-1",
-    "title": "橫膈膜與氣機循環",
-    "image": "/assets/pixabay/pixabay-957569.jpg?v=957569",
-    "id": "202610::2610-2-1",
-    "date": "2026.10.10",
-    "category": "溫故知新",
-    "sourceModified": "",
-    "author": "文稿修潤 / 楊清雲"
+    "image": "/assets/pixabay/pixabay-957569.jpg?v=957569"
   },
   {
-    "status": "needs-review",
-    "file": "2610-2-2",
-    "issueId": "202610",
     "sourceSignature": "",
+    "date": "2026.10.10",
+    "title": "道心一起，上丹田就開了",
+    "author": "文稿修潤 / 李明",
+    "category": "溫故知新",
+    "sourceId": "2610-2-2",
+    "issueId": "202610",
+    "file": "2610-2-2",
+    "id": "202610::2610-2-2",
+    "slug": "202610-2610-2-2",
+    "sourceModified": "",
+    "status": "needs-review",
     "messages": [
       {
-        "type": "unknown-category",
+        "message": "分類不在既有分類清單：溫故知新",
         "severity": "warning",
-        "message": "分類不在既有分類清單：溫故知新"
+        "type": "unknown-category"
       }
     ],
     "excerpt": "天機不可洩漏，和天地溝通需要付出靈力，算命先生只能算過去，算不到未來，但未來才重要。我們常叫人家放下，意思是放下過去，把執著放下。但其實過去早就過去了，用不著放下，要放下的是未來——以後不再那…",
-    "slug": "202610-2610-2-2",
-    "sourceId": "2610-2-2",
-    "title": "道心一起，上丹田就開了",
-    "image": "/assets/pixabay/pixabay-1749508.jpg?v=1749508",
-    "id": "202610::2610-2-2",
-    "date": "2026.10.10",
-    "category": "溫故知新",
-    "sourceModified": "",
-    "author": "文稿修潤 / 李明"
+    "image": "/assets/pixabay/pixabay-1749508.jpg?v=1749508"
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",

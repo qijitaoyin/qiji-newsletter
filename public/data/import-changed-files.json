@@ -1,15 +1,6 @@
 {
+  "totalChanged": 0,
   "cacheBaselineRebuilt": 0,
-  "totalChanged": 1,
-  "generatedAt": "2026-10-17T20:04:36.7534314Z",
-  "changedFiles": [
-    {
-      "issueId": "202610",
-      "fileName": "2610-3-5如是我聞20260917 四午.docx",
-      "relativePath": "202610/2610-3-5如是我聞20260917 四午.docx",
-      "sourceId": "2610-3-5",
-      "stableSignature": "v3|a8e52228adf2f196b22a475b2ce1c332eaf6842294b860edc3e38e2cde3f159f|",
-      "status": "updated"
-    }
-  ]
+  "changedFiles": [],
+  "generatedAt": "2026-10-17T20:06:57.9480127Z"
 }
