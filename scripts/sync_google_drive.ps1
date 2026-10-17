@@ -1,7 +1,7 @@
 param(
   [string]$Remote = $env:GOOGLE_DRIVE_REMOTE,
   [string]$Destination = "",
-  [ValidateSet("all", "latest-unpublished", "new-legacy", "published", "issue")]
+  [ValidateSet("all", "latest", "new-legacy", "published", "issue")]
   [string]$Scope = "all",
   [string]$PublicLatestIssueId = "",
   [string]$SpecificIssueId = "",
@@ -46,8 +46,8 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 $selectedIssueIds = switch ($Scope) {
-  "latest-unpublished" {
-    @($remoteIssueFolders | Where-Object { $_ -gt $PublicLatestIssueId } | Sort-Object -Descending | Select-Object -First 1)
+  "latest" {
+    @($remoteIssueFolders | Sort-Object -Descending | Select-Object -First 1)
   }
   "published" {
     if ([string]::IsNullOrWhiteSpace($PublicLatestIssueId)) {

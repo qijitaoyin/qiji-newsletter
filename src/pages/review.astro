@@ -198,7 +198,7 @@ const normalizeCategory = (category: string) => {
             <button type="button" class="review-action-link" data-submit-reimport>
               {"更新校對草稿頁"}
             </button>
-            <p class="review-action-note">只檢查最新的未發布資料夾；不會掃描已發布舊稿。完成後會顯示本次抓到的更新 Word。</p>
+            <p class="review-action-note">讀取最新一期的文章資料。</p>
             <div class="review-import-change-report" data-import-change-report></div>
             <button type="button" data-submit-publish>送出正式發布</button>
             <pre data-publish-preview hidden>{`{
@@ -389,14 +389,14 @@ const normalizeCategory = (category: string) => {
         <div>
           <p class="review-kicker">舊稿整理</p>
           <h2>新增舊期與更新舊稿</h2>
-          <p>可批次找出尚未收錄的舊期，也可只掃描已發布文章的實際內容變更。</p>
+          <p>讀取新增舊期或已發布文章的更新。</p>
         </div>
         <div class="review-summary-actions review-legacy-import-actions">
           <span data-legacy-reimport-status>尚未執行舊稿更新檢查。</span>
           <button type="button" class="review-action-link" data-submit-new-legacy-reimport>掃描新增舊期</button>
-          <small>一次找出 Google Drive 中尚未進入網站的所有舊期。</small>
+          <small>讀取尚未收錄的舊期。</small>
           <button type="button" class="review-action-link" data-submit-legacy-reimport>更新已發布舊稿</button>
-          <small>檢查所有已發布期別，只將內容、樣式或圖片真的有變更的文章送回校對。</small>
+          <small>檢查已發布文章的更新。</small>
           <div class="review-specific-issue-refresh">
             <label>
               <span>指定期別快速更新</span>
@@ -404,39 +404,9 @@ const normalizeCategory = (category: string) => {
             </label>
             <button type="button" class="review-action-link review-action-link-secondary" data-submit-specific-issue-reimport>更新指定期別</button>
           </div>
-          <small>只讀取指定資料夾；適合已知要補入或重新校對哪一期時使用。</small>
+          <small>讀取指定期別的文章資料。</small>
         </div>
       </section>
-      <section class="review-approval-panel" aria-label="核准結果">
-        <div>
-          <h2>核准結果</h2>
-          <p>
-            按下確認後，該篇會加入下方 JSON。校對完成後請儲存或下載
-            <code>review-approvals.json</code>，放在專案根目錄，再重新執行匯入與建置。
-          </p>
-        </div>
-        <div class="review-approval-actions">
-          <strong><span data-approval-count>0</span> 篇已確認</strong>
-          <button type="button" data-save-approvals>儲存核准檔</button>
-          <button type="button" data-download-approvals>下載 JSON</button>
-          <button type="button" data-copy-approvals>複製 JSON</button>
-          <button type="button" data-clear-approvals>清空</button>
-        </div>
-        <pre data-approval-preview>{`{
-  "approvals": []
-}`}</pre>
-        <div class="review-fix-list" data-fix-list hidden>
-          <h3>待修正 Word 清單</h3>
-          <p>以下是你已標記「需要修正 Word」的文章，之後依照檔案路徑回 Word 修改即可。</p>
-          <ul data-fix-list-items></ul>
-        </div>
-        <div class="review-processed-list" data-processed-list hidden>
-          <h3>已處理項目</h3>
-          <p>如果剛剛按錯，可以在這裡退回原卡片重新校對或局部修正。</p>
-          <ul data-processed-list-items></ul>
-        </div>
-      </section>
-
       <section class="review-workflow review-word-normalize-workflow" aria-label="Word 標準化狀態">
         <h2>Word 標準化校對</h2>
         <p>
@@ -721,16 +691,6 @@ const normalizeCategory = (category: string) => {
       reportApiUrl: pathFor("/api/review-reports")
     }}>
       const storageKey = "qiji-review-approvals";
-      const countNode = document.querySelector("[data-approval-count]");
-      const previewNode = document.querySelector("[data-approval-preview]");
-      const fixListNode = document.querySelector("[data-fix-list]");
-      const fixListItemsNode = document.querySelector("[data-fix-list-items]");
-      const processedListNode = document.querySelector("[data-processed-list]");
-      const processedListItemsNode = document.querySelector("[data-processed-list-items]");
-      const saveButton = document.querySelector("[data-save-approvals]");
-      const downloadButton = document.querySelector("[data-download-approvals]");
-      const copyButton = document.querySelector("[data-copy-approvals]");
-      const clearButton = document.querySelector("[data-clear-approvals]");
       const reportStorageKey = "qiji-review-reports-v1";
       let reportsCache = [];
       let reportSyncError = "";
@@ -1637,55 +1597,11 @@ const normalizeCategory = (category: string) => {
       };
       };
 
-      const payloadText = () => JSON.stringify(approvalPayload(), null, 2);
-
       const decisionLabels = {
         approved: "確認可上架",
         corrected: "局部修正",
         ignored: "不需上架／忽略",
         "needs-fix": "需要修正 Word"
-      };
-
-      const expectedValue = (item, key) => {
-        const corrected = item.corrections?.[key];
-        if (corrected) return String(corrected).trim();
-        const escapedId = window.CSS?.escape ? CSS.escape(item.id || "") : String(item.id || "").replaceAll('"', '\\"');
-        const card = escapedId ? document.querySelector(`[data-approval-id="${escapedId}"]`) : null;
-        const cardValue = card ? cardFieldValue(card, key) : "";
-        return String(cardValue || item[key] || "").trim() || "未填";
-      };
-
-      const renderDecisionSummaryCard = (listNode, item, buttonDatasetName, buttonText) => {
-        const li = document.createElement("li");
-        const head = document.createElement("div");
-        const status = document.createElement("strong");
-        const file = document.createElement("span");
-        const fields = document.createElement("dl");
-        const actions = document.createElement("div");
-        const button = document.createElement("button");
-        head.className = "review-processed-head";
-        fields.className = "review-processed-fields";
-        status.textContent = decisionLabels[item.decision] || item.decision || "已處理";
-        file.textContent = item.file || item.id || "";
-        [
-          ["分類", expectedValue(item, "category")],
-          ["標題", expectedValue(item, "title")],
-          ["作者", expectedValue(item, "author")]
-        ].forEach(([label, value]) => {
-          const dt = document.createElement("dt");
-          const dd = document.createElement("dd");
-          dt.textContent = label;
-          dd.textContent = value;
-          fields.append(dt, dd);
-        });
-        actions.className = "review-fix-actions";
-        button.type = "button";
-        button.textContent = buttonText;
-        button.dataset[buttonDatasetName] = item.id || "";
-        actions.appendChild(button);
-        head.append(status, file);
-        li.append(head, fields, actions);
-        listNode.appendChild(li);
       };
 
       const markCards = () => {
@@ -1807,125 +1723,7 @@ const normalizeCategory = (category: string) => {
         syncLegacyIssueArticle(issueSection, frameSlug, frame);
       };
 
-      const renderApprovalsLegacy = () => {
-        const approvals = readApprovals();
-        if (countNode) countNode.textContent = String(approvals.length);
-        if (previewNode) previewNode.textContent = payloadText();
-        const fixes = approvals.filter((item) => item.decision === "needs-fix");
-        if (fixListNode) fixListNode.hidden = fixes.length === 0;
-        if (fixListItemsNode) {
-          fixListItemsNode.innerHTML = "";
-          fixes.forEach((item) => {
-            const li = document.createElement("li");
-            const title = document.createElement("strong");
-            const file = document.createElement("span");
-            const actions = document.createElement("div");
-            const restoreButton = document.createElement("button");
-            title.textContent = item.title || "未命名文章";
-            file.textContent = item.file || item.id || "";
-            actions.className = "review-fix-actions";
-            restoreButton.type = "button";
-            restoreButton.textContent = "改為局部修正";
-            restoreButton.dataset.restoreFix = item.id || "";
-            actions.appendChild(restoreButton);
-            li.append(title, file, actions);
-            fixListItemsNode.appendChild(li);
-          });
-        }
-        const processed = approvals.filter((item) => item.decision !== "needs-fix");
-        if (processedListNode) processedListNode.hidden = processed.length === 0;
-        if (processedListItemsNode) {
-          processedListItemsNode.innerHTML = "";
-          processed
-            .slice()
-            .reverse()
-            .forEach((item) => {
-              const li = document.createElement("li");
-              const title = document.createElement("strong");
-              const meta = document.createElement("span");
-              const actions = document.createElement("div");
-              const undoButton = document.createElement("button");
-              title.textContent = item.corrections?.title || item.title || "未命名文章";
-              meta.textContent = `${decisionLabels[item.decision] || item.decision || "已處理"} · ${item.file || item.id || ""}`;
-              actions.className = "review-fix-actions";
-              undoButton.type = "button";
-              undoButton.textContent = "退回重新修正";
-              undoButton.dataset.reopenDecision = item.id || "";
-              actions.appendChild(undoButton);
-              li.append(title, meta, actions);
-              processedListItemsNode.appendChild(li);
-            });
-        }
-        if (processedListItemsNode) {
-          processedListItemsNode.innerHTML = "";
-          processed
-            .slice()
-            .reverse()
-            .forEach((item) => {
-              const li = document.createElement("li");
-              const head = document.createElement("div");
-              const status = document.createElement("strong");
-              const file = document.createElement("span");
-              const fields = document.createElement("dl");
-              const actions = document.createElement("div");
-              const undoButton = document.createElement("button");
-              head.className = "review-processed-head";
-              fields.className = "review-processed-fields";
-              status.textContent = decisionLabels[item.decision] || item.decision || "已處理";
-              file.textContent = item.file || item.id || "";
-              [
-                ["分類", expectedValue(item, "category")],
-                ["標題", expectedValue(item, "title")],
-                ["作者", expectedValue(item, "author")]
-              ].forEach(([label, value]) => {
-                const dt = document.createElement("dt");
-                const dd = document.createElement("dd");
-                dt.textContent = label;
-                dd.textContent = value;
-                fields.append(dt, dd);
-              });
-              actions.className = "review-fix-actions";
-              undoButton.type = "button";
-              undoButton.textContent = "退回重新修正";
-              undoButton.dataset.reopenDecision = item.id || "";
-              actions.appendChild(undoButton);
-              head.append(status, file);
-              li.append(head, fields, actions);
-              processedListItemsNode.appendChild(li);
-            });
-        }
-        markCards();
-      };
-
       const renderApprovals = () => {
-        const approvals = readApprovals();
-        if (countNode) countNode.textContent = String(approvals.length);
-        if (previewNode) previewNode.textContent = payloadText();
-
-        const fixes = approvals.filter((item) => item.decision === "needs-fix");
-        if (fixListNode) fixListNode.hidden = fixes.length === 0;
-        if (fixListItemsNode) {
-          fixListItemsNode.innerHTML = "";
-          fixes
-            .slice()
-            .reverse()
-            .forEach((item) => {
-              renderDecisionSummaryCard(fixListItemsNode, item, "restoreFix", "改為局部修正");
-            });
-        }
-
-        const processed = approvals.filter((item) => item.decision !== "needs-fix");
-        if (processedListNode) processedListNode.hidden = processed.length === 0;
-        if (processedListItemsNode) {
-          processedListItemsNode.innerHTML = "";
-          processed
-            .slice()
-            .reverse()
-            .forEach((item) => {
-              renderDecisionSummaryCard(processedListItemsNode, item, "reopenDecision", "退回重新修正");
-            });
-        }
-
         markCards();
         renderLegacyIssueBoards();
         syncAllLegacyIssues();
@@ -1953,24 +1751,6 @@ const normalizeCategory = (category: string) => {
             `)
             .join("");
         });
-      };
-
-      const reopenForCorrection = (id) => {
-        if (!id) return;
-        const approvals = readApprovals();
-        const next = approvals.filter((item) => item.id !== id);
-        writeApprovals(next);
-        renderApprovals();
-        const escapedId = window.CSS?.escape ? CSS.escape(id) : id.replaceAll('"', '\\"');
-        const card = document.querySelector(`[data-approval-id="${escapedId}"]`);
-        if (!card) return;
-        card.classList.remove("status-approved", "status-corrected", "status-ignored", "status-needs-fix");
-        card.querySelectorAll("[data-approve-item], [data-ignore-item], [data-edit-item], [data-fix-item]").forEach((button) => {
-          button.disabled = false;
-        });
-        const form = card.querySelector("[data-inline-edit]");
-        if (form) form.hidden = false;
-        card.scrollIntoView({ behavior: "smooth", block: "center" });
       };
 
       const decideCard = (card, decision) => {
@@ -2044,76 +1824,6 @@ const normalizeCategory = (category: string) => {
           const card = button.closest("[data-approval-id]");
           if (card) fixCard(card);
         });
-      });
-
-      fixListItemsNode?.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-restore-fix]");
-        if (!button) return;
-        reopenForCorrection(button.dataset.restoreFix || "");
-      });
-
-      processedListItemsNode?.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-reopen-decision]");
-        if (!button) return;
-        reopenForCorrection(button.dataset.reopenDecision || "");
-      });
-
-      downloadButton?.addEventListener("click", () => {
-        const blob = new Blob([payloadText()], { type: "application/json;charset=utf-8" });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "review-approvals.json";
-        link.click();
-        URL.revokeObjectURL(url);
-      });
-
-      saveButton?.addEventListener("click", async () => {
-        const picker = window.showSaveFilePicker;
-        if (!picker) {
-          downloadButton?.dispatchEvent(new Event("click"));
-          return;
-        }
-        const handle = await picker({
-          suggestedName: "review-approvals.json",
-          types: [{ description: "JSON", accept: { "application/json": [".json"] } }]
-        });
-        const writable = await handle.createWritable();
-        await writable.write(payloadText());
-        await writable.close();
-      });
-
-      copyButton?.addEventListener("click", async () => {
-        await navigator.clipboard.writeText(payloadText());
-      });
-
-      clearButton?.addEventListener("click", () => {
-        writeApprovals([]);
-        document.querySelectorAll("[data-approve-item]").forEach((button) => {
-          button.textContent = "確認可上架";
-          button.disabled = false;
-        });
-        document.querySelectorAll("[data-ignore-item]").forEach((button) => {
-          button.textContent = "不需上架／忽略";
-          button.disabled = false;
-        });
-        document.querySelectorAll("[data-fix-item]").forEach((button) => {
-          button.textContent = "需要修正 Word";
-          button.disabled = false;
-        });
-        document.querySelectorAll("[data-edit-item]").forEach((button) => {
-          button.disabled = false;
-        });
-        document.querySelectorAll("[data-inline-edit]").forEach((form) => {
-          form.hidden = true;
-        });
-        document.querySelectorAll("[data-approval-id]").forEach((card) => {
-          card.classList.remove("status-approved");
-          card.classList.remove("status-corrected");
-          card.classList.remove("status-ignored");
-          card.classList.remove("status-needs-fix");
-        });
-        renderApprovals();
       });
 
       const modeTabs = Array.from(document.querySelectorAll("[data-review-mode-tab]"));

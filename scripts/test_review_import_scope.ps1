@@ -18,7 +18,7 @@ try {
   & (Join-Path $PSScriptRoot "sync_google_drive.ps1") `
     -Remote "mock:issues" `
     -Destination (Join-Path $root "latest") `
-    -Scope "latest-unpublished" `
+    -Scope "latest" `
     -PublicLatestIssueId "202610" `
     -SelectionFile $selection
   $latest = Get-Content -LiteralPath $selection -Raw | ConvertFrom-Json
@@ -27,6 +27,22 @@ try {
   }
   if ($global:qijiReviewScopeCommands.Count -ne 1 -or $global:qijiReviewScopeCommands[0] -notmatch 'sync mock:issues/202611') {
     throw "Latest scope synced unexpected issue folders."
+  }
+
+  $global:qijiReviewScopeCommands.Clear()
+  $selection = Join-Path $root "latest-published.json"
+  & (Join-Path $PSScriptRoot "sync_google_drive.ps1") `
+    -Remote "mock:issues" `
+    -Destination (Join-Path $root "latest-published") `
+    -Scope "latest" `
+    -PublicLatestIssueId "202611" `
+    -SelectionFile $selection
+  $latestPublished = Get-Content -LiteralPath $selection -Raw | ConvertFrom-Json
+  if (@($latestPublished.selectedIssueIds).Count -ne 1 -or $latestPublished.selectedIssueIds[0] -ne "202611") {
+    throw "Latest scope must select 202611 even after it is published."
+  }
+  if ($global:qijiReviewScopeCommands.Count -ne 1 -or $global:qijiReviewScopeCommands[0] -notmatch 'sync mock:issues/202611') {
+    throw "Latest published scope synced unexpected issue folders."
   }
 
   $global:qijiReviewScopeCommands.Clear()

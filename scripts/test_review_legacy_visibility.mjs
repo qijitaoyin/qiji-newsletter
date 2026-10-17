@@ -38,6 +38,26 @@ for (const issueId of publishedIssueIds) {
       item.messages?.some((message) => message.type === "published-content-changed")
   );
   const hasFormalOldDraftSection = reviewHtml.includes(`id="issue-${issueId}"`);
+  const isCurrentReviewIssue = issueId === publishState.reviewIssueId;
+  if (isCurrentReviewIssue) {
+    if (hasFormalOldDraftSection) {
+      throw new Error(`Current review issue ${issueId} should stay in latest-issue review.`);
+    }
+    if (hasRealPublishedChange) {
+      const changedItems = generatedReviewItems.filter(
+        (item) =>
+          item.issueId === issueId &&
+          item.status !== "approved" &&
+          item.messages?.some((message) => message.type === "published-content-changed")
+      );
+      for (const item of changedItems) {
+        if (!item.slug || !reviewHtml.includes(`value="${item.slug}"`)) {
+          throw new Error(`Changed current article ${item.slug || item.id} is missing from latest-issue review.`);
+        }
+      }
+    }
+    continue;
+  }
   if (hasFormalOldDraftSection !== hasRealPublishedChange) {
     throw new Error(
       `Published issue ${issueId} old-draft visibility does not match its stable-content status.`

@@ -152,7 +152,7 @@ jobs:
           $scope = "all"
           if ($env:GITHUB_EVENT_NAME -eq "workflow_dispatch") {
             if (-not [string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) { $scope = "issue" }
-            elseif ($env:REQUESTED_IMPORT_TARGET -eq "latest") { $scope = "latest-unpublished" }
+            elseif ($env:REQUESTED_IMPORT_TARGET -eq "latest") { $scope = "latest" }
             elseif ($env:REQUESTED_IMPORT_TARGET -eq "new-legacy") { $scope = "new-legacy" }
             elseif ($env:REQUESTED_IMPORT_TARGET -eq "published") { $scope = "published" }
             elseif ($env:REQUESTED_IMPORT_TARGET -match '^20\d{4}$') { $scope = "issue" }
