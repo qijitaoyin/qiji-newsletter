@@ -5978,73 +5978,96 @@ export const generatedReviewItems = [
     "sourceModified": "2026-10-16T03:50:37.6500000Z"
   },
   {
-    "sourceSignature": "",
-    "date": "2026.10.10",
-    "title": "從身體的覺，到物質深處的虛空",
-    "author": "文稿彙整 / 四晚班",
-    "category": "如是我聞",
-    "sourceId": "2610-3-2",
-    "issueId": "202610",
-    "file": "/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
-    "id": "202610::/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
     "slug": "202610-2610-3-2",
     "sourceModified": "",
-    "status": "needs-review",
+    "issueId": "202610",
+    "excerpt": "人生如果沒有壓力、沒有風險，做什麼事情都在自己預定的範圍裡，未必是好事。因為生命很多精彩的地方，往往發生在意料之外；你從未想到，甚至跟你的意願完全不同，可就在那個地方，你偏偏碰到一個新世界。",
+    "id": "202610::/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
+    "sourceId": "2610-3-2",
+    "title": "從身體的覺，到物質深處的虛空",
     "messages": [
       {
+        "type": "content-warning",
         "message": "圖片無標題：/assets/articles/202610/202610-img-001.png?v=153854",
-        "severity": "warning",
-        "type": "content-warning"
+        "severity": "warning"
       }
     ],
-    "excerpt": "人生如果沒有壓力、沒有風險，做什麼事情都在自己預定的範圍裡，未必是好事。因為生命很多精彩的地方，往往發生在意料之外；你從未想到，甚至跟你的意願完全不同，可就在那個地方，你偏偏碰到一個新世界。",
-    "image": "/assets/pixabay/pixabay-2598177.jpg?v=2598177"
+    "file": "/home/runner/work/_temp/source_articles/202610/2610-3-2如是我聞20260903四晚.docx",
+    "image": "/assets/pixabay/pixabay-2598177.jpg?v=2598177",
+    "category": "如是我聞",
+    "author": "文稿彙整 / 四晚班",
+    "status": "needs-review",
+    "date": "2026.10.10",
+    "sourceSignature": ""
   },
   {
-    "sourceSignature": "",
-    "date": "2026.10.10",
-    "title": "橫膈膜與氣機循環",
-    "author": "文稿修潤 / 楊清雲",
-    "category": "溫故知新",
-    "sourceId": "2610-2-1",
+    "slug": "202610-2610-3-6",
+    "sourceModified": "2026-10-20T03:37:47.7500000Z",
     "issueId": "202610",
-    "file": "2610-2-1",
-    "id": "202610::2610-2-1",
+    "excerpt": "練功透過任督兩脈、奇經八脈的運轉推動筋膜水濕，元氣就在筋膜水濕裡被帶動。意主火，把意念放在任督兩脈使之加溫。配合「後天呼吸起微風」，將匯集於丹田之氣（即腎氣、元氣）壓縮入命門——腎氣匯聚之處，…",
+    "id": "202610::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-6如是我聞20260920日早.docx",
+    "sourceId": "2610-3-6",
+    "title": "無極修煉的內在進階過程",
+    "messages": [
+      {
+        "type": "published-content-changed",
+        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。",
+        "severity": "warning"
+      }
+    ],
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-6如是我聞20260920日早.docx",
+    "image": "/assets/pixabay/pixabay-5391420.jpg?v=5391420",
+    "category": "如是我聞",
+    "author": "文稿彙整 / 日早班",
+    "status": "needs-review",
+    "date": "2026.10.10",
+    "sourceSignature": "v3|f9d0f882c22e33d9155ddf8c3124580928d320e827f41fa6643cd8ef940e7525|"
+  },
+  {
     "slug": "202610-2610-2-1",
     "sourceModified": "",
-    "status": "needs-review",
+    "issueId": "202610",
+    "excerpt": "橫膈膜一啟動，就像火車的蒸汽一樣，所有的能量都能啟動。內臟屬自律神經，需要電源讓五臟六腑運轉，產生能量，這個啟動能量的電源就來自橫膈膜。橫膈膜往下壓縮，內臟就產生鼓動性。往下壓縮，是靠空氣擠壓…",
+    "id": "202610::2610-2-1",
+    "sourceId": "2610-2-1",
+    "title": "橫膈膜與氣機循環",
     "messages": [
       {
+        "type": "unknown-category",
         "message": "分類不在既有分類清單：溫故知新",
-        "severity": "warning",
-        "type": "unknown-category"
+        "severity": "warning"
       }
     ],
-    "excerpt": "橫膈膜一啟動，就像火車的蒸汽一樣，所有的能量都能啟動。內臟屬自律神經，需要電源讓五臟六腑運轉，產生能量，這個啟動能量的電源就來自橫膈膜。橫膈膜往下壓縮，內臟就產生鼓動性。往下壓縮，是靠空氣擠壓…",
-    "image": "/assets/pixabay/pixabay-957569.jpg?v=957569"
+    "file": "2610-2-1",
+    "image": "/assets/pixabay/pixabay-957569.jpg?v=957569",
+    "category": "溫故知新",
+    "author": "文稿修潤 / 楊清雲",
+    "status": "needs-review",
+    "date": "2026.10.10",
+    "sourceSignature": ""
   },
   {
-    "sourceSignature": "",
-    "date": "2026.10.10",
-    "title": "道心一起，上丹田就開了",
-    "author": "文稿修潤 / 李明",
-    "category": "溫故知新",
-    "sourceId": "2610-2-2",
-    "issueId": "202610",
-    "file": "2610-2-2",
-    "id": "202610::2610-2-2",
     "slug": "202610-2610-2-2",
     "sourceModified": "",
-    "status": "needs-review",
+    "issueId": "202610",
+    "excerpt": "天機不可洩漏，和天地溝通需要付出靈力，算命先生只能算過去，算不到未來，但未來才重要。我們常叫人家放下，意思是放下過去，把執著放下。但其實過去早就過去了，用不著放下，要放下的是未來——以後不再那…",
+    "id": "202610::2610-2-2",
+    "sourceId": "2610-2-2",
+    "title": "道心一起，上丹田就開了",
     "messages": [
       {
+        "type": "unknown-category",
         "message": "分類不在既有分類清單：溫故知新",
-        "severity": "warning",
-        "type": "unknown-category"
+        "severity": "warning"
       }
     ],
-    "excerpt": "天機不可洩漏，和天地溝通需要付出靈力，算命先生只能算過去，算不到未來，但未來才重要。我們常叫人家放下，意思是放下過去，把執著放下。但其實過去早就過去了，用不著放下，要放下的是未來——以後不再那…",
-    "image": "/assets/pixabay/pixabay-1749508.jpg?v=1749508"
+    "file": "2610-2-2",
+    "image": "/assets/pixabay/pixabay-1749508.jpg?v=1749508",
+    "category": "溫故知新",
+    "author": "文稿修潤 / 李明",
+    "status": "needs-review",
+    "date": "2026.10.10",
+    "sourceSignature": ""
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",

@@ -1,6 +1,15 @@
 {
-  "totalChanged": 0,
+  "changedFiles": [
+    {
+      "issueId": "202610",
+      "fileName": "2610-3-6如是我聞20260920日早.docx",
+      "relativePath": "202610/2610-3-6如是我聞20260920日早.docx",
+      "sourceId": "2610-3-6",
+      "stableSignature": "v3|f9d0f882c22e33d9155ddf8c3124580928d320e827f41fa6643cd8ef940e7525|",
+      "status": "updated"
+    }
+  ],
   "cacheBaselineRebuilt": 0,
-  "changedFiles": [],
-  "generatedAt": "2026-10-17T20:06:57.9480127Z"
+  "totalChanged": 1,
+  "generatedAt": "2026-10-20T03:43:56.4017612Z"
 }
