@@ -15,6 +15,11 @@ if (!fs.existsSync(reviewHtmlPath)) {
 
 const reviewHtml = fs.readFileSync(reviewHtmlPath, "utf8");
 const generatedReviewSource = fs.readFileSync(generatedReviewPath, "utf8");
+const currentReviewIssueMatch = reviewHtml.match(/data-current-review-issue="(20\d{4})"/);
+if (!currentReviewIssueMatch) {
+  throw new Error("Built review page does not expose its resolved current review issue.");
+}
+const currentReviewIssueId = currentReviewIssueMatch[1];
 const generatedReviewMatch = generatedReviewSource.match(
   /export const generatedReviewItems = ([\s\S]*?) satisfies ReviewItem\[\];/
 );
@@ -38,7 +43,10 @@ for (const issueId of publishedIssueIds) {
       item.messages?.some((message) => message.type === "published-content-changed")
   );
   const hasFormalOldDraftSection = reviewHtml.includes(`id="issue-${issueId}"`);
-  const isCurrentReviewIssue = issueId === publishState.reviewIssueId;
+  // Use the same resolved issue rendered by the application. The persisted
+  // reviewIssueId can still point at the last published issue while a newer
+  // draft is being reviewed.
+  const isCurrentReviewIssue = issueId === currentReviewIssueId;
   if (isCurrentReviewIssue) {
     if (hasFormalOldDraftSection) {
       throw new Error(`Current review issue ${issueId} should stay in latest-issue review.`);
@@ -72,5 +80,5 @@ for (const issueId of ["202605", "202607"]) {
 }
 
 console.log(
-  `PASS: ${publishedIssueIds.size} published issues follow stable-content old-draft visibility.`
+  `PASS: ${publishedIssueIds.size} published issues follow stable-content old-draft visibility; current review issue is ${currentReviewIssueId}.`
 );

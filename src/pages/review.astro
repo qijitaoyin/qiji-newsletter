@@ -168,7 +168,7 @@ const normalizeCategory = (category: string) => {
       </div>
     </header>
 
-    <main class="review-page">
+    <main class="review-page" data-current-review-issue={reviewIssueId}>
       <div class="review-mode-tabs" role="tablist" aria-label="校對模式">
         <button type="button" class="is-active" data-review-mode-tab="current">最新一期校對</button>
         <button type="button" data-review-mode-tab="legacy">舊稿整理</button>
