@@ -1,7 +1,7 @@
 {
   "publicLatestIssueId": "202610",
   "reviewIssueId": "202610",
-  "publishedAt": "2026-10-20T04:25:46.7266439Z",
+  "publishedAt": "2026-11-08T08:07:46.0357923Z",
   "publishedIssues": {
     "202608": {
       "issueId": "202608",
@@ -6709,148 +6709,13 @@
     },
     "202610": {
       "issueId": "202610",
-      "publishedAt": "10/09/2026 15:49:15",
-      "baselineRepairedAt": "2026-10-14T01:51:55.0930594Z",
+      "publishedAt": "2026-11-08T08:07:46.0357923Z",
       "articles": {
-        "2610-1::157296fec9903ea6": {
-          "sourceId": "2610-1",
-          "pathHash": "157296fec9903ea6",
-          "signature": "v3|314b1c643af49cc852b386442ea44fbb3ab1208ad992c85b5b6a691472a08b0c|",
-          "slug": "202610-2610-1",
-          "baselineRepairedAt": "2026-10-14T01:51:55.112976Z"
-        },
-        "2610-2-1::b904410df6293635": {
-          "sourceId": "2610-2-1",
-          "pathHash": "b904410df6293635",
-          "signature": "v3|de744c50da340e1d85d7a8a2ea7bc72438923386e0414668678f0cd5d1879747|",
-          "slug": "202610-2610-2-1",
-          "baselineRepairedAt": "2026-10-14T01:51:55.1730358Z"
-        },
-        "2610-2-2::f1a4fe2e8023f08e": {
-          "sourceId": "2610-2-2",
-          "pathHash": "f1a4fe2e8023f08e",
-          "signature": "v3|00ab21d6f67df5a42883fbd2b696d1e00d0074f74b56354dd023577bb1b336e8|",
-          "slug": "202610-2610-2-2",
-          "baselineRepairedAt": "2026-10-14T01:51:55.2639815Z"
-        },
-        "2610-3-1::5ad19bcd8715fe58": {
-          "sourceId": "2610-3-1",
-          "pathHash": "5ad19bcd8715fe58",
-          "signature": "v3|370729e9c0854e04f7b7a6c6dcce16ba1bae97188fc332598dc490b15c331493|",
-          "slug": "202610-2610-3-1",
-          "baselineRepairedAt": "2026-10-14T01:51:55.4286337Z"
-        },
-        "2610-3-2::d287fa68080abada": {
-          "sourceId": "2610-3-2",
-          "pathHash": "d287fa68080abada",
-          "signature": "v3|42b8bb11a8da89b1c61d8472f435ce2a9e699e77d7605bd302b3582ac6a02109|6982b561555c56209c821fbfc56ac8c19a086b582ac7898356db5d4684187bb8",
-          "slug": "202610-2610-3-2",
-          "baselineRepairedAt": "2026-10-14T01:51:55.5060053Z"
-        },
-        "2610-3-3::93da820edc6fd329": {
-          "sourceId": "2610-3-3",
-          "pathHash": "93da820edc6fd329",
-          "signature": "v3|7b4ac93cfdbbbd3c293d27a882aa326f2c81b84f4df7718ac705beeb1c3aa95d|",
-          "slug": "202610-2610-3-3",
-          "baselineRepairedAt": "2026-10-14T01:51:55.5634521Z"
-        },
-        "2610-3-4::ca899084e6674298": {
-          "sourceId": "2610-3-4",
-          "pathHash": "ca899084e6674298",
-          "signature": "v3|0591a628c9178b21d2f4946c34e4c126f171411953828c3b6015c2b2efa6d5a4|",
-          "slug": "202610-2610-3-4",
-          "baselineRepairedAt": "2026-10-14T01:51:55.7464276Z"
-        },
-        "2610-3-5::2a2c323f5ca01e7e": {
-          "sourceId": "2610-3-5",
-          "pathHash": "2a2c323f5ca01e7e",
-          "signature": "v3|581dbfc399d721071b753d0c6a013e1cc61bbab22e4e3ac253a715f110f08e3c|",
-          "slug": "202610-2610-3-5",
-          "baselineRepairedAt": "2026-10-14T01:51:55.823289Z"
-        },
-        "2610-3-6::eebddbcee7e1a2b1": {
-          "sourceId": "2610-3-6",
-          "pathHash": "eebddbcee7e1a2b1",
-          "signature": "v3|8837e5f34448a8e57a0b04c667a6e98583947f12ab1d093179721b07d5f7ee0b|",
-          "slug": "202610-2610-3-6",
-          "baselineRepairedAt": "2026-10-14T01:51:55.9321919Z"
-        },
-        "2610-4::2342944e898b316b": {
-          "sourceId": "2610-4",
-          "pathHash": "2342944e898b316b",
-          "signature": "v3|93545ada6b5f7656ee47b73405a8a95062db85e2c8e5004868c532e9ba16410e|",
-          "slug": "202610-2610-4",
-          "baselineRepairedAt": "2026-10-14T01:51:55.9770133Z"
-        },
-        "2610-1": {
-          "sourceId": "2610-1",
-          "pathHash": "",
-          "signature": "v3|314b1c643af49cc852b386442ea44fbb3ab1208ad992c85b5b6a691472a08b0c|",
-          "slug": "202610-2610-1",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0498052Z"
-        },
-        "2610-2-1": {
-          "sourceId": "2610-2-1",
-          "pathHash": "",
-          "signature": "v3|de744c50da340e1d85d7a8a2ea7bc72438923386e0414668678f0cd5d1879747|",
-          "slug": "202610-2610-2-1",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0505365Z"
-        },
-        "2610-2-2": {
-          "sourceId": "2610-2-2",
-          "pathHash": "",
-          "signature": "v3|00ab21d6f67df5a42883fbd2b696d1e00d0074f74b56354dd023577bb1b336e8|",
-          "slug": "202610-2610-2-2",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0510077Z"
-        },
-        "2610-3-1": {
-          "sourceId": "2610-3-1",
-          "pathHash": "",
-          "signature": "v3|370729e9c0854e04f7b7a6c6dcce16ba1bae97188fc332598dc490b15c331493|",
-          "slug": "202610-2610-3-1",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0514697Z"
-        },
-        "2610-3-2": {
-          "sourceId": "2610-3-2",
-          "pathHash": "",
-          "signature": "v3|42b8bb11a8da89b1c61d8472f435ce2a9e699e77d7605bd302b3582ac6a02109|6982b561555c56209c821fbfc56ac8c19a086b582ac7898356db5d4684187bb8",
-          "slug": "202610-2610-3-2",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0518973Z"
-        },
-        "2610-3-3": {
-          "sourceId": "2610-3-3",
-          "pathHash": "",
-          "signature": "v3|7b4ac93cfdbbbd3c293d27a882aa326f2c81b84f4df7718ac705beeb1c3aa95d|",
-          "slug": "202610-2610-3-3",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0523267Z"
-        },
-        "2610-3-4": {
-          "sourceId": "2610-3-4",
-          "pathHash": "",
-          "signature": "v3|0591a628c9178b21d2f4946c34e4c126f171411953828c3b6015c2b2efa6d5a4|",
-          "slug": "202610-2610-3-4",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0527851Z"
-        },
-        "2610-3-5": {
-          "sourceId": "2610-3-5",
-          "pathHash": "",
-          "signature": "v3|581dbfc399d721071b753d0c6a013e1cc61bbab22e4e3ac253a715f110f08e3c|",
-          "slug": "202610-2610-3-5",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0532217Z"
-        },
         "2610-3-6": {
-          "sourceId": "2610-3-6",
-          "pathHash": "",
-          "signature": "v3|8837e5f34448a8e57a0b04c667a6e98583947f12ab1d093179721b07d5f7ee0b|",
+          "signature": "v3|f9d0f882c22e33d9155ddf8c3124580928d320e827f41fa6643cd8ef940e7525|",
           "slug": "202610-2610-3-6",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0536649Z"
-        },
-        "2610-4": {
-          "sourceId": "2610-4",
-          "pathHash": "",
-          "signature": "v3|93545ada6b5f7656ee47b73405a8a95062db85e2c8e5004868c532e9ba16410e|",
-          "slug": "202610-2610-4",
-          "baselineRepairedAt": "2026-10-14T01:52:09.0540892Z"
+          "title": "無極修煉的內在進階過程",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-6如是我聞20260920日早.docx"
         }
       }
     }
