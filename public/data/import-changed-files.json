@@ -1,5 +1,5 @@
 {
-  "totalChanged": 10,
+  "cacheBaselineRebuilt": 0,
   "changedFiles": [
     {
       "issueId": "202611",
@@ -30,7 +30,7 @@
       "fileName": "2611-3-2如是我聞261015四晚.docx",
       "relativePath": "202611/2611-3-2如是我聞261015四晚.docx",
       "sourceId": "2611-3-2",
-      "stableSignature": "v3|33f4c5400bd6a19b6186a9bcf642a1af7cfec57f8f9ca58a0b06326552beb35b|",
+      "stableSignature": "v3|76541ff79697ce6253d62af3231faa1851c2ad2517b8212b5676746fb8463156|",
       "status": "new"
     },
     {
@@ -82,6 +82,6 @@
       "status": "new"
     }
   ],
-  "generatedAt": "2026-11-08T08:51:42.8572594Z",
-  "cacheBaselineRebuilt": 0
+  "generatedAt": "2026-11-08T09:55:35.5103418Z",
+  "totalChanged": 10
 }
