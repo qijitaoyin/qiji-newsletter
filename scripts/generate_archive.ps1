@@ -970,8 +970,8 @@ function Read-DocxContent {
   param(
     [System.IO.FileInfo]$File,
     [string]$IssueId,
-    [string]$TargetDir,
-    [ref]$ImageIndex
+    [string]$SourceId,
+    [string]$TargetDir
   )
 
   $zip = $null
@@ -979,6 +979,9 @@ function Read-DocxContent {
   $blocks = New-Object System.Collections.Generic.List[object]
   $images = New-Object System.Collections.Generic.List[object]
   $warnings = New-Object System.Collections.Generic.List[string]
+  $articleImageIndex = 1
+  $safeSourceId = (($SourceId.ToLowerInvariant() -replace "[^a-z0-9_-]+", "-").Trim("-"))
+  if (-not $safeSourceId) { $safeSourceId = "article" }
 
   try {
     $stream = [System.IO.File]::Open($File.FullName, [System.IO.FileMode]::Open, [System.IO.FileAccess]::Read, [System.IO.FileShare]::ReadWrite)
@@ -1108,7 +1111,9 @@ function Read-DocxContent {
         $ext = [IO.Path]::GetExtension($mediaEntry.FullName).ToLowerInvariant()
         if ($ext -notmatch "^\.(jpg|jpeg|png|webp|gif|tif|tiff)$") { continue }
         $outputExt = if ($ext -match "^\.tiff?$") { ".png" } else { $ext }
-        $name = "{0}-img-{1:D3}{2}" -f $IssueId, $ImageIndex.Value, $outputExt
+        # Article-scoped names make partial imports deterministic and prevent
+        # another Word file in the same issue from overwriting this image.
+        $name = "{0}-{1}-img-{2:D3}{3}" -f $IssueId, $safeSourceId, $articleImageIndex, $outputExt
         $destination = Join-Path $TargetDir $name
         if ($ext -match "^\.tiff?$") {
           $temporarySource = Join-Path ([System.IO.Path]::GetTempPath()) ("qiji-word-image-" + [guid]::NewGuid().ToString("N") + $ext)
@@ -1156,7 +1161,7 @@ function Read-DocxContent {
           caption = ""
           paragraphIndex = $paragraphIndex
         })
-        $ImageIndex.Value = $ImageIndex.Value + 1
+        $articleImageIndex++
       }
 
       $text = Get-DocxEntryText $xml $p $ns
@@ -2369,7 +2374,6 @@ foreach ($issueDir in $issueDirs) {
   $issueNumber = Get-IssueNumber $issueId
   $files = Get-PreferredArticleFiles $issueDir $issueId
   $images = $null
-  $imageIndex = [ref]1
 
   $issueArticles = New-Object System.Collections.Generic.List[object]
   $order = 0
@@ -2400,7 +2404,6 @@ foreach ($issueDir in $issueDirs) {
       if (-not $cachedArticle.image) {
         if ($null -eq $images) {
           $images = Copy-IssueImages $issueId $issueDir
-          $imageIndex.Value = @($images).Count + 1
         }
         $matchedIssueImage = Select-ArticleImage $images $sourceId $cachedArticle.title $order
         if ($matchedIssueImage) {
@@ -2491,9 +2494,8 @@ foreach ($issueDir in $issueDirs) {
     $validationStartIndex = $validationItems.Count
     if ($null -eq $images) {
       $images = Copy-IssueImages $issueId $issueDir
-      $imageIndex.Value = @($images).Count + 1
     }
-    $docxContent = Read-DocxContent $file $issueId (Join-Path $publicArticles $issueId) $imageIndex
+    $docxContent = Read-DocxContent $file $issueId $sourceId (Join-Path $publicArticles $issueId)
     $paragraphs = $docxContent.Paragraphs
     if (-not $paragraphs -or $paragraphs.Count -eq 0) { continue }
 

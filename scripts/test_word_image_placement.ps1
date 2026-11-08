@@ -98,6 +98,11 @@ try {
   $tiffFixturePath = Join-Path $issue612 ($tiffFixture.Name -replace '^2611-', '2612-')
   Copy-Item -LiteralPath $tiffFixture.FullName -Destination $tiffFixturePath
 
+  $sameIssueFixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202611") -File -Filter "2611-3-5*.docx" | Select-Object -First 1
+  if (-not $sameIssueFixture) { throw "Cannot find the 2611-3-5 cross-article image fixture." }
+  $sameIssueFixturePath = Join-Path $issue612 ($sameIssueFixture.Name -replace '^2611-', '2612-')
+  Copy-Item -LiteralPath $sameIssueFixture.FullName -Destination $sameIssueFixturePath
+
   $pixabayAssetDir = Join-Path $sandboxRoot "public\assets\pixabay"
   New-Item -ItemType Directory -Force -Path $pixabayAssetDir | Out-Null
   [System.IO.File]::WriteAllBytes((Join-Path $pixabayAssetDir "pixabay-test.jpg"), [byte[]](0xFF, 0xD8, 0xFF, 0xD9))
@@ -159,9 +164,24 @@ try {
     throw "Images after the body marker were not retained inline or TIFF conversion failed."
   }
 
+  $sameIssueArticle = @($articles | Where-Object { $_.issueId -eq "202612" -and $_.sourceId -eq "2612-3-5" })[0]
+  $firstArticlePaths = @($tiffArticle.images | ForEach-Object { ([string]$_.src -split '\?')[0] })
+  $secondArticlePaths = @($sameIssueArticle.images | ForEach-Object { ([string]$_.src -split '\?')[0] })
+  $collisions = @($firstArticlePaths | Where-Object { $secondArticlePaths -contains $_ })
+  if (
+    -not $sameIssueArticle -or
+    $secondArticlePaths.Count -eq 0 -or
+    $collisions.Count -ne 0 -or
+    @($firstArticlePaths | Where-Object { $_ -notmatch '/202612-2612-3-2-img-\d{3}\.' }).Count -ne 0 -or
+    @($secondArticlePaths | Where-Object { $_ -notmatch '/202612-2612-3-5-img-\d{3}\.' }).Count -ne 0
+  ) {
+    throw "Word images from separate articles can overwrite or share an output path."
+  }
+
   Write-Host "PASS: pre-body Word images become title artwork without duplication."
   Write-Host "PASS: images after the body marker remain inline and use separate title artwork."
   Write-Host "PASS: TIFF Word images are converted to browser-compatible PNG files."
+  Write-Host "PASS: every Word article uses deterministic article-scoped image paths."
 } finally {
   $resolvedTestRoot = [System.IO.Path]::GetFullPath($testRoot)
   if ($resolvedTestRoot.StartsWith($tempBase, [System.StringComparison]::OrdinalIgnoreCase) -and (Test-Path -LiteralPath $resolvedTestRoot)) {
