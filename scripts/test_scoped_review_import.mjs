@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { mergeScopedReviewImport } from "./merge_scoped_review_import.mjs";
+import { mergeScopedPublishedImport, mergeScopedReviewImport } from "./merge_scoped_review_import.mjs";
 
 const root = fs.mkdtempSync(path.join(os.tmpdir(), "qiji-scoped-import-"));
 const write = (name, value) => {
@@ -73,6 +73,23 @@ try {
   assert.match(secondOutput, /old-published/);
   assert.match(secondOutput, /new-draft/);
   assert.equal(JSON.parse(fs.readFileSync(cache, "utf8")).entries.length, 2);
+
+  const publishedBase = write("published-base.ts", articleModule("generated", [
+    { issueId: "202610", slug: "old-published" }
+  ], [{ id: "202610" }]));
+  const selectedPublished = write("selected-published.ts", articleModule("generated", [
+    { issueId: "202610", slug: "old-published-updated" }
+  ], [{ id: "202610", title: "updated" }]));
+  fs.writeFileSync(selection, JSON.stringify({ selectedIssueIds: ["202610"] }), "utf8");
+  mergeScopedPublishedImport({
+    selectionFile: selection,
+    previousPublishedFile: publishedBase,
+    generatedFile: selectedPublished
+  });
+  const publishedOutput = fs.readFileSync(selectedPublished, "utf8");
+  assert.match(publishedOutput, /old-published-updated/);
+  assert.doesNotMatch(publishedOutput, /new-draft/);
+  assert.match(secondOutput, /new-draft/);
   console.log("Scoped review import merge regression passed.");
 } finally {
   fs.rmSync(root, { recursive: true, force: true });

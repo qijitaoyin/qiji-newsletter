@@ -77,19 +77,43 @@ export function mergeScopedReviewImport({
   return { selectedIssueIds: [...selected], articleCount: articles.length, reviewCount: reviewItems.length };
 }
 
+export function mergeScopedPublishedImport({ selectionFile, previousPublishedFile, generatedFile }) {
+  const selection = readJson(selectionFile);
+  const selected = new Set((selection.selectedIssueIds || []).map(String));
+  if (!selected.size) return { selectedIssueIds: [], articleCount: 0 };
+
+  const previousArticles = readExport(previousPublishedFile, "generatedArticles");
+  const previousIssues = readExport(previousPublishedFile, "generatedIssues");
+  const currentArticles = readExport(generatedFile, "generatedArticles");
+  const currentIssues = readExport(generatedFile, "generatedIssues");
+  const articles = replaceSelected(previousArticles, currentArticles, selected, (item) => item.issueId)
+    .sort((a, b) => String(b.issueId).localeCompare(String(a.issueId)) || Number(a.order || 0) - Number(b.order || 0));
+  const issues = replaceSelected(previousIssues, currentIssues, selected, (item) => item.id)
+    .sort((a, b) => String(b.id).localeCompare(String(a.id)));
+
+  writeArticleModule(generatedFile, articles, issues);
+  return { selectedIssueIds: [...selected], articleCount: articles.length };
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))) {
   const args = Object.fromEntries(process.argv.slice(2).map((arg) => {
     const split = arg.indexOf("=");
     return [arg.slice(2, split), arg.slice(split + 1)];
   }));
-  const result = mergeScopedReviewImport({
-    selectionFile: args.selection,
-    previousDraftFile: args.previousDraft,
-    previousReviewFile: args.previousReview,
-    previousCacheFile: args.previousCache,
-    generatedFile: args.generated,
-    generatedReviewFile: args.generatedReview,
-    cacheFile: args.cache
-  });
+  const result = args.previousPublished
+    ? mergeScopedPublishedImport({
+        selectionFile: args.selection,
+        previousPublishedFile: args.previousPublished,
+        generatedFile: args.generated
+      })
+    : mergeScopedReviewImport({
+        selectionFile: args.selection,
+        previousDraftFile: args.previousDraft,
+        previousReviewFile: args.previousReview,
+        previousCacheFile: args.previousCache,
+        generatedFile: args.generated,
+        generatedReviewFile: args.generatedReview,
+        cacheFile: args.cache
+      });
   console.log(JSON.stringify(result));
 }

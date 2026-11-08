@@ -1917,13 +1917,15 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 }
 
 .article-inline-image {
-  margin: clamp(28px, 4vw, 48px) 0;
+  margin: clamp(28px, 4vw, 48px) auto;
+  max-width: 720px;
 }
 
 .article-inline-image img {
   display: block;
   height: auto;
-  max-height: 68vh;
+  margin: 0 auto;
+  max-height: 58vh;
   max-width: 100%;
   object-fit: contain;
   width: auto;

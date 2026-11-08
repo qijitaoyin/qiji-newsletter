@@ -200,12 +200,6 @@ jobs:
             }
             Copy-Item -LiteralPath src/data/generatedArticles.ts -Destination $env:RUNNER_TEMP/generatedArticles.published.ts -Force
             Copy-Item -LiteralPath src/data/reviewDraftArticles.ts -Destination $env:RUNNER_TEMP/reviewDraftArticles.previous.ts -Force
-            if (-not [string]::IsNullOrWhiteSpace($env:REVIEW_PUBLISH_JSON)) {
-              $publishedBase = Get-Content -LiteralPath src/data/generatedArticles.ts -Raw
-              $publishedBase = $publishedBase -replace 'generatedArticles', 'reviewDraftArticles'
-              $publishedBase = $publishedBase -replace 'generatedIssues', 'reviewDraftIssues'
-              Set-Content -LiteralPath $env:RUNNER_TEMP/reviewDraftArticles.previous.ts -Value $publishedBase -Encoding UTF8
-            }
             Copy-Item -LiteralPath src/data/generatedReview.ts -Destination $env:RUNNER_TEMP/generatedReview.previous.ts -Force
             if (Test-Path -LiteralPath .cache/article-import-cache.json) {
               Copy-Item -LiteralPath .cache/article-import-cache.json -Destination $env:RUNNER_TEMP/article-import-cache.previous.json -Force
@@ -216,6 +210,7 @@ jobs:
             }
             ./scripts/generate_archive.ps1 @generateArguments
             if ($env:REVIEW_IMPORT_SCOPE -ne "all") {
+              Copy-Item -LiteralPath src/data/generatedArticles.ts -Destination $env:RUNNER_TEMP/generatedArticles.selected.ts -Force
               node scripts/merge_scoped_review_import.mjs `
                 --selection=$env:REVIEW_IMPORT_SELECTION `
                 --previousDraft=$env:RUNNER_TEMP/reviewDraftArticles.previous.ts `
@@ -246,7 +241,12 @@ jobs:
             Copy-Item -LiteralPath $env:RUNNER_TEMP/generatedArticles.published.ts -Destination src/data/generatedArticles.ts -Force
             Write-Host "Synced Word is available in review draft data and import reports. Published article data was restored."
           } else {
-            Write-Host "Publish confirmation provided; synced Word remains promoted as published article data."
+            Copy-Item -LiteralPath $env:RUNNER_TEMP/generatedArticles.selected.ts -Destination src/data/generatedArticles.ts -Force
+            node scripts/merge_scoped_review_import.mjs `
+              --selection=$env:REVIEW_IMPORT_SELECTION `
+              --previousPublished=$env:RUNNER_TEMP/generatedArticles.published.ts `
+              --generated=src/data/generatedArticles.ts
+            Write-Host "Publish confirmation provided; only the selected issue was merged into published data."
           }
 
       - name: Generate AI metadata for synced draft

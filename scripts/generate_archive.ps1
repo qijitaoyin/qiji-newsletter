@@ -229,7 +229,7 @@ function Get-DocxMediaSignatureHash {
     $stream = [System.IO.File]::Open($Path, [System.IO.FileMode]::Open, [System.IO.FileAccess]::Read, [System.IO.FileShare]::ReadWrite)
     $zip = New-Object System.IO.Compression.ZipArchive($stream, [System.IO.Compression.ZipArchiveMode]::Read, $false)
     $mediaEntries = @($zip.Entries |
-      Where-Object { $_.FullName -match "^word/media/.+\.(jpg|jpeg|png|webp|gif)$" } |
+      Where-Object { $_.FullName -match "^word/media/.+\.(jpg|jpeg|png|webp|gif|tif|tiff)$" } |
       Sort-Object FullName)
     if ($mediaEntries.Count -eq 0) { return "" }
 
@@ -1089,7 +1089,9 @@ function Read-DocxContent {
         $quoteBuffer.Clear()
       }
     }
+    $paragraphIndex = -1
     foreach ($p in $xml.SelectNodes("//w:body/w:p", $ns)) {
+      $paragraphIndex++
       foreach ($blip in $p.SelectNodes(".//a:blip", $ns)) {
         & $flushQuoteBlock
         $rid = $blip.GetAttribute("embed", "http://schemas.openxmlformats.org/officeDocument/2006/relationships")
@@ -1104,19 +1106,43 @@ function Read-DocxContent {
         }
 
         $ext = [IO.Path]::GetExtension($mediaEntry.FullName).ToLowerInvariant()
-        if ($ext -notmatch "^\.(jpg|jpeg|png|webp|gif)$") { continue }
-        $name = "{0}-img-{1:D3}{2}" -f $IssueId, $ImageIndex.Value, $ext
+        if ($ext -notmatch "^\.(jpg|jpeg|png|webp|gif|tif|tiff)$") { continue }
+        $outputExt = if ($ext -match "^\.tiff?$") { ".png" } else { $ext }
+        $name = "{0}-img-{1:D3}{2}" -f $IssueId, $ImageIndex.Value, $outputExt
         $destination = Join-Path $TargetDir $name
-        $input = $mediaEntry.Open()
-        try {
-          $output = [System.IO.File]::Open($destination, [System.IO.FileMode]::Create)
+        if ($ext -match "^\.tiff?$") {
+          $temporarySource = Join-Path ([System.IO.Path]::GetTempPath()) ("qiji-word-image-" + [guid]::NewGuid().ToString("N") + $ext)
+          $input = $mediaEntry.Open()
           try {
-            $input.CopyTo($output)
+            $output = [System.IO.File]::Open($temporarySource, [System.IO.FileMode]::Create)
+            try {
+              $input.CopyTo($output)
+            } finally {
+              $output.Dispose()
+            }
           } finally {
-            $output.Dispose()
+            $input.Dispose()
           }
-        } finally {
-          $input.Dispose()
+          try {
+            & node (Join-Path $PSScriptRoot "convert_word_image.mjs") $temporarySource $destination
+            if ($LASTEXITCODE -ne 0 -or -not (Test-Path -LiteralPath $destination)) {
+              throw "TIFF conversion failed: $mediaEntryPath"
+            }
+          } finally {
+            Remove-Item -LiteralPath $temporarySource -Force -ErrorAction SilentlyContinue
+          }
+        } else {
+          $input = $mediaEntry.Open()
+          try {
+            $output = [System.IO.File]::Open($destination, [System.IO.FileMode]::Create)
+            try {
+              $input.CopyTo($output)
+            } finally {
+              $output.Dispose()
+            }
+          } finally {
+            $input.Dispose()
+          }
         }
 
         $image = @{
@@ -1128,6 +1154,7 @@ function Read-DocxContent {
           type = "image"
           src = $image.src
           caption = ""
+          paragraphIndex = $paragraphIndex
         })
         $ImageIndex.Value = $ImageIndex.Value + 1
       }
@@ -1205,6 +1232,7 @@ function Read-DocxContent {
             $blocks.Add(@{
               type = "paragraph"
               text = $text
+              paragraphIndex = $paragraphIndex
               isBold = $isBold
               isLargeFont = $isLargeFont
               isHeadingStyle = $isHeadingStyle
@@ -1835,10 +1863,20 @@ function Select-BodyBlocks {
 function Select-BlocksAfterText {
   param([object[]]$Blocks, [string]$Marker)
   $selected = New-Object System.Collections.Generic.List[object]
+  $precedingImages = New-Object System.Collections.Generic.List[object]
   $started = $false
   foreach ($block in $Blocks) {
     if (-not $started) {
+      if ($block.type -eq "image") {
+        $precedingImages.Add($block)
+      }
       if ($block.type -eq "paragraph" -and $block.text -eq $Marker) {
+        $markerParagraphIndex = Get-ObjectPropertyValue $block "paragraphIndex"
+        foreach ($image in $precedingImages) {
+          if ((Get-ObjectPropertyValue $image "paragraphIndex") -eq $markerParagraphIndex) {
+            $selected.Add($image)
+          }
+        }
         $started = $true
       }
       continue
@@ -1942,6 +1980,11 @@ function Convert-BlocksToDisplayBlocks {
   $display = New-Object System.Collections.Generic.List[object]
   for ($i = 0; $i -lt $Blocks.Count; $i++) {
     $block = $Blocks[$i]
+    if ($block -is [System.Collections.IDictionary]) {
+      [void]$block.Remove("paragraphIndex")
+    } elseif ($block.PSObject.Properties["paragraphIndex"]) {
+      $block.PSObject.Properties.Remove("paragraphIndex")
+    }
     if ($block.type -ne "paragraph") {
       $display.Add($block)
       continue
@@ -2585,9 +2628,10 @@ foreach ($issueDir in $issueDirs) {
 
     $blockWarnings = New-Object System.Collections.Generic.List[string]
     foreach ($warning in $docxContent.Warnings) { $blockWarnings.Add($warning) }
-    # Resolve captions before locating the body boundary so an image placed
-    # before the first real body block can become title artwork without also
-    # being rendered a second time inside the article.
+    # Resolve captions before locating the body boundary. For templated Word
+    # files, the body marker itself is the only title/body image boundary:
+    # images before it may become title artwork; every image after it stays in
+    # the article body, even when it precedes the first text paragraph.
     $resolvedDocxBlocks = Resolve-ImageCaptions $docxContent.Blocks $blockWarnings
     $bodyBlocks = if ($template.HasTemplate -and $template.BodyMarker) {
       Select-BlocksAfterText $resolvedDocxBlocks $template.BodyMarker
@@ -2599,22 +2643,38 @@ foreach ($issueDir in $issueDirs) {
     }
     $bodyBlocks = Remove-HeaderLikeBlocks $bodyBlocks $title $author $categoryInfo.Category
 
-    $firstBodyContentBlock = @($bodyBlocks | Where-Object { $_.type -ne "image" } | Select-Object -First 1)
     $preBodyImages = New-Object System.Collections.Generic.List[object]
-    if ($firstBodyContentBlock.Count -gt 0) {
+    if ($template.HasTemplate -and $template.BodyMarker) {
+      $markerBlock = @($resolvedDocxBlocks | Where-Object { $_.type -eq "paragraph" -and $_.text -eq $template.BodyMarker } | Select-Object -First 1)
+      $markerParagraphIndex = if ($markerBlock.Count -gt 0) { Get-ObjectPropertyValue $markerBlock[0] "paragraphIndex" } else { $null }
       foreach ($block in $resolvedDocxBlocks) {
-        if ([object]::ReferenceEquals($block, $firstBodyContentBlock[0])) { break }
-        if ($block.type -eq "image") { $preBodyImages.Add($block) }
+        if ($block.type -eq "paragraph" -and $block.text -eq $template.BodyMarker) { break }
+        if (
+          $block.type -eq "image" -and
+          ($null -eq $markerParagraphIndex -or (Get-ObjectPropertyValue $block "paragraphIndex") -ne $markerParagraphIndex)
+        ) {
+          $preBodyImages.Add($block)
+        }
+      }
+    } else {
+      $firstBodyContentBlock = @($bodyBlocks | Where-Object { $_.type -ne "image" } | Select-Object -First 1)
+      if ($firstBodyContentBlock.Count -gt 0) {
+        foreach ($block in $resolvedDocxBlocks) {
+          if ([object]::ReferenceEquals($block, $firstBodyContentBlock[0])) { break }
+          if ($block.type -eq "image") { $preBodyImages.Add($block) }
+        }
       }
     }
 
-    $bodyContentStart = 0
-    $bodyBlockArray = @($bodyBlocks)
-    while ($bodyContentStart -lt $bodyBlockArray.Count -and $bodyBlockArray[$bodyContentStart].type -eq "image") {
-      $bodyContentStart++
-    }
-    if ($bodyContentStart -gt 0) {
-      $bodyBlocks = @($bodyBlockArray | Select-Object -Skip $bodyContentStart)
+    if (-not ($template.HasTemplate -and $template.BodyMarker)) {
+      $bodyContentStart = 0
+      $bodyBlockArray = @($bodyBlocks)
+      while ($bodyContentStart -lt $bodyBlockArray.Count -and $bodyBlockArray[$bodyContentStart].type -eq "image") {
+        $bodyContentStart++
+      }
+      if ($bodyContentStart -gt 0) {
+        $bodyBlocks = @($bodyBlockArray | Select-Object -Skip $bodyContentStart)
+      }
     }
     $contentBlocks = Convert-BlocksToDisplayBlocks $bodyBlocks
     foreach ($warning in $blockWarnings) {

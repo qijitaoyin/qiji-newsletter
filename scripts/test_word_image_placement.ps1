@@ -25,7 +25,7 @@ function Copy-TestFile {
   Copy-Item -LiteralPath $source -Destination $target -Force
 }
 
-function Move-FirstDocxImageBeforeBodyContent {
+function Move-FirstDocxImageBeforeBodyMarker {
   param([string]$DocxPath)
   $stream = [System.IO.File]::Open($DocxPath, [System.IO.FileMode]::Open, [System.IO.FileAccess]::ReadWrite, [System.IO.FileShare]::None)
   $zip = New-Object System.IO.Compression.ZipArchive($stream, [System.IO.Compression.ZipArchiveMode]::Update, $false)
@@ -54,7 +54,7 @@ function Move-FirstDocxImageBeforeBodyContent {
     }
     $body = $bodyMarker.ParentNode
     [void]$body.RemoveChild($imageParagraph)
-    [void]$body.InsertAfter($imageParagraph, $bodyMarker)
+    [void]$body.InsertBefore($imageParagraph, $bodyMarker)
     $entry.Delete()
     $replacement = $zip.CreateEntry("word/document.xml")
     $writer = New-Object System.IO.StreamWriter($replacement.Open(), [System.Text.UTF8Encoding]::new($false))
@@ -84,13 +84,19 @@ try {
 
   $issue610 = Join-Path $sourceRoot "202610"
   $issue611 = Join-Path $sourceRoot "202611"
-  New-Item -ItemType Directory -Force -Path $issue610, $issue611 | Out-Null
+  $issue612 = Join-Path $sourceRoot "202612"
+  New-Item -ItemType Directory -Force -Path $issue610, $issue611, $issue612 | Out-Null
   $fixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202610") -File -Filter "2610-3-2*.docx" | Select-Object -First 1
   if (-not $fixture) { throw "Cannot find the 2610-3-2 body-image regression fixture." }
   Copy-Item -LiteralPath $fixture.FullName -Destination $issue610
   $preBodyFixturePath = Join-Path $issue611 ($fixture.Name -replace '^2610-', '2611-')
   Copy-Item -LiteralPath $fixture.FullName -Destination $preBodyFixturePath
-  Move-FirstDocxImageBeforeBodyContent $preBodyFixturePath
+  Move-FirstDocxImageBeforeBodyMarker $preBodyFixturePath
+
+  $tiffFixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202611") -File -Filter "2611-3-2*.docx" | Select-Object -First 1
+  if (-not $tiffFixture) { throw "Cannot find the 2611-3-2 TIFF image regression fixture." }
+  $tiffFixturePath = Join-Path $issue612 ($tiffFixture.Name -replace '^2611-', '2612-')
+  Copy-Item -LiteralPath $tiffFixture.FullName -Destination $tiffFixturePath
 
   $pixabayAssetDir = Join-Path $sandboxRoot "public\assets\pixabay"
   New-Item -ItemType Directory -Force -Path $pixabayAssetDir | Out-Null
@@ -143,8 +149,19 @@ try {
     throw "An image before body content was not used exclusively as title artwork."
   }
 
+  $tiffArticle = @($articles | Where-Object { $_.issueId -eq "202612" -and $_.sourceId -eq "2612-3-2" })[0]
+  $tiffInlineImages = @($tiffArticle.contentBlocks | Where-Object { $_.type -eq "image" })
+  if (
+    -not $tiffArticle -or
+    $tiffInlineImages.Count -ne 2 -or
+    @($tiffInlineImages | Where-Object { [string]$_.src -notmatch '\.png(?:\?|$)' }).Count -ne 0
+  ) {
+    throw "Images after the body marker were not retained inline or TIFF conversion failed."
+  }
+
   Write-Host "PASS: pre-body Word images become title artwork without duplication."
-  Write-Host "PASS: in-body Word images remain inline and use separate Pixabay title artwork."
+  Write-Host "PASS: images after the body marker remain inline and use separate title artwork."
+  Write-Host "PASS: TIFF Word images are converted to browser-compatible PNG files."
 } finally {
   $resolvedTestRoot = [System.IO.Path]::GetFullPath($testRoot)
   if ($resolvedTestRoot.StartsWith($tempBase, [System.StringComparison]::OrdinalIgnoreCase) -and (Test-Path -LiteralPath $resolvedTestRoot)) {
