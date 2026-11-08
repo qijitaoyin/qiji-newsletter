@@ -6024,10 +6024,16 @@ export const generatedReviewItems = [
     "author": "文稿修潤 / 李明"
   },
   {
+    "issueId": "202611",
+    "title": "從身體實證走向道心運作",
+    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
+    "slug": "202611-2611-3-5",
+    "status": "needs-review",
     "category": "如是我聞",
-    "sourceModified": "2026-11-08T07:04:22.9030000Z",
     "sourceSignature": "v3|aaa9cae2b76e6a294cef62e472b5bc4e7d3dcd6582497719b00a6a0a7cfe931b|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
     "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
+    "date": "2026.11.10",
+    "sourceModified": "2026-11-08T07:04:22.9030000Z",
     "messages": [
       {
         "severity": "warning",
@@ -6060,22 +6066,22 @@ export const generatedReviewItems = [
         "type": "content-warning"
       }
     ],
-    "sourceId": "2611-3-5",
-    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "slug": "202611-2611-3-5",
-    "date": "2026.11.10",
     "author": "文稿彙整 / 二早班",
-    "image": "/assets/pixabay/pixabay-5946500.jpg?v=5946500",
-    "issueId": "202611",
-    "title": "從身體實證走向道心運作",
     "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
-    "status": "needs-review"
+    "sourceId": "2611-3-5",
+    "image": "/assets/pixabay/pixabay-6641880.jpg?v=6641880"
   },
   {
+    "issueId": "202611",
+    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "id": "202611::2611-2-2",
+    "slug": "202611-2611-2-2",
+    "status": "needs-review",
     "category": "溫故知新",
-    "sourceModified": "",
     "sourceSignature": "",
     "file": "2611-2-2",
+    "date": "2026.11.10",
+    "sourceModified": "",
     "messages": [
       {
         "severity": "warning",
@@ -6083,16 +6089,10 @@ export const generatedReviewItems = [
         "type": "unknown-category"
       }
     ],
-    "sourceId": "2611-2-2",
-    "id": "202611::2611-2-2",
-    "slug": "202611-2611-2-2",
-    "date": "2026.11.10",
     "author": "文稿修潤 / 鄭雅靜",
-    "image": "/assets/pixabay/pixabay-4786394.jpg?v=4786394",
-    "issueId": "202611",
-    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
     "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
-    "status": "needs-review"
+    "sourceId": "2611-2-2",
+    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186"
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",
