@@ -6024,103 +6024,103 @@ export const generatedReviewItems = [
     "author": "文稿修潤 / 李明"
   },
   {
-    "image": "/assets/pixabay/pixabay-1679708.jpg?v=1679708",
-    "status": "needs-review",
-    "issueId": "202611",
-    "sourceSignature": "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|",
-    "date": "2026.11.10",
-    "sourceModified": "2026-11-08T07:00:51.7810000Z",
-    "slug": "202611-2611-3-2",
-    "sourceId": "2611-3-2",
-    "title": "從識神作用返回自心",
-    "messages": [
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-001.png?v=391156",
-        "type": "content-warning"
-      },
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-002.png?v=143791",
-        "type": "content-warning"
-      }
-    ],
-    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-2如是我聞261015四晚.docx",
-    "category": "如是我聞",
     "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-2如是我聞261015四晚.docx",
+    "issueId": "202611",
+    "image": "/assets/pixabay/pixabay-1679708.jpg?v=1679708",
     "excerpt": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
-    "author": "文稿彙整 / 四晚班"
-  },
-  {
-    "image": "/assets/pixabay/pixabay-6641880.jpg?v=6641880",
+    "slug": "202611-2611-3-2",
+    "author": "文稿彙整 / 四晚班",
     "status": "needs-review",
-    "issueId": "202611",
-    "sourceSignature": "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
-    "date": "2026.11.10",
-    "sourceModified": "2026-11-08T07:04:22.9030000Z",
-    "slug": "202611-2611-3-5",
-    "sourceId": "2611-3-5",
-    "title": "從身體實證走向道心運作",
+    "sourceModified": "2026-11-08T07:00:51.7810000Z",
+    "title": "從識神作用返回自心",
+    "sourceId": "2611-3-2",
     "messages": [
       {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-001.png?v=1780020",
-        "type": "content-warning"
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-001.png?v=391156",
+        "type": "content-warning",
+        "severity": "warning"
       },
       {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-002.png?v=1985464",
-        "type": "content-warning"
-      },
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-003.png?v=1724539",
-        "type": "content-warning"
-      },
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-004.png?v=315463",
-        "type": "content-warning"
-      },
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-005.png?v=315463",
-        "type": "content-warning"
-      },
-      {
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-006.png?v=271692",
-        "type": "content-warning"
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-002.png?v=143791",
+        "type": "content-warning",
+        "severity": "warning"
       }
     ],
-    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
+    "sourceSignature": "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|",
     "category": "如是我聞",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
-    "author": "文稿彙整 / 二早班"
+    "date": "2026.11.10",
+    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-2如是我聞261015四晚.docx"
   },
   {
-    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186",
-    "status": "needs-review",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
     "issueId": "202611",
-    "sourceSignature": "",
-    "date": "2026.11.10",
-    "sourceModified": "",
-    "slug": "202611-2611-2-2",
-    "sourceId": "2611-2-2",
-    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "image": "/assets/pixabay/pixabay-6641880.jpg?v=6641880",
+    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
+    "slug": "202611-2611-3-5",
+    "author": "文稿彙整 / 二早班",
+    "status": "needs-review",
+    "sourceModified": "2026-11-08T07:04:22.9030000Z",
+    "title": "從身體實證走向道心運作",
+    "sourceId": "2611-3-5",
     "messages": [
       {
-        "severity": "warning",
-        "message": "分類不在既有分類清單：溫故知新",
-        "type": "unknown-category"
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-001.png?v=1780020",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-002.png?v=1985464",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-003.png?v=1724539",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-004.png?v=315463",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-005.png?v=315463",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-006.png?v=271692",
+        "type": "content-warning",
+        "severity": "warning"
       }
     ],
-    "id": "202611::2611-2-2",
-    "category": "溫故知新",
+    "sourceSignature": "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
+    "category": "如是我聞",
+    "date": "2026.11.10",
+    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx"
+  },
+  {
     "file": "2611-2-2",
+    "issueId": "202611",
+    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186",
     "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
-    "author": "文稿修潤 / 鄭雅靜"
+    "slug": "202611-2611-2-2",
+    "author": "文稿修潤 / 鄭雅靜",
+    "status": "needs-review",
+    "sourceModified": "",
+    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "sourceId": "2611-2-2",
+    "messages": [
+      {
+        "message": "分類不在既有分類清單：溫故知新",
+        "type": "unknown-category",
+        "severity": "warning"
+      }
+    ],
+    "sourceSignature": "",
+    "category": "溫故知新",
+    "date": "2026.11.10",
+    "id": "202611::2611-2-2"
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",

@@ -1,7 +1,15 @@
 {
-  "generatedAt": "2026-11-08T10:12:37.4355498Z",
-  "totalChanged": 10,
+  "generatedAt": "2026-11-08T10:45:50.9349464Z",
+  "totalChanged": 11,
   "changedFiles": [
+    {
+      "issueId": "202611",
+      "fileName": "2611-1編輯小語.docx",
+      "relativePath": "202611/2611-1編輯小語.docx",
+      "sourceId": "2611-1",
+      "stableSignature": "v3|84c6f04823c0c5c962fe149deb77cd056bbddfe4f4c78da38a78e219af479daf|",
+      "status": "new"
+    },
     {
       "issueId": "202611",
       "fileName": "2611-2-1溫故知新20140508-0626日月合璧練呼吸.docx",
