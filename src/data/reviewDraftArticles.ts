@@ -2,6 +2,117 @@ import type { Article, IssueArchive } from "./articles";
 
 export const reviewDraftArticles = [
   {
+    "image": "/assets/pixabay/pixabay-7538471.jpg?v=7538471",
+    "author": "文稿修潤 / 楊清雲",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "中丹田的訓練要掌控橫隔膜",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "橫膈膜是身體唯一不生病的肌肉，往下的時候是吸氣，後天氣進入，放鬆回到上面是吐氣。它就像一個指揮家，一上一下不斷切換腹壓和胸壓。心情平靜、副交感神經作用時，橫膈膜的頻率就會穩定。呼吸急促，表示交感神經亢奮，橫膈膜的作用亂掉。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "腹腔與胸腔兩個腔體之間的壓力轉換，就是藉由橫膈膜上下來完成，這會影響一個人的力氣、呼吸、內分泌作用等。因此，中丹田的訓練要先學會掌控橫隔膜，掌握胸壓和腹壓之間的轉換。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "胸壓與腹壓轉換產生空間、壓力變化與共振循環",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在道家修煉語言裡，橫膈膜又稱為「日線」，另外，前陰、會陰與後陰的連線，又稱為「月線」或「海底線」。所以就用日線、月線的操作動態，以及「日月合璧」來描述呼吸跟體腔開闔壓縮的關係，尤其是先天氣與後天氣交互作用的練習時，從最初用意識操控到後來的自然而然不用想，需要先明其理，才能運作自如。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "也就是說，吸氣時，日線（橫膈膜）往下，內臟往下壓縮，氣自然延伸到肚臍以下，胸壓就轉成腹壓。日線繼續往下，月線（下橫膈肌）因為收提，氣機就開始往上循環；呼氣時，內臟往上推，橫隔膜就自然把腹壓轉成胸壓。操作時注意下巴一定要內縮，脊椎才會直，身體能量才能傳導共振；下顎一定要放鬆（臉部左右兩塊肌肉），顱腔才會共振。腹壓轉成胸壓的時候，海底的能量從百會降下來，回到海底；胸壓轉成腹壓的時候，海底的能量又往上推升，這就是空間變化、壓力變化與共振所形成的循環。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你會發現練呼吸，氣機循環主要是月線在循環。海底的能量上來，循環全身，這叫做共振，透過橫膈膜壓縮，後天氣的壓縮產生先天氣的共振，所以叫「以後天練先天」。海底的能量上來氣機循環全身時，氣會往後走，它會開玉枕關；內氣共振會衝過百會，這叫做開天門。人四歲以後，頭殼整個合起來，透過氣的共振，頭頂軟骨會再鬆開，大腦就安靜，宇宙智慧就會流進來。智慧不是長出來的，智慧是在念頭、識性執著空掉以後，自然進入你的空間，但它的基礎練習，就是日線下、月線上的交替運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "日月線如何交替運行",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "中丹田的練習有個呼吸的循環，「吸」，一定是日線先往下，月線就往上，月線往上時日線要繼續往下；然後「呼」，月線往下，心氣帶著月線往下。心氣就是心火，心火就是意識，意識不能跟著橫隔膜往上，要跟著月線、跟著膻中往下；月線下去以後，日線再往下又吸氣，同時月線上。這個機制一定是日線下，月線上；月線下，心火下，日線下…的循環。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "就像太陽下去，月亮就上升；月亮下去，太陽就上升。當月線上升到頂，就要開始往下，因為陰不可居高。月線把心火帶下去，日線才能繼續往下；日線下去，月線再上來，兩者就是這樣一上一下地交替運行。等到這些都變得自然，一吸一吐氣就可以下湧泉，自然日月合璧，進入氣功態，氣在身體裡循環，不需要想像，會感覺非常舒服。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "吸後後吐先先",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "日線、月線交替的過程就是所謂「吸後後吐先先」，吸氣的時候「先天氣在後天氣之後」，也就是後天氣要走在先天氣前面（日線先下，月線再上）；吐氣的時候是「先天氣先走，後天氣跟著走」（月線先下，心氣再往下），雖然吐氣時橫膈肌事實上是往上走，但是心氣必須逆著它往下放鬆。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "先把下丹田和中丹田連結起來，才能進入周天運轉",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功必須掌握第一、空間，第二、丹田開闔體呼吸，第三、感覺神經；大腦不用意，不用運動神經，不用感覺神經，這樣就對了。練習氣功動作時，大腦不下指令，不要想動作，只在橫膈膜；吸氣海底上來一定走背部上來，只要收提就是拓開背部，都不要去想。氣功學就是從這個地方開始訓練，先把下丹田和中丹田連結起來，做到熟練、空間很大的時候，再來談周天運轉。（本文依20140626及20140508四晚班課程紀錄剪裁修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -23,136 +134,261 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-2-1",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-7538471.jpg?v=7538471",
-    "sourceId": "2611-2-1",
-    "readTime": "約 3 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "橫膈膜是身體唯一不生病的肌肉，往下的時候是吸氣，後天氣進入，放鬆回到上面是吐氣。它就像一個指揮家，一上一下不斷切換腹壓和胸壓。心情平靜、副交感神經作用時，橫膈膜的頻率就會穩定。呼吸急促，表示交…",
-    "order": 0,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "中丹田的訓練要掌控橫隔膜",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "橫膈膜是身體唯一不生病的肌肉，往下的時候是吸氣，後天氣進入，放鬆回到上面是吐氣。它就像一個指揮家，一上一下不斷切換腹壓和胸壓。心情平靜、副交感神經作用時，橫膈膜的頻率就會穩定。呼吸急促，表示交感神經亢奮，橫膈膜的作用亂掉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "腹腔與胸腔兩個腔體之間的壓力轉換，就是藉由橫膈膜上下來完成，這會影響一個人的力氣、呼吸、內分泌作用等。因此，中丹田的訓練要先學會掌控橫隔膜，掌握胸壓和腹壓之間的轉換。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "胸壓與腹壓轉換產生空間、壓力變化與共振循環",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "在道家修煉語言裡，橫膈膜又稱為「日線」，另外，前陰、會陰與後陰的連線，又稱為「月線」或「海底線」。所以就用日線、月線的操作動態，以及「日月合璧」來描述呼吸跟體腔開闔壓縮的關係，尤其是先天氣與後天氣交互作用的練習時，從最初用意識操控到後來的自然而然不用想，需要先明其理，才能運作自如。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "也就是說，吸氣時，日線（橫膈膜）往下，內臟往下壓縮，氣自然延伸到肚臍以下，胸壓就轉成腹壓。日線繼續往下，月線（下橫膈肌）因為收提，氣機就開始往上循環；呼氣時，內臟往上推，橫隔膜就自然把腹壓轉成胸壓。操作時注意下巴一定要內縮，脊椎才會直，身體能量才能傳導共振；下顎一定要放鬆（臉部左右兩塊肌肉），顱腔才會共振。腹壓轉成胸壓的時候，海底的能量從百會降下來，回到海底；胸壓轉成腹壓的時候，海底的能量又往上推升，這就是空間變化、壓力變化與共振所形成的循環。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你會發現練呼吸，氣機循環主要是月線在循環。海底的能量上來，循環全身，這叫做共振，透過橫膈膜壓縮，後天氣的壓縮產生先天氣的共振，所以叫「以後天練先天」。海底的能量上來氣機循環全身時，氣會往後走，它會開玉枕關；內氣共振會衝過百會，這叫做開天門。人四歲以後，頭殼整個合起來，透過氣的共振，頭頂軟骨會再鬆開，大腦就安靜，宇宙智慧就會流進來。智慧不是長出來的，智慧是在念頭、識性執著空掉以後，自然進入你的空間，但它的基礎練習，就是日線下、月線上的交替運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "日月線如何交替運行",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "中丹田的練習有個呼吸的循環，「吸」，一定是日線先往下，月線就往上，月線往上時日線要繼續往下；然後「呼」，月線往下，心氣帶著月線往下。心氣就是心火，心火就是意識，意識不能跟著橫隔膜往上，要跟著月線、跟著膻中往下；月線下去以後，日線再往下又吸氣，同時月線上。這個機制一定是日線下，月線上；月線下，心火下，日線下…的循環。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "就像太陽下去，月亮就上升；月亮下去，太陽就上升。當月線上升到頂，就要開始往下，因為陰不可居高。月線把心火帶下去，日線才能繼續往下；日線下去，月線再上來，兩者就是這樣一上一下地交替運行。等到這些都變得自然，一吸一吐氣就可以下湧泉，自然日月合璧，進入氣功態，氣在身體裡循環，不需要想像，會感覺非常舒服。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "吸後後吐先先",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "日線、月線交替的過程就是所謂「吸後後吐先先」，吸氣的時候「先天氣在後天氣之後」，也就是後天氣要走在先天氣前面（日線先下，月線再上）；吐氣的時候是「先天氣先走，後天氣跟著走」（月線先下，心氣再往下），雖然吐氣時橫膈肌事實上是往上走，但是心氣必須逆著它往下放鬆。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "先把下丹田和中丹田連結起來，才能進入周天運轉",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功必須掌握第一、空間，第二、丹田開闔體呼吸，第三、感覺神經；大腦不用意，不用運動神經，不用感覺神經，這樣就對了。練習氣功動作時，大腦不下指令，不要想動作，只在橫膈膜；吸氣海底上來一定走背部上來，只要收提就是拓開背部，都不要去想。氣功學就是從這個地方開始訓練，先把下丹田和中丹田連結起來，做到熟練、空間很大的時候，再來談周天運轉。（本文依20140626及20140508四晚班課程紀錄剪裁修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "日月合璧練呼吸",
+    "date": "2026.11.10",
     "slug": "202611-2611-2-1",
-    "author": "文稿修潤 / 楊清雲",
-    "category": "如是我聞"
+    "sourceId": "2611-2-1",
+    "images": [],
+    "excerpt": "橫膈膜是身體唯一不生病的肌肉，往下的時候是吸氣，後天氣進入，放鬆回到上面是吐氣。它就像一個指揮家，一上一下不斷切換腹壓和胸壓。心情平靜、副交感神經作用時，橫膈膜的頻率就會穩定。呼吸急促，表示交…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 0,
+    "homeAnchor": "#article-202611-2611-2-1",
+    "title": "日月合璧練呼吸",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 3 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-4786394.jpg?v=4786394",
+    "author": "文稿修潤 / 鄭雅靜",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "type": "quote",
+        "text": "《達摩洗髓易筋經》「膜論」\n\n人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培養血氣者，為大要也。\n\n……且夫精氣神為無形之物也，筋骨肉乃有形之身也，此法必先煉有形者為無形之佐，培無形者為有形之輔，是一而二，二而一者也。……是故煉筋必須煉膜，煉膜必須煉氣。然而煉筋易而煉膜難，煉膜難而煉氣更難也。\n\n……使氣清而平，平而和，和而暢達，能行於筋，串於膜，以至通身靈動，無處不行，無處不到。氣至則膜起，氣行則膜張。能起能張，則膜與筋齊堅固矣。\n\n……般刺密諦曰：此篇言易筋以煉膜為先，煉膜以煉氣為主。然此膜人多不識，不可為脂膜之膜，乃筋膜之膜也。脂膜腔中物也！筋膜骨外物也。筋則聯絡肢骸，膜則包貼骸骨。筋與膜較，膜軟於筋；肉與膜較，膜勁於肉；膜居肉之內，骨之外，包骨襯肉之物也。其狀若此，行此功者，必使氣串於膜間，護其骨，壯其筋，合為一體，乃曰全功。"
+      },
+      {
+        "text": "筋通骨，膜通腑",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "氣功是「心識與宇宙作用的空間學，藉陰陽往來互動，透視其機。」氣是超越物質的存在，而氣功所修煉的身體結構，可從肌、骨、筋、膜、腔五個系統來理解。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "肌肉與骨骼各自形成系統。筋與膜具有牽引、連結與傳遞的作用。腔，則是身體內部的空間，如鼻腔、耳腔、胸腔、腹腔、骨盆腔等，以及關節與組織之間的間隙。人體能夠活動，不只因肌肉收縮與骨骼移動，也與這些結構之間的空間變化有關。空間一改變，人體的肌、骨、筋、膜的位置與張力也會隨之調整。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "氣功就是透過意識、動作與體呼吸，鍛鍊肌、骨、筋、膜、腔這五個系統。練功時，一吸一吐與動作會帶動腔體變化，筋與膜的張力也隨之改變；意識則是以意導氣、以氣運身，《導氣篇》正是進入以意導氣的訓練。這些變化合在一起，才構成身體真正的動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人體的肌肉包括骨骼肌、平滑肌與心肌三類。骨骼肌主要附著於骨骼，多數透過肌腱與骨骼連接，負責身體活動與姿勢維持，大多可以由意識控制，也稱為「隨意肌」。平滑肌主要分布於消化道、支氣管、膀胱、血管等器官與管腔的壁層，屬於非隨意肌，其收縮活動主要受到自律神經、激素及局部因素等調節。心肌只存在於心臟，也屬於非隨意肌，負責心臟持續而有節律地收縮，不受意識直接控制；但在組織結構上具有橫紋，與骨骼肌具有部分相似的形態特徵。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「筋通骨，膜通腑」，是練功理解身體結構的一個基本方向。肌肉、骨骼與內臟周圍都有不同層次的結締組織與膜性結構，使身體各部位能在動作與張力變化中彼此牽動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「筋」往骨的方向走，可以從肌肉、肌腱與骨骼之間的連接來理解。手在活動時，可以看到手背的肌腱隨著手指動作而牽動；肌肉產生的力量透過肌腱傳到骨骼，進而帶動手指活動。在練功的身體語言中，這種由筋牽動骨骼的關係，可概稱為「筋通骨」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "又如膝蓋活動時，大腿肌肉、肌腱、髕骨、韌帶與脛骨等結構共同參與關節運動。表面看來只是簡單的屈伸，內部其實有不同組織同時發生位置與張力的變化，共同維持動作中的穩定與支撐。一個動作的形成，背後往往是多個結構共同作用的結果。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "筋溝通到膜",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「筋溝通到膜」，是指筋、骨與不同膜性結構之間的連動。筋與膜並不是彼此封閉的兩套系統，骨膜、肌膜以及內臟周圍的結締組織之間，也存在不同層次的力學關係。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當一個部位受到拉力、壓力，或產生螺旋、旋轉時，力量的變化不會只停留在原處，而會透過周圍的結締組織傳遞。因此，練功不能只把注意力放在某一塊肌肉上。手一動，可能一路牽動肘與肩；腰一轉，胸腔、骨盆與胯部的張力也會跟著改變。局部產生的張力與結構變化，可以透過不同層次的組織影響其他部位；身體感受到的力量與感覺，也會經由感覺神經傳入脊髓與中樞神經系統，參與身體的感覺與動作調節。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "生命並不是由一塊塊實心的組織簡單堆疊而成。骨骼內部有骨髓腔，關節之間有關節腔與間隙，組織之間也保有不同程度的空間，使液體得以交換，組織得以彼此滑動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從練功的角度來看，心包與內臟、肌肉一路的變化，以及腦膜、脊柱與骨骼一路的變化，可以理解為兩條彼此呼應的身體路徑。所謂「心包走肌肉、腦膜走骨頭」，是對練功時身體連動關係的理解與描述，並非現代解剖學對心包膜與腦膜生理功能的分類。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "心包包覆心臟及大血管根部；腦膜與脊膜則包覆腦與脊髓，具有解剖上的連續性。在這套功法的理解中，頭部、脊柱與身體中央結構進一步形成一條上下連動的軸線，稱為「龍筋」；也有「骨為龍骨、膜為龍膜」的說法。練功所要掌握的，正是這條中央結構在動作中的變化。因此，觀察身體不能只看一個部位，而要看到不同結構之間如何相互牽引、彼此調整。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "腔體的變化，決定身體的動",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "肌、骨、筋、膜、腔，最後要回到「腔」的變化。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "身體並不是一個實心不動的結構。骨骼之間有關節空間，組織之間有間隙，胸腔、腹腔與骨盆腔也會隨著呼吸、姿勢與動作而產生變化。這些空間使不同組織得以移動、滑動，也讓肌、骨、筋、膜在動作中不斷調整彼此的位置與張力。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "傳統醫學有「脾主肌肉」之說，但並不表示肌肉只與脾胃有關。五臟六腑彼此協調，共同維持身體的運作。從練功來看，肌肉也不能脫離內臟以及整個身體而單獨理解。肌肉一動，骨骼的位置跟著改變；骨骼一轉，筋膜的張力隨之調整；呼吸一起一伏，胸腹與骨盆的空間也在變化。身體就是在這些變化之中不斷調整。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，身體真正的「動」，不是某一塊肌肉單獨產生的動作，而是肌肉收縮、骨骼位置、筋膜張力、呼吸與腔體空間共同產生的變化。手一動，不只手在動；腰一轉，也不只是腰在轉。局部的變化會牽動整體，整體的調整也會反過來影響局部。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "腔不是肌、骨、筋、膜之外另一個孤立的零件，而是這些結構得以彼此移動、調整與作用的空間。身體的「空間」也不等於空無，它存在於組織與結構之間，參與液體交換、力量傳遞與身體活動，是生命得以運作的重要條件。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功所練的，因此不只是外在動作。從一吸一吐、一張一弛，到一轉一動，都是在體會身體內部空間如何改變。當肌、骨、筋、膜、腔不再被分開來看，身體的動也不再只是某一個關節、某一塊肌肉的動，而是整個身體空間共同發生的變化。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "在動中閱讀身體",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我們練氣功，最後是練腔體。腔體的形狀一改變，肌、骨、筋、膜的位置與張力也會跟著變化，而這些變化，要在身體真正動起來的時候才能體會。吸氣時，胸腔、腹腔如何變化；手抬起時，肩胛與胸廓之間的關係如何改變，這些都要從自己的身體裡去閱讀。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我把這種在動中閱讀身體的能力稱為「動覺」。人一動，身體就會重新調整。原來偏移的地方，可能在另一種動法裡重新找到位置；原來僵硬的關節，也可能在不硬拉、不硬扯之中，逐漸恢復活動的空間。所以，重點不在動得多，而在每一次動的過程中，能不能感覺身體正在發生什麼，又如何回應。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一般運動各有它的作用。走路、游泳、伸展或肌力訓練，都會以不同方式改變身體。但值得注意的是，如果一種動作長期只朝固定方向反覆進行，身體也會逐漸形成相應的適應。因此，「做得多」不直接等於「身體更好」，還要看動作之後，身體是否仍保有活動的空間與調整的彈性。運動的效果也與強度、技術以及個人的身體狀況有關；過度拉伸可能影響關節穩定，長期單一的動作模式，也可能使身體形成固定的使用習慣。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，練功不是一味把身體練得更強，而是先學會看見身體。肌、骨、筋、膜、腔五個系統，最後都回到同一件事：身體是一個不斷改變形狀的活體。只要還在呼吸、還在動，身體內部的空間就在改變；空間一變，肌骨的位置、筋膜的張力以及不同部位之間的關係也跟著改變。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當你開始感覺這些變化，功法才真正從外在的招式走進身體。練功不是學會更多、更複雜的動作，而是在每一次呼吸與動作之中，逐漸讀懂自己的身體，學會「感覺你的感覺」。（本文依20170828一晚班課程紀錄裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -192,260 +428,450 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-2-2",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-4786394.jpg?v=4786394",
-    "sourceId": "2611-2-2",
-    "readTime": "約 5 分鐘",
     "tags": [
       "溫故知新"
     ],
-    "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
-    "order": 1,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "type": "quote",
-        "text": "《達摩洗髓易筋經》「膜論」\n\n人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培養血氣者，為大要也。\n\n……且夫精氣神為無形之物也，筋骨肉乃有形之身也，此法必先煉有形者為無形之佐，培無形者為有形之輔，是一而二，二而一者也。……是故煉筋必須煉膜，煉膜必須煉氣。然而煉筋易而煉膜難，煉膜難而煉氣更難也。\n\n……使氣清而平，平而和，和而暢達，能行於筋，串於膜，以至通身靈動，無處不行，無處不到。氣至則膜起，氣行則膜張。能起能張，則膜與筋齊堅固矣。\n\n……般刺密諦曰：此篇言易筋以煉膜為先，煉膜以煉氣為主。然此膜人多不識，不可為脂膜之膜，乃筋膜之膜也。脂膜腔中物也！筋膜骨外物也。筋則聯絡肢骸，膜則包貼骸骨。筋與膜較，膜軟於筋；肉與膜較，膜勁於肉；膜居肉之內，骨之外，包骨襯肉之物也。其狀若此，行此功者，必使氣串於膜間，護其骨，壯其筋，合為一體，乃曰全功。"
-      },
-      {
-        "text": "筋通骨，膜通腑",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "氣功是「心識與宇宙作用的空間學，藉陰陽往來互動，透視其機。」氣是超越物質的存在，而氣功所修煉的身體結構，可從肌、骨、筋、膜、腔五個系統來理解。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "肌肉與骨骼各自形成系統。筋與膜具有牽引、連結與傳遞的作用。腔，則是身體內部的空間，如鼻腔、耳腔、胸腔、腹腔、骨盆腔等，以及關節與組織之間的間隙。人體能夠活動，不只因肌肉收縮與骨骼移動，也與這些結構之間的空間變化有關。空間一改變，人體的肌、骨、筋、膜的位置與張力也會隨之調整。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "氣功就是透過意識、動作與體呼吸，鍛鍊肌、骨、筋、膜、腔這五個系統。練功時，一吸一吐與動作會帶動腔體變化，筋與膜的張力也隨之改變；意識則是以意導氣、以氣運身，《導氣篇》正是進入以意導氣的訓練。這些變化合在一起，才構成身體真正的動。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人體的肌肉包括骨骼肌、平滑肌與心肌三類。骨骼肌主要附著於骨骼，多數透過肌腱與骨骼連接，負責身體活動與姿勢維持，大多可以由意識控制，也稱為「隨意肌」。平滑肌主要分布於消化道、支氣管、膀胱、血管等器官與管腔的壁層，屬於非隨意肌，其收縮活動主要受到自律神經、激素及局部因素等調節。心肌只存在於心臟，也屬於非隨意肌，負責心臟持續而有節律地收縮，不受意識直接控制；但在組織結構上具有橫紋，與骨骼肌具有部分相似的形態特徵。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「筋通骨，膜通腑」，是練功理解身體結構的一個基本方向。肌肉、骨骼與內臟周圍都有不同層次的結締組織與膜性結構，使身體各部位能在動作與張力變化中彼此牽動。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「筋」往骨的方向走，可以從肌肉、肌腱與骨骼之間的連接來理解。手在活動時，可以看到手背的肌腱隨著手指動作而牽動；肌肉產生的力量透過肌腱傳到骨骼，進而帶動手指活動。在練功的身體語言中，這種由筋牽動骨骼的關係，可概稱為「筋通骨」。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "又如膝蓋活動時，大腿肌肉、肌腱、髕骨、韌帶與脛骨等結構共同參與關節運動。表面看來只是簡單的屈伸，內部其實有不同組織同時發生位置與張力的變化，共同維持動作中的穩定與支撐。一個動作的形成，背後往往是多個結構共同作用的結果。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "text": "筋溝通到膜",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「筋溝通到膜」，是指筋、骨與不同膜性結構之間的連動。筋與膜並不是彼此封閉的兩套系統，骨膜、肌膜以及內臟周圍的結締組織之間，也存在不同層次的力學關係。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當一個部位受到拉力、壓力，或產生螺旋、旋轉時，力量的變化不會只停留在原處，而會透過周圍的結締組織傳遞。因此，練功不能只把注意力放在某一塊肌肉上。手一動，可能一路牽動肘與肩；腰一轉，胸腔、骨盆與胯部的張力也會跟著改變。局部產生的張力與結構變化，可以透過不同層次的組織影響其他部位；身體感受到的力量與感覺，也會經由感覺神經傳入脊髓與中樞神經系統，參與身體的感覺與動作調節。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "生命並不是由一塊塊實心的組織簡單堆疊而成。骨骼內部有骨髓腔，關節之間有關節腔與間隙，組織之間也保有不同程度的空間，使液體得以交換，組織得以彼此滑動。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從練功的角度來看，心包與內臟、肌肉一路的變化，以及腦膜、脊柱與骨骼一路的變化，可以理解為兩條彼此呼應的身體路徑。所謂「心包走肌肉、腦膜走骨頭」，是對練功時身體連動關係的理解與描述，並非現代解剖學對心包膜與腦膜生理功能的分類。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "心包包覆心臟及大血管根部；腦膜與脊膜則包覆腦與脊髓，具有解剖上的連續性。在這套功法的理解中，頭部、脊柱與身體中央結構進一步形成一條上下連動的軸線，稱為「龍筋」；也有「骨為龍骨、膜為龍膜」的說法。練功所要掌握的，正是這條中央結構在動作中的變化。因此，觀察身體不能只看一個部位，而要看到不同結構之間如何相互牽引、彼此調整。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "text": "腔體的變化，決定身體的動",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "肌、骨、筋、膜、腔，最後要回到「腔」的變化。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "身體並不是一個實心不動的結構。骨骼之間有關節空間，組織之間有間隙，胸腔、腹腔與骨盆腔也會隨著呼吸、姿勢與動作而產生變化。這些空間使不同組織得以移動、滑動，也讓肌、骨、筋、膜在動作中不斷調整彼此的位置與張力。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "傳統醫學有「脾主肌肉」之說，但並不表示肌肉只與脾胃有關。五臟六腑彼此協調，共同維持身體的運作。從練功來看，肌肉也不能脫離內臟以及整個身體而單獨理解。肌肉一動，骨骼的位置跟著改變；骨骼一轉，筋膜的張力隨之調整；呼吸一起一伏，胸腹與骨盆的空間也在變化。身體就是在這些變化之中不斷調整。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，身體真正的「動」，不是某一塊肌肉單獨產生的動作，而是肌肉收縮、骨骼位置、筋膜張力、呼吸與腔體空間共同產生的變化。手一動，不只手在動；腰一轉，也不只是腰在轉。局部的變化會牽動整體，整體的調整也會反過來影響局部。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "腔不是肌、骨、筋、膜之外另一個孤立的零件，而是這些結構得以彼此移動、調整與作用的空間。身體的「空間」也不等於空無，它存在於組織與結構之間，參與液體交換、力量傳遞與身體活動，是生命得以運作的重要條件。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功所練的，因此不只是外在動作。從一吸一吐、一張一弛，到一轉一動，都是在體會身體內部空間如何改變。當肌、骨、筋、膜、腔不再被分開來看，身體的動也不再只是某一個關節、某一塊肌肉的動，而是整個身體空間共同發生的變化。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "text": "在動中閱讀身體",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我們練氣功，最後是練腔體。腔體的形狀一改變，肌、骨、筋、膜的位置與張力也會跟著變化，而這些變化，要在身體真正動起來的時候才能體會。吸氣時，胸腔、腹腔如何變化；手抬起時，肩胛與胸廓之間的關係如何改變，這些都要從自己的身體裡去閱讀。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我把這種在動中閱讀身體的能力稱為「動覺」。人一動，身體就會重新調整。原來偏移的地方，可能在另一種動法裡重新找到位置；原來僵硬的關節，也可能在不硬拉、不硬扯之中，逐漸恢復活動的空間。所以，重點不在動得多，而在每一次動的過程中，能不能感覺身體正在發生什麼，又如何回應。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "一般運動各有它的作用。走路、游泳、伸展或肌力訓練，都會以不同方式改變身體。但值得注意的是，如果一種動作長期只朝固定方向反覆進行，身體也會逐漸形成相應的適應。因此，「做得多」不直接等於「身體更好」，還要看動作之後，身體是否仍保有活動的空間與調整的彈性。運動的效果也與強度、技術以及個人的身體狀況有關；過度拉伸可能影響關節穩定，長期單一的動作模式，也可能使身體形成固定的使用習慣。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，練功不是一味把身體練得更強，而是先學會看見身體。肌、骨、筋、膜、腔五個系統，最後都回到同一件事：身體是一個不斷改變形狀的活體。只要還在呼吸、還在動，身體內部的空間就在改變；空間一變，肌骨的位置、筋膜的張力以及不同部位之間的關係也跟著改變。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當你開始感覺這些變化，功法才真正從外在的招式走進身體。練功不是學會更多、更複雜的動作，而是在每一次呼吸與動作之中，逐漸讀懂自己的身體，學會「感覺你的感覺」。（本文依20170828一晚班課程紀錄裁剪修潤而成）",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      }
-    ],
-    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "date": "2026.11.10",
     "slug": "202611-2611-2-2",
-    "author": "文稿修潤 / 鄭雅靜",
-    "category": "溫故知新"
+    "sourceId": "2611-2-2",
+    "images": [],
+    "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "溫故知新",
+    "order": 1,
+    "homeAnchor": "#article-202611-2611-2-2",
+    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 5 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-1207334.jpg?v=1207334",
+    "author": "文稿彙整 / 台中班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "修煉是練入自己的內在",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "學功夫，最怕的就是練了一輩子，卻不知道自己到底在練什麼。你們每天做動作，但請問：你練到哪裡去了？你練的是肌肉、關節，還是任督兩脈？你有沒有真正練入自己的內在？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "無極修煉是透過動作，逐步建構身體內在的空間、流動、頻率與生命力，最後讓這些功能融合成一個完整的生命系統。教學多年，從雙併螺旋、旋轉乾坤、弧線延伸、氣貫脊髓，到升降引氣、腎臟功法，都是一步一步把你帶進來。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你以為每一招是獨立的，其實每一招都有它的功能，每個功能都有它的頻道。當你能把不同的功能整合起來，就不再只是練一個動作，而是讓整個身體同時運作。這才叫「一竅開來竅竅開，一動無有不動」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，核心問題是：如何從外在的動作，練進身體內在；再從身體的氣，練進內心的覺，最後讓修煉成為你真正的生命本質。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "功法的根本：從形入氣，建立任督兩脈的內在實相",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "無極功法每個動作都有它的空間意義。下手主練督脈，上手主練任脈。為什麼下手要練督脈？因為人體前面有胸腔、腹腔這些具體的空間，但背部的督脈，要透過功法去建立它的空間感與運作能力。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "上手則是讓任脈的流動建立起來。任脈在整個功法體系中，是向下流動的。任督配合，整個內在的運轉才完整。當上、下手逐漸熟練，任督兩脈的功能建立起來，再結合升降引氣的呼吸概念，才能形成完整的周天運轉。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "升降引氣是導氣功法，主要練的就是垂直升降、呼吸與氣機運行之間的配合。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這些動作表面上各不相同，實際上都在為同一件事做準備：讓任督兩脈從抽象的認知，變成能真確體會的內在運作。所以，練出來的任督兩脈，會在身體真實發生，不是抽象、想像，也不用以意導氣，身體自己會發生。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從單一招式到功能整合：無極的生命幾何",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "例如抱轉脊髓與提膝固腎，各有不同的訓練功能。但無極真正要練的，是要能將不同功能融合在一個動作裡。就像一個完整的機械系統，每一個齒輪都有自己的作用，但真正的功能不在某個齒輪，而在整個系統的相互配合。腎臟有腎臟的頻道，肝臟有肝臟的頻道；身根有身根的頻道，耳根有耳根的頻道。不同的頻道如何相互作用？可以用「同頻共振」與「諧波共振」來解釋。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當不同的功能相互匹配、協調，便形成一種整體性的運作。所以，功法不能只看外形，要看它的功能、空間、頻道與相互關係。這就是所謂的「生命幾何」——把生命裡各種不同的元素、條件、功能與關係集合起來，形成一個完整的理解。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功也是如此。當你只看一個動作，就被這個動作限制住；當你能看到所有功法之間的關係，才能理解無極為什麼能把複雜的功能整合成簡單的動作。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "筋膜、螺旋與頻率：從肌肉用力轉向內在流動",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "無極功法強調的是放鬆肌肉，讓身體進入更細膩的內在流動。以九大關節與筋膜系統作比較，關節運動的範圍相對有限，一個關節旋轉，形成一個主要的運動圈；但人體筋膜與組織之間具有複雜的連續關係，其中可以形成更細微、更豐富的螺旋運動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "無極動作有那麼多圓弧、旋轉、螺旋，就是要讓修煉者逐漸從外在的肌肉用力，進入內在細膩的律動。因為只要肌肉一用力，人就緊了；一緊，就被外在的動作抓住，所以真正要練的是鬆。但這個鬆是因為能進入更細微的身體運作，肌肉自然不需要承擔那麼多不必要的緊張。用機械齒輪來比喻：如果一個系統能透過多層次的齒輪與螺旋配合，就不必單靠加大原始動力來完成運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "因此，無極是用更少的不必要耗損，完成更細膩、更完整的內在運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以我們要學會的是動作越來越輕，身體越來越柔軟，內在的感知卻越來越清楚。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "練功關鍵：形、氣、意在同一個當下結合",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功要能形、氣、意合一。「形」是身體動作；「氣」是內在流動；「意」則是對當下運作的專注與覺察。三者必須同時發生。所謂「以意導氣」，是讓覺察跟隨身體當下的運作。當呼吸、動作與內在感知逐漸協調統一時，周天運轉才會從概念變成身體經驗。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「後天呼吸起微風，引動真人呼吸功。」這是極為重要的練功心法。呼吸不必刻意加深，不必用力。微風，就是輕輕的、自然、細微的呼吸，配合任督兩脈的運轉，使整個身體逐漸進入協調的節律。吸與吐，構成一個循環，呼吸也不只是空氣進出，而是配合動作與內在感知，形成持續的周天運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，動作、呼吸、意識，都要讓它自然發生，並且清楚知道自己當下在做什麼。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "周天運轉的節律與練習時間",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "周天運轉與呼吸的節律，以每分鐘約16次的呼吸為基準。無極功法左右兩邊的練習合計約100分鐘。當動作與呼吸維持一定節律時，內在的螺旋與細微律動就可以持續發生。所以，不是單純計算周天轉了幾次，而是要看每次動作，有沒有真正進入內在運作？長時間、持續而細膩的練習，是「結丹」的基礎。但仍應依個人體能與實際狀況調整。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "溫度、結丹與煉精化氣",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當任督兩脈的運作、呼吸、筋膜律動與內在能量逐漸協調時，身體會發熱、出汗，以及更深層的感知變化。這個過程與「煉精化氣」有關。43.15℃是結丹時身體局部作用點的溫度。因為形、氣、意結合的局部作用點，會出現特殊的能量變化。就像玉米變成爆米花。玉米不知道自己變成爆米花是什麼樣子，只有條件成熟，變化才會發生。修煉也是如此。你不能還沒練出身體內在實相，就急著追求後面的境界。必須先建立任督兩脈的運作，再談氣的凝聚，最後才談氣如何轉化內心。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從身根的喚醒到心：六根共振與情感的內化",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "身體記憶，是進入內心的路。練功過程會喚起身體過往的感受，因為人不只用大腦記憶。有些過往經驗，會伴隨身體緊張、疼痛、觸覺與情緒反應而被重新喚起。當練功讓人更細膩地覺察身體時，原本被忽略的感受也可能浮現，這種現象就是「身根」的喚醒。這跟丘腦、杏仁核等神經系統的運作有關。不過，我們要教的不是神經學，而是如何對待身體發生的故事。當過去受傷的感覺浮現時，輕柔、和緩的對待，就會正向。這是身心修煉的重要心法。不是每次練功都要追求強烈的感覺，學會與身體對話，知道身體正在表達什麼，而不是用意志征服它。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "眼、耳、鼻、舌、身、意，是人接觸世界的六個主要途徑。很多時候，你以為是你在看世界，但往往一個聲音、一個畫面、一個人，就能讓你內心起伏，你就被「奪境」了。所以，無極修煉不只是練身體的流動，還要讓六根的訊息逐漸回到內心，形成穩定的整體。以音樂為例。一開始練功，可以選擇自己喜歡、比較容易放鬆的音樂，讓身體與情感進入協調的狀態。但如果換成不喜歡的音樂就練不下去，那就是被外境控制。真正的功夫，是能接受不同的節奏，卻不因此失去內在的主導。這叫「和而不同」。就像一首交響樂，不同樂器卻能共同構成完整的樂章，所以要學會讓不同的感官訊息進入內心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "聽音樂越聽越投入，並不表示共振良好，重點是情感能否進入飽滿的狀態？因為一旦有好惡分判，就已混入大腦的認知。所以要學會分辨什麼是當下直接發生的感受，什麼是大腦根據過去經驗所做的解釋。這就是「覺」與「識」的差別。覺，是直接感知；識，是經過記憶、認知、比較、判斷所形成的理解。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "性能量是生命感受的力量",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "性能量包含眼、耳、鼻、舌、身所展現的生命感受能力。天命之謂性，率性之謂道，修道之謂教。性是生命本有的特質，也是各種感官與身體反應的基礎。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "溫柔地安撫孩子，讓孩子從疼痛與害怕中恢復勇氣；撫摸動物，牠會感到安心；透過真誠的接觸，讓他人感受溫暖與被接納。這些都是性能量的範疇，這才可以把生命的感受力，從狹隘的慾望釋放出來。一個人如果內心只有佔有、發洩與慾望，就不能用「性能量」來合理化自己的行為。真正的修煉，是讓生命的感受轉化成溫柔、關懷、尊重與接納，而不是用來控制別人。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "滿足，意味著還有向外索求的慾望；但飽和是內在具足，不再需要向外索取。就像皮膚吸收水分，當它已經達到飽和，就不再需要繼續吸收。內心也是如此。如果一直覺得自己不夠好、不夠幸福、不夠被愛，就會不斷向外追求；如果內在充實、穩定，就不需要靠外在刺激來證明自己。所以大腦越空，心越容易飽和。所以「空」不是沒有思想，而是不再被雜念、比較與欲求佔據。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "煉精化氣、煉氣化神：不同層次的轉化",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "煉精化氣，主要從身體開始。透過功法、呼吸、任督兩脈的運作，讓身體逐漸形成氣機的飽滿與內在凝聚。這是身體層次的修煉。煉氣化神，則是進一步把修煉帶入內心。身體的氣與內心的氣，不是同一個層次。身體的氣，關係到動作、呼吸、溫度與內在感知；內心的氣，則關係到情感、覺性、信念與人格。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，先把身體空間練出來，再談心的境界。當身體的修煉逐漸成熟，六根的感受能夠回到內心，情感不再被外境牽著走，心才有機會進入飽和的狀態。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "關鍵是，你有沒有因為修煉，而變得更加穩定、清明、溫柔與自在？",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "氣質就是把功夫練成人格",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「氣質」不是外表、儀態或看起來很有修養。在無極修煉，氣，是要練出身體的內涵；質，是這個內涵已經成為生命的一部分，不是刻意裝出溫柔，而是自然溫柔；不是遇到事情才要冷靜，是本來就穩定；不是告訴自己要有愛，而是已經具備接納與關懷的能力。這才叫把氣練成質。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當修煉真正融入人格，一個人的行住坐臥、待人處事，都會自然表現那個氣質。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我們講的「真空」是讓內在形成一個穩定、虛靜、不被外境干擾的空間。在這個空間裡，身體運作自如，六根有敏銳的感知，內心可以映照一切，但不會執著。所謂「真空藏萬有」，當內在越不被既有認知佔據，越能容納不同的生命經驗。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "煉神還虛：從六根的執著回到虛靜",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我們從身體空間拓展到氣的覺知，再從氣進入內心，讓六根逐漸形成完整、飽和的覺性。所以，大腦要一次又一次對自己的認知進行翻牆，突破自己的認知和想法。六根能擺脫大腦的控制，我們就不再被眼睛看到的東西、耳朵聽到的聲音，以及大腦製造的是非所限制，才能逐漸回到六根的自性。所以，這個階段不是逃離世界，反而能看清世界，卻不再被世界牽著走。接下來，就要推向「煉神還虛」，也就是對前面的感受與境界，都要逐漸放下。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "煉虛合道：無為而無不為",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當內在不再需要追逐、不再被外境牽動，也不再執著於要成為什麼樣的人，下一步就是「煉虛合道」。道法自然，不是什麼都不做。而是當一個人的內在已經成熟，行為便不再需要靠刻意的控制來維持。該做什麼，就自然做什麼；該說什麼，就自然說什麼。不必處處證明自己，也不必凡事爭輸贏。真正的自由不是毫無限制地滿足欲望，而是不再被欲望控制。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "真正的無為，也不是消極地逃避人生，而是內在已經具足，能夠順應生命的實際需要。這才是「無為而無不為」的修煉意義。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "道心之愛：修煉最後要完成什麼？",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "修煉的最後歸宿是「愛」，真正的愛不是靠大腦提醒自己要善良、要慈悲、要感恩。如果心裡充滿恐懼、嫉妒與佔有，嘴巴上說愛，仍然只是認知。愛，是各種正向生命品質的整合。溫柔、關懷、謙卑、感恩、喜悅、自在、接納與百折不撓的實踐力⋯⋯當這些特質不再只是偶爾出現的情緒，而是一個人的穩定本質，就是道心之愛。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，透過長期的身心修煉，讓原本被執著與認知遮蔽的生命特質逐漸展現，",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "最後才有可能真正理解愛。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "真正的修行，就要拿得出成果，要能改變自己、對世界產生實際的價值。思想必須有實踐力，我們雖然一再強調練功時不要用大腦胡思亂想，另一方面又必須學會邏輯思考。練功時，不要讓雜念干擾身體的直接覺察，但理解功法、理解生命、理解世界，就必須學會思考，把相關的條件、過去、現在、未來，以及看得見與看不見的因素一起納入考量，這才是有邏輯的思考。如果沒有思考能力，就無法掌握核心概念與方法，遑論落實為能利益社會人群的事業！（本文依20260905-12台中班課程紀錄裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -506,451 +932,308 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-1",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-1207334.jpg?v=1207334",
-    "sourceId": "2611-3-1",
-    "readTime": "約 8 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "學功夫，最怕的就是練了一輩子，卻不知道自己到底在練什麼。你們每天做動作，但請問：你練到哪裡去了？你練的是肌肉、關節，還是任督兩脈？你有沒有真正練入自己的內在？",
-    "order": 2,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "修煉是練入自己的內在",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "學功夫，最怕的就是練了一輩子，卻不知道自己到底在練什麼。你們每天做動作，但請問：你練到哪裡去了？你練的是肌肉、關節，還是任督兩脈？你有沒有真正練入自己的內在？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "無極修煉是透過動作，逐步建構身體內在的空間、流動、頻率與生命力，最後讓這些功能融合成一個完整的生命系統。教學多年，從雙併螺旋、旋轉乾坤、弧線延伸、氣貫脊髓，到升降引氣、腎臟功法，都是一步一步把你帶進來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你以為每一招是獨立的，其實每一招都有它的功能，每個功能都有它的頻道。當你能把不同的功能整合起來，就不再只是練一個動作，而是讓整個身體同時運作。這才叫「一竅開來竅竅開，一動無有不動」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，核心問題是：如何從外在的動作，練進身體內在；再從身體的氣，練進內心的覺，最後讓修煉成為你真正的生命本質。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "功法的根本：從形入氣，建立任督兩脈的內在實相",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "無極功法每個動作都有它的空間意義。下手主練督脈，上手主練任脈。為什麼下手要練督脈？因為人體前面有胸腔、腹腔這些具體的空間，但背部的督脈，要透過功法去建立它的空間感與運作能力。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "上手則是讓任脈的流動建立起來。任脈在整個功法體系中，是向下流動的。任督配合，整個內在的運轉才完整。當上、下手逐漸熟練，任督兩脈的功能建立起來，再結合升降引氣的呼吸概念，才能形成完整的周天運轉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "升降引氣是導氣功法，主要練的就是垂直升降、呼吸與氣機運行之間的配合。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這些動作表面上各不相同，實際上都在為同一件事做準備：讓任督兩脈從抽象的認知，變成能真確體會的內在運作。所以，練出來的任督兩脈，會在身體真實發生，不是抽象、想像，也不用以意導氣，身體自己會發生。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從單一招式到功能整合：無極的生命幾何",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "例如抱轉脊髓與提膝固腎，各有不同的訓練功能。但無極真正要練的，是要能將不同功能融合在一個動作裡。就像一個完整的機械系統，每一個齒輪都有自己的作用，但真正的功能不在某個齒輪，而在整個系統的相互配合。腎臟有腎臟的頻道，肝臟有肝臟的頻道；身根有身根的頻道，耳根有耳根的頻道。不同的頻道如何相互作用？可以用「同頻共振」與「諧波共振」來解釋。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當不同的功能相互匹配、協調，便形成一種整體性的運作。所以，功法不能只看外形，要看它的功能、空間、頻道與相互關係。這就是所謂的「生命幾何」——把生命裡各種不同的元素、條件、功能與關係集合起來，形成一個完整的理解。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功也是如此。當你只看一個動作，就被這個動作限制住；當你能看到所有功法之間的關係，才能理解無極為什麼能把複雜的功能整合成簡單的動作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "筋膜、螺旋與頻率：從肌肉用力轉向內在流動",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "無極功法強調的是放鬆肌肉，讓身體進入更細膩的內在流動。以九大關節與筋膜系統作比較，關節運動的範圍相對有限，一個關節旋轉，形成一個主要的運動圈；但人體筋膜與組織之間具有複雜的連續關係，其中可以形成更細微、更豐富的螺旋運動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "無極動作有那麼多圓弧、旋轉、螺旋，就是要讓修煉者逐漸從外在的肌肉用力，進入內在細膩的律動。因為只要肌肉一用力，人就緊了；一緊，就被外在的動作抓住，所以真正要練的是鬆。但這個鬆是因為能進入更細微的身體運作，肌肉自然不需要承擔那麼多不必要的緊張。用機械齒輪來比喻：如果一個系統能透過多層次的齒輪與螺旋配合，就不必單靠加大原始動力來完成運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "因此，無極是用更少的不必要耗損，完成更細膩、更完整的內在運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以我們要學會的是動作越來越輕，身體越來越柔軟，內在的感知卻越來越清楚。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "練功關鍵：形、氣、意在同一個當下結合",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功要能形、氣、意合一。「形」是身體動作；「氣」是內在流動；「意」則是對當下運作的專注與覺察。三者必須同時發生。所謂「以意導氣」，是讓覺察跟隨身體當下的運作。當呼吸、動作與內在感知逐漸協調統一時，周天運轉才會從概念變成身體經驗。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「後天呼吸起微風，引動真人呼吸功。」這是極為重要的練功心法。呼吸不必刻意加深，不必用力。微風，就是輕輕的、自然、細微的呼吸，配合任督兩脈的運轉，使整個身體逐漸進入協調的節律。吸與吐，構成一個循環，呼吸也不只是空氣進出，而是配合動作與內在感知，形成持續的周天運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，動作、呼吸、意識，都要讓它自然發生，並且清楚知道自己當下在做什麼。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "周天運轉的節律與練習時間",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "周天運轉與呼吸的節律，以每分鐘約16次的呼吸為基準。無極功法左右兩邊的練習合計約100分鐘。當動作與呼吸維持一定節律時，內在的螺旋與細微律動就可以持續發生。所以，不是單純計算周天轉了幾次，而是要看每次動作，有沒有真正進入內在運作？長時間、持續而細膩的練習，是「結丹」的基礎。但仍應依個人體能與實際狀況調整。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "溫度、結丹與煉精化氣",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當任督兩脈的運作、呼吸、筋膜律動與內在能量逐漸協調時，身體會發熱、出汗，以及更深層的感知變化。這個過程與「煉精化氣」有關。43.15℃是結丹時身體局部作用點的溫度。因為形、氣、意結合的局部作用點，會出現特殊的能量變化。就像玉米變成爆米花。玉米不知道自己變成爆米花是什麼樣子，只有條件成熟，變化才會發生。修煉也是如此。你不能還沒練出身體內在實相，就急著追求後面的境界。必須先建立任督兩脈的運作，再談氣的凝聚，最後才談氣如何轉化內心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從身根的喚醒到心：六根共振與情感的內化",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "身體記憶，是進入內心的路。練功過程會喚起身體過往的感受，因為人不只用大腦記憶。有些過往經驗，會伴隨身體緊張、疼痛、觸覺與情緒反應而被重新喚起。當練功讓人更細膩地覺察身體時，原本被忽略的感受也可能浮現，這種現象就是「身根」的喚醒。這跟丘腦、杏仁核等神經系統的運作有關。不過，我們要教的不是神經學，而是如何對待身體發生的故事。當過去受傷的感覺浮現時，輕柔、和緩的對待，就會正向。這是身心修煉的重要心法。不是每次練功都要追求強烈的感覺，學會與身體對話，知道身體正在表達什麼，而不是用意志征服它。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "眼、耳、鼻、舌、身、意，是人接觸世界的六個主要途徑。很多時候，你以為是你在看世界，但往往一個聲音、一個畫面、一個人，就能讓你內心起伏，你就被「奪境」了。所以，無極修煉不只是練身體的流動，還要讓六根的訊息逐漸回到內心，形成穩定的整體。以音樂為例。一開始練功，可以選擇自己喜歡、比較容易放鬆的音樂，讓身體與情感進入協調的狀態。但如果換成不喜歡的音樂就練不下去，那就是被外境控制。真正的功夫，是能接受不同的節奏，卻不因此失去內在的主導。這叫「和而不同」。就像一首交響樂，不同樂器卻能共同構成完整的樂章，所以要學會讓不同的感官訊息進入內心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "聽音樂越聽越投入，並不表示共振良好，重點是情感能否進入飽滿的狀態？因為一旦有好惡分判，就已混入大腦的認知。所以要學會分辨什麼是當下直接發生的感受，什麼是大腦根據過去經驗所做的解釋。這就是「覺」與「識」的差別。覺，是直接感知；識，是經過記憶、認知、比較、判斷所形成的理解。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "性能量是生命感受的力量",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "性能量包含眼、耳、鼻、舌、身所展現的生命感受能力。天命之謂性，率性之謂道，修道之謂教。性是生命本有的特質，也是各種感官與身體反應的基礎。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "溫柔地安撫孩子，讓孩子從疼痛與害怕中恢復勇氣；撫摸動物，牠會感到安心；透過真誠的接觸，讓他人感受溫暖與被接納。這些都是性能量的範疇，這才可以把生命的感受力，從狹隘的慾望釋放出來。一個人如果內心只有佔有、發洩與慾望，就不能用「性能量」來合理化自己的行為。真正的修煉，是讓生命的感受轉化成溫柔、關懷、尊重與接納，而不是用來控制別人。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "滿足，意味著還有向外索求的慾望；但飽和是內在具足，不再需要向外索取。就像皮膚吸收水分，當它已經達到飽和，就不再需要繼續吸收。內心也是如此。如果一直覺得自己不夠好、不夠幸福、不夠被愛，就會不斷向外追求；如果內在充實、穩定，就不需要靠外在刺激來證明自己。所以大腦越空，心越容易飽和。所以「空」不是沒有思想，而是不再被雜念、比較與欲求佔據。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "煉精化氣、煉氣化神：不同層次的轉化",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "煉精化氣，主要從身體開始。透過功法、呼吸、任督兩脈的運作，讓身體逐漸形成氣機的飽滿與內在凝聚。這是身體層次的修煉。煉氣化神，則是進一步把修煉帶入內心。身體的氣與內心的氣，不是同一個層次。身體的氣，關係到動作、呼吸、溫度與內在感知；內心的氣，則關係到情感、覺性、信念與人格。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，先把身體空間練出來，再談心的境界。當身體的修煉逐漸成熟，六根的感受能夠回到內心，情感不再被外境牽著走，心才有機會進入飽和的狀態。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "關鍵是，你有沒有因為修煉，而變得更加穩定、清明、溫柔與自在？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "氣質就是把功夫練成人格",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「氣質」不是外表、儀態或看起來很有修養。在無極修煉，氣，是要練出身體的內涵；質，是這個內涵已經成為生命的一部分，不是刻意裝出溫柔，而是自然溫柔；不是遇到事情才要冷靜，是本來就穩定；不是告訴自己要有愛，而是已經具備接納與關懷的能力。這才叫把氣練成質。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當修煉真正融入人格，一個人的行住坐臥、待人處事，都會自然表現那個氣質。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我們講的「真空」是讓內在形成一個穩定、虛靜、不被外境干擾的空間。在這個空間裡，身體運作自如，六根有敏銳的感知，內心可以映照一切，但不會執著。所謂「真空藏萬有」，當內在越不被既有認知佔據，越能容納不同的生命經驗。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "煉神還虛：從六根的執著回到虛靜",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我們從身體空間拓展到氣的覺知，再從氣進入內心，讓六根逐漸形成完整、飽和的覺性。所以，大腦要一次又一次對自己的認知進行翻牆，突破自己的認知和想法。六根能擺脫大腦的控制，我們就不再被眼睛看到的東西、耳朵聽到的聲音，以及大腦製造的是非所限制，才能逐漸回到六根的自性。所以，這個階段不是逃離世界，反而能看清世界，卻不再被世界牽著走。接下來，就要推向「煉神還虛」，也就是對前面的感受與境界，都要逐漸放下。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "煉虛合道：無為而無不為",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當內在不再需要追逐、不再被外境牽動，也不再執著於要成為什麼樣的人，下一步就是「煉虛合道」。道法自然，不是什麼都不做。而是當一個人的內在已經成熟，行為便不再需要靠刻意的控制來維持。該做什麼，就自然做什麼；該說什麼，就自然說什麼。不必處處證明自己，也不必凡事爭輸贏。真正的自由不是毫無限制地滿足欲望，而是不再被欲望控制。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "真正的無為，也不是消極地逃避人生，而是內在已經具足，能夠順應生命的實際需要。這才是「無為而無不為」的修煉意義。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "道心之愛：修煉最後要完成什麼？",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "修煉的最後歸宿是「愛」，真正的愛不是靠大腦提醒自己要善良、要慈悲、要感恩。如果心裡充滿恐懼、嫉妒與佔有，嘴巴上說愛，仍然只是認知。愛，是各種正向生命品質的整合。溫柔、關懷、謙卑、感恩、喜悅、自在、接納與百折不撓的實踐力⋯⋯當這些特質不再只是偶爾出現的情緒，而是一個人的穩定本質，就是道心之愛。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，透過長期的身心修煉，讓原本被執著與認知遮蔽的生命特質逐漸展現，",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "最後才有可能真正理解愛。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "真正的修行，就要拿得出成果，要能改變自己、對世界產生實際的價值。思想必須有實踐力，我們雖然一再強調練功時不要用大腦胡思亂想，另一方面又必須學會邏輯思考。練功時，不要讓雜念干擾身體的直接覺察，但理解功法、理解生命、理解世界，就必須學會思考，把相關的條件、過去、現在、未來，以及看得見與看不見的因素一起納入考量，這才是有邏輯的思考。如果沒有思考能力，就無法掌握核心概念與方法，遑論落實為能利益社會人群的事業！（本文依20260905-12台中班課程紀錄裁剪修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "無極修煉的身體實相與生命躍遷",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-1",
-    "author": "文稿彙整 / 台中班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-1",
+    "images": [],
+    "excerpt": "學功夫，最怕的就是練了一輩子，卻不知道自己到底在練什麼。你們每天做動作，但請問：你練到哪裡去了？你練的是肌肉、關節，還是任督兩脈？你有沒有真正練入自己的內在？",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 2,
+    "homeAnchor": "#article-202611-2611-3-1",
+    "title": "無極修煉的身體實相與生命躍遷",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 8 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-192987.jpg?v=192987",
+    "author": "文稿彙整 / 四晚班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "從識神回到自心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識空，是將大腦的識神還給元神，從識的分別與認知回到內心本身，回到覺。識空圖上所呈現的身體能量、心的能量與意識能量，最終都指向心的本性能量。因為識空之後，自心的性才會顯現。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人習慣以眼耳鼻舌身接觸外界，再以記憶、知識與想法作出判斷，久而久之，連自己的感受也受到認知左右。專注，仍然是識的作用；刻意求靜，也只是在靜自己的想法。坐著不動，卻一直注意呼吸、心跳、腳麻，一直在問自己靜了沒有，心反而更忙。到了本心，識與想法逐漸空掉，不再被是非對錯牽引，回到一心一意的歸一。自心為息，這個「息」不只是平常的呼吸，而是修煉要回到的本心。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "奪境與造境",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一場演唱會，音樂響起，燈光閃動，原本不喜歡歌手的人，也可能跟著歡呼、流淚。外界營造出特定的情境，內心隨之起伏，這就是奪境。修煉並非拒絕聲音、光線與氣味，而是讓感官照常接收訊息，內心卻不必隨著每個刺激起伏。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "聞沉香，也是從鼻根入手的感覺訓練。同一產區的香木，經歷不同的陽光、水分、生長條件與傷害，香氣各有差異。如果只分辨香與不香，仍停留在表面的辨識；細細體會香氣的層次與變化，才能從氣味中接收更多訊息，而不只是憑既有的認知作判斷。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一滴雨落入大海，融入海水之中，不會因此改變整片大海。外界的訊息也是如此，進入內心，不一定就造成擾動。內心像一塊吸飽水的海綿，放入水中，仍與外界接觸，卻不再輕易吸納水分。修煉要讓感官保持感覺，但不再各自追逐外境，使五覺逐漸歸於一。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "聽之以氣，是誰在聽？",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「聽之以耳，聽之以心，聽之以氣」是三種不同的聽的狀態。「聽之以耳」，是接收聲音，停留在聲音與物相的辨識；「聽之以心」，是聽見後又加入大腦的想法與判斷；「聽之以氣」，則不再由識、想法主導，而是回到自然。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有人問：若聽之以耳的是我，到了聽之以氣，究竟是誰在聽？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "還是我。只是這個「我」不再是由姓名、身分、記憶與想法所認定的我；而是本我，是本心的我。識空了，自心的性就會顯現出來。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "身體人格化",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功時，身體有氣感，並不表示已經掌握周天運轉。如果還停留在尋找氣感、比較氣感強弱，仍然在識的作用中。修煉要讓氣逐漸成為身體運作的主導，使心氣相依、覺與氣相隨，讓周天運轉成為身體的本能。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "周天運轉的關鍵，不是以意導氣，而是以意隨氣。這個「意」就是覺。心要靜，覺隨氣走，這是心氣相依。若一心還想著把氣推到哪裡，讓身體產生某種結果，便成了「心使氣曰強」，反而勞心耗氣。身體的動作如同顯影劑，使內在氣機的變化透過形體投射出來；氣在動，形在動，心卻不必跟著動，這就是動中的「如如不動」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "真正的靜不是固定姿勢。走路時可以定，練功時也可以靜。十八套功法的目的，不在把招式做得漂亮，而是透過反覆鍛鍊，讓身體逐漸形成自己的運作本能。《導氣篇》從身體空間、內臟與經脈的感知入手，練習以意導氣。到了無極，身體內在的空間逐漸建立，便不再處處依靠意念導引，而能以意隨氣。身體不再只是依照意念執行動作，而是在動作中呈現對心法的理解，這是身體人格化。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "息，從一口微風開始",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練中丹田，要從人心打開缺口，讓大腦不再追逐想法，透過身體的鍛鍊，從識性的分別逐漸回到自心的覺性。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "自心為息。修煉從後天呼吸這一口微風開始，身體空間打開到逐漸體會任督二脈的氣機與陰陽互動。周天運轉過程的會陰上提、命門變化，是身體在修煉過程中的本能運行。命門、夾脊、玉枕三關，以及鹿車、羊車、牛車的譬喻，用來說明修煉過程的階段與難度，並非要求身體做出特定動作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在識空圖裡，修煉到去識慾時，身體會產生一種覺的能量，稱為「覺能」。此時不再受識性的認知與慾望支配，已在識性的分別與束縛中解脫，回到自心。識空圖所說的靜頻、覺能、元神、靈能，都是在描述心的不同程度作用，以及修煉到不同層次的生命狀態。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功最後要達到的，是站在陽光底下，外界的一切仍然存在。眼睛看得到，耳朵聽得到，鼻子聞得到，舌頭嚐得到，身體也感覺得到，但感官接收的刺激不再擾動自心。元神的靈能、靜心的靜頻，以及體能量的性能量，都能在修煉中逐漸發揮作用，使身心不再受外境所牽動。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "心外無物",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "氣聚為物，氣散為虛。從這個觀點來看，氣不只是身體某處出現的感覺，也與萬物的聚散、形質的變化及空間有關。談到氣場，可以用大海作比喻：海是一個場，風、溫差及其他擾動會使海面產生不同的波浪。這些波浪彼此交錯、同時存在，但人往往只注意到眼前最明顯的一道波浪。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "身體也不斷接收外界的訊息。聲音、光線、溫度透過不同感官引起感覺與反應，人卻常被其中某個訊息吸引，把注意力集中在局部感受上，忽略了身體與外界持續發生的整體關係。修煉不只是追尋某個部位的氣感，而是透過身體的感覺，體會氣、形與意之間的互動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「氣」與「炁」在修煉語言中有所區分。後天呼吸之氣，是修煉的入手處。從一呼一吸開始，逐漸感受呼吸與身體內在運作的關係，進一步體會先天之「炁」的作用，修煉便不再停留於空氣的吐納。無極內息既涉及氣，也涉及炁，關鍵在能否做到心氣相依，自心為息。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功到最後就是要找到本心。在這裡，「心外無物」的「心外」指念頭、想法形成的物相，而不是外面的世界。人對物質慾望的追逐，往往先起於心中的想念。修煉要從想力回到心力；不要想，直接落在心上。這個心力離不開心氣相依。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "古希臘哲學家以不同方式探索自然的構成與變化。泰勒斯以水說明萬物的本原，赫拉克利特以火及流變理解自然，畢達哥拉斯學派從數與比例探究秩序，德謨克利特則以原子與虛空解釋事物的構成。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "他們從不同方向思考自然萬物的存在與變化。從水、火、數，到原子與虛空，這些對自然的思考，也讓人注意身體與自然環境的關係。自然界的水會隨環境條件改變形態；人體則透過呼吸、循環與體液調節等生理作用維持生命。溫度、濕度與氣候會影響身體的感受，動作、情緒與心念也會引起不同的身體反應。從人體小宇宙觀察自然，進一步理解「炁」在修煉語言中的意義。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "炁的修煉",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「无」是古已有之的字形，與「無」相通。在這套修煉系統中，我們借兩字作出區分：「無」指一般事物在物質層面的有無，「无」指向肉眼看不見的存在。五臟六腑是有形的器官，而內在之「炁」無法像器官一樣直接看見，以暗物質、暗能量比喻不可見之物，並非兩者在科學上等同於炁。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「炁」字下方的四點「灬」，可借火的意象理解意念。漢字中的「冫」與冰有關，「氵」與水有關，「灬」則常為火的變形。水隨溫度與壓力等條件，在固態、液態與氣態之間轉換。水受熱蒸發成水蒸氣，水蒸氣遇冷凝結成水；若溫度進一步降低，水亦可能凝固成冰。形態雖然不同，仍然是水。這種形態變化，可視為理解道家修煉精、氣轉化的譬喻，不能直接等同於物理相變。《黃庭經》涉及氣與津液的修養觀念，《道樞》〈黃庭篇〉也有借雲雨升降來理解內在運行的論述。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在傳統修煉的說法中，肺主氣，肝藏血，氣與血相互作用，可借黃婆居中調和陰陽作比喻。黃是中央之色，黃婆在內丹中具有媒合的意義，常與中央土、真意相聯繫。古人以東廂之男、西廂之女比喻陰陽兩造，兩者要結合，必須有人做媒。龍虎、鉛汞也是如此，需要真意居中調和，才能由分而合。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "精者，氣之至也。修煉借意念為火，以氣與液態的變化為喻，說明精氣的凝聚與轉化。內丹以離為火，屬南方，與心相應；坎為水，屬北方，與腎相應。龍虎、鉛汞，都是用來說明陰陽與精氣相互作用的譬喻。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": false,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "意念如火，火候過強則容易耗損，火候不足又難以催動變化，因此修煉講究火候，也講究守候。修煉從一口呼吸開始，最後仍要回到自心，自心為息。眼耳鼻舌身仍然感受外界，身體也仍然活動，內心已不再隨著外境與想法起伏。識空之後，自心的性才會顯現。自心為息，是回到本心，回到覺性，心氣相依的狀態。（本文依20261015課程紀錄裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -992,308 +1275,619 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-2",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-192987.jpg?v=192987",
-    "sourceId": "2611-3-2",
-    "readTime": "約 5 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
-    "order": 3,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "從識神回到自心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "識空，是將大腦的識神還給元神，從識的分別與認知回到內心本身，回到覺。識空圖上所呈現的身體能量、心的能量與意識能量，最終都指向心的本性能量。因為識空之後，自心的性才會顯現。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "人習慣以眼耳鼻舌身接觸外界，再以記憶、知識與想法作出判斷，久而久之，連自己的感受也受到認知左右。專注，仍然是識的作用；刻意求靜，也只是在靜自己的想法。坐著不動，卻一直注意呼吸、心跳、腳麻，一直在問自己靜了沒有，心反而更忙。到了本心，識與想法逐漸空掉，不再被是非對錯牽引，回到一心一意的歸一。自心為息，這個「息」不只是平常的呼吸，而是修煉要回到的本心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "奪境與造境",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "一場演唱會，音樂響起，燈光閃動，原本不喜歡歌手的人，也可能跟著歡呼、流淚。外界營造出特定的情境，內心隨之起伏，這就是奪境。修煉並非拒絕聲音、光線與氣味，而是讓感官照常接收訊息，內心卻不必隨著每個刺激起伏。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "聞沉香，也是從鼻根入手的感覺訓練。同一產區的香木，經歷不同的陽光、水分、生長條件與傷害，香氣各有差異。如果只分辨香與不香，仍停留在表面的辨識；細細體會香氣的層次與變化，才能從氣味中接收更多訊息，而不只是憑既有的認知作判斷。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "一滴雨落入大海，融入海水之中，不會因此改變整片大海。外界的訊息也是如此，進入內心，不一定就造成擾動。內心像一塊吸飽水的海綿，放入水中，仍與外界接觸，卻不再輕易吸納水分。修煉要讓感官保持感覺，但不再各自追逐外境，使五覺逐漸歸於一。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "聽之以氣，是誰在聽？",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "「聽之以耳，聽之以心，聽之以氣」是三種不同的聽的狀態。「聽之以耳」，是接收聲音，停留在聲音與物相的辨識；「聽之以心」，是聽見後又加入大腦的想法與判斷；「聽之以氣」，則不再由識、想法主導，而是回到自然。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "有人問：若聽之以耳的是我，到了聽之以氣，究竟是誰在聽？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "還是我。只是這個「我」不再是由姓名、身分、記憶與想法所認定的我；而是本我，是本心的我。識空了，自心的性就會顯現出來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "身體人格化",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "練功時，身體有氣感，並不表示已經掌握周天運轉。如果還停留在尋找氣感、比較氣感強弱，仍然在識的作用中。修煉要讓氣逐漸成為身體運作的主導，使心氣相依、覺與氣相隨，讓周天運轉成為身體的本能。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "周天運轉的關鍵，不是以意導氣，而是以意隨氣。這個「意」就是覺。心要靜，覺隨氣走，這是心氣相依。若一心還想著把氣推到哪裡，讓身體產生某種結果，便成了「心使氣曰強」，反而勞心耗氣。身體的動作如同顯影劑，使內在氣機的變化透過形體投射出來；氣在動，形在動，心卻不必跟著動，這就是動中的「如如不動」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "真正的靜不是固定姿勢。走路時可以定，練功時也可以靜。十八套功法的目的，不在把招式做得漂亮，而是透過反覆鍛鍊，讓身體逐漸形成自己的運作本能。《導氣篇》從身體空間、內臟與經脈的感知入手，練習以意導氣。到了無極，身體內在的空間逐漸建立，便不再處處依靠意念導引，而能以意隨氣。身體不再只是依照意念執行動作，而是在動作中呈現對心法的理解，這是身體人格化。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "息，從一口微風開始",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "練中丹田，要從人心打開缺口，讓大腦不再追逐想法，透過身體的鍛鍊，從識性的分別逐漸回到自心的覺性。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "自心為息。修煉從後天呼吸這一口微風開始，身體空間打開到逐漸體會任督二脈的氣機與陰陽互動。周天運轉過程的會陰上提、命門變化，是身體在修煉過程中的本能運行。命門、夾脊、玉枕三關，以及鹿車、羊車、牛車的譬喻，用來說明修煉過程的階段與難度，並非要求身體做出特定動作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "在識空圖裡，修煉到去識慾時，身體會產生一種覺的能量，稱為「覺能」。此時不再受識性的認知與慾望支配，已在識性的分別與束縛中解脫，回到自心。識空圖所說的靜頻、覺能、元神、靈能，都是在描述心的不同程度作用，以及修煉到不同層次的生命狀態。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "練功最後要達到的，是站在陽光底下，外界的一切仍然存在。眼睛看得到，耳朵聽得到，鼻子聞得到，舌頭嚐得到，身體也感覺得到，但感官接收的刺激不再擾動自心。元神的靈能、靜心的靜頻，以及體能量的性能量，都能在修煉中逐漸發揮作用，使身心不再受外境所牽動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "心外無物",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "氣聚為物，氣散為虛。從這個觀點來看，氣不只是身體某處出現的感覺，也與萬物的聚散、形質的變化及空間有關。談到氣場，可以用大海作比喻：海是一個場，風、溫差及其他擾動會使海面產生不同的波浪。這些波浪彼此交錯、同時存在，但人往往只注意到眼前最明顯的一道波浪。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "身體也不斷接收外界的訊息。聲音、光線、溫度透過不同感官引起感覺與反應，人卻常被其中某個訊息吸引，把注意力集中在局部感受上，忽略了身體與外界持續發生的整體關係。修煉不只是追尋某個部位的氣感，而是透過身體的感覺，體會氣、形與意之間的互動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "「氣」與「炁」在修煉語言中有所區分。後天呼吸之氣，是修煉的入手處。從一呼一吸開始，逐漸感受呼吸與身體內在運作的關係，進一步體會先天之「炁」的作用，修煉便不再停留於空氣的吐納。無極內息既涉及氣，也涉及炁，關鍵在能否做到心氣相依，自心為息。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "練功到最後就是要找到本心。在這裡，「心外無物」的「心外」指念頭、想法形成的物相，而不是外面的世界。人對物質慾望的追逐，往往先起於心中的想念。修煉要從想力回到心力；不要想，直接落在心上。這個心力離不開心氣相依。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "古希臘哲學家以不同方式探索自然的構成與變化。泰勒斯以水說明萬物的本原，赫拉克利特以火及流變理解自然，畢達哥拉斯學派從數與比例探究秩序，德謨克利特則以原子與虛空解釋事物的構成。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "他們從不同方向思考自然萬物的存在與變化。從水、火、數，到原子與虛空，這些對自然的思考，也讓人注意身體與自然環境的關係。自然界的水會隨環境條件改變形態；人體則透過呼吸、循環與體液調節等生理作用維持生命。溫度、濕度與氣候會影響身體的感受，動作、情緒與心念也會引起不同的身體反應。從人體小宇宙觀察自然，進一步理解「炁」在修煉語言中的意義。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "炁的修煉",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "「无」是古已有之的字形，與「無」相通。在這套修煉系統中，我們借兩字作出區分：「無」指一般事物在物質層面的有無，「无」指向肉眼看不見的存在。五臟六腑是有形的器官，而內在之「炁」無法像器官一樣直接看見，以暗物質、暗能量比喻不可見之物，並非兩者在科學上等同於炁。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "「炁」字下方的四點「灬」，可借火的意象理解意念。漢字中的「冫」與冰有關，「氵」與水有關，「灬」則常為火的變形。水隨溫度與壓力等條件，在固態、液態與氣態之間轉換。水受熱蒸發成水蒸氣，水蒸氣遇冷凝結成水；若溫度進一步降低，水亦可能凝固成冰。形態雖然不同，仍然是水。這種形態變化，可視為理解道家修煉精、氣轉化的譬喻，不能直接等同於物理相變。《黃庭經》涉及氣與津液的修養觀念，《道樞》〈黃庭篇〉也有借雲雨升降來理解內在運行的論述。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "在傳統修煉的說法中，肺主氣，肝藏血，氣與血相互作用，可借黃婆居中調和陰陽作比喻。黃是中央之色，黃婆在內丹中具有媒合的意義，常與中央土、真意相聯繫。古人以東廂之男、西廂之女比喻陰陽兩造，兩者要結合，必須有人做媒。龍虎、鉛汞也是如此，需要真意居中調和，才能由分而合。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "精者，氣之至也。修煉借意念為火，以氣與液態的變化為喻，說明精氣的凝聚與轉化。內丹以離為火，屬南方，與心相應；坎為水，屬北方，與腎相應。龍虎、鉛汞，都是用來說明陰陽與精氣相互作用的譬喻。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "text": "意念如火，火候過強則容易耗損，火候不足又難以催動變化，因此修煉講究火候，也講究守候。修煉從一口呼吸開始，最後仍要回到自心，自心為息。眼耳鼻舌身仍然感受外界，身體也仍然活動，內心已不再隨著外境與想法起伏。識空之後，自心的性才會顯現。自心為息，是回到本心，回到覺性，心氣相依的狀態。（本文依20261015課程紀錄裁剪修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "從識神作用返回自心",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-2",
-    "author": "文稿彙整 / 四晚班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-2",
+    "images": [],
+    "excerpt": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 3,
+    "homeAnchor": "#article-202611-2611-3-2",
+    "title": "從識神作用返回自心",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 5 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-2297204.jpg?v=2297204",
+    "author": "文稿彙整 / 六早班 / 台中班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "探索知識的邊界，去看更大的生命格局",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我每天都在做惡夢，因為我的精神世界一直在飛翔，一直在設法突破限制。我每天在想的都是諸如一個人還可以走到哪裡，生命的本質究竟是什麼，念力怎麼產生，人心如何超越大腦的控制？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "為什麼我講課這麼辛苦？因為我要把自己在生命邊界探索的東西，講成你們聽得懂的語言。我還顧慮一件事：我會不會講到最後，連自己都相信一套沒有實際經歷的東西？所以我談的，必須是我自己所理解、實踐、經歷的。可是你們不能因為我講得精彩就相信，也你們要透過修煉，去理解那個邏輯，看它能不能也在你的生命裡發生。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，我教的是，建立一種能夠認識自己、認識世界的能力。不要以為人生想開一點，就叫開悟，你可能還在原來那個小世界。而我要帶你們去看一個更大的生命格局。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "識神與元神：後天氣和先天炁的差別",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我們現在講周天運轉圖。人身、人心、大腦如果都在識神控制下，就是後天氣的世界。識神一旦成為主宰，你的心就變成它的工具。你所有的感覺、情緒與身體反應，都被它牽著走。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "先天炁，則是要回到元神的作用。後天氣與先天炁的區別關鍵是由誰主導生命？識神主導，形成後天氣的場；元神主導，才有元精、元炁、元神。下丹田的作用稱為元精，中丹田的作用稱為元炁，上丹田的作用稱為元神。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "下丹田是指肉身的物質交換與生命運作。中丹田連結心的作用，上丹田連結神的作用。所以三丹田是生命三種不同層次的運作。我們練無極，最重要的就是讓識神逐漸退場，元神重新發生作用。這叫從後天返先天。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "氣與炁：水、火、四季，以及煉丹的生命語言",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "要了解「氣」與「炁」的差別，得先明白它背後的概念。水有固態、液態、氣態，溫度不同，形式就不同。「炁」字下四點火，就連結火候、丹爐與煉丹的概念。「炁」可作為元氣的名稱，也可以放進修煉的動態過程裡理解。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講水與火，也在連結古代哲學對自然的觀察。像泰勒斯提出水是萬物本源，赫拉克利特強調火與變化。我把這些思想拿來與東方的陰陽、火候、氣機相互對照。春夏秋冬，水有蒸發、凝結、融化；大地的生命隨著溫度、濕度、陽光而變化。所以，生命是在條件與關係中不斷轉化。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "身體有形有相的反應很容易感覺；真正的元氣是指無形無相的生命力。例如站樁覺得腳底發麻、身體發熱，某個地方有一股力量，那只是你能感受到的身體現象，不是修煉的全部。我們要練的是在完全安靜之後，身體自然發生的作用。越想抓住它，越容易落入識神。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "本心、識心、假心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們現在的心已經不是本心，而是識心、假心，也就是大腦安排的心。你說謝謝，真的是由衷感謝嗎？你是毫無條件愛一個人，還是因為他能滿足你的需要？你的善心，是不是在滿足自己的某種感覺呢？⋯⋯這些都要看清楚。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "大腦透過六根，不斷向外追逐。得之則喜，失則怒恨怨惱煩，這些情緒最後都",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "倒在心裡！所以，大腦是把心當成垃圾處理場。想想看，你這顆心從出生開始就不斷維持生命的運作，密切配合你的喜怒哀樂，可是你怎麼回報它？我們講「練神還虛」，「虛」就是要讓心從識神的控制中回到本來狀態，讓它重新成為本心。本心就是道心，也就是靈魂的本質。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "愛是善的總和",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "世人所知的愛，都帶著條件，是各種關係的價值交換，不是本心之愛。本心之愛是無條件的，會在行為中顯露。你看自己的心，它的使命就是不計代價維持你的生命。但你有真正感謝過它嗎？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我借用「正弦波」規律、連續與平衡的特性，類比心本就具有的生命節律，以形容本心的穩定與正向。當識性不斷干擾，內心就會失去安定；回到本心，正向的力量才能重新發生。所以，我把善的總和稱為愛。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "文明越進步，人心越沒有力量",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "試問：人類建立文明以後，是讓本心越來越自由，還是讓大腦越來越專橫？周公制禮作樂，是為了建立人與人之間的秩序，可是發展到後來，空有禮貌，外在形式越來越多，人學會用大腦包裝自己，本心卻被壓抑了。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "再講到樂。音樂有很強的感染力，它可以成為修養心性的工具，也可能讓人完全被奪境。你們練功時聽音樂，也要知道是音樂幫助你安定，還是被音樂帶走，失去了自己的覺察？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "把禮樂射御書數放在一起談，是要你們看見，文明建立了龐大的知識與制度，可是人的本心卻未因此成長。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "東方長期研究人的生命、經絡、陰陽與修煉；西方哲學則從水、火、數字、自然現象，逐步發展出另一套理解世界的方法。兩條文明路線各有發展，可惜最後只剩知識，而現在，我們一直在談的「覺醒」，正是扭轉文明發展方向的好時機。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "本自具足： 看清真正的需要",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "多數人一生都在追求，要有錢、有房有車、還要有地位、要受到肯定與尊重。你說有錢才會幸福，那為什麼不直接追求幸福？要有錢，是因為想得到安全感；想買車，是因為需要交通的便利；想有房子，是希望有安定的生活。可是你忘了真正的需求，只剩下追逐外在的形式。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講本心念力，就要從這裡開始理解。本心要的，是那個根源；你口渴了，你需要的是解渴，至於喝白開水、茶水，還是其他飲料，那是大腦的選擇。所以我講「無相而生」，是要先認識生命的根本需求。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用生活經驗講心法，是要你把修煉跟人生統合起來。你會講陰陽轉化，回到生活，卻被得失成敗牽著走，那你到底練到了什麼？",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "場與波：看到一個粒子，卻失去整片大海",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "物理學有電磁場、引力場、量子場，還有希格斯場。我用「場」的概念，是要讓你理解：你所看見的事物並非孤立存在，它與更大的空間、條件和作用有關。我說「場就是空間」，就是要你們把眼光從一個點放大到整體。用大海來比喻。一片海有無數波浪，有不同的方向、速度與變化。可是你站在某個地方，只看到眼前那道浪，就以為整片海就是那個樣子。你選擇一個角度，就把其他可能性排除。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我們談疊加、坍縮、粒子與場，是為了體會：當認定某一個判斷幾度時，你可能同時失去對整體的理解。人體也是一樣。我們可以從身體的物質作用去看，也可以從情緒、認知、生命經驗去看。我用身場、心場、腦場來區分不同層次的作用。當這些都被識神主導，就形成後天的生命模式。如果讓覺性成為主導，這種轉化就叫做「先天炁的場」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講「煉氣就是練空間」，就是要逐漸從局部感覺進入整體的覺察。例如在起式時把身體空間打開，是藉由身體的開展，重新認識自己的生命空間。一旦能看見整體，對一切的理解，就不會停留在原來的角度。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練「識空」就是讓識神逐漸失去控制權。大腦照樣處理生活上的問題，但不能讓它主導整個生命。你們現在最麻煩的是連修煉也要用想的。今天練功有一個感覺，就開始分析是不是氣通了；明天感覺不一樣，又開始懷疑是不是退步了。你永遠都在追逐現象。如果一直把某個感覺當成修煉的成果，就很容易回到識神。所以要「去識慾」，拿掉識神對外在形式的執著，去掉那些由欲望形成的判斷。真正的元氣無形無相，若有可以展示的現象，那又是識神在作怪。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，「道法自然」是所有修煉經過長期淬煉後，不再需要刻意造作。這才有機會讓識性逐漸退位。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "無極的五個基本條件：凝神、回光、調息、本心、自然",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練無極要具備什麼？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第一，凝神，把散亂的作用收回，先讓自己的神安住。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第二，回光，把向外追逐的覺察重新帶回內心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第三，調息，逐漸進入慢、勻、細、長的自然呼吸，在身體安定的情況下，讓呼吸自然調和。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第四，本心。凝神、回光、調息，最後都要回到本心、道心。沒有本心，前幾個都可能只是技巧。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第五，自然。前幾項條件逐漸具備，後面的運作就要順其自然。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「致虛極，守靜篤。」是整個修煉的方向。所以凝神、回光、調息、本心、自然，缺一不可。每次練功，都要看自己究竟做到了多少。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "真人呼吸與心氣相依：喚醒心的覺性",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我很久之前就講過「自心為息」，但並未深談。我現在談的是修煉中如何讓呼吸與心的覺察相依。你每天都在呼吸，但你的心很少參與。你可能一邊呼吸，一邊生氣；你的呼吸在進行，心卻被大腦帶得亂七八糟。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "藉由「眼觀鼻、鼻觀心」，把呼吸的覺察帶回內心，讓心氣相依。我用心火、腎水來比喻這個運作。心像火爐，呼吸像微風，不要把火吹滅，而要讓火爐穩定運作。所以說「後天呼吸起微風，引動真人呼吸功」，就要強調心爐。心爐要先有本心的覺，如果心中只有怨恨恐懼，哪來的正向力量？所以心氣相依的呼吸要喚醒愛，喚醒本心的活性。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "能讓呼吸與本心相應，逐漸減少識神干擾，就開始進入煉氣期，要真正認識生命的內在空間了。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "道心四大結構：信、愛、光、念，從本心的頻率，進入生命的創造力量",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "信、愛、光、念。在整個修煉系統裡，是一個相互連結的結構。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "愛是本心的正向力量，是無條件的生命作用。當心不再被識神的利益交換佔據，才有可能逐漸回到這個本然狀態。用正弦波來比喻。假如內心動盪，今天喜歡、明天討厭，今天相信、明天懷疑，所有念頭都被外界牽著走，怎麼可能形成穩定的生命方向？所以心要練「靜頻」。真正的靜，是在最複雜的變化中，仍能守住本心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "信，是生命內在形成的真實信息。可以理解為一種能夠承載生命方向的內在結構。《道德經》講：「窈兮冥兮，其中有精；其精甚真，其中有信。」你看不見空間，可是當你走進去，空間就在那裡。所以，有些修煉的作用，不是靠大腦想出一個形狀，再去證明它存在，必須先讓識神安靜，透過覺性逐漸體會。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "接著是光。心光，不只是眼睛看到的光線，而是借光與頻率的概念，來說明本心的作用如何展開。在我們的心法架構裡，內在的愛形成穩定的力量，信承載信息，光則讓這個信息進入頻率化的表現。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "最後是念。念力是本心的力量在穩定的信、愛、光的作用下，形成一種生命的方向。此外，還要認識一個更深的問題：你的生命究竟由什麼力量推動？是恐懼、貪婪、比較？還是內心真正的愛與正向力量？當本心成為主導，你會逐漸知道自己真正需要什麼，也會知道自己為什麼要活成這個樣子。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以信、愛、光、念，是我用來說明本心如何由內在安定，逐漸走向生命實踐的一套心法。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從五覺合一到靈覺",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "五覺合一，是要把眼、耳、鼻、舌、身的覺察逐漸從識神的分別帶回來。我教你們聞香，是要讓你們透過鼻根的訓練，學會感受，不要每次的感受都被大腦的認為帶走。練功也是一樣。常有人問，我現在的感覺對不對？我反要問你，為什麼要急著判斷對不對，能不能先好好感受？五覺逐漸整合以後，更深一層的覺察稱為靈覺。真正重要的是能不能不被自己的想法欺騙。這才是覺性要處理的問題。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以不管是靈覺，還是五覺合一，最後都要回到本心。如果練到最後，你只是覺得自己比別人高明，那不過是把我執練得更肥大。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從愛到感恩：真正的道心，連付出的計算都放下了",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "講到更深的層次。除了本心之愛，「感恩」比「愛」更難。因為一般人講愛，常常還有一個「我」在付出；我愛你、我照顧你，我為你犧牲。感恩，是連這個付出的計算都逐漸放下。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用「感恩是一切」來形容這個狀態。熱鬧時、冷清時，都可以感恩；得到可以感恩，失去也能感恩。這是內在不再被外在變動的一切控制。例如你現在為什麼不幸福？因為你要每件事都順心滿意才幸福。那你就是把幸福交給外在條件，殊不知從本心建立的幸福才能穩固。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講道心，是從大腦的想法走到「致虛極」，從識性走向覺性，再從覺性逐漸走向更自然的生命狀態。我花很多年帶你們從六根下手，現在講道心，不知道還要多久時間？但至少你們要知道自己往哪裡走。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "起式與收式，就是整套心法的身體實踐",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講了很多，你們一定覺得很複雜，其實很簡單，大道至簡，你們抓不到核心，是因為你們還無法從自己的身體直接理解。當你真正練到了，很多語言就不需要了。我教無極，光是起式，就已經把身體空間打開了。從無極入定，到一分為二，從腳底開始，把身體開關一個個打開。在那個過程裡，就可以逐漸看見自己。因為起式本身就是一套完整的修煉。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當你能進入自己的靈性空間，六塵不再干擾，你就可以選擇自己的覺察方式。是聽之以耳？聽之以心？聽之以氣？還是我講的聽之以神？這些都要透過身體去體會。中間要做一百分鐘的練習，是為了給你們足夠的時間，在動中持靜，在變化中認識自己，讓身體逐漸進入自然的運作狀態。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "最後收式，重新歸元。把前面展開的陰陽、空間、覺察與氣機重新整合。所以起式與收式，已經把整套無極的心法表達出來。要知道，無極不是我先想出一套理論，再編一套拳。恰恰相反。我是從這套動作的長期實踐裡，逐漸發展出這套心法。所以不能只研究心法，不練身體。也不能只練身體，卻不理解心法。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "出陰神與出陽神，生命主導權的轉換",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識神與元神是整套修煉系統的重要分別。出陰神就是識神主導的想法、現象與感知；你越執著那些現象，越可能被它困住。出陽神是把元神、道心、靈覺的作用，推向更深層的修煉目標。這是我對生命可能達到的境界所提出的理解與探索。但我們越往高處走，越要警惕自己。因為人最容易自我欺騙，你有個感覺，就會把它說成真理；有人誇讚你，你就洋洋自得。這是識神的膨脹。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "要強調的是，我用靈魂、祖先、頻道、同頻共振比喻生命的連結。這是我提出的靈性思考架構，我希望你們從中學會，從有限的認知走向更寬廣的生命理解。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "AI時代的文明：創造新的賽道",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "未來的文明將有劇烈變化。AI的知識能力與速度匪夷所思，人就要有更高的理解能力，要有邏輯和真正的創造力，不能永遠活在既有的賽道裡，必須不斷嘗試建立另一套看世界的方法。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用氣機導引切入人道教學，這只是我整個生命教學裡的一個切片。你要透過這個切片，逐漸認識更大的生命系統。現在，AI可以成為我的得力助手，幫我將各班課程互相補充，讓心法形成完整的知識架構，也可以幫你們理解比較抽象的概念。但這些都要回到自己身上，最後變成你的生命本能。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "滾動式教學：逐字稿讓你重新認識自己",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "要你們整理逐字稿，是為了讓你們重新聽、重新整理、討論。這叫滾動式教學。同樣地，你是不是可以真正理解、做出來、活出來，成為生命的能力？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有足夠的學習與實踐，才能建立自己的判斷。沒有真正理解，就急著解釋，那就是識神在作用。對生命的真相保持謙卑，知道自己還有很多不清楚、沒有真正做到的，才有繼續成長的空間。有一天，當你真正體會到心法的作用，你講出來的就你親身經歷的生命智慧。（本文依20261017六早、台中兩班課程紀錄裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -1374,619 +1968,709 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-3",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-2297204.jpg?v=2297204",
-    "sourceId": "2611-3-3",
-    "readTime": "約 9 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "我每天都在做惡夢，因為我的精神世界一直在飛翔，一直在設法突破限制。我每天在想的都是諸如一個人還可以走到哪裡，生命的本質究竟是什麼，念力怎麼產生，人心如何超越大腦的控制？",
-    "order": 4,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "探索知識的邊界，去看更大的生命格局",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我每天都在做惡夢，因為我的精神世界一直在飛翔，一直在設法突破限制。我每天在想的都是諸如一個人還可以走到哪裡，生命的本質究竟是什麼，念力怎麼產生，人心如何超越大腦的控制？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "為什麼我講課這麼辛苦？因為我要把自己在生命邊界探索的東西，講成你們聽得懂的語言。我還顧慮一件事：我會不會講到最後，連自己都相信一套沒有實際經歷的東西？所以我談的，必須是我自己所理解、實踐、經歷的。可是你們不能因為我講得精彩就相信，也你們要透過修煉，去理解那個邏輯，看它能不能也在你的生命裡發生。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，我教的是，建立一種能夠認識自己、認識世界的能力。不要以為人生想開一點，就叫開悟，你可能還在原來那個小世界。而我要帶你們去看一個更大的生命格局。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "識神與元神：後天氣和先天炁的差別",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我們現在講周天運轉圖。人身、人心、大腦如果都在識神控制下，就是後天氣的世界。識神一旦成為主宰，你的心就變成它的工具。你所有的感覺、情緒與身體反應，都被它牽著走。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "先天炁，則是要回到元神的作用。後天氣與先天炁的區別關鍵是由誰主導生命？識神主導，形成後天氣的場；元神主導，才有元精、元炁、元神。下丹田的作用稱為元精，中丹田的作用稱為元炁，上丹田的作用稱為元神。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "下丹田是指肉身的物質交換與生命運作。中丹田連結心的作用，上丹田連結神的作用。所以三丹田是生命三種不同層次的運作。我們練無極，最重要的就是讓識神逐漸退場，元神重新發生作用。這叫從後天返先天。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "氣與炁：水、火、四季，以及煉丹的生命語言",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "要了解「氣」與「炁」的差別，得先明白它背後的概念。水有固態、液態、氣態，溫度不同，形式就不同。「炁」字下四點火，就連結火候、丹爐與煉丹的概念。「炁」可作為元氣的名稱，也可以放進修煉的動態過程裡理解。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講水與火，也在連結古代哲學對自然的觀察。像泰勒斯提出水是萬物本源，赫拉克利特強調火與變化。我把這些思想拿來與東方的陰陽、火候、氣機相互對照。春夏秋冬，水有蒸發、凝結、融化；大地的生命隨著溫度、濕度、陽光而變化。所以，生命是在條件與關係中不斷轉化。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "身體有形有相的反應很容易感覺；真正的元氣是指無形無相的生命力。例如站樁覺得腳底發麻、身體發熱，某個地方有一股力量，那只是你能感受到的身體現象，不是修煉的全部。我們要練的是在完全安靜之後，身體自然發生的作用。越想抓住它，越容易落入識神。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "本心、識心、假心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們現在的心已經不是本心，而是識心、假心，也就是大腦安排的心。你說謝謝，真的是由衷感謝嗎？你是毫無條件愛一個人，還是因為他能滿足你的需要？你的善心，是不是在滿足自己的某種感覺呢？⋯⋯這些都要看清楚。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "大腦透過六根，不斷向外追逐。得之則喜，失則怒恨怨惱煩，這些情緒最後都",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "倒在心裡！所以，大腦是把心當成垃圾處理場。想想看，你這顆心從出生開始就不斷維持生命的運作，密切配合你的喜怒哀樂，可是你怎麼回報它？我們講「練神還虛」，「虛」就是要讓心從識神的控制中回到本來狀態，讓它重新成為本心。本心就是道心，也就是靈魂的本質。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "愛是善的總和",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "世人所知的愛，都帶著條件，是各種關係的價值交換，不是本心之愛。本心之愛是無條件的，會在行為中顯露。你看自己的心，它的使命就是不計代價維持你的生命。但你有真正感謝過它嗎？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我借用「正弦波」規律、連續與平衡的特性，類比心本就具有的生命節律，以形容本心的穩定與正向。當識性不斷干擾，內心就會失去安定；回到本心，正向的力量才能重新發生。所以，我把善的總和稱為愛。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "文明越進步，人心越沒有力量",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "試問：人類建立文明以後，是讓本心越來越自由，還是讓大腦越來越專橫？周公制禮作樂，是為了建立人與人之間的秩序，可是發展到後來，空有禮貌，外在形式越來越多，人學會用大腦包裝自己，本心卻被壓抑了。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "再講到樂。音樂有很強的感染力，它可以成為修養心性的工具，也可能讓人完全被奪境。你們練功時聽音樂，也要知道是音樂幫助你安定，還是被音樂帶走，失去了自己的覺察？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "把禮樂射御書數放在一起談，是要你們看見，文明建立了龐大的知識與制度，可是人的本心卻未因此成長。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "東方長期研究人的生命、經絡、陰陽與修煉；西方哲學則從水、火、數字、自然現象，逐步發展出另一套理解世界的方法。兩條文明路線各有發展，可惜最後只剩知識，而現在，我們一直在談的「覺醒」，正是扭轉文明發展方向的好時機。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "本自具足： 看清真正的需要",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "多數人一生都在追求，要有錢、有房有車、還要有地位、要受到肯定與尊重。你說有錢才會幸福，那為什麼不直接追求幸福？要有錢，是因為想得到安全感；想買車，是因為需要交通的便利；想有房子，是希望有安定的生活。可是你忘了真正的需求，只剩下追逐外在的形式。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講本心念力，就要從這裡開始理解。本心要的，是那個根源；你口渴了，你需要的是解渴，至於喝白開水、茶水，還是其他飲料，那是大腦的選擇。所以我講「無相而生」，是要先認識生命的根本需求。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用生活經驗講心法，是要你把修煉跟人生統合起來。你會講陰陽轉化，回到生活，卻被得失成敗牽著走，那你到底練到了什麼？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "場與波：看到一個粒子，卻失去整片大海",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "物理學有電磁場、引力場、量子場，還有希格斯場。我用「場」的概念，是要讓你理解：你所看見的事物並非孤立存在，它與更大的空間、條件和作用有關。我說「場就是空間」，就是要你們把眼光從一個點放大到整體。用大海來比喻。一片海有無數波浪，有不同的方向、速度與變化。可是你站在某個地方，只看到眼前那道浪，就以為整片海就是那個樣子。你選擇一個角度，就把其他可能性排除。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我們談疊加、坍縮、粒子與場，是為了體會：當認定某一個判斷幾度時，你可能同時失去對整體的理解。人體也是一樣。我們可以從身體的物質作用去看，也可以從情緒、認知、生命經驗去看。我用身場、心場、腦場來區分不同層次的作用。當這些都被識神主導，就形成後天的生命模式。如果讓覺性成為主導，這種轉化就叫做「先天炁的場」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講「煉氣就是練空間」，就是要逐漸從局部感覺進入整體的覺察。例如在起式時把身體空間打開，是藉由身體的開展，重新認識自己的生命空間。一旦能看見整體，對一切的理解，就不會停留在原來的角度。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練「識空」就是讓識神逐漸失去控制權。大腦照樣處理生活上的問題，但不能讓它主導整個生命。你們現在最麻煩的是連修煉也要用想的。今天練功有一個感覺，就開始分析是不是氣通了；明天感覺不一樣，又開始懷疑是不是退步了。你永遠都在追逐現象。如果一直把某個感覺當成修煉的成果，就很容易回到識神。所以要「去識慾」，拿掉識神對外在形式的執著，去掉那些由欲望形成的判斷。真正的元氣無形無相，若有可以展示的現象，那又是識神在作怪。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，「道法自然」是所有修煉經過長期淬煉後，不再需要刻意造作。這才有機會讓識性逐漸退位。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "無極的五個基本條件：凝神、回光、調息、本心、自然",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練無極要具備什麼？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第一，凝神，把散亂的作用收回，先讓自己的神安住。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第二，回光，把向外追逐的覺察重新帶回內心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第三，調息，逐漸進入慢、勻、細、長的自然呼吸，在身體安定的情況下，讓呼吸自然調和。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第四，本心。凝神、回光、調息，最後都要回到本心、道心。沒有本心，前幾個都可能只是技巧。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第五，自然。前幾項條件逐漸具備，後面的運作就要順其自然。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「致虛極，守靜篤。」是整個修煉的方向。所以凝神、回光、調息、本心、自然，缺一不可。每次練功，都要看自己究竟做到了多少。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "真人呼吸與心氣相依：喚醒心的覺性",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我很久之前就講過「自心為息」，但並未深談。我現在談的是修煉中如何讓呼吸與心的覺察相依。你每天都在呼吸，但你的心很少參與。你可能一邊呼吸，一邊生氣；你的呼吸在進行，心卻被大腦帶得亂七八糟。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "藉由「眼觀鼻、鼻觀心」，把呼吸的覺察帶回內心，讓心氣相依。我用心火、腎水來比喻這個運作。心像火爐，呼吸像微風，不要把火吹滅，而要讓火爐穩定運作。所以說「後天呼吸起微風，引動真人呼吸功」，就要強調心爐。心爐要先有本心的覺，如果心中只有怨恨恐懼，哪來的正向力量？所以心氣相依的呼吸要喚醒愛，喚醒本心的活性。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "能讓呼吸與本心相應，逐漸減少識神干擾，就開始進入煉氣期，要真正認識生命的內在空間了。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "道心四大結構：信、愛、光、念，從本心的頻率，進入生命的創造力量",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "信、愛、光、念。在整個修煉系統裡，是一個相互連結的結構。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "愛是本心的正向力量，是無條件的生命作用。當心不再被識神的利益交換佔據，才有可能逐漸回到這個本然狀態。用正弦波來比喻。假如內心動盪，今天喜歡、明天討厭，今天相信、明天懷疑，所有念頭都被外界牽著走，怎麼可能形成穩定的生命方向？所以心要練「靜頻」。真正的靜，是在最複雜的變化中，仍能守住本心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "信，是生命內在形成的真實信息。可以理解為一種能夠承載生命方向的內在結構。《道德經》講：「窈兮冥兮，其中有精；其精甚真，其中有信。」你看不見空間，可是當你走進去，空間就在那裡。所以，有些修煉的作用，不是靠大腦想出一個形狀，再去證明它存在，必須先讓識神安靜，透過覺性逐漸體會。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "接著是光。心光，不只是眼睛看到的光線，而是借光與頻率的概念，來說明本心的作用如何展開。在我們的心法架構裡，內在的愛形成穩定的力量，信承載信息，光則讓這個信息進入頻率化的表現。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "最後是念。念力是本心的力量在穩定的信、愛、光的作用下，形成一種生命的方向。此外，還要認識一個更深的問題：你的生命究竟由什麼力量推動？是恐懼、貪婪、比較？還是內心真正的愛與正向力量？當本心成為主導，你會逐漸知道自己真正需要什麼，也會知道自己為什麼要活成這個樣子。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以信、愛、光、念，是我用來說明本心如何由內在安定，逐漸走向生命實踐的一套心法。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從五覺合一到靈覺",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "五覺合一，是要把眼、耳、鼻、舌、身的覺察逐漸從識神的分別帶回來。我教你們聞香，是要讓你們透過鼻根的訓練，學會感受，不要每次的感受都被大腦的認為帶走。練功也是一樣。常有人問，我現在的感覺對不對？我反要問你，為什麼要急著判斷對不對，能不能先好好感受？五覺逐漸整合以後，更深一層的覺察稱為靈覺。真正重要的是能不能不被自己的想法欺騙。這才是覺性要處理的問題。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以不管是靈覺，還是五覺合一，最後都要回到本心。如果練到最後，你只是覺得自己比別人高明，那不過是把我執練得更肥大。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從愛到感恩：真正的道心，連付出的計算都放下了",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "講到更深的層次。除了本心之愛，「感恩」比「愛」更難。因為一般人講愛，常常還有一個「我」在付出；我愛你、我照顧你，我為你犧牲。感恩，是連這個付出的計算都逐漸放下。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用「感恩是一切」來形容這個狀態。熱鬧時、冷清時，都可以感恩；得到可以感恩，失去也能感恩。這是內在不再被外在變動的一切控制。例如你現在為什麼不幸福？因為你要每件事都順心滿意才幸福。那你就是把幸福交給外在條件，殊不知從本心建立的幸福才能穩固。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講道心，是從大腦的想法走到「致虛極」，從識性走向覺性，再從覺性逐漸走向更自然的生命狀態。我花很多年帶你們從六根下手，現在講道心，不知道還要多久時間？但至少你們要知道自己往哪裡走。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "起式與收式，就是整套心法的身體實踐",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講了很多，你們一定覺得很複雜，其實很簡單，大道至簡，你們抓不到核心，是因為你們還無法從自己的身體直接理解。當你真正練到了，很多語言就不需要了。我教無極，光是起式，就已經把身體空間打開了。從無極入定，到一分為二，從腳底開始，把身體開關一個個打開。在那個過程裡，就可以逐漸看見自己。因為起式本身就是一套完整的修煉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當你能進入自己的靈性空間，六塵不再干擾，你就可以選擇自己的覺察方式。是聽之以耳？聽之以心？聽之以氣？還是我講的聽之以神？這些都要透過身體去體會。中間要做一百分鐘的練習，是為了給你們足夠的時間，在動中持靜，在變化中認識自己，讓身體逐漸進入自然的運作狀態。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "最後收式，重新歸元。把前面展開的陰陽、空間、覺察與氣機重新整合。所以起式與收式，已經把整套無極的心法表達出來。要知道，無極不是我先想出一套理論，再編一套拳。恰恰相反。我是從這套動作的長期實踐裡，逐漸發展出這套心法。所以不能只研究心法，不練身體。也不能只練身體，卻不理解心法。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "出陰神與出陽神，生命主導權的轉換",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "識神與元神是整套修煉系統的重要分別。出陰神就是識神主導的想法、現象與感知；你越執著那些現象，越可能被它困住。出陽神是把元神、道心、靈覺的作用，推向更深層的修煉目標。這是我對生命可能達到的境界所提出的理解與探索。但我們越往高處走，越要警惕自己。因為人最容易自我欺騙，你有個感覺，就會把它說成真理；有人誇讚你，你就洋洋自得。這是識神的膨脹。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "要強調的是，我用靈魂、祖先、頻道、同頻共振比喻生命的連結。這是我提出的靈性思考架構，我希望你們從中學會，從有限的認知走向更寬廣的生命理解。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "AI時代的文明：創造新的賽道",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "未來的文明將有劇烈變化。AI的知識能力與速度匪夷所思，人就要有更高的理解能力，要有邏輯和真正的創造力，不能永遠活在既有的賽道裡，必須不斷嘗試建立另一套看世界的方法。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用氣機導引切入人道教學，這只是我整個生命教學裡的一個切片。你要透過這個切片，逐漸認識更大的生命系統。現在，AI可以成為我的得力助手，幫我將各班課程互相補充，讓心法形成完整的知識架構，也可以幫你們理解比較抽象的概念。但這些都要回到自己身上，最後變成你的生命本能。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "滾動式教學：逐字稿讓你重新認識自己",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "要你們整理逐字稿，是為了讓你們重新聽、重新整理、討論。這叫滾動式教學。同樣地，你是不是可以真正理解、做出來、活出來，成為生命的能力？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "有足夠的學習與實踐，才能建立自己的判斷。沒有真正理解，就急著解釋，那就是識神在作用。對生命的真相保持謙卑，知道自己還有很多不清楚、沒有真正做到的，才有繼續成長的空間。有一天，當你真正體會到心法的作用，你講出來的就你親身經歷的生命智慧。（本文依20261017六早、台中兩班課程紀錄裁剪修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "從識神到元神：信、愛、光、念形成的道場",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-3",
-    "author": "文稿彙整 / 六早班 / 台中班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-3",
+    "images": [],
+    "excerpt": "我每天都在做惡夢，因為我的精神世界一直在飛翔，一直在設法突破限制。我每天在想的都是諸如一個人還可以走到哪裡，生命的本質究竟是什麼，念力怎麼產生，人心如何超越大腦的控制？",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 4,
+    "homeAnchor": "#article-202611-2611-3-3",
+    "title": "從識神到元神：信、愛、光、念形成的道場",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 9 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-3601004.jpg?v=3601004",
+    "author": "文稿彙整 / 一晚班 / 二晚班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "滾動式教學，要能連接整體脈絡",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "落胯的目的是氣沉湧泉，落胯，海底打開，氣才能下去；海底一提，氣才能上來。過去我們練圓襠，就是在建立這個空間。把功法帶進生活，念茲在茲，隨時都可以練。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我把學問放在自己身上。這隻手就是經絡圖，肺經、大腸經、心包經，哪一條向心、哪一條離心，臟腑怎麼互為表裡，你要在身上看見它。我讀各家經典，我想的是：當初為什麼這麽講？面對什麼樣的學生？⋯⋯經典是活的，你看《金剛經》一再呼喚善男子、善女人，一再說卵生胎生濕生等類眾生，那是講者在現場不斷引導聽眾。你要理解教學現場，才能透視全面。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我也不要你們隨便相信我，你要提問、測試，把我的邏輯弄清楚，再回到身體去實踐。真正的相信是經過理解與經驗建立起來的。我的課程是滾動式教學，因為今天講的，可能跟十年前講的有關，要能把整個脈絡連接起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "十八套功法的三個層次：引體、內臟、導氣",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "要知道十八套功法是怎麼建構的。第一層是引體篇，先開發身體空間；第二層是內臟篇，認識十二經脈與臟腑的運作；第三層是導氣篇，讓經脈與身體的氣機連貫。三個層次合在一起，才構成無極。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "引體是什麼？氣就是空間，練氣先要有空間。沒有空間，經脈如何運轉？到內臟篇，就要了解十二經脈的作用；再到導氣篇，就要學習以意導氣。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "同一套無極動作，程度不同，練的層次就不同。百日築基的人，練的是引體；有人在感受經絡，有人在以意導氣。看起來都做同一套，裡面卻大相徑庭。不是動作會做了，無極就會了。你到底是在練精化氣，還是練炁化神？你要知道自己的位置。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "百日築基、煉精化氣、煉炁化神、煉神還虛、煉虛合道，最後道法自然，是生命修煉的整體脈絡。周天圖與識空、性空圖只是幫你理解生命轉化的進階與方法，最後都要回到身體的修煉。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從精氣神到元精、元氣、元神：識神退位，元神作主",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "煉精化氣，重點在下丹田、十二經脈，初學可以用意念引導，練提會陰、縮小腹，讓身體逐漸認識經脈與後天氣的運作。這個階段是為後面的練習打基礎。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "進入練炁期，重點在中丹田的修煉，練炁化神，轉到元精、元氣、元神。當識神退位，元神主導時，生命的運作層次就不同。所以，要弄清楚後天氣與先天炁、精氣神與元精元氣元神的區別。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講奇經八脈，講心氣相依，就是要從刻意操作轉為自然運作。煉精化氣時還需要意念推動；煉炁化神時，重點在溫養、止火、處虛。意識要慢慢退下，不思不想，讓身體自然運轉。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "天心入人心：兩眼合一、泥丸宮與黃庭的內在路線",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "兩眼純陽，兩腎純陰。現在要把兩眼合成一眼，合一的地方稱為天心，也叫泥丸宮。我把松果體比喻成「靈魂的辦公室」，天心下載宇宙意識、靈海的信息，就形成靈覺、元神的作用。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練習的路線很清楚：眼觀鼻，鼻觀心。兩眼合一，收視向內，由天心經鼻根，逐漸引向黃庭、中丹田、本心。不是盯著肉體心臟，也不是想像有一股氣通往心臟，而是指向心窩相應的虛無處，讓意念進入內在中心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "以前煉精化氣，是以意導氣，現在練炁化神，要止火、溫養，讓刻意指揮的識神慢慢退下。鼻根的呼吸自然細微，陽火似存非存。眼、耳、鼻、舌、身的覺察，都朝向本心。這叫天心入人心，也是五覺合一的方向。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「靈Q」是「靈魂智商」，是要練出靈覺，不再凡事聽從第六意識。若連呼吸都要控制，念頭都放不下，談什麼下載宇宙意識？先從自然、安靜、不強迫開始。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "處虛與識空：從不要想，走向不必想",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用六七年教不要想。可是你們一做動作，就急著想下一招；身體有什麼感覺，就急著判斷對不對。大腦不肯退位，即使練了無極功法，也還是練大腦。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "處虛不是腦袋空白，就像不必想就會走路，因為已經內化成本能。練功也要這樣：身體知道怎麼做，覺性清楚當下的運作，識神就沒有插手餘地。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以「識空」不是讓生命變成一片空白，是讓眼耳鼻舌身意不再被大腦綁架。一樣透過六根接觸世界，卻不被外境拉走。這是我們多年聞香、聽音樂、觀陰火、靜坐累積的成效。所以我教香道，要你透過鼻息把所有訊息帶回內心，不要全部交給大腦。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從「想」到「無想」，再從「無想」走向「處虛」，這條路不容易。你們若只會掛在嘴上，平時照樣被情緒帶著跑，那還是被識神控制。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "人心變成垃圾處理廠",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人心是怎麼來的？身體有慾望，大腦有想法，六根跟外界接觸，喜歡就抓住，不喜歡就排斥，最後產生怒恨怨惱煩、喜怒憂思悲恐驚。這些情緒都倒到內心！把心當成垃圾焚化廠。大腦製造的情緒垃圾，全部叫心承擔。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "好好看看自己的心臟，從生命一開始，它就不斷為你工作；從不請假，也不要求待遇；只要生命還在，它就盡忠職守。所以我用心來比喻「本心之愛」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們習慣說謝謝、對不起，真是由衷的嗎？有時候嘴裡說對不起，心裡還在罵。那是反射性的禮貌，不是本心。真正的感恩是感受自己與他人的付出。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我借心跳與呼吸的同頻來談「心氣相依」，也提醒你們：情緒、壓力與身體的反應會互相影響。要學會尊重身體，不要用大腦的欲望折磨自己的心。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從大宇宙看小宇宙：水火、四季與氣炁的轉化",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用大自然講「炁」，希望你們從中看見變化。水因不同溫度而有不同形態，春夏秋冬，水、火、陰陽，萬物也在不同條件下循環。人體也有自己的節律。我用心火、腎水，坎離交媾、五行生剋來講身體的陰陽關係；也用植物根部吸水、葉片接受陽光，再把養分帶回整體循環，讓你們理解上升與下降、晝夜、動靜、升降⋯⋯隨時都在互相作用。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "東方把人看作小宇宙，從身體研究大自然；古希臘哲學則從水、火、數、原子等概念追問萬物本源。我以他們的例子，是要你們看見人類如何從不同角度追問存在，讓你們思考同一個生命問題。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "文明教會你應對，卻未教會你用心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講周公制禮作樂，講禮、樂、射、御、書、數，是要你理解古代文明在當時確有其意義，但文明越發展，人的大腦越懂得包裝自己，內心的力量反而變弱了。所以，徒具形式的禮數很多，人心卻無法真正參與。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "音樂更明顯。音樂可以塑造情境，演唱會可以讓你興奮、讓你流淚。這就是「奪境」，外在訊息一進來，情緒立刻被帶走。所以我們練功聽音樂，不是用音樂控制你，而是音樂進來，你仍有自己的內在場。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "聞香也是一樣。香氣進來，先不要判斷它像什麼、產自哪裡、值多少錢。讓鼻根的訊息進入內心，產生真正的覺察。觀陰火、兩眼合一、天心入人心，也是同一套六根素養的訓練。我早在多年前就把這些種子埋在你們身體裡，現在講道心，你們才知道原來那些課都不是獨立的。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "氣機、心機、神機：為什麼先教身體",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我講人道，可以從氣機、心機、神機不同層次來教。氣機導引是先從身體這道門進來，讓你認識空間、經脈、呼吸與動作。心機的教學，重點就不在外形，而在直接體會心的作用。神機則涉及精神性、靈性與更大的生命場。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這些名詞只是不同層次的教學語言，你們現在連自己的心是什麼都不明白，我怎麼教你心機？連身體的氣機都用想的，若講神機，就是揠苗助長。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以我選擇從身體開始，因為你可以直接感知你的手腳、呼吸、心跳。用十八套功法建立你的身體素養，再把它引向心性。你若真正走過這個過程，才會知道氣機導引只是一個入口。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人最可悲的，是活了一輩子，卻不知道自己究竟為什麼活著。你以為賺錢是人生目的，有一天錢夠了，才發現自己不認識自己。所以一直要你們往生命裡面看。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "愛、信、光、念：道心場的四種元素",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人因爲無盡的慾望，加上大腦胡思亂想，兩者交互運作逐漸形成「人心」。事情一來，憤怒、恐懼、嫉妒馬上升起；道理都懂，可是無能為力，只因為沒有把道心建立起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "現在要教的，是中丹田這個道心場。中丹田不是身體某個點，而是本心運作的中心。人心由識神與慾望主導，道心則以覺性、道為依歸。我講「本心」和「自心」，是眼耳鼻舌身意脫離識神的掌控，心才有機會回到自己的作用。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "世界是由兩種光所形成：太陽光映照外在形相，是顯化；另一種是暗光、天光或道光，指向隱而不顯的生命作用。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "建立道心場的四種元素，第一是愛，是善的總和；第二是信，是訊息的總和；第三是光，是頻率的總和；第四是念，是行動力的總和。這四種都是能量形式，是作用力，合起來才能建構道心的運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "愛不是情緒，不是喜歡。我用心臟忠實的付出比喻愛：它每次跳動都在維持生命，從不計較。這種無條件的正向性，稱為「本心之愛」。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "講「信」之前，要先區分「訊息」與「信息」。眼耳鼻舌身各有不同的訊息；當五覺合一，訊息的總和就成為信息，這就是「信」。注意！不是五識合一，是五覺合一。識是大腦的分別，覺是內在的接收與體會。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "光是頻率的總和。我借可見光、紅外線、紫外線等不同頻率，說明「光」不只是眼睛看見的形相。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "念則是動力的總和，是生命能夠行動、實踐的力量。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "要煮一道菜，材料沒有備齊，瓦斯爐再好也沒用。道心場也一樣。愛、信、光、念，四種材料缺一不可。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "五覺合一：六根進來，卻不再被奪境",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "看到一個人，大腦就有好惡評斷；聽一句話，內心就起了波瀾；聞到氣味，就浮想聯翩，這就是六根被識神控制。我們要練五覺合一，讓眼耳鼻舌身的訊息回到本心，莫讓外界刺激引爆情緒。所以，我的眼睛只看光、看頻率，不只看表相；我用耳朵聽訊息，不只是聽聲音。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "道心的飽和就像一塊吸滿水的海綿，放入水裡，就不會再吸水。當你的本心有足夠的愛與信，外面的刺激來了，你就不會被它牽著跑。你仍能看、能聽、頻繁接觸世界，但不再被奪境。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以五覺合一不是封閉六根，而是讓六根回到本心。靜坐時收視反聽，練動功時與外界交融；能把不同的訊息轉成覺察，才有信的力量，這時你的內在就真的有承接世界的能力。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "收視反聽、迴光返照與吞津入黃庭",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人體有陰陽，兩眼是純陽，兩腎是純陰。靜坐時要先把兩眼匯成一眼。兩眼合一處就叫天心，也叫泥丸宮。松果體可說是「靈魂的辦公室」，因為這是靈覺、元神運作的地方。天心可以接收宇宙意識、靈海的信息，而我們現在就是要讓天心入人心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第一步，先把身體安穩下來，找一個安全、不會分心的環境。兩眼合為一眼，從天心向下，眼觀鼻，鼻觀心，從鼻根下引到黃庭、中丹田，也就是本心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第二步，耳朵向內聆聽，這叫收視反聽、迴光返照，聆聽自己的心跳。可側躺、曲弓，墊高一點的枕頭幫你感受心跳的節律。聆聽自己的心跳，是練「靜頻」的方法。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第三步，自然呼吸。不要刻意拉長、壓短，更不要憋氣。重要的是學會觀息、聽氣，知道身體的節律正在發生，而不是由大腦接管它。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第四步，舌抵上顎，津液自然聚集時吞津入黃庭。與眼、耳、鼻的內收連結，讓五覺回到本心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第五步，一念不生、一念不起。念頭來了不追，走了不留，繼續回到呼吸與覺察。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "總之，真正的收視反聽，就是讓外散的六根逐漸回到內在，讓本心安住。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "心氣相依：十二跳一息僅供參考",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "用心跳作為呼吸的刻度，是要練習心氣相依。所以，吸氣心跳六次、吐氣也六次，只是參考，一切以自然放鬆為要，先觀息、聽氣。當身體逐漸放鬆，呼吸自然有快有慢，心跳與呼吸的節律同頻，也可以清楚覺察。這就是心氣相依、同頻共振、諧波共振。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "先從每天十五分鐘開始，持續三個月，讓方法慢慢形成慣性。但三個月有感受，不代表愛、信、光、念四個結構都已成熟。要知道：短期練方法與習慣，長期練的是氣質、人格與生命的轉化。這條路可能要走很多年，無法用時間作保證。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "如果出現胸悶、頭暈、心悸或呼吸不舒服，就停下來。要尊重身體，不能為了追求特殊節律而傷害身體。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "識空圖與性空圖：只剩一口息，才能轉入和氣",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "教室白板上的識空圖、性空圖，只是幫你理解生命維度的變化，不是叫你把上面的字背起來。從識空練到極致，最後只剩下「息」——沒有多餘念頭，沒有利益計算，大腦不再下指令。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識空圖裡的「理性」，是大腦對利益、對錯的分析；在性空圖，理性就變成「和氣」，那就是一口溫和、能與六根同頻共振的息。要分清楚：同樣叫理性，一個在識神裡計算，一個在覺性裡安住。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「後天呼吸起微風，引動真人呼吸功。」這是說明，從自然呼吸入手，讓心氣相依，逐漸走向「真息」。也就是識神退卻後，覺察與呼吸的自然相應。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這可以用物理學的場、反物質、湮滅來比喻：人心的怒恨怨惱煩一出現，道心若已穩定，就不會任由情緒擴大。「湮滅人心」是指道心能在當下自然發揮作用，人心不再主導對外界的反應。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "小周天與大周天，自處與入世",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練炁化神分靜功與動功。我教「靜坐練氣秘法」，重點在小周天，是向內自修；無極動功走大周天，是與世界交流。這是區分兩種修煉情境的方式。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練靜功時，把過去用線香「觀陰火」的方法用出來。從自然呼吸、聆聽心跳開始，學習心氣相依。先讓息相穩定，再感受息與心的節律。就像母親第一次聽到胎兒的心跳，那「怦怦」聲，對母親是很深的連結。你要明白，心跳在生命經驗裡，不只是一個數字；你能不能真正感受到它，會影響你如何看待自己的生命。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練無極動功要聽氣，聽身體整體的運作，不是一邊做動作，一邊盯著呼吸、數心跳。要讓眼耳鼻舌身接觸外界，把外面的訊息帶回來，轉成自己的覺察與力量。這叫入世，叫菩薩道，走進人群仍然不被奪境。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "以意隨氣：動作要跟身體的氣機相應",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "到了練炁期，就要從「以意導氣」進入「以意隨氣」了。初學時用意念引導，是為了建立基本能力；現在要讓動作跟隨身體自然的節律。「聽之以氣」，就是要覺察身體當下的運作。動作有快慢，呼吸有長短，兩者要自然相應。所謂「真人之息以踵」，就是從腳下、湧泉，到任督的整體運作，都要有根、有連貫。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "同一套無極，可以練空間，練肌肉與結構，也可以練經脈或導氣；程度再往上，才談練炁、練神。同一個動作，在不同階段有不同的內在表現。現在要練炁化神，就要把以前學過的百日築基、煉精化氣重新銜接起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "再談收式的細節",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "起式是引體開空間，收式是收陰陽之氣，整合任、督、衝三脈。督脈打開，陽起陰落，匯督成衝；我在示範時說由會陰循衝脈向上，到眉心、鼻根，再向兩端展開。好好體會內在運作的氣機路線。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "到了衝脈這一段，特別要「擴胸」，不要讓氣上頭。因為有上就有下，陽起必有陰落。接著捏氣、握固下行，合陰陽之數，最後入海。動作與吐吸相應，整體要連續，覺察始終相隨。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一手歸氣，一手就是金字塔、定海神針，兩手形如香爐。香爐扣成，吸氣一炷香，回氣海，入湧泉，回到自然呼吸。吸氣、膨開、最後入定。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "定海神針就是一根針定住海底，讓前面整套功法的運作重新歸根。現在要開始練功一百分鐘，之後站定半小時，讓真人呼吸功的心爐與三丹田經過動功，再進入凝聚、溫養。至於三花聚頂、心光返回天光、出陽神，則是後續的修煉方向。（本文依20261019-20一晚、二晚班課程逐字稿彙整裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -2077,709 +2761,446 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-4",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-3601004.jpg?v=3601004",
-    "sourceId": "2611-3-4",
-    "readTime": "約 9 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "落胯的目的是氣沉湧泉，落胯，海底打開，氣才能下去；海底一提，氣才能上來。過去我們練圓襠，就是在建立這個空間。把功法帶進生活，念茲在茲，隨時都可以練。",
-    "order": 5,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "滾動式教學，要能連接整體脈絡",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "落胯的目的是氣沉湧泉，落胯，海底打開，氣才能下去；海底一提，氣才能上來。過去我們練圓襠，就是在建立這個空間。把功法帶進生活，念茲在茲，隨時都可以練。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我把學問放在自己身上。這隻手就是經絡圖，肺經、大腸經、心包經，哪一條向心、哪一條離心，臟腑怎麼互為表裡，你要在身上看見它。我讀各家經典，我想的是：當初為什麼這麽講？面對什麼樣的學生？⋯⋯經典是活的，你看《金剛經》一再呼喚善男子、善女人，一再說卵生胎生濕生等類眾生，那是講者在現場不斷引導聽眾。你要理解教學現場，才能透視全面。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我也不要你們隨便相信我，你要提問、測試，把我的邏輯弄清楚，再回到身體去實踐。真正的相信是經過理解與經驗建立起來的。我的課程是滾動式教學，因為今天講的，可能跟十年前講的有關，要能把整個脈絡連接起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "十八套功法的三個層次：引體、內臟、導氣",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "要知道十八套功法是怎麼建構的。第一層是引體篇，先開發身體空間；第二層是內臟篇，認識十二經脈與臟腑的運作；第三層是導氣篇，讓經脈與身體的氣機連貫。三個層次合在一起，才構成無極。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "引體是什麼？氣就是空間，練氣先要有空間。沒有空間，經脈如何運轉？到內臟篇，就要了解十二經脈的作用；再到導氣篇，就要學習以意導氣。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "同一套無極動作，程度不同，練的層次就不同。百日築基的人，練的是引體；有人在感受經絡，有人在以意導氣。看起來都做同一套，裡面卻大相徑庭。不是動作會做了，無極就會了。你到底是在練精化氣，還是練炁化神？你要知道自己的位置。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "百日築基、煉精化氣、煉炁化神、煉神還虛、煉虛合道，最後道法自然，是生命修煉的整體脈絡。周天圖與識空、性空圖只是幫你理解生命轉化的進階與方法，最後都要回到身體的修煉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從精氣神到元精、元氣、元神：識神退位，元神作主",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "煉精化氣，重點在下丹田、十二經脈，初學可以用意念引導，練提會陰、縮小腹，讓身體逐漸認識經脈與後天氣的運作。這個階段是為後面的練習打基礎。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "進入練炁期，重點在中丹田的修煉，練炁化神，轉到元精、元氣、元神。當識神退位，元神主導時，生命的運作層次就不同。所以，要弄清楚後天氣與先天炁、精氣神與元精元氣元神的區別。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講奇經八脈，講心氣相依，就是要從刻意操作轉為自然運作。煉精化氣時還需要意念推動；煉炁化神時，重點在溫養、止火、處虛。意識要慢慢退下，不思不想，讓身體自然運轉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "天心入人心：兩眼合一、泥丸宮與黃庭的內在路線",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "兩眼純陽，兩腎純陰。現在要把兩眼合成一眼，合一的地方稱為天心，也叫泥丸宮。我把松果體比喻成「靈魂的辦公室」，天心下載宇宙意識、靈海的信息，就形成靈覺、元神的作用。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練習的路線很清楚：眼觀鼻，鼻觀心。兩眼合一，收視向內，由天心經鼻根，逐漸引向黃庭、中丹田、本心。不是盯著肉體心臟，也不是想像有一股氣通往心臟，而是指向心窩相應的虛無處，讓意念進入內在中心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "以前煉精化氣，是以意導氣，現在練炁化神，要止火、溫養，讓刻意指揮的識神慢慢退下。鼻根的呼吸自然細微，陽火似存非存。眼、耳、鼻、舌、身的覺察，都朝向本心。這叫天心入人心，也是五覺合一的方向。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「靈Q」是「靈魂智商」，是要練出靈覺，不再凡事聽從第六意識。若連呼吸都要控制，念頭都放不下，談什麼下載宇宙意識？先從自然、安靜、不強迫開始。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "處虛與識空：從不要想，走向不必想",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用六七年教不要想。可是你們一做動作，就急著想下一招；身體有什麼感覺，就急著判斷對不對。大腦不肯退位，即使練了無極功法，也還是練大腦。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "處虛不是腦袋空白，就像不必想就會走路，因為已經內化成本能。練功也要這樣：身體知道怎麼做，覺性清楚當下的運作，識神就沒有插手餘地。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以「識空」不是讓生命變成一片空白，是讓眼耳鼻舌身意不再被大腦綁架。一樣透過六根接觸世界，卻不被外境拉走。這是我們多年聞香、聽音樂、觀陰火、靜坐累積的成效。所以我教香道，要你透過鼻息把所有訊息帶回內心，不要全部交給大腦。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從「想」到「無想」，再從「無想」走向「處虛」，這條路不容易。你們若只會掛在嘴上，平時照樣被情緒帶著跑，那還是被識神控制。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "人心變成垃圾處理廠",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人心是怎麼來的？身體有慾望，大腦有想法，六根跟外界接觸，喜歡就抓住，不喜歡就排斥，最後產生怒恨怨惱煩、喜怒憂思悲恐驚。這些情緒都倒到內心！把心當成垃圾焚化廠。大腦製造的情緒垃圾，全部叫心承擔。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "好好看看自己的心臟，從生命一開始，它就不斷為你工作；從不請假，也不要求待遇；只要生命還在，它就盡忠職守。所以我用心來比喻「本心之愛」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們習慣說謝謝、對不起，真是由衷的嗎？有時候嘴裡說對不起，心裡還在罵。那是反射性的禮貌，不是本心。真正的感恩是感受自己與他人的付出。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我借心跳與呼吸的同頻來談「心氣相依」，也提醒你們：情緒、壓力與身體的反應會互相影響。要學會尊重身體，不要用大腦的欲望折磨自己的心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從大宇宙看小宇宙：水火、四季與氣炁的轉化",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用大自然講「炁」，希望你們從中看見變化。水因不同溫度而有不同形態，春夏秋冬，水、火、陰陽，萬物也在不同條件下循環。人體也有自己的節律。我用心火、腎水，坎離交媾、五行生剋來講身體的陰陽關係；也用植物根部吸水、葉片接受陽光，再把養分帶回整體循環，讓你們理解上升與下降、晝夜、動靜、升降⋯⋯隨時都在互相作用。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "東方把人看作小宇宙，從身體研究大自然；古希臘哲學則從水、火、數、原子等概念追問萬物本源。我以他們的例子，是要你們看見人類如何從不同角度追問存在，讓你們思考同一個生命問題。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "文明教會你應對，卻未教會你用心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講周公制禮作樂，講禮、樂、射、御、書、數，是要你理解古代文明在當時確有其意義，但文明越發展，人的大腦越懂得包裝自己，內心的力量反而變弱了。所以，徒具形式的禮數很多，人心卻無法真正參與。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "音樂更明顯。音樂可以塑造情境，演唱會可以讓你興奮、讓你流淚。這就是「奪境」，外在訊息一進來，情緒立刻被帶走。所以我們練功聽音樂，不是用音樂控制你，而是音樂進來，你仍有自己的內在場。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "聞香也是一樣。香氣進來，先不要判斷它像什麼、產自哪裡、值多少錢。讓鼻根的訊息進入內心，產生真正的覺察。觀陰火、兩眼合一、天心入人心，也是同一套六根素養的訓練。我早在多年前就把這些種子埋在你們身體裡，現在講道心，你們才知道原來那些課都不是獨立的。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "氣機、心機、神機：為什麼先教身體",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我講人道，可以從氣機、心機、神機不同層次來教。氣機導引是先從身體這道門進來，讓你認識空間、經脈、呼吸與動作。心機的教學，重點就不在外形，而在直接體會心的作用。神機則涉及精神性、靈性與更大的生命場。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這些名詞只是不同層次的教學語言，你們現在連自己的心是什麼都不明白，我怎麼教你心機？連身體的氣機都用想的，若講神機，就是揠苗助長。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以我選擇從身體開始，因為你可以直接感知你的手腳、呼吸、心跳。用十八套功法建立你的身體素養，再把它引向心性。你若真正走過這個過程，才會知道氣機導引只是一個入口。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人最可悲的，是活了一輩子，卻不知道自己究竟為什麼活著。你以為賺錢是人生目的，有一天錢夠了，才發現自己不認識自己。所以一直要你們往生命裡面看。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "愛、信、光、念：道心場的四種元素",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人因爲無盡的慾望，加上大腦胡思亂想，兩者交互運作逐漸形成「人心」。事情一來，憤怒、恐懼、嫉妒馬上升起；道理都懂，可是無能為力，只因為沒有把道心建立起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "現在要教的，是中丹田這個道心場。中丹田不是身體某個點，而是本心運作的中心。人心由識神與慾望主導，道心則以覺性、道為依歸。我講「本心」和「自心」，是眼耳鼻舌身意脫離識神的掌控，心才有機會回到自己的作用。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "世界是由兩種光所形成：太陽光映照外在形相，是顯化；另一種是暗光、天光或道光，指向隱而不顯的生命作用。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "建立道心場的四種元素，第一是愛，是善的總和；第二是信，是訊息的總和；第三是光，是頻率的總和；第四是念，是行動力的總和。這四種都是能量形式，是作用力，合起來才能建構道心的運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "愛不是情緒，不是喜歡。我用心臟忠實的付出比喻愛：它每次跳動都在維持生命，從不計較。這種無條件的正向性，稱為「本心之愛」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "講「信」之前，要先區分「訊息」與「信息」。眼耳鼻舌身各有不同的訊息；當五覺合一，訊息的總和就成為信息，這就是「信」。注意！不是五識合一，是五覺合一。識是大腦的分別，覺是內在的接收與體會。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "光是頻率的總和。我借可見光、紅外線、紫外線等不同頻率，說明「光」不只是眼睛看見的形相。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "念則是動力的總和，是生命能夠行動、實踐的力量。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "要煮一道菜，材料沒有備齊，瓦斯爐再好也沒用。道心場也一樣。愛、信、光、念，四種材料缺一不可。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "五覺合一：六根進來，卻不再被奪境",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "看到一個人，大腦就有好惡評斷；聽一句話，內心就起了波瀾；聞到氣味，就浮想聯翩，這就是六根被識神控制。我們要練五覺合一，讓眼耳鼻舌身的訊息回到本心，莫讓外界刺激引爆情緒。所以，我的眼睛只看光、看頻率，不只看表相；我用耳朵聽訊息，不只是聽聲音。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "道心的飽和就像一塊吸滿水的海綿，放入水裡，就不會再吸水。當你的本心有足夠的愛與信，外面的刺激來了，你就不會被它牽著跑。你仍能看、能聽、頻繁接觸世界，但不再被奪境。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以五覺合一不是封閉六根，而是讓六根回到本心。靜坐時收視反聽，練動功時與外界交融；能把不同的訊息轉成覺察，才有信的力量，這時你的內在就真的有承接世界的能力。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "收視反聽、迴光返照與吞津入黃庭",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人體有陰陽，兩眼是純陽，兩腎是純陰。靜坐時要先把兩眼匯成一眼。兩眼合一處就叫天心，也叫泥丸宮。松果體可說是「靈魂的辦公室」，因為這是靈覺、元神運作的地方。天心可以接收宇宙意識、靈海的信息，而我們現在就是要讓天心入人心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第一步，先把身體安穩下來，找一個安全、不會分心的環境。兩眼合為一眼，從天心向下，眼觀鼻，鼻觀心，從鼻根下引到黃庭、中丹田，也就是本心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第二步，耳朵向內聆聽，這叫收視反聽、迴光返照，聆聽自己的心跳。可側躺、曲弓，墊高一點的枕頭幫你感受心跳的節律。聆聽自己的心跳，是練「靜頻」的方法。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第三步，自然呼吸。不要刻意拉長、壓短，更不要憋氣。重要的是學會觀息、聽氣，知道身體的節律正在發生，而不是由大腦接管它。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第四步，舌抵上顎，津液自然聚集時吞津入黃庭。與眼、耳、鼻的內收連結，讓五覺回到本心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第五步，一念不生、一念不起。念頭來了不追，走了不留，繼續回到呼吸與覺察。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "總之，真正的收視反聽，就是讓外散的六根逐漸回到內在，讓本心安住。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "心氣相依：十二跳一息僅供參考",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "用心跳作為呼吸的刻度，是要練習心氣相依。所以，吸氣心跳六次、吐氣也六次，只是參考，一切以自然放鬆為要，先觀息、聽氣。當身體逐漸放鬆，呼吸自然有快有慢，心跳與呼吸的節律同頻，也可以清楚覺察。這就是心氣相依、同頻共振、諧波共振。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "先從每天十五分鐘開始，持續三個月，讓方法慢慢形成慣性。但三個月有感受，不代表愛、信、光、念四個結構都已成熟。要知道：短期練方法與習慣，長期練的是氣質、人格與生命的轉化。這條路可能要走很多年，無法用時間作保證。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "如果出現胸悶、頭暈、心悸或呼吸不舒服，就停下來。要尊重身體，不能為了追求特殊節律而傷害身體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "識空圖與性空圖：只剩一口息，才能轉入和氣",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "教室白板上的識空圖、性空圖，只是幫你理解生命維度的變化，不是叫你把上面的字背起來。從識空練到極致，最後只剩下「息」——沒有多餘念頭，沒有利益計算，大腦不再下指令。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "識空圖裡的「理性」，是大腦對利益、對錯的分析；在性空圖，理性就變成「和氣」，那就是一口溫和、能與六根同頻共振的息。要分清楚：同樣叫理性，一個在識神裡計算，一個在覺性裡安住。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「後天呼吸起微風，引動真人呼吸功。」這是說明，從自然呼吸入手，讓心氣相依，逐漸走向「真息」。也就是識神退卻後，覺察與呼吸的自然相應。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這可以用物理學的場、反物質、湮滅來比喻：人心的怒恨怨惱煩一出現，道心若已穩定，就不會任由情緒擴大。「湮滅人心」是指道心能在當下自然發揮作用，人心不再主導對外界的反應。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "小周天與大周天，自處與入世",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練炁化神分靜功與動功。我教「靜坐練氣秘法」，重點在小周天，是向內自修；無極動功走大周天，是與世界交流。這是區分兩種修煉情境的方式。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練靜功時，把過去用線香「觀陰火」的方法用出來。從自然呼吸、聆聽心跳開始，學習心氣相依。先讓息相穩定，再感受息與心的節律。就像母親第一次聽到胎兒的心跳，那「怦怦」聲，對母親是很深的連結。你要明白，心跳在生命經驗裡，不只是一個數字；你能不能真正感受到它，會影響你如何看待自己的生命。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練無極動功要聽氣，聽身體整體的運作，不是一邊做動作，一邊盯著呼吸、數心跳。要讓眼耳鼻舌身接觸外界，把外面的訊息帶回來，轉成自己的覺察與力量。這叫入世，叫菩薩道，走進人群仍然不被奪境。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "以意隨氣：動作要跟身體的氣機相應",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "到了練炁期，就要從「以意導氣」進入「以意隨氣」了。初學時用意念引導，是為了建立基本能力；現在要讓動作跟隨身體自然的節律。「聽之以氣」，就是要覺察身體當下的運作。動作有快慢，呼吸有長短，兩者要自然相應。所謂「真人之息以踵」，就是從腳下、湧泉，到任督的整體運作，都要有根、有連貫。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "同一套無極，可以練空間，練肌肉與結構，也可以練經脈或導氣；程度再往上，才談練炁、練神。同一個動作，在不同階段有不同的內在表現。現在要練炁化神，就要把以前學過的百日築基、煉精化氣重新銜接起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "再談收式的細節",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "起式是引體開空間，收式是收陰陽之氣，整合任、督、衝三脈。督脈打開，陽起陰落，匯督成衝；我在示範時說由會陰循衝脈向上，到眉心、鼻根，再向兩端展開。好好體會內在運作的氣機路線。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "到了衝脈這一段，特別要「擴胸」，不要讓氣上頭。因為有上就有下，陽起必有陰落。接著捏氣、握固下行，合陰陽之數，最後入海。動作與吐吸相應，整體要連續，覺察始終相隨。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "一手歸氣，一手就是金字塔、定海神針，兩手形如香爐。香爐扣成，吸氣一炷香，回氣海，入湧泉，回到自然呼吸。吸氣、膨開、最後入定。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "定海神針就是一根針定住海底，讓前面整套功法的運作重新歸根。現在要開始練功一百分鐘，之後站定半小時，讓真人呼吸功的心爐與三丹田經過動功，再進入凝聚、溫養。至於三花聚頂、心光返回天光、出陽神，則是後續的修煉方向。（本文依20261019-20一晚、二晚班課程逐字稿彙整裁剪修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "從識空到道心：天心入人心、五覺合一",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-4",
-    "author": "文稿彙整 / 一晚班 / 二晚班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-4",
+    "images": [],
+    "excerpt": "落胯的目的是氣沉湧泉，落胯，海底打開，氣才能下去；海底一提，氣才能上來。過去我們練圓襠，就是在建立這個空間。把功法帶進生活，念茲在茲，隨時都可以練。",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 5,
+    "homeAnchor": "#article-202611-2611-3-4",
+    "title": "從識空到道心：天心入人心、五覺合一",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 9 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-5946500.jpg?v=5946500",
+    "author": "文稿彙整 / 二早班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "以身體驗證生命",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，是帶領一群徒弟，長期探索人的結構。這不是面向大眾的公共事業，而是讓一套能透徹理解「人」的系統，在你們這一小群人身上逐步成形。所以，你們不是來追求知識，是來看見自己、改變自己。我所要求的學習，是把理解化成實際作用，讓身體、心理與日常生活融為一體。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我談股票，是借它說明判斷的方式。不能只看手上有多少錢，還要理解產業定位、未來發展、經營方式、產品競爭力與成交量，綜合看待條件。我把這種找到核心依據的方式稱為「絕對值」。借來的錢若投資又虧損，風險當然更大；真正重要的是你是否看清依據，而不是把賺錢當成全部生活。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們現在八點檔的分享慢慢從識心走向本心，大家共同聚焦生命與真相，形成同頻共振。這種主題一致、互相帶動的力量，我稱為共聚力，也是道場的意義。但是，分享感動，不代表已經改變。我不是要你把自己的特質全部拆掉，而是讓它發生質變。原本的固執，放對位置可以成為一絲不苟；原本的敏感，也可以轉成細膩的觀察。所謂轉虧為盈，就是保留材料，改變它的作用方式。人生的問題，往往不只在事情本身，而在你站在哪裡、用多長的尺丈量它。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們常用本心的語言說出感受，卻仍用大腦原來的學習模式處理它，所以聽懂以後依然做不到。你要追問的不是「我知道什麼」，而是「我成為什麼」。同樣是共鳴，有人只是共鳴於相同的委屈，有人卻已學會換尺；兩者的方向並不一樣。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我談經典，也不願只停在字面。例如「見諸相非相，即見如來」，還可以追問：「什麼是見？什麼是如來？所見與如來又有什麼關係？」把問題帶回自身的觀看，才可能超出背誦與認同。學習應當打開洞察，而不是替自己建立另一套不能移動的界樁。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從文化語言回到身體理解",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-001.png?v=1780020",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我談禮樂射御書數，是要說明制度與文化原來有其整體作用。我希望你們看見的，是文化如何與人的實際狀態連接。道家的詞彙也是如此，氣、炁、元氣、氣機與周天，不應只是玄學詞彙，而應指向身體能實踐、體會的領域。參與讀書會，是先熟悉這些語言，再回頭理解我如何用不同說法描述同一個內在現象。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我也借西方哲學對水、火、數字到原子的觀察與歸納來說明，人們逐步追問萬物如何形成與變化。水在不同溫度下呈現的變化，讓我們從中理解表相的變異性。我借這些概念作為語言橋梁，嘗試把東方修練的語言，放進較容易理解的系統中，讓你們找到相互參照的方法。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在我的系統裡，「光」不只是眼睛能見的亮度，也被用來描述能量、頻率與訊息如何呈現。萬物形貌各異，因為它們帶有不同的訊息。我說喝茶、聞香，希望你們學會深入感受它形成的環境、經歷與內涵。重點仍是把注意力從既有判斷移到直接感受。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我安排讀書會、八點檔與各式集體活動，就是要建立滾動式學習。同一個核心，透過不同的人、不同介面與不同經驗，一次次被接觸、消化、驗證，最後再回到同一套身體系統。這無法靠我一個人完成，要讓你們從多個入口，逐步把理解連貫起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "識空與性空的雙向運作",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-002.png?v=1985464",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識空圖",
+        "isHeadingStyle": false
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-003.png?v=1724539",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "性空圖",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這兩張圖像手掌的兩面，一面是識空，一面是性空，彼此關聯。十八套功法，包括引體、經脈與導氣，都在幫助你認識身體、心與大腦如何形成現在的自己，並練習對形、相與想法的執著逐步鬆開。所謂識空，是實際經歷不被原來認知綁住的過程。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "第六意識帶領眼耳鼻舌身，追逐需求、比較得失，最後把種種情緒交給心承受。心原本有更大的作用，卻淪為垃圾處理場，被大腦製造的情緒壓垮。修練首先要看清這個過程，知道自己的紛亂如何發生。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我說「不要想」，是要你暫時放下辨認、分析、計較的慣性，讓感受主導，這才有機會從識神控制，走向元神與覺性。",
+        "isHeadingStyle": false
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-004.png?v=315463",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "沿著這張圖，從專注、感覺自己的感覺、以意導氣，逐步走向空相的體會。當你不再只抓住物體的固定樣子，就會看到相一直在變。繼續追問下去，才會回到自己的心、氣與息，探索觀看與被觀看的關係。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我借王陽明的「心外無物」「格物致知」「知行合一」來說明這個方向。格物不能只認識物的表面，還要深入它所隱含的道理；聞香可以是格物，能聞到其中內涵，才算進入香道。知行合一，就要讓所知與實際行動一致。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我一生要留下的，就是這套經過長期教學、身體實驗與學員變化所累積的系統。文字可以整理，AI也能協助統合，但若只留下名詞，沒有操作與成為，這套系統仍可能像失去本質的禮，最後只剩包裝。因此，傳承最重要的是保住內在的連貫與實作。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "在AI時代保留人的本心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我關心AI，不只關心它會不會比人聰明，更關心人會不會把自己的思考、感受與生命主導權交出去。知識可以被機器掌握，但我所重視的是人具有生命的本心與靈魂。若只是競爭記憶和計算能力，人就會忘失自己真正的優勢。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我憂心的是，當機器人可以完全配合人的情感與感官需求，人可能越來越無法接受真人的脾氣、差異與限制。若只追求立即滿足，就會遠離人與人之間需要互相承擔的關係，甚至影響傳統繁衍。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "另一方面，人會遺忘，也因此有柔和、樸拙、浪漫與重新感受世界的可能。若只追求永不遺忘、極度精明，未必保得住生命的溫度。我主修人道，從身體、氣機來解釋人的存在，最後仍要回到身心靈如何成為一個完整的人，而不是只把自己訓練成更有效率的大腦。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "由三丹田走入自然呼吸",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-005.png?v=315463",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在我的修練架構中，下丹田對應煉精，中丹田對應煉氣與煉心，上丹田對應更上層的精神作用；先天的層面則以元精、元氣、元神來描述。分辨先天與後天的差別，就在由「識」還是「覺」主導？是想法刻意控制，還是覺性自然運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "不同階段的修煉方法不同。煉精化氣時，可以用意念帶動，稱為以意導氣；進入中丹田，開始煉氣與道心時，則是以意隨氣，不再刻意操作，進入溫養，讓已建立的功能自然發展。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這時最重要的是「息」。所謂「真息」，是不靠大腦安排的自然呼吸。每個時段、每個情境，呼吸頻率都可能不同，不能把固定吸幾秒、吐幾秒當成唯一標準。倘若刻意控制呼吸節奏，就又交給識神主導。現在的學習重點是感受當下呼吸。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "靜坐也不一定要盤腿，重點是身體放鬆，讓感官向內。眼觀鼻、鼻觀心，兩眼聚焦、回到鼻根，再以自然呼吸連到中丹田，以天心合人心。這些做法指向同一件事：把散亂在外的注意收回，讓心不再被外境牽著走。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "耳朵反聽內在心跳，感受呼吸與心跳的節律。一次吸氣、吐氣有幾次心跳，會因當下狀態改變；重點不是計數，而是覺察兩者自然相依。這就是「心氣相依」。此外眼向內觀、耳向內聽、鼻依自然呼吸，舌的津液也自然參與，這就是「五覺合一」，讓所有訊息同歸一處。所謂「入心為靜，入想為亂」，關鍵是保持自然，讓注意漸漸回到息與內心。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "心信光念構成道心運作場",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "道心真正運作需有四大要素——心、信、光、念。心的本質是愛，是一切善的總和；信是訊息的總和；光是頻率的總和；念是作用力的總和。四者共同形成一個場，道心才能自然運作起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "caption": "",
+        "src": "/assets/articles/202611/202611-img-006.png?v=271692",
+        "type": "image"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「愛」不是情緒上的貪愛，是不談條件的付出，心如大海，一切存在都是自然而然的。用本心才能體察這種不以得失為前提的愛有多開闊。「信」像設計藍圖，把不同感官與生命訊息整合起來；「光」讓不同頻率的作用得到呈現；「念」則使整個設計成為實際作用。只有四者相連，才是道心運作場。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "例如有人責罵你，原來的尺會量到你尊嚴受傷；換一把尺，就可能看見對方正在進入你的世界，試著與你產生連結。我不是要你強迫釋懷，而是透過長期練習，讓觀看的尺度自然展開。道心不是生氣之後才按下的開關，而是事件發生當下，它就產生不同的運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "四個要素需要反覆練習，才會成為本能。就像情緒反應是長期養成，道心也必須透過持續應用，逐步成為人格的一部分。當視野變大，原來非得爭論的事就可能縮小了；不是壓抑自己，是不再從狹窄的位置承受世界。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "周天運轉與以術入道",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "靜功練向內，動功則要把向內看的狀態帶入外在生活。我以小周天說明內在運作，以大周天說明走入現實、面對外界。動作仍有外形，但不能只聽大腦指令，要聽氣，讓呼吸、氣路與動作自然協調。快慢依當下狀態調整，不能為了模仿老師而緊張兮兮。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "五覺合一，也不是拒絕音樂與世界，而是不把內心交給外境。聽到不同曲目，能不被拉進亢奮或悲傷；你可以讓自己的氣場像演奏廳，讓聲音在其中被接納、被理解。外境進來，內在仍能保持定靜，不是所有感受都交由外面的刺激決定。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "當四個要素逐漸具足，我才會進一步跟你們談念力。個人念力有範圍，不能任意改變別人的世界，也不能把貪求當作修練。集體念力則涉及眾人的頻道與共同作用。我以自然、因緣與共同祈願來說明我的理解，但學習次第仍要先養成本心，再談它的力量。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有學員問，若大家學會念力，能否一起為老師延壽？我看重的，是這個念頭能關心另一個生命。這是本心開始萌發的方向——自然走向善、圓滿、內斂與沉穩。任何力量若離開這個基礎，就又回到大腦的欲望。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "修練必須按部就班，從專注、不要想，到練氣，再到忘形。第一步不是什麼都忘，而是先清楚學會，反覆練習；接著把重心由記憶動作轉成以氣運作，最後才可能成為自然反應。我說忘形，不是忘東忘西，也不是連動作都沒學清楚就放棄記憶，而是技術已融進自己，不必每一步都靠大腦提醒。心、信、光、念也要如此逐步人格化，才能在外境來時自然運作。若始終模仿外表、追求姿勢的美感，仍停留在技藝之末，沒有觸及核心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從練氣化神、練神還虛、練虛合道，到道法自然，是我用來展開後續路途的語言。我先把全貌告訴你們，是讓你知道現在在哪裡，未來要往哪裡去，不是宣布你已經達成。連專注都還不穩，不能因為聽過道心，就以為自己已經具有道心；每個層次都必須在身上逐步建立。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我擔心時間不夠，也擔心你們缺課、斷了脈絡，以為看電子報便可以接上。這套教學是一環扣一環，前面的準備，常到後面才看出作用。若把某一段抽出，用自己過去的理解填補，就容易變成我講我的、你聽你的，動作依然在做，內在卻沒有相應的內容。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，整理文章不只是把四個小時的話變成文字，更要看到前後如何互相支撐。讀懂、複習、查證，再放回身體練習，才能知道每個詞在自己身上指向什麼。老師可以把路說出來，也可以示範，但你必須真正走進去，才會知道心氣相依、五覺合一與道心，不是幾個可以替自己加分的名稱。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "往後的無極，要練的是內在的核心。以自然的息定向感官，讓心逐步安定，讓六根回到內在，再把這份覺察，帶回動作與生活。當事情發生，心中的尺能自然展開。我要你們成為能掌握生命主導權、以本心面對世界的人。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "真正的學習，要從每次日常反應裡看見變化；不是多懂一層道理，而是遇到同樣的事，能有不同的感受、位置與作法，讓生命逐漸成為自己的驗證。（本文依20261020二早班課程紀錄裁剪修潤而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -2833,6 +3254,14 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
+    "tags": [
+      "如是我聞",
+      "覺性修煉"
+    ],
+    "issueId": "202611",
+    "date": "2026.11.10",
+    "slug": "202611-2611-3-5",
+    "sourceId": "2611-3-5",
     "images": [
       {
         "caption": "",
@@ -2865,445 +3294,259 @@ export const reviewDraftArticles = [
         "type": "image"
       }
     ],
-    "homeAnchor": "#article-202611-2611-3-5",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-5946500.jpg?v=5946500",
-    "sourceId": "2611-3-5",
-    "readTime": "約 7 分鐘",
-    "tags": [
-      "如是我聞",
-      "覺性修煉"
-    ],
     "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
     "order": 6,
-    "date": "2026.11.10",
-    "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "以身體驗證生命",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，是帶領一群徒弟，長期探索人的結構。這不是面向大眾的公共事業，而是讓一套能透徹理解「人」的系統，在你們這一小群人身上逐步成形。所以，你們不是來追求知識，是來看見自己、改變自己。我所要求的學習，是把理解化成實際作用，讓身體、心理與日常生活融為一體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我談股票，是借它說明判斷的方式。不能只看手上有多少錢，還要理解產業定位、未來發展、經營方式、產品競爭力與成交量，綜合看待條件。我把這種找到核心依據的方式稱為「絕對值」。借來的錢若投資又虧損，風險當然更大；真正重要的是你是否看清依據，而不是把賺錢當成全部生活。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們現在八點檔的分享慢慢從識心走向本心，大家共同聚焦生命與真相，形成同頻共振。這種主題一致、互相帶動的力量，我稱為共聚力，也是道場的意義。但是，分享感動，不代表已經改變。我不是要你把自己的特質全部拆掉，而是讓它發生質變。原本的固執，放對位置可以成為一絲不苟；原本的敏感，也可以轉成細膩的觀察。所謂轉虧為盈，就是保留材料，改變它的作用方式。人生的問題，往往不只在事情本身，而在你站在哪裡、用多長的尺丈量它。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們常用本心的語言說出感受，卻仍用大腦原來的學習模式處理它，所以聽懂以後依然做不到。你要追問的不是「我知道什麼」，而是「我成為什麼」。同樣是共鳴，有人只是共鳴於相同的委屈，有人卻已學會換尺；兩者的方向並不一樣。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我談經典，也不願只停在字面。例如「見諸相非相，即見如來」，還可以追問：「什麼是見？什麼是如來？所見與如來又有什麼關係？」把問題帶回自身的觀看，才可能超出背誦與認同。學習應當打開洞察，而不是替自己建立另一套不能移動的界樁。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從文化語言回到身體理解",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-001.png?v=1780020",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我談禮樂射御書數，是要說明制度與文化原來有其整體作用。我希望你們看見的，是文化如何與人的實際狀態連接。道家的詞彙也是如此，氣、炁、元氣、氣機與周天，不應只是玄學詞彙，而應指向身體能實踐、體會的領域。參與讀書會，是先熟悉這些語言，再回頭理解我如何用不同說法描述同一個內在現象。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我也借西方哲學對水、火、數字到原子的觀察與歸納來說明，人們逐步追問萬物如何形成與變化。水在不同溫度下呈現的變化，讓我們從中理解表相的變異性。我借這些概念作為語言橋梁，嘗試把東方修練的語言，放進較容易理解的系統中，讓你們找到相互參照的方法。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "在我的系統裡，「光」不只是眼睛能見的亮度，也被用來描述能量、頻率與訊息如何呈現。萬物形貌各異，因為它們帶有不同的訊息。我說喝茶、聞香，希望你們學會深入感受它形成的環境、經歷與內涵。重點仍是把注意力從既有判斷移到直接感受。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我安排讀書會、八點檔與各式集體活動，就是要建立滾動式學習。同一個核心，透過不同的人、不同介面與不同經驗，一次次被接觸、消化、驗證，最後再回到同一套身體系統。這無法靠我一個人完成，要讓你們從多個入口，逐步把理解連貫起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "識空與性空的雙向運作",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-002.png?v=1985464",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "識空圖",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-003.png?v=1724539",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "性空圖",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這兩張圖像手掌的兩面，一面是識空，一面是性空，彼此關聯。十八套功法，包括引體、經脈與導氣，都在幫助你認識身體、心與大腦如何形成現在的自己，並練習對形、相與想法的執著逐步鬆開。所謂識空，是實際經歷不被原來認知綁住的過程。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "第六意識帶領眼耳鼻舌身，追逐需求、比較得失，最後把種種情緒交給心承受。心原本有更大的作用，卻淪為垃圾處理場，被大腦製造的情緒壓垮。修練首先要看清這個過程，知道自己的紛亂如何發生。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我說「不要想」，是要你暫時放下辨認、分析、計較的慣性，讓感受主導，這才有機會從識神控制，走向元神與覺性。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-004.png?v=315463",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "沿著這張圖，從專注、感覺自己的感覺、以意導氣，逐步走向空相的體會。當你不再只抓住物體的固定樣子，就會看到相一直在變。繼續追問下去，才會回到自己的心、氣與息，探索觀看與被觀看的關係。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我借王陽明的「心外無物」「格物致知」「知行合一」來說明這個方向。格物不能只認識物的表面，還要深入它所隱含的道理；聞香可以是格物，能聞到其中內涵，才算進入香道。知行合一，就要讓所知與實際行動一致。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我一生要留下的，就是這套經過長期教學、身體實驗與學員變化所累積的系統。文字可以整理，AI也能協助統合，但若只留下名詞，沒有操作與成為，這套系統仍可能像失去本質的禮，最後只剩包裝。因此，傳承最重要的是保住內在的連貫與實作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "在AI時代保留人的本心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我關心AI，不只關心它會不會比人聰明，更關心人會不會把自己的思考、感受與生命主導權交出去。知識可以被機器掌握，但我所重視的是人具有生命的本心與靈魂。若只是競爭記憶和計算能力，人就會忘失自己真正的優勢。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我憂心的是，當機器人可以完全配合人的情感與感官需求，人可能越來越無法接受真人的脾氣、差異與限制。若只追求立即滿足，就會遠離人與人之間需要互相承擔的關係，甚至影響傳統繁衍。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "另一方面，人會遺忘，也因此有柔和、樸拙、浪漫與重新感受世界的可能。若只追求永不遺忘、極度精明，未必保得住生命的溫度。我主修人道，從身體、氣機來解釋人的存在，最後仍要回到身心靈如何成為一個完整的人，而不是只把自己訓練成更有效率的大腦。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "由三丹田走入自然呼吸",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-005.png?v=315463",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "在我的修練架構中，下丹田對應煉精，中丹田對應煉氣與煉心，上丹田對應更上層的精神作用；先天的層面則以元精、元氣、元神來描述。分辨先天與後天的差別，就在由「識」還是「覺」主導？是想法刻意控制，還是覺性自然運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "不同階段的修煉方法不同。煉精化氣時，可以用意念帶動，稱為以意導氣；進入中丹田，開始煉氣與道心時，則是以意隨氣，不再刻意操作，進入溫養，讓已建立的功能自然發展。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這時最重要的是「息」。所謂「真息」，是不靠大腦安排的自然呼吸。每個時段、每個情境，呼吸頻率都可能不同，不能把固定吸幾秒、吐幾秒當成唯一標準。倘若刻意控制呼吸節奏，就又交給識神主導。現在的學習重點是感受當下呼吸。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "靜坐也不一定要盤腿，重點是身體放鬆，讓感官向內。眼觀鼻、鼻觀心，兩眼聚焦、回到鼻根，再以自然呼吸連到中丹田，以天心合人心。這些做法指向同一件事：把散亂在外的注意收回，讓心不再被外境牽著走。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "耳朵反聽內在心跳，感受呼吸與心跳的節律。一次吸氣、吐氣有幾次心跳，會因當下狀態改變；重點不是計數，而是覺察兩者自然相依。這就是「心氣相依」。此外眼向內觀、耳向內聽、鼻依自然呼吸，舌的津液也自然參與，這就是「五覺合一」，讓所有訊息同歸一處。所謂「入心為靜，入想為亂」，關鍵是保持自然，讓注意漸漸回到息與內心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "心信光念構成道心運作場",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "道心真正運作需有四大要素——心、信、光、念。心的本質是愛，是一切善的總和；信是訊息的總和；光是頻率的總和；念是作用力的總和。四者共同形成一個場，道心才能自然運作起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "caption": "",
-        "src": "/assets/articles/202611/202611-img-006.png?v=271692",
-        "type": "image"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「愛」不是情緒上的貪愛，是不談條件的付出，心如大海，一切存在都是自然而然的。用本心才能體察這種不以得失為前提的愛有多開闊。「信」像設計藍圖，把不同感官與生命訊息整合起來；「光」讓不同頻率的作用得到呈現；「念」則使整個設計成為實際作用。只有四者相連，才是道心運作場。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "例如有人責罵你，原來的尺會量到你尊嚴受傷；換一把尺，就可能看見對方正在進入你的世界，試著與你產生連結。我不是要你強迫釋懷，而是透過長期練習，讓觀看的尺度自然展開。道心不是生氣之後才按下的開關，而是事件發生當下，它就產生不同的運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "四個要素需要反覆練習，才會成為本能。就像情緒反應是長期養成，道心也必須透過持續應用，逐步成為人格的一部分。當視野變大，原來非得爭論的事就可能縮小了；不是壓抑自己，是不再從狹窄的位置承受世界。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "周天運轉與以術入道",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "靜功練向內，動功則要把向內看的狀態帶入外在生活。我以小周天說明內在運作，以大周天說明走入現實、面對外界。動作仍有外形，但不能只聽大腦指令，要聽氣，讓呼吸、氣路與動作自然協調。快慢依當下狀態調整，不能為了模仿老師而緊張兮兮。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "五覺合一，也不是拒絕音樂與世界，而是不把內心交給外境。聽到不同曲目，能不被拉進亢奮或悲傷；你可以讓自己的氣場像演奏廳，讓聲音在其中被接納、被理解。外境進來，內在仍能保持定靜，不是所有感受都交由外面的刺激決定。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "當四個要素逐漸具足，我才會進一步跟你們談念力。個人念力有範圍，不能任意改變別人的世界，也不能把貪求當作修練。集體念力則涉及眾人的頻道與共同作用。我以自然、因緣與共同祈願來說明我的理解，但學習次第仍要先養成本心，再談它的力量。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "有學員問，若大家學會念力，能否一起為老師延壽？我看重的，是這個念頭能關心另一個生命。這是本心開始萌發的方向——自然走向善、圓滿、內斂與沉穩。任何力量若離開這個基礎，就又回到大腦的欲望。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "修練必須按部就班，從專注、不要想，到練氣，再到忘形。第一步不是什麼都忘，而是先清楚學會，反覆練習；接著把重心由記憶動作轉成以氣運作，最後才可能成為自然反應。我說忘形，不是忘東忘西，也不是連動作都沒學清楚就放棄記憶，而是技術已融進自己，不必每一步都靠大腦提醒。心、信、光、念也要如此逐步人格化，才能在外境來時自然運作。若始終模仿外表、追求姿勢的美感，仍停留在技藝之末，沒有觸及核心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從練氣化神、練神還虛、練虛合道，到道法自然，是我用來展開後續路途的語言。我先把全貌告訴你們，是讓你知道現在在哪裡，未來要往哪裡去，不是宣布你已經達成。連專注都還不穩，不能因為聽過道心，就以為自己已經具有道心；每個層次都必須在身上逐步建立。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我擔心時間不夠，也擔心你們缺課、斷了脈絡，以為看電子報便可以接上。這套教學是一環扣一環，前面的準備，常到後面才看出作用。若把某一段抽出，用自己過去的理解填補，就容易變成我講我的、你聽你的，動作依然在做，內在卻沒有相應的內容。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，整理文章不只是把四個小時的話變成文字，更要看到前後如何互相支撐。讀懂、複習、查證，再放回身體練習，才能知道每個詞在自己身上指向什麼。老師可以把路說出來，也可以示範，但你必須真正走進去，才會知道心氣相依、五覺合一與道心，不是幾個可以替自己加分的名稱。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "往後的無極，要練的是內在的核心。以自然的息定向感官，讓心逐步安定，讓六根回到內在，再把這份覺察，帶回動作與生活。當事情發生，心中的尺能自然展開。我要你們成為能掌握生命主導權、以本心面對世界的人。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "真正的學習，要從每次日常反應裡看見變化；不是多懂一層道理，而是遇到同樣的事，能有不同的感受、位置與作法，讓生命逐漸成為自己的驗證。（本文依20261020二早班課程紀錄裁剪修潤而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
+    "homeAnchor": "#article-202611-2611-3-5",
     "title": "從身體實證走向道心運作",
-    "slug": "202611-2611-3-5",
-    "author": "文稿彙整 / 二早班",
-    "category": "如是我聞"
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 7 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186",
+    "author": "文稿彙整 / 四午班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一般講練氣，很多人腦中立刻出現呼吸、丹田、經絡，或者身體裡有一股氣跑來跑去的畫面。若只停在這裡，練氣便成了肉體技術，甚至只是另一種體操。道家真正的練氣不是搬運一團看不見的東西，而是以身體作為入口，重新理解生命、心靈與宇宙的關係。它既有形而下的呼吸、力學與生理運作，也有形而上的心性、意識與生命本源；兩者其實是同一件事的內外兩面。所謂修煉，就是讓後天被限制、被命名、被情緒綁住的生命，逐漸返回先天本自具足的元氣。從氣到炁，從人心到道心，從換力、換氣到化形，都是生命由二元走向整體的過程。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "道家文字學就是生命哲學",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "中國文字到了道家手裡，從來不只是解釋名詞，而是在畫出一條生命轉化的道路。煉精化氣、煉氣化神、百日築基、前三田後三關、玄關一竅、河車運轉、上鵲橋與下鵲橋⋯⋯表面看來像一套神祕功法，其實每一個詞都在告訴我們生命如何由物質進入能量，由能量進入心靈，再由有限的個體接回宇宙整體。你若把它們當成身中幾條固定管線，只會在形上追形；真正要看的，是文字背後所指向的生命範式。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "精是已經凝聚成形的生命材料，是身體、慾望與後天世界的存在；氣是使這些物質運轉、交換與變化的作用；神不是腦袋裡的想法，而是生命能夠與更高頻率同頻共振的整體覺性。煉精化氣，不是否定肉體，而是把被僵硬形式鎖住的力量重新釋放；煉氣化神，也不是離開身體飛往另一個世界，而是讓身體的頻率能夠接到上天的頻率、宇宙整體意識的頻率。當一個人不再只用個人的小腦袋解釋世界，而能讓天意、天識透過他顯現，這才是化神。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以練氣是把後天的氣還原為先天的炁。後天的氣是鼻口進出的空氣，是飲食、呼吸與活動形成的能量，也是被情緒與環境不斷擾動的生命狀態。先天一炁則是尚未被後天識性限制的原始生命力，本自具足。修煉的工作，不是再往身上堆更多知識與想像，而是滌除玄覽，讓原有的生命源泉重新流動。前三田後三關是生命不同層次的通道，玄關一竅是有限認知開向無限的轉折，河車與鵲橋則象徵上下、內外、先天與後天重新接通。文字不是迷信的包裝，而是古人用來保存身體經驗與宇宙觀的哲學圖像。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "形而上與形而下原是一體",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "哲學若只在腦中辯論，就仍然只是知識；功法若只有動作，又會變成沒有方向的操練。道家修煉最重要的地方，是形而上一定要落實在形而下，形而下也必須能夠彰顯形而上。心靈是否寬廣，會直接表現在呼吸是否安定、肌肉是否緊繃、動作是否急躁。身體能不能放掉硬力，也會反過來決定一個人的心能不能離開執著。你說自己明白無常，遇到變化卻全身僵住，那個明白只是概念。你說自己有道心，呼吸與動作仍被情緒拖著走，道心就還沒有進入身體。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "因此練氣不應該追求虛玄感覺。真正存在的東西，必須能在身上驗證：原來用力的地方鬆開了，原來直來直往的力量漸次轉成螺旋，原來遇事就亂的呼吸已恢復自然。身體的每一次改變，都是哲學的證明，形而上的每一次領悟，也要落實到身體，成為動作、呼吸、選擇與日常生活。這才是格物，格到最後不是把外物分解完，而是透過萬物看清自己的心。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "大腦的邊界與識神之火",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "大腦不是敵人，但我們長久以來把它用錯了。第六意識在生命演化中的基本功能，是反應當下、辨識環境、保護安全。看到危險知道閃避，接收訊息能夠分類，這是大腦應有的作用。它像一套安全系統，替我們建立必要的界線，卻不適合成為生命的最高指揮者。現在的人偏偏讓大腦包辦一切：用它設計恐懼、推演得失、製造問題，再用更多想法解決自己製造的問題。結果腦愈忙，心愈弱；知識愈多，生命反而愈不敢流動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "識神就是這種後天認知不斷自我運轉的狀態。我知道、我認為、我應該、事情一定如此⋯⋯這些念頭一升起，便把無限可能縮成一把很短的尺。老子說「知不知上」，不是叫人拒絕知識，而是知道自己的知道有邊界；蘇格拉底說「我所知道的就是我的無知」，也是在拆除知識對生命的綁架。真正高明的人，不是什麼都不想，而是不再用有限的大腦替宇宙下最後判決。止火，就是停止識神不停加熱、推論與控制，讓大腦退回工具的位置。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所謂不要想，不是遇事不用判斷，更不是變成愚昧的人，而是不要讓個人之意取代天意。大腦可以反應當下，卻不必把未來封死；它可以幫助我們看見事實，卻不能宣稱已看見全部。當識神安靜下來，我們才開始有能力讀天意。天意不是外面有個聲音命令你，而是生命與萬物本來就在同一個整體中運作。你用人心看，只看見個人的利害；你用天識看，便能在更大的關係裡感受事情的方向。這種知道不是分析出來的答案，而是心與世界同頻後自然生出的覺。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從人心回到道心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人心本來沒有錯，錯在我們讓它長期替大腦承受情緒。得失、恐懼、憤怒與不甘不斷往心裡倒，最後心只剩煩惱，好像它存在的目的就是痛苦。其實心的本質不是情緒，而是圓滿。真正的心可以包容好事與壞事，可以在變化中保持完整，也可以把個人的生命與天地萬物連接起來。當心只容得下自己的立場，它就是人心；當心能與萬物同在，不再把世界切成支持我與傷害我，它就顯現為道心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "由人心轉為道心，不是用另一個正面念頭壓掉負面念頭。那仍然是識神在換衣服。真正的轉化，是在事情發生時看見自己的「我知道」與「我認為」，然後不急著跟隨。你能在這個點停住，在沒有既定答案的地方保持呼吸與覺察，道心才有機會起來。人心一動，道心常被遮住，但只要修煉已經進入身體，道心不是靠提醒才出現，它會成為自然反應。那時我們不再急著證明自己，而能從更大的尺度看見事情。心量有多大，世界就有多大；心能與天地萬物相合，才有可能聽見天意。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "換力期",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "天光要能入人心，有其階段性，把後天的慣性從身體、感受、想法，層層剝落。第一階段是換力。一般人的力量來自後天習慣：肌肉用力、關節抵抗、動作直來直往，遇到重量便想硬撐。這套力學很耗能，也會把身體切成一塊一塊。換力不是把自己練得更強壯，而是把原來局部的用力方式整套換掉，力量不在局部作用，而沿著全身結構流動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "宇宙中的運動不是僵硬的直線，而是不斷旋轉、循環與延伸的螺旋。當我們把動作轉成螺旋，原來需要局部肌肉拚命完成的事，會變得省力而連續。手不是單獨伸出去，胯、脊椎、肩、肘與指端都在同一條螺旋中；腳也不是踩住地面硬推，而是借地面的反作用與身體的鬆落形成整體運動。開始時你會想著角度、路線與位置，因為舊的力學還在，練久以後，螺旋進入身體，不需要刻意提醒便自然發生。這時身體雖然做了更深的功，耗能反而更少，因為阻力被拿掉了。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "換力期的哲學意義，是打破後天僵硬的習慣。直線力學像大腦的執著，只認一條路，只會迎面對抗；螺旋力學則容許轉換、借力與回流。身體能轉，你就能讓心有機會轉；關節能空，生命就有空間接受新的可能。形而下的力學改變，就是在爲形而上的道心準備一個可以居住的身體。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "換氣期",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "換力之後，才真正進入換氣。換氣不是多學一種胸式或腹式呼吸，而是換掉後天單一、受意識控制的呼吸狀態，進入任督二脈與周天運轉的整體氣機。後天呼吸仍然存在，但它不再是唯一的主角。下丹田、四點聚氣與全身八脈形成一個無形空間，呼吸、動作與元氣在其中互相引動。此時不是手在用力，而是氣行於力；不是肌肉拖著動作，而是氣機帶著整個身體運轉。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "覺察也會經歷三個層次。最初是聽之以耳，依靠感官辨認呼吸、聲音與身體反應；再來是聽之以心，不急著判斷，而讓訊息回到內心形成整體感受；最後是聽之以氣，動作不再等候大腦逐項下令，氣機本身就知道如何接續。這並不是失去意識，而是熟練到不需要識神干預。就像走路時不必思考先出哪一隻腳，真正的周天運轉也會從刻意練習變成生命本能。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "換氣期最重要的是耐得住性子。急躁一定會用腦，用腦便會添火，心一不安，氣機就斷裂。因此修煉不能追著感覺跑，也不能為了證明有氣而製造熱、麻、震動。要做的是守住自然呼吸，在動作中不用蠻力，讓先天元氣與後天呼吸慢慢相合。當氣能主導力學，六根不再各自分散，身體便從一堆零件恢復成一個整體。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "化形期",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "換氣成熟以後，才談化形。化形不是把肉體變成神話中的另一副模樣，而是生命力從源頭上重新塑造身體的結構、細胞與氣質。道家把下丹田比作蓮花，把本自具足的生命種子稱為仙胎。蓮花未開時，能量仍被舊有形體、情緒與習慣包住；當元氣在丹田中飽和，像蓮花一層一層綻放，先天生命力便不再只是維持原有身體，而開始參與身體的更新與重組。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "仙胎不是後來塞進身體的神祕物，而是人出生時就帶來的原始生命可能。肉體本來就具有生成、修復與變化的能力，只是後天的恐懼、僵硬與耗損使它逐漸停止開展。化形是再給自己一次出生的機會，讓形不被後天認知限制，而成為生命力可以不斷更新的作品。所謂如仙道般變幻無窮，不是逃避生老病死，而是生命不再一路僵化、一路下跌，它能在循環中回升，在損傷後重建，在無常中保持生成。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "到這個階段，形而上與形而下開始合一。心的尺度改變，往下身體結構跟著改變；往上氣機的頻率改變，人的眼神、聲音、姿態與行動也跟著改變。化神與化形不是兩件事，神是生命的方向，形是方向留下的證據。一個人怎麼活、怎麼呼吸、怎麼面對變化，最後都會寫進他的身體。真正的修煉不需要假裝仙風道骨，生命若已轉化，形自然會說話。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "在日用之中完成修煉",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從氣到炁、從識神到道心、從換力到換氣再到化形，看似是一條很長的路，其實每一步都發生在當下。你如何站立、如何轉身、如何呼吸，遇到衝突時是否立刻用大腦封死答案，面對未知時能否保持心的寬廣，這些都是修煉。舉手投足皆是道，只是我們常用錯大腦，看不見它。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以不要把道家文字當成考試名詞，也不要把功法當成動作收藏。文字要在身上被證悟，哲學要在生活中被實踐。當螺旋成為身體的本能，周天成為氣機的自然，道心成為面對世界的尺度，仙胎便不再只是一個比喻。練氣的終點不是得到一種特殊感覺，而是讓生命重新接通它本來的源泉。那時我們用大腦處理當下，卻不讓大腦限制未來；用肉體生活在三維世界，心卻能與更大的宇宙頻率同在。形而下沒有離開形而上，形而上也不再飄在空中。人活成一座橋，後天與先天在他身上相接，氣與炁在他身上相通，而有限的這一生，也因此顯現出無限生命的光。",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -3341,268 +3584,486 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-6",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186",
-    "sourceId": "2611-3-6",
-    "readTime": "約 7 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "一般講練氣，很多人腦中立刻出現呼吸、丹田、經絡，或者身體裡有一股氣跑來跑去的畫面。若只停在這裡，練氣便成了肉體技術，甚至只是另一種體操。道家真正的練氣不是搬運一團看不見的東西，而是以身體作為入…",
-    "order": 7,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "一般講練氣，很多人腦中立刻出現呼吸、丹田、經絡，或者身體裡有一股氣跑來跑去的畫面。若只停在這裡，練氣便成了肉體技術，甚至只是另一種體操。道家真正的練氣不是搬運一團看不見的東西，而是以身體作為入口，重新理解生命、心靈與宇宙的關係。它既有形而下的呼吸、力學與生理運作，也有形而上的心性、意識與生命本源；兩者其實是同一件事的內外兩面。所謂修煉，就是讓後天被限制、被命名、被情緒綁住的生命，逐漸返回先天本自具足的元氣。從氣到炁，從人心到道心，從換力、換氣到化形，都是生命由二元走向整體的過程。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "道家文字學就是生命哲學",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "中國文字到了道家手裡，從來不只是解釋名詞，而是在畫出一條生命轉化的道路。煉精化氣、煉氣化神、百日築基、前三田後三關、玄關一竅、河車運轉、上鵲橋與下鵲橋⋯⋯表面看來像一套神祕功法，其實每一個詞都在告訴我們生命如何由物質進入能量，由能量進入心靈，再由有限的個體接回宇宙整體。你若把它們當成身中幾條固定管線，只會在形上追形；真正要看的，是文字背後所指向的生命範式。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "精是已經凝聚成形的生命材料，是身體、慾望與後天世界的存在；氣是使這些物質運轉、交換與變化的作用；神不是腦袋裡的想法，而是生命能夠與更高頻率同頻共振的整體覺性。煉精化氣，不是否定肉體，而是把被僵硬形式鎖住的力量重新釋放；煉氣化神，也不是離開身體飛往另一個世界，而是讓身體的頻率能夠接到上天的頻率、宇宙整體意識的頻率。當一個人不再只用個人的小腦袋解釋世界，而能讓天意、天識透過他顯現，這才是化神。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以練氣是把後天的氣還原為先天的炁。後天的氣是鼻口進出的空氣，是飲食、呼吸與活動形成的能量，也是被情緒與環境不斷擾動的生命狀態。先天一炁則是尚未被後天識性限制的原始生命力，本自具足。修煉的工作，不是再往身上堆更多知識與想像，而是滌除玄覽，讓原有的生命源泉重新流動。前三田後三關是生命不同層次的通道，玄關一竅是有限認知開向無限的轉折，河車與鵲橋則象徵上下、內外、先天與後天重新接通。文字不是迷信的包裝，而是古人用來保存身體經驗與宇宙觀的哲學圖像。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "形而上與形而下原是一體",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "哲學若只在腦中辯論，就仍然只是知識；功法若只有動作，又會變成沒有方向的操練。道家修煉最重要的地方，是形而上一定要落實在形而下，形而下也必須能夠彰顯形而上。心靈是否寬廣，會直接表現在呼吸是否安定、肌肉是否緊繃、動作是否急躁。身體能不能放掉硬力，也會反過來決定一個人的心能不能離開執著。你說自己明白無常，遇到變化卻全身僵住，那個明白只是概念。你說自己有道心，呼吸與動作仍被情緒拖著走，道心就還沒有進入身體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "因此練氣不應該追求虛玄感覺。真正存在的東西，必須能在身上驗證：原來用力的地方鬆開了，原來直來直往的力量漸次轉成螺旋，原來遇事就亂的呼吸已恢復自然。身體的每一次改變，都是哲學的證明，形而上的每一次領悟，也要落實到身體，成為動作、呼吸、選擇與日常生活。這才是格物，格到最後不是把外物分解完，而是透過萬物看清自己的心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "大腦的邊界與識神之火",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "大腦不是敵人，但我們長久以來把它用錯了。第六意識在生命演化中的基本功能，是反應當下、辨識環境、保護安全。看到危險知道閃避，接收訊息能夠分類，這是大腦應有的作用。它像一套安全系統，替我們建立必要的界線，卻不適合成為生命的最高指揮者。現在的人偏偏讓大腦包辦一切：用它設計恐懼、推演得失、製造問題，再用更多想法解決自己製造的問題。結果腦愈忙，心愈弱；知識愈多，生命反而愈不敢流動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "識神就是這種後天認知不斷自我運轉的狀態。我知道、我認為、我應該、事情一定如此⋯⋯這些念頭一升起，便把無限可能縮成一把很短的尺。老子說「知不知上」，不是叫人拒絕知識，而是知道自己的知道有邊界；蘇格拉底說「我所知道的就是我的無知」，也是在拆除知識對生命的綁架。真正高明的人，不是什麼都不想，而是不再用有限的大腦替宇宙下最後判決。止火，就是停止識神不停加熱、推論與控制，讓大腦退回工具的位置。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所謂不要想，不是遇事不用判斷，更不是變成愚昧的人，而是不要讓個人之意取代天意。大腦可以反應當下，卻不必把未來封死；它可以幫助我們看見事實，卻不能宣稱已看見全部。當識神安靜下來，我們才開始有能力讀天意。天意不是外面有個聲音命令你，而是生命與萬物本來就在同一個整體中運作。你用人心看，只看見個人的利害；你用天識看，便能在更大的關係裡感受事情的方向。這種知道不是分析出來的答案，而是心與世界同頻後自然生出的覺。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從人心回到道心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人心本來沒有錯，錯在我們讓它長期替大腦承受情緒。得失、恐懼、憤怒與不甘不斷往心裡倒，最後心只剩煩惱，好像它存在的目的就是痛苦。其實心的本質不是情緒，而是圓滿。真正的心可以包容好事與壞事，可以在變化中保持完整，也可以把個人的生命與天地萬物連接起來。當心只容得下自己的立場，它就是人心；當心能與萬物同在，不再把世界切成支持我與傷害我，它就顯現為道心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "由人心轉為道心，不是用另一個正面念頭壓掉負面念頭。那仍然是識神在換衣服。真正的轉化，是在事情發生時看見自己的「我知道」與「我認為」，然後不急著跟隨。你能在這個點停住，在沒有既定答案的地方保持呼吸與覺察，道心才有機會起來。人心一動，道心常被遮住，但只要修煉已經進入身體，道心不是靠提醒才出現，它會成為自然反應。那時我們不再急著證明自己，而能從更大的尺度看見事情。心量有多大，世界就有多大；心能與天地萬物相合，才有可能聽見天意。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "換力期",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "天光要能入人心，有其階段性，把後天的慣性從身體、感受、想法，層層剝落。第一階段是換力。一般人的力量來自後天習慣：肌肉用力、關節抵抗、動作直來直往，遇到重量便想硬撐。這套力學很耗能，也會把身體切成一塊一塊。換力不是把自己練得更強壯，而是把原來局部的用力方式整套換掉，力量不在局部作用，而沿著全身結構流動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "宇宙中的運動不是僵硬的直線，而是不斷旋轉、循環與延伸的螺旋。當我們把動作轉成螺旋，原來需要局部肌肉拚命完成的事，會變得省力而連續。手不是單獨伸出去，胯、脊椎、肩、肘與指端都在同一條螺旋中；腳也不是踩住地面硬推，而是借地面的反作用與身體的鬆落形成整體運動。開始時你會想著角度、路線與位置，因為舊的力學還在，練久以後，螺旋進入身體，不需要刻意提醒便自然發生。這時身體雖然做了更深的功，耗能反而更少，因為阻力被拿掉了。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "換力期的哲學意義，是打破後天僵硬的習慣。直線力學像大腦的執著，只認一條路，只會迎面對抗；螺旋力學則容許轉換、借力與回流。身體能轉，你就能讓心有機會轉；關節能空，生命就有空間接受新的可能。形而下的力學改變，就是在爲形而上的道心準備一個可以居住的身體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "換氣期",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "換力之後，才真正進入換氣。換氣不是多學一種胸式或腹式呼吸，而是換掉後天單一、受意識控制的呼吸狀態，進入任督二脈與周天運轉的整體氣機。後天呼吸仍然存在，但它不再是唯一的主角。下丹田、四點聚氣與全身八脈形成一個無形空間，呼吸、動作與元氣在其中互相引動。此時不是手在用力，而是氣行於力；不是肌肉拖著動作，而是氣機帶著整個身體運轉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "覺察也會經歷三個層次。最初是聽之以耳，依靠感官辨認呼吸、聲音與身體反應；再來是聽之以心，不急著判斷，而讓訊息回到內心形成整體感受；最後是聽之以氣，動作不再等候大腦逐項下令，氣機本身就知道如何接續。這並不是失去意識，而是熟練到不需要識神干預。就像走路時不必思考先出哪一隻腳，真正的周天運轉也會從刻意練習變成生命本能。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "換氣期最重要的是耐得住性子。急躁一定會用腦，用腦便會添火，心一不安，氣機就斷裂。因此修煉不能追著感覺跑，也不能為了證明有氣而製造熱、麻、震動。要做的是守住自然呼吸，在動作中不用蠻力，讓先天元氣與後天呼吸慢慢相合。當氣能主導力學，六根不再各自分散，身體便從一堆零件恢復成一個整體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "化形期",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "換氣成熟以後，才談化形。化形不是把肉體變成神話中的另一副模樣，而是生命力從源頭上重新塑造身體的結構、細胞與氣質。道家把下丹田比作蓮花，把本自具足的生命種子稱為仙胎。蓮花未開時，能量仍被舊有形體、情緒與習慣包住；當元氣在丹田中飽和，像蓮花一層一層綻放，先天生命力便不再只是維持原有身體，而開始參與身體的更新與重組。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "仙胎不是後來塞進身體的神祕物，而是人出生時就帶來的原始生命可能。肉體本來就具有生成、修復與變化的能力，只是後天的恐懼、僵硬與耗損使它逐漸停止開展。化形是再給自己一次出生的機會，讓形不被後天認知限制，而成為生命力可以不斷更新的作品。所謂如仙道般變幻無窮，不是逃避生老病死，而是生命不再一路僵化、一路下跌，它能在循環中回升，在損傷後重建，在無常中保持生成。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "到這個階段，形而上與形而下開始合一。心的尺度改變，往下身體結構跟著改變；往上氣機的頻率改變，人的眼神、聲音、姿態與行動也跟著改變。化神與化形不是兩件事，神是生命的方向，形是方向留下的證據。一個人怎麼活、怎麼呼吸、怎麼面對變化，最後都會寫進他的身體。真正的修煉不需要假裝仙風道骨，生命若已轉化，形自然會說話。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "在日用之中完成修煉",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從氣到炁、從識神到道心、從換力到換氣再到化形，看似是一條很長的路，其實每一步都發生在當下。你如何站立、如何轉身、如何呼吸，遇到衝突時是否立刻用大腦封死答案，面對未知時能否保持心的寬廣，這些都是修煉。舉手投足皆是道，只是我們常用錯大腦，看不見它。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以不要把道家文字當成考試名詞，也不要把功法當成動作收藏。文字要在身上被證悟，哲學要在生活中被實踐。當螺旋成為身體的本能，周天成為氣機的自然，道心成為面對世界的尺度，仙胎便不再只是一個比喻。練氣的終點不是得到一種特殊感覺，而是讓生命重新接通它本來的源泉。那時我們用大腦處理當下，卻不讓大腦限制未來；用肉體生活在三維世界，心卻能與更大的宇宙頻率同在。形而下沒有離開形而上，形而上也不再飄在空中。人活成一座橋，後天與先天在他身上相接，氣與炁在他身上相通，而有限的這一生，也因此顯現出無限生命的光。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "換力、換氣、化形",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-6",
-    "author": "文稿彙整 / 四午班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-6",
+    "images": [],
+    "excerpt": "一般講練氣，很多人腦中立刻出現呼吸、丹田、經絡，或者身體裡有一股氣跑來跑去的畫面。若只停在這裡，練氣便成了肉體技術，甚至只是另一種體操。道家真正的練氣不是搬運一團看不見的東西，而是以身體作為入…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 7,
+    "homeAnchor": "#article-202611-2611-3-6",
+    "title": "換力、換氣、化形",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 7 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-8279466.jpg?v=8279466",
+    "author": "文稿彙整 / 六早班 / 台中班",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "text": "從大腦認知轉向心的覺察：六根的轉譯",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "生命的運作區分為天心與人心，也可以區分為宇宙腦與人腦、天識與意識。人腦運作的是意識，是日常生活裡認識世界的系統。而天心、天識，是一個超越既有認知的生命層次。松果體是天心的對應位置，是靈魂的辦公處。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "過去，六根受到大腦控制，現在，要練習把六根接收的訊息，回到內心真正去感受。這是回到本心，天心入人心的第一步。本心就是愛。愛裡面藏著一個「受」。這個受，不是承受別人的情緒，也不是默默接收外界刺激，是讓六根回到內在的覺察。這裡面有一個重要的差別。你常說「我感受到」，這可能還是大腦在解釋自己的感覺；現在，你在分析之前，請先真正觸碰當下的感受。這種從腦的認知轉向心的覺察，稱為六根的轉譯。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，不是換一種方式想事情，是逐漸改變感受事情的方式。當六根不再為識神服務，天心與人心才有機會形成連結。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "這個過程，就是「移鼎換爐」，換掉生命的主導方式，原來用大腦主導，逐漸轉向以本心為中心。這不是轉念，轉念有它的作用，但仍然是大腦在處理大腦製造的問題；你要更進一步，讓心的覺性成為生命的基礎。這就是道心。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "讓道心當家作主，你就不再被狹隘的認知控制。同一件事，原來你只看見自己的委屈，現在你能看見更大的關係；原來你總想證明自己，現在你能真正理解事情的全貌。這就是生命的主導方式逐漸改變。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你要觀察的，不只是情緒本身，而是追蹤情緒從哪裡來。眼睛看見、耳朵聽見，六根的訊息一交給大腦，就被判斷成合不合自己的想法，然後變成內心的連續劇。你要練習在感受剛發生時就看見這個轉折，不再急著替它編故事。這才是從人心返先天的入口。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "道心場的四大結構：愛、信、光、念",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "道心場的四大結構我已經講過了，今天用再舉一個例子講一次。你要做一個杯子，首先需要找到最優質的材料，泥土要純粹，品質要穩定。這個根本的品質稱為善，一切善的總和，就是愛。為了說明本心的品質，是一種正向、穩定而有規律的生命作用，所以我用正弦波來形容它。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有了材料，接下來要有設計圖。要做什麼杯子？什麼形狀、大小、用途？這些都需要訊息。一切訊息的總和稱為「信」。所以信是生命能夠承載的內在訊息，是一種有方向、有結構的存在。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有了愛、有了信，還要透過「光」讓它表現出來。光就是顯化的頻率。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "有了材料、設計，也有顯化的條件，如果沒有作用力，仍然無法形成具體的表現。這個作用力的總和，就是念。所以愛、信、光、念，不是四個分開的東西。愛是本質，信是訊息，光是顯化，念是作用力。這就是「道心場」的結構。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "為什麼你們總想要擁有心想事成的念力？因為你只看到最後一個「念」，前面三個元素根本沒有建立，內心沒有愛的品質，沒有信的結構，也沒有真正理解光的意義，卻想靠念頭改變世界！那不是念力，那是欲望。所以要先把本心建立起來。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "道心不是遇到事情就呼喊「道心」它便出來。愛、信、光、念四大結構必須先經過修煉，逐漸人格化，才有可能成為運用自如的道心場。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "場就是心函數：內心真正的內涵",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "場就是心函數。數學有各種函數，物理學也用函數來描述現象。但我用這個概念來問你們：你的心究竟具備什麼樣的內涵？「函」就是內涵，「數」，是這個內涵能不能形成具體的作用？心裡有沒有數？是問你的生命有沒有真正的內容。你講愛，假若遇到不喜歡的人，你的善意還在嗎？你說感恩，發生不如的事，你是不是就開始埋怨？你把道心講得頭頭是道，但別人一批評你，你就急著辯解。那你的心函數到底有什麼？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "真正的場，要在生命裡運作。面對棘手的問題，要能冷靜尋求解決方案，受到委屈，試著全盤看見各方立場；身邊的人懊惱痛苦，能不能先不批評，設身處地理解他的處境。這些才是心的內涵。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們太怕「不知道」了，別人問你問題，你一定要回答；遇到一件事，你一定要找理由。好像不知道，就代表自己沒有能力。其實，無明才是道心有機會出現的地方。「無明」，就是既有認知無法涵蓋的地方。你現在所有知道的，都在你的知識範圍裡，你怎麼可能靠已知理解未知？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以要開發哲學的想像力，不要既有的檔案夾裡找答案。真正的無明，是你的認知到不了的地方。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "道心什麼時候會出現？很可能就在你面對未知、大腦無法解決問題時。但如果平常沒有修煉，遇到困難只會更恐懼、更憤怒。所以平常就要築基，把本心建立起來，讓心的內涵越來越寬廣。有一天，真的遇到大腦無法處理的事情，才有機會從更大的生命角度去面對。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「人心一起，道心必起」，當原有的情緒與認知升起，如果道心場已有基礎，道心的覺察就會同時出現，不會任由人心獨占整個內在。我用手心、手背同時舉起比喻兩者隨時同在；又說「界外出道心，道心可界外」。你們的尺、你們的界樁，都是已知的邊界。修煉不是把尺加長而已，是學會不再被那把尺困住，能在原來認為沒有答案的地方，看見另一種生命可能。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "百日築基：從身體、呼吸到心的人格化",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "早期從引體、身體空間、關節與內臟篇入手，再逐步進入十二經脈、導氣、任督周天與練炁期。現在講到道心場，不是把前面的功夫丟掉，而是以過去的基礎，承載下一階段的心法。你們要知道自己現在主修哪一段，不能把各個階段的語言混成一團。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，現在練炁期也要築基，建立心的基礎。百日築基是要把一個修煉方法練成本能。如果我教你一個呼吸法，你練了三天有點感覺，之後就不練了。那有什麼用？你必須不斷練習，讓它從刻意操作逐漸變成自然而然。這就是我講的人格化。就像「催眠」，透過反覆練習，讓原本的知識，逐漸成為身體與生命的一部分。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "學任何東西都一樣，無極也是如此。一開始練橐籥，需要注意浮肋、橫膈膜與呼吸的變化。後來，這種協調應該逐漸趨於自然。所以百日築基真正要建構的是你這個人成為了沒？",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "橐籥呼吸：浮肋、橫膈膜與真人之息的基礎",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從前我講「真人之息以踵」，什麼是真人之息？先看看「橐籥」吧。橐籥是一種透過空間開闔帶動氣流的器具，我借它來形容身體呼吸的運作。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "肋骨下方有浮肋，橫膈膜參與呼吸時胸腔的變化，橫膈膜下行時，我用傘撐開來形容下胸廓的擴張，去感覺吸氣時背部、下胸廓與肋骨周圍的開展與整體協調，以及吐氣時逐漸回復的過程。吸氣，浮肋周圍有擴張的感覺。吐氣，這個空間逐漸回收。這就是橐籥呼吸的重要線索。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "認識橫膈膜、胸廓與整個軀幹在呼吸中的協調所形成的橐籥呼吸只是基本功，它要成為身體自然運作的基礎，然後才能進一步理解真息、心氣相依與周天運轉。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "從心氣相依到真息：讓心真正參與生命的呼吸",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "現在要講心氣相依，因為你們每天都在呼吸，卻不一定認識自己的心。我用心臟來比喻本心之愛，要談「愛」，首先就要從這顆心體會什麼是「本心之愛」？",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "心氣相依，就是要從呼吸認識心的作用；在呼吸時，逐漸感受自己的內在。至於真息，是以過去的呼吸訓練為基礎，進一步練習心與覺察的整合。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，過去用意識控制呼吸，這是練習的初步。「後天呼吸起微風，引動真人呼吸功。」就是提醒你們，先從可以覺察的後天呼吸入手。真正開始修煉，呼吸要自然到可以聽見、感受自己的內在節律；讓心逐漸安定，屏除大腦對六根的干擾，這些都與真息有關。所以真人之息，是與呼吸相互連結的整個生命感受方式，當你能在呼吸中保持本心的覺察，才有機會進一步進入小周天的修煉。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "小周天：六根向內，建立飽滿而安定的本心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用佛教的小乘修行比喻小周天偏向自我完成，先把本心建立起來。現在你整個內心都被外界佔滿了，所以我要你先學會六根向內，讓六根不再被大腦的判斷干擾，透過靜坐、小周天與呼吸練習，逐漸認識自己的本心。我用吸飽水的海綿比喻本心逐漸達到飽滿的狀態；不論得失毀譽，你的內在都可以安定。你照樣能敏銳感應外界，只是任何外界刺激都無法牽動你。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "如果本心還沒有建立，就急著追求大周天，只是把自己的混亂帶到更大的世界。所以要先認識自己，才能面對眾生。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "大周天：六根全開，從本心走向眾生",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "小周天的內在修煉，是百會與會陰之間的自我完成；大周天則進一步延伸到手足，透過腳底、勞宮與外界接觸。小周天養心，大周天再把本心帶出去，這個先後不能顛倒。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "大周天就是要讓逐漸安定的心，重新進入人間，面對眾生。看到世界、聽到聲音、接觸不同的人、遇到各種變化，但內心仍然保持自己的本質。這是「化外為內」，不是以天下為己任，是在接觸外界時，能用本心去理解、轉化與回應外在的紛擾變動。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，「以先天練後天」就跟大周天最後要回到人群面對眾生一樣。練功是從後天氣走向先天炁，但並不否定後天的身體與生命。你仍然活在現實世界，仍然要吃飯、工作、照顧家人、處理事情。只是你不再完全由識神主導。你要用修煉已成的本心去生活。真正的修行場，就在自己的內心，也在人與人的關係裡面。能回到生活，才知道自己究竟練成什麼功夫。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "過去練十八套功法，建立身體的基礎，主要在練後天氣的運作。現在開始講「炁」是指先天炁、元氣，是更深一層的生命作用。兩字有別，其中的差異還需好好揣摩體會。但真正重要的是運作方式。當你一直用意識控制身體，用想法指揮呼吸，用大腦追逐感覺，就還在後天的模式裡。透過長期修煉，身體逐漸自然，本心逐漸安定，讓覺性成為主導，這就是從氣走向炁。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "從身體築基，到中丹田的道心場，再進一步談天心、人心與三花聚頂，這是一個逐步建立的系統。先把前面的基礎練好，後面的境界才能水到渠成，否則就會變成大腦的幻想。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，「道的周天運轉圖」上下兩面是維度轉換，整個修煉從肉體、氣機逐步走向精神性與道心的深化；每一階段都可能再被重新理解、重新整合。你們現在練的是道心這一面，不要再用引體篇的理解來做動作。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "聽之以氣，用動作建立「道心場」",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「勿聽之以耳，而聽之以心；勿聽之以心，而聽之以氣。」這話大家已經耳熟能詳了，「勿聽之以耳」之後，要開始用心去感受那個聲音在自己生命裡的作用。再進一步是「聽之以氣」。怎麼聽？就是在周天運轉的過程中，逐漸體會整個生命的自然作用。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "現在做動作越來越強調心法，因為動作早已不是目的，而是要透過這些動作建立「道心場」。所以你們接下來要逐漸熟練單邊上、下手，先認識其中的關係，再進一步體會動作裡面究竟是什麼在運作？你們常看我做一個動作，覺得非常簡單，自己做起來卻完全不一樣。因為我在做的，是整個身體與內在覺察的同步運作。所以你們要練的是心態，也就是內在真正的狀態。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "起如煙、落如雪：無相不是沒有動作，而是不執著動作",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我用兩句話形容動作：起如煙，落如雪。看你們能否體會。你看煙升起來，它會延伸、變化、散開，最後逐漸消失。我是用煙來形容動作的延伸與消融，你做動作，不能永遠抓住最後的姿勢，否則就變成固定的相。真正的動作，要在運行之中不斷變化。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "那什麼叫落如雪？雪花飄落是輕柔、自然的，不是一塊石頭砸下來。你們做動作常常一落就很重，因為你用意識控制落點。你覺得手應該放在這裡，身體應該停在那裡，所以整個動作變得很死。我講落如雪，是要你們體會自然的沉降。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "但拜託，千萬不要我一說像煙、像雪、像雨滴，你就開始模仿。那你就還在追逐外形。我是要你找到動作背後的自然。真正的無相，不是沒有動作，而是不再被固定的形象綁住。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "陰陽糾纏與滾球",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們看我做滾球的動作，看起來只是兩個手掌在轉，可是我講的是陰陽的關係。兩隻手不是各做各的，它們在一個整體中相互連結。我用糾纏來比喻這個關係，但它跟量子物理的糾纏現象無關。我只是用這個概念形容兩個部分雖然有距離，卻仍然處於相互關聯的整體。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "你們做動作時，常常一隻手做完，另一隻手才開始，這樣是兩個分開的動作。你們要體會兩隻手如何在陰陽的關係裡共同運作。身體的開闔、呼吸的節律、重心的變化，也都要逐漸融入這個整體。所以你看我動作好像很輕，卻有一種連續的關係。你自己做得很用力，反而沒有那個感覺，因為你一直在控制局部。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "心外無物：真正的修行場就在自己的內心",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "我借用王陽明的「心外無物」提醒你們要真正認識自己的生命，不能永遠向外追逐，總想到外面找答案。我們反覆強調修煉就是回到內心。但回到內心，不代表逃避世界，離開所有人，讓自己永遠沒有煩惱。而是能在複雜的人生裡不失去自己。所以要把小周天與大周天連在一起。道心場也就是要建立這種能力，你可以看見不同的立場、理解別人的處境，你也可以承認自己的痛苦，不必假裝自己修得很好。你苦，就知道自己苦；有壓力，就知道自己有壓力。不要連痛苦都要用一套修行語言來包裝。真正的修煉，是讓你越來越真實，不是越來越會表演。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "另外，在修煉過程中，「止漏」很重要，不管是精漏、心漏或氣漏、神漏，以及形漏、身漏，都會造成生命在欲望、情緒混亂與身體耗損中失去安定。「有漏必有補」，修煉不是只會壓抑，而是要重新建立身心平衡與承載能力。（以上擷取20261031六早班、台中班課程紀錄重點摘要而成）",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -3666,486 +4127,180 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-3-7",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-8279466.jpg?v=8279466",
-    "sourceId": "2611-3-7",
-    "readTime": "約 8 分鐘",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "excerpt": "生命的運作區分為天心與人心，也可以區分為宇宙腦與人腦、天識與意識。人腦運作的是意識，是日常生活裡認識世界的系統。而天心、天識，是一個超越既有認知的生命層次。松果體是天心的對應位置，是靈魂的辦公…",
-    "order": 8,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "text": "從大腦認知轉向心的覺察：六根的轉譯",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "生命的運作區分為天心與人心，也可以區分為宇宙腦與人腦、天識與意識。人腦運作的是意識，是日常生活裡認識世界的系統。而天心、天識，是一個超越既有認知的生命層次。松果體是天心的對應位置，是靈魂的辦公處。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "過去，六根受到大腦控制，現在，要練習把六根接收的訊息，回到內心真正去感受。這是回到本心，天心入人心的第一步。本心就是愛。愛裡面藏著一個「受」。這個受，不是承受別人的情緒，也不是默默接收外界刺激，是讓六根回到內在的覺察。這裡面有一個重要的差別。你常說「我感受到」，這可能還是大腦在解釋自己的感覺；現在，你在分析之前，請先真正觸碰當下的感受。這種從腦的認知轉向心的覺察，稱為六根的轉譯。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，不是換一種方式想事情，是逐漸改變感受事情的方式。當六根不再為識神服務，天心與人心才有機會形成連結。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "這個過程，就是「移鼎換爐」，換掉生命的主導方式，原來用大腦主導，逐漸轉向以本心為中心。這不是轉念，轉念有它的作用，但仍然是大腦在處理大腦製造的問題；你要更進一步，讓心的覺性成為生命的基礎。這就是道心。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "讓道心當家作主，你就不再被狹隘的認知控制。同一件事，原來你只看見自己的委屈，現在你能看見更大的關係；原來你總想證明自己，現在你能真正理解事情的全貌。這就是生命的主導方式逐漸改變。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你要觀察的，不只是情緒本身，而是追蹤情緒從哪裡來。眼睛看見、耳朵聽見，六根的訊息一交給大腦，就被判斷成合不合自己的想法，然後變成內心的連續劇。你要練習在感受剛發生時就看見這個轉折，不再急著替它編故事。這才是從人心返先天的入口。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "道心場的四大結構：愛、信、光、念",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "道心場的四大結構我已經講過了，今天用再舉一個例子講一次。你要做一個杯子，首先需要找到最優質的材料，泥土要純粹，品質要穩定。這個根本的品質稱為善，一切善的總和，就是愛。為了說明本心的品質，是一種正向、穩定而有規律的生命作用，所以我用正弦波來形容它。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "有了材料，接下來要有設計圖。要做什麼杯子？什麼形狀、大小、用途？這些都需要訊息。一切訊息的總和稱為「信」。所以信是生命能夠承載的內在訊息，是一種有方向、有結構的存在。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "有了愛、有了信，還要透過「光」讓它表現出來。光就是顯化的頻率。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "有了材料、設計，也有顯化的條件，如果沒有作用力，仍然無法形成具體的表現。這個作用力的總和，就是念。所以愛、信、光、念，不是四個分開的東西。愛是本質，信是訊息，光是顯化，念是作用力。這就是「道心場」的結構。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "為什麼你們總想要擁有心想事成的念力？因為你只看到最後一個「念」，前面三個元素根本沒有建立，內心沒有愛的品質，沒有信的結構，也沒有真正理解光的意義，卻想靠念頭改變世界！那不是念力，那是欲望。所以要先把本心建立起來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "道心不是遇到事情就呼喊「道心」它便出來。愛、信、光、念四大結構必須先經過修煉，逐漸人格化，才有可能成為運用自如的道心場。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "場就是心函數：內心真正的內涵",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "場就是心函數。數學有各種函數，物理學也用函數來描述現象。但我用這個概念來問你們：你的心究竟具備什麼樣的內涵？「函」就是內涵，「數」，是這個內涵能不能形成具體的作用？心裡有沒有數？是問你的生命有沒有真正的內容。你講愛，假若遇到不喜歡的人，你的善意還在嗎？你說感恩，發生不如的事，你是不是就開始埋怨？你把道心講得頭頭是道，但別人一批評你，你就急著辯解。那你的心函數到底有什麼？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "真正的場，要在生命裡運作。面對棘手的問題，要能冷靜尋求解決方案，受到委屈，試著全盤看見各方立場；身邊的人懊惱痛苦，能不能先不批評，設身處地理解他的處境。這些才是心的內涵。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們太怕「不知道」了，別人問你問題，你一定要回答；遇到一件事，你一定要找理由。好像不知道，就代表自己沒有能力。其實，無明才是道心有機會出現的地方。「無明」，就是既有認知無法涵蓋的地方。你現在所有知道的，都在你的知識範圍裡，你怎麼可能靠已知理解未知？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以要開發哲學的想像力，不要既有的檔案夾裡找答案。真正的無明，是你的認知到不了的地方。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "道心什麼時候會出現？很可能就在你面對未知、大腦無法解決問題時。但如果平常沒有修煉，遇到困難只會更恐懼、更憤怒。所以平常就要築基，把本心建立起來，讓心的內涵越來越寬廣。有一天，真的遇到大腦無法處理的事情，才有機會從更大的生命角度去面對。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「人心一起，道心必起」，當原有的情緒與認知升起，如果道心場已有基礎，道心的覺察就會同時出現，不會任由人心獨占整個內在。我用手心、手背同時舉起比喻兩者隨時同在；又說「界外出道心，道心可界外」。你們的尺、你們的界樁，都是已知的邊界。修煉不是把尺加長而已，是學會不再被那把尺困住，能在原來認為沒有答案的地方，看見另一種生命可能。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "百日築基：從身體、呼吸到心的人格化",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "早期從引體、身體空間、關節與內臟篇入手，再逐步進入十二經脈、導氣、任督周天與練炁期。現在講到道心場，不是把前面的功夫丟掉，而是以過去的基礎，承載下一階段的心法。你們要知道自己現在主修哪一段，不能把各個階段的語言混成一團。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，現在練炁期也要築基，建立心的基礎。百日築基是要把一個修煉方法練成本能。如果我教你一個呼吸法，你練了三天有點感覺，之後就不練了。那有什麼用？你必須不斷練習，讓它從刻意操作逐漸變成自然而然。這就是我講的人格化。就像「催眠」，透過反覆練習，讓原本的知識，逐漸成為身體與生命的一部分。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "學任何東西都一樣，無極也是如此。一開始練橐籥，需要注意浮肋、橫膈膜與呼吸的變化。後來，這種協調應該逐漸趨於自然。所以百日築基真正要建構的是你這個人成為了沒？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "橐籥呼吸：浮肋、橫膈膜與真人之息的基礎",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從前我講「真人之息以踵」，什麼是真人之息？先看看「橐籥」吧。橐籥是一種透過空間開闔帶動氣流的器具，我借它來形容身體呼吸的運作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "肋骨下方有浮肋，橫膈膜參與呼吸時胸腔的變化，橫膈膜下行時，我用傘撐開來形容下胸廓的擴張，去感覺吸氣時背部、下胸廓與肋骨周圍的開展與整體協調，以及吐氣時逐漸回復的過程。吸氣，浮肋周圍有擴張的感覺。吐氣，這個空間逐漸回收。這就是橐籥呼吸的重要線索。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "認識橫膈膜、胸廓與整個軀幹在呼吸中的協調所形成的橐籥呼吸只是基本功，它要成為身體自然運作的基礎，然後才能進一步理解真息、心氣相依與周天運轉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "從心氣相依到真息：讓心真正參與生命的呼吸",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "現在要講心氣相依，因為你們每天都在呼吸，卻不一定認識自己的心。我用心臟來比喻本心之愛，要談「愛」，首先就要從這顆心體會什麼是「本心之愛」？",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "心氣相依，就是要從呼吸認識心的作用；在呼吸時，逐漸感受自己的內在。至於真息，是以過去的呼吸訓練為基礎，進一步練習心與覺察的整合。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，過去用意識控制呼吸，這是練習的初步。「後天呼吸起微風，引動真人呼吸功。」就是提醒你們，先從可以覺察的後天呼吸入手。真正開始修煉，呼吸要自然到可以聽見、感受自己的內在節律；讓心逐漸安定，屏除大腦對六根的干擾，這些都與真息有關。所以真人之息，是與呼吸相互連結的整個生命感受方式，當你能在呼吸中保持本心的覺察，才有機會進一步進入小周天的修煉。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "小周天：六根向內，建立飽滿而安定的本心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用佛教的小乘修行比喻小周天偏向自我完成，先把本心建立起來。現在你整個內心都被外界佔滿了，所以我要你先學會六根向內，讓六根不再被大腦的判斷干擾，透過靜坐、小周天與呼吸練習，逐漸認識自己的本心。我用吸飽水的海綿比喻本心逐漸達到飽滿的狀態；不論得失毀譽，你的內在都可以安定。你照樣能敏銳感應外界，只是任何外界刺激都無法牽動你。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "如果本心還沒有建立，就急著追求大周天，只是把自己的混亂帶到更大的世界。所以要先認識自己，才能面對眾生。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "大周天：六根全開，從本心走向眾生",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "小周天的內在修煉，是百會與會陰之間的自我完成；大周天則進一步延伸到手足，透過腳底、勞宮與外界接觸。小周天養心，大周天再把本心帶出去，這個先後不能顛倒。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "大周天就是要讓逐漸安定的心，重新進入人間，面對眾生。看到世界、聽到聲音、接觸不同的人、遇到各種變化，但內心仍然保持自己的本質。這是「化外為內」，不是以天下為己任，是在接觸外界時，能用本心去理解、轉化與回應外在的紛擾變動。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，「以先天練後天」就跟大周天最後要回到人群面對眾生一樣。練功是從後天氣走向先天炁，但並不否定後天的身體與生命。你仍然活在現實世界，仍然要吃飯、工作、照顧家人、處理事情。只是你不再完全由識神主導。你要用修煉已成的本心去生活。真正的修行場，就在自己的內心，也在人與人的關係裡面。能回到生活，才知道自己究竟練成什麼功夫。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "過去練十八套功法，建立身體的基礎，主要在練後天氣的運作。現在開始講「炁」是指先天炁、元氣，是更深一層的生命作用。兩字有別，其中的差異還需好好揣摩體會。但真正重要的是運作方式。當你一直用意識控制身體，用想法指揮呼吸，用大腦追逐感覺，就還在後天的模式裡。透過長期修煉，身體逐漸自然，本心逐漸安定，讓覺性成為主導，這就是從氣走向炁。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "從身體築基，到中丹田的道心場，再進一步談天心、人心與三花聚頂，這是一個逐步建立的系統。先把前面的基礎練好，後面的境界才能水到渠成，否則就會變成大腦的幻想。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，「道的周天運轉圖」上下兩面是維度轉換，整個修煉從肉體、氣機逐步走向精神性與道心的深化；每一階段都可能再被重新理解、重新整合。你們現在練的是道心這一面，不要再用引體篇的理解來做動作。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "聽之以氣，用動作建立「道心場」",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「勿聽之以耳，而聽之以心；勿聽之以心，而聽之以氣。」這話大家已經耳熟能詳了，「勿聽之以耳」之後，要開始用心去感受那個聲音在自己生命裡的作用。再進一步是「聽之以氣」。怎麼聽？就是在周天運轉的過程中，逐漸體會整個生命的自然作用。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "現在做動作越來越強調心法，因為動作早已不是目的，而是要透過這些動作建立「道心場」。所以你們接下來要逐漸熟練單邊上、下手，先認識其中的關係，再進一步體會動作裡面究竟是什麼在運作？你們常看我做一個動作，覺得非常簡單，自己做起來卻完全不一樣。因為我在做的，是整個身體與內在覺察的同步運作。所以你們要練的是心態，也就是內在真正的狀態。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "起如煙、落如雪：無相不是沒有動作，而是不執著動作",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我用兩句話形容動作：起如煙，落如雪。看你們能否體會。你看煙升起來，它會延伸、變化、散開，最後逐漸消失。我是用煙來形容動作的延伸與消融，你做動作，不能永遠抓住最後的姿勢，否則就變成固定的相。真正的動作，要在運行之中不斷變化。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "那什麼叫落如雪？雪花飄落是輕柔、自然的，不是一塊石頭砸下來。你們做動作常常一落就很重，因為你用意識控制落點。你覺得手應該放在這裡，身體應該停在那裡，所以整個動作變得很死。我講落如雪，是要你們體會自然的沉降。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "但拜託，千萬不要我一說像煙、像雪、像雨滴，你就開始模仿。那你就還在追逐外形。我是要你找到動作背後的自然。真正的無相，不是沒有動作，而是不再被固定的形象綁住。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "陰陽糾纏與滾球",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們看我做滾球的動作，看起來只是兩個手掌在轉，可是我講的是陰陽的關係。兩隻手不是各做各的，它們在一個整體中相互連結。我用糾纏來比喻這個關係，但它跟量子物理的糾纏現象無關。我只是用這個概念形容兩個部分雖然有距離，卻仍然處於相互關聯的整體。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "你們做動作時，常常一隻手做完，另一隻手才開始，這樣是兩個分開的動作。你們要體會兩隻手如何在陰陽的關係裡共同運作。身體的開闔、呼吸的節律、重心的變化，也都要逐漸融入這個整體。所以你看我動作好像很輕，卻有一種連續的關係。你自己做得很用力，反而沒有那個感覺，因為你一直在控制局部。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "心外無物：真正的修行場就在自己的內心",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "我借用王陽明的「心外無物」提醒你們要真正認識自己的生命，不能永遠向外追逐，總想到外面找答案。我們反覆強調修煉就是回到內心。但回到內心，不代表逃避世界，離開所有人，讓自己永遠沒有煩惱。而是能在複雜的人生裡不失去自己。所以要把小周天與大周天連在一起。道心場也就是要建立這種能力，你可以看見不同的立場、理解別人的處境，你也可以承認自己的痛苦，不必假裝自己修得很好。你苦，就知道自己苦；有壓力，就知道自己有壓力。不要連痛苦都要用一套修行語言來包裝。真正的修煉，是讓你越來越真實，不是越來越會表演。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "另外，在修煉過程中，「止漏」很重要，不管是精漏、心漏或氣漏、神漏，以及形漏、身漏，都會造成生命在欲望、情緒混亂與身體耗損中失去安定。「有漏必有補」，修煉不是只會壓抑，而是要重新建立身心平衡與承載能力。（以上擷取20261031六早班、台中班課程紀錄重點摘要而成）",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "天心合人心、道心場的生命實踐",
+    "date": "2026.11.10",
     "slug": "202611-2611-3-7",
-    "author": "文稿彙整 / 六早班 / 台中班",
-    "category": "如是我聞"
+    "sourceId": "2611-3-7",
+    "images": [],
+    "excerpt": "生命的運作區分為天心與人心，也可以區分為宇宙腦與人腦、天識與意識。人腦運作的是意識，是日常生活裡認識世界的系統。而天心、天識，是一個超越既有認知的生命層次。松果體是天心的對應位置，是靈魂的辦公…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "如是我聞",
+    "order": 8,
+    "homeAnchor": "#article-202611-2611-3-7",
+    "title": "天心合人心、道心場的生命實踐",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 8 分鐘"
   },
   {
+    "image": "/assets/pixabay/pixabay-679016.jpg?v=679016",
+    "author": "文稿彙整 / 鄭雅靜",
+    "sourceUrl": "",
+    "contentBlocks": [
+      {
+        "type": "quote",
+        "text": "第79章 左契\n\n和大怨，必有餘怨，安可以為善？\n\n是以聖人執左契，而不責於人。\n\n有德司契，無德司徹。\n\n天道無親，常與善人。"
+      },
+      {
+        "text": "和大怨，必有餘怨，安可以為善？",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "一個人若看不到自己的內在，總是責怪別人、占人便宜，只知道向外求取，卻放過自己的貪念，久而久之，怨就會愈積愈深。這個「怨」，不只是別人怨你，終有一天，連自己都會怨自己，因為你無法斬斷內心的堆疊餘怨。「和大怨，必有餘怨。」一旦形成了大錯，即便事後道歉、懺悔，內心仍會留下餘怨，因為內心的僵化思維，不是一朝一夕就能化解。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功最重要的，就是觀照自己的身體。一般人的大腦想做什麼，就逼著六十兆細胞去執行，從來沒有問過細胞的意願。如果長期忽略身體的反應，透支身體，六十兆細胞累積的怨也會越結越深。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "練功，是為了照顧自己的身體，成就更好的自己，努力與自己的身體對話，所以不要再讓你的身體留下怨恨了，讓身體感受到生命主人的善意。有覺性的人，都懂得愛惜自己的身體，因為他知道身體是一切的根本，人要真正變好，就不要讓自己形成大怨。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "每個人所帶來的人生課題都不同。有人表現在血壓，有人表現在血糖，有人是反映在情緒、自律神經或其他疾病。課題的形式雖不同，本質卻一樣，生命藉由各種境遇提醒我們：人真正需要修的，不是疾病，而是自己。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "所以，疾病是果，自己才是因。「安可以為善」，就是如何才能圓滿。真正的「善」是從根源改變自己，最重要的不是向外尋找答案，而是反求諸己。唯有回到自己，看見自己的起心動念，看見自己的執著與習氣，生命才有可能重新恢復平衡。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "是以聖人執左契，而不責於人。",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "古代沒有契約書影本，是把契約一分為二，雙方各執一半，叫做「契」。「右契」是持憑據向人索取的一方，「左契」則是承擔責任、履行承諾的一方。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "Web",
+        "isLargeFont": true,
+        "styleName": "Normal (Web)",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「聖人」是反求諸己，追求圓滿的人，聖人總是手持「左契」。「不責於人」，不是一味退讓、放棄是非或縱容他人。人生最後追求的，就是一個圓滿。如果想得到這個大圓滿，就要有面對眾生的態度，把自己當成是為眾生而來。怎麼讓事情圓滿？答案只有一個──自己扛。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「圓滿，一定要自己扛。」這是本章的一把暗鎖。真正要讓事情圓滿，最後還是得自己扛，把所有事情都當成自己的事。「執左契，而不責於人」，就是扛。凡事反求諸己，不向外責怪，先從自己做起，能這樣一直扛的人，最後才能走向真正圓滿。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "有德司契，無德司徹。",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「德」是道的外形，不是一般人講的道德標準。內心有道的人，表現出來的就是德，他做任何事情都不是只從自己的角度出發，而是守著眾生的法則。「司契」，就是守住生命本身的契約。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "在古代，「徹」有徵收賦稅之意，「司徹」是負責收取、追討的人。朋友之間，若是彼此各取所需，重視自己的權利索取，就是無德之人。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "人的道理是「有德司契，無德司徹。」人來到這個世界，不只為了滿足自己，而是帶著你的生命條件、能力與經歷，去完成一份與眾生有關的責任，永遠都以眾生利益為導向。有道、有德的人，他一生就是來還債的。身體的一切習氣與業障，也帶著你要修的個性和脾氣，不論以什麼形式出現，都是你今生要修的功課。",
+        "isHeadingStyle": false
+      },
+      {
+        "text": "天道無親，常與善人。",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "天道沒有偏私，不會特別親近有德或無德之人，天道始終與善、圓滿的人同在。所謂「善」，是凡事反求諸己，不責於人；遇到事情，願意付出，扛下責任，最後都能圓滿。這樣的人總能在生命中遇到機緣，因為他平日照顧自己的身體，練功、覺察、感恩，不斷與身體對話，六十兆細胞自然不會累積大怨，身心也會彼此照應。這是你與自己身體的緣分。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "天地是有能量的。人看的是財富與成就，天地看的是你內在的能量，你長久以來的起心動念終將形成生命的波動，而你的人生也會吸引跟這個波動相應的環境與因緣。人生不是來索取，而是來給予。所以，我們要「執左契」，為眾生而活，把一切交給天地，而不必向人求回報，天地自然會回報你，福報也會隨之而來。",
+        "isHeadingStyle": false
+      },
+      {
+        "styleId": "",
+        "isLargeFont": true,
+        "styleName": "",
+        "isBold": false,
+        "type": "paragraph",
+        "text": "「善」，不是只對自己人好，而是心量擴及眾生。所謂「善人」，就是甘做「天僕」。唯有放下私心，不斷擴大心量，完整地看待自我，才能真正到達「天道無親，常與善人。」。",
+        "isHeadingStyle": false
+      }
+    ],
     "sections": [
       {
         "paragraphs": [
@@ -4176,178 +4331,23 @@ export const reviewDraftArticles = [
         "heading": null
       }
     ],
-    "images": [],
-    "homeAnchor": "#article-202611-2611-4",
-    "issue": "第249期 / 2026.11電子報",
-    "imageCaption": "圖片來源 / Pixabay",
-    "sourceUrl": "",
-    "image": "/assets/pixabay/pixabay-679016.jpg?v=679016",
-    "sourceId": "2611-4",
-    "readTime": "約 3 分鐘",
     "tags": [
       "體證道德經",
       "道德經"
     ],
-    "excerpt": "一個人若看不到自己的內在，總是責怪別人、占人便宜，只知道向外求取，卻放過自己的貪念，久而久之，怨就會愈積愈深。這個「怨」，不只是別人怨你，終有一天，連自己都會怨自己，因為你無法斬斷內心的堆疊餘…",
-    "order": 9,
-    "date": "2026.11.10",
     "issueId": "202611",
-    "contentBlocks": [
-      {
-        "type": "quote",
-        "text": "第79章 左契\n\n和大怨，必有餘怨，安可以為善？\n\n是以聖人執左契，而不責於人。\n\n有德司契，無德司徹。\n\n天道無親，常與善人。"
-      },
-      {
-        "text": "和大怨，必有餘怨，安可以為善？",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "一個人若看不到自己的內在，總是責怪別人、占人便宜，只知道向外求取，卻放過自己的貪念，久而久之，怨就會愈積愈深。這個「怨」，不只是別人怨你，終有一天，連自己都會怨自己，因為你無法斬斷內心的堆疊餘怨。「和大怨，必有餘怨。」一旦形成了大錯，即便事後道歉、懺悔，內心仍會留下餘怨，因為內心的僵化思維，不是一朝一夕就能化解。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功最重要的，就是觀照自己的身體。一般人的大腦想做什麼，就逼著六十兆細胞去執行，從來沒有問過細胞的意願。如果長期忽略身體的反應，透支身體，六十兆細胞累積的怨也會越結越深。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "練功，是為了照顧自己的身體，成就更好的自己，努力與自己的身體對話，所以不要再讓你的身體留下怨恨了，讓身體感受到生命主人的善意。有覺性的人，都懂得愛惜自己的身體，因為他知道身體是一切的根本，人要真正變好，就不要讓自己形成大怨。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "每個人所帶來的人生課題都不同。有人表現在血壓，有人表現在血糖，有人是反映在情緒、自律神經或其他疾病。課題的形式雖不同，本質卻一樣，生命藉由各種境遇提醒我們：人真正需要修的，不是疾病，而是自己。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "所以，疾病是果，自己才是因。「安可以為善」，就是如何才能圓滿。真正的「善」是從根源改變自己，最重要的不是向外尋找答案，而是反求諸己。唯有回到自己，看見自己的起心動念，看見自己的執著與習氣，生命才有可能重新恢復平衡。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "text": "是以聖人執左契，而不責於人。",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "古代沒有契約書影本，是把契約一分為二，雙方各執一半，叫做「契」。「右契」是持憑據向人索取的一方，「左契」則是承擔責任、履行承諾的一方。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「聖人」是反求諸己，追求圓滿的人，聖人總是手持「左契」。「不責於人」，不是一味退讓、放棄是非或縱容他人。人生最後追求的，就是一個圓滿。如果想得到這個大圓滿，就要有面對眾生的態度，把自己當成是為眾生而來。怎麼讓事情圓滿？答案只有一個──自己扛。",
-        "styleName": "Normal (Web)",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "Web"
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「圓滿，一定要自己扛。」這是本章的一把暗鎖。真正要讓事情圓滿，最後還是得自己扛，把所有事情都當成自己的事。「執左契，而不責於人」，就是扛。凡事反求諸己，不向外責怪，先從自己做起，能這樣一直扛的人，最後才能走向真正圓滿。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "有德司契，無德司徹。",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「德」是道的外形，不是一般人講的道德標準。內心有道的人，表現出來的就是德，他做任何事情都不是只從自己的角度出發，而是守著眾生的法則。「司契」，就是守住生命本身的契約。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "在古代，「徹」有徵收賦稅之意，「司徹」是負責收取、追討的人。朋友之間，若是彼此各取所需，重視自己的權利索取，就是無德之人。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "人的道理是「有德司契，無德司徹。」人來到這個世界，不只為了滿足自己，而是帶著你的生命條件、能力與經歷，去完成一份與眾生有關的責任，永遠都以眾生利益為導向。有道、有德的人，他一生就是來還債的。身體的一切習氣與業障，也帶著你要修的個性和脾氣，不論以什麼形式出現，都是你今生要修的功課。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "text": "天道無親，常與善人。",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "天道沒有偏私，不會特別親近有德或無德之人，天道始終與善、圓滿的人同在。所謂「善」，是凡事反求諸己，不責於人；遇到事情，願意付出，扛下責任，最後都能圓滿。這樣的人總能在生命中遇到機緣，因為他平日照顧自己的身體，練功、覺察、感恩，不斷與身體對話，六十兆細胞自然不會累積大怨，身心也會彼此照應。這是你與自己身體的緣分。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "天地是有能量的。人看的是財富與成就，天地看的是你內在的能量，你長久以來的起心動念終將形成生命的波動，而你的人生也會吸引跟這個波動相應的環境與因緣。人生不是來索取，而是來給予。所以，我們要「執左契」，為眾生而活，把一切交給天地，而不必向人求回報，天地自然會回報你，福報也會隨之而來。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      },
-      {
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "text": "「善」，不是只對自己人好，而是心量擴及眾生。所謂「善人」，就是甘做「天僕」。唯有放下私心，不斷擴大心量，完整地看待自我，才能真正到達「天道無親，常與善人。」。",
-        "styleName": "",
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": ""
-      }
-    ],
-    "title": "「執左契」，一切為眾生",
+    "date": "2026.11.10",
     "slug": "202611-2611-4",
-    "author": "文稿彙整 / 鄭雅靜",
-    "category": "體證道德經"
+    "sourceId": "2611-4",
+    "images": [],
+    "excerpt": "一個人若看不到自己的內在，總是責怪別人、占人便宜，只知道向外求取，卻放過自己的貪念，久而久之，怨就會愈積愈深。這個「怨」，不只是別人怨你，終有一天，連自己都會怨自己，因為你無法斬斷內心的堆疊餘…",
+    "issue": "第249期 / 2026.11電子報",
+    "category": "體證道德經",
+    "order": 9,
+    "homeAnchor": "#article-202611-2611-4",
+    "title": "「執左契」，一切為眾生",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 3 分鐘"
   },
   {
     "image": "/assets/pixabay/pixabay-7235207.jpg?v=7235207",
@@ -107163,13 +107163,13 @@ export const reviewDraftArticles = [
 
 export const reviewDraftIssues = [
   {
-    "title": "日月合璧練呼吸",
-    "articleCount": 10,
-    "image": "/assets/pixabay/pixabay-7538471.jpg?v=7538471",
-    "date": "2026.11",
     "href": "/issues/202611/",
-    "issueNumber": "第249期",
     "id": "202611",
+    "date": "2026.11",
+    "issueNumber": "第249期",
+    "articleCount": 10,
+    "title": "日月合璧練呼吸",
+    "image": "/assets/pixabay/pixabay-7538471.jpg?v=7538471",
     "label": "2026.11 電子報"
   },
   {

@@ -1,7 +1,4 @@
 {
-  "generatedAt": "2026-11-08T07:12:44.1683088Z",
-  "cacheBaselineRebuilt": 0,
-  "totalChanged": 10,
   "changedFiles": [
     {
       "issueId": "202611",
@@ -83,5 +80,8 @@
       "stableSignature": "v3|2f42aa4a1c828c8f5b1b11c4190340ca76703228917e211ed84e95ae9255770a|",
       "status": "new"
     }
-  ]
+  ],
+  "generatedAt": "2026-11-08T07:16:00.2765048Z",
+  "totalChanged": 10,
+  "cacheBaselineRebuilt": 0
 }

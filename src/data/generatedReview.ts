@@ -6070,75 +6070,75 @@ export const generatedReviewItems = [
     "issueId": "202610"
   },
   {
+    "category": "如是我聞",
+    "sourceModified": "2026-11-08T07:04:22.9030000Z",
+    "sourceSignature": "v3|aaa9cae2b76e6a294cef62e472b5bc4e7d3dcd6582497719b00a6a0a7cfe931b|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
     "messages": [
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-001.png?v=1780020",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       },
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-002.png?v=1985464",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       },
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-003.png?v=1724539",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       },
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-004.png?v=315463",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       },
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-005.png?v=315463",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       },
       {
+        "severity": "warning",
         "message": "圖片無標題：/assets/articles/202611/202611-img-006.png?v=271692",
-        "type": "content-warning",
-        "severity": "warning"
+        "type": "content-warning"
       }
     ],
-    "status": "needs-review",
     "sourceId": "2611-3-5",
-    "sourceSignature": "v3|aaa9cae2b76e6a294cef62e472b5bc4e7d3dcd6582497719b00a6a0a7cfe931b|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
-    "date": "2026.11.10",
-    "issueId": "202611",
-    "category": "如是我聞",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "image": "/assets/pixabay/pixabay-5946500.jpg?v=5946500",
     "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
     "slug": "202611-2611-3-5",
+    "date": "2026.11.10",
+    "author": "文稿彙整 / 二早班",
+    "image": "/assets/pixabay/pixabay-5946500.jpg?v=5946500",
+    "issueId": "202611",
     "title": "從身體實證走向道心運作",
-    "sourceModified": "2026-11-08T07:04:22.9030000Z",
-    "author": "文稿彙整 / 二早班"
+    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
+    "status": "needs-review"
   },
   {
+    "category": "溫故知新",
+    "sourceModified": "",
+    "sourceSignature": "",
+    "file": "2611-2-2",
     "messages": [
       {
+        "severity": "warning",
         "message": "分類不在既有分類清單：溫故知新",
-        "type": "unknown-category",
-        "severity": "warning"
+        "type": "unknown-category"
       }
     ],
-    "status": "needs-review",
     "sourceId": "2611-2-2",
-    "sourceSignature": "",
-    "date": "2026.11.10",
-    "issueId": "202611",
-    "category": "溫故知新",
-    "file": "2611-2-2",
-    "image": "/assets/pixabay/pixabay-4786394.jpg?v=4786394",
     "id": "202611::2611-2-2",
-    "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
     "slug": "202611-2611-2-2",
+    "date": "2026.11.10",
+    "author": "文稿修潤 / 鄭雅靜",
+    "image": "/assets/pixabay/pixabay-4786394.jpg?v=4786394",
+    "issueId": "202611",
     "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
-    "sourceModified": "",
-    "author": "文稿修潤 / 鄭雅靜"
+    "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
+    "status": "needs-review"
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",
