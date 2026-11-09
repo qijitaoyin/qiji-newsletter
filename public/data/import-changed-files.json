@@ -1,95 +1,95 @@
-﻿{
-    "cacheBaselineRebuilt":  0,
-    "totalChanged":  11,
-    "generatedAt":  "2026-11-09T10:39:28.9744184Z",
-    "changedFiles":  [
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-1編輯小語.docx",
-                             "relativePath":  "202611\\2611-1編輯小語.docx",
-                             "sourceId":  "2611-1",
-                             "stableSignature":  "v3|84c6f04823c0c5c962fe149deb77cd056bbddfe4f4c78da38a78e219af479daf|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-2-1溫故知新20140508-0626日月合璧練呼吸.docx",
-                             "relativePath":  "202611\\2611-2-1溫故知新20140508-0626日月合璧練呼吸.docx",
-                             "sourceId":  "2611-2-1",
-                             "stableSignature":  "v3|8f6390c1927353629ef889f42f8b0b9c9484e920aa3bb6eaf30b503c4fee6b4e|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-2-2溫故知新20170828_筋膜論1.docx",
-                             "relativePath":  "202611\\2611-2-2溫故知新20170828_筋膜論1.docx",
-                             "sourceId":  "2611-2-2",
-                             "stableSignature":  "v3|0b5fc1176f6d2ccf726705b59c836b23f391c9e6c0bc5acc0ebbeef549777344|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-1如是我聞260905-12台中.docx",
-                             "relativePath":  "202611\\2611-3-1如是我聞260905-12台中.docx",
-                             "sourceId":  "2611-3-1",
-                             "stableSignature":  "v3|515cf64d35c092cf965a2a205a7c193e36b64205d69430080f4938cee697ae32|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-2如是我聞261015四晚.docx",
-                             "relativePath":  "202611\\2611-3-2如是我聞261015四晚.docx",
-                             "sourceId":  "2611-3-2",
-                             "stableSignature":  "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|19b37a58e6d6cd547b0d3f8d0309eef9a58b895f415c714778e561bb8c602cb6",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-3如是我聞261017六早、台中.docx",
-                             "relativePath":  "202611\\2611-3-3如是我聞261017六早、台中.docx",
-                             "sourceId":  "2611-3-3",
-                             "stableSignature":  "v3|22e0f226aef0e0c9dfcffadd0e4fbe3b4d126e34c154e6a2e93d3a5163f4b949|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-4如是我聞261019-20一晚、二晚.docx",
-                             "relativePath":  "202611\\2611-3-4如是我聞261019-20一晚、二晚.docx",
-                             "sourceId":  "2611-3-4",
-                             "stableSignature":  "v3|943ddd268e67a48fa750dbe50e66aabf494167a1a669acfd6755c480e7513077|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-5如是我聞261020二早.docx",
-                             "relativePath":  "202611\\2611-3-5如是我聞261020二早.docx",
-                             "sourceId":  "2611-3-5",
-                             "stableSignature":  "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-6如是我聞20261029 四午.docx",
-                             "relativePath":  "202611\\2611-3-6如是我聞20261029 四午.docx",
-                             "sourceId":  "2611-3-6",
-                             "stableSignature":  "v3|40e0ad698a93ec165b971335ac4e058b7a5744d8aa8bf17fb3718f8b222ea296|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-3-7如是我聞20261031六早、台中.docx",
-                             "relativePath":  "202611\\2611-3-7如是我聞20261031六早、台中.docx",
-                             "sourceId":  "2611-3-7",
-                             "stableSignature":  "v3|963ca98089d1815dedc330440853ac916de54178b4e5056d206359a3279ab15a|",
-                             "status":  "new"
-                         },
-                         {
-                             "issueId":  "202611",
-                             "fileName":  "2611-4體證道德經079_左契.docx",
-                             "relativePath":  "202611\\2611-4體證道德經079_左契.docx",
-                             "sourceId":  "2611-4",
-                             "stableSignature":  "v3|2f42aa4a1c828c8f5b1b11c4190340ca76703228917e211ed84e95ae9255770a|",
-                             "status":  "new"
-                         }
-                     ]
+{
+  "totalChanged": 11,
+  "generatedAt": "2026-11-09T14:24:55.0313784Z",
+  "cacheBaselineRebuilt": 0,
+  "changedFiles": [
+    {
+      "issueId": "202611",
+      "fileName": "2611-1編輯小語.docx",
+      "relativePath": "202611/2611-1編輯小語.docx",
+      "sourceId": "2611-1",
+      "stableSignature": "v3|84c6f04823c0c5c962fe149deb77cd056bbddfe4f4c78da38a78e219af479daf|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-2-1溫故知新20140508-0626日月合璧練呼吸.docx",
+      "relativePath": "202611/2611-2-1溫故知新20140508-0626日月合璧練呼吸.docx",
+      "sourceId": "2611-2-1",
+      "stableSignature": "v3|8f6390c1927353629ef889f42f8b0b9c9484e920aa3bb6eaf30b503c4fee6b4e|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-2-2溫故知新20170828_筋膜論1.docx",
+      "relativePath": "202611/2611-2-2溫故知新20170828_筋膜論1.docx",
+      "sourceId": "2611-2-2",
+      "stableSignature": "v3|0b5fc1176f6d2ccf726705b59c836b23f391c9e6c0bc5acc0ebbeef549777344|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-1如是我聞260905-12台中.docx",
+      "relativePath": "202611/2611-3-1如是我聞260905-12台中.docx",
+      "sourceId": "2611-3-1",
+      "stableSignature": "v3|515cf64d35c092cf965a2a205a7c193e36b64205d69430080f4938cee697ae32|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-2如是我聞261015四晚.docx",
+      "relativePath": "202611/2611-3-2如是我聞261015四晚.docx",
+      "sourceId": "2611-3-2",
+      "stableSignature": "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-3如是我聞261017六早、台中.docx",
+      "relativePath": "202611/2611-3-3如是我聞261017六早、台中.docx",
+      "sourceId": "2611-3-3",
+      "stableSignature": "v3|22e0f226aef0e0c9dfcffadd0e4fbe3b4d126e34c154e6a2e93d3a5163f4b949|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-4如是我聞261019-20一晚、二晚.docx",
+      "relativePath": "202611/2611-3-4如是我聞261019-20一晚、二晚.docx",
+      "sourceId": "2611-3-4",
+      "stableSignature": "v3|943ddd268e67a48fa750dbe50e66aabf494167a1a669acfd6755c480e7513077|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-5如是我聞261020二早.docx",
+      "relativePath": "202611/2611-3-5如是我聞261020二早.docx",
+      "sourceId": "2611-3-5",
+      "stableSignature": "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-6如是我聞20261029 四午.docx",
+      "relativePath": "202611/2611-3-6如是我聞20261029 四午.docx",
+      "sourceId": "2611-3-6",
+      "stableSignature": "v3|40e0ad698a93ec165b971335ac4e058b7a5744d8aa8bf17fb3718f8b222ea296|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-3-7如是我聞20261031六早、台中.docx",
+      "relativePath": "202611/2611-3-7如是我聞20261031六早、台中.docx",
+      "sourceId": "2611-3-7",
+      "stableSignature": "v3|963ca98089d1815dedc330440853ac916de54178b4e5056d206359a3279ab15a|",
+      "status": "new"
+    },
+    {
+      "issueId": "202611",
+      "fileName": "2611-4體證道德經079_左契.docx",
+      "relativePath": "202611/2611-4體證道德經079_左契.docx",
+      "sourceId": "2611-4",
+      "stableSignature": "v3|2f42aa4a1c828c8f5b1b11c4190340ca76703228917e211ed84e95ae9255770a|",
+      "status": "new"
+    }
+  ]
 }

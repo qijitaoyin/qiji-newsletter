@@ -274,6 +274,85 @@
       "reason": "",
       "source": "review-metadata-override",
       "createdAt": "09/11/2026 01:49:59"
+    },
+    {
+      "id": "1794135689877-99087094a4d3d",
+      "slug": "202611-2611-2-1",
+      "title": "日月合璧練呼吸",
+      "category": "如是我聞",
+      "original": {
+        "quote": "橫膈膜是身體唯一不生病的肌肉，一上一下不斷切換腹壓和胸壓。",
+        "summary": "以道家「日線」「月線」闡述橫膈膜運作，說明胸腹壓轉換、先天後天氣共振，及日月合璧進入氣功態之法。",
+        "category": "如是我聞",
+        "tags": [
+          "周天",
+          "頻率",
+          "身體感知",
+          "生命修煉",
+          "日常實修"
+        ]
+      },
+      "corrected": {
+        "quote": "",
+        "summary": "",
+        "category": "溫故知新",
+        "tags": [
+          null
+        ]
+      },
+      "reason": "這篇文章的分類是溫故知新喔",
+      "source": "review-metadata-override",
+      "createdAt": "11/08/2026 12:31:33"
+    },
+    {
+      "id": "1794205496174-097cf5bb1f62b8",
+      "slug": "202611-2611-3-3",
+      "title": "探索知識的邊界，去看更大的生命格局",
+      "category": "如是我聞",
+      "original": {
+        "quote": "",
+        "summary": "",
+        "category": "",
+        "tags": [
+          null
+        ]
+      },
+      "corrected": {
+        "quote": "",
+        "summary": "",
+        "category": "",
+        "tags": [
+          null
+        ]
+      },
+      "reason": "第二段多了一個「也」，我還沒學會怎麽把截圖貼在這裡。",
+      "source": "review-metadata-override",
+      "createdAt": "2026-11-09T14:24:59.6203076Z"
+    },
+    {
+      "id": "1794213095239-3d117b965a5a98",
+      "slug": "202611-2611-3-6",
+      "title": "換力、換氣、化形",
+      "category": "如是我聞",
+      "original": {
+        "quote": "",
+        "summary": "",
+        "category": "",
+        "tags": [
+          null
+        ]
+      },
+      "corrected": {
+        "quote": "",
+        "summary": "",
+        "category": "",
+        "tags": [
+          null
+        ]
+      },
+      "reason": "文末請加入（本文依20261029四午班課程紀錄裁剪修潤而成）",
+      "source": "review-metadata-override",
+      "createdAt": "2026-11-09T14:24:59.6225658Z"
     }
   ]
 }
