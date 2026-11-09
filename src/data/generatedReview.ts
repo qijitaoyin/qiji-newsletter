@@ -140,29 +140,6 @@ export const generatedReviewItems = [
     ]
   },
   {
-    "image": "/assets/articles/202108/202108-img-008.jpeg?v=312154",
-    "file": "/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語.docx",
-    "sourceModified": "2021-08-06T06:07:06.0000000Z",
-    "status": "needs-review",
-    "category": "導引香道",
-    "title": "香之物語",
-    "id": "202108::/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語.docx",
-    "sourceSignature": "",
-    "excerpt": "疫情三級警戒期間重讀《紅樓夢》與《金瓶梅》是一件喜樂之事，在此紛亂的時刻，如何把持住內心深刻地凝視神性與人性，同時產生悲憫之心，小說引發的時空哲學，其實與現實是極為連結的。",
-    "issueId": "202108",
-    "date": "2021.08.10",
-    "author": "王亞玲",
-    "slug": "202108-2108-6",
-    "sourceId": "2108-6",
-    "messages": [
-      {
-        "severity": "warning",
-        "message": "同 sourceId 已採用 Gmail 版本：/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語＿修正.docx",
-        "type": "gmail-source-replaced"
-      }
-    ]
-  },
-  {
     "image": "",
     "file": "/home/runner/work/_temp/source_articles/202108/王亞玲＿活色生香  愛慾金瓶梅.docx",
     "sourceModified": "2021-08-06T02:14:41.0000000Z",
@@ -187,6 +164,29 @@ export const generatedReviewItems = [
         "severity": "warning",
         "message": "缺少作者，已留空",
         "type": "missing-author"
+      }
+    ]
+  },
+  {
+    "image": "/assets/articles/202108/202108-img-008.jpeg?v=312154",
+    "file": "/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語.docx",
+    "sourceModified": "2021-08-06T06:07:06.0000000Z",
+    "status": "needs-review",
+    "category": "導引香道",
+    "title": "香之物語",
+    "id": "202108::/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語.docx",
+    "sourceSignature": "",
+    "excerpt": "疫情三級警戒期間重讀《紅樓夢》與《金瓶梅》是一件喜樂之事，在此紛亂的時刻，如何把持住內心深刻地凝視神性與人性，同時產生悲憫之心，小說引發的時空哲學，其實與現實是極為連結的。",
+    "issueId": "202108",
+    "date": "2021.08.10",
+    "author": "王亞玲",
+    "slug": "202108-2108-6",
+    "sourceId": "2108-6",
+    "messages": [
+      {
+        "severity": "warning",
+        "message": "同 sourceId 已採用 Gmail 版本：/home/runner/work/_temp/source_articles/202108/Gmail/2108-6香之物語＿修正.docx",
+        "type": "gmail-source-replaced"
       }
     ]
   },
@@ -1091,29 +1091,6 @@ export const generatedReviewItems = [
   },
   {
     "image": "/assets/articles/202112/202112-img-016.png?v=2160395",
-    "file": "/home/runner/work/_temp/source_articles/202112/2112-12導引香道.docx",
-    "sourceModified": "2021-12-07T11:17:32.0000000Z",
-    "status": "needs-review",
-    "category": "編輯小語",
-    "title": "編輯部",
-    "id": "202112::/home/runner/work/_temp/source_articles/202112/2112-12導引香道.docx",
-    "sourceSignature": "v2|28571bed5de7d86087f94283d328b3995a92c485a0e3d4880b99ab4a7102be73|",
-    "excerpt": "種子班每位學員在歲末年終交出自己回顧與展望的一分鐘錄音，已持續第三年了。過去兩年，我們會針對錄音內容，舉行普選投票，先選出各班代表，再由全體學員選出所謂的「武林盟主」。兩屆武林盟主大會的創意力…",
-    "issueId": "202112",
-    "date": "2021.12.10",
-    "author": "",
-    "slug": "202112-2112-1",
-    "sourceId": "2112-1",
-    "messages": [
-      {
-        "severity": "warning",
-        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
-        "type": "legacy-template-missing"
-      }
-    ]
-  },
-  {
-    "image": "/assets/articles/202112/202112-img-016.png?v=2160395",
     "file": "/home/runner/work/_temp/source_articles/202112/2112-12范子計然.docx",
     "sourceModified": "2021-12-07T11:16:50.0000000Z",
     "status": "needs-review",
@@ -1137,6 +1114,29 @@ export const generatedReviewItems = [
         "severity": "warning",
         "message": "缺少作者，已留空",
         "type": "missing-author"
+      }
+    ]
+  },
+  {
+    "image": "/assets/articles/202112/202112-img-016.png?v=2160395",
+    "file": "/home/runner/work/_temp/source_articles/202112/2112-12導引香道.docx",
+    "sourceModified": "2021-12-07T11:17:32.0000000Z",
+    "status": "needs-review",
+    "category": "編輯小語",
+    "title": "編輯部",
+    "id": "202112::/home/runner/work/_temp/source_articles/202112/2112-12導引香道.docx",
+    "sourceSignature": "v2|28571bed5de7d86087f94283d328b3995a92c485a0e3d4880b99ab4a7102be73|",
+    "excerpt": "種子班每位學員在歲末年終交出自己回顧與展望的一分鐘錄音，已持續第三年了。過去兩年，我們會針對錄音內容，舉行普選投票，先選出各班代表，再由全體學員選出所謂的「武林盟主」。兩屆武林盟主大會的創意力…",
+    "issueId": "202112",
+    "date": "2021.12.10",
+    "author": "",
+    "slug": "202112-2112-1",
+    "sourceId": "2112-1",
+    "messages": [
+      {
+        "severity": "warning",
+        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "type": "legacy-template-missing"
       }
     ]
   },
@@ -6024,126 +6024,126 @@ export const generatedReviewItems = [
     "author": "文稿修潤 / 李明"
   },
   {
-    "slug": "202611-2611-3-2",
-    "author": "文稿彙整 / 四晚班",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-2如是我聞261015四晚.docx",
-    "issueId": "202611",
-    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-2如是我聞261015四晚.docx",
-    "image": "/assets/pixabay/pixabay-1679708.jpg?v=1679708",
-    "sourceId": "2611-3-2",
+    "id": "202611::2611-2-1",
+    "category": "溫故知新",
+    "sourceId": "2611-2-1",
+    "file": "2611-2-1",
+    "image": "",
+    "title": "日月合璧練呼吸",
+    "sourceSignature": "",
+    "sourceModified": "",
     "messages": [
       {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-001.png?v=391156",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-002.png?v=143791",
+        "message": "分類不在既有分類清單：溫故知新",
+        "type": "unknown-category",
         "severity": "warning"
       }
     ],
-    "sourceSignature": "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|",
-    "title": "從識神作用返回自心",
     "status": "needs-review",
-    "sourceModified": "2026-11-08T07:00:51.7810000Z",
-    "excerpt": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
-    "date": "2026.11.10",
-    "category": "如是我聞"
-  },
-  {
-    "slug": "202611-2611-3-5",
-    "author": "文稿彙整 / 二早班",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "issueId": "202611",
-    "id": "202611::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202611/2611-3-5如是我聞261020二早.docx",
-    "image": "/assets/pixabay/pixabay-6641880.jpg?v=6641880",
-    "sourceId": "2611-3-5",
-    "messages": [
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-001.png?v=1780020",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-002.png?v=1985464",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-003.png?v=1724539",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-004.png?v=315463",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-005.png?v=315463",
-        "severity": "warning"
-      },
-      {
-        "type": "content-warning",
-        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-006.png?v=271692",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
-    "title": "從身體實證走向道心運作",
-    "status": "needs-review",
-    "sourceModified": "2026-11-08T07:04:22.9030000Z",
-    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
-    "date": "2026.11.10",
-    "category": "如是我聞"
-  },
-  {
     "slug": "202611-2611-2-1",
     "author": "文稿修潤 / 楊清雲",
-    "file": "2611-2-1",
-    "issueId": "202611",
-    "id": "202611::2611-2-1",
-    "image": "/assets/pixabay/pixabay-4473760.jpg?v=4473760",
-    "sourceId": "2611-2-1",
-    "messages": [
-      {
-        "type": "unknown-category",
-        "message": "分類不在既有分類清單：溫故知新",
-        "severity": "warning"
-      }
-    ],
-    "sourceSignature": "",
-    "title": "日月合璧練呼吸",
-    "status": "needs-review",
-    "sourceModified": "",
     "excerpt": "橫膈膜是身體唯一不生病的肌肉，往下的時候是吸氣，後天氣進入，放鬆回到上面是吐氣。它就像一個指揮家，一上一下不斷切換腹壓和胸壓。心情平靜、副交感神經作用時，橫膈膜的頻率就會穩定。呼吸急促，表示交…",
     "date": "2026.11.10",
-    "category": "溫故知新"
+    "issueId": "202611"
   },
   {
-    "slug": "202611-2611-2-2",
-    "author": "文稿修潤 / 鄭雅靜",
-    "file": "2611-2-2",
-    "issueId": "202611",
     "id": "202611::2611-2-2",
-    "image": "/assets/pixabay/pixabay-4664186.jpg?v=4664186",
+    "category": "溫故知新",
     "sourceId": "2611-2-2",
+    "file": "2611-2-2",
+    "image": "",
+    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
+    "sourceSignature": "",
+    "sourceModified": "",
     "messages": [
       {
-        "type": "unknown-category",
         "message": "分類不在既有分類清單：溫故知新",
+        "type": "unknown-category",
         "severity": "warning"
       }
     ],
-    "sourceSignature": "",
-    "title": "筋膜論（一）從肌骨筋膜腔，重新閱讀身體",
     "status": "needs-review",
-    "sourceModified": "",
+    "slug": "202611-2611-2-2",
+    "author": "文稿修潤 / 鄭雅靜",
     "excerpt": "人之一身，內有五臟六腑，外有四肢百骸；內而精氣神，外而筋骨肉，共成一身。如臟腑之外，筋骨主之；筋骨之外，肌肉主之；肌肉之內，血脈主之；周身上下，動搖活潑者，此又主之於氣也。是故修養之功，全在培…",
     "date": "2026.11.10",
-    "category": "溫故知新"
+    "issueId": "202611"
+  },
+  {
+    "id": "202611::H:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202611\\2611-3-2如是我聞261015四晚.docx",
+    "category": "如是我聞",
+    "sourceId": "2611-3-2",
+    "file": "H:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202611\\2611-3-2如是我聞261015四晚.docx",
+    "image": "",
+    "title": "從識神作用返回自心",
+    "sourceSignature": "v3|e50a37996461c3131a3020bbbdf178fdc070c11499d40158ee4129abc01888a1|19b37a58e6d6cd547b0d3f8d0309eef9a58b895f415c714778e561bb8c602cb6",
+    "sourceModified": "2026-11-08T07:00:39.2250000Z",
+    "messages": [
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-001.png?v=391156",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-2-img-002.png?v=143791",
+        "type": "content-warning",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202611-2611-3-2",
+    "author": "文稿彙整 / 四晚班",
+    "excerpt": "識空圖與性空圖是生命的不同面向，如同手的掌心與掌背，無論如何翻轉，始終是同一隻手。人從識空進入性空，就是從識的作用逐漸回到自性，最終達到識、性兩空的狀態。",
+    "date": "2026.11.10",
+    "issueId": "202611"
+  },
+  {
+    "id": "202611::H:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202611\\2611-3-5如是我聞261020二早.docx",
+    "category": "如是我聞",
+    "sourceId": "2611-3-5",
+    "file": "H:\\我的雲端硬碟\\氣機導引\\電子報新版網頁\\各期電子報\\202611\\2611-3-5如是我聞261020二早.docx",
+    "image": "",
+    "title": "從身體實證走向道心運作",
+    "sourceSignature": "v3|47ea02a8e4be2334a914e3e67503fb686f1515e7e81cd8357f3a10f37abb4a6e|9d54f595ff6796e945b0a52b011f142059783dea74175d8d626596e1c9626f14",
+    "sourceModified": "2026-11-08T07:04:09.3690000Z",
+    "messages": [
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-001.png?v=1780020",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-002.png?v=1985464",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-003.png?v=1724539",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-004.png?v=315463",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-005.png?v=315463",
+        "type": "content-warning",
+        "severity": "warning"
+      },
+      {
+        "message": "圖片無標題：/assets/articles/202611/202611-2611-3-5-img-006.png?v=271692",
+        "type": "content-warning",
+        "severity": "warning"
+      }
+    ],
+    "status": "needs-review",
+    "slug": "202611-2611-3-5",
+    "author": "文稿彙整 / 二早班",
+    "excerpt": "我的學習是在練功與生活中逐步養成。我的身體就是一個實驗室，也是一個道場。古代典籍、哲學與心理學，都要放進身體，驗證它如何改變人的心理、感受與生命狀態。我把這種驗證當成一生的工作；我真正要做的，…",
+    "date": "2026.11.10",
+    "issueId": "202611"
   },
   {
     "image": "/assets/articles/202107/202107-img-042.jpeg?v=44056",
@@ -12598,13 +12598,13 @@ export const generatedReviewItems = [
   },
   {
     "image": "/assets/pixabay/pixabay-3368183.jpg?v=3368183",
-    "file": "/home/runner/work/_temp/source_articles/202408/2408-4導引按蹻.docx",
-    "sourceModified": "2024-08-09T06:37:46.0000000Z",
+    "file": "/home/runner/work/_temp/source_articles/202408/2408-4道德經_51尊貴.docx",
+    "sourceModified": "2024-08-09T06:37:30.0000000Z",
     "status": "approved",
     "category": "導引按蹻",
     "title": "學而後知不足記三天兩夜治療課密集訓練",
-    "id": "202408::/home/runner/work/_temp/source_articles/202408/2408-4導引按蹻.docx",
-    "sourceSignature": "v2|4db20d234a15ff46d439aa1d3a5ed42acab4b7b39418d742005124a0cf2caed6|",
+    "id": "202408::/home/runner/work/_temp/source_articles/202408/2408-4道德經_51尊貴.docx",
+    "sourceSignature": "v2|a6546c32522cb9a4c0de1f237fa9d88509322171ad71776ee947f062a0f2f16b|",
     "excerpt": "非常非常感謝治療組組長建珍還有鈺晶的苦心規劃，促成了此次密集課程的開設成行。此時正當治療課程進行周年之後，在之前的定期課程中，張老師一面講授氣機導引及無極觀的治療哲學，一面導讀完整本基礎臨床按…",
     "issueId": "202408",
     "date": "2024.08.10",
@@ -12621,13 +12621,13 @@ export const generatedReviewItems = [
   },
   {
     "image": "/assets/pixabay/pixabay-3368183.jpg?v=3368183",
-    "file": "/home/runner/work/_temp/source_articles/202408/2408-4道德經_51尊貴.docx",
-    "sourceModified": "2024-08-09T06:37:30.0000000Z",
+    "file": "/home/runner/work/_temp/source_articles/202408/2408-4導引按蹻.docx",
+    "sourceModified": "2024-08-09T06:37:46.0000000Z",
     "status": "approved",
     "category": "導引按蹻",
     "title": "學而後知不足記三天兩夜治療課密集訓練",
-    "id": "202408::/home/runner/work/_temp/source_articles/202408/2408-4道德經_51尊貴.docx",
-    "sourceSignature": "v2|a6546c32522cb9a4c0de1f237fa9d88509322171ad71776ee947f062a0f2f16b|",
+    "id": "202408::/home/runner/work/_temp/source_articles/202408/2408-4導引按蹻.docx",
+    "sourceSignature": "v2|4db20d234a15ff46d439aa1d3a5ed42acab4b7b39418d742005124a0cf2caed6|",
     "excerpt": "非常非常感謝治療組組長建珍還有鈺晶的苦心規劃，促成了此次密集課程的開設成行。此時正當治療課程進行周年之後，在之前的定期課程中，張老師一面講授氣機導引及無極觀的治療哲學，一面導讀完整本基礎臨床按…",
     "issueId": "202408",
     "date": "2024.08.10",

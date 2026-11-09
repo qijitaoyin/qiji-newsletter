@@ -3083,8 +3083,10 @@ foreach ($key in $validationGroupMap.Keys) {
 }
 
 $jsonDepth = 20
-$articlesJson = $articles | ConvertTo-Json -Depth $jsonDepth
-$issuesJson = $issues | ConvertTo-Json -Depth $jsonDepth
+$articlesArray = @($articles.ToArray())
+$issuesArray = @($issues.ToArray())
+$articlesJson = ConvertTo-Json -InputObject $articlesArray -Depth $jsonDepth
+$issuesJson = ConvertTo-Json -InputObject $issuesArray -Depth $jsonDepth
 $sortedReviewItems = @($reviewItems | Sort-Object @{ Expression = { if ($_.status -eq "error") { 0 } elseif ($_.status -eq "needs-review") { 1 } else { 2 } } }, issueId, file)
 $reviewJson = ConvertTo-Json -InputObject $sortedReviewItems -Depth $jsonDepth
 $cacheEntries = @($nextCacheEntries.Values | Sort-Object { [string]$_.signature.key })
