@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
+import { createResilientRequester } from "./ai_metadata_request_policy.mjs";
 
 const root = process.cwd();
 const generatedArticlesPath = path.join(root, "src/data/generatedArticles.ts");
@@ -30,6 +31,11 @@ const temperature = Number.parseFloat(
   process.env.AI_TEMPERATURE || (provider === "kimi" ? "0.6" : "0.2")
 );
 const aiRequestTimeoutMs = Number.parseInt(process.env.AI_REQUEST_TIMEOUT_MS || "180000", 10);
+const aiRequestIntervalMs = Number.parseInt(
+  process.env.AI_REQUEST_INTERVAL_MS || (provider === "kimi" ? "21000" : "0"),
+  10
+);
+const aiRequestMaxAttempts = Number.parseInt(process.env.AI_REQUEST_MAX_ATTEMPTS || "5", 10);
 const useOllamaNative =
   provider === "ollama" ||
   provider === "qwen" ||
@@ -39,6 +45,18 @@ const limit = Number.parseInt(process.env.AI_LIMIT || "0", 10);
 const force = process.env.AI_FORCE === "1" || process.env.AI_FORCE === "true";
 const allowPaidApi =
   process.env.AI_ALLOW_PAID_API === "1" || process.env.AI_ALLOW_PAID_API === "true";
+
+const requestWithRetry = createResilientRequester({
+  timeoutMs: aiRequestTimeoutMs,
+  minIntervalMs: aiRequestIntervalMs,
+  maxAttempts: aiRequestMaxAttempts,
+  onRetry: ({ attempt, delayMs, status, label }) => {
+    console.log(
+      `[ai] retry ${label || "request"} after ${status || "network error"}; ` +
+        `attempt ${attempt + 1}/${aiRequestMaxAttempts} in ${Math.ceil(delayMs / 1000)}s`
+    );
+  }
+});
 
 const readJson = (filePath, fallback) => {
   if (!fs.existsSync(filePath)) return fallback;
@@ -372,19 +390,9 @@ const requestMetadata = async (article) => {
     { role: "user", content: prompt }
   ];
 
-  const requestWithTimeout = async (url, options) => {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), aiRequestTimeoutMs);
-    try {
-      return await fetch(url, { ...options, signal: controller.signal });
-    } finally {
-      clearTimeout(timeout);
-    }
-  };
-
   if (useOllamaNative) {
     const ollamaBaseUrl = apiBaseUrl.replace(/\/v1\/?$/, "").replace(/\/$/, "");
-    const response = await requestWithTimeout(`${ollamaBaseUrl}/api/chat`, {
+    const response = await requestWithRetry(`${ollamaBaseUrl}/api/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -401,7 +409,7 @@ const requestMetadata = async (article) => {
           num_predict: 360
         }
       })
-    });
+    }, { label: article.slug });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -437,14 +445,14 @@ const requestMetadata = async (article) => {
     requestBody.thinking = { type: "disabled" };
   }
 
-  const response = await requestWithTimeout(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
+  const response = await requestWithRetry(`${apiBaseUrl.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify(requestBody)
-  });
+  }, { label: article.slug });
 
   if (!response.ok) {
     const errorText = await response.text();
@@ -759,13 +767,14 @@ const main = async () => {
   updateSimilarCandidates(metadata, articles, touchedSlugs);
   touchedSlugs.forEach((slug) => syncCompatibilityMaps(metadata, slug, metadata.articles[slug] || {}));
   metadata.generatedAt = new Date().toISOString();
+  const errorResults = results.filter((result) => result.status === "error");
 
   fs.writeFileSync(aiMetadataPath, JSON.stringify(metadata, null, 2), "utf8");
   fs.writeFileSync(
     reportPath,
     JSON.stringify(
       {
-        status: "done",
+        status: errorResults.length ? "error" : "done",
         generatedAt: metadata.generatedAt,
         provider,
         apiBaseUrl,
@@ -784,6 +793,12 @@ const main = async () => {
     "utf8"
   );
   console.log(`AI metadata completed: ${results.length} article(s), provider=${provider}, issue=${issueId}`);
+  if (errorResults.length) {
+    throw new Error(
+      `AI metadata is incomplete: ${errorResults.length} article(s) failed after retries: ` +
+        errorResults.map((result) => result.slug).join(", ")
+    );
+  }
 };
 
 await main();

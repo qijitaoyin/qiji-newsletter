@@ -20,6 +20,7 @@
     "test:review-legacy": "node scripts/test_review_legacy_visibility.mjs",
     "test:review-scope": "node scripts/test_scoped_review_import.mjs",
     "test:ai-metadata-check": "node scripts/test_changed_ai_metadata_check.mjs",
+    "test:ai-metadata-retry": "node scripts/test_ai_metadata_request_policy.mjs",
     "test:review-scope-sync": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test_review_import_scope.ps1",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1"
