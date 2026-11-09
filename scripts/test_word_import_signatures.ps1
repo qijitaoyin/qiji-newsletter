@@ -151,6 +151,39 @@ function Add-FirstStyledParagraphTextSuffix {
   }
 }
 
+function Add-TestParagraphAfterBodyMarker {
+  param([string]$DocxPath, [string]$Text)
+  $stream = [System.IO.File]::Open($DocxPath, [System.IO.FileMode]::Open, [System.IO.FileAccess]::ReadWrite, [System.IO.FileShare]::None)
+  $zip = New-Object System.IO.Compression.ZipArchive($stream, [System.IO.Compression.ZipArchiveMode]::Update, $false)
+  try {
+    $entry = $zip.GetEntry("word/document.xml")
+    $reader = New-Object System.IO.StreamReader($entry.Open(), [System.Text.Encoding]::UTF8)
+    try { [xml]$xml = $reader.ReadToEnd() } finally { $reader.Dispose() }
+    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $wordNamespace = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+    $ns.AddNamespace("w", $wordNamespace)
+    $bodyMarker = (-join @(0x3010, 0x6B63, 0x6587, 0x958B, 0x59CB, 0x3011 | ForEach-Object { [char]$_ }))
+    $markerParagraph = $xml.SelectNodes("//w:body/w:p", $ns) | Where-Object {
+      (($_.SelectNodes(".//w:t", $ns) | ForEach-Object { $_.InnerText }) -join "").Trim() -eq $bodyMarker
+    } | Select-Object -First 1
+    if (-not $markerParagraph) { throw "Fixture has no body marker: $DocxPath" }
+    $paragraph = $xml.CreateElement("w", "p", $wordNamespace)
+    $run = $xml.CreateElement("w", "r", $wordNamespace)
+    $textNode = $xml.CreateElement("w", "t", $wordNamespace)
+    $textNode.InnerText = $Text
+    [void]$run.AppendChild($textNode)
+    [void]$paragraph.AppendChild($run)
+    [void]$markerParagraph.ParentNode.InsertAfter($paragraph, $markerParagraph)
+    $entry.Delete()
+    $replacement = $zip.CreateEntry("word/document.xml")
+    $writer = New-Object System.IO.StreamWriter($replacement.Open(), [System.Text.UTF8Encoding]::new($false))
+    try { $xml.Save($writer) } finally { $writer.Dispose() }
+  } finally {
+    $zip.Dispose()
+    $stream.Dispose()
+  }
+}
+
 function Add-TestStalePublishedChangeWarning {
   param([string]$Root, [string]$IssueId)
   $cachePath = Join-Path $Root ".cache\article-import-cache.json"
@@ -218,8 +251,9 @@ try {
 
   $issue408 = Join-Path $fixtureRoot "202408"
   $issue608 = Join-Path $fixtureRoot "202608"
+  $issue611 = Join-Path $fixtureRoot "202611"
   $testDraftIssueDir = Join-Path $fixtureRoot $testDraftIssueId
-  New-Item -ItemType Directory -Force -Path $issue408, $issue608, $testDraftIssueDir | Out-Null
+  New-Item -ItemType Directory -Force -Path $issue408, $issue608, $issue611, $testDraftIssueDir | Out-Null
   $fixtures408 = @(Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202408") -File -Filter "2408-4*.docx")
   if ($fixtures408.Count -ne 2) { throw "Cannot find both duplicate-source-id 2408-4 fixtures." }
   foreach ($fixture408 in $fixtures408) {
@@ -230,6 +264,14 @@ try {
     if (-not $fixture608) { throw "Cannot find the $pattern regression fixture." }
     Copy-Item -LiteralPath $fixture608.FullName -Destination $issue608
   }
+  foreach ($pattern in @("2611-3-3*.docx", "2611-3-4*.docx")) {
+    $fixture611 = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202611") -File -Filter $pattern | Select-Object -First 1
+    if (-not $fixture611) { throw "Cannot find the $pattern title regression fixture." }
+    Copy-Item -LiteralPath $fixture611.FullName -Destination $issue611
+  }
+  $inlineErrorFixture = Get-ChildItem -LiteralPath $issue611 -File -Filter "2611-3-3*.docx" | Select-Object -First 1
+  $imageCaptionLabel = -join @(0x5716, 0x7247, 0x6A19, 0x984C, 0xFF1A | ForEach-Object { [char]$_ })
+  Add-TestParagraphAfterBodyMarker $inlineErrorFixture.FullName ($imageCaptionLabel + "TEST")
   $fixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202609") -File -Filter "2609-2-5*.docx" | Select-Object -First 1
   if (-not $fixture) { throw "Cannot find the 2609-2-5 regression fixture." }
   $fixturePath = Join-Path $testDraftIssueDir $fixture.Name
@@ -254,10 +296,15 @@ try {
   $authorDraftRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\reviewDraftArticles.ts") -Raw -Encoding UTF8
   $authorDraftMatch = [regex]::Match($authorDraftRaw, 'export const reviewDraftArticles = (?<json>[\s\S]*?) satisfies Article\[\];')
   if (-not $authorDraftMatch.Success) { throw "Cannot read author regression output." }
-  $authorDraftArticles = @($authorDraftMatch.Groups["json"].Value | ConvertFrom-Json)
-  $authorArticle = $authorDraftArticles | Where-Object { $_.issueId -eq $testDraftIssueId -and $_.sourceId -eq "2609-2-1" } | Select-Object -First 1
+  $authorDraftArticles = $authorDraftMatch.Groups["json"].Value | ConvertFrom-Json
+  $authorArticle = $authorDraftArticles.Where({
+    $_.issueId -eq $testDraftIssueId -and $_.sourceId -eq "2609-2-1"
+  }, "First")
   $expectedAuthor = (-join @(0x6587, 0x7A3F, 0x4FEE, 0x6F64 | ForEach-Object { [char]$_ })) + " / " + (-join @(0x694A, 0x6E05, 0x96F2 | ForEach-Object { [char]$_ }))
   $actualAuthor = if ($authorArticle) { [string]$authorArticle.author } else { "" }
+  if (-not $authorArticle.sourceFileName -or $authorArticle.sourceFileName -ne $authorFixture.Name) {
+    throw "The generated article did not retain its exact Word filename. Expected '$($authorFixture.Name)', got '$($authorArticle.sourceFileName)'."
+  }
   if (
     -not $authorArticle -or
     -not $actualAuthor.Contains($expectedAuthor) -or
@@ -265,6 +312,25 @@ try {
     $actualAuthor -match '(?<! )/|/(?! )'
   ) {
     throw "Author separators were not normalized to slash: $actualAuthor"
+  }
+  $expectedExplicitTitles = @{
+    "2611-3-3" = (-join @(0x5F9E, 0x8B58, 0x795E, 0x5230, 0x5143, 0x795E, 0xFF1A, 0x4FE1, 0x3001, 0x611B, 0x3001, 0x5149, 0x3001, 0x5FF5, 0x5F62, 0x6210, 0x7684, 0x9053, 0x5834 | ForEach-Object { [char]$_ }))
+    "2611-3-4" = (-join @(0x5F9E, 0x8B58, 0x7A7A, 0x5230, 0x9053, 0x5FC3, 0xFF1A, 0x5929, 0x5FC3, 0x5165, 0x4EBA, 0x5FC3, 0x3001, 0x4E94, 0x89BA, 0x5408, 0x4E00 | ForEach-Object { [char]$_ }))
+  }
+  foreach ($sourceId in $expectedExplicitTitles.Keys) {
+    $titleArticle = $authorDraftArticles.Where({
+      $_.issueId -eq "202611" -and $_.sourceId -eq $sourceId
+    }, "First")
+    if (-not $titleArticle -or $titleArticle.title -ne $expectedExplicitTitles[$sourceId]) {
+      throw "The explicit article title was replaced for $sourceId. Got '$($titleArticle.title)'."
+    }
+  }
+  $inlineErrorArticle = $authorDraftArticles.Where({
+    $_.issueId -eq "202611" -and $_.sourceId -eq "2611-3-3"
+  }, "First")
+  $inlineErrorBlock = $inlineErrorArticle.contentBlocks | Where-Object { $_.type -eq "error" } | Select-Object -First 1
+  if (-not $inlineErrorBlock) {
+    throw "Unrecognized positioned Word content did not produce an inline review error block."
   }
   $reviewRaw = Get-Content -LiteralPath (Join-Path $sandboxRoot "src\data\generatedReview.ts") -Raw -Encoding UTF8
   if ($reviewRaw -match '"type"\s*:\s*"possible-duplicate"') {
@@ -350,6 +416,9 @@ try {
   Write-Host "PASS: package metadata noise does not produce a false update."
   Write-Host "PASS: visible paragraph text changes are reported."
   Write-Host "PASS: author separators are normalized to slash."
+  Write-Host "PASS: generated articles retain their exact Word filename."
+  Write-Host "PASS: explicit article titles preserve every colon and cannot be replaced by body headings."
+  Write-Host "PASS: unrecognized positioned Word content becomes an inline review error."
 } finally {
   $resolvedTestRoot = [System.IO.Path]::GetFullPath($testRoot)
   if ($resolvedTestRoot.StartsWith($tempBase, [System.StringComparison]::OrdinalIgnoreCase) -and (Test-Path -LiteralPath $resolvedTestRoot)) {

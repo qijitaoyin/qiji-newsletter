@@ -1099,17 +1099,23 @@ function Read-DocxContent {
         & $flushQuoteBlock
         $rid = $blip.GetAttribute("embed", "http://schemas.openxmlformats.org/officeDocument/2006/relationships")
         if (-not $rid) { $rid = $blip.GetAttribute("link", "http://schemas.openxmlformats.org/officeDocument/2006/relationships") }
-        if (-not $rid -or -not $relMap.ContainsKey($rid)) { continue }
+        if (-not $rid -or -not $relMap.ContainsKey($rid)) {
+          $blocks.Add(@{ type = "error"; text = "無法辨識此位置的 Word 圖片關聯，請檢查原始檔。" })
+          continue
+        }
 
         $mediaEntryPath = Resolve-DocxMediaTarget $relMap[$rid]
         $mediaEntry = $zip.GetEntry($mediaEntryPath)
         if (-not $mediaEntry) {
-          $warnings.Add("missing-image:$mediaEntryPath")
+          $blocks.Add(@{ type = "error"; text = "無法讀取此位置的 Word 圖片，請重新插入圖片。" })
           continue
         }
 
         $ext = [IO.Path]::GetExtension($mediaEntry.FullName).ToLowerInvariant()
-        if ($ext -notmatch "^\.(jpg|jpeg|png|webp|gif|tif|tiff)$") { continue }
+        if ($ext -notmatch "^\.(jpg|jpeg|png|webp|gif|tif|tiff)$") {
+          $blocks.Add(@{ type = "error"; text = "無法辨識此位置的圖片格式：$ext" })
+          continue
+        }
         $outputExt = if ($ext -match "^\.tiff?$") { ".png" } else { $ext }
         # Article-scoped names make partial imports deterministic and prevent
         # another Word file in the same issue from overwriting this image.
@@ -1642,6 +1648,16 @@ function Get-TemplateFieldValueAny {
   return ""
 }
 
+function Get-ExplicitArticleTitle {
+  param([string[]]$Lines)
+  foreach ($line in $Lines) {
+    if ($line -match "^\s*文章標題\s*[：:]\s*(.*)$") {
+      return $Matches[1].Trim()
+    }
+  }
+  return ""
+}
+
 function Test-TemplateBodyMarker {
   param([string]$Text)
   if ([string]::IsNullOrWhiteSpace($Text)) { return $false }
@@ -1713,7 +1729,7 @@ function Parse-ArticleTemplate {
       $Paragraphs | Select-Object -First ([Math]::Min($Paragraphs.Count, 8))
     }
     $looseCategory = Get-LooseCategoryValue $looseMetaLines
-    $looseTitle = Get-TemplateFieldValueAny $looseMetaLines @("文章標題", "標題", "題名")
+    $looseTitle = Get-ExplicitArticleTitle $looseMetaLines
     $looseAuthor = Get-TemplateFieldValueAny $looseMetaLines @("作者", "撰文", "文稿彙整", "文稿整理", "整理", "編輯", "口述", "文")
     $looseDate = Get-TemplateFieldValue $looseMetaLines "日期"
     $looseImageSource = Get-TemplateFieldValueAny $looseMetaLines @("圖片來源", "照片來源", "開頭圖片來源")
@@ -1780,7 +1796,7 @@ function Parse-ArticleTemplate {
   }
 
   $category = Get-LooseCategoryValue $metaLines
-  $title = Get-TemplateFieldValueAny $metaLines @("文章標題", "標題", "題名")
+  $title = Get-ExplicitArticleTitle $metaLines
   $author = Get-TemplateFieldValueAny $metaLines @("作者", "撰文", "文稿彙整", "文稿整理", "整理", "編輯", "口述", "文")
   $date = Get-TemplateFieldValue $metaLines "日期"
   $imageSource = Get-TemplateFieldValueAny $metaLines @("圖片來源", "照片來源", "開頭圖片來源")
@@ -1905,16 +1921,17 @@ function Resolve-ImageCaptions {
       if ($lastImage) {
         $lastImage.caption = $Matches[1].Trim()
       } else {
-        $Warnings.Add("圖片標題沒有對應前一張圖片：$($block.text)")
+        $resolved.Add(@{ type = "error"; text = "無法辨識圖片標題的對應圖片：$($block.text)" })
       }
       continue
     }
     if ($block.type -eq "paragraph" -and $block.text -match "^圖片標題[：:]\s*$") {
       if (-not $lastImage) {
-        $Warnings.Add("空白圖片標題沒有對應前一張圖片")
+        $resolved.Add(@{ type = "error"; text = "無法辨識此空白圖片標題所對應的圖片。" })
       }
       continue
     }
+    $lastImage = $null
     $resolved.Add($block)
   }
   foreach ($block in $resolved) {
@@ -1989,6 +2006,13 @@ function Convert-BlocksToDisplayBlocks {
       [void]$block.Remove("paragraphIndex")
     } elseif ($block.PSObject.Properties["paragraphIndex"]) {
       $block.PSObject.Properties.Remove("paragraphIndex")
+    }
+    if ($block.type -notin @("paragraph", "heading", "quote", "listItem", "image", "error")) {
+      $display.Add(@{
+        type = "error"
+        text = "無法辨識此位置的 Word 內容，請檢查原始檔。"
+      })
+      continue
     }
     if ($block.type -ne "paragraph") {
       $display.Add($block)
@@ -2393,6 +2417,7 @@ foreach ($issueDir in $issueDirs) {
       $cacheHitCount++
       $cachedArticle = Normalize-CachedArticle $cachedEntry.article
       $cachedArticle["order"] = $order
+      $cachedArticle["sourceFileName"] = [string]$file.Name
       $relativePath = Get-RelativePath $file.FullName $sourceRoot
       $sourceBaselineKey = Get-PublishedBaselineKey $issueId $sourceId $relativePath
       $publishedBaseline = $publishedIssueBaselineMap[$sourceBaselineKey]
@@ -2505,6 +2530,7 @@ foreach ($issueDir in $issueDirs) {
     $headerAuthor = ""
     $legacyCategoryInfo = Get-CategoryInfo "$stem $title $($paragraphs[0])"
 
+    $explicitArticleTitle = Get-ExplicitArticleTitle $paragraphs
     $template = Parse-ArticleTemplate $paragraphs $issueId
     if ($template.HasTemplate) {
       if (-not $template.IsValid) {
@@ -2529,7 +2555,7 @@ foreach ($issueDir in $issueDirs) {
         message = "舊格式文章未含投稿模板，已用保守 legacy 規則匯入"
       })
       $legacyHeader = Parse-LegacyHeader $paragraphs $title $legacyCategoryInfo.Category
-      $title = $legacyHeader.Title
+      $title = if ($explicitArticleTitle) { $explicitArticleTitle } else { $legacyHeader.Title }
       $headerAuthor = $legacyHeader.Author
       $bodyParagraphs = $legacyHeader.BodyParagraphs
       $hasHeader = $legacyHeader.HasHeader
@@ -2550,7 +2576,9 @@ foreach ($issueDir in $issueDirs) {
     }
 
     $parsedTitleBeforeCorrection = $title
-    $correctedTitle = Get-ReviewCorrectionValue $correction "title"
+    # An explicit Word `文章標題：` field is authoritative. Legacy heading
+    # guesses and previously accepted review data must never replace it.
+    $correctedTitle = if ($explicitArticleTitle) { "" } else { Get-ReviewCorrectionValue $correction "title" }
     $correctedAuthor = Get-ReviewCorrectionValue $correction "author"
     $correctedCategory = Get-ReviewCorrectionValue $correction "category"
     $correctedDate = Get-ReviewCorrectionValue $correction "date"
@@ -2679,6 +2707,15 @@ foreach ($issueDir in $issueDirs) {
       }
     }
     $contentBlocks = Convert-BlocksToDisplayBlocks $bodyBlocks
+    foreach ($errorBlock in @($contentBlocks | Where-Object { $_.type -eq "error" })) {
+      $validationItems.Add(@{
+        issueId = $issueId
+        file = $file.FullName
+        severity = "error"
+        type = "content-warning"
+        message = $errorBlock.text
+      })
+    }
     foreach ($warning in $blockWarnings) {
       $validationItems.Add(@{
         issueId = $issueId
@@ -2712,6 +2749,8 @@ foreach ($issueDir in $issueDirs) {
     $article = @{
       slug = $slug
       sourceId = $sourceId
+      sourceFileName = [string]$file.Name
+      hasExplicitTitle = [bool]$explicitArticleTitle
       sourceUrl = ""
       issueId = $issueId
       title = $title

@@ -1891,6 +1891,11 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   margin-bottom: 1.45em;
 }
 
+.article-body .article-review-parse-error {
+  color: #b42318;
+  font-weight: 900;
+}
+
 .article-list {
   margin: 0 0 1.7em 1.4em;
   padding-left: 1.25em;
@@ -2285,8 +2290,18 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 
 .review-task-group summary strong {
   color: var(--ink);
+  display: block;
   font-size: 1rem;
   line-height: 1.35;
+}
+
+.review-task-source-file {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  margin-top: 3px;
+  overflow-wrap: anywhere;
 }
 
 .review-task-group summary em {
@@ -2470,6 +2485,14 @@ body.is-review-frame:not(.is-review-mobile-frame) {
 .review-live-controls strong {
   font-size: 1.3rem;
   line-height: 1.25;
+}
+
+.review-selected-source-file {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .review-live-controls select,

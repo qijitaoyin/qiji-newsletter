@@ -240,6 +240,7 @@ const normalizeCategory = (category: string) => {
                     data-title={article.title}
                     data-category={article.category}
                     data-author={article.author}
+                    data-source-file={article.sourceFileName ?? ""}
                     data-quote={article.aiQuote ?? ""}
                     data-summary={article.aiSummary ?? ""}
                     data-tags={JSON.stringify(article.tags ?? [])}
@@ -250,6 +251,13 @@ const normalizeCategory = (category: string) => {
                   </option>
                 ))}
               </select>
+              <small
+                class="review-selected-source-file"
+                data-selected-source-file
+                hidden={!latestReviewArticles[0]?.sourceFileName}
+              >
+                原檔名：{latestReviewArticles[0]?.sourceFileName ?? ""}
+              </small>
             </label>
           </div>
 
@@ -683,7 +691,8 @@ const normalizeCategory = (category: string) => {
       reviewArticleIndex: latestReviewArticles.map((article) => ({
         slug: article.slug,
         title: article.title,
-        category: normalizeCategory(article.category)
+        category: normalizeCategory(article.category),
+        sourceFileName: article.sourceFileName || ""
       })),
       reviewColumnSuggestions,
       reviewKeywordSuggestions,
@@ -709,6 +718,7 @@ const normalizeCategory = (category: string) => {
       const specificIssueInput = document.querySelector("[data-specific-issue-input]");
       const submitPublishButton = document.querySelector("[data-submit-publish]");
       const liveArticleSelect = document.querySelector("[data-review-article-select]");
+      const selectedSourceFileNode = document.querySelector("[data-selected-source-file]");
       const currentArticleLabel = document.querySelector("[data-current-article-label]");
       const importChangeReportNode = document.querySelector("[data-import-change-report]");
       const liveFrames = Array.from(document.querySelectorAll("[data-live-frame]"));
@@ -1046,6 +1056,7 @@ const normalizeCategory = (category: string) => {
         title: option?.dataset.title || option?.textContent?.trim() || "",
         category: option?.dataset.category || "",
         author: option?.dataset.author || "",
+        sourceFileName: option?.dataset.sourceFile || "",
         quote: option?.dataset.quote || "",
         summary: option?.dataset.summary || "",
         tags: parseOptionTags(option?.dataset.tags || ""),
@@ -1066,6 +1077,12 @@ const normalizeCategory = (category: string) => {
         if (titleNode) titleNode.textContent = article?.title || "";
         if (authorNode) authorNode.textContent = article?.author || "";
         if (quoteNode) quoteNode.textContent = article?.quote || "";
+        if (selectedSourceFileNode) {
+          selectedSourceFileNode.textContent = article?.sourceFileName
+            ? `原檔名：${article.sourceFileName}`
+            : "";
+          selectedSourceFileNode.hidden = !article?.sourceFileName;
+        }
         if (originalMetadataQuoteNode) originalMetadataQuoteNode.textContent = article?.quote || "";
         if (originalMetadataSummaryNode) originalMetadataSummaryNode.textContent = article?.summary || "";
         if (originalMetadataCategoryNode) originalMetadataCategoryNode.textContent = article?.category || "";
@@ -1344,12 +1361,16 @@ const normalizeCategory = (category: string) => {
             const total = group.reports.length;
             const openCount = group.reports.filter((report) => !isCompletedReport(report)).length;
             const statusText = openCount ? `${openCount} 待處理 / ${total}` : `已完成 ${total}`;
+            const sourceFileHtml = group.sourceFileName
+              ? `<span class="review-task-source-file">Word：${escapeHtml(group.sourceFileName)}</span>`
+              : "";
             return `
               <details class="review-task-group${openCount ? " has-open" : ""}" ${openCount ? "open" : ""}>
                 <summary>
                   <span>
                     <small>${escapeHtml(group.category || "校對回報")}</small>
                     <strong>${escapeHtml(group.title)} (${total})</strong>
+                    ${sourceFileHtml}
                   </span>
                   <em>${escapeHtml(statusText)}</em>
                 </summary>

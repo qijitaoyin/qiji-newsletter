@@ -94,7 +94,7 @@ export type ArticleSection = {
 
 export type ArticleContentBlock =
   | {
-      type: "heading" | "paragraph" | "quote";
+      type: "heading" | "paragraph" | "quote" | "error";
       text: string;
       level?: number;
     }
@@ -119,6 +119,8 @@ export type ArticleImage = {
 export type Article = {
   slug: string;
   sourceId: string;
+  sourceFileName?: string;
+  hasExplicitTitle?: boolean;
   sourceUrl: string;
   issueId: string;
   title: string;
@@ -351,7 +353,8 @@ const withNormalizedTitleAndAuthor = (article: Article): Article => {
     !isBylineLikeTitle(article.title, article.category) &&
     (looksLikeAuthor(article.title) || looksLikePersonName(article.title));
   const needsTitleNormalization =
-    Boolean(manualTitle) || isBylineLikeTitle(article.title, article.category) || shouldSwapAuthorTitle;
+    !article.hasExplicitTitle &&
+    (Boolean(manualTitle) || isBylineLikeTitle(article.title, article.category) || shouldSwapAuthorTitle);
   const needsAuthorNormalization = Boolean(manualAuthor) || !article.author;
   const headerCleanedSections = cleanInferredHeaderSections(
     article.sections,
@@ -494,7 +497,7 @@ const articleSearchText = (article: Article) =>
     article.lede,
     ...article.sections.flatMap((section) => [section.heading, ...section.paragraphs]),
     ...(article.contentBlocks ?? []).map((block) =>
-      block.type === "image" ? block.caption ?? "" : block.text
+      block.type === "image" ? block.caption ?? "" : block.type === "error" ? "" : block.text
     )
   ]
     .filter(Boolean)

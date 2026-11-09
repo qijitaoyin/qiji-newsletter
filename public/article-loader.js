@@ -281,6 +281,13 @@
       };
 
       mergedBlocks.forEach((block) => {
+        if (block.type === "error") {
+          flushList();
+          if (isReviewArticlePage || isReviewFrame) {
+            body.appendChild(make("p", "article-review-parse-error", `錯誤：${block.text || "無法辨識此位置的內容。"}`));
+          }
+          return;
+        }
         if (block.type === "heading") {
           flushList();
           body.appendChild(make(Number(block.level) >= 3 ? "h3" : "h2", "", block.text));
