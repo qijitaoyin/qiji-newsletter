@@ -9,6 +9,7 @@ import {
 } from "../data/wordNormalizeReview";
 import {
   articleTags,
+  reviewArticles,
   reviewIssueArchive,
   reviewIssueArticles,
   reviewIssueId
@@ -92,6 +93,15 @@ const issueGroups = reviewIssueIds
     if (b.issueId === reviewIssueId) return 1;
     return b.issueId.localeCompare(a.issueId);
   });
+
+const legacyReviewIssueIds = new Set(issueGroups.map((group) => group.issueId));
+const legacyReviewArticleIndex = reviewArticles
+  .filter((article) => legacyReviewIssueIds.has(article.issueId))
+  .map((article) => ({
+    slug: article.slug,
+    title: article.title,
+    sourceFileName: article.sourceFileName || ""
+  }));
 
 const wordReviewGroups = wordNormalizeIssueIds
   .filter(
@@ -553,6 +563,7 @@ const normalizeCategory = (category: string) => {
                 <div>
                   <span>目前校對文章</span>
                   <strong data-legacy-active-title>讀取中</strong>
+                  <small data-legacy-active-source-file hidden></small>
                 </div>
                 <div class="review-legacy-issue-counts" aria-label={`${group.issueId} 校對統計`}>
                   <span>需人工校對 <strong data-legacy-count-review>0</strong></span>
@@ -694,6 +705,7 @@ const normalizeCategory = (category: string) => {
         category: normalizeCategory(article.category),
         sourceFileName: article.sourceFileName || ""
       })),
+      legacyReviewArticleIndex,
       reviewColumnSuggestions,
       reviewKeywordSuggestions,
       importChangeReportUrl: pathFor("/data/import-changed-files.json"),
@@ -1696,14 +1708,29 @@ const normalizeCategory = (category: string) => {
       const syncLegacyIssueArticle = (issueSection, slug, sourceFrame = null) => {
         if (!issueSection || !slug) return;
         const activeTitleNode = issueSection.querySelector("[data-legacy-active-title]");
+        const activeSourceFileNode = issueSection.querySelector("[data-legacy-active-source-file]");
         const cards = Array.from(issueSection.querySelectorAll("[data-import-review-card]"));
-        let activeTitle = "";
+        const indexedArticle = (legacyReviewArticleIndex || []).find((article) => article.slug === slug);
+        let activeTitle = indexedArticle?.title || "";
+        let activeSourceFile = indexedArticle?.sourceFileName || "";
         cards.forEach((card) => {
           const isActive = card.dataset.slug === slug;
           card.hidden = !isActive;
-          if (isActive) activeTitle = card.dataset.title || "";
+          if (isActive) {
+            activeTitle = card.dataset.title || activeTitle;
+            if (!activeSourceFile) {
+              activeSourceFile = (card.dataset.file || "").split(/[\\/]/).pop() || "";
+            }
+          }
         });
-        if (activeTitleNode) activeTitleNode.textContent = activeTitle || "未命名文章";
+        if (activeTitleNode) {
+          activeTitleNode.textContent = activeTitle || "錯誤：無法辨識文章標題";
+          activeTitleNode.classList.toggle("is-error", !activeTitle);
+        }
+        if (activeSourceFileNode) {
+          activeSourceFileNode.textContent = activeSourceFile ? `原檔名：${activeSourceFile}` : "";
+          activeSourceFileNode.hidden = !activeSourceFile;
+        }
 
         issueSection.querySelectorAll("[data-legacy-viewport-panel]").forEach((frame) => {
           if (frame === sourceFrame) return;

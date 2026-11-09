@@ -3122,6 +3122,19 @@ body.is-review-frame:not(.is-review-mobile-frame) {
   margin-top: 4px;
 }
 
+.review-legacy-active-summary strong.is-error {
+  color: #a52218;
+  font-weight: 900;
+}
+
+.review-legacy-active-summary small {
+  color: var(--muted);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
 .review-legacy-issue-counts {
   align-items: center;
   display: flex;
