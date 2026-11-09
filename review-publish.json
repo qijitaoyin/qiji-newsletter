@@ -1,1 +1,83 @@
-{"action":"publish-issue","sourceOrigin":"https://newsletter.qiji.org.tw","status":"ready-to-publish","generatedAt":"2026-11-08T08:06:43.514Z","issueId":"202610","reports":[],"openReports":[],"metadataOverrides":{"quotes":{},"summaries":{},"categories":{},"tags":{}},"reviewApprovals":{"approvals":[{"id":"202610::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-6如是我聞20260920日早.docx","sourceModified":"2026-10-20T03:37:47.7500000Z","sourceSignature":"v3|f9d0f882c22e33d9155ddf8c3124580928d320e827f41fa6643cd8ef940e7525|","sourceId":"2610-3-6"}],"corrections":[],"ignores":[],"fixes":[],"notes":[],"issueId":"202610","articleSignatures":{"2610-3-6":{"signature":"v3|f9d0f882c22e33d9155ddf8c3124580928d320e827f41fa6643cd8ef940e7525|","slug":"202610-2610-3-6","title":"無極修煉的內在進階過程","file":"/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202610/2610-3-6如是我聞20260920日早.docx"}}}}
+{
+  "sourceOrigin": "https://newsletter.qiji.org.tw",
+  "status": "ready-to-publish",
+  "generatedAt": "2026-11-09T14:23:11.090Z",
+  "issueId": "202611",
+  "reports": [
+    {
+      "id": "1794135689877-99087094a4d3d",
+      "articleSlug": "202611-2611-2-1",
+      "articleTitle": "日月合璧練呼吸",
+      "articleCategory": "如是我聞",
+      "articleAuthor": "文稿修潤 / 楊清雲",
+      "articleUrl": "/articles/202611-2611-2-1/",
+      "issueId": "202611",
+      "viewport": "電腦版",
+      "comment": "這篇文章的分類是溫故知新喔",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-11-08T11:01:29.877Z",
+      "metadataCategorySuggestion": "溫故知新",
+      "originalMetadata": {
+        "quote": "橫膈膜是身體唯一不生病的肌肉，一上一下不斷切換腹壓和胸壓。",
+        "summary": "以道家「日線」「月線」闡述橫膈膜運作，說明胸腹壓轉換、先天後天氣共振，及日月合璧進入氣功態之法。",
+        "category": "如是我聞",
+        "tags": [
+          "周天",
+          "頻率",
+          "身體感知",
+          "生命修煉",
+          "日常實修"
+        ]
+      },
+      "updatedAt": "2026-11-09T02:35:38.936Z",
+      "metadataDecisions": {
+        "category": "accepted"
+      },
+      "metadataUpdatedAt": "2026-11-08T12:31:33.411Z",
+      "metadataCategory": "溫故知新"
+    },
+    {
+      "id": "1794205496174-097cf5bb1f62b8",
+      "articleSlug": "202611-2611-3-3",
+      "articleTitle": "探索知識的邊界，去看更大的生命格局",
+      "articleCategory": "如是我聞",
+      "articleAuthor": "文稿彙整 / 六早班 / 台中班",
+      "articleUrl": "/articles/202611-2611-3-3/",
+      "issueId": "202611",
+      "viewport": "手機版",
+      "comment": "第二段多了一個「也」，我還沒學會怎麽把截圖貼在這裡。",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-11-09T06:24:56.175Z",
+      "updatedAt": "2026-11-09T09:41:00.224Z"
+    },
+    {
+      "id": "1794213095239-3d117b965a5a98",
+      "articleSlug": "202611-2611-3-6",
+      "articleTitle": "換力、換氣、化形",
+      "articleCategory": "如是我聞",
+      "articleAuthor": "文稿彙整 / 四午班",
+      "articleUrl": "/articles/202611-2611-3-6/",
+      "issueId": "202611",
+      "viewport": "手機版",
+      "comment": "文末請加入（本文依20261029四午班課程紀錄裁剪修潤而成）",
+      "screenshot": "",
+      "screenshotDataUrl": "",
+      "status": "done",
+      "createdAt": "2026-11-09T08:31:35.240Z",
+      "updatedAt": "2026-11-09T09:41:32.865Z"
+    }
+  ],
+  "openReports": [],
+  "metadataOverrides": {
+    "quotes": {},
+    "summaries": {},
+    "categories": {
+      "202611-2611-2-1": "溫故知新"
+    },
+    "tags": {}
+  }
+}
