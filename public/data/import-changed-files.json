@@ -1,7 +1,15 @@
 {
-  "cacheBaselineRebuilt": 2,
-  "totalChanged": 18,
+  "cacheBaselineRebuilt": 0,
+  "totalChanged": 20,
   "changedFiles": [
+    {
+      "issueId": "202301",
+      "fileName": "2301-1編輯小語.docx",
+      "relativePath": "202301/2301-1編輯小語.docx",
+      "sourceId": "2301-1",
+      "stableSignature": "v3|92da7474f56d8f6eb1e966ade4ca9fafcbf4f9e11ea2ccfb5ba185f9fbf404f8|",
+      "status": "updated"
+    },
     {
       "issueId": "202301",
       "fileName": "2301-2-1一晚錄音側記.docx",
@@ -40,6 +48,14 @@
       "relativePath": "202301/2301-2-6五晚班.docx",
       "sourceId": "2301-2-6",
       "stableSignature": "v3|70067bbb6471269bcabf37aafc195fd2a7e5446d21c89dfe3ded9b5ad8b58d17|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202301",
+      "fileName": "2301-3-10游夙君.docx",
+      "relativePath": "202301/2301-3-10游夙君.docx",
+      "sourceId": "2301-3-10",
+      "stableSignature": "v3|47bad14520fb65c67d3ddd420199556835899358e216bab290a843a8f49494d5|c14c3e5fda3bca4dbe56600dc06f4144491bf1fb4f94adcf300fa8d69c63b483",
       "status": "updated"
     },
     {
@@ -147,5 +163,5 @@
       "status": "updated"
     }
   ],
-  "generatedAt": "2026-11-09T15:27:46.6374887Z"
+  "generatedAt": "2026-11-09T17:15:45.0043091Z"
 }
