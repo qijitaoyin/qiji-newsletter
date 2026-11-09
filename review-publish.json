@@ -1,1 +1,242 @@
-{"sourceOrigin":"https://newsletter.qiji.org.tw","status":"ready-to-publish","generatedAt":"2026-11-09T14:23:11.090Z","issueId":"202611","reports":[{"id":"1794135689877-99087094a4d3d","articleSlug":"202611-2611-2-1","articleTitle":"日月合璧練呼吸","articleCategory":"如是我聞","articleAuthor":"文稿修潤 / 楊清雲","articleUrl":"/articles/202611-2611-2-1/","issueId":"202611","viewport":"電腦版","comment":"這篇文章的分類是溫故知新喔","screenshot":"","screenshotDataUrl":"","status":"done","createdAt":"2026-11-08T11:01:29.877Z","metadataCategorySuggestion":"溫故知新","originalMetadata":{"quote":"橫膈膜是身體唯一不生病的肌肉，一上一下不斷切換腹壓和胸壓。","summary":"以道家「日線」「月線」闡述橫膈膜運作，說明胸腹壓轉換、先天後天氣共振，及日月合璧進入氣功態之法。","category":"如是我聞","tags":["周天","頻率","身體感知","生命修煉","日常實修"]},"updatedAt":"2026-11-09T02:35:38.936Z","metadataDecisions":{"category":"accepted"},"metadataUpdatedAt":"2026-11-08T12:31:33.411Z","metadataCategory":"溫故知新"},{"id":"1794205496174-097cf5bb1f62b8","articleSlug":"202611-2611-3-3","articleTitle":"探索知識的邊界，去看更大的生命格局","articleCategory":"如是我聞","articleAuthor":"文稿彙整 / 六早班 / 台中班","articleUrl":"/articles/202611-2611-3-3/","issueId":"202611","viewport":"手機版","comment":"第二段多了一個「也」，我還沒學會怎麽把截圖貼在這裡。","screenshot":"","screenshotDataUrl":"","status":"done","createdAt":"2026-11-09T06:24:56.175Z","updatedAt":"2026-11-09T09:41:00.224Z"},{"id":"1794213095239-3d117b965a5a98","articleSlug":"202611-2611-3-6","articleTitle":"換力、換氣、化形","articleCategory":"如是我聞","articleAuthor":"文稿彙整 / 四午班","articleUrl":"/articles/202611-2611-3-6/","issueId":"202611","viewport":"手機版","comment":"文末請加入（本文依20261029四午班課程紀錄裁剪修潤而成）","screenshot":"","screenshotDataUrl":"","status":"done","createdAt":"2026-11-09T08:31:35.240Z","updatedAt":"2026-11-09T09:41:32.865Z"}],"openReports":[],"metadataOverrides":{"quotes":{},"summaries":{},"categories":{"202611-2611-2-1":"溫故知新"},"tags":{}}}
+{
+  "action": "publish-issue",
+  "sourceOrigin": "https://newsletter.qiji.org.tw",
+  "status": "ready-to-publish",
+  "generatedAt": "2026-11-09T19:57:48.815Z",
+  "issueId": "202301",
+  "reports": [],
+  "openReports": [],
+  "metadataOverrides": {
+    "quotes": {},
+    "summaries": {},
+    "categories": {},
+    "tags": {}
+  },
+  "reviewApprovals": {
+    "approvals": [
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-1一晚錄音側記.docx",
+        "sourceModified": "2026-11-09T14:52:30.4600000Z",
+        "sourceSignature": "v3|2bdb98c366a02d59975f548019a463f855fd656dd76c54080e258dd25b24a98f|",
+        "sourceId": "2301-2-1"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx",
+        "sourceModified": "2026-11-09T15:16:55.3730000Z",
+        "sourceSignature": "v3|6b254845fa3035a0dcfbe689e4e4e95bcef66dbbd29ba173b7bf6d879dc7ae1c|705f9ecfe1a0563fa33d8c349bca95d3281597ef350eeb7bcddf3569dc6b3f18",
+        "sourceId": "2301-3-1"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-2二早班.docx",
+        "sourceModified": "2026-11-09T14:55:14.9370000Z",
+        "sourceSignature": "v3|e9dafce49c1e8352df39510f1ecdce8873bba1226cab6277ac2f69bba8691acf|",
+        "sourceId": "2301-2-2"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-3二晚.docx",
+        "sourceModified": "2026-11-09T14:57:55.6460000Z",
+        "sourceSignature": "v3|ebf70310579bdff297e49c4a08b20d20ea8bfefd877f920b713f561deca8ee44|",
+        "sourceId": "2301-2-3"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-4四午一分鐘.docx",
+        "sourceModified": "2026-11-09T14:58:59.5160000Z",
+        "sourceSignature": "v3|8643e230f318735fa34a64d5a2df314bc7f9eaff1b0d6f4e29c96713dec227b7|",
+        "sourceId": "2301-2-4"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-6五晚班.docx",
+        "sourceModified": "2026-11-09T15:00:16.3560000Z",
+        "sourceSignature": "v3|70067bbb6471269bcabf37aafc195fd2a7e5446d21c89dfe3ded9b5ad8b58d17|",
+        "sourceId": "2301-2-6"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx",
+        "sourceModified": "2026-11-09T15:17:33.9910000Z",
+        "sourceSignature": "v3|553a7dc47f88dcda2078b1484b0d9b8cca0d14ab4e8817259c181bafe218fe80|d3740484ad1f77a6f07e69d9d15a73f1087d6d95f5f0603f4d008e201e741960",
+        "sourceId": "2301-3-2"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx",
+        "sourceModified": "2026-11-09T15:18:01.4960000Z",
+        "sourceSignature": "v3|4014068c26e506ca079f4ae1cf83765646513822db2bac70a9eda6c6139c8b74|f57de30f21ee874d50f3a431520d63c52976bada866a4115045870f20a9bed27",
+        "sourceId": "2301-3-3"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx",
+        "sourceModified": "2026-11-09T15:18:25.1320000Z",
+        "sourceSignature": "v3|4323da65dbc4e9021aca97aa0c2ef0e5d3e5de9b6989f238bb50d3b31436c9a7|c4843f30e12fc1dbfc6bbf01def744aa957ca242fa80d1cd79fc1a8f33441782",
+        "sourceId": "2301-3-4"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx",
+        "sourceModified": "2026-11-09T15:19:44.2900000Z",
+        "sourceSignature": "v3|c772663bc32c93007897ccf4f8ab4c749debc6675723fd179196d4de5b4fc5a2|7a9a0e43ae469114c0424bfa79d053c17f9919a27c358f776fc8e76b744bacd5",
+        "sourceId": "2301-3-5"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx",
+        "sourceModified": "2026-11-09T15:20:09.9040000Z",
+        "sourceSignature": "v3|c1a6810ae83b91f379c1f84e6dce99398f6ff7f7495dc388dac4c26952be06b3|66c741c549bc4d88b41d489aac0e82cfdc9c570001da54e1534e19f65265397b",
+        "sourceId": "2301-3-6"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx",
+        "sourceModified": "2026-11-09T15:20:26.9920000Z",
+        "sourceSignature": "v3|dafa79fd2554f94218769e3168edb5dc7c52dee6250d7d4b84fe828111b6fa5c|7eb93b070837a3442a4c278f5dea5da9dc39838d9b893cd660a3f7bfd1229759",
+        "sourceId": "2301-3-7"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx",
+        "sourceModified": "2026-11-09T15:21:09.2590000Z",
+        "sourceSignature": "v3|c232a5aad0d97411021268e6057fc2c4c229ab3514b2339e8fe6f860db02ce3e|efa7cb2753f9fd1d01dc1cd7a500346632dc7545b36cd599650f9589ac143d9e",
+        "sourceId": "2301-3-8"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx",
+        "sourceModified": "2026-11-09T15:21:35.4950000Z",
+        "sourceSignature": "v3|d107c7ed8d958442a1f997fe54d88cd58d2d385030c774717e6fb412adb806f5|f9f3ecab48b8a390923deea9691cf8003b604054b03375497089c9e4cc104b21",
+        "sourceId": "2301-3-9"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx",
+        "sourceModified": "2026-11-09T15:15:54.4950000Z",
+        "sourceSignature": "v3|5fbb74a9eaf3d88f73714e15639684b29ed4a415dae71216beca3a4893322901|cbef1827641b38a9ab9f339bc0dd128f5c6d12599dc61c9e02d3dd3cd41e7e01",
+        "sourceId": "2301-3-11"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-4練功筆記.docx",
+        "sourceModified": "2026-11-09T15:23:45.1900000Z",
+        "sourceSignature": "v3|6b7440a4ab3264453f0daba10041e055b34366a3bd11cd369aed6f3125492097|",
+        "sourceId": "2301-4"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-5體證道德經.docx",
+        "sourceModified": "2026-11-09T15:25:17.2910000Z",
+        "sourceSignature": "v3|45f832242d63c29c7c8d4982b8e132c813bc66d7f7840a06c6eb1276d855273f|",
+        "sourceId": "2301-5"
+      },
+      {
+        "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-6圖靈集.docx",
+        "sourceModified": "2026-11-09T15:26:12.7890000Z",
+        "sourceSignature": "v3|7812ff47dd2eb445e8ace313f65f2d75a8e3102ebb20ac93b46a60b1234e4436|",
+        "sourceId": "2301-6"
+      }
+    ],
+    "corrections": [],
+    "ignores": [],
+    "fixes": [],
+    "notes": [],
+    "issueId": "202301",
+    "articleSignatures": {
+      "2301-2-1": {
+        "signature": "v3|2bdb98c366a02d59975f548019a463f855fd656dd76c54080e258dd25b24a98f|",
+        "slug": "202301-2301-2-1",
+        "title": "一晚班 - 朝向生命的極致法則",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-1一晚錄音側記.docx"
+      },
+      "2301-2-2": {
+        "signature": "v3|e9dafce49c1e8352df39510f1ecdce8873bba1226cab6277ac2f69bba8691acf|",
+        "slug": "202301-2301-2-2",
+        "title": "二早班 - 搭上歲末反省末班車",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-2二早班.docx"
+      },
+      "2301-2-3": {
+        "signature": "v3|ebf70310579bdff297e49c4a08b20d20ea8bfefd877f920b713f561deca8ee44|",
+        "slug": "202301-2301-2-3",
+        "title": "二晚班 - 「老鳥」「菜鳥」在一班",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-3二晚.docx"
+      },
+      "2301-2-4": {
+        "signature": "v3|8643e230f318735fa34a64d5a2df314bc7f9eaff1b0d6f4e29c96713dec227b7|",
+        "slug": "202301-2301-2-4",
+        "title": "四午班 - 在變動中、行動中看見圓滿",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-4四午一分鐘.docx"
+      },
+      "2301-2-6": {
+        "signature": "v3|70067bbb6471269bcabf37aafc195fd2a7e5446d21c89dfe3ded9b5ad8b58d17|",
+        "slug": "202301-2301-2-6",
+        "title": "五晚班 - 為何要走原來那條老路呢？",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-6五晚班.docx"
+      },
+      "2301-3-1": {
+        "signature": "v3|6b254845fa3035a0dcfbe689e4e4e95bcef66dbbd29ba173b7bf6d879dc7ae1c|705f9ecfe1a0563fa33d8c349bca95d3281597ef350eeb7bcddf3569dc6b3f18",
+        "slug": "202301-2301-3-1",
+        "title": "之一 - 蛻殼進化之旅",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx"
+      },
+      "2301-3-2": {
+        "signature": "v3|553a7dc47f88dcda2078b1484b0d9b8cca0d14ab4e8817259c181bafe218fe80|d3740484ad1f77a6f07e69d9d15a73f1087d6d95f5f0603f4d008e201e741960",
+        "slug": "202301-2301-3-2",
+        "title": "之二 - 就在彼此間流動著",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx"
+      },
+      "2301-3-3": {
+        "signature": "v3|4014068c26e506ca079f4ae1cf83765646513822db2bac70a9eda6c6139c8b74|f57de30f21ee874d50f3a431520d63c52976bada866a4115045870f20a9bed27",
+        "slug": "202301-2301-3-3",
+        "title": "之三 – 理性堅持，感性完成",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx"
+      },
+      "2301-3-4": {
+        "signature": "v3|4323da65dbc4e9021aca97aa0c2ef0e5d3e5de9b6989f238bb50d3b31436c9a7|c4843f30e12fc1dbfc6bbf01def744aa957ca242fa80d1cd79fc1a8f33441782",
+        "slug": "202301-2301-3-4",
+        "title": "之四 – 假我脫落 真我自現",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx"
+      },
+      "2301-3-5": {
+        "signature": "v3|c772663bc32c93007897ccf4f8ab4c749debc6675723fd179196d4de5b4fc5a2|7a9a0e43ae469114c0424bfa79d053c17f9919a27c358f776fc8e76b744bacd5",
+        "slug": "202301-2301-3-5",
+        "title": "之五 – 可遇不可求的饗宴",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx"
+      },
+      "2301-3-6": {
+        "signature": "v3|c1a6810ae83b91f379c1f84e6dce99398f6ff7f7495dc388dac4c26952be06b3|66c741c549bc4d88b41d489aac0e82cfdc9c570001da54e1534e19f65265397b",
+        "slug": "202301-2301-3-6",
+        "title": "之六 – 我在營火晚會唱歌",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx"
+      },
+      "2301-3-7": {
+        "signature": "v3|dafa79fd2554f94218769e3168edb5dc7c52dee6250d7d4b84fe828111b6fa5c|7eb93b070837a3442a4c278f5dea5da9dc39838d9b893cd660a3f7bfd1229759",
+        "slug": "202301-2301-3-7",
+        "title": "之七 – 真善美在此發生",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx"
+      },
+      "2301-3-8": {
+        "signature": "v3|c232a5aad0d97411021268e6057fc2c4c229ab3514b2339e8fe6f860db02ce3e|efa7cb2753f9fd1d01dc1cd7a500346632dc7545b36cd599650f9589ac143d9e",
+        "slug": "202301-2301-3-8",
+        "title": "之八 – 依規矩而擺脫規矩",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx"
+      },
+      "2301-3-9": {
+        "signature": "v3|d107c7ed8d958442a1f997fe54d88cd58d2d385030c774717e6fb412adb806f5|f9f3ecab48b8a390923deea9691cf8003b604054b03375497089c9e4cc104b21",
+        "slug": "202301-2301-3-9",
+        "title": "之九 – 群龍無首，各自就定位",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx"
+      },
+      "2301-3-11": {
+        "signature": "v3|5fbb74a9eaf3d88f73714e15639684b29ed4a415dae71216beca3a4893322901|cbef1827641b38a9ab9f339bc0dd128f5c6d12599dc61c9e02d3dd3cd41e7e01",
+        "slug": "202301-2301-3-11",
+        "title": "之十一 - 嬉出深度‧遊出體悟",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx"
+      },
+      "2301-4": {
+        "signature": "v3|6b7440a4ab3264453f0daba10041e055b34366a3bd11cd369aed6f3125492097|",
+        "slug": "202301-2301-4",
+        "title": "難忘你我共聚時互放的光亮",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-4練功筆記.docx"
+      },
+      "2301-5": {
+        "signature": "v3|45f832242d63c29c7c8d4982b8e132c813bc66d7f7840a06c6eb1276d855273f|",
+        "slug": "202301-2301-5",
+        "title": "你的心裡也伏藏著「佳兵」嗎？",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-5體證道德經.docx"
+      },
+      "2301-6": {
+        "signature": "v3|7812ff47dd2eb445e8ace313f65f2d75a8e3102ebb20ac93b46a60b1234e4436|",
+        "slug": "202301-2301-6",
+        "title": "誠意",
+        "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-6圖靈集.docx"
+      }
+    }
+  }
+}
