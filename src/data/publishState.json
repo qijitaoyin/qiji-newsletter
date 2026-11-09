@@ -1,7 +1,7 @@
 {
   "publicLatestIssueId": "202611",
   "reviewIssueId": "202611",
-  "publishedAt": "2026-11-09T14:24:59.6513355Z",
+  "publishedAt": "2026-11-09T20:29:02.6755151Z",
   "publishedIssues": {
     "202608": {
       "issueId": "202608",
@@ -3804,288 +3804,115 @@
     },
     "202301": {
       "issueId": "202301",
-      "publishedAt": "08/09/2026 06:37:05",
-      "baselineRepairedAt": "2026-08-09T11:46:58.5295759Z",
+      "publishedAt": "2026-11-09T20:29:02.6755151Z",
       "articles": {
-        "2301-2-1::7e87ecc5253790ac": {
-          "sourceId": "2301-2-1",
-          "pathHash": "7e87ecc5253790ac",
-          "signature": "v2|1eb98e0f98240e3bd98d04a9c08399cae3510df950c2f21dc2af95778f314d72|",
-          "slug": "202301-2301-2-1",
-          "baselineRepairedAt": "2026-08-09T11:46:58.5303498Z"
-        },
-        "2301-2-2::af4e048d9d6e813c": {
-          "sourceId": "2301-2-2",
-          "pathHash": "af4e048d9d6e813c",
-          "signature": "v2|5532828facf344ec898799d360b841e16da293516a79c1fafc2b842192e4846b|",
-          "slug": "202301-2301-2-2",
-          "baselineRepairedAt": "2026-08-09T11:46:58.5515083Z"
-        },
-        "2301-2-3::e4e2f1cc6aa295d4": {
-          "sourceId": "2301-2-3",
-          "pathHash": "e4e2f1cc6aa295d4",
-          "signature": "v2|9c9f3e1035681ea724aa711fed2d33e71a41491ab323cbb58e457806cb3bce8e|",
-          "slug": "202301-2301-2-3",
-          "baselineRepairedAt": "2026-08-09T11:46:58.5769945Z"
-        },
-        "2301-2-4::d0f0c4df16e07469": {
-          "sourceId": "2301-2-4",
-          "pathHash": "d0f0c4df16e07469",
-          "signature": "v2|9957ce0ca75446f536c7c97977698c8e0bb4a4543c5a8bb03a5031b4f5893cfa|",
-          "slug": "202301-2301-2-4",
-          "baselineRepairedAt": "2026-08-09T11:46:58.5958751Z"
-        },
-        "2301-2-6::c6b37fcd72f82734": {
-          "sourceId": "2301-2-6",
-          "pathHash": "c6b37fcd72f82734",
-          "signature": "v2|db9705b3aa0d5bbc08417d0bbed749e3a8f0d70ceebd33824ab53d23cf15ae08|",
-          "slug": "202301-2301-2-6",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6268586Z"
-        },
-        "2301-3-11::1523c1b000c87206": {
-          "sourceId": "2301-3-11",
-          "pathHash": "1523c1b000c87206",
-          "signature": "v2|3aff83efb556f663644119b3b0a4f92e4d9b4d56e1769267ab60a0ec54ffecca|",
-          "slug": "202301-2301-3-11",
-          "baselineRepairedAt": "2026-08-09T11:46:58.632454Z"
-        },
-        "2301-3-1::8f1dc73e2fca9cab": {
-          "sourceId": "2301-3-1",
-          "pathHash": "8f1dc73e2fca9cab",
-          "signature": "v2|0ef6696414f89a9715119dd61f674d7ba12f9af0292be44173af6a215c503225|",
-          "slug": "202301-2301-3-1",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6402673Z"
-        },
-        "2301-3-2::f1d8d969c612ba39": {
-          "sourceId": "2301-3-2",
-          "pathHash": "f1d8d969c612ba39",
-          "signature": "v2|ec755b3f780a891ae513a78f320d40440176635dbf0f065c84b42de55273563b|",
-          "slug": "202301-2301-3-2",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6456276Z"
-        },
-        "2301-3-3::1c15bd5e886a2b21": {
-          "sourceId": "2301-3-3",
-          "pathHash": "1c15bd5e886a2b21",
-          "signature": "v2|32259c9fc30a9d704ad5a2b98f4ff4bbcc2505e410e2eed90a5e533ca8eff625|",
-          "slug": "202301-2301-3-3",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6520772Z"
-        },
-        "2301-3-4::53e22c0aeacd983f": {
-          "sourceId": "2301-3-4",
-          "pathHash": "53e22c0aeacd983f",
-          "signature": "v2|85037df31c4123d1a05f4830a36e3a297ec918ae6c87ba1d2690d058e00ca96c|",
-          "slug": "202301-2301-3-4",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6603829Z"
-        },
-        "2301-3-5::9a2a31c47444363f": {
-          "sourceId": "2301-3-5",
-          "pathHash": "9a2a31c47444363f",
-          "signature": "v2|5526d1640b101183f9c560c63295c0d321d96f048f26576464f59f0c724d2695|",
-          "slug": "202301-2301-3-5",
-          "baselineRepairedAt": "2026-08-09T11:46:58.672093Z"
-        },
-        "2301-3-6::1b559462c7345040": {
-          "sourceId": "2301-3-6",
-          "pathHash": "1b559462c7345040",
-          "signature": "v2|aa8ce9a49610e8009453856fed2015f16b7830c58475d94e3b6d28d87dcc3ebd|",
-          "slug": "202301-2301-3-6",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6785606Z"
-        },
-        "2301-3-7::bb0f6c2088884107": {
-          "sourceId": "2301-3-7",
-          "pathHash": "bb0f6c2088884107",
-          "signature": "v2|2a73a38125e97c7b760c681033c50b8d82148b003c14acd7de800cf2f7b1901e|",
-          "slug": "202301-2301-3-7",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6873455Z"
-        },
-        "2301-3-8::d9eb67090949b0fd": {
-          "sourceId": "2301-3-8",
-          "pathHash": "d9eb67090949b0fd",
-          "signature": "v2|ec031b79ca2fdb3450662839f739f22138f936e68663eb394540e2debf8cdd27|",
-          "slug": "202301-2301-3-8",
-          "baselineRepairedAt": "2026-08-09T11:46:58.6931234Z"
-        },
-        "2301-3-9::4d1e9ce7a7cb68cf": {
-          "sourceId": "2301-3-9",
-          "pathHash": "4d1e9ce7a7cb68cf",
-          "signature": "v2|acb12f10b3bb7d17cebb53745e4abbcbb813133c65a22e5854c50be5cd7944f7|9a3ad472f92370ce69df0967a8ef7b6b40464a7a350bbff4041070fd2146463d",
-          "slug": "202301-2301-3-9",
-          "baselineRepairedAt": "2026-08-09T11:46:58.7054871Z"
-        },
-        "2301-4::d447d1e11e04e747": {
-          "sourceId": "2301-4",
-          "pathHash": "d447d1e11e04e747",
-          "signature": "v2|b79c145303e55e0e4ebd1c37c91972706a691aa64dcf1e5c478e2eb303e125dc|",
-          "slug": "202301-2301-4",
-          "baselineRepairedAt": "2026-08-09T11:46:58.7122405Z"
-        },
-        "2301-5::63dd984f7b084e73": {
-          "sourceId": "2301-5",
-          "pathHash": "63dd984f7b084e73",
-          "signature": "v2|f3e11bb87600d712419ba2c44f6c2bcbb7a52f886d112422a8ad78360e2e7694|",
-          "slug": "202301-2301-5",
-          "baselineRepairedAt": "2026-08-09T11:46:58.7206665Z"
-        },
-        "2301-6::3fe3d3d3edb7793f": {
-          "sourceId": "2301-6",
-          "pathHash": "3fe3d3d3edb7793f",
-          "signature": "v2|f457570eb7b5c9c8a5a39d1aecac4b2dbf94af71dceacd258d9d5b8bb5200bf8|",
-          "slug": "202301-2301-6",
-          "baselineRepairedAt": "2026-08-09T11:46:58.7288203Z"
-        },
         "2301-2-1": {
-          "sourceId": "2301-2-1",
-          "pathHash": "",
-          "signature": "v2|1eb98e0f98240e3bd98d04a9c08399cae3510df950c2f21dc2af95778f314d72|",
+          "signature": "v3|2bdb98c366a02d59975f548019a463f855fd656dd76c54080e258dd25b24a98f|",
           "slug": "202301-2301-2-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2551884Z"
+          "title": "一晚班 - 朝向生命的極致法則",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-1一晚錄音側記.docx"
         },
         "2301-2-2": {
-          "sourceId": "2301-2-2",
-          "pathHash": "",
-          "signature": "v2|5532828facf344ec898799d360b841e16da293516a79c1fafc2b842192e4846b|",
+          "signature": "v3|e9dafce49c1e8352df39510f1ecdce8873bba1226cab6277ac2f69bba8691acf|",
           "slug": "202301-2301-2-2",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2556048Z"
+          "title": "二早班 - 搭上歲末反省末班車",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-2二早班.docx"
         },
         "2301-2-3": {
-          "sourceId": "2301-2-3",
-          "pathHash": "",
-          "signature": "v2|9c9f3e1035681ea724aa711fed2d33e71a41491ab323cbb58e457806cb3bce8e|",
+          "signature": "v3|ebf70310579bdff297e49c4a08b20d20ea8bfefd877f920b713f561deca8ee44|",
           "slug": "202301-2301-2-3",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2559867Z"
+          "title": "二晚班 - 「老鳥」「菜鳥」在一班",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-3二晚.docx"
         },
         "2301-2-4": {
-          "sourceId": "2301-2-4",
-          "pathHash": "",
-          "signature": "v2|9957ce0ca75446f536c7c97977698c8e0bb4a4543c5a8bb03a5031b4f5893cfa|",
+          "signature": "v3|8643e230f318735fa34a64d5a2df314bc7f9eaff1b0d6f4e29c96713dec227b7|",
           "slug": "202301-2301-2-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2563679Z"
+          "title": "四午班 - 在變動中、行動中看見圓滿",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-4四午一分鐘.docx"
         },
         "2301-2-6": {
-          "sourceId": "2301-2-6",
-          "pathHash": "",
-          "signature": "v2|db9705b3aa0d5bbc08417d0bbed749e3a8f0d70ceebd33824ab53d23cf15ae08|",
+          "signature": "v3|70067bbb6471269bcabf37aafc195fd2a7e5446d21c89dfe3ded9b5ad8b58d17|",
           "slug": "202301-2301-2-6",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2567755Z"
-        },
-        "2301-3-11": {
-          "sourceId": "2301-3-11",
-          "pathHash": "",
-          "signature": "v2|3aff83efb556f663644119b3b0a4f92e4d9b4d56e1769267ab60a0ec54ffecca|",
-          "slug": "202301-2301-3-11",
-          "baselineRepairedAt": "2026-08-09T11:47:02.257166Z"
+          "title": "五晚班 - 為何要走原來那條老路呢？",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-2-6五晚班.docx"
         },
         "2301-3-1": {
-          "sourceId": "2301-3-1",
-          "pathHash": "",
-          "signature": "v2|0ef6696414f89a9715119dd61f674d7ba12f9af0292be44173af6a215c503225|",
+          "signature": "v3|6b254845fa3035a0dcfbe689e4e4e95bcef66dbbd29ba173b7bf6d879dc7ae1c|705f9ecfe1a0563fa33d8c349bca95d3281597ef350eeb7bcddf3569dc6b3f18",
           "slug": "202301-2301-3-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2575848Z"
+          "title": "之一 - 蛻殼進化之旅",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx"
         },
         "2301-3-2": {
-          "sourceId": "2301-3-2",
-          "pathHash": "",
-          "signature": "v2|ec755b3f780a891ae513a78f320d40440176635dbf0f065c84b42de55273563b|",
+          "signature": "v3|553a7dc47f88dcda2078b1484b0d9b8cca0d14ab4e8817259c181bafe218fe80|d3740484ad1f77a6f07e69d9d15a73f1087d6d95f5f0603f4d008e201e741960",
           "slug": "202301-2301-3-2",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2579859Z"
+          "title": "之二 - 就在彼此間流動著",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx"
         },
         "2301-3-3": {
-          "sourceId": "2301-3-3",
-          "pathHash": "",
-          "signature": "v2|32259c9fc30a9d704ad5a2b98f4ff4bbcc2505e410e2eed90a5e533ca8eff625|",
+          "signature": "v3|4014068c26e506ca079f4ae1cf83765646513822db2bac70a9eda6c6139c8b74|f57de30f21ee874d50f3a431520d63c52976bada866a4115045870f20a9bed27",
           "slug": "202301-2301-3-3",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2583866Z"
+          "title": "之三 – 理性堅持，感性完成",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx"
         },
         "2301-3-4": {
-          "sourceId": "2301-3-4",
-          "pathHash": "",
-          "signature": "v2|85037df31c4123d1a05f4830a36e3a297ec918ae6c87ba1d2690d058e00ca96c|",
+          "signature": "v3|4323da65dbc4e9021aca97aa0c2ef0e5d3e5de9b6989f238bb50d3b31436c9a7|c4843f30e12fc1dbfc6bbf01def744aa957ca242fa80d1cd79fc1a8f33441782",
           "slug": "202301-2301-3-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2587999Z"
+          "title": "之四 – 假我脫落 真我自現",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx"
         },
         "2301-3-5": {
-          "sourceId": "2301-3-5",
-          "pathHash": "",
-          "signature": "v2|5526d1640b101183f9c560c63295c0d321d96f048f26576464f59f0c724d2695|",
+          "signature": "v3|c772663bc32c93007897ccf4f8ab4c749debc6675723fd179196d4de5b4fc5a2|7a9a0e43ae469114c0424bfa79d053c17f9919a27c358f776fc8e76b744bacd5",
           "slug": "202301-2301-3-5",
-          "baselineRepairedAt": "2026-08-09T11:47:02.259188Z"
+          "title": "之五 – 可遇不可求的饗宴",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx"
         },
         "2301-3-6": {
-          "sourceId": "2301-3-6",
-          "pathHash": "",
-          "signature": "v2|aa8ce9a49610e8009453856fed2015f16b7830c58475d94e3b6d28d87dcc3ebd|",
+          "signature": "v3|c1a6810ae83b91f379c1f84e6dce99398f6ff7f7495dc388dac4c26952be06b3|66c741c549bc4d88b41d489aac0e82cfdc9c570001da54e1534e19f65265397b",
           "slug": "202301-2301-3-6",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2596023Z"
+          "title": "之六 – 我在營火晚會唱歌",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx"
         },
         "2301-3-7": {
-          "sourceId": "2301-3-7",
-          "pathHash": "",
-          "signature": "v2|2a73a38125e97c7b760c681033c50b8d82148b003c14acd7de800cf2f7b1901e|",
+          "signature": "v3|dafa79fd2554f94218769e3168edb5dc7c52dee6250d7d4b84fe828111b6fa5c|7eb93b070837a3442a4c278f5dea5da9dc39838d9b893cd660a3f7bfd1229759",
           "slug": "202301-2301-3-7",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2599895Z"
+          "title": "之七 – 真善美在此發生",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx"
         },
         "2301-3-8": {
-          "sourceId": "2301-3-8",
-          "pathHash": "",
-          "signature": "v2|ec031b79ca2fdb3450662839f739f22138f936e68663eb394540e2debf8cdd27|",
+          "signature": "v3|c232a5aad0d97411021268e6057fc2c4c229ab3514b2339e8fe6f860db02ce3e|efa7cb2753f9fd1d01dc1cd7a500346632dc7545b36cd599650f9589ac143d9e",
           "slug": "202301-2301-3-8",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2603795Z"
+          "title": "之八 – 依規矩而擺脫規矩",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx"
         },
         "2301-3-9": {
-          "sourceId": "2301-3-9",
-          "pathHash": "",
-          "signature": "v2|acb12f10b3bb7d17cebb53745e4abbcbb813133c65a22e5854c50be5cd7944f7|9a3ad472f92370ce69df0967a8ef7b6b40464a7a350bbff4041070fd2146463d",
+          "signature": "v3|d107c7ed8d958442a1f997fe54d88cd58d2d385030c774717e6fb412adb806f5|f9f3ecab48b8a390923deea9691cf8003b604054b03375497089c9e4cc104b21",
           "slug": "202301-2301-3-9",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2607992Z"
+          "title": "之九 – 群龍無首，各自就定位",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx"
+        },
+        "2301-3-11": {
+          "signature": "v3|5fbb74a9eaf3d88f73714e15639684b29ed4a415dae71216beca3a4893322901|cbef1827641b38a9ab9f339bc0dd128f5c6d12599dc61c9e02d3dd3cd41e7e01",
+          "slug": "202301-2301-3-11",
+          "title": "之十一 - 嬉出深度‧遊出體悟",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx"
         },
         "2301-4": {
-          "sourceId": "2301-4",
-          "pathHash": "",
-          "signature": "v2|b79c145303e55e0e4ebd1c37c91972706a691aa64dcf1e5c478e2eb303e125dc|",
+          "signature": "v3|6b7440a4ab3264453f0daba10041e055b34366a3bd11cd369aed6f3125492097|",
           "slug": "202301-2301-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2619667Z"
+          "title": "難忘你我共聚時互放的光亮",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-4練功筆記.docx"
         },
         "2301-5": {
-          "sourceId": "2301-5",
-          "pathHash": "",
-          "signature": "v2|f3e11bb87600d712419ba2c44f6c2bcbb7a52f886d112422a8ad78360e2e7694|",
+          "signature": "v3|45f832242d63c29c7c8d4982b8e132c813bc66d7f7840a06c6eb1276d855273f|",
           "slug": "202301-2301-5",
-          "baselineRepairedAt": "2026-08-09T11:47:02.2623912Z"
+          "title": "你的心裡也伏藏著「佳兵」嗎？",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-5體證道德經.docx"
         },
         "2301-6": {
-          "sourceId": "2301-6",
-          "pathHash": "",
-          "signature": "v2|f457570eb7b5c9c8a5a39d1aecac4b2dbf94af71dceacd258d9d5b8bb5200bf8|",
+          "signature": "v3|7812ff47dd2eb445e8ace313f65f2d75a8e3102ebb20ac93b46a60b1234e4436|",
           "slug": "202301-2301-6",
-          "baselineRepairedAt": "2026-08-09T11:47:02.262807Z"
-        },
-        "2301-1::9327cde4c70313c7": {
-          "sourceId": "2301-1",
-          "pathHash": "9327cde4c70313c7",
-          "signature": "v3|92da7474f56d8f6eb1e966ade4ca9fafcbf4f9e11ea2ccfb5ba185f9fbf404f8|",
-          "slug": "202301-2301-1",
-          "baselineRepairedAt": "2026-11-09T15:27:38.8393225Z"
-        },
-        "2301-3-10::b81beb06c83b970f": {
-          "sourceId": "2301-3-10",
-          "pathHash": "b81beb06c83b970f",
-          "signature": "v3|47bad14520fb65c67d3ddd420199556835899358e216bab290a843a8f49494d5|c14c3e5fda3bca4dbe56600dc06f4144491bf1fb4f94adcf300fa8d69c63b483",
-          "slug": "202301-2301-3-10",
-          "baselineRepairedAt": "2026-11-09T15:27:41.2039018Z"
-        },
-        "2301-1": {
-          "sourceId": "2301-1",
-          "pathHash": "",
-          "signature": "v3|92da7474f56d8f6eb1e966ade4ca9fafcbf4f9e11ea2ccfb5ba185f9fbf404f8|",
-          "slug": "202301-2301-1",
-          "baselineRepairedAt": "2026-11-09T15:27:46.6093871Z"
-        },
-        "2301-3-10": {
-          "sourceId": "2301-3-10",
-          "pathHash": "",
-          "signature": "v3|47bad14520fb65c67d3ddd420199556835899358e216bab290a843a8f49494d5|c14c3e5fda3bca4dbe56600dc06f4144491bf1fb4f94adcf300fa8d69c63b483",
-          "slug": "202301-2301-3-10",
-          "baselineRepairedAt": "2026-11-09T15:27:46.6135439Z"
+          "title": "誠意",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-6圖靈集.docx"
         }
       }
     },
