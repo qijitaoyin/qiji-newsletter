@@ -5350,86 +5350,89 @@ export const generatedReviewItems = [
     ]
   },
   {
-    "category": "編輯小語",
-    "status": "needs-review",
-    "author": "編輯部",
-    "title": "走向更高的自由",
-    "sourceId": "2412-1",
-    "slug": "202412-2412-1",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-1編輯小語.docx",
+    "sourceId": "2412-1",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:28:58.4290000Z",
     "sourceSignature": "v3|3114fd670c294a7b69bacbff21e656d5ac8786d648d5e6210883bf3f3dc69c97|",
+    "category": "編輯小語",
+    "author": "編輯部",
+    "title": "走向更高的自由",
+    "issueId": "202412",
+    "slug": "202412-2412-1",
+    "excerpt": "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！",
     "image": "/assets/pixabay/pixabay-8368328.jpg?v=8368328",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-1編輯小語.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-1編輯小語.docx",
-    "date": "2024.12.10",
-    "excerpt": "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！"
+    ]
   },
   {
-    "category": "如是我聞",
-    "status": "needs-review",
-    "author": "文稿彙整 / 二早班筆記小組",
-    "title": "活在「信」的光亮中",
-    "sourceId": "2412-2-1",
-    "slug": "202412-2412-2-1",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-1如是我聞.docx",
+    "sourceId": "2412-2-1",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:30:55.2420000Z",
     "sourceSignature": "v3|fd6f4ab2c3afdaf3bef47b4220cd5d4382045ce998957d46330dfb3496839cc1|",
+    "category": "如是我聞",
+    "author": "文稿彙整 / 二早班筆記小組",
+    "title": "活在「信」的光亮中",
+    "issueId": "202412",
+    "slug": "202412-2412-2-1",
+    "excerpt": "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？…",
     "image": "/assets/pixabay/pixabay-8540709.jpg?v=8540709",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-1如是我聞.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-1如是我聞.docx",
-    "date": "2024.12.10",
-    "excerpt": "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？…"
+    ]
   },
   {
-    "category": "如是我聞",
-    "status": "needs-review",
-    "author": "文稿彙整 / 五晚班筆記小組",
-    "title": "做得到",
-    "sourceId": "2412-2-2",
-    "slug": "202412-2412-2-2",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-2如是我聞之二.docx",
+    "sourceId": "2412-2-2",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:32:39.2750000Z",
     "sourceSignature": "v3|d0be7c6aa6151ff4f91e923003196006219a0ce8b8852b099ea6a4bfa8cde943|",
+    "category": "如是我聞",
+    "author": "文稿彙整 / 五晚班筆記小組",
+    "title": "做得到",
+    "issueId": "202412",
+    "slug": "202412-2412-2-2",
+    "excerpt": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思…",
     "image": "/assets/pixabay/pixabay-1852955.jpg?v=1852955",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-2如是我聞之二.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-2如是我聞之二.docx",
-    "date": "2024.12.10",
-    "excerpt": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思…"
+    ]
   },
   {
-    "category": "現場速寫",
-    "status": "needs-review",
-    "author": "鍾宛真",
-    "title": "記2024海南沉香花梨國際大會",
-    "sourceId": "2412-3",
-    "slug": "202412-2412-3",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-3記沉香花梨會.docx",
+    "sourceId": "2412-3",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:34:31.1400000Z",
     "sourceSignature": "v3|6ea1e15e6fd8967d59985aaf1d839e2273f9e57302a25ade966a1d5978fa6302|1b7e6912f57571829d53cab7371412d152a469884222a6f11baa5aa839379972",
+    "category": "現場速寫",
+    "author": "鍾宛真",
+    "title": "記2024海南沉香花梨國際大會",
+    "issueId": "202412",
+    "slug": "202412-2412-3",
+    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…",
     "image": "/assets/articles/202412/202412-2412-3-img-001.jpeg?v=477452",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-3記沉香花梨會.docx",
     "messages": [
       {
         "severity": "warning",
@@ -5439,150 +5442,147 @@ export const generatedReviewItems = [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-3記沉香花梨會.docx",
-    "date": "2024.12.10",
-    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…"
+    ]
   },
   {
-    "category": "讀書會側記",
-    "status": "needs-review",
-    "author": "陳宛琳",
-    "title": "任何領域皆可用的省氣、定氣、順氣",
-    "sourceId": "2412-4",
-    "slug": "202412-2412-4",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-4讀書會.docx",
+    "sourceId": "2412-4",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:35:37.3030000Z",
     "sourceSignature": "v3|3fd781f5579b14604502e592c0d6c0db9ce01551cd753efb8e788604bd91bdd9|",
+    "category": "讀書會側記",
+    "author": "陳宛琳",
+    "title": "任何領域皆可用的省氣、定氣、順氣",
+    "issueId": "202412",
+    "slug": "202412-2412-4",
+    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
     "image": "/assets/pixabay/pixabay-3107139.jpg?v=3107139",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-4讀書會.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-4讀書會.docx",
-    "date": "2024.12.10",
-    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。"
+    ]
   },
   {
-    "category": "體證道德經",
-    "status": "needs-review",
-    "author": "文稿彙整 / 余媛媛",
-    "title": "含德之厚，比於赤子，則三心不欺",
-    "sourceId": "2412-5",
-    "slug": "202412-2412-5",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-5含德章055.docx",
+    "sourceId": "2412-5",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:39:10.5210000Z",
     "sourceSignature": "v3|5fbf7eadf32e8cc952cd1b38f52852d04459b7cf6d1e13e166fafd6be00a9aa5|",
+    "category": "體證道德經",
+    "author": "文稿彙整 / 余媛媛",
+    "title": "含德之厚，比於赤子，則三心不欺",
+    "issueId": "202412",
+    "slug": "202412-2412-5",
+    "excerpt": "「含德之厚，比於赤子」貫穿全文，是全文的核心。「含」就是內化，把道內化到你的生命裡，變成你的樣子。內化過程中包含了道的德相，因此叫「含德」。「之厚」，天高地厚，厚就是地，厚德載物，可以承載萬物…",
     "image": "/assets/pixabay/pixabay-4526692.jpg?v=4526692",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-5含德章055.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-5含德章055.docx",
-    "date": "2024.12.10",
-    "excerpt": "「含德之厚，比於赤子」貫穿全文，是全文的核心。「含」就是內化，把道內化到你的生命裡，變成你的樣子。內化過程中包含了道的德相，因此叫「含德」。「之厚」，天高地厚，厚就是地，厚德載物，可以承載萬物…"
+    ]
   },
   {
-    "category": "導引按蹻",
-    "status": "needs-review",
-    "author": "文稿彙整 / 黃惠如",
-    "title": "治療師的四個境界",
-    "sourceId": "2412-6",
-    "slug": "202412-2412-6",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-6導引按蹻.docx",
+    "sourceId": "2412-6",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:41:24.8530000Z",
     "sourceSignature": "v3|0f3bb0ff87baa07b87b3ae4192dba7f77ad61dee3aa1d18588dbc1371d224d24|",
+    "category": "導引按蹻",
+    "author": "文稿彙整 / 黃惠如",
+    "title": "治療師的四個境界",
+    "issueId": "202412",
+    "slug": "202412-2412-6",
+    "excerpt": "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治…",
     "image": "/assets/pixabay/pixabay-6295829.jpg?v=6295829",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-6導引按蹻.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-6導引按蹻.docx",
-    "date": "2024.12.10",
-    "excerpt": "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治…"
+    ]
   },
   {
-    "category": "股海人生",
-    "status": "needs-review",
-    "author": "蔡育展",
-    "title": "歡迎來到MATRIX！",
-    "sourceId": "2412-7",
-    "slug": "202412-2412-7",
-    "issueId": "202412",
     "id": "202412::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-7股海人生.docx",
+    "sourceId": "2412-7",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "2026-11-10T01:42:06.7540000Z",
     "sourceSignature": "v3|3ad2b15fca30f4cb76524b8891fd983fa10f0e483d25e91272a821cd1ee1623b|",
+    "category": "股海人生",
+    "author": "蔡育展",
+    "title": "歡迎來到MATRIX！",
+    "issueId": "202412",
+    "slug": "202412-2412-7",
+    "excerpt": "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名…",
     "image": "/assets/pixabay/pixabay-7157189.jpg?v=7157189",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-7股海人生.docx",
     "messages": [
       {
         "severity": "warning",
         "type": "published-content-changed",
-        "message": "這篇文章已發布過，但網站可見的 Word 文字、段落樣式、清單、引述或圖片內容有變動，需重新確認。"
+        "message": "這篇文章已發布過，但 Word 文字、格式或圖片內容有變動，需重新確認。"
       }
-    ],
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-7股海人生.docx",
-    "date": "2024.12.10",
-    "excerpt": "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名…"
+    ]
   },
   {
-    "category": "現場速寫",
-    "status": "needs-review",
-    "author": "鍾宛真",
-    "title": "記2024海南沉香花梨國際大會",
-    "sourceId": "2412-3",
-    "slug": "202412-2412-3",
-    "issueId": "202412",
     "id": "202412::2412-3",
+    "sourceId": "2412-3",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "",
     "sourceSignature": "",
+    "category": "現場速寫",
+    "author": "鍾宛真",
+    "title": "記2024海南沉香花梨國際大會",
+    "issueId": "202412",
+    "slug": "202412-2412-3",
+    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…",
     "image": "/assets/articles/202412/202412-2412-3-img-001.jpeg?v=477452",
+    "file": "2412-3",
     "messages": [
       {
         "severity": "warning",
         "type": "unknown-category",
         "message": "分類不在既有分類清單：現場速寫"
       }
-    ],
-    "file": "2412-3",
-    "date": "2024.12.10",
-    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…"
+    ]
   },
   {
-    "category": "讀書會側記",
-    "status": "needs-review",
-    "author": "陳宛琳",
-    "title": "任何領域皆可用的省氣、定氣、順氣",
-    "sourceId": "2412-4",
-    "slug": "202412-2412-4",
-    "issueId": "202412",
     "id": "202412::2412-4",
+    "sourceId": "2412-4",
+    "status": "needs-review",
+    "date": "2024.12.10",
     "sourceModified": "",
     "sourceSignature": "",
+    "category": "讀書會側記",
+    "author": "陳宛琳",
+    "title": "任何領域皆可用的省氣、定氣、順氣",
+    "issueId": "202412",
+    "slug": "202412-2412-4",
+    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
     "image": "/assets/pixabay/pixabay-3107139.jpg?v=3107139",
+    "file": "2412-4",
     "messages": [
       {
         "severity": "warning",
         "type": "unknown-category",
         "message": "分類不在既有分類清單：讀書會側記"
       }
-    ],
-    "file": "2412-4",
-    "date": "2024.12.10",
-    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。"
+    ]
   },
   {
     "image": "",

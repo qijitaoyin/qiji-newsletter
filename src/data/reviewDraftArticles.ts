@@ -38793,49 +38793,63 @@ export const reviewDraftArticles = [
     ]
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-1",
+    "excerpt": "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-1編輯小語.docx",
+    "title": "走向更高的自由",
+    "author": "編輯部",
+    "homeAnchor": "#article-202412-2412-1",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我應該懂他的意思，但也許不懂，因為我還是熱切盼望他能如期推出新作，好讓我能時時透過文字，跟他作思想的交流。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "不過，文字，或者面對面的談話，究竟能傳達多少思想的內容呢？敏於思辨又精於文字的朋友說，中國的東西太不科學了，因為沒有經過「對與錯」的科學檢驗，總是含糊不清、模稜兩可。我沒有辯駁，也不想多說什麼，每個人都有自己對事物的理解脈絡，除非進入他的經歷與思考脈絡，否則，別人很難全然理解了他的理解。我們自己也是！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
-        "text": "最近熱烈推出文字量與含金量都爆炸的「如是我聞」系列，有同學說看不懂，也有同學說每篇反覆咀嚼，受益良多。其實，說不懂的未必不懂，說受益良多的也未必真懂，大家都是站在自己的維度說的吧！就像下面這段話：「一個人所有的煩惱，所有的痛苦，都是不自由，假如你真正自由，就沒有痛苦可以沾到身上。一定有某種原因讓你這樣，循線到最後，就是某種價值、某種觀念、某種擁有定位性⋯⋯」大概所有讀者都是心有戚戚焉，甚至也可以夸夸其談，引為「高尚」的談資，但最終是否掙脫了束縛，得到「更高的自由」，就看是不是真做到了，做不到，就不能說懂了，就像莊子的「逍遙遊」，得先經過一連串凡人很難「做到」的約束與限制。而要走向更高的自由，一樣得老老實實「做得到」。",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "",
+        "isLargeFont": true,
+        "text": "最近熱烈推出文字量與含金量都爆炸的「如是我聞」系列，有同學說看不懂，也有同學說每篇反覆咀嚼，受益良多。其實，說不懂的未必不懂，說受益良多的也未必真懂，大家都是站在自己的維度說的吧！就像下面這段話：「一個人所有的煩惱，所有的痛苦，都是不自由，假如你真正自由，就沒有痛苦可以沾到身上。一定有某種原因讓你這樣，循線到最後，就是某種價值、某種觀念、某種擁有定位性⋯⋯」大概所有讀者都是心有戚戚焉，甚至也可以夸夸其談，引為「高尚」的談資，但最終是否掙脫了束縛，得到「更高的自由」，就看是不是真做到了，做不到，就不能說懂了，就像莊子的「逍遙遊」，得先經過一連串凡人很難「做到」的約束與限制。而要走向更高的自由，一樣得老老實實「做得到」。",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       }
     ],
+    "category": "編輯小語",
+    "readTime": "約 2 分鐘",
+    "order": 0,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-8368328.jpg?v=8368328",
     "images": [],
-    "sourceId": "2412-1",
     "issueId": "202412",
+    "tags": [
+      "編輯小語"
+    ],
     "sections": [
       {
         "heading": null,
@@ -38847,602 +38861,603 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "編輯部",
-    "title": "走向更高的自由",
-    "sourceFileName": "2412-1編輯小語.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-8368328.jpg?v=8368328",
-    "tags": [
-      "編輯小語"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 2 分鐘",
-    "order": 0,
-    "excerpt": "一位天縱奇才的朋友過去只要出書就會熱賣，最近跟他碰面，問他怎麼好久沒作品了？他說，台灣人百分之八九十都瘋了，他不知道該怎麼跟一群瘋子說話！",
-    "slug": "202412-2412-1",
-    "homeAnchor": "#article-202412-2412-1",
-    "category": "編輯小語"
+    "sourceId": "2412-1",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-2-1",
+    "excerpt": "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？…",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-2-1如是我聞.docx",
+    "title": "活在「信」的光亮中",
+    "author": "文稿彙整 / 二早班筆記小組",
+    "homeAnchor": "#article-202412-2412-2-1",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？是比爾・蓋茨、馬斯克，還是張忠謀？我能拿到月亮，就由我開價，要不然你去拿，我跟你買。關鍵就在誰拿到這唯一性，擁有它，就是世界上最富有的人。價值就在這獨特的唯一性之中。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "學香是學「相」的分辨",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "有人說，人生不必追求什麼夢想，其實指的就是比爾・蓋茨、馬斯克、張忠謀這些富豪。他們還有什麼夢想可追求？他們創造的「夢想」，只是讓人類生活變得更方便、也更懶墮，與自然更疏遠，人與人之間的關係也更加冷漠。他們口口聲聲說要解決問題，事實上只是創造商品、賺取金錢。一個人的動機是否真實，或許騙得了世人，卻騙不了天地、宇宙的法則。所謂「窮得只剩下錢」，這話真是一針見血。依我的邏輯，有錢人其實如同乞丐，窮得每天都在向人伸手要錢，只是要的方法不一樣而已。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我只要拿出手中的沉香，就算高科技園區的總資產也買不起，這才是真正的價值。好沉香的唯一性就像月亮，不僅自帶光亮，還有代表性、指標性、實用性。我的沉香是獨一無二的。我把沉香當作是福報，別人向我求購，我很少回應，但我願意把福報讓給你們。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "擁有沉香，要去感應它，從中找到方向，確立生命的主軸，可以讓你一生不敗，因為它會加持你，變成你的靠山。沉香生於山頭，要在陽光充足、生機勃勃的生態中，於漫長歲月中歷經苦難形成。它怎麼可能沒有能量？怎麼可能不帶來福報？沉香就是價值的終極體現。假如你懂沉香的價值，找到這個最後價值，就不再庸俗，不再追求豪車、豪宅，因為那些物質開發不了靈性，只會提高虛榮，讓自己墮落，等你死了都沒用。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "學香的人就明白我在講什麼。這裡面是一個人看物質、一種對「相」的分辨能力。學香是學「相」的分辨，因為香有很多內涵，不是看起來差不多，裡面有它的玄機，你要學過，才可以從類似之物，判斷它的不同。大腦運算學會這個邏輯，看人、看事、看物、看趨勢，你都能懂。學香是學這個東西。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "對終極價值的判斷力",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "有人問我，你為什麼股價高的時候不先賣掉，低的時候再承接？我要這樣操作的機會太多，但我不做，因為這會教我投機取巧、獲取小利，教我投資股票是為了賺錢。人越貪某樣東西，就越捨不得用。比如說你貪錢，你就捨不得用錢，會在錢上計較。假如我用心玩股票，有把握一年可以賺一千萬，但就會耽誤上課，所以我不要那一千萬，因為那會讓我自己格局變小，掉到世俗的計算裡。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "高人一定活在真相中，但這個真相凡人看不到、去不了，活不上去這種狀態，因為這是價值體系很大的跳躍。他看事情的角度、要的價值都跟你不一樣。無極就是要練成這個東西，因為到達頂端，要回到低維很容易。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人類要經過多久才會醒來？黃金一直漲，漲到脫離它真正的本體價值。因為美元在崩壞中，美元的信任度走下坡，錢都去買黃金。現在找不到任何貨幣可買，比特幣等虛擬貨幣才會飆那麼高，已經沒有東西可以讓人類價值去注入、停留，就像你要把你的生命價值停留在哪裡？找不到啊！都在崩壞中。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "老子講「反者道之動，弱者道之用」，物極必反，任何東西用到最後一定會崩壞，而那些微不足道、原來你瞧不起的東西會顯現它的力量。就像你原本覺得沉香是爛木頭，說那不是人生必須品，殊不知只要人類開始覺醒，沉香就會成為重要物資。現在貨幣需要改變，生活型態也因為AI而改變，一切都在變，但你仍然堅持以不變應萬變，其實也不是不變，而是你是對一切都無能為力。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我創無極、創18套功法，顛覆了所有運動法則，但我做什麼你能明白嗎？沉香只是我訓練六根的一點丹藥而已，我就能在此執牛耳，因為我的沉香是精華，價值已經超越沉香本身了，它是一種應用性價值，但人類目前還看不到。人類沒有香嚴童子的本事，直接聞香悟道，不是沉香沒有功能，而是執著的人聞一百年也不能悟道。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以人生最寶貴的，不是論斷他留下東西的大小價值，而是他留下了怎樣的定位邏輯，他做的事情背後思考的是哪一個維度的價值，背後的精神何在，他在護衛什麼？ 老子為什麼厲害？他就寫了一個「道」字，他留下的是一種主張，道法自然。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "一個人留下什麼物質，其實也就是留下他的主張，留下越多，就是主張越強烈。你會說，老師你留的香沒有日本松榮堂多？請問松榮堂用了多少財力經營，而我是傾個人所有財力、傾生命所有主張，去護衛這個概念。就像結香，你要低調先把自己的價值藏在樹裡面，透過時間醞釀，連傷痛都不能讓人家看到，日復一日接受日曬雨淋，不能倒下。人要這樣活，這叫「格物致知」。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "成為全然能量的自己",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我現在不是在講佛學，而是講對物質反思的邏輯，這個邏輯雖然見仁見智，但是人缺了這些還會精彩嗎？行屍走肉、唯利是圖，你覺得好嗎？你們每天把感恩掛在嘴上，去把感恩的心找出來看看。有感恩心的人不會說什麼感恩，因為他很忙，為感恩心在忙，傾盡一切做該做的事，回報一種感恩。他很清楚，活著是受恩於天地、受愛於衆生，所以必須用生命去回報。他連念佛的時間都沒有，他只有自己成佛，成為全然能量的自己，否則就沒那個法力做到。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "六根是構成生命的所有門戶，人會生病，都是六根不清淨所致。吃壞了、氣不順、眼睛看不慣、耳朵聽了煩，這些都是致病的罪惡之源。心是很脆弱的，因為它每天都受眼睛傷害、受耳朵傷害…你要讓心強壯起來，直接控制自己的心，而不是控制自己「非禮勿視，非禮勿聽」，控制這些門戶幹什麼？你應該開放門戶貿易自由，最終讓人身體自由。最後那一顆心有根本的愛，就像天地愛你一樣。天地沒有占有慾，但我們都活在它裡面。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "什麼叫超越六根？可以到你自己的第六意識中想，而不是眼睛看到、耳朵聽到的都是人家的想法。放在生活中，你買手機、買電器用品，都是別人的想法。哪一個不是？你任何一根都沒超越。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我在高維思想，但會降到低維來跟你相處。我說的降維，不是說降到跟你們一樣低能，而是用現實、眼見為憑的角度來看。三度空間是長x寬x高，再加上時間，叫四度空間，五維就是超越空間跟時間。我們要把有形的空間超越到無形的空間，把時間這種無形變成有形，這是五度。也就是說，我看到的都是時間，萬物都是時間，萬事都是時間。六根所投影的一切現象，都像時間一樣，因為它不永久，只有一段時間。假如我把維度提高到四度的時間以外，我看到的是所有的時間。我看到你們每一個人的時間，這些時間總和起來就是我的物質。所以我看到你們等於我看到時間，看到時間等於看到物質。所以說五度就是我看到時間為物質，塞滿了整個看不見的空間，也就是把三度空間由可見轉為不可見的空間，把看不見的時間轉為可見的時間。所以五維就是在看得見的空間以外的虛擬空間，一種超越空間的空間存在，而且它是時間本身。我們比螞蟻更高維度，所以看得到螞蟻；我看得到時間，要比它更高維度，才能看得到。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "萬有引力不是真正的力，沒有位能、動能，你看不見這種力量，不像被棒球打到會痛，但你被地球的引力吸著，卻不知不覺。時間就是你看不見，但是卻作用著你的存在。假如維度提高，我們就可以看得到它，這叫五維，因為時間是四維。我看得到的時間內的投影，每一個片段的你，都是這個四維時間下來的你。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "文明是走向更高的自由",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "真正的維度是可以同時存在於無限時空，我存在於我原來的樣子，也可以升維到不在我這個樣子，它像金箍棒可以伸縮。你為什麼要練無極？就是讓金箍棒可以拉至生命最高點，那叫做從第六意識穿破到到第七、第八意識。第八阿賴耶識跟第七莫那識其實是同一個意識，在同一維度，只是莫那識連接著六維，貫穿物質界，而阿賴耶識永遠都在靈動，透過莫那識下凡、降維。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "練無極假如能提高維度，人生很好玩，你就覺得人類很不文明，只是在物質上下了很多功夫，讓自己變成現在這樣。其實高科技只是你給他加了一個「高」字，科技到底是什麼？科學的技術，其他還有精神的技術，心理技術，還有「愛」的技術，你有沒有看過？假如要用技術，輪不到科學，從單細胞開始，人類努力演化到現在就是愛，因為有愛才演化。高科技光用三維的價值來計算，不知道掌握愛就掌握一切，不用再分類別。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "文明不一定在科技裡，越過這個框架，超維度就是這樣在看文明。什麼叫文明？突破原來的框架，走向更高的自由。在演化中，讓愛真的可以展現，讓人與人之間更相信彼此，這就是最高技術，你做得到嗎？我的內心是一個和平飯店，任何瑕疵到我面前，都受到赦免。但人家跟你相處就緊張，因為你充滿了主張，充滿了戒律，讓別人怕犯戒，犯了你的是非。你就這麼低俗，怎麼可能有愛？愛是包容所有人的樣子，任何人都能在你內心裡自由進出。你不要看不慣這種人怎樣、那種人怎樣，你只能幫他們，讓他們了解「你這樣那樣，只會讓你自己會越來越不好過」。你怎麼就去討厭他們？這不是人類演化的基本法則。人類為什麼演化？就是包容所有世界的變遷而活著，這叫集體演化，就是互相幫忙。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "但你都沒有這樣想，認為這些不錢賺，沒有既得利益性，跟大家在意的東西一點關係也沒有，殊不知人類繼起的文明乃是整個世界的演化。所以說不同維度會有不同廣度的看見。你要突破眼睛所看、耳朵所聽到的界域，把眼、耳、鼻、舌、身這五感超越，最後到達第六意識的根源，也就是從創造自己的想法開始，不在自己看到、聽到的想法裡面。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "一個人從生到死，躺下走了，變成靈堂的遺照。以前告別式三鞠躬，現在是草草一鞠躬，爭取時間。人走了以後就是這樣了無聲息，人活到最後是那個樣子，如果從頭再來，要不要像以前那麼無知，每天被被世俗的焦慮綁架，為各種情感忐忑不安？你不用為任何人的低維、低智商，為任何不同於你的看法而痛苦，別人聽不了一次勸，就不必再有第二次。人要這樣，人生才會自由。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你到底是被什麼感覺困在那裡痛苦？是因為你被某種東西綁住、控制，才會痛苦。一個人所有的煩惱，所有的痛苦，都是不自由，假如你真正自由，就沒有痛苦可以沾到身上。一定有某種原因讓你這樣，循線到最後，就是某種價值、某種觀念、某種擁有定位性。你為什麼要管你兒子？「因為他是我兒子」，這就是你的不自由！人家不願意讓你當爸爸，你講話他不願意聽，不要你管，但你還是維持「當爸爸就要管」的感覺。如果兒子願意讓你管，你就管，如果你說「我不要，因為很麻煩」，你怕麻煩，你也不自由。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以修煉就要不斷跟自己對話：我為什麼這樣？我來這一趟到底幹什麼？我們需要這麼不自由、非得把對方幹掉不行嗎？我們到底在恐懼什麼？到底被什麼困住了？我們為什麼不能發展人類集體的演化機制，我幫你、你幫我，共同創造宇宙繼起的生命？人限制自己的自由，原來都是被催眠的，那不是生命演化的本質。用更高的維度看待自己，你才能看見、聽見高維。你必須對身體產生高維度，最起碼要先了解身體每個地方的感受都不同，而敢於去跟這些感受對話。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這不是在講倫理道德，而是生命的真相。從你走著到躺下去的這段時間內，你所發生的事情就叫無明，但你以為它是真實的。你在意什麼？罣礙什麼？所以我叫你們從最簡單的，生理性的罣礙先拿掉，因為那裡是非太多了。你眼睛看到、耳朵聽到的都是外界的投影，根本就不是真相，真相在人腦的神經反應。只要抓住你的神經反應，從身體上找到你，這叫「與身體對話」。但我的身體觀一般人聽不懂，因為對身體的理解程度太差。你身體充滿了無明，那是層層疊疊、日積月累的文化、道德、教育對你的催眠，它糾葛在你累世的DNA裡，讓你很難醒來。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "其實人就是各類神經遞質的發生過程：分泌催產素，讓彼此更有信任感、安定感；分泌血清素，有幸福的感覺；分泌腦內啡，能夠鎮定得住，不為很多事情焦慮不安；分泌多巴胺，能夠更積極挑戰活力人生。你要敢於用科學的方式去解剖、研究這些，才能創造一顆篤定的內心，再也不受眼耳鼻舌身的色聲香味觸所挑逗、羈絆，你就自由了。與身體的對話要到具有控制、感受神經遞質的能力，知道它的所以然，就像專業醫生一樣。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "從「墮肢體」到「信」——與萬物共振的頻率",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你的身體就有那麼多開關可以打開，但是你活得迷迷糊糊，對身體那麼陌生。我跟你講高維，講人生價值你說聽不懂，覺得跟自己沒關係，而這些是很實際、最低維的，就是肉體、物質層面，你要在你的感受跟想法裡面，不斷的去覺察，因為一個人要清理的永遠是自己。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "莊子說「墮肢體，黜聰明，離形去智，同於大通。」肢體消失，讓肢體不在，讓三度這個維度昇華，叫墮肢體。莊子這段是在講「坐忘」，而我們講的是，練功要進入這個狀態，才能進入老子講的「恍惚」。老子很深，莊子是老子的基礎，他用了很多比喻，來說明只要經過這些狀態你就會進入老子的道。莊子更具象、更生活化地詮釋老子道的概念，這並不是說莊子比較膚淺，不是的，他們都很高明，但是莊子降維了，老子沒有。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "老子存在於全維度的道。什麼叫全維度？「道可道，非常道」，道無法簡單講完，可道的就不是常道。真正描述的一個東西，不能絕對等於那個被描述對象，但也可以直接等於，如你所看、如你所聽，所以他後面又補了一句，「名可名」，就是你可以這樣說，「非常名」，也就是絕對不是你名相之物。就像我在你面前再怎麼形容某位學員，都不如你見他一面。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "就像對全方位的「道」的描述，「有物混成，先天地生。寂兮寥兮，獨立而不改，周行而不殆，可以為天下母。吾不知其名，字之曰道」，暫且稱呼叫「字之」，一種非稱呼的稱呼，「曰道」。你看，老子用這種簡單但深刻的語言，但卻充滿無限的空間，你聽了像白話文，以為你都懂了。莊子則得鋪陳一系列的生活化描述：你不是我，你怎麼知道我不知道魚的快樂？⋯⋯他必須用你心裡的邏輯來證明給你看，因為你在三度裡。所以很多人喜歡莊子，因為他能讓你看到道的禪境，老子卻讓你覺得很學術。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「墮肢體、黜聰明」就是身體是空的，不用想，這樣你就可以離開眼、耳、鼻、舌、身的控制。「離形去知」，這個「知」等於「智」，去掉大腦所想的知，你就可以「同於大通」。「大通」就是「道」。假如能這樣，你就可以進入恍惚之間，即老子所說「道之為物，唯恍唯惚。惚兮恍兮，其中有象；恍兮惚兮，其中有物」。「窈兮冥兮，其中有精，其精甚真，其中有信」，你必須走入那深遠幽暗、彷彿無盡之地的過程，在那裡，你也許會看到一些微弱的跡象。要讓這些跡象變得真實，必須擁有「信」。「信」就是你所看到萬物你自己的定義，一切感知中生命的最深層定義，是你最終極的價值。維度最高看見的地標是哪裡？那就是信。很難形容那個樣子是什麼，你可以把它看成一種光、或是一種色彩，反正不可說。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這裡的「信」不只是相信或信仰，而是一種更為深遠的本質。把「信」放大至宇宙層面，它成為原始的頻率，一切事物的根本頻率。原始信息就是你與萬物之間共振的頻率，它決定了你所見到的現實，這與波粒二象性理論有些相似。你如何看待一件事，這件事就以你所理解的方式呈現。因此，「信」既是理解之根，也是投影之源。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "「信」與「無明」是一體兩面",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你內心有一種東西，通常被稱為「無明」。但我認為「無明」其實就是「信」，「信」與「無明」是一體兩面。在你產生執著後，這種信念便成了末梢作用，於是無明也就隨之而生。在心靈清明時，它成為一切光明的來源，從你身體的感覺、舉手投足中流露出來。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我們的六覺——眼覺、耳覺、鼻覺、舌覺、身覺、意覺——構成我們對身體內外感知的體系。當超越這六覺，便會產生一種稱為「靈覺力」，是更高層次的感知。我在書中完整而系統地闡述了這種概念，但有些人尚未能在實踐中達到這個境界。我現在要將你帶到一個更高的層次，雖然你目前的感知並不敏銳，但我會引導你通過多次不同的體驗，讓你逐步理解。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你的肉體現在被有形的存在束縛著，無法感受到其中隱含的細微變化，你或許隱隱感到這些高層次的不同，卻難以辨別它的精微氛圍。這是一門極高深的技藝，與打沙包、擒拿手等熟能生巧的基本功不同，因為這超越了所有技巧層面，而回歸到精神本質的理解。你的精神層次決定了你能達到的境界，而你的氣質反映了你的表現。當達到「心心相印」狀態時，心與心之間的互動，會顯現出無法用語言形容的體驗，只能由掌握此道的大師來演示。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你們學習功法要觀察我的動作，體會這其中的心法。至於是否能領悟，要看你的個人造化，老師只能引領進門，修行則在於個人能否參透。這些我能夠做到與說到，正是道家所講的生命真諦——「道法自然」，找到內心的「道心」，印證這些理論的真實性。我不會斷章取義地解說，因為我設計了一整套完整的系統，供你學習體會。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我想要讓人們清楚地明白這些，但我該到哪裡去講？有誰願意聽？而老天給我的條件卻是：沒有文憑、沒有家世背景，身體還承受著高血壓、高血糖、椎管狹窄、脊椎裂傷、腳踝扭傷、膝蓋錯位等眾多病痛與劫難。你們稍微感到一點不適就喊痛，而我每天都與劇痛為伍。你們說慢性發炎容易致癌，而我每天都處於發炎狀態。所以諸如癌症等對我而言只是另一道課題，是生命資料庫的一部分，有什麼可怕的？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人如果沒有夢想，什麼都不去追求，生命便已經停止了。既然無所畏懼，為什麼還懼怕癌症？癌症不也是痛苦人生的一種解脫？為什麼死去的人都不回來？因為那裡太美好了。如果你經歷了死亡，便會明白，為什麼人去世後表情如此安詳，因為內心的恐懼消散，信念變得清明，回歸到靈性的層面，進入寧靜與完美，超越了世間一切的可能性。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "投胎做人，其實是靈魂經歷的最低層次之一，當你離開這層次，不管此生經歷如何，即使沒有功勞也有苦勞，你的境界絕不會比現在更低。因為在人生的修行中，你已經走到了人類最後的磨鍊階段，不會再退回到禽獸的境界。六道輪迴中，你已經進化到人類的層次，帶著動物性的本能去追求人性，因此不會再回到更低的層次。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "比起其他動物，人類是最痛苦的，哪種動物會體會到學習的壓力和時間的緊迫？哪種動物會思索生命的意義？牠們無需思考這些，卻仍然生存下去，而人類必須在這些煩惱中經歷磨鍊，才能突破最後一關，即「第六意識」的覺知。所有動物都有意識，但沒有像人類那樣快速演化的能力。唯有人類擁有這種演化的觀察能力，也就是心智與大腦皮質的作用。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "去完成自己的靈光",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我們追求靈光，所謂「迥脱根塵，一靈獨耀」。每個人都可以做到這些，但你有在努力嗎？這不需要天賦，你與生俱來便具備一切能力。「何其自性，本自具足」，這意指所有存在的圓滿性。「何其」 代表無限的性質，意味著一切、無所不在。你具備的那份信念和條件，本自俱足，根本上已擁有一切。然而，你被無明束縛，讓無數的外物填滿自己，只要拿開這些障礙，便能恢復自由。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「為道日損」，要損何物？執著。不要再用那些執著來認知，要去掉執著。你是用這個肉體去發生所有的事情，所以要教導身體60兆細胞，讓它們去覺醒。在一切經歷的過程中，對你自己產生了了分明，了解自己，最後自由了。你把身體一層不到0.1公分的皮撕掉，看看你自己是誰？管你用什麼化妝品，管你穿什麼衣服，當把這層皮去掉，你還敢看嗎？人就是用一張皮美化，把一切真相蓋住。人何必如此執著？超越它，去愛皮下的任何一個人，因為那裡面充滿了必得救贖的權利。活著做人，你就有得到救贖的資格，否則你還是畜生。看清那層皮下的醜陋、恐懼，你就解脫了。我教你的都是真的東西，但你敢嗎？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "為什麼你不敢去澳門？因為你貪念，怕一進賭場就屍骨無存。看看你人生中有多少地雷？名、利、權、情、慾、食、睡，到處都是地雷區，你擺脫得了嗎？最終就是一個覺醒，就是找到本心，因為它本自具足。找到心後，看看你所擁有的東西，算算它跟你重疊的時間還剩下幾年，譬如你現在60歲，能再活30年，那麼你擁有的東西就剩30年的時間跟你重疊，之後你肉體不見了，這些物質就不在你這個時間裡，會再重疊其他人的人生。你留下的東西對你有價值，有意義，但你的後代會在意嗎？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以不要執著。人一生當中，不管怎麼樣，都要透過任何人、任何事、任何發生、任何行動，去完成自己的光～自己的一道靈光，這才是真相，不要迷途在一些假象上回不來了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這不是佛學，不是論語、孟子，我跟你講的是一個人如何透過埋藏在那張皮下面，運行著所有眼、耳、鼻、舌、身、意歸納出來的生老病苦，這跟金剛經、佛經一點關係都沒有。所有的道到最後都「同於大通」，那叫大道。我們要追求的不是佛的概念，佛只是一個基礎，你要一種真理成佛。成佛後就不需要跟人爭論，就不用分佛教、基督教的看法不同了，再來就是無為。最後同於大通，大家都一樣，跟佛一樣、跟誰都一樣。到達這種格局、維度，再回看人間，我跟你之間有什麼好計較的？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我跟你講的都是真的東西，不是高談闊論。現在眼睛閉上，回想這個星期你有在這種感受中嗎？你現在上課時的感受是最高維度的你，這個禮拜其他時間有什麼東西把你帶走？讓你過得那麼似是而非？所以趕快坐進此道～無極之道，回到你內在的自我探索。我只是給你自我探索的一個技能，不是叫你信我的道理。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "跟你講的都是道家的東西，所以你現在做動作，就是把這些高維投影在三維肉體上印證，讓你做人、做事看到的都是這樣的邏輯，這叫做根本學習。本自具足叫根本學習，只是學那個本性，是本來就有的能力，不是知識學習。比如你要快樂太簡單，只要做下面的動作，很快就分泌一種血清素：吸氣時嘴角儘量往上翹微笑，不要閉著眼睛，大膽對這個世界呼吸，用歡喜的心情，看著這個世界，好乾淨、好空曠，你可以任意飛翔，看青山綠水，身邊的人都充滿愛心，對你祝福。這樣好好吸氣，多做幾次你就快樂了，簡不簡單？要不要去辛苦賺錢，產生那麼多紛爭？不要再那麼笨了！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "你沒錢沒沉香不要怕，我拿給你聞，你要知道滿足就好，怕的是你聞都聞不到什麼意義，我浪費那些香幹什麼？所以是你不值得，不是你有錢沒錢。天地萬物都給有緣的人，發明家的發明是他有緣分看見那個波，波會去連結他。萬物都是這樣的，叫做吸引力法則。這是不可說裡的一個「信」——「其中有信」——你信什麼、什麼都發生。因為得到那個信，而不是你大腦怎麼想。但你會被這吸引力弄反，弄到亂想，結果往往事與願違，想什麼、什麼都離你而去。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "活在「信」的光亮中",
         "type": "heading",
+        "text": "活在「信」的光亮中",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "只有活在「信」的光亮中，用那個頻率，世界就往那裡形成，往那裡被坍縮出來。我沒辦法形容信的樣子給你聽，因為信對宇宙本體的每一個觀察者都不一樣，那是終極的微觀世界本身。我們大腦是宏觀的，看的是假象的東西，其實它裡面千變萬化，就像人皮底下的生命真相。你能夠真的看見、感受嗎？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "記住這些心法、感覺以後，你才讀懂我在說什麼，看懂我身體的動作，也才看得懂我為什麼會遇到沉香，沉香為什麼一直找我。這時候你才會看到問題，有人那麼有錢也買不起幾個沉香，我也不是很有錢，怎麼有那麼多沉香？各種疑問跑出來之後，你才會發現原來是「信」！因為那個「信光」，我不會再回到三維度的計較中，像一般人這樣庸俗、短視。我是因為弱才信得了，一個人太強就沒辦法信，有什麼東西比你強到可以讓你信？你信不了，所以在你裡面找不到那個能量。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "內心產生了光，投影這個光就能照亮本質的東西，讓它在光裡面聚集，跑到你的世界。錢一定往錢多的地方滾，這是一定的道理。所以用這種心法訓練去改造六十兆細胞的法性，法就是萬物的邏輯，法性一改，邏輯就改。你怎麼看見，怎麼聽見，取決於法，所以你改變這個法，日常生活當中舉手投足，乃至所做的事、追逐的方向都會跟人家不一樣。而且做久了就會知道，你一定有累積，是累積在生生世世。當你身體不在的時間，你會儲存在永恆的時間裡，物質變成時間本身，你可以擁有無限的時間去投影成萬物。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "為什麼說「迥脫根塵，一靈獨耀」，人生不過百年，但在人間的昇華速度最快，因為人生是最苦難的，這裡你都修不了，下輩子會更執著。你這輩子無明，下輩子會對這個無明執著。如果靈光夠，下輩子投胎時，就是用這個光找到最旺的魂。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我給你們這麼多心法，這麼多的可能性去「墮肢體，黜聰明」。例如我讓你練功要「以一念帶萬念」，當身體這樣在動，大腦的作用就被取代了。當你沒事可專注、可投影的時候，大腦容易念頭紛飛。我就給你一個不用想、最容易親近的法門。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "現在全世界的學說都在那裡泛談，再來走向AI的世界，只有我們的語言最集中，建構最完整。所以不要忽略你們上課的記錄，要以更好、更細膩的文字，轉述我說的內容。我希望你能把我講的話消化，因為現場聆聽記錄的內容可以穿越時空，不是只有別班學員在讀而已。同時在把語言轉換成文字的表達時，你已經把它內化，這是一個很重要的訓練。所以趕快為自己積點靈光。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "無極最重要的就是預備式，起式，要充滿喜悅與幸福，然後安靜。中間過程就是「墮肢體，黜聰明，離形去知，同以大通」，在當中見到信光，最後是收式。一種跟靈魂對話的境界，因為信是超覺，超過第六識的覺，進入靈覺。覺醒是識覺對靈覺的轉換，也就是識能轉為靈能。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "拳怕少壯，22歲是最強的年紀，再來就走下坡了。但我這套功法任何人都能學，而且可以一直往深層，不需要經過打沙包、蹲馬步的路徑，我讓你畢其功於一役。功法練得成不成，不用著急，經歷就好。你們不是要成為我，是要練成我的主張跟動作的心法，包括我人生做事的投影。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這是一條升維的道路，綜合所有功夫的成就，不需要模仿我的動作，去揣摩我說的內涵就好，結合心法去練，才是最佳的練家子。不是練到像在跳舞，很漂亮，那有什麼用？真正有內涵的東西不需要那麼漂亮，就可以昇華上去。漂亮的外形不代表什麼，重點是跟自己契合嗎？就像我這種語言到你身上，你能夠靈活應用到最深層的生命感覺嗎？就像一塊香，能在你的鼻子中走向最接近生命本質性的昇華嗎？你能夠聞到那個境界嗎？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人家聞香開悟，為什麼你不能？因為你永遠迷失，你心中跟香之間產生不了那個「訊號」，那個「信」，你從任何人、事當中，都找不到那點「信」的光。「信」可點化萬物，只要你在「信」本質的地方，一切都沒事，因為都是由你決定坍縮成粒子，決定你這個人的宏觀。也就是你怎麼坍縮，你就會不斷在演化成一個宏觀的自己。你要不要重來？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "你一生迷迷糊糊，這裡忙那裡忙，一直都這樣。所以時常停下來聞聞香，感受一下腦細胞的環境；喝喝茶，感受一下天地的穩定、時空的感覺。這兩個習慣要養成，其他如出國旅遊都可以戒掉，因為那樣疲於奔命，讓你不容易安靜下來，再怎麼都是他鄉異地，不像你在家裡，和好友之間的修復性。所以你要找一個方法，產生一個能自我深層對話的狀態，你要熬下去，練到那個狀態出現，人生就完成了，你不再怕老年，因為等待你的就是昇華、就是高度！（本文節錄自241105二早班上課逐字稿）",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "a4",
+        "isLargeFont": true,
+        "text": "你一生迷迷糊糊，這裡忙那裡忙，一直都這樣。所以時常停下來聞聞香，感受一下腦細胞的環境；喝喝茶，感受一下天地的穩定、時空的感覺。這兩個習慣要養成，其他如出國旅遊都可以戒掉，因為那樣疲於奔命，讓你不容易安靜下來，再怎麼都是他鄉異地，不像你在家裡，和好友之間的修復性。所以你要找一個方法，產生一個能自我深層對話的狀態，你要熬下去，練到那個狀態出現，人生就完成了，你不再怕老年，因為等待你的就是昇華、就是高度！（本文節錄自241105二早班上課逐字稿）",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       }
     ],
+    "category": "如是我聞",
+    "readTime": "約 17 分鐘",
+    "order": 1,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-8540709.jpg?v=8540709",
     "images": [],
-    "sourceId": "2412-2-1",
     "issueId": "202412",
+    "tags": [
+      "如是我聞",
+      "覺性修煉"
+    ],
     "sections": [
       {
         "heading": null,
@@ -39516,327 +39531,327 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "文稿彙整 / 二早班筆記小組",
-    "title": "活在「信」的光亮中",
-    "sourceFileName": "2412-2-1如是我聞.docx",
+    "sourceId": "2412-2-1",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "202412-2412-2-2",
+    "excerpt": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思…",
     "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-8540709.jpg?v=8540709",
+    "sourceFileName": "2412-2-2如是我聞之二.docx",
+    "title": "做得到",
+    "author": "文稿彙整 / 五晚班筆記小組",
+    "homeAnchor": "#article-202412-2412-2-2",
+    "contentBlocks": [
+      {
+        "type": "heading",
+        "text": "活著就是為了做得到，做出內心的層次",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思考過？你可以呼吸，可以動，要動什麼？為什麼要動？你上班做到退休，你做到什麼？為什麼要上這個班？還是你只是活著，活在那個狀態，在那裏動而已？",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "練無極就是知道我們在動什麼，而且做得到。做到什麼？不是只是做到外形動作，還要做出內心的層次。人要學會看到層次。看到層次，所有心裏的感覺，大腦的想法絕對不一樣。我為什麼要講心法？就是要你做得到心法，做出來的跟你講的一樣。你講的都是你做得到的；怎麼講就怎麼做出來；做出你的心法，做出你內心的層次。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "heading",
+        "text": "唯一的真相就是你的感受",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "你們現在講出來的都是你的想法，那不是你，那只是你的道理，你在說好聽的，說跟你一點關係都沒有的事。多少在教論語的人，講了一輩子沒有一個是孔子，反而跟孔子離太遠太遠，因為他們都用大腦來想孔子講的話。你不要誤以為你所看、所說的就是你，那不是真相。為什麼說一切都是假的？因為你看了，它才是假的；人家本來是真的，因為你參與了進去，它就變成「虛擬世界」。月亮你不看它的時候它是真的，當你看它，它就變成假的；因為你沒有成為月亮，你用你的想法看的月亮是假的，你要真正成為月亮的看見者，你必須要怎麼知道月亮，怎麼感受月亮，要像月那麼圓那麼亮，你必須成為。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "我們練功就是要練那個心，只有內心恢復它的本自具足，根本就不要用腦去想，想的都不是真相，只有內心的「受」才會是真相，你身上唯一的真相就是你的感受。包括你的感覺都是隨機的，面對同一句話、同一件事情，你的感覺會因為環境條件而有所不同，但是你的感受絕對是自己，絕對是最後的結果。因為不管你怎麼想，去控制眼睛怎麼看，你就會產生一個感受，那個感受是最後的結果，那也是真的。那個真的才是你的。但是你大腦怎麼想、怎麼去看見，其實是假的，所以你以假為真。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "我是練武術開始，除了練肢體動作，各種東西研究參與了一輩子，理解到身體除了肉體動作以外，還有心，心是一個很值得探索的議題。「人心」其實是一個假心，它是大腦六根的作用而形成的，如果大腦沒變、六根的處理方式沒變，你用嘴巴說的「對不起」、「謝謝你」去修那顆心全無意義，因為假一直進來。所以你現在看到我是假的，你沒看到我的真相，為什麼你看不到我的真相，就好像我也看不到你的真相，那麼誰才能看到真相？只有自己。所以練功的「做得到」，就是看到自己。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "一般的馬追求跑最快最遠，賽馬比賽第一名，跑去工作、作戰，永遠在不同的狀況跑著；定義不在自己而在別人，牠以為這樣就是牠的「馬生」。但有一匹馬不是，牠跑著跑著發現，我在跑的其實是時間，在時間上我跑出不同的意義。我為什麼在時間上這樣跑著？牠開始尋找一個牠本身的意義。這匹馬維度提升了，除了跑到看見時間的意義，又跑到它本身的價值。牠覺得牠的跑原來不是要知道牠是一匹馬；牠有時候在戰場，有時候為工作在跑的時候，會感到恐懼、煩惱⋯⋯後來牠發現這些恐懼對外界來說都不存在，而是來自大腦的想法，來自於牠想、牠認知這是什麼，所以才有衝突、才會覺得累。問題的根源不是我看到什麼，而是我用什麼去看到？",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "於是牠明白了：我看到的真相原來是用我的腦去看到的，如果不帶想法去看，看的時候大腦停止思考，看到的東西不在我的想法裏，那我看到的一切，不就等於我嗎？所以我跑著跑著，其實就是跑到自己裏面去；我在跑我自己，我在戰場上跑也是自己，而在戰場上跑的自己，「那個戰場就是我」——只要跑在哪裏，哪裏就是全部的自己。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "牠開始知道：原來我大腦都想著，所以一切都跟我無關，所有事情一來一衝突都是無常，都是別人怎麼了、我就怎麼了，都在別人的問題上。當我不用想的時候，我就不斷地跑進自己，所有一切覺性都在自己裏面發生感受，原來這「受」的都是我自己；只要我感覺到有痛有煩惱，我就會感受到恐懼，而知道原來我的感受是來自大腦第六意識，來自大腦的覺，叫識覺，第六識覺。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "人生來就有很多本能，怕不自由、怕痛、怕苦……，人的本能確實有這些怕。所以當他跑進真的世界裏去，裏面沒有自己的想法，不管跑在哪條路上，跑的就是自己。在各種跑的現場中，牠產生各種的受，有耳朵的、眼睛的、鼻子的、嘴巴的、身體的，在跑的過程中牠都在默默感受，點滴在心頭。突然間牠會發現這些感受就像一幕一幕電影般拼湊成牠的「馬生」，原來牠在跑的這段時間裏有那麼多的受。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "人生也是這樣，有些受你喜歡，有些不喜歡，為什麼？原來大腦本身有一種本覺（本能的覺），是人類求生存必備的機制。當他提高到心的維度，就可以看見肉體的道理——原來肉體有神經遞質主導大腦的感受。所以，身體的覺受會跟大腦的覺受溝通；當他覺得難過時，大腦只能單純地覺受這個難過，不會下指令或作出解釋。眼、耳、鼻、舌、身五感的覺受，會被身體整合為「全然感受」，第六感（也就是第六意識）不能感受，只能跟身體整合的「全然感受」產生和解就好了。也就是「全然感受」是當下的真相，大腦要接受這個真相的感受。所以，即使人死了也有感受，大腦不能說「我不想死」，而要單純地感受死的感受，這樣全覺能才能擺脫大腦干擾，真正放鬆去感覺，我們對世界的覺受才會是真相。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "假如我要顧慮大腦的感受而去感受，用心控制我的看法，我的心就不能全然打開，本自俱足的全覺能也無法打開。所以大腦必須容許我的感受是我內心獨自的覺受，這個覺就叫「心覺能」、「心覺」。我的「心覺」，大腦必須讓位，因為大腦的感受只是來自端腦的演進，受外界影響的看法都會形成大腦自己的價值「受定」；要滿足大腦的價值觀，就要滿足普世價值，因為大腦神經元記憶的都是這個世界給你的價值，用這些價值形成大腦對生命的感受。所以一定要擺脫大腦的價值，否則我內心的受就無法全然找到自己的價值。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "大腦看到的只是1000億個神經元連接的記憶，範圍很小，而內心的感受，眼睛、耳朵、鼻子這五感的受，遠比大腦得到的感受還要真實。所以當內心在覺受時，大腦向心學習成為「覺識」，這叫做「心能量」。所以「心覺」會突破天庭蓋，突破大腦第六意識的限制，這時候，「心覺」自然會變成「靈覺」，而不是「心覺」去找到「靈覺」，因為「心覺」原本就是「靈覺」。靈魂在心裏是抽象的存在，是埋在心裏的一個火苗、一道光，那道光俗稱為「心」，人類找尋這顆心已百年、千年。而埋藏在心裡的那道光就是老子講的「信」。所以，當心覺突破大腦控制的時候，一切由所看、所聽主宰，所有一切真相就是我，一切就是我。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "heading",
+        "text": "在五度空間，時間是有形的物質，空間是無形的空間",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "慢慢心覺、五感能量越來越強，強大到進入五度空間你也清楚知道；時間都得聽你的，你叫它回頭，它就倒轉，你若要倒轉時間30年，我就會看到30年前的你；我不用到30年前找你，你自己身上就可以翻閱到30年前，此言絕對不虛假。任何物質你都可以倒轉它的時間，這是心態問題，不是想法。所以要讓時間倒轉，不是想著回到30年前，而是心態讓你年輕30歲。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "所以當心的覺能越來越強時，你已經從三度跳躍到五度空間，四度的時間會停留，當你在五度的時候，你內心感受到的一切都是時間，你的時間無所不在，空間是虛無的，你看到的一切會突然灰飛煙滅。三度空間的東西在你眼裡像煙、像灰一樣，它們好像還在，但是像灰燼一樣不值一顧，因為那些物質是三維裡的東西，已經不是你這輩子要追逐的東西。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "你這輩子要跑的是無限的時間，是永恆。這個永恆把它對照到三度，就叫真理。所以你要跑出來的是一段永恆的時間，這段永恆的時間絕對不會在物象的時間裡，萬物只有一段小時間。假如我擁有無限時間，我看到的全部是時間的話，我用的是全部時間，那麼，請問萬物重要嗎? 假如我只要給你一段時間，你就存在，那麼你就必須升格為我講的千里馬，你就必須做得到，內心能夠成為。不要想！若你用大腦的邏輯推理、理解怎麼「成為」，就永遠成為不了。所以你必須在行動中訓練你的成為，然後在行動中慎防大腦干擾、破壞你，大腦會讓你進入是非對抗中，大腦會害你聽不懂、聽不進我的語言⋯⋯用一切手段來阻止你擺脫它的糾纏。那些妖魔鬼怪就躲在你的腦神經細胞裡！",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "等到你到了五度，你的物質就叫時間，三度空間會變成無限的抽象空間，這叫三度跟四度的升維，時間變有形的物質，有形的空間變無形的空間，這種升維就叫五度。只要在五度，你掌握的是時間，你賺的資產是時間。當你活著，腦在跑的時候，他說我跑過多少的受，這些受即將變成我擁有的時間財富，我將擁有多少時間，原來就是我這一生的時間裡要跑出來的，不是在去養生。真正的養生不在肉身長短，是在永恆的輪迴、在靈性存在的一段時間，我們跑進它的時空；若跑進肉身短暫的物質，那叫低維，跑去買股票這些物質的低維價值，你死了，他們也死了。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "跑到靈魂的價值、靈魂的時間是輪迴，就看你什麼時候到道法自然，再到另外一個螺旋圈裡，那叫靈魂的超維，你現在要從你的六根超維，維度一直提高，突破六根到靈性一直往靈性超維，你會到另外一個千世界去，那才是永恆，最後接棒的是靈魂的能量，不是短暫的百年肉身。其實你都一直都在為自己的世界而跑，只是你把自己的世界變成你的肉體、你的想法，這些都不是真實的世界，",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "heading",
+        "text": "活着最重要就是將心能轉成覺能",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "人的一切都來自想法，你以為是你在想？其實不是！是木馬程式植入你的神經元，再透過腦神經激素當潤滑油，形成你的運作法則。但是我們一直醒不來，你會從你的大腦來主導你耳朵所聽到的，你還是像那匹馬以為是跑進戰場，不是跑進自己，因為你認知的戰場不是我，是為別人在跑，所以你永遠無法接上這個頻率，你內心的受永遠都是大腦給你的，大腦會賜給你一個感受，那個感受是你自己要承受的，但卻是大腦給你的，所以你的真來自假。我們要讓真相活起來，就是自己決定感受，不決定想法；想法由大腦決定，我決定我自己的感受。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "感受由我決定，覺性就會越來越強，當痛苦出現的時候，大腦說它是痛，我說它是爽。大腦會說那怎麼是爽！明明是神經遞質傳的「痛感」。但我有一種「心能遞質」可以認定那個感覺是「爽」，一切唯心所造，心能遞質比神經遞質更強悍。但神經遞質傳的疼痛不是唯心所造的，是生死的災難，怎麼會這樣？因為腦神經遞質脊髓丘腦束和丘腦脊髓束一個北上一個南下來告訴你痛，趕快萎縮、害怕，不要再做了！因為你用它的系統，所以你受系統的控制；因為你這樣想，就必須接受「想」的結果。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "你走在人生道路上，一定是走著走著就坐下了，坐下就再也走不起來了；坐著坐著沒多久，你躺下了，躺下之後就再也坐不起來了；躺著躺著生命就結束了。這段時間是很短暫的，想想看你走了多少時間？什麼時候要坐下？我們全身最強壯的結構是臀大肌跟股四頭肌，這兩塊肌肉讓你撐最久，坐下的時候臀大肌就開始萎縮，萎縮以後要靠胸大肌，因為坐的時候一切靠手，這是生命的第二塊肌肉；為什麼靠胸大肌？因為要看你內心能不能安定。你看坐輪椅的人都很鬱卒，是心有餘而力不足的痛苦，所以靠胸大肌來幫你，胸大肌不夠強壯的話，你會恨自己沒用，大腦會鬱卒死，所以說你撐不了多久。胸大肌跟臀大肌是對稱的，但胸大肌也不如臀大肌，因為你心胸狹窄。到這時候，你坐不了多久就躺下了，這時候得靠人生最後一塊肌肉，叫豎脊肌。豎脊肌就是脊椎兩旁的肌肉，那是讓人類挺直、站起來最重要的肌肉。當你躺下，豎脊肌幫你撐著，但不會超過3年，因為肌肉不動，它就完全萎縮了，接著，人就要走了。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "「說」就要用行動「做到」。馬一輩子都跑著，牠是用「跑」來「做到」，用「跑」來「做到」自己。你人生做了那麼多事，有沒有做到自己？沒有！現在你要像馬一樣，只有動，只有在自己的身上跑著，跑出自己，跑出自己的受，自己的覺能，自己的心覺，超越第六意識，衝破天靈蓋，這就是無極的功夫。你只要得到這種功夫，天沒有還你公道，我還你。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "人從出生到死亡，這一路心能都在，死了以後心能就變成靈能。所以我們在活着的時候，最重要就是心能轉成覺能的狀態，當心能轉成覺能，心能留在身體唯一的訊息叫做信。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "heading",
+        "text": "墮肢體，黜聰明，離形去知，同於大通，此謂坐忘",
+        "level": 2
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "莊子講「墮肢體，黜聰明，離形去知，同於大通，此謂坐忘。」這個坐不是坐著，而是進入一種狀態。你如何在「坐」的狀態下「忘」？進入「墮肢體，黜聰明，離形去知，同於大通」的狀態。「大通」就是「大道」，你必須這樣做，才能從身體進入大道，進入道心下的身體。「離形去知，同於大通」，老子就是這個狀態，但沒有人聽得懂，因為不知道怎麼進入這個狀態。我從25年前用十八套功法訓練你專注在身體空間裡，先讓你知道一個個關節，專注手腕、手肘，再慢慢逐步引導，到最後就是「墮肢體，黜聰明，離形去知，同於大通」。「離形去知」就是離開眼、耳、鼻、舌、身，不要再想了。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "老子道德經「道之為物，唯恍唯惚。惚兮恍兮，其中有象；恍兮惚兮，其中有物。窈兮冥兮，其中有精；其精甚真，其中有信。」恍惚，就是忽暗忽亮的一種狀態。有象，你看到好像有東西，有一個樣子，例如監獄的探照燈掃過來，你看到好像有個人蹲在那裏；燈光暗了，那個象不見了，但感覺有個東西還在那裏，你沒看到，但卻能感覺有東西存在，那叫「有物」。這個物、象都是在墮肢體，黜聰明，離形去知，同於大通的狀態時存在，所以在看象非象、看物非物這種狀態，這是精神的概念，有別於生理學上半夢半醒，喝醉酒昏茫茫的狀態。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "當一個人對物質不再用大腦取象的時候，他對看的覺受就會改變。假如你是這樣去看一個人，那你一定就是在那種狀態；當你離開那個狀態，離形去知，把原來的認知拿掉，你看到的仍然會是象，卻已經不是之前那個象了，你就不會那麼執着了。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "「窈兮冥兮」窈就是昏暗的洞穴。其中有精的「精」就是在我們的覺受中一個說不出來的東西，就像站在101高度的吊橋往下看，下面也沒有甚麼令人恐懼的象跟物，但你卻有一種恐懼、一種壓迫感，那就是「精」。那是一種感覺、一種氣所形成的，氣之至者謂之精。練功的時候，假如有這種感受卻看不到什麼，你要讓它更清楚、更真實，其精甚真，最後你就會看到內心有一種光、或者叫火、叫氣、叫波動，這就是你的靈性，這叫做「信」；它在你身上平常看不見，只有到了這個境界你就會看見。當你看到信的存在，你就進入無極入門班了。這個信可以投影一切，呼吸要配合內息，都在內心裏呼吸，所以叫自心「息」，所以我們叫「無極內息導引」。我們所做都在導引這個「信」，因為練這個「信」，讓它變成你的世界、你的維度。這個「信」是投影一切的投影源。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "做動作的時候，練的就是這個。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "練功時要保持兩個狀態：一、隨時在丹田裏；二、我的腦就是世界，世界就是我的腦。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "第一：練功時千萬不要啓動任何想像機制，就讓它自己發生。「墮肢體，黜聰明、離形去知，同於大通，此謂坐忘。」，也不要裝得恍恍惚惚，假如你好好的練，而且心法聽得夠，平常生活也能保持在這樣的狀態，不管世界怎麼動盪，我都在丹田裡，我的氣息都在這裏。",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      },
+      {
+        "type": "paragraph",
+        "isLargeFont": true,
+        "text": "第二：必須看到所有的一切都在大腦裏，而不是大腦去看到一切。你所看到的一切都是大腦的投射，所以不是用大腦去控制眼睛看。你看到的是你的大腦，不是看到這個世界；不管看到什麼，你的大腦就是這個世界。你走到哪裏都是走在你的大腦裡；當你能夠這樣，你的受就不一樣了。我看到的你們其實是我的大腦，不是你本身。我的眼睛、耳朵就是我的大腦，所以我看到你不對，其實是我想的不對，絕對不是你錯了，錯在我的腦。練功要練到這樣才叫火候。因為你要在世界不變的狀態下你所有的感官都可以變，沒有心態的問題，這叫大腦態。內心就是受和信，叫信受奉行，或叫受信過程。「信受奉行，受信過程」就是受這個信的過程，因為「信」是投影源，是波。世界由你決定怎麼投影。(本文依2024/11/08五晚班課程記錄彙整）",
+        "styleName": "預設值",
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
+      }
+    ],
+    "category": "如是我聞",
+    "readTime": "約 10 分鐘",
+    "order": 2,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-1852955.jpg?v=1852955",
+    "images": [],
+    "issueId": "202412",
     "tags": [
       "如是我聞",
       "覺性修煉"
     ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 17 分鐘",
-    "order": 1,
-    "excerpt": "人生不過短短幾十年，在這趟旅程中，走著走著，就坐上輪椅；坐著坐著，就躺了下來；躺著躺著，人就走了。在有限的時間內，真正值得追求的目標也許就在能擁有「唯一性」。如果你能伸手拿到月亮，有誰買得起？…",
-    "slug": "202412-2412-2-1",
-    "homeAnchor": "#article-202412-2412-2-1",
-    "category": "如是我聞"
-  },
-  {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
-    "contentBlocks": [
-      {
-        "text": "活著就是為了做得到，做出內心的層次",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "text": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思考過？你可以呼吸，可以動，要動什麼？為什麼要動？你上班做到退休，你做到什麼？為什麼要上這個班？還是你只是活著，活在那個狀態，在那裏動而已？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "練無極就是知道我們在動什麼，而且做得到。做到什麼？不是只是做到外形動作，還要做出內心的層次。人要學會看到層次。看到層次，所有心裏的感覺，大腦的想法絕對不一樣。我為什麼要講心法？就是要你做得到心法，做出來的跟你講的一樣。你講的都是你做得到的；怎麼講就怎麼做出來；做出你的心法，做出你內心的層次。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "唯一的真相就是你的感受",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "text": "你們現在講出來的都是你的想法，那不是你，那只是你的道理，你在說好聽的，說跟你一點關係都沒有的事。多少在教論語的人，講了一輩子沒有一個是孔子，反而跟孔子離太遠太遠，因為他們都用大腦來想孔子講的話。你不要誤以為你所看、所說的就是你，那不是真相。為什麼說一切都是假的？因為你看了，它才是假的；人家本來是真的，因為你參與了進去，它就變成「虛擬世界」。月亮你不看它的時候它是真的，當你看它，它就變成假的；因為你沒有成為月亮，你用你的想法看的月亮是假的，你要真正成為月亮的看見者，你必須要怎麼知道月亮，怎麼感受月亮，要像月那麼圓那麼亮，你必須成為。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "我們練功就是要練那個心，只有內心恢復它的本自具足，根本就不要用腦去想，想的都不是真相，只有內心的「受」才會是真相，你身上唯一的真相就是你的感受。包括你的感覺都是隨機的，面對同一句話、同一件事情，你的感覺會因為環境條件而有所不同，但是你的感受絕對是自己，絕對是最後的結果。因為不管你怎麼想，去控制眼睛怎麼看，你就會產生一個感受，那個感受是最後的結果，那也是真的。那個真的才是你的。但是你大腦怎麼想、怎麼去看見，其實是假的，所以你以假為真。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "我是練武術開始，除了練肢體動作，各種東西研究參與了一輩子，理解到身體除了肉體動作以外，還有心，心是一個很值得探索的議題。「人心」其實是一個假心，它是大腦六根的作用而形成的，如果大腦沒變、六根的處理方式沒變，你用嘴巴說的「對不起」、「謝謝你」去修那顆心全無意義，因為假一直進來。所以你現在看到我是假的，你沒看到我的真相，為什麼你看不到我的真相，就好像我也看不到你的真相，那麼誰才能看到真相？只有自己。所以練功的「做得到」，就是看到自己。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "一般的馬追求跑最快最遠，賽馬比賽第一名，跑去工作、作戰，永遠在不同的狀況跑著；定義不在自己而在別人，牠以為這樣就是牠的「馬生」。但有一匹馬不是，牠跑著跑著發現，我在跑的其實是時間，在時間上我跑出不同的意義。我為什麼在時間上這樣跑著？牠開始尋找一個牠本身的意義。這匹馬維度提升了，除了跑到看見時間的意義，又跑到它本身的價值。牠覺得牠的跑原來不是要知道牠是一匹馬；牠有時候在戰場，有時候為工作在跑的時候，會感到恐懼、煩惱⋯⋯後來牠發現這些恐懼對外界來說都不存在，而是來自大腦的想法，來自於牠想、牠認知這是什麼，所以才有衝突、才會覺得累。問題的根源不是我看到什麼，而是我用什麼去看到？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "於是牠明白了：我看到的真相原來是用我的腦去看到的，如果不帶想法去看，看的時候大腦停止思考，看到的東西不在我的想法裏，那我看到的一切，不就等於我嗎？所以我跑著跑著，其實就是跑到自己裏面去；我在跑我自己，我在戰場上跑也是自己，而在戰場上跑的自己，「那個戰場就是我」——只要跑在哪裏，哪裏就是全部的自己。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "牠開始知道：原來我大腦都想著，所以一切都跟我無關，所有事情一來一衝突都是無常，都是別人怎麼了、我就怎麼了，都在別人的問題上。當我不用想的時候，我就不斷地跑進自己，所有一切覺性都在自己裏面發生感受，原來這「受」的都是我自己；只要我感覺到有痛有煩惱，我就會感受到恐懼，而知道原來我的感受是來自大腦第六意識，來自大腦的覺，叫識覺，第六識覺。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "人生來就有很多本能，怕不自由、怕痛、怕苦……，人的本能確實有這些怕。所以當他跑進真的世界裏去，裏面沒有自己的想法，不管跑在哪條路上，跑的就是自己。在各種跑的現場中，牠產生各種的受，有耳朵的、眼睛的、鼻子的、嘴巴的、身體的，在跑的過程中牠都在默默感受，點滴在心頭。突然間牠會發現這些感受就像一幕一幕電影般拼湊成牠的「馬生」，原來牠在跑的這段時間裏有那麼多的受。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "人生也是這樣，有些受你喜歡，有些不喜歡，為什麼？原來大腦本身有一種本覺（本能的覺），是人類求生存必備的機制。當他提高到心的維度，就可以看見肉體的道理——原來肉體有神經遞質主導大腦的感受。所以，身體的覺受會跟大腦的覺受溝通；當他覺得難過時，大腦只能單純地覺受這個難過，不會下指令或作出解釋。眼、耳、鼻、舌、身五感的覺受，會被身體整合為「全然感受」，第六感（也就是第六意識）不能感受，只能跟身體整合的「全然感受」產生和解就好了。也就是「全然感受」是當下的真相，大腦要接受這個真相的感受。所以，即使人死了也有感受，大腦不能說「我不想死」，而要單純地感受死的感受，這樣全覺能才能擺脫大腦干擾，真正放鬆去感覺，我們對世界的覺受才會是真相。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "假如我要顧慮大腦的感受而去感受，用心控制我的看法，我的心就不能全然打開，本自俱足的全覺能也無法打開。所以大腦必須容許我的感受是我內心獨自的覺受，這個覺就叫「心覺能」、「心覺」。我的「心覺」，大腦必須讓位，因為大腦的感受只是來自端腦的演進，受外界影響的看法都會形成大腦自己的價值「受定」；要滿足大腦的價值觀，就要滿足普世價值，因為大腦神經元記憶的都是這個世界給你的價值，用這些價值形成大腦對生命的感受。所以一定要擺脫大腦的價值，否則我內心的受就無法全然找到自己的價值。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "大腦看到的只是1000億個神經元連接的記憶，範圍很小，而內心的感受，眼睛、耳朵、鼻子這五感的受，遠比大腦得到的感受還要真實。所以當內心在覺受時，大腦向心學習成為「覺識」，這叫做「心能量」。所以「心覺」會突破天庭蓋，突破大腦第六意識的限制，這時候，「心覺」自然會變成「靈覺」，而不是「心覺」去找到「靈覺」，因為「心覺」原本就是「靈覺」。靈魂在心裏是抽象的存在，是埋在心裏的一個火苗、一道光，那道光俗稱為「心」，人類找尋這顆心已百年、千年。而埋藏在心裡的那道光就是老子講的「信」。所以，當心覺突破大腦控制的時候，一切由所看、所聽主宰，所有一切真相就是我，一切就是我。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "在五度空間，時間是有形的物質，空間是無形的空間",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "text": "慢慢心覺、五感能量越來越強，強大到進入五度空間你也清楚知道；時間都得聽你的，你叫它回頭，它就倒轉，你若要倒轉時間30年，我就會看到30年前的你；我不用到30年前找你，你自己身上就可以翻閱到30年前，此言絕對不虛假。任何物質你都可以倒轉它的時間，這是心態問題，不是想法。所以要讓時間倒轉，不是想著回到30年前，而是心態讓你年輕30歲。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "所以當心的覺能越來越強時，你已經從三度跳躍到五度空間，四度的時間會停留，當你在五度的時候，你內心感受到的一切都是時間，你的時間無所不在，空間是虛無的，你看到的一切會突然灰飛煙滅。三度空間的東西在你眼裡像煙、像灰一樣，它們好像還在，但是像灰燼一樣不值一顧，因為那些物質是三維裡的東西，已經不是你這輩子要追逐的東西。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "你這輩子要跑的是無限的時間，是永恆。這個永恆把它對照到三度，就叫真理。所以你要跑出來的是一段永恆的時間，這段永恆的時間絕對不會在物象的時間裡，萬物只有一段小時間。假如我擁有無限時間，我看到的全部是時間的話，我用的是全部時間，那麼，請問萬物重要嗎? 假如我只要給你一段時間，你就存在，那麼你就必須升格為我講的千里馬，你就必須做得到，內心能夠成為。不要想！若你用大腦的邏輯推理、理解怎麼「成為」，就永遠成為不了。所以你必須在行動中訓練你的成為，然後在行動中慎防大腦干擾、破壞你，大腦會讓你進入是非對抗中，大腦會害你聽不懂、聽不進我的語言⋯⋯用一切手段來阻止你擺脫它的糾纏。那些妖魔鬼怪就躲在你的腦神經細胞裡！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "等到你到了五度，你的物質就叫時間，三度空間會變成無限的抽象空間，這叫三度跟四度的升維，時間變有形的物質，有形的空間變無形的空間，這種升維就叫五度。只要在五度，你掌握的是時間，你賺的資產是時間。當你活著，腦在跑的時候，他說我跑過多少的受，這些受即將變成我擁有的時間財富，我將擁有多少時間，原來就是我這一生的時間裡要跑出來的，不是在去養生。真正的養生不在肉身長短，是在永恆的輪迴、在靈性存在的一段時間，我們跑進它的時空；若跑進肉身短暫的物質，那叫低維，跑去買股票這些物質的低維價值，你死了，他們也死了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "跑到靈魂的價值、靈魂的時間是輪迴，就看你什麼時候到道法自然，再到另外一個螺旋圈裡，那叫靈魂的超維，你現在要從你的六根超維，維度一直提高，突破六根到靈性一直往靈性超維，你會到另外一個千世界去，那才是永恆，最後接棒的是靈魂的能量，不是短暫的百年肉身。其實你都一直都在為自己的世界而跑，只是你把自己的世界變成你的肉體、你的想法，這些都不是真實的世界，",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "活着最重要就是將心能轉成覺能",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "text": "人的一切都來自想法，你以為是你在想？其實不是！是木馬程式植入你的神經元，再透過腦神經激素當潤滑油，形成你的運作法則。但是我們一直醒不來，你會從你的大腦來主導你耳朵所聽到的，你還是像那匹馬以為是跑進戰場，不是跑進自己，因為你認知的戰場不是我，是為別人在跑，所以你永遠無法接上這個頻率，你內心的受永遠都是大腦給你的，大腦會賜給你一個感受，那個感受是你自己要承受的，但卻是大腦給你的，所以你的真來自假。我們要讓真相活起來，就是自己決定感受，不決定想法；想法由大腦決定，我決定我自己的感受。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "感受由我決定，覺性就會越來越強，當痛苦出現的時候，大腦說它是痛，我說它是爽。大腦會說那怎麼是爽！明明是神經遞質傳的「痛感」。但我有一種「心能遞質」可以認定那個感覺是「爽」，一切唯心所造，心能遞質比神經遞質更強悍。但神經遞質傳的疼痛不是唯心所造的，是生死的災難，怎麼會這樣？因為腦神經遞質脊髓丘腦束和丘腦脊髓束一個北上一個南下來告訴你痛，趕快萎縮、害怕，不要再做了！因為你用它的系統，所以你受系統的控制；因為你這樣想，就必須接受「想」的結果。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "你走在人生道路上，一定是走著走著就坐下了，坐下就再也走不起來了；坐著坐著沒多久，你躺下了，躺下之後就再也坐不起來了；躺著躺著生命就結束了。這段時間是很短暫的，想想看你走了多少時間？什麼時候要坐下？我們全身最強壯的結構是臀大肌跟股四頭肌，這兩塊肌肉讓你撐最久，坐下的時候臀大肌就開始萎縮，萎縮以後要靠胸大肌，因為坐的時候一切靠手，這是生命的第二塊肌肉；為什麼靠胸大肌？因為要看你內心能不能安定。你看坐輪椅的人都很鬱卒，是心有餘而力不足的痛苦，所以靠胸大肌來幫你，胸大肌不夠強壯的話，你會恨自己沒用，大腦會鬱卒死，所以說你撐不了多久。胸大肌跟臀大肌是對稱的，但胸大肌也不如臀大肌，因為你心胸狹窄。到這時候，你坐不了多久就躺下了，這時候得靠人生最後一塊肌肉，叫豎脊肌。豎脊肌就是脊椎兩旁的肌肉，那是讓人類挺直、站起來最重要的肌肉。當你躺下，豎脊肌幫你撐著，但不會超過3年，因為肌肉不動，它就完全萎縮了，接著，人就要走了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "「說」就要用行動「做到」。馬一輩子都跑著，牠是用「跑」來「做到」，用「跑」來「做到」自己。你人生做了那麼多事，有沒有做到自己？沒有！現在你要像馬一樣，只有動，只有在自己的身上跑著，跑出自己，跑出自己的受，自己的覺能，自己的心覺，超越第六意識，衝破天靈蓋，這就是無極的功夫。你只要得到這種功夫，天沒有還你公道，我還你。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "人從出生到死亡，這一路心能都在，死了以後心能就變成靈能。所以我們在活着的時候，最重要就是心能轉成覺能的狀態，當心能轉成覺能，心能留在身體唯一的訊息叫做信。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "墮肢體，黜聰明，離形去知，同於大通，此謂坐忘",
-        "type": "heading",
-        "level": 2
-      },
-      {
-        "text": "莊子講「墮肢體，黜聰明，離形去知，同於大通，此謂坐忘。」這個坐不是坐著，而是進入一種狀態。你如何在「坐」的狀態下「忘」？進入「墮肢體，黜聰明，離形去知，同於大通」的狀態。「大通」就是「大道」，你必須這樣做，才能從身體進入大道，進入道心下的身體。「離形去知，同於大通」，老子就是這個狀態，但沒有人聽得懂，因為不知道怎麼進入這個狀態。我從25年前用十八套功法訓練你專注在身體空間裡，先讓你知道一個個關節，專注手腕、手肘，再慢慢逐步引導，到最後就是「墮肢體，黜聰明，離形去知，同於大通」。「離形去知」就是離開眼、耳、鼻、舌、身，不要再想了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "老子道德經「道之為物，唯恍唯惚。惚兮恍兮，其中有象；恍兮惚兮，其中有物。窈兮冥兮，其中有精；其精甚真，其中有信。」恍惚，就是忽暗忽亮的一種狀態。有象，你看到好像有東西，有一個樣子，例如監獄的探照燈掃過來，你看到好像有個人蹲在那裏；燈光暗了，那個象不見了，但感覺有個東西還在那裏，你沒看到，但卻能感覺有東西存在，那叫「有物」。這個物、象都是在墮肢體，黜聰明，離形去知，同於大通的狀態時存在，所以在看象非象、看物非物這種狀態，這是精神的概念，有別於生理學上半夢半醒，喝醉酒昏茫茫的狀態。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "當一個人對物質不再用大腦取象的時候，他對看的覺受就會改變。假如你是這樣去看一個人，那你一定就是在那種狀態；當你離開那個狀態，離形去知，把原來的認知拿掉，你看到的仍然會是象，卻已經不是之前那個象了，你就不會那麼執着了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "「窈兮冥兮」窈就是昏暗的洞穴。其中有精的「精」就是在我們的覺受中一個說不出來的東西，就像站在101高度的吊橋往下看，下面也沒有甚麼令人恐懼的象跟物，但你卻有一種恐懼、一種壓迫感，那就是「精」。那是一種感覺、一種氣所形成的，氣之至者謂之精。練功的時候，假如有這種感受卻看不到什麼，你要讓它更清楚、更真實，其精甚真，最後你就會看到內心有一種光、或者叫火、叫氣、叫波動，這就是你的靈性，這叫做「信」；它在你身上平常看不見，只有到了這個境界你就會看見。當你看到信的存在，你就進入無極入門班了。這個信可以投影一切，呼吸要配合內息，都在內心裏呼吸，所以叫自心「息」，所以我們叫「無極內息導引」。我們所做都在導引這個「信」，因為練這個「信」，讓它變成你的世界、你的維度。這個「信」是投影一切的投影源。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "做動作的時候，練的就是這個。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "練功時要保持兩個狀態：一、隨時在丹田裏；二、我的腦就是世界，世界就是我的腦。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "第一：練功時千萬不要啓動任何想像機制，就讓它自己發生。「墮肢體，黜聰明、離形去知，同於大通，此謂坐忘。」，也不要裝得恍恍惚惚，假如你好好的練，而且心法聽得夠，平常生活也能保持在這樣的狀態，不管世界怎麼動盪，我都在丹田裡，我的氣息都在這裏。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      },
-      {
-        "text": "第二：必須看到所有的一切都在大腦裏，而不是大腦去看到一切。你所看到的一切都是大腦的投射，所以不是用大腦去控制眼睛看。你看到的是你的大腦，不是看到這個世界；不管看到什麼，你的大腦就是這個世界。你走到哪裏都是走在你的大腦裡；當你能夠這樣，你的受就不一樣了。我看到的你們其實是我的大腦，不是你本身。我的眼睛、耳朵就是我的大腦，所以我看到你不對，其實是我想的不對，絕對不是你錯了，錯在我的腦。練功要練到這樣才叫火候。因為你要在世界不變的狀態下你所有的感官都可以變，沒有心態的問題，這叫大腦態。內心就是受和信，叫信受奉行，或叫受信過程。「信受奉行，受信過程」就是受這個信的過程，因為「信」是投影源，是波。世界由你決定怎麼投影。(本文依2024/11/08五晚班課程記錄彙整）",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
-        "styleName": "預設值",
-        "isHeadingStyle": false
-      }
-    ],
-    "images": [],
-    "sourceId": "2412-2-2",
-    "issueId": "202412",
     "sections": [
       {
         "heading": null,
@@ -39879,120 +39894,119 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "文稿彙整 / 五晚班筆記小組",
-    "title": "做得到",
-    "sourceFileName": "2412-2-2如是我聞之二.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-1852955.jpg?v=1852955",
-    "tags": [
-      "如是我聞",
-      "覺性修煉"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 10 分鐘",
-    "order": 2,
-    "excerpt": "人活著就是為了做得到，你現在可以在呼吸，可以行走，這不叫做得到，這只是身體的功能，就像一部車子能開，一匹馬能跑。生命不是活著就好，要能「做得到」。活著吃飯、洗澡、上班，這叫做得到嗎？你有沒有思…",
-    "slug": "202412-2412-2-2",
-    "homeAnchor": "#article-202412-2412-2-2",
-    "category": "如是我聞"
+    "sourceId": "2412-2-2",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-3",
+    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-3記沉香花梨會.docx",
+    "title": "記2024海南沉香花梨國際大會",
+    "author": "鍾宛真",
+    "homeAnchor": "#article-202412-2412-3",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是天意，旅程上發生的事情，都可以另外寫一篇小短文了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "總之順利到達海南後，老師和阿堡及育誠就開始忙碌，我則是混到論壇當天的下午才踏入會場。我一踏入會場就覺得不妙，原來除了論壇還有商品的展出與販售，總共有100多個攤位，整個展場鬧哄哄的。我心想，這樣怎麼辦論壇啊？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "找到論壇地點後，看到前面幾排座位都是嘉賓，老師和阿堡在第二排，第一排不用看都知道是做官的或是主辦方的。我默默的坐在最後排，看著聽眾來來去去，有的無聊睡覺，有的低頭玩手機，有時夾雜外面展位的聲音，實在有些混亂。我心裡真的犯嘀咕，我們一行四人風塵僕僕，難道就是為了這樣的論壇？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "終於輪到老師的發言，整場30分鐘下來（ㄧ如老師的風格，嚴重超時），我只能說震攝全場！老師口條雖然沒有很順，但我聽了那麼多場，我很肯定老師是唯一真正愛香，真正跟沉香有靈性上的互動，真正體會到沉香是超越金錢價值的人。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我一邊錄影，一邊壓抑著內心的感動，轉頭看著會場群眾（我自發的坐到第二排嘉賓席上錄影），我想看看那些鬧哄哄進進出出的聽眾，能體會到老師的智慧嗎，能感受一位真正愛香人的語言嗎？結果我看到所有人都聚精會神，沒有人離席，沒有人跟鄰座聊天，沒有人低頭玩手機。這還是我整個下午看到的同一群人嗎？？老師講到一半，居然群眾自發性鼓掌！這是唯一一場有人在演講中途鼓掌的！原來大家還是能感受到老師的真心與智慧，實在是太好了！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "其實其他演講者的內容並非不精彩，而是對我們這群看過大批量各種產區野生沉香的人，即便像我這種不算認真品香的人，也可以馬上分辨出講者是否真的熱愛沉香，還是只能在各種襯托沉香地位的形式上下功夫。所以老師上課時說的話，真的不是托大，真的不是狂妄，他是真的很怕我們糟蹋浪費了別人求而不得的福報。這應該就是這趟旅行對我最大的意義！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我後來去逛外面那一百多個攤位，想要了解大陸的沉香市場到底如何。我看到各種大小的棋楠手串，沉香粉，沉香精油，線香，還有相關產品，幾乎每家販售的商品都雷同，有的大品牌會有包裝，現場直播等，但是商品同質性還是很高。我可以感覺得出來，所有人都很努力的想要叫賣產品，想要跟別人區隔化，奈何內地市場真的太捲，加上缺乏文化底蘊以及真正愛沉香的心，急功近利的結果實在有點不忍卒睹。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "不過我感受到大陸官方或是民間組織是有想要推動整個產業改變的。有一個展位是海南省文玩沉香鑑定中心，他們推動各種沉香的檢測與認證，提供從業人員的培訓和執照頒發，目的就是要協助政府部門打擊假冒及偽劣產品。但是我走了一圈，以我「人體檢測」方式所引發的頭痛、噁心想吐等症狀來看，不規範的業者還是居於多數。我想無論是沉香，花梨木，甚至是茶葉等高經濟價值的「作物」，要達到法國葡萄酒那樣的分級制度，應該還有很長的一段路要走。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
-        "text": "另外我發現，老師參加的是論壇一區，另外一個入口處則有論壇二區，主題圍繞在棋楠樹種身份定位（目前已經列了45種），沉香對於身體和精神疾病的療效，以及沉香透過光譜儀所檢測到的組成成分等等。其實主辦方是相當用心在推廣人工種植沉香，也努力的幫各個公司找出路。我衷心祝願對岸能夠成功的規範產業的健康發展，同時業者能懷著敬畏天地之心，為後代子孫留下典範！",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "",
+        "isLargeFont": true,
+        "text": "另外我發現，老師參加的是論壇一區，另外一個入口處則有論壇二區，主題圍繞在棋楠樹種身份定位（目前已經列了45種），沉香對於身體和精神疾病的療效，以及沉香透過光譜儀所檢測到的組成成分等等。其實主辦方是相當用心在推廣人工種植沉香，也努力的幫各個公司找出路。我衷心祝願對岸能夠成功的規範產業的健康發展，同時業者能懷著敬畏天地之心，為後代子孫留下典範！",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       }
     ],
+    "category": "現場速寫",
+    "readTime": "約 3 分鐘",
+    "order": 3,
+    "imageCaption": "",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/articles/202412/202412-2412-3-img-001.jpeg?v=477452",
     "images": [
       {
-        "paragraphIndex": 3,
-        "caption": "",
         "type": "image",
+        "caption": "",
+        "paragraphIndex": 3,
         "src": "/assets/articles/202412/202412-2412-3-img-001.jpeg?v=477452"
       }
     ],
-    "sourceId": "2412-3",
     "issueId": "202412",
+    "tags": [
+      "現場速寫"
+    ],
     "sections": [
       {
         "heading": null,
@@ -40009,211 +40023,211 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "鍾宛真",
-    "title": "記2024海南沉香花梨國際大會",
-    "sourceFileName": "2412-3記沉香花梨會.docx",
-    "date": "2024.12.10",
-    "image": "/assets/articles/202412/202412-2412-3-img-001.jpeg?v=477452",
-    "tags": [
-      "現場速寫"
-    ],
-    "imageCaption": "",
-    "hasExplicitTitle": true,
-    "readTime": "約 3 分鐘",
-    "order": 3,
-    "excerpt": "聽聞老師要參加海南沉香大會，並且擔任大會嘉賓發表演說，我就興起安排花籃幫老師撐場的想法。討論之中，老師隨口問我一句要不要參加。我本來認為去不成，後來卻因為神秘未知的力量而成行了。只能說一切都是…",
-    "slug": "202412-2412-3",
-    "homeAnchor": "#article-202412-2412-3",
-    "category": "現場速寫"
+    "sourceId": "2412-3",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-4",
+    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-4讀書會.docx",
+    "title": "任何領域皆可用的省氣、定氣、順氣",
+    "author": "陳宛琳",
+    "homeAnchor": "#article-202412-2412-4",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "中途張老師驚喜現身，在同學分享一輪後，爲我們做總結。以下是張老師的談話摘要：",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "省氣、定氣、順氣在任何範圍都可以運用。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「『省（ㄒㄧㄥˇ）』是一種很清楚、沒有睡著狀態下的覺性，我們要從這個字去看。……」原來反省的「省」跟醒過來的「醒」是不一樣的——睡醒的醒是外在、物性的概念，而「省」是很有力量的。對一個自我覺察的人來講，「省」是「覺」很重要的共伴。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這個「省」是丹道或佛學裡沒有的，完全是我們在無極裡面從身體上看見的力量：「省」後才有「定」（然後定而後能靜，靜而後能安，安而後能慮，慮而後能得）。在「定」之前「知止」（知止而後能定），這個「止」就是範圍，不是停止。例如一個人的底線、能耐到哪裡，他就能承受多少負債，超過那個範圍他就有壓力，就「定」不了了。這個「知止」的過程就是「省」。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "然後「順」就是在「定」之後「靜、安、慮、得」的過程。一個人靜了、安了，他的創作就是「慮」，「得」就是他的收穫。人生到最後能有多大的可能性不在賺了多少錢、多少房子，而是收穫了多少維度；一個人的作為如果都能從「維度」思考，那他的得就不得了了——佛陀最後的修行也就是得維度，而不是得了多少恆河沙。真正實修的人才能凡事看到維度，因為在實修中才掂得出自己有多少斤兩，才看得到、用得到「省」的力量。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「省」、「定」、「順」雖然都是常見字，卻比任何對聯都有力量，因為這是完全的法則，是行動綱領，不是知識性的，也絕對超越王陽明的知行合一。王陽明聽了朱熹的格物致知就去觀察、研究竹子，從竹子的生長看到生命的精神，在知識衝擊力道很大的時代，實證的觀察，確實有別開生面的深邃奧妙之感。對比之下，老子的文字簡單多了，一般人看不出他的高深。學術界是用記憶來讀老子，那是沒有力量的，那只是睡醒的醒，沒有辦法做到老子講的內容。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "王陽明是開悟者，他在洞穴裡打坐，說自己悟道了，提出陽明學說。他的格物致知——誠意、正心，修身、齊家、治國、平天下——是透過政治、家庭的實踐，這是他的範疇，所以他的省氣只能到國家，最多到天下。假如我們的省氣省的就是天下，幹嘛要平它？我們順就好了。因爲我們要的是宇宙，天下算什麼？我們講的是小宇宙跟大宇宙之間的轉換。王陽明講的是修身到平天下，看起來好像很務實，可是歷來平天下之人，哪一個格物致知？哪一個知行合一？所以這裡面充滿執行上的矛盾。所以我們不在古人的話裡面「省」，而是從最簡單的身體出發，因爲世界就是我們的肉體、心理和大腦投影出來的，所以，古人只是我們的參考，我們可以超越他們。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "星象專家說明年三到四月世界會進入一個新紀元、新境界、新局面，是全人類的第四次覺醒。以前講身心靈大家會覺得很抽象，不久以後講這些沒有人會覺得抽象了，而且大家都會講，因爲識性時代確定要過去了，人類唯一能再演進的是覺性。這不是學術上或僅僅某個領域的概念而已，而是各路說法最後都會聚焦到這樣的截面上，就像所有修行人對世界的觀察最後都會回到自己。上帝用他自己的樣子造人，所以人也是他自己。佛陀也是。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "佛陀說人心是空的，一切非相即相，講的就是人心的變化：心映到一切物質，就是內心感受物質的過程，這並非永恆不變的。我們看待任何發生的內心感受都會隨著時間變化，因爲發生的當下我們投影出一個感受，但是隨著時間推移，譬如你曾經罣礙的東西過了，你長大了、變遷了、人生不一樣了，那件事情再想起來，即使再清晰，也找不出當初那個感覺，也就是說，在時間這個大尺度下那個感覺不存在了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以一切都在變，包括自己和自己感受的心，因此萬物都是自己的投影。人對這一切明白了就是覺醒，就是成佛了。那爲什麼一個人不敢說自己成佛？一定是省氣沒有到位，覺得自己無法承擔成佛的概念。但佛陀說的本自俱足就是每個人都有辦法做到，只是要不要去做而已。身體就是這個道場，我們不用去研究佛教、思考怎麼成佛，只要去覺、去感受，在眼、耳、鼻、舌、身和事物連結的心與境之間不斷地創造新的感受，改變感覺才會改變維度。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "那感覺是什麼？是怎麼形成的？例如視覺，是透過眼睛看到光的反射，然後光波被轉換成電信號，從眼睛到視神經的綜合區，再經過大腦運算，就會產生意義。我們眼睛看到的世界都是光的反射，而意義是人去想、意識在運作產生出來的，同理耳朵感受到的是風、是空氣的震動，這也會透過大腦產生意義到耳綜合區。所以我們看到東西的時候大腦就開始在定義了，就是開始在「省」了。是大腦定義了你所看到的一切，你覺得你看到的真相就是大腦所省的；省了以後覺，覺了就定了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以我們要看到腦細胞產生的這個覺，要對大腦的感覺「覺『醒』」——去看眼、耳、鼻、舌、身所看到的是不是大腦看到的；當大腦看到的都等於眼睛看到的，就有辦法對抗自己而覺醒，因為你看到了根源，不是看到大腦運算出的物質呈現——那些是幻影、幻覺。也就是說，我們用大腦看到的一切都在自己——一切是自己、自己是一切。這樣說還只是說了個標題而已，再分析下去學問可多了，可以註解成一部龐大的經典。心經就是這樣，他可不是一「篇」經文，是一「部」經典。看看市面上有多少心經的註解本、可以寫多厚？因為他們要用各種不同的角度解釋才能詳細講明白，才能把內容稀釋到讀者可以運用在他的人生中去歷練。需要稀釋是因爲人們看不見自己、看不出大腦的幻象是假的。要解釋到能讓人了解需要說一大堆，才會衍生出那麼多人要去註解一些很簡單的事，所以經典都充滿了註解性。而我們是從身體開始——沉得住氣，內化自己，讓自己有丹田、有底蘊去養老子說的那個信，這樣而已。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人要有丹田養信。老子講的信是處在一個空處（丹田，是一個很抽象的存在），這個空處需要我們放入很多很多覺醒（丹氣），省氣就是在累積這個丹氣的飽滿（底蘊）。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "養信的第一步就是意守丹田——時時刻刻看著自己那個最低、最深、最核心的空處，就是「意守丹田」；隨時內息、意守丹田，就是養信最基本、最具象、最簡單的執行方法，也就是找到一個自己的虛空處去看自己，然後去累積這個虛空處裡的真實。這個虛空處很難感覺到，要守著他，不斷地透過六根、第六意識的覺醒，每天讓他長大，讓他慢慢越來越飽滿，讓他充滿能量、熱度、光，因爲這是一個人的底蘊。這是一個內化、內在充實的過程。人有了這個底蘊就有自信，才有力量，而且是本然的，這才是真正的功力，這樣才不會用大腦亂想去約制自己，否則都在論對錯就會犯困惑，最大的困惑就是經常事實與理想不符——因爲沒有底蘊、沒有丹田、沒有精神性的自己，遇到事情就會糾結；因為見諸相非相，偏又活在諸相裡，卻要用非相去跟諸相對抗。有了底蘊，不管發生任何事情都能找到一個攀援或歸宿讓自己安定。人就像大浪中的漂浮者，你的丹田是一支可以攀援的巨木還是一根稻草？你可以把它變成一艘航空母艦嗎？——信就是透過這麼龐大的氣在養，而我們練無極就是在促進丹田那個虛空處的覺性。（否則練氣只是停留在發功、發勁，就很膚淺。）",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "老師為了讓我們實際體驗「信」的力量，席間老師拿出一小瓶海南綠棋楠精油，只要沾一滴滴精油在手腕脈搏跳動處，然後兩手腕一直互搓搓到全熱，就會有一股氣的能量跑遍全身，「你不用搓脖子，聞脖子就香了……那個氣一直在跑，這個過程就是省氣。」",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "沈香樹得受傷，才有機會去熬那個傷痛，結出香來。真正的好東西是熬出來的。而且不是每個人都可以熬，不是有沒有毅力的問題，是機會——想熬也得有機會。所以說所有讓你受傷的都是來祝福你的，不是來陷害、虧待你的；所有傷痛都是祝福，因爲你可以從裡面結香——能看見這層內涵，才是真正的省氣。這種「省」是取自很內在的，就像蚌結珍珠或沉香木結香，並且除了受傷外，還得等待時間。省氣到了這種程度，內在有這種涵養，就能在裡面安定下來，一切就會在這個範圍裡順利。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「所以向內意守丹田，不要再像以前學習都向外；不要再懷疑自己，只要真心去覺察，相信自己見到的那個信，你的內在精神底蘊就已經在丹田形成了。」老師這樣鼓勵我們。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "一切都會都很順利——發生任何事情甚至車禍，我們都會覺得很順。幾年前才遇大車禍的老師說：「我不會說我發生了一場大車禍，我會說我從鬼門關出來了，那一剎那我看見天堂的天使，然後我就覺悟了，……」覺得什麼都很順、都是好事，這樣就是「順氣」——順風順水、一帆風順、風調雨順、孝順、……不都是一個「順」嘛！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "下一場讀書會的時間是12/16下午2:30-4:30，歡迎大家踴躍參加！",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "a4",
+        "isLargeFont": true,
+        "text": "下一場讀書會的時間是12/16下午2:30-4:30，歡迎大家踴躍參加！",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       }
     ],
+    "category": "讀書會側記",
+    "readTime": "約 6 分鐘",
+    "order": 4,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-3107139.jpg?v=3107139",
     "images": [],
-    "sourceId": "2412-4",
     "issueId": "202412",
+    "tags": [
+      "讀書會側記"
+    ],
     "sections": [
       {
         "heading": null,
@@ -40241,165 +40255,166 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "陳宛琳",
-    "title": "任何領域皆可用的省氣、定氣、順氣",
-    "sourceFileName": "2412-4讀書會.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-3107139.jpg?v=3107139",
-    "tags": [
-      "讀書會側記"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 6 分鐘",
-    "order": 4,
-    "excerpt": "午後閙區中的寧靜一隅，一群渴望對無極有更深層理解的同學圍坐著，利用讀書會從各種角度切入探討省氣（「省」音「ㄒㄧㄥˇ」）、定氣、順氣在動作中、呼吸中、生活中的展現。",
-    "slug": "202412-2412-4",
-    "homeAnchor": "#article-202412-2412-4",
-    "category": "讀書會側記"
+    "sourceId": "2412-4",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-5",
+    "excerpt": "「含德之厚，比於赤子」貫穿全文，是全文的核心。「含」就是內化，把道內化到你的生命裡，變成你的樣子。內化過程中包含了道的德相，因此叫「含德」。「之厚」，天高地厚，厚就是地，厚德載物，可以承載萬物…",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-5含德章055.docx",
+    "title": "含德之厚，比於赤子，則三心不欺",
+    "author": "文稿彙整 / 余媛媛",
+    "homeAnchor": "#article-202412-2412-5",
     "contentBlocks": [
       {
         "type": "quote",
         "text": "道德經第55章 含德章\n\n含德之厚，比於赤子。毒蟲不螫，猛獸不據，攫鳥不搏。\n\n骨弱筋柔而握固，未知牝牡之合而脧作，精之至也。\n\n終日號而不嗄，和之至也。\n\n知和曰常，知常曰明。\n\n益生曰祥。\n\n心使氣曰強。\n\n物壯則老，是謂不道，不道早已。"
       },
       {
+        "type": "heading",
         "text": "含德之厚，比於赤子，則三心（惡毒心、狂猛心及上流心）不欺",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「含德之厚，比於赤子」貫穿全文，是全文的核心。「含」就是內化，把道內化到你的生命裡，變成你的樣子。內化過程中包含了道的德相，因此叫「含德」。「之厚」，天高地厚，厚就是地，厚德載物，可以承載萬物，欣欣向榮、含弘光大，這是易經坤卦的境界。只要你能把厚德載物的道內化進去，就可到達嬰兒無私無欲的境界，而能致虛極、守靜篤。以練功而言，就是做動作時，內心要先有道的樣子，而把道內化在動作中，氣沉丹田，像地那麼雄厚；氣沉湧泉，直抵地心，完全隱藏、渾然內斂。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人的自私是最大的私慾，私慾就是只為自己，自私的人是無法悟道的。如果能做到「含德之厚，比於赤子」，即使有惡毒心、狂猛心及上流心這三種心的人，也不會想要傷害你。第一毒虫不螫，內心如毒蟲、毒蠍、毒蚊那麼毒的人不會傷害你。第二猛獸不據，狂猛心如猛獸的人，也不會傷害、霸凌你，想要把你消滅。第三攫鳥不搏，攫鳥，飛得很高的鷹鸇；搏，就是拔除你的價值。即使像毒蛇猛獸毒蚊毒蛇般心腸狠毒的人，凶猛如野獸的人，或總是高高在上所謂上層社會的人，都不會想要傷害（螫）、佔據消滅（據）或強勢豪奪（搏）這種像嬰兒般單純、善良、無私無慾，內心安靜的人。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "骨弱筋柔而握固，未知牝牡之合而脧作，精之至也",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「骨弱筋柔而握固，未知牝牡之合而脧作，精之至也」。其中「骨弱筋柔而握固」，代表血，為陰；血氣方剛才有握力，嬰兒雖然很柔弱，但握拳很緊掰不開；「未知牝牡之合而脧作」，這是氣，氣是精的極致表現，這是陽。牝牡，是指男女交合。脧作是指硬挺，嬰兒期的松果體會分泌抑性激素，他不需男女關係，沒有男女賀爾蒙的刺激，生殖器也會硬挺。二者分別為陰與陽，各為血及氣，氣血皆足，則精之至也。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "終日號而不嗄，和之至也",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「終日號而不嗄，和之至也」，陰陽為二，和氣為三，和之至是指陰陽相和的和氣狀態。嗄是指聲音嘶啞，嬰兒只順應自然法則，肚子餓了就哭鬧，因為不是慾望，純粹反應生理需求，因此終日哭都不會因此聲音嘶啞。和氣者的陰陽都強，因為和之至也，所以才能「終日號啕而不嗄」。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "老子並非主張人應該完全沒有慾望，而是指人不能有貪慾，因為若是本能反應，則是屬於順應自然的表態。若一個男人，用手摸他的性器官，正常生理反應就一定勃起，那是本能自然的表態。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "知和曰常，知常曰明",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「知和曰常，知常曰明」，和是和氣，就是陰陽二氣相和；常就是自然之道，一生二，二生陰陽，三生大地萬物。自然之道是無為，人在面對任何事情發生，心只要單純在事情上經歷就好，不要有起心動念。明就是真正明白的人。「道法自然」，知道自然之道者，就是明白的人。此二句指明白陰陽的人既可以和陰陽，也可以知自然之道，是個真正明白之人。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "益生曰祥",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「益生」就是不斷的增加生命中的擁有，想要讓自己更有、更多，而期待生命會更好，但人生應該有就夠了，要的更多，就是貪欲。「祥」是這句話的重點，指不擇手段，獨厚自己。「益生曰祥」，就是不擇手段，來讓自己生命、生活更好。但這樣做的結果真的會讓生命更好嗎？其實不然，所以他是不祥的，這叫「正言若反」。人的一生難道不是這樣嗎？就如同你努力加班，想要領更多、買更多、讓自己生活更富裕，但最終可能會造成過勞死。繼而「心使氣曰強」。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "心使氣曰強",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「心使氣曰強」就是用盡心力、耗盡全力來拚搏；強就是僵硬的意思，僵就是無路可走。像去做舉重等重量訓練，或是拼命用力硬撐著去跑馬拉松，都是心使氣曰強。因此，人不要過度勞心勞力，把心氣用到極限，到最後會變僵硬而斷送生命。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
+        "type": "heading",
         "text": "物壯則老，謂之不道，不道早已",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "「物壯則老」和「格物致知」相反，「物壯」的人很快就窮途末路。譬如做舉重等重力訓練鍛鍊肌肉，不斷地拼命用力氣而「使氣曰強」，都是「益生曰祥」的動作，這種人是「是謂不道」。就是不在道的狀態，不懂得自然法則；而違反自然之道者，必定無法太平。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       },
       {
-        "text": "生活在自然法則之中，不會受到邪惡之人的傷害",
         "type": "heading",
+        "text": "生活在自然法則之中，不會受到邪惡之人的傷害",
         "level": 2
       },
       {
-        "text": "所以，人只要氣足，遵守自然的「含德之厚」，奉行自然法則的德性、觀念，守著本乎自然的觀念，就能「比於赤子」，不做違反自然的事情，生活在自然法則之中，將不會受到邪惡之人的傷害。奉行自然的人血通暢而氣旺盛，精氣充足的「骨弱筋柔而握固」且「未知牝牡之合而脧作」。如此，即使他「終日嚎啕而不嗄」，也是精之至。像這種懂陰陽的明白人，練功會越練越旺，氣與血在身體內順其自然的流行，丹田飽滿。就算每天練功，也不會練到精氣虧損；而是越練精氣越旺。即使耗神、耗心、耗力，也都本乎自然的需要。究其實，因為他知道「和」的重要，懂得陰陽相合的常道，故而「和之至也」。",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "",
+        "isLargeFont": true,
+        "text": "所以，人只要氣足，遵守自然的「含德之厚」，奉行自然法則的德性、觀念，守著本乎自然的觀念，就能「比於赤子」，不做違反自然的事情，生活在自然法則之中，將不會受到邪惡之人的傷害。奉行自然的人血通暢而氣旺盛，精氣充足的「骨弱筋柔而握固」且「未知牝牡之合而脧作」。如此，即使他「終日嚎啕而不嗄」，也是精之至。像這種懂陰陽的明白人，練功會越練越旺，氣與血在身體內順其自然的流行，丹田飽滿。就算每天練功，也不會練到精氣虧損；而是越練精氣越旺。即使耗神、耗心、耗力，也都本乎自然的需要。究其實，因為他知道「和」的重要，懂得陰陽相合的常道，故而「和之至也」。",
         "styleName": "",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": ""
       }
     ],
+    "category": "體證道德經",
+    "readTime": "約 4 分鐘",
+    "order": 5,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-4526692.jpg?v=4526692",
     "images": [],
-    "sourceId": "2412-5",
     "issueId": "202412",
+    "tags": [
+      "體證道德經",
+      "道德經"
+    ],
     "sections": [
       {
         "heading": null,
@@ -40433,174 +40448,174 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "文稿彙整 / 余媛媛",
-    "title": "含德之厚，比於赤子，則三心不欺",
-    "sourceFileName": "2412-5含德章055.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-4526692.jpg?v=4526692",
-    "tags": [
-      "體證道德經",
-      "道德經"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 4 分鐘",
-    "order": 5,
-    "excerpt": "「含德之厚，比於赤子」貫穿全文，是全文的核心。「含」就是內化，把道內化到你的生命裡，變成你的樣子。內化過程中包含了道的德相，因此叫「含德」。「之厚」，天高地厚，厚就是地，厚德載物，可以承載萬物…",
-    "slug": "202412-2412-5",
-    "homeAnchor": "#article-202412-2412-5",
-    "category": "體證道德經"
+    "sourceId": "2412-5",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-6",
+    "excerpt": "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治…",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-6導引按蹻.docx",
+    "title": "治療師的四個境界",
+    "author": "文稿彙整 / 黃惠如",
+    "homeAnchor": "#article-202412-2412-6",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治療師會從身心靈入手。要學好治療學，必須走一條難度極高且十分漫長的路。一個真正懂治療的治療師，要經過四個養成階段：",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "第一階段 了解身體結構系統及其動態運作",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "除此之外，還要能精準察覺患處。手會痛，跟手相關的結構系統有關，手的動作會牽動多少肌肉？哪裡發炎? 跟坊間的醫師治療方式不同， 好的治療師瞬間就要精準摸出發炎部位，不是按肌肉纖維，這樣會造成肌肉纖維發炎，而是透過轉動關節，鬆開患處相關筋膜，再處理肌肉和骨頭的連結點。哪些連結點有肌肉和神經走的槽，疼痛大多在哪個連結點？因此透過筋膜治療，用手法把周圍肌肉推開，下壓到骨膜去，這就是精準的治療。治療師要一下子就到達對的地方，患者會很痛，因為神經在那裡才會痛，所以治療要治神經不治肌肉，否則會把肌肉纎維弄到發炎。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "第二階段  手法及處理方式養成",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "治療師養成第二階段就是手法。面對患處該怎麼按？斜按、直按，還是從接觸點滑進去？用各種方法和手法，不能讓患者感覺有根棍子按在他身上，而要像有根棉花棒按在他身上。這種治療手法要用內勁去練。手法要軟著陸，硬落點，具有穿透性，否則患者會很痛。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這一類的發炎，我是用藥洗，輕輕的抹，不是推。因為直接推發炎的地方，越推越嚴重，所以要推旁邊，然後在患處抹藥洗抹到發熱，甚至熱敷讓熱能透進去，讓皮膚把藥吃進去就好了。我們浸製的藥洗非常好用，瘀青一定要用藥洗推散，否則以後就容易中風，因為瘀青在體內不會散掉，會慢慢結成硬塊，硬掉以後變成一顆顆小顆的血塊，然後會擴散跑到狹窄的血管造成阻塞。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "體溫作用模式",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "血凝固成塊是化不掉的，因為溫度不夠無法使它化掉。就像豬油一樣，在某種溫度下動物性脂肪會凝結。人體溫度對這種脂肪代謝非常好，我們人體的溫度三十六度，體內溫度會更高，豬油在那個地方是形成不了硬塊的。但也不知道我們怎麼被催眠，催眠到使用像沙拉油這樣的不飽和脂肪酸，即使冰在冰箱也不會凝結，永遠留在身體裡面。人體結構很複雜，說來話長，然而醫學報告比我講的還有說服力，所以我也懶得講了，反正人世間，煮什麼油吃就是了，好比面對空氣汙染，大家沒辦法，還是得呼吸，難道要背著氧氣筒出門?",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "人體的體溫是隨時變化的。人體為什麼溫度會升高？第一就是交感神經亢奮，溫度一定要升高，因為面對事件，要啟動作戰模式，速度要快，血行要快，交感神經準備作戰。第二是生理期、排卵期溫度也要升高。再來就是興奮亢奮的時候溫度要升高。還有，身體有發炎的時候、生氣的時候溫度都要升高。溫度升高，需要用到多少身體的能量？因為身體會啟動所有基礎代謝率的預算去升高體溫。體温升高以後，維持那個溫度不退，就好像瓦斯爐要打開保溫，需要用多少能量才能維持那個溫度？如果能量不夠溫度就降下來了。所以，持續發燒要花多少能量去保護身體，這個時候都要靠脂肪，要靠豬油。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我以前小時候撞到腫起來，媽媽都拿豬油來擦，兩個小時之內就消下去，因為撞到一定發炎，這叫做組織膨脹。豬油擦下去可以幫忙保溫，而且豬油裡面有很多消炎作用，所以腫馬上消下去。脂肪是保溫的，以前人類的平均體溫是三十六點九到三十七度，我們現在吃沙拉油，人類的體溫降到三十六度半以下。吃沙拉油，所以癌症變多了，慢性病變多。我講沒有用，你們知道我是研究生命的，醫學對我來講是小兒科。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "heading",
         "text": "對生命、身體的全面了解，決定自救的方式",
-        "type": "heading",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "我去看脊髓權威醫生，他二話不說，叫我馬上辦住院開刀。我太太說能不能再看一下，有沒有別的辦法復原？他說，我叫你開刀，絕對沒有其他方法，而且要馬上開刀，否則一個禮拜之內就不能走。我太太聽到臉都綠了。看我這麼壯，回來都沒怎樣，再去看另一個醫生，也說一定要馬上住院，還聯絡他的護理師，直接安排開刀。然後又有人介紹我去看台大骨科脊髓的權威，門診進去問他幾個問題，這位骨科權威把我臭罵一頓，說你是醫生還是我醫生？我覺得這醫生蠻有意思的，所以繼續看診。結果他叫我吃止痛藥，然後叫我去看復健科。結果復健科有兩個體系，一個是骨科體系，一個復健科體系。在復健科主任那邊看診第二次，他就要我另請高明，說自己不是這方面的權威。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "所以我只有自己想辦法慢慢弄。只有培養學生，培養出能幫助自己的兩隻手，只要他的兩隻手有百分之八十的本事，加上我的技術指導，就可以到達我本人治療的百分之八十功效，這樣就有人能幫我。靠自己運動也絕對可以復原，但運動要動到可以矯正患處，旁邊的組織會因過度使用而跟著受罪；而且患處相關的系列組織，因為我要動到這裡，另一邊又有問題，這個問題就會更嚴重。只著重一處，別的地方就治療不到，所以只有透過治療師手法作局部的治療，不要動到其他部位，以免受到連帶影響。就像用藥物醫治某個病，但藥吃多了，藥的副作用影響到其他器官，或是像家裡有一個老人失智，全家都得吃安眠藥，意思是一樣的。所以這是身體的奧妙，所以手法是非常重要的考量，光一個手法就要花多少時間培養，不是短時間或是三言兩語就能說盡的。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "第三及第四階段，心法以及治療師的念頭與狀態",
         "type": "heading",
+        "text": "第三及第四階段，心法以及治療師的念頭與狀態",
         "level": 2
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "心法是第三階段，你看需要多久時間去覺去悟?  這又是一言難盡，而且治療組的訓練，很多是在講心法的，對不是治療組的人就不細講了。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "對治療心法有體悟，還不能成為一個好的治療師。要真的提升到第四個階段成為好治療師，就要學會對治療經歷的一切有愛，每一次出手時的身心狀態，不能把對方當豬宰，不能把他當工具。修理一把椅子只要釘一釘、捶一捶，但治療師面對的是生命，要有對生命的疼惜與愛護，怕碰疼了、傷到了，擔心引起不舒服，細細呵護的那種愛，無法形容。只有在這三個階段以上自我感悟，再經過這四個階段，才會成為一個好的治療師。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "成為一個真正的治療師，一定要先學會放空自己，不能有任何邪念，那就縱橫無阻，無所不治。看人體任何一個地方都只看到疼痛根源，不能區分山川河岳， 不能分別哪個地方是危險區，不去碰觸處理。這必須有愛才做得到。假如他只有邪念，他就有分別心，就看不到真相，因為該看的地方不看，不該看的地方他曚著眼睛去治療。該治不敢治，或看不見該治的地方，你怎麼治療? 身體是整體連在一起，有很多地方被你中斷跳過去，你怎麼解決一切？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "前面提到，好的治療師是從身心靈幫患者治療，有些疼痛的來源不是身體遭受外力受傷，而是心理引起的，治療師要會看患者的情況去判斷。知道心痛是怎麼來的嗎？心痛不是心臟在痛，心臟痛都是心臟病叫心絞痛，痛的都是心包痛，心包痙攣心臟就會痛。但我們講的不是器官的痛，講的是受到外界刺激「心痛」的感覺，這種感覺跟乳房的胸肋韌帶肌腱過度收縮有關，乳房是海綿組織，海綿組織本身會膨脹收縮，如果胸肋韌帶肌腱過度收縮，肋間肌就會束緊解不開，人就感覺悶悶的，這些都是容易緊張的人才有的，那是個性問題，不是被氣被傷。所以治療師要治療心痛，如果不處理根源，就算鬆開肋間肌的緊繃，緩解了疼痛，不久一定還會再犯。所以好的治療師，第四階段的修煉，必須要提升到身心靈的層次。",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "a4",
+        "isLargeFont": true,
+        "text": "前面提到，好的治療師是從身心靈幫患者治療，有些疼痛的來源不是身體遭受外力受傷，而是心理引起的，治療師要會看患者的情況去判斷。知道心痛是怎麼來的嗎？心痛不是心臟在痛，心臟痛都是心臟病叫心絞痛，痛的都是心包痛，心包痙攣心臟就會痛。但我們講的不是器官的痛，講的是受到外界刺激「心痛」的感覺，這種感覺跟乳房的胸肋韌帶肌腱過度收縮有關，乳房是海綿組織，海綿組織本身會膨脹收縮，如果胸肋韌帶肌腱過度收縮，肋間肌就會束緊解不開，人就感覺悶悶的，這些都是容易緊張的人才有的，那是個性問題，不是被氣被傷。所以治療師要治療心痛，如果不處理根源，就算鬆開肋間肌的緊繃，緩解了疼痛，不久一定還會再犯。所以好的治療師，第四階段的修煉，必須要提升到身心靈的層次。",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       }
     ],
+    "category": "導引按蹻",
+    "readTime": "約 6 分鐘",
+    "order": 6,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-6295829.jpg?v=6295829",
     "images": [],
-    "sourceId": "2412-6",
     "issueId": "202412",
+    "tags": [
+      "導引按蹻",
+      "身體感知"
+    ],
     "sections": [
       {
         "heading": null,
@@ -40628,86 +40643,85 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "文稿彙整 / 黃惠如",
-    "title": "治療師的四個境界",
-    "sourceFileName": "2412-6導引按蹻.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-6295829.jpg?v=6295829",
-    "tags": [
-      "導引按蹻",
-      "身體感知"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 6 分鐘",
-    "order": 6,
-    "excerpt": "人只要有好的生活態度及好的治療師，身體疼痛問題就有解，而且從此不再犯！治療成功的關鍵，除了治療師出手治療，同時也需要患者以無懼的生活態度勇敢面對問題，精準到達問題核心，直接進行標靶治療。好的治…",
-    "slug": "202412-2412-6",
-    "homeAnchor": "#article-202412-2412-6",
-    "category": "導引按蹻"
+    "sourceId": "2412-6",
+    "sourceUrl": ""
   },
   {
-    "sourceUrl": "",
-    "issue": "第226期 / 2024.12電子報",
+    "slug": "202412-2412-7",
+    "excerpt": "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名…",
+    "date": "2024.12.10",
+    "sourceFileName": "2412-7股海人生.docx",
+    "title": "歡迎來到MATRIX！",
+    "author": "蔡育展",
+    "homeAnchor": "#article-202412-2412-7",
     "contentBlocks": [
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名的當屬新任狗狗部DOGE部長馬斯克，副總統、商務部長、財政部長、衛生部長都是加密支持者，加密貨幣跟衛生部有啥關係？唯一關係可能是美金以後拿來當乾式衛生紙擦屁屁。加密貨幣以程式碼運算、分散式帳本，取代傳統的集中式交易、管理。存款存銀行，沒看到紙鈔但是會看到一串銀行給你的帳本數字，股票放集保帳戶一樣是看到一個數字在自己名下，其實也從來沒看過紙本股票。所有動作都是一連串的計算、數字，本質上與加密貨幣一樣只是比較慢，股票第二天交割券、第三天結算款項，以加密貨幣世界標準這是匪夷所思。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "同樣是一串數字，加密貨幣的數字普遍被認為沒有內涵價值純粹炒作，炒作幾年後比特幣的總市值1.95兆美元，台積電總市值0.9兆美元不到。一團代碼加運算能搞出1.95兆美元？連股神巴菲特也搞不清楚背後邏輯，其實不是搞不清楚是不願意接受。巴菲特從沒看過帳上現金換成美元現鈔堆在他家桌上，財富對他來說也是一個計算過後的數字而已，這數字是集體共識，加上國家保證。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "財富是一個共識、意見流動，共識大家以行動投票算出來的，意見流動還是以行動在不同地方、資產跑來跑去熙來攘往算出來的。以數字計算展現出共識、流動，這就是金錢、財富本質。計算會有輸入、輸出兩段，輸入經過函數轉換變成輸出也就是結果。花1000元買一股台積電是輸入，中間有一個函數轉換決定1年後台積電變成多少錢，這是輸出。加密貨幣一樣，其實就是一連串的代碼運算結果。其實本質上放在集保的台積電，跟放在電子錢包的比特幣，作為資產的本質是相同的。",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "決定台積電、比特幣哪一個有內涵價值的，是現金流、資產屬性、國家是否保證，還是挖深一點，「個人認知」在哪邊？這是否仍是一個輸入、輸出、函數轉換的過程呢？",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
+        "type": "paragraph",
+        "isLargeFont": true,
         "text": "這樣的輸入、輸出、函數轉換一樣發生在我們身上，五感的輸入轉成六識，在身心產生作用形成經驗後，回存到「某個資料庫」，那個資料庫再來影響函數運算模式，也影響了數據輸入源，人類所謂的現實世界，是否是一連串的運算結果？從虛擬貨幣看身體運作，也從身體運作看虛擬貨幣，哪一個是真實哪一個是虛擬？歡迎來到MATRIX！",
-        "isLargeFont": true,
-        "isBold": false,
-        "type": "paragraph",
-        "styleId": "a4",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       },
       {
-        "text": "(電影駭客任務裡面的母體稱為MATRIX)",
-        "isLargeFont": true,
-        "isBold": false,
         "type": "paragraph",
-        "styleId": "a4",
+        "isLargeFont": true,
+        "text": "(電影駭客任務裡面的母體稱為MATRIX)",
         "styleName": "預設值",
-        "isHeadingStyle": false
+        "isBold": false,
+        "isHeadingStyle": false,
+        "styleId": "a4"
       }
     ],
+    "category": "股海人生",
+    "readTime": "約 2 分鐘",
+    "order": 7,
+    "imageCaption": "圖片來源 / Pixabay",
+    "issue": "第226期 / 2024.12電子報",
+    "hasExplicitTitle": true,
+    "image": "/assets/pixabay/pixabay-7157189.jpg?v=7157189",
     "images": [],
-    "sourceId": "2412-7",
     "issueId": "202412",
+    "tags": [
+      "股海人生"
+    ],
     "sections": [
       {
         "heading": null,
@@ -40721,22 +40735,8 @@ export const reviewDraftArticles = [
         ]
       }
     ],
-    "author": "蔡育展",
-    "title": "歡迎來到MATRIX！",
-    "sourceFileName": "2412-7股海人生.docx",
-    "date": "2024.12.10",
-    "image": "/assets/pixabay/pixabay-7157189.jpg?v=7157189",
-    "tags": [
-      "股海人生"
-    ],
-    "imageCaption": "圖片來源 / Pixabay",
-    "hasExplicitTitle": true,
-    "readTime": "約 2 分鐘",
-    "order": 7,
-    "excerpt": "11月6日美總統大選結果揭曉，川普再次回任美國總統。他有一系列特別但還沒到驚世駭俗的政策，關稅、反移民、重建美國製造等等，還有一項很特別與前一任期不同的是他將建立一個所謂的加密貨幣團隊，最知名…",
-    "slug": "202412-2412-7",
-    "homeAnchor": "#article-202412-2412-7",
-    "category": "股海人生"
+    "sourceId": "2412-7",
+    "sourceUrl": ""
   },
   {
     "imageCaption": "圖片來源 / Pixabay",
@@ -107681,13 +107681,13 @@ export const reviewDraftIssues = [
     "articleCount": 9
   },
   {
-    "date": "2024.12",
-    "title": "走向更高的自由",
-    "articleCount": 8,
     "id": "202412",
     "image": "/assets/pixabay/pixabay-8368328.jpg?v=8368328",
-    "href": "/issues/202412/",
+    "date": "2024.12",
     "issueNumber": "第226期",
+    "href": "/issues/202412/",
+    "articleCount": 8,
+    "title": "走向更高的自由",
     "label": "2024.12 電子報"
   },
   {

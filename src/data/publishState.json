@@ -1,7 +1,7 @@
 {
   "publicLatestIssueId": "202611",
   "reviewIssueId": "202611",
-  "publishedAt": "2026-11-10T01:39:46.5786781Z",
+  "publishedAt": "2026-11-10T02:09:55.7670981Z",
   "publishedIssues": {
     "202608": {
       "issueId": "202608",
@@ -1382,120 +1382,55 @@
     },
     "202412": {
       "issueId": "202412",
-      "publishedAt": "08/09/2026 06:37:05",
-      "baselineRepairedAt": "2026-08-09T11:46:55.6821254Z",
+      "publishedAt": "2026-11-10T02:09:55.7670981Z",
       "articles": {
-        "2412-1::c3e53731e5cb8625": {
-          "sourceId": "2412-1",
-          "pathHash": "c3e53731e5cb8625",
-          "signature": "v2|d6fbdb970b86df3c52f14acc59d47bc144ab3c3adb99156e20536f9ee71cbb6c|",
-          "slug": "202412-2412-1",
-          "baselineRepairedAt": "2026-08-09T11:46:55.6828585Z"
-        },
-        "2412-2-1::391146b28dadb13a": {
-          "sourceId": "2412-2-1",
-          "pathHash": "391146b28dadb13a",
-          "signature": "v2|31a64089b8455596ec1c552cee88c30099a77fa858b1f373df59985cd98688b7|",
-          "slug": "202412-2412-2-1",
-          "baselineRepairedAt": "2026-08-09T11:46:55.7267744Z"
-        },
-        "2412-2-2::eb7b2c9f0cb6c9bd": {
-          "sourceId": "2412-2-2",
-          "pathHash": "eb7b2c9f0cb6c9bd",
-          "signature": "v2|1fdabd289e230b340a2a9e882283788d3ef843e95b84043848553fc20e00584b|",
-          "slug": "202412-2412-2-2",
-          "baselineRepairedAt": "2026-08-09T11:46:55.7517803Z"
-        },
-        "2412-3::124c276f88688bb4": {
-          "sourceId": "2412-3",
-          "pathHash": "124c276f88688bb4",
-          "signature": "v2|d500d53c3ee1072748acbe33ce555b18018b68bb3aa18103b67960548c038077|",
-          "slug": "202412-2412-3",
-          "baselineRepairedAt": "2026-08-09T11:46:55.7619117Z"
-        },
-        "2412-4::3165866dcd8c9ad5": {
-          "sourceId": "2412-4",
-          "pathHash": "3165866dcd8c9ad5",
-          "signature": "v2|33fb0c8610acea7d32c5718b0dcc4346339ab3ff7fe20c943c5c6a71e510f0fc|",
-          "slug": "202412-2412-4",
-          "baselineRepairedAt": "2026-08-09T11:46:55.7809471Z"
-        },
-        "2412-5::47270c77b3b237f6": {
-          "sourceId": "2412-5",
-          "pathHash": "47270c77b3b237f6",
-          "signature": "v2|056d4b97077544eade1a0a5b148a11d49b171a724b294077f60926bc96202fde|",
-          "slug": "202412-2412-5",
-          "baselineRepairedAt": "2026-08-09T11:46:55.7971855Z"
-        },
-        "2412-6::b0048a0502935e43": {
-          "sourceId": "2412-6",
-          "pathHash": "b0048a0502935e43",
-          "signature": "v2|a135828ed6d062626e4203b621ec3dcf1de3c278b36386bc773c744d672b8ab2|",
-          "slug": "202412-2412-6",
-          "baselineRepairedAt": "2026-08-09T11:46:55.8123031Z"
-        },
-        "2412-7::82188efade7a657b": {
-          "sourceId": "2412-7",
-          "pathHash": "82188efade7a657b",
-          "signature": "v2|4de25ef0101e8e53f0d564c7fd9e9be7a113555163d47d37e3658458a6346cfd|",
-          "slug": "202412-2412-7",
-          "baselineRepairedAt": "2026-08-09T11:46:55.8224395Z"
-        },
         "2412-1": {
-          "sourceId": "2412-1",
-          "pathHash": "",
-          "signature": "v2|d6fbdb970b86df3c52f14acc59d47bc144ab3c3adb99156e20536f9ee71cbb6c|",
+          "signature": "v3|3114fd670c294a7b69bacbff21e656d5ac8786d648d5e6210883bf3f3dc69c97|",
           "slug": "202412-2412-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1874165Z"
+          "title": "走向更高的自由",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-1編輯小語.docx"
         },
         "2412-2-1": {
-          "sourceId": "2412-2-1",
-          "pathHash": "",
-          "signature": "v2|31a64089b8455596ec1c552cee88c30099a77fa858b1f373df59985cd98688b7|",
+          "signature": "v3|fd6f4ab2c3afdaf3bef47b4220cd5d4382045ce998957d46330dfb3496839cc1|",
           "slug": "202412-2412-2-1",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1885901Z"
+          "title": "活在「信」的光亮中",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-1如是我聞.docx"
         },
         "2412-2-2": {
-          "sourceId": "2412-2-2",
-          "pathHash": "",
-          "signature": "v2|1fdabd289e230b340a2a9e882283788d3ef843e95b84043848553fc20e00584b|",
+          "signature": "v3|d0be7c6aa6151ff4f91e923003196006219a0ce8b8852b099ea6a4bfa8cde943|",
           "slug": "202412-2412-2-2",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1890259Z"
+          "title": "做得到",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-2-2如是我聞之二.docx"
         },
         "2412-3": {
-          "sourceId": "2412-3",
-          "pathHash": "",
-          "signature": "v2|d500d53c3ee1072748acbe33ce555b18018b68bb3aa18103b67960548c038077|",
+          "signature": "v3|6ea1e15e6fd8967d59985aaf1d839e2273f9e57302a25ade966a1d5978fa6302|1b7e6912f57571829d53cab7371412d152a469884222a6f11baa5aa839379972",
           "slug": "202412-2412-3",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1894122Z"
+          "title": "記2024海南沉香花梨國際大會",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-3記沉香花梨會.docx"
         },
         "2412-4": {
-          "sourceId": "2412-4",
-          "pathHash": "",
-          "signature": "v2|33fb0c8610acea7d32c5718b0dcc4346339ab3ff7fe20c943c5c6a71e510f0fc|",
+          "signature": "v3|3fd781f5579b14604502e592c0d6c0db9ce01551cd753efb8e788604bd91bdd9|",
           "slug": "202412-2412-4",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1898189Z"
+          "title": "任何領域皆可用的省氣、定氣、順氣",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-4讀書會.docx"
         },
         "2412-5": {
-          "sourceId": "2412-5",
-          "pathHash": "",
-          "signature": "v2|056d4b97077544eade1a0a5b148a11d49b171a724b294077f60926bc96202fde|",
+          "signature": "v3|5fbf7eadf32e8cc952cd1b38f52852d04459b7cf6d1e13e166fafd6be00a9aa5|",
           "slug": "202412-2412-5",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1902Z"
+          "title": "含德之厚，比於赤子，則三心不欺",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-5含德章055.docx"
         },
         "2412-6": {
-          "sourceId": "2412-6",
-          "pathHash": "",
-          "signature": "v2|a135828ed6d062626e4203b621ec3dcf1de3c278b36386bc773c744d672b8ab2|",
+          "signature": "v3|0f3bb0ff87baa07b87b3ae4192dba7f77ad61dee3aa1d18588dbc1371d224d24|",
           "slug": "202412-2412-6",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1906041Z"
+          "title": "治療師的四個境界",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-6導引按蹻.docx"
         },
         "2412-7": {
-          "sourceId": "2412-7",
-          "pathHash": "",
-          "signature": "v2|4de25ef0101e8e53f0d564c7fd9e9be7a113555163d47d37e3658458a6346cfd|",
+          "signature": "v3|3ad2b15fca30f4cb76524b8891fd983fa10f0e483d25e91272a821cd1ee1623b|",
           "slug": "202412-2412-7",
-          "baselineRepairedAt": "2026-08-09T11:47:02.1909845Z"
+          "title": "歡迎來到MATRIX！",
+          "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202412/2412-7股海人生.docx"
         }
       }
     },
