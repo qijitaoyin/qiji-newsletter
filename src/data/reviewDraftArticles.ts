@@ -73251,313 +73251,78 @@ export const reviewDraftArticles = [
     ]
   },
   {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "編輯小語",
-    "imageCaption": "圖片來源 / Pixabay",
-    "author": "",
-    "issueId": "202301",
-    "order": 0,
-    "readTime": "約 2 分鐘",
     "hasExplicitTitle": false,
-    "contentBlocks": [
-      {
-        "styleName": "內文",
-        "styleId": "內文",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文",
-        "styleId": "內文",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "先說年終的一分鐘錄音。這一分鐘錄音剛開始施行時，多數同學覺得挺彆扭，看不出有什麼了不起的意思。第二年也沒多大改變，到今年第三年了，如果是真心誠意錄的音，自己都會被自己震撼到。因為，每年用一分鐘錄音作自我回顧、策勵，才僅僅三年的累積，就可以明顯感受到這件事的力量。當然，還是有同學未能感受，因而輕易放棄了這個寶貴時刻。各班最後是否如期交出全班的文字彙整檔，交或不交，也都會釋放出一個「全息」的面貌，因此我們一方面身在其中成為演員，一方面也是冷眼旁觀的觀眾。然後，也許明年，或者下一次的某一個活動，影響著我們選擇成為演員或是觀眾？誠如二早班文稿彙整的蕭怡萍所說：「每個選擇背後的心念都無所遁形，每個心念都是蝴蝶效應，波動一發遍及宇宙。」",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文",
-        "styleId": "內文",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "就像這一回的雪山坑「歲末嬉遊」活動，儘管事前做好嚴謹周密的規劃，但現場眾人一起醞釀出來的氛圍，就自然而然地驅動活動計畫的改變。沒有一定要怎樣，但因為大家經過十幾二十年的薰陶濡養，我們都有信心，只要順著當下情境自然發展，它就會走到剛剛好、恰恰是的圓滿狀態。因此，有時候，刻意的「選擇」，不如就放開了，隨波逐流，堅持該堅持的，之後，就不必堅持了，它自己會走到恰恰是、剛剛好的狀態。",
-        "type": "paragraph"
-      }
-    ],
-    "homeAnchor": "#article-202301-2301-1",
-    "sourceId": "2301-1",
-    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
-    "slug": "202301-2301-1",
     "date": "2023.01.10",
-    "title": "恰恰是、剛剛好",
-    "sourceUrl": "",
+    "images": [],
+    "category": "編輯小語",
+    "tags": [
+      "編輯小語"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
           "先說年終的一分鐘錄音。這一分鐘錄音剛開始施行時，多數同學覺得挺彆扭，看不出有什麼了不起的意思。第二年也沒多大改變，到今年第三年了，如果是真心誠意錄的音，自己都會被自己震撼到。因為，每年用一分鐘錄音作自我回顧、策勵，才僅僅三年的累積，就可以明顯感受到這件事的力量。當然，還是有同學未能感受，因而輕易放棄了這個寶貴時刻。各班最後是否如期交出全班的文字彙整檔，交或不交，也都會釋放出一個「全息」的面貌，因此我們一方面身在其中成為演員，一方面也是冷眼旁觀的觀眾。然後，也許明年，或者下一次的某一個活動，影響著我們選擇成為演員或是觀眾？誠如二早班文稿彙整的蕭怡萍所說：「每個選擇背後的心念都無所遁形，每個心念都是蝴蝶效應，波動一發遍及宇宙。」",
           "就像這一回的雪山坑「歲末嬉遊」活動，儘管事前做好嚴謹周密的規劃，但現場眾人一起醞釀出來的氛圍，就自然而然地驅動活動計畫的改變。沒有一定要怎樣，但因為大家經過十幾二十年的薰陶濡養，我們都有信心，只要順著當下情境自然發展，它就會走到剛剛好、恰恰是的圓滿狀態。因此，有時候，刻意的「選擇」，不如就放開了，隨波逐流，堅持該堅持的，之後，就不必堅持了，它自己會走到恰恰是、剛剛好的狀態。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-1編輯小語.docx",
-    "tags": [
-      "編輯小語"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-7390865.jpg?v=7390865",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "年終錄音側記",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文字彙整 / 洪淑敏",
-    "issueId": "202301",
-    "order": 1,
-    "readTime": "約 5 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-1",
     "contentBlocks": [
       {
-        "styleName": "Body Text",
-        "styleId": "a6",
+        "text": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的誠意。朱秀金說：跟同年紀沒練功的人比起來，我們各方面好太多了，要繼續努力前進！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文",
+        "styleId": "內文"
       },
       {
-        "type": "heading",
-        "text": "在積極行動中成長",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
+        "text": "先說年終的一分鐘錄音。這一分鐘錄音剛開始施行時，多數同學覺得挺彆扭，看不出有什麼了不起的意思。第二年也沒多大改變，到今年第三年了，如果是真心誠意錄的音，自己都會被自己震撼到。因為，每年用一分鐘錄音作自我回顧、策勵，才僅僅三年的累積，就可以明顯感受到這件事的力量。當然，還是有同學未能感受，因而輕易放棄了這個寶貴時刻。各班最後是否如期交出全班的文字彙整檔，交或不交，也都會釋放出一個「全息」的面貌，因此我們一方面身在其中成為演員，一方面也是冷眼旁觀的觀眾。然後，也許明年，或者下一次的某一個活動，影響著我們選擇成為演員或是觀眾？誠如二早班文稿彙整的蕭怡萍所說：「每個選擇背後的心念都無所遁形，每個心念都是蝴蝶效應，波動一發遍及宇宙。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "對莫仁維而言，2022年是開展的一年，接班亞新工程顧問公司兩年之後，他掌握各種機會，積極行動。看到危機，帶動公司訂定策略，在公司內部推動技術的發展，與管理制度上的改革。接受很多單位的邀請，講了五場的演講，年終舉辦了中工會的年會，此外推動國民外交，也盡了心力。在氣機導引的團體中，年初分享香道的心得，推動電子報的觀行錄，四月份在會館開了第二班導引的課程。九月份又接受泰國朋友的邀請，參加對方線上平台，期待明年氣機導引課程的展開。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文",
+        "styleId": "內文"
       },
       {
-        "styleName": "Body Text",
-        "styleId": "a6",
+        "text": "就像這一回的雪山坑「歲末嬉遊」活動，儘管事前做好嚴謹周密的規劃，但現場眾人一起醞釀出來的氛圍，就自然而然地驅動活動計畫的改變。沒有一定要怎樣，但因為大家經過十幾二十年的薰陶濡養，我們都有信心，只要順著當下情境自然發展，它就會走到剛剛好、恰恰是的圓滿狀態。因此，有時候，刻意的「選擇」，不如就放開了，隨波逐流，堅持該堅持的，之後，就不必堅持了，它自己會走到恰恰是、剛剛好的狀態。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "張尊堡這一年在工作、活動參與中，把氣機導引所學發揮在生活中，深刻感受到生活即是道場，道場即是生活。協助公司得標最近幾年最具代表性的計畫，全心投入計劃管理工作，代表公司到瑞士參加世界工程顧問研討會工作坊。年底籌辦中工會年會，主題發想、設計展覽都全程參與，又擔任主持工作。此外積極參與會館活動，撰寫電子報觀行錄，擔任莫帥六早班的助教，規劃雪山坑五感活動，在五感人間籌辦五次手工香的課程， 2022年是和生活賽跑的一年，做了很多新的事情。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
+        "type": "paragraph",
         "isHeadingStyle": false,
-        "isBold": false,
-        "text": "您注意到八德會館的氛圍和設備慢慢在改變中嗎？已精緻穩妥了起來，這是倪暐婷心力的結晶。辦理手工香的課程和茶結緣，從品香喝茶中認識了許多的朋友，衍生出不少茶與香的周邊商品。抱持一顆最誠摯的心，期望更多人認識香的美。學習聽人的話，感受人的氣，眼觀人的氣質，耳朵聆聽人的心情，鼻子嗅到人的精神狀態，透過五感，在聊天中，激盪出生命高度；在行動中，修正自己的弱點；在參悟中，提高智慧。挖掘出自己最閃耀的樣子，2022年是暐婷從青春邁向而立的成長年。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在自覺後跟上",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "莊雲鳳自覺要加緊學習腳步，好好的去感受身體，慢慢琢磨高深的無極。馬寶琴經過半年蝸居在家，深刻體會生活型態對身體健康的影響，目前正實施新生活運動，少言、減肥、多運動。參加慧敏入門班的課程，享受被操練後，全身汗水濕透的暢快！蔡小泓每星期都很期待上課，深感上課的濃度越來越高，怕稍有疏怠就遺漏了什麼，總要花很多時間去咀嚼，了解課程的連貫性。自覺身體的空間開發仍顯不足，努力追趕，希望藉老師跟同學共振的力量，跟上大家的腳步。洪淑敏探索著動作與心法的結合，在動作流動中進入一種感受的狀態。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在覺察中修正",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "林秉輝說每當覺察情緒有波動時，會對自己說「不，這不是真我」，先讓自己暫停一下。開始時有點困難，經過一次又一次練習，可以客觀看到自己的狀況，這是今年最大的收穫。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "楊慧敏說從來不覺得自己是一個用力的人，但身體是誠實的，覺得放鬆時，真的卸下身體僵硬了嗎？當事情來時，真的放下自己的堅持，而能夠不對抗的處理事情嗎？深感必須培養自我覺察的能力，隨時觀察自己的起心動念。期待自己像篆香的煙，隨風而起，隨風而動，事情來了就做，錯過就放下。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "范家豪持續觀察著心的起伏，發現事件到來時，心依舊會起伏，對到腦中的「識」以後，說出對抗性的語言，最後得不到好的結果。現在試著在心起伏時先緩一下，讓心不那麼震盪後，再去面對事情，沒有「識」的主導，只單純的去面對，比較不會跟對方產生衝突。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "何秋玲說覺自己的本源、本心，大腦念頭少當家。好好去感受練功及日常的起心動念，少對立批判，學會接受一切、感恩一切。家雖然像一個枷鎖，但也是修行的好場所，有碰撞，覺察了就放下，一切順心，心順一切。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在無常的挑戰中超越",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "羅心璇覺得2022年是最受病痛折磨的一年，在感受痛與不痛中打轉。聽著老師課堂的講述，下了課卻只想著如何解決自己的問題。雖無力深究課堂所聽到的內容，但是總可以從老師的言語裡得到一些救贖，感受到老師的關心與同學的溫暖，期許自己好好修練。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "對謝珪如而言2022年是充滿挑戰的一年，被醫生告知需要動大手術，深感恐懼。老師的話讓她像吃了一顆定心丸，讓她挺過心臟手術的這一關，期許往後生命道路越走越好。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "這一年無常一再找上李秀娥，意外讓她受到近百日身體的疼痛與折磨；接著，最疼愛的小弟，細菌感染無預警的走了！腳痛還是心痛已分不清，打起精神，點一爐香，融入識香課程中，讓渙散的神魂慢慢恢復。轉念可以轉開身心所有的疼痛，決定提早回練功房，聞沉香，練無極，繼續往前走。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "對游夙君來說，這一年面臨疫情與家人病痛帶來的變化，自己觀賞也參與人間劇場的演出，看見身為人的脆弱與有限，也從中咀嚼複雜的人性，體會超越自己的無限。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "高袖桐說因為擁有氣機導引無極、大地蘊藏的結晶沉香，還有跟老師和每個同學深厚的因緣，全身細胞在無限時空中俱足一切，靈魂烙印著幸福。愛過、恨過、做過，最終站起來。學會愛大家，勇敢接受所有的審判，邁入更高維度的追求。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在成全中圓滿一切",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "胡琦瑛年邁的父親動了個小手術，飽受身體與心智之苦。她陪伴在父母身旁照顧，深感自己是有福報之人，老公的成全、包容、支持，讓她在原生家庭與婚姻家庭之間游刃有餘。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "張台芬在識香課猜中沉香重量，有感於沉香會找人，並沒請回那塊沉香，她說讓事件圓滿，遠超過自己擁有那塊沉香。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在變通中開創新局",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "對莊醫師習慣當天對病人的病況要完全掌握，並決定治療方法。這造成很大的壓力，以致跟病人解釋的口氣會很衝，有時令病人感到不悅。這一年莊醫師學會變通，和病人的互動也改變許多。「痛苦其實是自找的」，很多事情只要轉個念頭，結果就改善很多。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "林碧珠說自己像一隻被繩索綁住的象，習慣跟著繩索走，當主人離去，繩索斷了，就失去了方向，感到驚慌失措。將近三年摸索，加上張老師不斷地點醒，她試著把自己融入眾生中，發覺處處有愛和關懷，已慢慢適應一個人的生活。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "在忘參覺悟中看見真相",
-        "level": 2
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "阿充說當發現自己很多事情常常都記不起來了，開始會有點恐慌，但來後來發現沒動機去記，也就記不起來。之前多麼想用力的去記事情，背後的慾望有多麼的深。該記的事情神經元老早就連結好了，不然花再多的記憶細胞也沒有什麼用。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "Body Text",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "鄧美玲說要參悟的功課從「不要臉」、「本心」是什麼，進而深入去看自己到底被什麼「意識型態」綁架而不自知。我們自己最大的敵人是六根眼耳鼻舌身意，得時時刻刻注意自己的起心動念。開始《道傳》的撰寫，無時無刻不在另一個平行時空裡活著，活得很起勁。可以是禽獸，可以是螻蟻，也可以是能感知自己、修正自己的人，遊走在虛實之間，彰顯內心澎湃的想像，與對人類世界的期待與雄心壯志，深感幸福無比！",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "展望2023年，隨著老師課程的帶領，激發神魂，精進突破，超越生命無限的可能性，看見生命的極致法則。",
-        "type": "paragraph"
+        "styleName": "內文",
+        "styleId": "內文"
       }
     ],
-    "homeAnchor": "#article-202301-2301-2-1",
-    "sourceId": "2301-2-1",
-    "excerpt": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的…",
-    "slug": "202301-2301-2-1",
+    "slug": "202301-2301-1",
+    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-1",
+    "order": 0,
+    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
+    "title": "恰恰是、剛剛好",
+    "sourceFileName": "2301-1編輯小語.docx",
+    "author": ""
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "一晚班 - 朝向生命的極致法則",
-    "sourceUrl": "",
+    "images": [],
+    "category": "年終錄音側記",
+    "tags": [
+      "年終錄音側記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的誠意。朱秀金說：跟同年紀沒練功的人比起來，我們各方面好太多了，要繼續努力前進！",
           "在積極行動中成長",
@@ -73587,334 +73352,261 @@ export const reviewDraftArticles = [
           "阿充說當發現自己很多事情常常都記不起來了，開始會有點恐慌，但來後來發現沒動機去記，也就記不起來。之前多麼想用力的去記事情，背後的慾望有多麼的深。該記的事情神經元老早就連結好了，不然花再多的記憶細胞也沒有什麼用。",
           "鄧美玲說要參悟的功課從「不要臉」、「本心」是什麼，進而深入去看自己到底被什麼「意識型態」綁架而不自知。我們自己最大的敵人是六根眼耳鼻舌身意，得時時刻刻注意自己的起心動念。開始《道傳》的撰寫，無時無刻不在另一個平行時空裡活著，活得很起勁。可以是禽獸，可以是螻蟻，也可以是能感知自己、修正自己的人，遊走在虛實之間，彰顯內心澎湃的想像，與對人類世界的期待與雄心壯志，深感幸福無比！",
           "展望2023年，隨著老師課程的帶領，激發神魂，精進突破，超越生命無限的可能性，看見生命的極致法則。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-2-1一晚錄音側記.docx",
-    "tags": [
-      "年終錄音側記"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-1345746.jpg?v=1345746",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "年終錄音側記",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文字彙整 / 蕭怡萍",
-    "issueId": "202301",
-    "order": 2,
-    "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 5 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-2-1",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的誠意。朱秀金說：跟同年紀沒練功的人比起來，我們各方面好太多了，要繼續努力前進！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "2022歲末一分鐘錄音，二早班投票後決定不參加。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在積極行動中成長",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "對莫仁維而言，2022年是開展的一年，接班亞新工程顧問公司兩年之後，他掌握各種機會，積極行動。看到危機，帶動公司訂定策略，在公司內部推動技術的發展，與管理制度上的改革。接受很多單位的邀請，講了五場的演講，年終舉辦了中工會的年會，此外推動國民外交，也盡了心力。在氣機導引的團體中，年初分享香道的心得，推動電子報的觀行錄，四月份在會館開了第二班導引的課程。九月份又接受泰國朋友的邀請，參加對方線上平台，期待明年氣機導引課程的展開。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "有史以來，體驗了一堂沒有老師講課、只有練功準時下課的震撼。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "張尊堡這一年在工作、活動參與中，把氣機導引所學發揮在生活中，深刻感受到生活即是道場，道場即是生活。協助公司得標最近幾年最具代表性的計畫，全心投入計劃管理工作，代表公司到瑞士參加世界工程顧問研討會工作坊。年底籌辦中工會年會，主題發想、設計展覽都全程參與，又擔任主持工作。此外積極參與會館活動，撰寫電子報觀行錄，擔任莫帥六早班的助教，規劃雪山坑五感活動，在五感人間籌辦五次手工香的課程， 2022年是和生活賽跑的一年，做了很多新的事情。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "同學們心裡的各種驚訝聲音，在臉上浮出各式複雜神情。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "您注意到八德會館的氛圍和設備慢慢在改變中嗎？已精緻穩妥了起來，這是倪暐婷心力的結晶。辦理手工香的課程和茶結緣，從品香喝茶中認識了許多的朋友，衍生出不少茶與香的周邊商品。抱持一顆最誠摯的心，期望更多人認識香的美。學習聽人的話，感受人的氣，眼觀人的氣質，耳朵聆聽人的心情，鼻子嗅到人的精神狀態，透過五感，在聊天中，激盪出生命高度；在行動中，修正自己的弱點；在參悟中，提高智慧。挖掘出自己最閃耀的樣子，2022年是暐婷從青春邁向而立的成長年。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師在生氣？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "（我說得半死，你們連一分鐘都不說？）",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在自覺後跟上",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "莊雲鳳自覺要加緊學習腳步，好好的去感受身體，慢慢琢磨高深的無極。馬寶琴經過半年蝸居在家，深刻體會生活型態對身體健康的影響，目前正實施新生活運動，少言、減肥、多運動。參加慧敏入門班的課程，享受被操練後，全身汗水濕透的暢快！蔡小泓每星期都很期待上課，深感上課的濃度越來越高，怕稍有疏怠就遺漏了什麼，總要花很多時間去咀嚼，了解課程的連貫性。自覺身體的空間開發仍顯不足，努力追趕，希望藉老師跟同學共振的力量，跟上大家的腳步。洪淑敏探索著動作與心法的結合，在動作流動中進入一種感受的狀態。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師恨鐵不成鋼？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "（你們安於當螻蟻、畜牲，混吃等死？）",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在覺察中修正",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "林秉輝說每當覺察情緒有波動時，會對自己說「不，這不是真我」，先讓自己暫停一下。開始時有點困難，經過一次又一次練習，可以客觀看到自己的狀況，這是今年最大的收穫。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師在機會教育？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "楊慧敏說從來不覺得自己是一個用力的人，但身體是誠實的，覺得放鬆時，真的卸下身體僵硬了嗎？當事情來時，真的放下自己的堅持，而能夠不對抗的處理事情嗎？深感必須培養自我覺察的能力，隨時觀察自己的起心動念。期待自己像篆香的煙，隨風而起，隨風而動，事情來了就做，錯過就放下。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "（不在關鍵處下手你們焉能體會？）",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "范家豪持續觀察著心的起伏，發現事件到來時，心依舊會起伏，對到腦中的「識」以後，說出對抗性的語言，最後得不到好的結果。現在試著在心起伏時先緩一下，讓心不那麼震盪後，再去面對事情，沒有「識」的主導，只單純的去面對，比較不會跟對方產生衝突。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "班長尤其驚嚇，趕忙下課向老師求情不要不說心法，一邊讓同學趕緊補交一分鐘錄音。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "何秋玲說覺自己的本源、本心，大腦念頭少當家。好好去感受練功及日常的起心動念，少對立批判，學會接受一切、感恩一切。家雖然像一個枷鎖，但也是修行的好場所，有碰撞，覺察了就放下，一切順心，心順一切。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "不是讓我們選擇錄音與否嗎？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "原來，每個選擇都是有代價的。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在無常的挑戰中超越",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "羅心璇覺得2022年是最受病痛折磨的一年，在感受痛與不痛中打轉。聽著老師課堂的講述，下了課卻只想著如何解決自己的問題。雖無力深究課堂所聽到的內容，但是總可以從老師的言語裡得到一些救贖，感受到老師的關心與同學的溫暖，期許自己好好修練。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "選擇不錄音，是不想面對、偷懶、混過？那後座力就是何必為你上心。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "對謝珪如而言2022年是充滿挑戰的一年，被醫生告知需要動大手術，深感恐懼。老師的話讓她像吃了一顆定心丸，讓她挺過心臟手術的這一關，期許往後生命道路越走越好。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "我們沒有將心比心。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "這一年無常一再找上李秀娥，意外讓她受到近百日身體的疼痛與折磨；接著，最疼愛的小弟，細菌感染無預警的走了！腳痛還是心痛已分不清，打起精神，點一爐香，融入識香課程中，讓渙散的神魂慢慢恢復。轉念可以轉開身心所有的疼痛，決定提早回練功房，聞沉香，練無極，繼續往前走。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "赫然發現，我們有覺知生命裡的每一個選擇嗎？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "對游夙君來說，這一年面臨疫情與家人病痛帶來的變化，自己觀賞也參與人間劇場的演出，看見身為人的脆弱與有限，也從中咀嚼複雜的人性，體會超越自己的無限。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "每個選擇背後的心念都無所遁形，每個心念都是蝴蝶效應，波動一發遍及宇宙。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "高袖桐說因為擁有氣機導引無極、大地蘊藏的結晶沉香，還有跟老師和每個同學深厚的因緣，全身細胞在無限時空中俱足一切，靈魂烙印著幸福。愛過、恨過、做過，最終站起來。學會愛大家，勇敢接受所有的審判，邁入更高維度的追求。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "於是，在怕聽不到心法的促使下，全班火速錄好音上傳。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "隔週上課，老師記得每一個人的錄音內容，有點欣慰地說大家都有進步，然後講堂繼續開講～大家鬆了一口氣。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在成全中圓滿一切",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "胡琦瑛年邁的父親動了個小手術，飽受身體與心智之苦。她陪伴在父母身旁照顧，深感自己是有福報之人，老公的成全、包容、支持，讓她在原生家庭與婚姻家庭之間游刃有餘。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "聽著大家的一分鐘錄音，窺探了很多同學的進展，聽到了好多「金句」與心境。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "張台芬在識香課猜中沉香重量，有感於沉香會找人，並沒請回那塊沉香，她說讓事件圓滿，遠超過自己擁有那塊沉香。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「2022是我沈睡一甲子，逐漸醒來的一年。在我的第三人生階段，漸漸活出自己想要的樣子。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「低頭寫筆記時，眼眶會濕濕的，總覺得內心那個堅硬的部分，慢慢地一點一點被鬆動。」",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在變通中開創新局",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "對莊醫師習慣當天對病人的病況要完全掌握，並決定治療方法。這造成很大的壓力，以致跟病人解釋的口氣會很衝，有時令病人感到不悅。這一年莊醫師學會變通，和病人的互動也改變許多。「痛苦其實是自找的」，很多事情只要轉個念頭，結果就改善很多。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「當你看到別人不順眼時，你就在那裡，那都是你。從沒認清這點，直到老師點出，有如五雷灌頂，原來真相是這樣。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "林碧珠說自己像一隻被繩索綁住的象，習慣跟著繩索走，當主人離去，繩索斷了，就失去了方向，感到驚慌失措。將近三年摸索，加上張老師不斷地點醒，她試著把自己融入眾生中，發覺處處有愛和關懷，已慢慢適應一個人的生活。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「感恩是當我真正認識到我所領受到的而深受感動，一種發自我內心的東西。在無極中，把自己和身體的關係擴大、歸正，並專注其中，領受恩典。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「有一次在會館練功時非常安靜與安定，剎那間彷彿進入另外一個維度，和老師、和同學的動作與呼吸融合在一起，大家是一體的感覺，非常和諧與感動。」",
-        "type": "paragraph"
+        "level": 2,
+        "text": "在忘參覺悟中看見真相",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "阿充說當發現自己很多事情常常都記不起來了，開始會有點恐慌，但來後來發現沒動機去記，也就記不起來。之前多麼想用力的去記事情，背後的慾望有多麼的深。該記的事情神經元老早就連結好了，不然花再多的記憶細胞也沒有什麼用。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「漸漸明白什麼叫做老師說的『對了就錯了』的意思，找到身體內部空間力學的路徑而依序自然流動，及全然將身體融入當下的感受，我發現時空真的消失了。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "鄧美玲說要參悟的功課從「不要臉」、「本心」是什麼，進而深入去看自己到底被什麼「意識型態」綁架而不自知。我們自己最大的敵人是六根眼耳鼻舌身意，得時時刻刻注意自己的起心動念。開始《道傳》的撰寫，無時無刻不在另一個平行時空裡活著，活得很起勁。可以是禽獸，可以是螻蟻，也可以是能感知自己、修正自己的人，遊走在虛實之間，彰顯內心澎湃的想像，與對人類世界的期待與雄心壯志，深感幸福無比！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「無極功法就是動禪，在動盪中練就平穩的心性。在困境中，我試著先看自己的初心，之後不斷提醒自己不要上頭腦的當。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "Body Text",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "展望2023年，隨著老師課程的帶領，激發神魂，精進突破，超越生命無限的可能性，看見生命的極致法則。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「學習氣機導引讓我跳脫家庭主婦的框架，覺察要好好愛自己，不要再做被圈養的畜生。也懂得身上有光才有影子，沒有光連影子也沒有了。只有自己的努力，才對得起自己。」",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「學習無極，在動中感受到寧靜平和的美，雖然我並不熟練，但我似乎感受到無極的自在和諧所帶給我的安定。」",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「在我受傷不快樂時，我慢慢學會向內看自己的內心，看著無明的不安、恐懼反反覆覆在內心翻動，即時提醒自己不要有自我意識，不要胡思亂想，只要心定了，一切就會順利了。」",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「我過去的習性就是想很多但感覺較少，工作上都是用想的去解決問題，久而久之形成一種慣性。要像和尚敲木魚般時時敲來提醒自己。」",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "一分鐘錄音，是一個行動，如老師常說的，人必須從行動中才能看見自己，人在想法中是看不見自己的。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "還好，我們搭上了歲末反省末班車，讓老師給我們上了沈默的一課～",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-2-2",
-    "sourceId": "2301-2-2",
-    "excerpt": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
-    "slug": "202301-2301-2-2",
+    "slug": "202301-2301-2-1",
+    "image": "/assets/pixabay/pixabay-7390865.jpg?v=7390865",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-2-1",
+    "order": 1,
+    "excerpt": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的…",
+    "title": "一晚班 - 朝向生命的極致法則",
+    "sourceFileName": "2301-2-1一晚錄音側記.docx",
+    "author": "文字彙整 / 洪淑敏"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "二早班 - 搭上歲末反省末班車",
-    "sourceUrl": "",
+    "images": [],
+    "category": "年終錄音側記",
+    "tags": [
+      "年終錄音側記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "2022歲末一分鐘錄音，二早班投票後決定不參加。",
           "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
@@ -73949,353 +73641,334 @@ export const reviewDraftArticles = [
           "「我過去的習性就是想很多但感覺較少，工作上都是用想的去解決問題，久而久之形成一種慣性。要像和尚敲木魚般時時敲來提醒自己。」",
           "一分鐘錄音，是一個行動，如老師常說的，人必須從行動中才能看見自己，人在想法中是看不見自己的。",
           "還好，我們搭上了歲末反省末班車，讓老師給我們上了沈默的一課～"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-2-2二早班.docx",
-    "tags": [
-      "年終錄音側記"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-6701636.jpg?v=6701636",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "年終錄音側記",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文稿彙整 / 陳盈靜",
-    "issueId": "202301",
-    "order": 3,
-    "readTime": "約 7 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-2-2",
     "contentBlocks": [
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "2022歲末一分鐘錄音，二早班投票後決定不參加。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境」，最後在寧衛班長有魄力的一聲令下，翻轉投票的結果。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師說，不要小看這一分鐘的錄音，這一分鐘凝結自己2022年的體悟與收穫，而這一分鐘的凝結更化為未來一年的安定與力量。二晚班是一個有老鳥與菜鳥交融的班級。老師常說：「你們這些菜鳥還差遠勒……..」，但也因為我們這些菜鳥，注入一份「真誠」的能量在班級的氛圍與一分鐘錄音中；老師也常說：「你們這些練了十幾年還是這副死樣子……」，但也是因為這些老鳥的楷模與堅持，十幾年來每周固定出現在班上，這樣的態度是我們菜鳥的好榜樣阿！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "有史以來，體驗了一堂沒有老師講課、只有練功準時下課的震撼。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "在整理一篇篇班上同學一分鐘的文字內容中，我好像能體會到老師說的「凝結」，感覺似乎像一顆一顆的珍珠；有生命歷練成的珍珠、有對於心法體會、提升維度的珍珠、有真誠面對自己的珍珠、有融入大自然、品香、練功體悟的珍珠…..。感恩老師透過一分鐘的功課將這些凝結成珍珠、並「大珠小珠落玉盤」地串起東醫種子班家族每一位同學，願大家帶著自己淬鍊出來的珍珠告別2022年，勇敢地邁向2023！！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "寧衛",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "同學們心裡的各種驚訝聲音，在臉上浮出各式複雜神情。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年在生活上及心境上較大變化是：逐漸淡出沒有交集的朋友，廣義的朋友愈來愈少了，頓時覺得節能、省電、更輕鬆；事情來了，不退縮，力有未逮，也不逞強，接受自己的侷限，不貪念；練功時，開始往內覺察細胞組織的空間變化，也更加善待自己的身體，於是我聽到細胞的歡呼：當自利動機而引發起心動念時，立刻止住念想，誠實接受大腦的審判；生活中多了點香、品香、篆香，從觀察煙的流動中，學習放鬆不對抗，學習隨遇而安。111年仍然會內心糾結，仍然會有挫折感，仍然會有很多的仍然，但我相信無極的力量可以帶領我往好的方向轉變。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "淑玲",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "老師在生氣？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年因疫情的延續，減少很多的外出和不必要的人際往來。相對的增加了很多自己獨處的時間。透過練功和品香讓自己的身體放鬆，內心平靜。今年也有很多機會到雪山坑投入大自然。大家一起整理環境、泡溪水、赤腳踩在草地上，沒有任何想法，只是單純的把自己放在大自然裡，讓我身心靈都有所歸之處。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "家惠",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "（我說得半死，你們連一分鐘都不說？）",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年的疫情，家裡多人感染，復原過程，身心俱疲。是老師的課程身、心、靈的修習，才能安然度過艱難的日子。今年五月我先生從梯子上跌下來，傷到腳踝，住在公寓頂樓上下樓梯艱難，復健辛苦。先生接受我的建議，在家練習最基礎的導引功法，從旋踝開始，連續一個多月持續努力，現在行走自如。謝謝老師給我們提升身心靈的課程，讓我們能在生活中碰到問題，能勇於面對並且用對的方式處理好「人」和「事」。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "宗演",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "老師恨鐵不成鋼？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年感受最棒的上課內容之一就是五維度的「意念」，我們活在三維度空間，若加上時間就變成四維度，而五維度就是意念，不受時間的限制。我們生活的軌跡是命定之路，在五維度意念的改變，就可以創造出另一個平行的空間。真實生活中總有些不如意，但可以在意念中改變，走在另一個平行空間，感覺真好。這種好的感覺可以在練無極的時候來達成，方法就是練的過程裡，不要想著動作，隨著音樂讓意念融入動作中，練功就會感覺滿足與快樂。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "瑞玲",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "（你們安於當螻蟻、畜牲，混吃等死？）",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "生命有限，只要用開放的心，看待所有遇到的人與事。當有批判、比較、喜歡、討厭…等各式二元意識，要清楚明白，這些都與本心自性無關，才能維持收視反聽但心不亂。未來仍要持續鍛鍊體魄，讓有形機能運轉無礙。要追求惟識，讓心靈超越，提升生命價值與格局。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "鼎君",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "老師在機會教育？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "感謝老師今年10月讓我搭上直升機直接到二晚班上課，每一週的心靈啟發與身體的律動讓我宛如新生。例如最近老師解說關於我們對於意識形態的罣礙，直接應用在生活上，會提醒自己沒有什麼事應該或是對的，這讓我的心理與情緒得到很大的舒緩空間。過往年輕氣盛得理不饒人，會造成一時的情緒波動，傷人也傷己。雖然後來也學到得理且饒人的道理，不過也沒能改變實際的心理或行為。直到老師正言若反的解說中，加上功法的實踐，才讓我找到真正改變的法門。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "玉芬",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "（不在關鍵處下手你們焉能體會？）",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "回顧2022年，去年及今年歷經工作及生活型態的改變，已漸調整至平和的狀態，每次上課老師所言啟發良多，啟發自我覺察的能力，五感的體會也越來越靈敏。沒有什麼不可能，視無常為如常，泰然處之！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "威廷",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "班長尤其驚嚇，趕忙下課向老師求情不要不說心法，一邊讓同學趕緊補交一分鐘錄音。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "可以也可以，不可以也可以；站著也可以，躺著也可以；對也可以，錯也可以；放下執著，沒有對立。練功，理性、感性併用。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "清雲",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "不是讓我們選擇錄音與否嗎？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年四月因為住家整修，暫時遷居，沒想到有一次回原住處時，先生確診了，只好就地隔離。整修中的房子除了堆滿建材，也缺乏該有的設備和用品，生活變得很不方便，另方面又要避免自己被感染，讓我身心俱疲。想到老師曾經說過，要珍惜所遇到的困難，身體最大的訓練就是在無常中，面對事情要過得去。我試著重新調整心態，有了不同的思維方式，提水盥洗、用手電筒和蠟燭照明，反而成為另一種生活的體驗。也放下了緊繃的情緒。前天和昨天的我感覺沒甚麼不同，昨天和今天的我也沒感到有甚麼變化，但我知道二十年來，我在逐漸成長中。感謝老師的指導和同學的陪伴。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "淑敏",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "原來，每個選擇都是有代價的。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "生命的一畝田地中，播下無極內息導引與香道的種子，2022年年終們心自問：練無極的時候，心法我做到了嗎？還差很遠，只能不斷提醒自己，在覺的狀態下去流動每一個動作。煎香時鬆灰、理灰的過程中，我理清自己的起心動念了嗎？我感受到香的作用力了嗎？我辨識能力提升了嗎？仍待努力。具足了機緣與福報，到雪山坑親近大自然，深夜仰望滿天星斗，晨起看日出，雨中雲霧繚繞，千姿百態，令我驚豔，蜘蛛結網強韌的生命力令我讚嘆，感受溪水的流速，體會柔弱勝剛強的意涵。生命之流不斷往前，繼續突破超越，創造生命無限的可能性。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "鈺晶",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "選擇不錄音，是不想面對、偷懶、混過？那後座力就是何必為你上心。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "一分鐘，一輩子，無異。一年，一世，也是無異。一分鐘，於是也道不盡，來自累世刻入無盡無邊之識藏的覺察。種子瀑流湍湍汨汨，執持我行無時無間，如羊犬驅群羊，群羊簇擁群力如牢圍。覺，而能省；省，後則清；清，則有明：明，心見性。動也覺，靜也覺，希冀年年歲歲花相似，歲歲年年人不同。然而不同與相似卻遙乎幾何？慚！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "我們沒有將心比心。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "身語意，意先行於身語；義依文表銓。故以文等音，謹此。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "添豐",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "赫然發現，我們有覺知生命裡的每一個選擇嗎？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "跟隨老師學習氣機導引已有十幾載了，學到最近的無極才知道老師要我們跟隨自何處，也才知道自己軟硬體基本功有多差，不僅身體的功法沒跟上，連心法也差了一大截，老師一直都朝著自己的天道方式前進著，只渡有緣人及上進者，真怕自已落單了，希望今後能與老師的心法帶動身體的覺知，達到無極的境界，願與同學們一起跟隨老師踏上天道之路。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "盈靜",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "每個選擇背後的心念都無所遁形，每個心念都是蝴蝶效應，波動一發遍及宇宙。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師的心法中一直強調「感覺」，這幾年在東醫的修練中，在身體的感知越來越越敏感，跟著老師及同學一起練無極時，常常讓我身體每一個細胞得到舒緩、自由、有種幸福感！不過也發現會冒出不耐煩、急著完成動作的感覺。因工作專業的關係，進入情緒感覺對我來說不陌生，但對我的挑戰是….感覺之後呢？如何提起「不要想」的覺知與魄力！原來…讓我們耗能的是「繼續想下去」所衍生出來的劇本，而這些劇本光在我們腦中上演就夠瞧了！「繼續想下去」太容易、「不要想」是需要練習的。2022年經歷了疫情種種、工作、生活等挑戰，這些生命禮物讓我經驗到「維度提升」「不要想」需要多大的空間與魄力，內心要耐住孤單感，以及自己認為的「本來是這樣」，這是我需要繼續練習的功課。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "翠玲",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "於是，在怕聽不到心法的促使下，全班火速錄好音上傳。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "鬆動某些認為自己該是的樣子，不被想要別人也如此認同的身心驅力推動，於是多了些空間，可以自由選擇彼是此不是，那時不是這時是，都是，都不是。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "素花",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "隔週上課，老師記得每一個人的錄音內容，有點欣慰地說大家都有進步，然後講堂繼續開講～大家鬆了一口氣。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "當班長說又到了歲末錄一分鐘的錄音檔，很想參與，但是真的不知道說什麼，錄了好多次都沒有成功，後來放棄了，後來聽老師講的話，覺得自己很慚愧，其實這一分鐘是很好很好的機會，自己想太多了，擔心這個、害怕那個，其實老師要我們就是參與的當下，心的感覺，謝謝老師！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "鍠焜",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "聽著大家的一分鐘錄音，窺探了很多同學的進展，聽到了好多「金句」與心境。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "最近一段時間，老師從各種不同面向，以千變萬化的說法，描述原本不可說的「無極」，提示我們通達「無極」境界的門道，讓我們一點一滴領會、接近「無極」。在自主練習時間，同學們各自敘說自己的體會，也給予我很大的啟發。一段時間下來，覺得自己好像有一些些進展。但回頭看自己練功的狀況，還是問題重重。自己練功的一大問題是常會分心，在過程中不時地從「感覺」游移到「想法」，像是想辨認現在的動作正不正確、到不到位，符合不符合功法原則等。突然警覺自己想太多，才趕緊回到「感覺」。但過一會兒，又不知不覺飄走了。專一是禪定的基礎，但我似乎不太能專一。未來一年希望在這方面能有所改善。在練功過程中練習專一狀態，讓心意持續在感覺身體流動的變化，並逐漸增進感覺的細膩與深度；讓動作保持自然的螺旋、延伸、開合、絞轉，儘量不去想它、避免分心。這樣的練習方式，我自己也不知道妥不妥當？也不知道自己能做多少？未來應該還需要同學們指教和提醒，協助我有所進展。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "定華",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "「2022是我沈睡一甲子，逐漸醒來的一年。在我的第三人生階段，漸漸活出自己想要的樣子。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "最近我又在想，靈魂進化如果需要利用身體這個載具去實現的話，那這具肉身應該是很強大好用的，實在應該好好往內探索與身體對話。生命藍圖在靈魂階段早已規畫好，只是，出生時整套劇本不知忘在何處，一路走來渾渾噩噩，雖無大風大浪，大半生卻也過得平淡無奇，剩下的日子一轉身就會過去了，不天命，但能清楚明白地活上一時半刻也好，無極繼續練。近來，照顧長輩的事，大致摸索出了規律，適當的表達需求有其必要，暫時地離開放鬆也是必須，我相信靈魂設定是不會為難我們，故意讓人陷入絕境的。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "茂雄",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "「低頭寫筆記時，眼眶會濕濕的，總覺得內心那個堅硬的部分，慢慢地一點一點被鬆動。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "年底疫情終於解封了，染疫也不再讓大家這樣恐懼，現在彷彿是人人都應該確診過一次，沒有的人反而是少數。下半年老師的課程也越來越深，也讓我需要更多的思考來了解，畢竟本來的觀念被一一打破，去除既有想法，真的需要老師驚人的言語才有辦法敲破。去了一趟雪山坑，好山好水好修行的地方，真是讓人羨慕，但仍身處紅塵的自己，還是有許多牽絆，讓人不禁羨慕可以常去修行的同學，珍惜現在的學習時光，希望來年能更精進。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "美麗",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "「當你看到別人不順眼時，你就在那裡，那都是你。從沒認清這點，直到老師點出，有如五雷灌頂，原來真相是這樣。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "今年疫情邁入第三年了，腦中想起老師第一時間提醒我，公司先休業，以備萬一，由於個性使然，並沒有第一時間停止營業，經此事件，發現有些事情真的不要想太多，想太多心都亂了，在動盪不安的年，老師創造了無極，無極可以提供安定、安心，擔心我自己跟不上，也體會不到，但老師一直告訴我們去感覺，練功也是，不要想，就去感覺，好難喔！希望打破既有的模式，跳脫規矩，讓心能夠進到身體，練出感覺。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "type": "heading",
-        "text": "素蘭",
-        "level": 2
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "「感恩是當我真正認識到我所領受到的而深受感動，一種發自我內心的東西。在無極中，把自己和身體的關係擴大、歸正，並專注其中，領受恩典。」",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "關於意識形態，眾生落在這裡流轉染著，形成堅固的我執，以致造成對立衝突。老師提醒我們，不思善、不思惡，隨流任得性，無喜亦無憂。上週四氣溫驟降，二十幾年的退化性關節炎發作，膝蓋疼痛瘸著左腳，右腳拖地行，心想之前老師車禍，只知雙手護住師母，哪管自己腰椎已斷？昔二祖慧可遭奸人構陷，臨刑前可以說：「將頭迎白刃，猶如斬春風」。今昔典範寧不悟入？不能枉費老師的身教言教，區區膝痛，算啥？修心修見地報師恩。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「有一次在會館練功時非常安靜與安定，剎那間彷彿進入另外一個維度，和老師、和同學的動作與呼吸融合在一起，大家是一體的感覺，非常和諧與感動。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「漸漸明白什麼叫做老師說的『對了就錯了』的意思，找到身體內部空間力學的路徑而依序自然流動，及全然將身體融入當下的感受，我發現時空真的消失了。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「無極功法就是動禪，在動盪中練就平穩的心性。在困境中，我試著先看自己的初心，之後不斷提醒自己不要上頭腦的當。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「學習氣機導引讓我跳脫家庭主婦的框架，覺察要好好愛自己，不要再做被圈養的畜生。也懂得身上有光才有影子，沒有光連影子也沒有了。只有自己的努力，才對得起自己。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「學習無極，在動中感受到寧靜平和的美，雖然我並不熟練，但我似乎感受到無極的自在和諧所帶給我的安定。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「在我受傷不快樂時，我慢慢學會向內看自己的內心，看著無明的不安、恐懼反反覆覆在內心翻動，即時提醒自己不要有自我意識，不要胡思亂想，只要心定了，一切就會順利了。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "「我過去的習性就是想很多但感覺較少，工作上都是用想的去解決問題，久而久之形成一種慣性。要像和尚敲木魚般時時敲來提醒自己。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "一分鐘錄音，是一個行動，如老師常說的，人必須從行動中才能看見自己，人在想法中是看不見自己的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "還好，我們搭上了歲末反省末班車，讓老師給我們上了沈默的一課～",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-2-3",
-    "sourceId": "2301-2-3",
-    "excerpt": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境…",
-    "slug": "202301-2301-2-3",
+    "slug": "202301-2301-2-2",
+    "image": "/assets/pixabay/pixabay-1345746.jpg?v=1345746",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-2-2",
+    "order": 2,
+    "excerpt": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
+    "title": "二早班 - 搭上歲末反省末班車",
+    "sourceFileName": "2301-2-2二早班.docx",
+    "author": "文字彙整 / 蕭怡萍"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "二晚班 - 「老鳥」「菜鳥」在一班",
-    "sourceUrl": "",
+    "images": [],
+    "category": "年終錄音側記",
+    "tags": [
+      "年終錄音側記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境」，最後在寧衛班長有魄力的一聲令下，翻轉投票的結果。",
           "老師說，不要小看這一分鐘的錄音，這一分鐘凝結自己2022年的體悟與收穫，而這一分鐘的凝結更化為未來一年的安定與力量。二晚班是一個有老鳥與菜鳥交融的班級。老師常說：「你們這些菜鳥還差遠勒……..」，但也因為我們這些菜鳥，注入一份「真誠」的能量在班級的氛圍與一分鐘錄音中；老師也常說：「你們這些練了十幾年還是這副死樣子……」，但也是因為這些老鳥的楷模與堅持，十幾年來每周固定出現在班上，這樣的態度是我們菜鳥的好榜樣阿！",
@@ -74341,217 +74014,353 @@ export const reviewDraftArticles = [
           "今年疫情邁入第三年了，腦中想起老師第一時間提醒我，公司先休業，以備萬一，由於個性使然，並沒有第一時間停止營業，經此事件，發現有些事情真的不要想太多，想太多心都亂了，在動盪不安的年，老師創造了無極，無極可以提供安定、安心，擔心我自己跟不上，也體會不到，但老師一直告訴我們去感覺，練功也是，不要想，就去感覺，好難喔！希望打破既有的模式，跳脫規矩，讓心能夠進到身體，練出感覺。",
           "素蘭",
           "關於意識形態，眾生落在這裡流轉染著，形成堅固的我執，以致造成對立衝突。老師提醒我們，不思善、不思惡，隨流任得性，無喜亦無憂。上週四氣溫驟降，二十幾年的退化性關節炎發作，膝蓋疼痛瘸著左腳，右腳拖地行，心想之前老師車禍，只知雙手護住師母，哪管自己腰椎已斷？昔二祖慧可遭奸人構陷，臨刑前可以說：「將頭迎白刃，猶如斬春風」。今昔典範寧不悟入？不能枉費老師的身教言教，區區膝痛，算啥？修心修見地報師恩。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-2-3二晚.docx",
-    "tags": [
-      "年終錄音側記"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-7870374.jpg?v=7870374",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "年終錄音側記",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文稿彙整 / 蔡育展",
-    "issueId": "202301",
-    "order": 4,
-    "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 7 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-2-3",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境」，最後在寧衛班長有魄力的一聲令下，翻轉投票的結果。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮焉！上課時間總是充斥著笑聲與和樂氣氛，老師不論是萬箭齊發還是天女散花，到每個人心中應該都化成了朵朵蓮花，拈花微笑吧！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "老師說，不要小看這一分鐘的錄音，這一分鐘凝結自己2022年的體悟與收穫，而這一分鐘的凝結更化為未來一年的安定與力量。二晚班是一個有老鳥與菜鳥交融的班級。老師常說：「你們這些菜鳥還差遠勒……..」，但也因為我們這些菜鳥，注入一份「真誠」的能量在班級的氛圍與一分鐘錄音中；老師也常說：「你們這些練了十幾年還是這副死樣子……」，但也是因為這些老鳥的楷模與堅持，十幾年來每周固定出現在班上，這樣的態度是我們菜鳥的好榜樣阿！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "變動的虎年接近尾聲，在動盪的一年裡每個人經歷不同的改變。有人失去至親，有人經過疫情洗禮，有人在人事中、生活中一步一步的蛻變，也有人在看似原地踏步中蓄積著蛻變的力量。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "在整理一篇篇班上同學一分鐘的文字內容中，我好像能體會到老師說的「凝結」，感覺似乎像一顆一顆的珍珠；有生命歷練成的珍珠、有對於心法體會、提升維度的珍珠、有真誠面對自己的珍珠、有融入大自然、品香、練功體悟的珍珠…..。感恩老師透過一分鐘的功課將這些凝結成珍珠、並「大珠小珠落玉盤」地串起東醫種子班家族每一位同學，願大家帶著自己淬鍊出來的珍珠告別2022年，勇敢地邁向2023！！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "一切本自俱足，只看我們在哪一個面向、維度中看見並經歷。每年的一分鐘是一個極度濃縮的片刻，隨著生命的開展，也讓我們時不時地回憶這過去的片刻，回憶的當下那個時空就重現了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "這次袖桐將一分鐘錄音側寫的工作交給小弟敝人我，請容我以簡短的一兩句話還原出每一位的一分鐘。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "寧衛",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "今年在生活上及心境上較大變化是：逐漸淡出沒有交集的朋友，廣義的朋友愈來愈少了，頓時覺得節能、省電、更輕鬆；事情來了，不退縮，力有未逮，也不逞強，接受自己的侷限，不貪念；練功時，開始往內覺察細胞組織的空間變化，也更加善待自己的身體，於是我聽到細胞的歡呼：當自利動機而引發起心動念時，立刻止住念想，誠實接受大腦的審判；生活中多了點香、品香、篆香，從觀察煙的流動中，學習放鬆不對抗，學習隨遇而安。111年仍然會內心糾結，仍然會有挫折感，仍然會有很多的仍然，但我相信無極的力量可以帶領我往好的方向轉變。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "袖桐在經歷中讓靈魂去感受、體驗那豐富的情感，在陰陽、禍福，苦樂、得失中再站起來而平衡，向死而生時時重生，在情感中邁向更高維度。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "李明在失去親人中感受到警惕，重新思考一個方向， 開啟新的模式。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "淑玲",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "今年因疫情的延續，減少很多的外出和不必要的人際往來。相對的增加了很多自己獨處的時間。透過練功和品香讓自己的身體放鬆，內心平靜。今年也有很多機會到雪山坑投入大自然。大家一起整理環境、泡溪水、赤腳踩在草地上，沒有任何想法，只是單純的把自己放在大自然裡，讓我身心靈都有所歸之處。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "秀珠在歷練的當下看得愈具體、愈清楚，不追求廉價的治療、宗教式的信仰，扣住核心努力造自己的命。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "媛媛在香主人的身分中理解本心，獲得一種蛻變，進而在生活中衝動、念頭出現時有更大的覺知。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "家惠",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "今年的疫情，家裡多人感染，復原過程，身心俱疲。是老師的課程身、心、靈的修習，才能安然度過艱難的日子。今年五月我先生從梯子上跌下來，傷到腳踝，住在公寓頂樓上下樓梯艱難，復健辛苦。先生接受我的建議，在家練習最基礎的導引功法，從旋踝開始，連續一個多月持續努力，現在行走自如。謝謝老師給我們提升身心靈的課程，讓我們能在生活中碰到問題，能勇於面對並且用對的方式處理好「人」和「事」。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "金匙也是碰到親人離開，有種停滯不前的感覺，然而在近期的活動中看輕自己的狀態，希望能很快地走出自己築起的高牆。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "靜慧將功法融入到生活中，爬山時在呼吸之中輕鬆、怡然，兩小時臉不紅氣不喘，連失眠的時候也能派上用場。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "宗演",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "今年感受最棒的上課內容之一就是五維度的「意念」，我們活在三維度空間，若加上時間就變成四維度，而五維度就是意念，不受時間的限制。我們生活的軌跡是命定之路，在五維度意念的改變，就可以創造出另一個平行的空間。真實生活中總有些不如意，但可以在意念中改變，走在另一個平行空間，感覺真好。這種好的感覺可以在練無極的時候來達成，方法就是練的過程裡，不要想著動作，隨著音樂讓意念融入動作中，練功就會感覺滿足與快樂。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "壁芬則是練出一種安定自在，即使進出醫院也無罣礙，事到心頭都無事，一切都得以昇華。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "明美則是專注內在感知，大腦放空，動作記不得就算了， 享受那幸福的片刻就好，也期盼一個精意質變的時刻。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "瑞玲",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "生命有限，只要用開放的心，看待所有遇到的人與事。當有批判、比較、喜歡、討厭…等各式二元意識，要清楚明白，這些都與本心自性無關，才能維持收視反聽但心不亂。未來仍要持續鍛鍊體魄，讓有形機能運轉無礙。要追求惟識，讓心靈超越，提升生命價值與格局。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "碧云與家人經過疫情洗禮，體會到真正重要的東西是眼睛看不到的，練到無、空、虛，心裡無懼就沒事了，對於沉香的作用也有更多體會。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "游碧玉在疫情中發現自己對於家人的一份執著，也體會到心若無事境自遷。期待自己對於人、事，可以不論好壞對錯，都能明白，都能接受。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "鼎君",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "感謝老師今年10月讓我搭上直升機直接到二晚班上課，每一週的心靈啟發與身體的律動讓我宛如新生。例如最近老師解說關於我們對於意識形態的罣礙，直接應用在生活上，會提醒自己沒有什麼事應該或是對的，這讓我的心理與情緒得到很大的舒緩空間。過往年輕氣盛得理不饒人，會造成一時的情緒波動，傷人也傷己。雖然後來也學到得理且饒人的道理，不過也沒能改變實際的心理或行為。直到老師正言若反的解說中，加上功法的實踐，才讓我找到真正改變的法門。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "雅君不再是獨行俠，開始融入團體，也會主動發起活動。在團體中比較輕鬆，也看到別人的優點，自己變小了我執也卸下了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "陳碧玉從修行的四個條件出發，與自己立下誓約從生活中力行百日築基，期許來年進入不同維度。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "玉芬",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "回顧2022年，去年及今年歷經工作及生活型態的改變，已漸調整至平和的狀態，每次上課老師所言啟發良多，啟發自我覺察的能力，五感的體會也越來越靈敏。沒有什麼不可能，視無常為如常，泰然處之！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "崑宗在二十多年練功中有許多體悟，在功法中實踐體呼吸、與丹田、湧泉的運作，讓功法成為晚年良伴。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "志楣重新回歸，功夫即使比不上師兄姊，身體健康心裡歡喜，也記得無極動作自己很滿意。雖然沒上香道課，在鼻根上也長出功夫了。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "威廷",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "可以也可以，不可以也可以；站著也可以，躺著也可以；對也可以，錯也可以；放下執著，沒有對立。練功，理性、感性併用。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "育展去年頭殼空空的，今年就反常的有點想太多，都在陰陽，沒有無極。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "level": 2,
+        "text": "清雲",
+        "type": "heading"
+      },
+      {
+        "text": "今年四月因為住家整修，暫時遷居，沒想到有一次回原住處時，先生確診了，只好就地隔離。整修中的房子除了堆滿建材，也缺乏該有的設備和用品，生活變得很不方便，另方面又要避免自己被感染，讓我身心俱疲。想到老師曾經說過，要珍惜所遇到的困難，身體最大的訓練就是在無常中，面對事情要過得去。我試著重新調整心態，有了不同的思維方式，提水盥洗、用手電筒和蠟燭照明，反而成為另一種生活的體驗。也放下了緊繃的情緒。前天和昨天的我感覺沒甚麼不同，昨天和今天的我也沒感到有甚麼變化，但我知道二十年來，我在逐漸成長中。感謝老師的指導和同學的陪伴。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "天行健，君子以自強不息。地勢坤，君子以厚德載物。行動、沉潛也都是變，大步邁開是變，躊躇不前也是變，為與不為都是圓滿。濃縮了過去一年，也期盼新的一年。在新的一年哩， 在變動中、行動中看見一種圓滿。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "淑敏",
+        "type": "heading"
+      },
+      {
+        "text": "生命的一畝田地中，播下無極內息導引與香道的種子，2022年年終們心自問：練無極的時候，心法我做到了嗎？還差很遠，只能不斷提醒自己，在覺的狀態下去流動每一個動作。煎香時鬆灰、理灰的過程中，我理清自己的起心動念了嗎？我感受到香的作用力了嗎？我辨識能力提升了嗎？仍待努力。具足了機緣與福報，到雪山坑親近大自然，深夜仰望滿天星斗，晨起看日出，雨中雲霧繚繞，千姿百態，令我驚豔，蜘蛛結網強韌的生命力令我讚嘆，感受溪水的流速，體會柔弱勝剛強的意涵。生命之流不斷往前，繼續突破超越，創造生命無限的可能性。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "鈺晶",
+        "type": "heading"
+      },
+      {
+        "text": "一分鐘，一輩子，無異。一年，一世，也是無異。一分鐘，於是也道不盡，來自累世刻入無盡無邊之識藏的覺察。種子瀑流湍湍汨汨，執持我行無時無間，如羊犬驅群羊，群羊簇擁群力如牢圍。覺，而能省；省，後則清；清，則有明：明，心見性。動也覺，靜也覺，希冀年年歲歲花相似，歲歲年年人不同。然而不同與相似卻遙乎幾何？慚！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "身語意，意先行於身語；義依文表銓。故以文等音，謹此。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "添豐",
+        "type": "heading"
+      },
+      {
+        "text": "跟隨老師學習氣機導引已有十幾載了，學到最近的無極才知道老師要我們跟隨自何處，也才知道自己軟硬體基本功有多差，不僅身體的功法沒跟上，連心法也差了一大截，老師一直都朝著自己的天道方式前進著，只渡有緣人及上進者，真怕自已落單了，希望今後能與老師的心法帶動身體的覺知，達到無極的境界，願與同學們一起跟隨老師踏上天道之路。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "盈靜",
+        "type": "heading"
+      },
+      {
+        "text": "老師的心法中一直強調「感覺」，這幾年在東醫的修練中，在身體的感知越來越越敏感，跟著老師及同學一起練無極時，常常讓我身體每一個細胞得到舒緩、自由、有種幸福感！不過也發現會冒出不耐煩、急著完成動作的感覺。因工作專業的關係，進入情緒感覺對我來說不陌生，但對我的挑戰是….感覺之後呢？如何提起「不要想」的覺知與魄力！原來…讓我們耗能的是「繼續想下去」所衍生出來的劇本，而這些劇本光在我們腦中上演就夠瞧了！「繼續想下去」太容易、「不要想」是需要練習的。2022年經歷了疫情種種、工作、生活等挑戰，這些生命禮物讓我經驗到「維度提升」「不要想」需要多大的空間與魄力，內心要耐住孤單感，以及自己認為的「本來是這樣」，這是我需要繼續練習的功課。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "翠玲",
+        "type": "heading"
+      },
+      {
+        "text": "鬆動某些認為自己該是的樣子，不被想要別人也如此認同的身心驅力推動，於是多了些空間，可以自由選擇彼是此不是，那時不是這時是，都是，都不是。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "素花",
+        "type": "heading"
+      },
+      {
+        "text": "當班長說又到了歲末錄一分鐘的錄音檔，很想參與，但是真的不知道說什麼，錄了好多次都沒有成功，後來放棄了，後來聽老師講的話，覺得自己很慚愧，其實這一分鐘是很好很好的機會，自己想太多了，擔心這個、害怕那個，其實老師要我們就是參與的當下，心的感覺，謝謝老師！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "鍠焜",
+        "type": "heading"
+      },
+      {
+        "text": "最近一段時間，老師從各種不同面向，以千變萬化的說法，描述原本不可說的「無極」，提示我們通達「無極」境界的門道，讓我們一點一滴領會、接近「無極」。在自主練習時間，同學們各自敘說自己的體會，也給予我很大的啟發。一段時間下來，覺得自己好像有一些些進展。但回頭看自己練功的狀況，還是問題重重。自己練功的一大問題是常會分心，在過程中不時地從「感覺」游移到「想法」，像是想辨認現在的動作正不正確、到不到位，符合不符合功法原則等。突然警覺自己想太多，才趕緊回到「感覺」。但過一會兒，又不知不覺飄走了。專一是禪定的基礎，但我似乎不太能專一。未來一年希望在這方面能有所改善。在練功過程中練習專一狀態，讓心意持續在感覺身體流動的變化，並逐漸增進感覺的細膩與深度；讓動作保持自然的螺旋、延伸、開合、絞轉，儘量不去想它、避免分心。這樣的練習方式，我自己也不知道妥不妥當？也不知道自己能做多少？未來應該還需要同學們指教和提醒，協助我有所進展。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "定華",
+        "type": "heading"
+      },
+      {
+        "text": "最近我又在想，靈魂進化如果需要利用身體這個載具去實現的話，那這具肉身應該是很強大好用的，實在應該好好往內探索與身體對話。生命藍圖在靈魂階段早已規畫好，只是，出生時整套劇本不知忘在何處，一路走來渾渾噩噩，雖無大風大浪，大半生卻也過得平淡無奇，剩下的日子一轉身就會過去了，不天命，但能清楚明白地活上一時半刻也好，無極繼續練。近來，照顧長輩的事，大致摸索出了規律，適當的表達需求有其必要，暫時地離開放鬆也是必須，我相信靈魂設定是不會為難我們，故意讓人陷入絕境的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "茂雄",
+        "type": "heading"
+      },
+      {
+        "text": "年底疫情終於解封了，染疫也不再讓大家這樣恐懼，現在彷彿是人人都應該確診過一次，沒有的人反而是少數。下半年老師的課程也越來越深，也讓我需要更多的思考來了解，畢竟本來的觀念被一一打破，去除既有想法，真的需要老師驚人的言語才有辦法敲破。去了一趟雪山坑，好山好水好修行的地方，真是讓人羨慕，但仍身處紅塵的自己，還是有許多牽絆，讓人不禁羨慕可以常去修行的同學，珍惜現在的學習時光，希望來年能更精進。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "美麗",
+        "type": "heading"
+      },
+      {
+        "text": "今年疫情邁入第三年了，腦中想起老師第一時間提醒我，公司先休業，以備萬一，由於個性使然，並沒有第一時間停止營業，經此事件，發現有些事情真的不要想太多，想太多心都亂了，在動盪不安的年，老師創造了無極，無極可以提供安定、安心，擔心我自己跟不上，也體會不到，但老師一直告訴我們去感覺，練功也是，不要想，就去感覺，好難喔！希望打破既有的模式，跳脫規矩，讓心能夠進到身體，練出感覺。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "level": 2,
+        "text": "素蘭",
+        "type": "heading"
+      },
+      {
+        "text": "關於意識形態，眾生落在這裡流轉染著，形成堅固的我執，以致造成對立衝突。老師提醒我們，不思善、不思惡，隨流任得性，無喜亦無憂。上週四氣溫驟降，二十幾年的退化性關節炎發作，膝蓋疼痛瘸著左腳，右腳拖地行，心想之前老師車禍，只知雙手護住師母，哪管自己腰椎已斷？昔二祖慧可遭奸人構陷，臨刑前可以說：「將頭迎白刃，猶如斬春風」。今昔典範寧不悟入？不能枉費老師的身教言教，區區膝痛，算啥？修心修見地報師恩。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       }
     ],
-    "homeAnchor": "#article-202301-2301-2-4",
-    "sourceId": "2301-2-4",
-    "excerpt": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮…",
-    "slug": "202301-2301-2-4",
+    "slug": "202301-2301-2-3",
+    "image": "/assets/pixabay/pixabay-6701636.jpg?v=6701636",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-2-3",
+    "order": 3,
+    "excerpt": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境…",
+    "title": "二晚班 - 「老鳥」「菜鳥」在一班",
+    "sourceFileName": "2301-2-3二晚.docx",
+    "author": "文稿彙整 / 陳盈靜"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "四午班 - 在變動中、行動中看見圓滿",
-    "sourceUrl": "",
+    "images": [],
+    "category": "年終錄音側記",
+    "tags": [
+      "年終錄音側記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮焉！上課時間總是充斥著笑聲與和樂氣氛，老師不論是萬箭齊發還是天女散花，到每個人心中應該都化成了朵朵蓮花，拈花微笑吧！",
           "變動的虎年接近尾聲，在動盪的一年裡每個人經歷不同的改變。有人失去至親，有人經過疫情洗禮，有人在人事中、生活中一步一步的蛻變，也有人在看似原地踏步中蓄積著蛻變的力量。",
@@ -74573,541 +74382,217 @@ export const reviewDraftArticles = [
           "志楣重新回歸，功夫即使比不上師兄姊，身體健康心裡歡喜，也記得無極動作自己很滿意。雖然沒上香道課，在鼻根上也長出功夫了。",
           "育展去年頭殼空空的，今年就反常的有點想太多，都在陰陽，沒有無極。",
           "天行健，君子以自強不息。地勢坤，君子以厚德載物。行動、沉潛也都是變，大步邁開是變，躊躇不前也是變，為與不為都是圓滿。濃縮了過去一年，也期盼新的一年。在新的一年哩， 在變動中、行動中看見一種圓滿。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-2-4四午一分鐘.docx",
-    "tags": [
-      "年終錄音側記"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-2183489.jpg?v=2183489",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "年終錄音側記",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文稿彙整 / 沈紅玫",
-    "issueId": "202301",
-    "order": 5,
-    "readTime": "約 7 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-2-4",
     "contentBlocks": [
       {
-        "styleName": "預設值",
-        "styleId": "a6",
+        "text": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮焉！上課時間總是充斥著笑聲與和樂氣氛，老師不論是萬箭齊發還是天女散花，到每個人心中應該都化成了朵朵蓮花，拈花微笑吧！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識形態。真正的道行，沒有意識形態。一分鐘要聽你發生什麼事情，不需要去作什麼題目隱藏，人不要有鴕鳥心態。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "預設值",
-        "styleId": "a6",
+        "text": "變動的虎年接近尾聲，在動盪的一年裡每個人經歷不同的改變。有人失去至親，有人經過疫情洗禮，有人在人事中、生活中一步一步的蛻變，也有人在看似原地踏步中蓄積著蛻變的力量。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "難得的是，老師上課時針對個別同學說到老師從他們的錄音「看到」了什麼，因而，本次整理依點名序號，先列出學員心得摘要，後附上老師的提點，以利大家以有練無，提高維度。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "一切本自俱足，只看我們在哪一個面向、維度中看見並經歷。每年的一分鐘是一個極度濃縮的片刻，隨著生命的開展，也讓我們時不時地回憶這過去的片刻，回憶的當下那個時空就重現了。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "沈紅玫：一個工作定義了自己的人，在生老病死的課程面前大夢初醒似地說：「我休息了。」希望藉著品香、靜坐、練功和整理筆記慢慢找到自己。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "這次袖桐將一分鐘錄音側寫的工作交給小弟敝人我，請容我以簡短的一兩句話還原出每一位的一分鐘。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】不要把自己逼得太緊，人生後面還有很大的空間，為何一定要順原來那條老路走呢？",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "袖桐在經歷中讓靈魂去感受、體驗那豐富的情感，在陰陽、禍福，苦樂、得失中再站起來而平衡，向死而生時時重生，在情感中邁向更高維度。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "林芬蓉：忙碌充實豐收的一年，品香和無極是夜夜面對自己的靜心角落。在沉香溫暖氣息陪伴下，心平氣和，誠懇面對自己，一遍又一遍地在無極中揮汗重來。有夢最美，希望相隨。資深的笨鳥並不介意慢飛。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "李明在失去親人中感受到警惕，重新思考一個方向， 開啟新的模式。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "林碧珠：遠離傷痛——離開兩人世界近三年，曾經因失去人生方向而深感驚慌失措。將近三年的摸索加上張老師不斷的點醒，終於撥雲見日，不再被家的意識形態綑綁，發現了生命的開闊，人間的愛與關懷。無限感恩老師和師母的無私與包容。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "秀珠在歷練的當下看得愈具體、愈清楚，不追求廉價的治療、宗教式的信仰，扣住核心努力造自己的命。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】阿珠的跨度很大。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "媛媛在香主人的身分中理解本心，獲得一種蛻變，進而在生活中衝動、念頭出現時有更大的覺知。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "洪淑敏：生命的一畝田中，播下無極內息導引與香道的種子，心知機緣福報俱足，仍努力省視自己練無極是否了悟心法，品香是否清理了自己的起心動念。感到尚有很多不足，仍待努力。對雪山坑的景物產生很多感覺。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "金匙也是碰到親人離開，有種停滯不前的感覺，然而在近期的活動中看輕自己的狀態，希望能很快地走出自己築起的高牆。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】患了太過感覺抽象化的毛病。何謂心法？你現在作動作是用什麼心態就是心法，讓你的心放在一個感覺的狀態跟動作merge就可以了。不要想，就可以了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "靜慧將功法融入到生活中，爬山時在呼吸之中輕鬆、怡然，兩小時臉不紅氣不喘，連失眠的時候也能派上用場。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "胡琦瑛：年初因一個錯誤決定，讓年邁的父親動了小手術而飽受身體與心智之苦，內心無比愧疚，但同時也感謝有這樣的福報，可以讓我承擔起照顧與陪伴父母親的機會，這當中真心感謝老公的成全、包容、支持與滿滿的愛。我們都是有福報之人，背後有張老師幫忙撐著，扛著，感謝老師傾囊相授，無極，教我一切都可以，沉香教我氣質，雪山坑告訴我大自然的共生生態，這輩子要學的太多，學不完下輩子繼續學。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "壁芬則是練出一種安定自在，即使進出醫院也無罣礙，事到心頭都無事，一切都得以昇華。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "楊清雲：住家整修，先生確診，就地隔離，生活上的不便加上擔心遭感染的恐懼，身心俱疲，幸好想到老師的話：要珍惜所遇到的困難，身體最大的訓練就是在無常中，面對事情要過得去而重新調整心態，有了不同的思維方式。日常中感覺不出自己的改變，但知道自己在逐漸成長。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "明美則是專注內在感知，大腦放空，動作記不得就算了， 享受那幸福的片刻就好，也期盼一個精意質變的時刻。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】日子一天一天沒有差別，但她可以感覺生命已不相同。這是性情在不一樣而非技術在不一樣，這是很大的進步，你找到自己更大的可能，不是工作的自信，而是人格的自信。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "碧云與家人經過疫情洗禮，體會到真正重要的東西是眼睛看不到的，練到無、空、虛，心裡無懼就沒事了，對於沉香的作用也有更多體會。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "詹朝基：特引《心靈捕手》裡的一段話:「大部分人從沒有機會知道自己能夠有多聰明。他們沒有找到相信他們的老師。誤以為是自己太笨。」",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "游碧玉在疫情中發現自己對於家人的一份執著，也體會到心若無事境自遷。期待自己對於人、事，可以不論好壞對錯，都能明白，都能接受。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】阿基師觀察敏銳，談教育，用心靈捕手裡的話，但老師只同意：你有這種福報，當你對一種東西有一種熱情，站出來，你就變天才。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "預設值",
-        "styleId": "a6",
+        "text": "雅君不再是獨行俠，開始融入團體，也會主動發起活動。在團體中比較輕鬆，也看到別人的優點，自己變小了我執也卸下了。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "一個人蛻變才能提高高度看見自己。人在挫折中是沒有餘裕看見自己的。老師創造這個機會給你挫折，並且指出來告訴你，你總可以從中看見什麼了吧？這跟老師自己有什麼高度無關，而是老師看得見你可以有什麼高度，讓你自己看見。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "預設值",
-        "styleId": "a6",
+        "text": "陳碧玉從修行的四個條件出發，與自己立下誓約從生活中力行百日築基，期許來年進入不同維度。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "蔡麗珍：二十年，從壯年來到初老，老師上課的內容也變高深了。上課，有時像被充電中，有時像被電擊到，有時甚至連結不上。資質不高，但相信自己的細胞已有記憶和累積一些東西。在日常生活中體現出來時，心情便很愉悅。卑微地希望有健康的身體。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "崑宗在二十多年練功中有許多體悟，在功法中實踐體呼吸、與丹田、湧泉的運作，讓功法成為晚年良伴。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "【老師點評】我們阿珍，你要忘掉自己的老！你認為自己有一點進步了，那就很好。不要被暗示自己老了，沒有用了，別說什麼從前一個人可以當三個人用叫作好，老子不是說：「堅強者，死之徒；柔弱者，生之徒」嗎？一個人當半個人用才是老子的哲學。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "志楣重新回歸，功夫即使比不上師兄姊，身體健康心裡歡喜，也記得無極動作自己很滿意。雖然沒上香道課，在鼻根上也長出功夫了。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "只有自己怎麼看自己才是真的，不要被暗示。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "預設值",
-        "styleId": "a6",
+        "text": "育展去年頭殼空空的，今年就反常的有點想太多，都在陰陽，沒有無極。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "老師現在講得越來越高深，不是老師高深，而是你越來越高深，你不理解，但是你已經看見，你已經有高低之分，表示你已經有進步，比那些完全狀況外的人強太多了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "內文 A",
-        "styleId": "A5",
+        "text": "天行健，君子以自強不息。地勢坤，君子以厚德載物。行動、沉潛也都是變，大步邁開是變，躊躇不前也是變，為與不為都是圓滿。濃縮了過去一年，也期盼新的一年。在新的一年哩， 在變動中、行動中看見一種圓滿。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "賴美惠：感觸兩件事, 一個工作上的朋友前一天跟你談笑風生, 隔天就因為車禍死亡, 且後事沒人幫他辦, 因為找不到他的家人。另一件是幾個相處20幾年的同事不預期地退休了, 辦公室少了話當年的同伴們, 心裡很是失落, 這也是另一種的「生離死別」吧。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
+        "type": "paragraph",
         "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】一分鐘是要有一個共同的標靶，每一個人都在共同的經驗裡，很容易照見自己，看到過去你是面對什麼樣的困局，你如何爬出來。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "韓憶萍：在雪山坑借鏡老師對師兄姊的指點而大有心得，並感受到每個人都有無限可能，決定從此不再多想，練，就對了。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "十一月確診中認真觀察自己生理心理的變化，喪失嗅覺卻因轉念而放棄對香味的追求，儘管仍感受不到氣，但決定不再多想，聞，就對了。*",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "洪富雄：疫情下，我也確診了，託大家的福有驚無險。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "很高興我們不受影響能夠繼續練功。能到會館練功，在家練練無極，做做早晚課，真的讓生活充實不少。感慨最深的是有幾個非常要好的老友同學走了。我們好好珍惜，好好過日子吧。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】校長，謝謝你，你得了新冠之後知道自己應該珍惜此後的每一個刻。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "冷莉萍：這一年為了一件事情，花很多心力，捨棄其他更重要的事；忙到年底收成時，成果卻是一場空！",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「挫折」一向都是讓我反省再進化的動力。在香中的安定，知足，感恩……覺得很幸福！",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "預設值",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】其實，努力沒有結果，賺到的最多。工作歸工作，你的努力被採納就已經埋單結束了，失敗才留給你神魂反省檢討的空間。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "施智仁：感嘆大家的生活因疫情、戰爭、兩岸關係等外在因素而動盪不安，慶幸有老師和氣機導引，願大家來年更加精進。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "張惠芬：好不容易安頓好先生的安養問題，又得處理延宕許久的砂石場問題，再加上共事45年的同事請辭和親友的不幸消息接踵而至，我不禁要問今年到底是怎麼了。好在，有老師的教誨。氣機導引讓我在身心靈上築了一道防火牆, 有較高維度的抗壓力去面對，去處理。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】人不要想安定，你的人生不是只有今年最動盪。沙石場的問題要謹慎處理，公共事務的貪污瀆職、官商勾結、沒有良心是台灣最黑的地方，不過，不經一事，不長一智，會被騙的，都是有貪念，人有貪念就很好騙。人事上的是與非都要懂，我們在「上面」才可以轉。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "嚴盛俊：年初左膝開始不舒服，一年來尋求物理診治也服用了藥物，情況表面上控制了。感慨人生每個階段都有它的問題存在，目前只希望左膝不要惡化，還能繼續練功。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】膝蓋有問題，就被嚇成這樣？如果診斷跟醫療都沒有辦法把人從苦難中救贖出來，我寧願你不要告訴我，而且還是用權威的語氣告訴我，那才更糟。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "本來勇敢自在地生活，卻被一些下三濫嚇成這樣！嚴先生應該常來跟老師討論他很擅長的股票之類的事，卻因膝蓋而去給那些王祿仔ông-lo̍k-á嚇。人不要做錯的事。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "李淑玲：因疫情延續，減少很多外出和不必要的人際往來，增加很多獨處時間。透過練功和品香讓自己的身體放鬆，內心平靜。在雪山坑投入大自然。大家一起整理環境，泡泡溪水，赤腳踩在草地上。沒有任何想法，只是單純的把自己放在大自然裡，讓身心靈都能有所歸之處。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "黃惠如：生活中疲於奔命，茫茫然，陷在其中。只怪自己修練不夠，還不能從容應付。提高維度和境界，是很難的人生功課。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】講話就講話，不要搞怪。妳還是掉入了生活的緊張試煉裡，還是為了自己沒有被善待，只是為了配合而配合，難怪越來越不順心。每個人都是越來越不好的，老花眼、白內障、高血壓、糖尿病，但那又怎樣？不要老是覺得自己這樣又那樣的。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "朱芮瑩：生命中常會有些事，因為不想面對而一再為自己重覆發生。雖然還在迷霧中探索，但總算開啟了撥雲見日的契機。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "百日築基、練精化氣、練氣化神、練神還虛、練虛合道、道法自然。這是張老師給我們撥雲見日的工具。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "嗜欲深者天機淺，現在我知道我自以為的感覺其實都是大腦的識覺，不是六根自性的覺，我用了這個識覺創造了自以為是的苦與樂，甚至還很耽溺於這種識覺產生的情緒(內分泌)。現在，我知道，我要用這六個法門，走向無極之道。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "沈寧衛：淡出無交集的朋友；接受自己的侷限；覺察身體並止住自利念想；觀煙學習隨遇而安；並相信無極是提升自己的力量。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】小辣椒裝成熟、裝好人，說出謝謝聆聽，不錯。跟慧敏一樣，都是那麼努力。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "高袖桐：花開讓人看到，人可以感受一切看到自己。藉一生百日築基相遇的三寶——沉香、無極、跟老師同學的緣分，成就豐盛的情感，無限時空中具足一切相信的幸福。每年一分鐘的提醒，勇敢地接受生命所有的降臨——向死而生，時時重生。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "邱松萬：感慨工作與生活受到疫情影響。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】疫情期間，老人院走了不少人。應該換個地方去做，老人氣太重，相互感染，看老人一個一個走了，你的人也變得死氣沉沉。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "楊慧敏：忙季結束，全身緊繃，張老師提醒太用力了，我卻因在慣性中而不自覺，必須重新自我覺察，觀察起心動念。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】一年的一分鐘不要停留在短暫的現象中。不要只是努力、用力，而要巧力，不要在同一點裡一直往上跳，想要越過那個高度，而要嘗試跨維度：跳遠，不也是跳嗎？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "余媛媛：從理解本心開始，覺察自己的初心，時時提醒自己謹言，莫要衝動出口；還有一個關鍵的練習，就是當任何感覺、想法、念頭出現時，要立即告訴自己「那不是我！」",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "預設值",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "預設值",
-        "styleId": "a6",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "媛媛參加雪山坑的五感活動，作香主人，什麼都是別人準備好的，她坐上去演那個主人，也是演得很高興。她身上沒有「好爭性」，不會明爭，會低頭、轉頭、逆來順受。妳應該在活動中看到自己的意義。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "李世薇：忙碌的一年，也是很少上課的一年。陪病住院。自家診所人手短缺，一個人當三個人用。儘管很累，內心卻沒有一點埋怨，而是遇事就用平常心對待，努力活在當下，把一切事情盡力做好，做過就放下。老師說過，練功就是要活用在生活裡！凡事都往好處想，就會做什麼事情都覺得開心。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】在疫情中我們看到現在跟以前的對比，我們是活在被安排中。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "曹煜哲：2022年我把盆栽都種到土裡去，拔草成了我日常最主要的工作。在那些刺人的，割人的，難以根除的，或捨不得根除的「易拔難拔」之間，我對小草的生命力產生了由衷的感佩。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "蔡文鈞：過去一年家中的變動，讓我在不確定中感到不安與恐懼。一年過後家中狀況漸漸好轉，回想這一切轉折，除了感恩上天的安排，更看到自己在逆境中的自私與軟弱。感謝老師的正能量和師兄姊的陪伴。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "內文 A",
-        "styleId": "A5",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "【老師點評】文鈞因為家務事而心力交瘁：莫執著。",
-        "type": "paragraph"
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-2-6",
-    "sourceId": "2301-2-6",
-    "excerpt": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識…",
-    "slug": "202301-2301-2-6",
+    "slug": "202301-2301-2-4",
+    "image": "/assets/pixabay/pixabay-7870374.jpg?v=7870374",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-2-4",
+    "order": 4,
+    "excerpt": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮…",
+    "title": "四午班 - 在變動中、行動中看見圓滿",
+    "sourceFileName": "2301-2-4四午一分鐘.docx",
+    "author": "文稿彙整 / 蔡育展"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "五晚班 - 為何要走原來那條老路呢？",
-    "sourceUrl": "",
+    "images": [],
+    "category": "年終錄音側記",
+    "tags": [
+      "年終錄音側記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識形態。真正的道行，沒有意識形態。一分鐘要聽你發生什麼事情，不需要去作什麼題目隱藏，人不要有鴕鳥心態。",
           "難得的是，老師上課時針對個別同學說到老師從他們的錄音「看到」了什麼，因而，本次整理依點名序號，先列出學員心得摘要，後附上老師的提點，以利大家以有練無，提高維度。",
@@ -75165,188 +74650,548 @@ export const reviewDraftArticles = [
           "曹煜哲：2022年我把盆栽都種到土裡去，拔草成了我日常最主要的工作。在那些刺人的，割人的，難以根除的，或捨不得根除的「易拔難拔」之間，我對小草的生命力產生了由衷的感佩。",
           "蔡文鈞：過去一年家中的變動，讓我在不確定中感到不安與恐懼。一年過後家中狀況漸漸好轉，回想這一切轉折，除了感恩上天的安排，更看到自己在逆境中的自私與軟弱。感謝老師的正能量和師兄姊的陪伴。",
           "【老師點評】文鈞因為家務事而心力交瘁：莫執著。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-2-6五晚班.docx",
-    "tags": [
-      "年終錄音側記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 7 分鐘",
+    "sourceUrl": "",
     "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
-    "imageCaption": "",
-    "author": "游夙君",
-    "issueId": "202301",
-    "order": 6,
-    "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceId": "2301-2-6",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識形態。真正的道行，沒有意識形態。一分鐘要聽你發生什麼事情，不需要去作什麼題目隱藏，人不要有鴕鳥心態。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討論過程常有感被雷劈到，其中最有感的一次是，習慣幕後的我，在活動規劃已有雛型時，只打算參與，明明對某個活動主題感覺陌生，心想已推辭了前一個活動，便一口答應。然會議後馬上後悔，但沒膽再推辭，簡直是精神分裂的自我。趕緊找了慧敏及淑敏當救兵來完成規劃。有感此過程的自己是不斷在矛盾整合中迎向此次活動，後來做了一個固守傳統而斬殺創新的驚醒夢境，微調計畫，心定。整體的核心議題是不信任自己。而上山後發現原來什麼都不需要做，只需要聽其自然。聽自身的自然，聽他人的自然，聽場域裡發生的自然。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "難得的是，老師上課時針對個別同學說到老師從他們的錄音「看到」了什麼，因而，本次整理依點名序號，先列出學員心得摘要，後附上老師的提點，以利大家以有練無，提高維度。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "由於活動的最後不小心跌了一跤，事後做了一些書寫及聯想來安頓自己的同時，找到了由謝爾．弗爾斯坦(Shel Silverstein)撰寫及插圖的《往上跌了一跤》，藉其童心的想像力也連結真實生活的視野，作為加入活動籌備到經驗三天兩夜的發生，望見自身內在幽微人性的警醒。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "沈紅玫：一個工作定義了自己的人，在生老病死的課程面前大夢初醒似地說：「我休息了。」希望藉著品香、靜坐、練功和整理筆記慢慢找到自己。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": true,
-        "text": "往上跌了一跤",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "我被鞋帶絆倒",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
+        "type": "paragraph",
         "isHeadingStyle": false,
-        "isBold": false,
-        "text": "往上跌了一跤——",
-        "type": "paragraph"
+        "styleName": "內文 A",
+        "styleId": "A5"
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跌到屋頂上，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跌出城外市郊，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跌過了樹梢，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跌過了山坳，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跌到色彩融和了",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "聲音的地方。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "這一跤跌得我頭昏眼花，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "當我看清楚四周，",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "突然覺得胃好痛",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": false,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "就  摔下來了。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
+        "text": "【老師點評】不要把自己逼得太緊，人生後面還有很大的空間，為何一定要順原來那條老路走呢？",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "謝謝張老師提供了飛禽鳥獸蟲蝶不時加入參與的環境空間，以無極佐以日常生活實例對照京都學派哲思的現身說法，歡笑中發人省思。也謝謝共同籌組及參與活動的同學們，經驗到話語及行動間的直爽、幽默、靈活、彈性、堅持、寧靜、樸實、認真、無厘頭、歡樂、打呼的節奏感、禁語空間與日常反差而成的清晰、肌肉痠疼的大鵬展翅、一絲絲的觸動......。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "林芬蓉：忙碌充實豐收的一年，品香和無極是夜夜面對自己的靜心角落。在沉香溫暖氣息陪伴下，心平氣和，誠懇面對自己，一遍又一遍地在無極中揮汗重來。有夢最美，希望相隨。資深的笨鳥並不介意慢飛。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "林碧珠：遠離傷痛——離開兩人世界近三年，曾經因失去人生方向而深感驚慌失措。將近三年的摸索加上張老師不斷的點醒，終於撥雲見日，不再被家的意識形態綑綁，發現了生命的開闊，人間的愛與關懷。無限感恩老師和師母的無私與包容。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】阿珠的跨度很大。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "洪淑敏：生命的一畝田中，播下無極內息導引與香道的種子，心知機緣福報俱足，仍努力省視自己練無極是否了悟心法，品香是否清理了自己的起心動念。感到尚有很多不足，仍待努力。對雪山坑的景物產生很多感覺。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】患了太過感覺抽象化的毛病。何謂心法？你現在作動作是用什麼心態就是心法，讓你的心放在一個感覺的狀態跟動作merge就可以了。不要想，就可以了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "胡琦瑛：年初因一個錯誤決定，讓年邁的父親動了小手術而飽受身體與心智之苦，內心無比愧疚，但同時也感謝有這樣的福報，可以讓我承擔起照顧與陪伴父母親的機會，這當中真心感謝老公的成全、包容、支持與滿滿的愛。我們都是有福報之人，背後有張老師幫忙撐著，扛著，感謝老師傾囊相授，無極，教我一切都可以，沉香教我氣質，雪山坑告訴我大自然的共生生態，這輩子要學的太多，學不完下輩子繼續學。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "楊清雲：住家整修，先生確診，就地隔離，生活上的不便加上擔心遭感染的恐懼，身心俱疲，幸好想到老師的話：要珍惜所遇到的困難，身體最大的訓練就是在無常中，面對事情要過得去而重新調整心態，有了不同的思維方式。日常中感覺不出自己的改變，但知道自己在逐漸成長。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】日子一天一天沒有差別，但她可以感覺生命已不相同。這是性情在不一樣而非技術在不一樣，這是很大的進步，你找到自己更大的可能，不是工作的自信，而是人格的自信。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "詹朝基：特引《心靈捕手》裡的一段話:「大部分人從沒有機會知道自己能夠有多聰明。他們沒有找到相信他們的老師。誤以為是自己太笨。」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】阿基師觀察敏銳，談教育，用心靈捕手裡的話，但老師只同意：你有這種福報，當你對一種東西有一種熱情，站出來，你就變天才。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "一個人蛻變才能提高高度看見自己。人在挫折中是沒有餘裕看見自己的。老師創造這個機會給你挫折，並且指出來告訴你，你總可以從中看見什麼了吧？這跟老師自己有什麼高度無關，而是老師看得見你可以有什麼高度，讓你自己看見。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "蔡麗珍：二十年，從壯年來到初老，老師上課的內容也變高深了。上課，有時像被充電中，有時像被電擊到，有時甚至連結不上。資質不高，但相信自己的細胞已有記憶和累積一些東西。在日常生活中體現出來時，心情便很愉悅。卑微地希望有健康的身體。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "【老師點評】我們阿珍，你要忘掉自己的老！你認為自己有一點進步了，那就很好。不要被暗示自己老了，沒有用了，別說什麼從前一個人可以當三個人用叫作好，老子不是說：「堅強者，死之徒；柔弱者，生之徒」嗎？一個人當半個人用才是老子的哲學。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "只有自己怎麼看自己才是真的，不要被暗示。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "老師現在講得越來越高深，不是老師高深，而是你越來越高深，你不理解，但是你已經看見，你已經有高低之分，表示你已經有進步，比那些完全狀況外的人強太多了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "賴美惠：感觸兩件事, 一個工作上的朋友前一天跟你談笑風生, 隔天就因為車禍死亡, 且後事沒人幫他辦, 因為找不到他的家人。另一件是幾個相處20幾年的同事不預期地退休了, 辦公室少了話當年的同伴們, 心裡很是失落, 這也是另一種的「生離死別」吧。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】一分鐘是要有一個共同的標靶，每一個人都在共同的經驗裡，很容易照見自己，看到過去你是面對什麼樣的困局，你如何爬出來。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "韓憶萍：在雪山坑借鏡老師對師兄姊的指點而大有心得，並感受到每個人都有無限可能，決定從此不再多想，練，就對了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "十一月確診中認真觀察自己生理心理的變化，喪失嗅覺卻因轉念而放棄對香味的追求，儘管仍感受不到氣，但決定不再多想，聞，就對了。*",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "洪富雄：疫情下，我也確診了，託大家的福有驚無險。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "很高興我們不受影響能夠繼續練功。能到會館練功，在家練練無極，做做早晚課，真的讓生活充實不少。感慨最深的是有幾個非常要好的老友同學走了。我們好好珍惜，好好過日子吧。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】校長，謝謝你，你得了新冠之後知道自己應該珍惜此後的每一個刻。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "冷莉萍：這一年為了一件事情，花很多心力，捨棄其他更重要的事；忙到年底收成時，成果卻是一場空！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "「挫折」一向都是讓我反省再進化的動力。在香中的安定，知足，感恩……覺得很幸福！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】其實，努力沒有結果，賺到的最多。工作歸工作，你的努力被採納就已經埋單結束了，失敗才留給你神魂反省檢討的空間。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "施智仁：感嘆大家的生活因疫情、戰爭、兩岸關係等外在因素而動盪不安，慶幸有老師和氣機導引，願大家來年更加精進。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "張惠芬：好不容易安頓好先生的安養問題，又得處理延宕許久的砂石場問題，再加上共事45年的同事請辭和親友的不幸消息接踵而至，我不禁要問今年到底是怎麼了。好在，有老師的教誨。氣機導引讓我在身心靈上築了一道防火牆, 有較高維度的抗壓力去面對，去處理。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】人不要想安定，你的人生不是只有今年最動盪。沙石場的問題要謹慎處理，公共事務的貪污瀆職、官商勾結、沒有良心是台灣最黑的地方，不過，不經一事，不長一智，會被騙的，都是有貪念，人有貪念就很好騙。人事上的是與非都要懂，我們在「上面」才可以轉。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "嚴盛俊：年初左膝開始不舒服，一年來尋求物理診治也服用了藥物，情況表面上控制了。感慨人生每個階段都有它的問題存在，目前只希望左膝不要惡化，還能繼續練功。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】膝蓋有問題，就被嚇成這樣？如果診斷跟醫療都沒有辦法把人從苦難中救贖出來，我寧願你不要告訴我，而且還是用權威的語氣告訴我，那才更糟。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "本來勇敢自在地生活，卻被一些下三濫嚇成這樣！嚴先生應該常來跟老師討論他很擅長的股票之類的事，卻因膝蓋而去給那些王祿仔ông-lo̍k-á嚇。人不要做錯的事。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "李淑玲：因疫情延續，減少很多外出和不必要的人際往來，增加很多獨處時間。透過練功和品香讓自己的身體放鬆，內心平靜。在雪山坑投入大自然。大家一起整理環境，泡泡溪水，赤腳踩在草地上。沒有任何想法，只是單純的把自己放在大自然裡，讓身心靈都能有所歸之處。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "黃惠如：生活中疲於奔命，茫茫然，陷在其中。只怪自己修練不夠，還不能從容應付。提高維度和境界，是很難的人生功課。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】講話就講話，不要搞怪。妳還是掉入了生活的緊張試煉裡，還是為了自己沒有被善待，只是為了配合而配合，難怪越來越不順心。每個人都是越來越不好的，老花眼、白內障、高血壓、糖尿病，但那又怎樣？不要老是覺得自己這樣又那樣的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "朱芮瑩：生命中常會有些事，因為不想面對而一再為自己重覆發生。雖然還在迷霧中探索，但總算開啟了撥雲見日的契機。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "百日築基、練精化氣、練氣化神、練神還虛、練虛合道、道法自然。這是張老師給我們撥雲見日的工具。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "嗜欲深者天機淺，現在我知道我自以為的感覺其實都是大腦的識覺，不是六根自性的覺，我用了這個識覺創造了自以為是的苦與樂，甚至還很耽溺於這種識覺產生的情緒(內分泌)。現在，我知道，我要用這六個法門，走向無極之道。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "沈寧衛：淡出無交集的朋友；接受自己的侷限；覺察身體並止住自利念想；觀煙學習隨遇而安；並相信無極是提升自己的力量。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】小辣椒裝成熟、裝好人，說出謝謝聆聽，不錯。跟慧敏一樣，都是那麼努力。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "高袖桐：花開讓人看到，人可以感受一切看到自己。藉一生百日築基相遇的三寶——沉香、無極、跟老師同學的緣分，成就豐盛的情感，無限時空中具足一切相信的幸福。每年一分鐘的提醒，勇敢地接受生命所有的降臨——向死而生，時時重生。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "邱松萬：感慨工作與生活受到疫情影響。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】疫情期間，老人院走了不少人。應該換個地方去做，老人氣太重，相互感染，看老人一個一個走了，你的人也變得死氣沉沉。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "楊慧敏：忙季結束，全身緊繃，張老師提醒太用力了，我卻因在慣性中而不自覺，必須重新自我覺察，觀察起心動念。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】一年的一分鐘不要停留在短暫的現象中。不要只是努力、用力，而要巧力，不要在同一點裡一直往上跳，想要越過那個高度，而要嘗試跨維度：跳遠，不也是跳嗎？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "余媛媛：從理解本心開始，覺察自己的初心，時時提醒自己謹言，莫要衝動出口；還有一個關鍵的練習，就是當任何感覺、想法、念頭出現時，要立即告訴自己「那不是我！」",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "媛媛參加雪山坑的五感活動，作香主人，什麼都是別人準備好的，她坐上去演那個主人，也是演得很高興。她身上沒有「好爭性」，不會明爭，會低頭、轉頭、逆來順受。妳應該在活動中看到自己的意義。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "預設值",
+        "styleId": "a6"
+      },
+      {
+        "text": "李世薇：忙碌的一年，也是很少上課的一年。陪病住院。自家診所人手短缺，一個人當三個人用。儘管很累，內心卻沒有一點埋怨，而是遇事就用平常心對待，努力活在當下，把一切事情盡力做好，做過就放下。老師說過，練功就是要活用在生活裡！凡事都往好處想，就會做什麼事情都覺得開心。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】在疫情中我們看到現在跟以前的對比，我們是活在被安排中。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "曹煜哲：2022年我把盆栽都種到土裡去，拔草成了我日常最主要的工作。在那些刺人的，割人的，難以根除的，或捨不得根除的「易拔難拔」之間，我對小草的生命力產生了由衷的感佩。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "蔡文鈞：過去一年家中的變動，讓我在不確定中感到不安與恐懼。一年過後家中狀況漸漸好轉，回想這一切轉折，除了感恩上天的安排，更看到自己在逆境中的自私與軟弱。感謝老師的正能量和師兄姊的陪伴。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
+      },
+      {
+        "text": "【老師點評】文鈞因為家務事而心力交瘁：莫執著。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "內文 A",
+        "styleId": "A5"
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-10",
-    "sourceId": "2301-3-10",
-    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
-    "slug": "202301-2301-3-10",
+    "slug": "202301-2301-2-6",
+    "image": "/assets/pixabay/pixabay-2183489.jpg?v=2183489",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-2-6",
+    "order": 5,
+    "excerpt": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識…",
+    "title": "五晚班 - 為何要走原來那條老路呢？",
+    "sourceFileName": "2301-2-6五晚班.docx",
+    "author": "文稿彙整 / 沈紅玫"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之十 – 往上跌了一跤",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討論過程常有感被雷劈到，其中最有感的一次是，習慣幕後的我，在活動規劃已有雛型時，只打算參與，明明對某個活動主題感覺陌生，心想已推辭了前一個活動，便一口答應。然會議後馬上後悔，但沒膽再推辭，簡直是精神分裂的自我。趕緊找了慧敏及淑敏當救兵來完成規劃。有感此過程的自己是不斷在矛盾整合中迎向此次活動，後來做了一個固守傳統而斬殺創新的驚醒夢境，微調計畫，心定。整體的核心議題是不信任自己。而上山後發現原來什麼都不需要做，只需要聽其自然。聽自身的自然，聽他人的自然，聽場域裡發生的自然。",
           "由於活動的最後不小心跌了一跤，事後做了一些書寫及聯想來安頓自己的同時，找到了由謝爾．弗爾斯坦(Shel Silverstein)撰寫及插圖的《往上跌了一跤》，藉其童心的想像力也連結真實生活的視野，作為加入活動籌備到經驗三天兩夜的發生，望見自身內在幽微人性的警醒。",
@@ -75364,213 +75209,267 @@ export const reviewDraftArticles = [
           "突然覺得胃好痛",
           "就  摔下來了。",
           "謝謝張老師提供了飛禽鳥獸蟲蝶不時加入參與的環境空間，以無極佐以日常生活實例對照京都學派哲思的現身說法，歡笑中發人省思。也謝謝共同籌組及參與活動的同學們，經驗到話語及行動間的直爽、幽默、靈活、彈性、堅持、寧靜、樸實、認真、無厘頭、歡樂、打呼的節奏感、禁語空間與日常反差而成的清晰、肌肉痠疼的大鵬展翅、一絲絲的觸動......。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-10游夙君.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "張尊堡",
-    "issueId": "202301",
-    "order": 7,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-10",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討論過程常有感被雷劈到，其中最有感的一次是，習慣幕後的我，在活動規劃已有雛型時，只打算參與，明明對某個活動主題感覺陌生，心想已推辭了前一個活動，便一口答應。然會議後馬上後悔，但沒膽再推辭，簡直是精神分裂的自我。趕緊找了慧敏及淑敏當救兵來完成規劃。有感此過程的自己是不斷在矛盾整合中迎向此次活動，後來做了一個固守傳統而斬殺創新的驚醒夢境，微調計畫，心定。整體的核心議題是不信任自己。而上山後發現原來什麼都不需要做，只需要聽其自然。聽自身的自然，聽他人的自然，聽場域裡發生的自然。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。雖名為嬉遊，但到了雪山坑這片寶地，自然也要盡立嬉出深度，遊出體悟才算不虛此行，為此我們透過數次分工合作的討論，規劃出各具特色的活動，讓每一位參與者打破「計畫者」和「參加者」的框架，成為活動中不可或缺的一片拼圖。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "由於活動的最後不小心跌了一跤，事後做了一些書寫及聯想來安頓自己的同時，找到了由謝爾．弗爾斯坦(Shel Silverstein)撰寫及插圖的《往上跌了一跤》，藉其童心的想像力也連結真實生活的視野，作為加入活動籌備到經驗三天兩夜的發生，望見自身內在幽微人性的警醒。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "然而，計畫往往趕不上變化，變化也往往趕不上張老師的一句話；從抵達雪山坑見到老師的第一刻起，原本策畫如度的行程就如同受到彗星撞擊，何止攪亂一池春水，這一撞甚至把池水全都化為無形無象的蒸氣，看似面目全非，卻依然保有水的本質；大夥脫離原本計畫的時程概念，在每一個環節裡盡興享受香席閒談、禁語斷食、長嘯亂舞、行禪練功，外加張老師字字珠璣的說書和神來一筆的矇眼辨雄雌活動，一切的一切，都因為有了擾動和變化，讓回憶更加豐腴，讓意義更加深遠。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "往上跌了一跤",
         "isLargeFont": true,
+        "isBold": true,
+        "type": "paragraph",
         "isHeadingStyle": false,
-        "isBold": false,
-        "text": "除了行程變動，身體的意外狀況也讓我在這次的活動中有了印象深刻的領悟。自第一夜起，包含我在內的許多人紛紛往返廁間一瀉千里，翻攪胃腸如同黑洞吞噬了全身的能量，我只能像尋求陽光的變溫動物般，腳步虛浮的赤腳立於前院初綻的梅花樹下，讓刮搔腳底的草葉和午後和煦的陽光暖活冰冷的四肢，讓身體憑著本能開始緩慢的練起無極。令我意外的，因為身體虛弱而無暇顧及旁人，進入鼻根的梅花香更顯清寧入神，大腦的思緒停止運轉，意識全匯集於腹部，丹田重於泰山，四肢輕於鴻毛，只要些許的收提便能撼動全身；看似放棄全身的感覺，卻反而讓身體的感受更加細緻入微，原以為忘記的動作自行連貫一氣，直到莊醫師提醒開飯的引磬打板響起前，一切的時間、想法、甚至原本腹部的不適感都不復存在，那種酣暢淋漓之感令人難以忘懷。",
-        "type": "paragraph"
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
+        "text": "我被鞋帶絆倒",
+        "isLargeFont": false,
         "isBold": false,
-        "text": "記得營火燃起那夜，一群人在溫暖的營火旁聽著 Final Count Down 高亢的歌聲，整齊劃一的踩著凌波微步倒數跨年，晚會結束前張老師伴著火光的新年祝福令我玩味再三。每個人的生命就像在營火堆中熊熊燃燒的樹木，從沐浴日月精華的成長，到臥於火堆中的羽化，一生的一切索取終將歸於天地；無論累積了多少，唯有在化為灰燼的這一刻才能看見自己能燒多久，綻放多少光熱。已近而立的自己，該如何讓自己累積照亮他人的能量，又該如何讓自己直到行將就木之際依舊燃燒不盡，值得用今後的一生漸悟、領悟、頓悟。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "往上跌了一跤——",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "跌到屋頂上，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "跌出城外市郊，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "跌過了樹梢，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "跌過了山坳，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "跌到色彩融和了",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "聲音的地方。",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "這一跤跌得我頭昏眼花，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "當我看清楚四周，",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "突然覺得胃好痛",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "就  摔下來了。",
+        "isLargeFont": false,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "謝謝張老師提供了飛禽鳥獸蟲蝶不時加入參與的環境空間，以無極佐以日常生活實例對照京都學派哲思的現身說法，歡笑中發人省思。也謝謝共同籌組及參與活動的同學們，經驗到話語及行動間的直爽、幽默、靈活、彈性、堅持、寧靜、樸實、認真、無厘頭、歡樂、打呼的節奏感、禁語空間與日常反差而成的清晰、肌肉痠疼的大鵬展翅、一絲絲的觸動......。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-11",
-    "sourceId": "2301-3-11",
-    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
-    "slug": "202301-2301-3-11",
+    "slug": "202301-2301-3-10",
+    "image": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-10",
+    "order": 6,
+    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
+    "title": "之十 – 往上跌了一跤",
+    "sourceFileName": "2301-3-10游夙君.docx",
+    "author": "游夙君"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之十一 - 嬉出深度‧遊出體悟",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。雖名為嬉遊，但到了雪山坑這片寶地，自然也要盡立嬉出深度，遊出體悟才算不虛此行，為此我們透過數次分工合作的討論，規劃出各具特色的活動，讓每一位參與者打破「計畫者」和「參加者」的框架，成為活動中不可或缺的一片拼圖。",
           "然而，計畫往往趕不上變化，變化也往往趕不上張老師的一句話；從抵達雪山坑見到老師的第一刻起，原本策畫如度的行程就如同受到彗星撞擊，何止攪亂一池春水，這一撞甚至把池水全都化為無形無象的蒸氣，看似面目全非，卻依然保有水的本質；大夥脫離原本計畫的時程概念，在每一個環節裡盡興享受香席閒談、禁語斷食、長嘯亂舞、行禪練功，外加張老師字字珠璣的說書和神來一筆的矇眼辨雄雌活動，一切的一切，都因為有了擾動和變化，讓回憶更加豐腴，讓意義更加深遠。",
           "除了行程變動，身體的意外狀況也讓我在這次的活動中有了印象深刻的領悟。自第一夜起，包含我在內的許多人紛紛往返廁間一瀉千里，翻攪胃腸如同黑洞吞噬了全身的能量，我只能像尋求陽光的變溫動物般，腳步虛浮的赤腳立於前院初綻的梅花樹下，讓刮搔腳底的草葉和午後和煦的陽光暖活冰冷的四肢，讓身體憑著本能開始緩慢的練起無極。令我意外的，因為身體虛弱而無暇顧及旁人，進入鼻根的梅花香更顯清寧入神，大腦的思緒停止運轉，意識全匯集於腹部，丹田重於泰山，四肢輕於鴻毛，只要些許的收提便能撼動全身；看似放棄全身的感覺，卻反而讓身體的感受更加細緻入微，原以為忘記的動作自行連貫一氣，直到莊醫師提醒開飯的引磬打板響起前，一切的時間、想法、甚至原本腹部的不適感都不復存在，那種酣暢淋漓之感令人難以忘懷。",
           "記得營火燃起那夜，一群人在溫暖的營火旁聽著 Final Count Down 高亢的歌聲，整齊劃一的踩著凌波微步倒數跨年，晚會結束前張老師伴著火光的新年祝福令我玩味再三。每個人的生命就像在營火堆中熊熊燃燒的樹木，從沐浴日月精華的成長，到臥於火堆中的羽化，一生的一切索取終將歸於天地；無論累積了多少，唯有在化為灰燼的這一刻才能看見自己能燒多久，綻放多少光熱。已近而立的自己，該如何讓自己累積照亮他人的能量，又該如何讓自己直到行將就木之際依舊燃燒不盡，值得用今後的一生漸悟、領悟、頓悟。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-11張尊堡.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "黃惠如",
-    "issueId": "202301",
-    "order": 8,
-    "readTime": "約 3 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-11",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。雖名為嬉遊，但到了雪山坑這片寶地，自然也要盡立嬉出深度，遊出體悟才算不虛此行，為此我們透過數次分工合作的討論，規劃出各具特色的活動，讓每一位參與者打破「計畫者」和「參加者」的框架，成為活動中不可或缺的一片拼圖。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "然而，計畫往往趕不上變化，變化也往往趕不上張老師的一句話；從抵達雪山坑見到老師的第一刻起，原本策畫如度的行程就如同受到彗星撞擊，何止攪亂一池春水，這一撞甚至把池水全都化為無形無象的蒸氣，看似面目全非，卻依然保有水的本質；大夥脫離原本計畫的時程概念，在每一個環節裡盡興享受香席閒談、禁語斷食、長嘯亂舞、行禪練功，外加張老師字字珠璣的說書和神來一筆的矇眼辨雄雌活動，一切的一切，都因為有了擾動和變化，讓回憶更加豐腴，讓意義更加深遠。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "活動前兩周才確定得空，趕上活動報名，匆匆聽了兩次行前會議，還搞不清楚活動主題，只記得每天只供一餐，心裡嘀咕上班就快累翻了，還要參加這種會冷得要死，睡不飽、吃不飽的修行課程，為堆積如山的年末工作冷汗直流…..，然而山林的召喚過於強大，就去吧！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "除了行程變動，身體的意外狀況也讓我在這次的活動中有了印象深刻的領悟。自第一夜起，包含我在內的許多人紛紛往返廁間一瀉千里，翻攪胃腸如同黑洞吞噬了全身的能量，我只能像尋求陽光的變溫動物般，腳步虛浮的赤腳立於前院初綻的梅花樹下，讓刮搔腳底的草葉和午後和煦的陽光暖活冰冷的四肢，讓身體憑著本能開始緩慢的練起無極。令我意外的，因為身體虛弱而無暇顧及旁人，進入鼻根的梅花香更顯清寧入神，大腦的思緒停止運轉，意識全匯集於腹部，丹田重於泰山，四肢輕於鴻毛，只要些許的收提便能撼動全身；看似放棄全身的感覺，卻反而讓身體的感受更加細緻入微，原以為忘記的動作自行連貫一氣，直到莊醫師提醒開飯的引磬打板響起前，一切的時間、想法、甚至原本腹部的不適感都不復存在，那種酣暢淋漓之感令人難以忘懷。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "氣機導引的活動隨時充滿驚喜，絕不讓人失望。抵達時喝茶閒聊，隨機發展成無極哲學課，聽老師解釋絕對的無，京都學派究極二律背反….東洋的無，再到張老師的無極哲學觀…..接連兩個午後的哲學課，靜靜聆聽領受著國寶張老師的大智慧言語，無極就是能夠無相，維度在張老師護持下也往上提升了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "記得營火燃起那夜，一群人在溫暖的營火旁聽著 Final Count Down 高亢的歌聲，整齊劃一的踩著凌波微步倒數跨年，晚會結束前張老師伴著火光的新年祝福令我玩味再三。每個人的生命就像在營火堆中熊熊燃燒的樹木，從沐浴日月精華的成長，到臥於火堆中的羽化，一生的一切索取終將歸於天地；無論累積了多少，唯有在化為灰燼的這一刻才能看見自己能燒多久，綻放多少光熱。已近而立的自己，該如何讓自己累積照亮他人的能量，又該如何讓自己直到行將就木之際依舊燃燒不盡，值得用今後的一生漸悟、領悟、頓悟。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "午後的香席也好精彩，看似隨興，卻充滿香席主人的巧思。隨手擷取的梅枝、山茶花、松葉、圓石，讓素雅的香席顯現低調的自然生命力。香主自訂的主題，煎香、臥香、篆香、焚香，品著沉香歲月淬鍊的風華，談著生活生命的反思，呼吸著雪山坑自然純淨的氣息，更令人口水直流的是老師懷中揣著的沉香至寶，這是第一日自在的午後。",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "晚上的銅鑼浴是眾人期待的大節目，腦海裡仍殘留過去缽療進入深層α波的美好記憶，心中呼喊著要再來一次，然而隨著鑼聲響起，電流不安分地在體內流竄，肚子咕咕作響，一路清醒的經歷著鑼聲歌聲鯨豚聲，就是沒有片刻空掉的感受。直到清晨起身腹瀉，瀉空了幾周來的腸內廢物，恍然發現，昨夜經歷的是一場驚天動地共振排毒的盛典，蛻去了身上那層毒廢殘積，身的進化又往上一階了。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "清晨六點開始禁言鬆身行禪，夜半腹瀉的疲憊感尚未退去，地板寒氣又從湧泉往上侵擾還沒睡飽的身軀，裹著厚重的衣裘，真是舉步維艱，歷時兩小時，自始至終，唯一恆定走完全程的只有張老師，這就是我們之間修行的距離，那麼巨大，望塵莫及啊！ 唯有持之以恆的練習，才是正道。感恩老師一路的護持，讓冷冬的清晨，安然度過。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "接下來的禁語時刻，是難得的獨享小時光。在團體中，人類本能的會對人聲自動啟動回應溝通模式，禁語的時候，主動切斷對外人與人之間的溝通，注意力先返回自己，安頓好自己後，漸漸止住念頭，只剩下環境四周，過去被人聲限制住的注意力，得以轉移， 真正用六根直接感受環境，感受雪山坑的蟲鳴鳥叫，樹葉搖曳的婆娑聲，還有遠處雪山坑溪的流水。練功、聽風、抱樹、臥大石，甚至草地上赤足滑步翻滾，任六根盡情的探索大自然，身心靈解放渾身歡暢的愉悅感，真是幸福啊！",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "傍晚沿雪山坑溪旁道路，沿路盡情呼喊大聲歌唱，將最後那一點拘謹，逐步的放開了，過往年輕歌唱的感覺慢慢地回來了，拿手歌曲紛紛出籠，大夥兒盡情歡唱，山林長嘯的歡樂氣氛延續到晚上的營火跨年，此次請到了頗負盛名的DJ阿堡老師與美麗主持人暐婷，讓我們一團中老年頑童們體驗了一場精心安排的音樂饗宴，圍著營火唱唱跳跳，直到跨年那一刻，Final countdown 重金屬音樂響起，全體像是設定好的鬧鐘，時間一到即自動反應，不自覺的以凌波微步踏完全曲，這是氣機導引的獨特跨年祝福，全員身心靈滿足，微笑的回屋進入夢鄉。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "第三日早上，大膽地展開了身體開發的互動探索活動。兩人三人四人，由點到線到面的接觸，隨著音樂的變換，你進我退，你彎腰我後仰，時而肢體延伸開闔，時而彎腰縮腹內聚，你怎麼動，我就怎麼跟，回顧活動剪影，人人自然開懷的讓肢體隨著音樂律動。後期在老師帶動下，開始蒙眼辨人，身體的探索遊戲，千變萬化，大家玩得開心，驚奇不斷，回味無窮。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "三日的活動，將日常生活的框架逐步的退去了，同時各項活動的操練，幫助身心靈各方面感受力提升，也開發過去未知的領域，對無極無相似乎又多懂了一些，感覺自己好比在雪山坑充飽電的皮卡丘，儲備了滿滿能量下山，繼續面對未來的挑戰。",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-1",
-    "sourceId": "2301-3-1",
-    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
-    "slug": "202301-2301-3-1",
+    "slug": "202301-2301-3-11",
+    "image": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-11",
+    "order": 7,
+    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
+    "title": "之十一 - 嬉出深度‧遊出體悟",
+    "sourceFileName": "2301-3-11張尊堡.docx",
+    "author": "張尊堡"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之一 - 蛻殼進化之旅",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
           "活動前兩周才確定得空，趕上活動報名，匆匆聽了兩次行前會議，還搞不清楚活動主題，只記得每天只供一餐，心裡嘀咕上班就快累翻了，還要參加這種會冷得要死，睡不飽、吃不飽的修行課程，為堆積如山的年末工作冷汗直流…..，然而山林的召喚過於強大，就去吧！",
@@ -75582,186 +75481,213 @@ export const reviewDraftArticles = [
           "傍晚沿雪山坑溪旁道路，沿路盡情呼喊大聲歌唱，將最後那一點拘謹，逐步的放開了，過往年輕歌唱的感覺慢慢地回來了，拿手歌曲紛紛出籠，大夥兒盡情歡唱，山林長嘯的歡樂氣氛延續到晚上的營火跨年，此次請到了頗負盛名的DJ阿堡老師與美麗主持人暐婷，讓我們一團中老年頑童們體驗了一場精心安排的音樂饗宴，圍著營火唱唱跳跳，直到跨年那一刻，Final countdown 重金屬音樂響起，全體像是設定好的鬧鐘，時間一到即自動反應，不自覺的以凌波微步踏完全曲，這是氣機導引的獨特跨年祝福，全員身心靈滿足，微笑的回屋進入夢鄉。",
           "第三日早上，大膽地展開了身體開發的互動探索活動。兩人三人四人，由點到線到面的接觸，隨著音樂的變換，你進我退，你彎腰我後仰，時而肢體延伸開闔，時而彎腰縮腹內聚，你怎麼動，我就怎麼跟，回顧活動剪影，人人自然開懷的讓肢體隨著音樂律動。後期在老師帶動下，開始蒙眼辨人，身體的探索遊戲，千變萬化，大家玩得開心，驚奇不斷，回味無窮。",
           "三日的活動，將日常生活的框架逐步的退去了，同時各項活動的操練，幫助身心靈各方面感受力提升，也開發過去未知的領域，對無極無相似乎又多懂了一些，感覺自己好比在雪山坑充飽電的皮卡丘，儲備了滿滿能量下山，繼續面對未來的挑戰。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-1惠如.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 4,
-        "src": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "楊慧敏",
-    "issueId": "202301",
-    "order": 9,
-    "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 3 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-1",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流中看見自己也看見別人的平行時空，最後張老師的火山爆發，讓空間靈氣滿溢，香氣瀰漫全身。晚上在雅君陣陣放送的銅鑼及缽的波動，全身沈浸在一陣陣共振洗禮裡，振掉身體積累的習性，開啟時空漫遊，身在曠野遊歷著，啟動新一年的新能量。夜晩走出戶外，月夜清亮，空氣中仍有沈香的味道透過鼻腔沁入細胞裡，在香氣中入睡。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "活動前兩周才確定得空，趕上活動報名，匆匆聽了兩次行前會議，還搞不清楚活動主題，只記得每天只供一餐，心裡嘀咕上班就快累翻了，還要參加這種會冷得要死，睡不飽、吃不飽的修行課程，為堆積如山的年末工作冷汗直流…..，然而山林的召喚過於強大，就去吧！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第二天清早的行禪，走在六根剛甦醒無干擾時，從腳底抓起的能量，傳鏈到全身，循環不止息，很想無止盡的走下去，行禪後的沈澱時，張老師信手拈來在香爐擺上千年難得一遇的沈香，引入更深的滌除玄覽。接續的獨自落腳練功，此時樹也在、蟲鳴鳥叫也在、風俆徐吹著、雲飄著，就在一切裡做著無極功法，與大自然的一切同在。吃飽飯後聽張老師開講《絕對無的哲學》、談「究極二律背反」，上了一場雪山坑意外的哲學課，也讓三天兩夜畫龍點睛，再次觸動對生命究竟的探索，播下一個讀書會延續討論的種子，再把這些哲學思維帶回到生活中咀嚼體悟實踐。傍晚沿著溪岸的公路走著，在山野裡以聲音呼朋引伴、仰天長嘯、前後相和，又回到兒時放學走在農路的快樂時光。張老師、莊醫師、阿堡、平順很早就開始跨年夜營火準備，黑夜裡，火有著神秘的原始力量，鼓聲中開啟了跨年夜的序幕，在The Final Countdown歌曲中一起走著凌波微步進入的跨年倒數，接著在We are the champions歌曲裡，自強不息的一起走入新的一年。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "氣機導引的活動隨時充滿驚喜，絕不讓人失望。抵達時喝茶閒聊，隨機發展成無極哲學課，聽老師解釋絕對的無，京都學派究極二律背反….東洋的無，再到張老師的無極哲學觀…..接連兩個午後的哲學課，靜靜聆聽領受著國寶張老師的大智慧言語，無極就是能夠無相，維度在張老師護持下也往上提升了。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第三天早上是肢體自由互動，大夥有著平時一起練功的默契，在肢體慢慢舒展後，在或兩個人、或三個人、或多個人，進行沒有固定型式、人數、隊形的肢體動態互動，氣在彼此間流動著，做自己，也聽別人，活靈活現，活化了彼此。張老師總在活動的重要時刻出現，設計了透過觸摸猜猜看摸的是哪位同學的活動，提點除了手的觸覺、還有聲音位置等等五感的覺知，無處不是覺察力及妙觀察。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "午後的香席也好精彩，看似隨興，卻充滿香席主人的巧思。隨手擷取的梅枝、山茶花、松葉、圓石，讓素雅的香席顯現低調的自然生命力。香主自訂的主題，煎香、臥香、篆香、焚香，品著沉香歲月淬鍊的風華，談著生活生命的反思，呼吸著雪山坑自然純淨的氣息，更令人口水直流的是老師懷中揣著的沉香至寶，這是第一日自在的午後。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "這次歲末年初雪山坑三天兩夜活動，同學們是參與者也是活動規劃者，在活動前多了一些積極與醞釀，而真正活動當下，就順著情境隨機調動、隨遇而安，自己練功時也自在，一起活動時也歡喜，活動結束也留下了各自玩味的餘韻。一年的結束及另一年的開始，能在這個時刻與同學們一起參與，一起經歷，藉著活動看見自己，也從大家的身上看見好多可能的我，還能學習借鏡，倍感幸福，滿懷能量告別去年、迎向來年。感謝老師及師母給予雪山坑這個安定而能創造各種可能的道場，感謝參與活動的大家，感謝這一切發生。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "晚上的銅鑼浴是眾人期待的大節目，腦海裡仍殘留過去缽療進入深層α波的美好記憶，心中呼喊著要再來一次，然而隨著鑼聲響起，電流不安分地在體內流竄，肚子咕咕作響，一路清醒的經歷著鑼聲歌聲鯨豚聲，就是沒有片刻空掉的感受。直到清晨起身腹瀉，瀉空了幾周來的腸內廢物，恍然發現，昨夜經歷的是一場驚天動地共振排毒的盛典，蛻去了身上那層毒廢殘積，身的進化又往上一階了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "清晨六點開始禁言鬆身行禪，夜半腹瀉的疲憊感尚未退去，地板寒氣又從湧泉往上侵擾還沒睡飽的身軀，裹著厚重的衣裘，真是舉步維艱，歷時兩小時，自始至終，唯一恆定走完全程的只有張老師，這就是我們之間修行的距離，那麼巨大，望塵莫及啊！ 唯有持之以恆的練習，才是正道。感恩老師一路的護持，讓冷冬的清晨，安然度過。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "接下來的禁語時刻，是難得的獨享小時光。在團體中，人類本能的會對人聲自動啟動回應溝通模式，禁語的時候，主動切斷對外人與人之間的溝通，注意力先返回自己，安頓好自己後，漸漸止住念頭，只剩下環境四周，過去被人聲限制住的注意力，得以轉移， 真正用六根直接感受環境，感受雪山坑的蟲鳴鳥叫，樹葉搖曳的婆娑聲，還有遠處雪山坑溪的流水。練功、聽風、抱樹、臥大石，甚至草地上赤足滑步翻滾，任六根盡情的探索大自然，身心靈解放渾身歡暢的愉悅感，真是幸福啊！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "傍晚沿雪山坑溪旁道路，沿路盡情呼喊大聲歌唱，將最後那一點拘謹，逐步的放開了，過往年輕歌唱的感覺慢慢地回來了，拿手歌曲紛紛出籠，大夥兒盡情歡唱，山林長嘯的歡樂氣氛延續到晚上的營火跨年，此次請到了頗負盛名的DJ阿堡老師與美麗主持人暐婷，讓我們一團中老年頑童們體驗了一場精心安排的音樂饗宴，圍著營火唱唱跳跳，直到跨年那一刻，Final countdown 重金屬音樂響起，全體像是設定好的鬧鐘，時間一到即自動反應，不自覺的以凌波微步踏完全曲，這是氣機導引的獨特跨年祝福，全員身心靈滿足，微笑的回屋進入夢鄉。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "第三日早上，大膽地展開了身體開發的互動探索活動。兩人三人四人，由點到線到面的接觸，隨著音樂的變換，你進我退，你彎腰我後仰，時而肢體延伸開闔，時而彎腰縮腹內聚，你怎麼動，我就怎麼跟，回顧活動剪影，人人自然開懷的讓肢體隨著音樂律動。後期在老師帶動下，開始蒙眼辨人，身體的探索遊戲，千變萬化，大家玩得開心，驚奇不斷，回味無窮。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "三日的活動，將日常生活的框架逐步的退去了，同時各項活動的操練，幫助身心靈各方面感受力提升，也開發過去未知的領域，對無極無相似乎又多懂了一些，感覺自己好比在雪山坑充飽電的皮卡丘，儲備了滿滿能量下山，繼續面對未來的挑戰。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-2",
-    "sourceId": "2301-3-2",
-    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
-    "slug": "202301-2301-3-2",
+    "slug": "202301-2301-3-1",
+    "image": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-1",
+    "order": 8,
+    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
+    "title": "之一 - 蛻殼進化之旅",
+    "sourceFileName": "2301-3-1惠如.docx",
+    "author": "黃惠如"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之二 - 就在彼此間流動著",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 4,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流中看見自己也看見別人的平行時空，最後張老師的火山爆發，讓空間靈氣滿溢，香氣瀰漫全身。晚上在雅君陣陣放送的銅鑼及缽的波動，全身沈浸在一陣陣共振洗禮裡，振掉身體積累的習性，開啟時空漫遊，身在曠野遊歷著，啟動新一年的新能量。夜晩走出戶外，月夜清亮，空氣中仍有沈香的味道透過鼻腔沁入細胞裡，在香氣中入睡。",
           "第二天清早的行禪，走在六根剛甦醒無干擾時，從腳底抓起的能量，傳鏈到全身，循環不止息，很想無止盡的走下去，行禪後的沈澱時，張老師信手拈來在香爐擺上千年難得一遇的沈香，引入更深的滌除玄覽。接續的獨自落腳練功，此時樹也在、蟲鳴鳥叫也在、風俆徐吹著、雲飄著，就在一切裡做著無極功法，與大自然的一切同在。吃飽飯後聽張老師開講《絕對無的哲學》、談「究極二律背反」，上了一場雪山坑意外的哲學課，也讓三天兩夜畫龍點睛，再次觸動對生命究竟的探索，播下一個讀書會延續討論的種子，再把這些哲學思維帶回到生活中咀嚼體悟實踐。傍晚沿著溪岸的公路走著，在山野裡以聲音呼朋引伴、仰天長嘯、前後相和，又回到兒時放學走在農路的快樂時光。張老師、莊醫師、阿堡、平順很早就開始跨年夜營火準備，黑夜裡，火有著神秘的原始力量，鼓聲中開啟了跨年夜的序幕，在The Final Countdown歌曲中一起走著凌波微步進入的跨年倒數，接著在We are the champions歌曲裡，自強不息的一起走入新的一年。",
           "第三天早上是肢體自由互動，大夥有著平時一起練功的默契，在肢體慢慢舒展後，在或兩個人、或三個人、或多個人，進行沒有固定型式、人數、隊形的肢體動態互動，氣在彼此間流動著，做自己，也聽別人，活靈活現，活化了彼此。張老師總在活動的重要時刻出現，設計了透過觸摸猜猜看摸的是哪位同學的活動，提點除了手的觸覺、還有聲音位置等等五感的覺知，無處不是覺察力及妙觀察。",
           "這次歲末年初雪山坑三天兩夜活動，同學們是參與者也是活動規劃者，在活動前多了一些積極與醞釀，而真正活動當下，就順著情境隨機調動、隨遇而安，自己練功時也自在，一起活動時也歡喜，活動結束也留下了各自玩味的餘韻。一年的結束及另一年的開始，能在這個時刻與同學們一起參與，一起經歷，藉著活動看見自己，也從大家的身上看見好多可能的我，還能學習借鏡，倍感幸福，滿懷能量告別去年、迎向來年。感謝老師及師母給予雪山坑這個安定而能創造各種可能的道場，感謝參與活動的大家，感謝這一切發生。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-2慧敏.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "余媛媛",
-    "issueId": "202301",
-    "order": 10,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-2",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流中看見自己也看見別人的平行時空，最後張老師的火山爆發，讓空間靈氣滿溢，香氣瀰漫全身。晚上在雅君陣陣放送的銅鑼及缽的波動，全身沈浸在一陣陣共振洗禮裡，振掉身體積累的習性，開啟時空漫遊，身在曠野遊歷著，啟動新一年的新能量。夜晩走出戶外，月夜清亮，空氣中仍有沈香的味道透過鼻腔沁入細胞裡，在香氣中入睡。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持的樣態。另外加上老師的隨機穿插，使整個活動有了不一樣的生命！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "第二天清早的行禪，走在六根剛甦醒無干擾時，從腳底抓起的能量，傳鏈到全身，循環不止息，很想無止盡的走下去，行禪後的沈澱時，張老師信手拈來在香爐擺上千年難得一遇的沈香，引入更深的滌除玄覽。接續的獨自落腳練功，此時樹也在、蟲鳴鳥叫也在、風俆徐吹著、雲飄著，就在一切裡做著無極功法，與大自然的一切同在。吃飽飯後聽張老師開講《絕對無的哲學》、談「究極二律背反」，上了一場雪山坑意外的哲學課，也讓三天兩夜畫龍點睛，再次觸動對生命究竟的探索，播下一個讀書會延續討論的種子，再把這些哲學思維帶回到生活中咀嚼體悟實踐。傍晚沿著溪岸的公路走著，在山野裡以聲音呼朋引伴、仰天長嘯、前後相和，又回到兒時放學走在農路的快樂時光。張老師、莊醫師、阿堡、平順很早就開始跨年夜營火準備，黑夜裡，火有著神秘的原始力量，鼓聲中開啟了跨年夜的序幕，在The Final Countdown歌曲中一起走著凌波微步進入的跨年倒數，接著在We are the champions歌曲裡，自強不息的一起走入新的一年。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "活動原先規劃有斷食、減食，最後因大家唯恐飢餓，改成除了各自準備早餐外，一天只供一餐。第一天到達雪山坑時，大家想到只能用一餐時，開始生出飢餓恐慌！加上同學準備的咖哩雞實在太美味了，大家第一餐就已超出平常的食量了！這哪是原先料想得到的? 結果大家都認為，一天準備一餐是上雪山坑最棒的決定，一不用特別耗時準備餐食，二可以減少身體負擔，減少處理剩食的苦惱。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "第三天早上是肢體自由互動，大夥有著平時一起練功的默契，在肢體慢慢舒展後，在或兩個人、或三個人、或多個人，進行沒有固定型式、人數、隊形的肢體動態互動，氣在彼此間流動著，做自己，也聽別人，活靈活現，活化了彼此。張老師總在活動的重要時刻出現，設計了透過觸摸猜猜看摸的是哪位同學的活動，提點除了手的觸覺、還有聲音位置等等五感的覺知，無處不是覺察力及妙觀察。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "此次的活動包括：破曉練功、聊聊天加品香、銅鑼浴、禁語、山林長嘯、身體對話及營火晚會。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "這次歲末年初雪山坑三天兩夜活動，同學們是參與者也是活動規劃者，在活動前多了一些積極與醞釀，而真正活動當下，就順著情境隨機調動、隨遇而安，自己練功時也自在，一起活動時也歡喜，活動結束也留下了各自玩味的餘韻。一年的結束及另一年的開始，能在這個時刻與同學們一起參與，一起經歷，藉著活動看見自己，也從大家的身上看見好多可能的我，還能學習借鏡，倍感幸福，滿懷能量告別去年、迎向來年。感謝老師及師母給予雪山坑這個安定而能創造各種可能的道場，感謝參與活動的大家，感謝這一切發生。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "禁語是讓我們能夠在不用言語交談，乃至停止內在對話的過程中，漸進到不要想，保持靜心狀態，自我觀察。這是一個很棒的體驗，只因為餐桌的氛圍太吸引人，主辦同學決定讓這個活動提早結束，讓大家能在餐桌上聽到老師更多的開示。雖然只有半天的禁語體驗，希望下次有機會可以再試試。",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "身體對話，就是倆倆由點、線、面開始用身體互動建構彼此的默契，感應對方，從開始的生疏到最後大家玩得不亦樂乎，同學間的默契果然不一樣。最後老師來了一場蒙眼接觸，猜出被摸的同學?老師說這就是身體感，要記住每個人的特徵，就是用觸覺去感受，對一個人的全然了解，就必須從這裡開始。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "最喜歡的是餐桌氛圍， 每個同學都有很多的經驗分享，大家也可以毫無壓力的在這裡暢所欲言，把平常理不清的問題，拿出來發問。尤其是莊醫師，餐桌上一有他絕對是笑聲不絕。而最大的收穫是聽老師說話。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "雪山坑是一個大的能量場，大家上山後都能蓄電滿滿下山，一次又一次的進步。感謝老師、師母辛苦經營規劃這麼棒的道場！",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-3",
-    "sourceId": "2301-3-3",
-    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
-    "slug": "202301-2301-3-3",
+    "slug": "202301-2301-3-2",
+    "image": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-2",
+    "order": 9,
+    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
+    "title": "之二 - 就在彼此間流動著",
+    "sourceFileName": "2301-3-2慧敏.docx",
+    "author": "楊慧敏"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之三 – 理性堅持，感性完成",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持的樣態。另外加上老師的隨機穿插，使整個活動有了不一樣的生命！",
           "活動原先規劃有斷食、減食，最後因大家唯恐飢餓，改成除了各自準備早餐外，一天只供一餐。第一天到達雪山坑時，大家想到只能用一餐時，開始生出飢餓恐慌！加上同學準備的咖哩雞實在太美味了，大家第一餐就已超出平常的食量了！這哪是原先料想得到的? 結果大家都認為，一天準備一餐是上雪山坑最棒的決定，一不用特別耗時準備餐食，二可以減少身體負擔，減少處理剩食的苦惱。",
@@ -75770,98 +75696,107 @@ export const reviewDraftArticles = [
           "身體對話，就是倆倆由點、線、面開始用身體互動建構彼此的默契，感應對方，從開始的生疏到最後大家玩得不亦樂乎，同學間的默契果然不一樣。最後老師來了一場蒙眼接觸，猜出被摸的同學?老師說這就是身體感，要記住每個人的特徵，就是用觸覺去感受，對一個人的全然了解，就必須從這裡開始。",
           "最喜歡的是餐桌氛圍， 每個同學都有很多的經驗分享，大家也可以毫無壓力的在這裡暢所欲言，把平常理不清的問題，拿出來發問。尤其是莊醫師，餐桌上一有他絕對是笑聲不絕。而最大的收穫是聽老師說話。",
           "雪山坑是一個大的能量場，大家上山後都能蓄電滿滿下山，一次又一次的進步。感謝老師、師母辛苦經營規劃這麼棒的道場！"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-3媛媛.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 4,
-        "src": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "朱芮瑩",
-    "issueId": "202301",
-    "order": 11,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-3",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持的樣態。另外加上老師的隨機穿插，使整個活動有了不一樣的生命！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "活動原先規劃有斷食、減食，最後因大家唯恐飢餓，改成除了各自準備早餐外，一天只供一餐。第一天到達雪山坑時，大家想到只能用一餐時，開始生出飢餓恐慌！加上同學準備的咖哩雞實在太美味了，大家第一餐就已超出平常的食量了！這哪是原先料想得到的? 結果大家都認為，一天準備一餐是上雪山坑最棒的決定，一不用特別耗時準備餐食，二可以減少身體負擔，減少處理剩食的苦惱。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "世界是真實的，並不虛幻，但卻如夢幻泡影如露亦如電。人性是與生俱來的，但卻被社會觀感層層包裏成為一個假的我，所以大多數的人就這樣活得並不真實，一輩子雖然好像活著，但卻沒有一天是真正活過。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "此次的活動包括：破曉練功、聊聊天加品香、銅鑼浴、禁語、山林長嘯、身體對話及營火晚會。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "是非黑白要清楚分明，但不用對立，而是選擇。我要清醒的覺知什麼是錯，所以我才能選擇對，再反過頭來想想為什麼我認為那是錯，在這個對錯的當下提升我靈魂的維度。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "禁語是讓我們能夠在不用言語交談，乃至停止內在對話的過程中，漸進到不要想，保持靜心狀態，自我觀察。這是一個很棒的體驗，只因為餐桌的氛圍太吸引人，主辦同學決定讓這個活動提早結束，讓大家能在餐桌上聽到老師更多的開示。雖然只有半天的禁語體驗，希望下次有機會可以再試試。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "練功要持之以恆，在功法上要念念不忘心法，藉由功法心法將那被社會觀感層層包覆的假我如洋蔥般層層脫落，不要有個自己的樣子，那個假的我得不到能量自然凋萎後，真我自現。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "身體對話，就是倆倆由點、線、面開始用身體互動建構彼此的默契，感應對方，從開始的生疏到最後大家玩得不亦樂乎，同學間的默契果然不一樣。最後老師來了一場蒙眼接觸，猜出被摸的同學?老師說這就是身體感，要記住每個人的特徵，就是用觸覺去感受，對一個人的全然了解，就必須從這裡開始。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "練無極功法時，感覺當下五感統整的感覺，而不是記招式記形式，要把那個假我藏起來，時時覺察那個假我出現時就把它藏起來，大腦不要想，一舉手一投足都是一個故事。眼耳鼻舌身要時常放空，感覺要追求極致。大腦不要想，五感自性的作用力自然運作。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "最喜歡的是餐桌氛圍， 每個同學都有很多的經驗分享，大家也可以毫無壓力的在這裡暢所欲言，把平常理不清的問題，拿出來發問。尤其是莊醫師，餐桌上一有他絕對是笑聲不絕。而最大的收穫是聽老師說話。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "2022歲末嬉戲到雪山坑的第一天下午品香時，我跟同組的成員說，我所有有質感的有形的無形的都是從張老師那裡得到的。有張老師在的地方，就有法喜。2023年我對自己的期許是，在這些天材地寶，師兄姐及張老師的加持下，我要成為一個有質感的我，謝謝2022歲末嬉遊參與活動的所有同學。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "雪山坑是一個大的能量場，大家上山後都能蓄電滿滿下山，一次又一次的進步。感謝老師、師母辛苦經營規劃這麼棒的道場！",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-4",
-    "sourceId": "2301-3-4",
-    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
-    "slug": "202301-2301-3-4",
+    "slug": "202301-2301-3-3",
+    "image": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-3",
+    "order": 10,
+    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
+    "title": "之三 – 理性堅持，感性完成",
+    "sourceFileName": "2301-3-3媛媛.docx",
+    "author": "余媛媛"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之四 – 假我脫落 真我自現",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 4,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
           "世界是真實的，並不虛幻，但卻如夢幻泡影如露亦如電。人性是與生俱來的，但卻被社會觀感層層包裏成為一個假的我，所以大多數的人就這樣活得並不真實，一輩子雖然好像活著，但卻沒有一天是真正活過。",
@@ -75869,224 +75804,98 @@ export const reviewDraftArticles = [
           "練功要持之以恆，在功法上要念念不忘心法，藉由功法心法將那被社會觀感層層包覆的假我如洋蔥般層層脫落，不要有個自己的樣子，那個假的我得不到能量自然凋萎後，真我自現。",
           "練無極功法時，感覺當下五感統整的感覺，而不是記招式記形式，要把那個假我藏起來，時時覺察那個假我出現時就把它藏起來，大腦不要想，一舉手一投足都是一個故事。眼耳鼻舌身要時常放空，感覺要追求極致。大腦不要想，五感自性的作用力自然運作。",
           "2022歲末嬉戲到雪山坑的第一天下午品香時，我跟同組的成員說，我所有有質感的有形的無形的都是從張老師那裡得到的。有張老師在的地方，就有法喜。2023年我對自己的期許是，在這些天材地寶，師兄姐及張老師的加持下，我要成為一個有質感的我，謝謝2022歲末嬉遊參與活動的所有同學。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-4芮瑩.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "胡琦瑛",
-    "issueId": "202301",
-    "order": 12,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-4",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "世界是真實的，並不虛幻，但卻如夢幻泡影如露亦如電。人性是與生俱來的，但卻被社會觀感層層包裏成為一個假的我，所以大多數的人就這樣活得並不真實，一輩子雖然好像活著，但卻沒有一天是真正活過。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "●香席",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "是非黑白要清楚分明，但不用對立，而是選擇。我要清醒的覺知什麼是錯，所以我才能選擇對，再反過頭來想想為什麼我認為那是錯，在這個對錯的當下提升我靈魂的維度。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「此香只應天上有，人間能得幾回聞」的奢華饗宴。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "練功要持之以恆，在功法上要念念不忘心法，藉由功法心法將那被社會觀感層層包覆的假我如洋蔥般層層脫落，不要有個自己的樣子，那個假的我得不到能量自然凋萎後，真我自現。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "●老師導讀日本京都學派一書《絕對無的哲學》這是可遇不可求的心靈驚艷。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "練無極功法時，感覺當下五感統整的感覺，而不是記招式記形式，要把那個假我藏起來，時時覺察那個假我出現時就把它藏起來，大腦不要想，一舉手一投足都是一個故事。眼耳鼻舌身要時常放空，感覺要追求極致。大腦不要想，五感自性的作用力自然運作。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "●銅鑼浴、缽療",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "2022歲末嬉戲到雪山坑的第一天下午品香時，我跟同組的成員說，我所有有質感的有形的無形的都是從張老師那裡得到的。有張老師在的地方，就有法喜。2023年我對自己的期許是，在這些天材地寶，師兄姐及張老師的加持下，我要成為一個有質感的我，謝謝2022歲末嬉遊參與活動的所有同學。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "一趟身體的奇妙之旅，只有親身體驗，無法言傳。",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●行禪",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "每一腳步踏出皆故事 。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●自行練功",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "身體與大自然對話 。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●山林長嘯",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "輕鬆踏青，對著山林吶喊、唱歌、發聲，就是放，就是開心。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●互動對話",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "考驗肢體的和諧、流暢與默契。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●跨年營火晚會",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "圍繞著升起的營火唱歌、跳舞、烤玉米、烤棉花糖、爆玉米花，最後在凌波微步的音樂和步伐中倒數5、4、3、2、1 *HAPPY NEW YEAR* 迎接新年的到來，擁抱彼此，期許明天會更好。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "●猜猜你是誰",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "讓你懂得日常需多觀察、了解並珍惜身邊的人、事、物，這是老師的創意遊戲。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "感謝天，感謝地（雪山坑），感謝美好的食物，感謝有緣相聚的彼此，感恩東醫氣機導引家族的大家長：張老師和師母付出奉獻。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "～珍惜每一次相聚的緣份，把握每一次機緣的學習。",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-5",
-    "sourceId": "2301-3-5",
-    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
-    "slug": "202301-2301-3-5",
+    "slug": "202301-2301-3-4",
+    "image": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-4",
+    "order": 11,
+    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
+    "title": "之四 – 假我脫落 真我自現",
+    "sourceFileName": "2301-3-4芮瑩.docx",
+    "author": "朱芮瑩"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之五 – 可遇不可求的饗宴",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
           "●香席",
@@ -76108,98 +75917,224 @@ export const reviewDraftArticles = [
           "讓你懂得日常需多觀察、了解並珍惜身邊的人、事、物，這是老師的創意遊戲。",
           "感謝天，感謝地（雪山坑），感謝美好的食物，感謝有緣相聚的彼此，感恩東醫氣機導引家族的大家長：張老師和師母付出奉獻。",
           "～珍惜每一次相聚的緣份，把握每一次機緣的學習。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-5琦瑛.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "蔡靜慧",
-    "issueId": "202301",
-    "order": 13,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-5",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁邊，聊到營火晚會我被老師丶師母點名唱歌的事情，聴說我拜師學唱歌，同學就建議說我可以寫學唱歌的經歷，我無法推託，只好硬著頭皮接招。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "●香席",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "我會去學唱歌，是因為聽到張老師常說要突破自己、改變自己，我想起自己五音不全唱歌難聽，從小到大都不敢開口唱歌，那就從我最害怕的唱歌開始吧。於是我就去社教館報名民俗歌曲歌唱班，幸運遇到國寶級鋼琴老師趙可莊丶趙金鳳（聲樂老師）父女檔。剛開始簡譜也看不懂，像小學生從a、e丶i丶o、u 發音開始學，上到第二期學期結束時有成果發表會，想到張老師說學習就是要參與，於是鼓起勇氣報名參加，特別挑選好聽、歌詞簡單好記的歌——〈阮若打開心內的門窗〉開始練唱。練一陣子後，再利用課堂上跟趙老師鋼琴配合，再用手機錄音，好回家練習。結果自己唱的歌自己都不敢聽，唱的音跟鋼琴聲都不吻合，我也只好繼續練習。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "「此香只應天上有，人間能得幾回聞」的奢華饗宴。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "成果驗收時，趙老師説，聽眾都走一半了！",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "●老師導讀日本京都學派一書《絕對無的哲學》這是可遇不可求的心靈驚艷。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "沒時間難過，為了挑戰自己，我繼續堅持下去，用最笨的方式，開始背歌譜，數拍子，一個一個音背起來，再加入歌詞，反覆練習，走到哪𥚃，唱到哪裡，整整準備了一個月，才上台參加成果發表會，完整的唱完，我終於做到了，充滿了喜悅。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "●銅鑼浴、缽療",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "張老師知道我在上歌唱班，説了很多不好聽的話，（忘記説什麼）要我不要再去上課。我沒聽話，堅持下去，繼續上課，準備第二次的成果發表會。這次有進步了，準備的時間縮短一半。剛好疫情爆發，我就沒有再去上課了，現在也可以自己哼哼唱唱，自得其樂， 尤其隨著音樂練習無極時，比較有感覺，每一首歌都有一個故事，進入到跟譜曲的人時空連結，即可身歷其境、感同身受。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "一趟身體的奇妙之旅，只有親身體驗，無法言傳。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "我想，唱歌丶音樂應該也是無極的一部分。所以這次在雪山坑的營火晚會，老師指定我唱歌，我一點也不害怕，就唱了兩首歌。很高興我又克服了一個難題。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●行禪",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "每一腳步踏出皆故事 。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●自行練功",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "身體與大自然對話 。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●山林長嘯",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "輕鬆踏青，對著山林吶喊、唱歌、發聲，就是放，就是開心。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●互動對話",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "考驗肢體的和諧、流暢與默契。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●跨年營火晚會",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "圍繞著升起的營火唱歌、跳舞、烤玉米、烤棉花糖、爆玉米花，最後在凌波微步的音樂和步伐中倒數5、4、3、2、1 *HAPPY NEW YEAR* 迎接新年的到來，擁抱彼此，期許明天會更好。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "●猜猜你是誰",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "讓你懂得日常需多觀察、了解並珍惜身邊的人、事、物，這是老師的創意遊戲。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "感謝天，感謝地（雪山坑），感謝美好的食物，感謝有緣相聚的彼此，感恩東醫氣機導引家族的大家長：張老師和師母付出奉獻。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "～珍惜每一次相聚的緣份，把握每一次機緣的學習。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-6",
-    "sourceId": "2301-3-6",
-    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
-    "slug": "202301-2301-3-6",
+    "slug": "202301-2301-3-5",
+    "image": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-5",
+    "order": 12,
+    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
+    "title": "之五 – 可遇不可求的饗宴",
+    "sourceFileName": "2301-3-5琦瑛.docx",
+    "author": "胡琦瑛"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之六 – 我在營火晚會唱歌",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁邊，聊到營火晚會我被老師丶師母點名唱歌的事情，聴說我拜師學唱歌，同學就建議說我可以寫學唱歌的經歷，我無法推託，只好硬著頭皮接招。",
           "我會去學唱歌，是因為聽到張老師常說要突破自己、改變自己，我想起自己五音不全唱歌難聽，從小到大都不敢開口唱歌，那就從我最害怕的唱歌開始吧。於是我就去社教館報名民俗歌曲歌唱班，幸運遇到國寶級鋼琴老師趙可莊丶趙金鳳（聲樂老師）父女檔。剛開始簡譜也看不懂，像小學生從a、e丶i丶o、u 發音開始學，上到第二期學期結束時有成果發表會，想到張老師說學習就是要參與，於是鼓起勇氣報名參加，特別挑選好聽、歌詞簡單好記的歌——〈阮若打開心內的門窗〉開始練唱。練一陣子後，再利用課堂上跟趙老師鋼琴配合，再用手機錄音，好回家練習。結果自己唱的歌自己都不敢聽，唱的音跟鋼琴聲都不吻合，我也只好繼續練習。",
@@ -76207,161 +76142,98 @@ export const reviewDraftArticles = [
           "沒時間難過，為了挑戰自己，我繼續堅持下去，用最笨的方式，開始背歌譜，數拍子，一個一個音背起來，再加入歌詞，反覆練習，走到哪𥚃，唱到哪裡，整整準備了一個月，才上台參加成果發表會，完整的唱完，我終於做到了，充滿了喜悅。",
           "張老師知道我在上歌唱班，説了很多不好聽的話，（忘記説什麼）要我不要再去上課。我沒聽話，堅持下去，繼續上課，準備第二次的成果發表會。這次有進步了，準備的時間縮短一半。剛好疫情爆發，我就沒有再去上課了，現在也可以自己哼哼唱唱，自得其樂， 尤其隨著音樂練習無極時，比較有感覺，每一首歌都有一個故事，進入到跟譜曲的人時空連結，即可身歷其境、感同身受。",
           "我想，唱歌丶音樂應該也是無極的一部分。所以這次在雪山坑的營火晚會，老師指定我唱歌，我一點也不害怕，就唱了兩首歌。很高興我又克服了一個難題。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-6靜慧.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "高袖桐",
-    "issueId": "202301",
-    "order": 14,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-6",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁邊，聊到營火晚會我被老師丶師母點名唱歌的事情，聴說我拜師學唱歌，同學就建議說我可以寫學唱歌的經歷，我無法推託，只好硬著頭皮接招。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "歲末我們創新身體五感來告別2022。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "我會去學唱歌，是因為聽到張老師常說要突破自己、改變自己，我想起自己五音不全唱歌難聽，從小到大都不敢開口唱歌，那就從我最害怕的唱歌開始吧。於是我就去社教館報名民俗歌曲歌唱班，幸運遇到國寶級鋼琴老師趙可莊丶趙金鳳（聲樂老師）父女檔。剛開始簡譜也看不懂，像小學生從a、e丶i丶o、u 發音開始學，上到第二期學期結束時有成果發表會，想到張老師說學習就是要參與，於是鼓起勇氣報名參加，特別挑選好聽、歌詞簡單好記的歌——〈阮若打開心內的門窗〉開始練唱。練一陣子後，再利用課堂上跟趙老師鋼琴配合，再用手機錄音，好回家練習。結果自己唱的歌自己都不敢聽，唱的音跟鋼琴聲都不吻合，我也只好繼續練習。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己跟爸爸，生命終了時勇敢的接受所有審判，勇敢不害怕的往前走，向死而生，時時重生，靈魂永遠無盡的存在我們內心。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "成果驗收時，趙老師説，聽眾都走一半了！",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第二天的活動都要禁語。早上破曉練功行禪，萬物一切甦醒從動中生，動中生靜，動盪中安靜。禁語是先停止與人的對談，往內止住念頭，沒有專注，從裡面去看到自己更細膩清楚，不受外人跟自己干擾的覺察——覺知、覺受、覺悟。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "沒時間難過，為了挑戰自己，我繼續堅持下去，用最笨的方式，開始背歌譜，數拍子，一個一個音背起來，再加入歌詞，反覆練習，走到哪𥚃，唱到哪裡，整整準備了一個月，才上台參加成果發表會，完整的唱完，我終於做到了，充滿了喜悅。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "接下來在草地上練功。在全視野大自然山林美境中，無極在任何一個角度的轉動彷彿切到任何一個絕美的視角，眼根忍不住要讚嘆。是所有蟲鳴鳥叫吹奏的360立體音響環繞，感謝所有的存在為我演奏，耳根何等幸福。鼻子跟身體全身細胞處在一個安全、自在自由，動到哪裡細胞無限向外打開，毛孔緩緩的出入，身體只是輕輕滑過沒有任何造意，人間仙境大概就是如此了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "張老師知道我在上歌唱班，説了很多不好聽的話，（忘記説什麼）要我不要再去上課。我沒聽話，堅持下去，繼續上課，準備第二次的成果發表會。這次有進步了，準備的時間縮短一半。剛好疫情爆發，我就沒有再去上課了，現在也可以自己哼哼唱唱，自得其樂， 尤其隨著音樂練習無極時，比較有感覺，每一首歌都有一個故事，進入到跟譜曲的人時空連結，即可身歷其境、感同身受。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "因為雪山坑的餐桌太豐富、太精采。主辦同學明快決定取消禁語，下午用餐時間大家就恢復嘰嘰呱呱了，而且意外迎來張老師對「絕對無的哲學」的精彩開講。以下是我的筆記：",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "我想，唱歌丶音樂應該也是無極的一部分。所以這次在雪山坑的營火晚會，老師指定我唱歌，我一點也不害怕，就唱了兩首歌。很高興我又克服了一個難題。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "自由/自在/能創",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "無的能動性/能動的無/無極",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "無能造性 -超越傳統/歷史，創造傳統/歷史的一切裡，是眾生化，創生宇宙萬象的本源。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "本心在當下事如如不動，具足六根變化，在每一當下生滅中融入，不被奪境。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "大學時期我的夢幻科系是哲學系，也許要到這把年紀才能聽得稍微有一點懂，很慶幸我的哲學老師是張老師。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "第三天的互動對話，從兩人指尖接觸開始，隨著不丟不頂，人我合一。線是兩手肘黏著隨身體而動，像一縷輕烟裊裊升起，更加融入。然後是跟夥伴背貼著背，我要放心的讓你背我，我背著你更要放鬆，卸下你我的重量，雖然還沒完全做到全然放鬆，但心是舒暢的。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "最後從3人、5人，到全體，融入的是一切是我，我即一切。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "一趟絕對的真善美在此發生，深刻烙印。",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-7",
-    "sourceId": "2301-3-7",
-    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
-    "slug": "202301-2301-3-7",
+    "slug": "202301-2301-3-6",
+    "image": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-6",
+    "order": 13,
+    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
+    "title": "之六 – 我在營火晚會唱歌",
+    "sourceFileName": "2301-3-6靜慧.docx",
+    "author": "蔡靜慧"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之七 – 真善美在此發生",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "歲末我們創新身體五感來告別2022。",
           "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己跟爸爸，生命終了時勇敢的接受所有審判，勇敢不害怕的往前走，向死而生，時時重生，靈魂永遠無盡的存在我們內心。",
@@ -76376,362 +76248,260 @@ export const reviewDraftArticles = [
           "第三天的互動對話，從兩人指尖接觸開始，隨著不丟不頂，人我合一。線是兩手肘黏著隨身體而動，像一縷輕烟裊裊升起，更加融入。然後是跟夥伴背貼著背，我要放心的讓你背我，我背著你更要放鬆，卸下你我的重量，雖然還沒完全做到全然放鬆，但心是舒暢的。",
           "最後從3人、5人，到全體，融入的是一切是我，我即一切。",
           "一趟絕對的真善美在此發生，深刻烙印。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-7高袖桐.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "何秋玲",
-    "issueId": "202301",
-    "order": 15,
     "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-7",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "歲末我們創新身體五感來告別2022。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它是出自想像還是真實，這就是當下的我，覺受便是。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己跟爸爸，生命終了時勇敢的接受所有審判，勇敢不害怕的往前走，向死而生，時時重生，靈魂永遠無盡的存在我們內心。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "本以為當晚可好夢到天明，躺下沒多久肚子一陣絞痛，趕緊披上外套如廁去，六點起床前來來回回居然有六趟之多，中間和同修在廁所擦身相遇，可也沒因此緊張，好似在清腸，又因隔天是禁語日，凌晨12時起即刻遵守，憋著沒問，看著同修手指著肚子以拉肚子的表情來表示，直到午餐時間宣布提前解禁，大家聊起來才知道銅鑼浴的附帶效益是清腸解毒，有的還會帶出舊傷療癒，接下來通體舒暢，很棒的深層淨化。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "第二天的活動都要禁語。早上破曉練功行禪，萬物一切甦醒從動中生，動中生靜，動盪中安靜。禁語是先停止與人的對談，往內止住念頭，沒有專注，從裡面去看到自己更細膩清楚，不受外人跟自己干擾的覺察——覺知、覺受、覺悟。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "禁語日初體驗大家就破了功，自認習得平日老師教的心法，不說話倒是還可比手畫腳，但是禁語除了不語外，念頭要漸少，甚至內心的對話也沒了，最後由六根自由自在接收訊息。清早六點隨著敲罄聲至2樓練功房鬆身、行禪、自行練功2小時，接著梳洗、簡單早餐。10點打板提醒大家到戶外練功，全在無聲無息當中進行，大夥靜悄悄的，大自然的交響樂曲此起彼落，聽到腦袋瓜的念頭紛亂飛來，想法像水流一湧而現，這才看清楚自己念頭都裝些甚麼。哇！要如何本心自在，應無所住而生其心，呵呵呵，好好嘲笑自己一下。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "接下來在草地上練功。在全視野大自然山林美境中，無極在任何一個角度的轉動彷彿切到任何一個絕美的視角，眼根忍不住要讚嘆。是所有蟲鳴鳥叫吹奏的360立體音響環繞，感謝所有的存在為我演奏，耳根何等幸福。鼻子跟身體全身細胞處在一個安全、自在自由，動到哪裡細胞無限向外打開，毛孔緩緩的出入，身體只是輕輕滑過沒有任何造意，人間仙境大概就是如此了。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "禁語雖沒有到位，但在互動中擦出的火花，老師跟同修的彼此會心一笑，存在心裡是溫暖的，生動的表情及肢體語言非語言可描述，沒有十幾年的課堂相處默契是感受不到的。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "因為雪山坑的餐桌太豐富、太精采。主辦同學明快決定取消禁語，下午用餐時間大家就恢復嘰嘰呱呱了，而且意外迎來張老師對「絕對無的哲學」的精彩開講。以下是我的筆記：",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第三天的互動對話跟身體說故事並融，由兩人一組到雙人、四人、六人皆可，練功房是舞臺，大家盡情揮灑自己的肢體，放鬆無拘束、無制式、沒有規則而依規矩擺脫規矩。同修綻放的笑容和自信，是在氣機導引長期練養的成果。2022歲末嘻遊在歡樂笑聲中圓滿完成。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "自由/自在/能創",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "無的能動性/能動的無/無極",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "無能造性 -超越傳統/歷史，創造傳統/歷史的一切裡，是眾生化，創生宇宙萬象的本源。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "本心在當下事如如不動，具足六根變化，在每一當下生滅中融入，不被奪境。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "大學時期我的夢幻科系是哲學系，也許要到這把年紀才能聽得稍微有一點懂，很慶幸我的哲學老師是張老師。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "第三天的互動對話，從兩人指尖接觸開始，隨著不丟不頂，人我合一。線是兩手肘黏著隨身體而動，像一縷輕烟裊裊升起，更加融入。然後是跟夥伴背貼著背，我要放心的讓你背我，我背著你更要放鬆，卸下你我的重量，雖然還沒完全做到全然放鬆，但心是舒暢的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "最後從3人、5人，到全體，融入的是一切是我，我即一切。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "一趟絕對的真善美在此發生，深刻烙印。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-8",
-    "sourceId": "2301-3-8",
-    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
-    "slug": "202301-2301-3-8",
+    "slug": "202301-2301-3-7",
+    "image": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-7",
+    "order": 14,
+    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
+    "title": "之七 – 真善美在此發生",
+    "sourceFileName": "2301-3-7高袖桐.docx",
+    "author": "高袖桐"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之八 – 依規矩而擺脫規矩",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它是出自想像還是真實，這就是當下的我，覺受便是。",
           "本以為當晚可好夢到天明，躺下沒多久肚子一陣絞痛，趕緊披上外套如廁去，六點起床前來來回回居然有六趟之多，中間和同修在廁所擦身相遇，可也沒因此緊張，好似在清腸，又因隔天是禁語日，凌晨12時起即刻遵守，憋著沒問，看著同修手指著肚子以拉肚子的表情來表示，直到午餐時間宣布提前解禁，大家聊起來才知道銅鑼浴的附帶效益是清腸解毒，有的還會帶出舊傷療癒，接下來通體舒暢，很棒的深層淨化。",
           "禁語日初體驗大家就破了功，自認習得平日老師教的心法，不說話倒是還可比手畫腳，但是禁語除了不語外，念頭要漸少，甚至內心的對話也沒了，最後由六根自由自在接收訊息。清早六點隨著敲罄聲至2樓練功房鬆身、行禪、自行練功2小時，接著梳洗、簡單早餐。10點打板提醒大家到戶外練功，全在無聲無息當中進行，大夥靜悄悄的，大自然的交響樂曲此起彼落，聽到腦袋瓜的念頭紛亂飛來，想法像水流一湧而現，這才看清楚自己念頭都裝些甚麼。哇！要如何本心自在，應無所住而生其心，呵呵呵，好好嘲笑自己一下。",
           "禁語雖沒有到位，但在互動中擦出的火花，老師跟同修的彼此會心一笑，存在心裡是溫暖的，生動的表情及肢體語言非語言可描述，沒有十幾年的課堂相處默契是感受不到的。",
           "第三天的互動對話跟身體說故事並融，由兩人一組到雙人、四人、六人皆可，練功房是舞臺，大家盡情揮灑自己的肢體，放鬆無拘束、無制式、沒有規則而依規矩擺脫規矩。同修綻放的笑容和自信，是在氣機導引長期練養的成果。2022歲末嘻遊在歡樂笑聲中圓滿完成。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-8秋玲.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [
-      {
-        "type": "image",
-        "caption": "",
-        "paragraphIndex": 3,
-        "src": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531"
-      },
-      {
-        "type": "image",
-        "caption": "",
-        "src": "/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761"
-      },
-      {
-        "type": "image",
-        "caption": "",
-        "src": "/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460"
-      }
-    ],
-    "image": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "歲末嬉遊記",
     "imageCaption": "",
-    "author": "倪暐婷",
-    "issueId": "202301",
-    "order": 16,
-    "readTime": "約 3 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-3-8",
     "contentBlocks": [
       {
-        "type": "heading",
-        "text": "無極讓活動更圓滿",
-        "level": 2
-      },
-      {
-        "styleName": "",
-        "styleId": "",
+        "text": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它是出自想像還是真實，這就是當下的我，覺受便是。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排一餐或體驗斷食，卻在第一天就破功 ; 原本安排以聊天為主，品香為輔的香席活動，大夥品香品得忘我，將聊天主題拋之雲霄 ; 原本說好的禁語，也因為師傅的特別開講，才維持了半天就解禁 ; 這一系列意料中的意外，卻讓我們的活動更加圓滿，也感受到群龍無首，各自就定位的能量。",
-        "type": "paragraph"
-      },
-      {
-        "type": "image",
-        "caption": "",
-        "src": "/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "互動香席",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
+        "text": "本以為當晚可好夢到天明，躺下沒多久肚子一陣絞痛，趕緊披上外套如廁去，六點起床前來來回回居然有六趟之多，中間和同修在廁所擦身相遇，可也沒因此緊張，好似在清腸，又因隔天是禁語日，凌晨12時起即刻遵守，憋著沒問，看著同修手指著肚子以拉肚子的表情來表示，直到午餐時間宣布提前解禁，大家聊起來才知道銅鑼浴的附帶效益是清腸解毒，有的還會帶出舊傷療癒，接下來通體舒暢，很棒的深層淨化。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "此次的香席活動以聊天為主，品香為輔，透過分組品香、聊天、心得分享、參悟。",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
+        "text": "禁語日初體驗大家就破了功，自認習得平日老師教的心法，不說話倒是還可比手畫腳，但是禁語除了不語外，念頭要漸少，甚至內心的對話也沒了，最後由六根自由自在接收訊息。清早六點隨著敲罄聲至2樓練功房鬆身、行禪、自行練功2小時，接著梳洗、簡單早餐。10點打板提醒大家到戶外練功，全在無聲無息當中進行，大夥靜悄悄的，大自然的交響樂曲此起彼落，聽到腦袋瓜的念頭紛亂飛來，想法像水流一湧而現，這才看清楚自己念頭都裝些甚麼。哇！要如何本心自在，應無所住而生其心，呵呵呵，好好嘲笑自己一下。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "我設計了互動式香席與茶席讓聊天更自在地進行，蔥綠色的席子、淺咖啡色的坐墊（內附暖暖包），用山莊花園前的當季粉色茶花與各式蕨類妝點，希望能帶給香客人溫暖、輕鬆的感覺，好似坐在草地上有花草陪伴，桌上也有靜心兔香座讓我們的心更沉澱。",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
+        "text": "禁語雖沒有到位，但在互動中擦出的火花，老師跟同修的彼此會心一笑，存在心裡是溫暖的，生動的表情及肢體語言非語言可描述，沒有十幾年的課堂相處默契是感受不到的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "第三天的互動對話跟身體說故事並融，由兩人一組到雙人、四人、六人皆可，練功房是舞臺，大家盡情揮灑自己的肢體，放鬆無拘束、無制式、沒有規則而依規矩擺脫規矩。同修綻放的笑容和自信，是在氣機導引長期練養的成果。2022歲末嘻遊在歡樂笑聲中圓滿完成。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "為何說是互動式香席呢？我想往往香席總是一人操作，倘若每個人都能在聊天前點燃自己心中的那一柱香，每句話與空間皆充滿著無限的力量。我準備了三個香座，每個香座下有兩個主題，香客人抽一個主題後點燃臥香，就可以針對主題開始娓娓道來。",
-        "type": "paragraph"
-      },
-      {
-        "type": "image",
-        "caption": "",
-        "src": "/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "我們事先準備了上課教授過的三個主題：",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "1. 你是自己作主嗎？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "2. 你能覺察你有哪些很難攻破的意識型態嗎？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "3. 怎樣做，才是本心？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "另外我自己發想了三個主題，分別是：",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "1. 一分鐘錄音分享",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "2. 你如何能快樂？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "3. 你期待在此次活動中感受到什麼？",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "阿堡分享了自己的一分鐘錄音，從工作面講到生活面，無不將導引心法運用在其中，生活雖然忙碌常常打拼到很晚，陪伴在旁的我也感受到他的成長與穩重，失敗與挫折是滋養人覺悟的好地方，要把自己放在錯的地方去「對」。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "慧敏抽到了期待在此次活動中感受到什麼？與其期待，不如好好去感受活動，甚至是每一件事，不做過多的預設立場和想像，實在的享受當下才是活動中最珍貴的。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "靜慧分享了她的快樂秘訣，雖然沒什麼脾氣的她，卻一樣會做出許多出格的糗事，但對此她也能一笑置之，心的動盪也降至最低，而面對其他的事情也能處之泰然。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "平順抽到「你能覺察你有哪些很難攻破的意識型態嗎？」還來不及好好分享，就被師傅的火山爆發吸引走了，期待下次再聽到他的心法。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "移地禁語",
-        "level": 2
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "由於現在五感人間的工作模式，與自己相處和對話的時間比以前上班時多得多，在公司總是有各式各樣的狀況、電話、交談聲，而在八德館能給我最清楚、安定的思緒，與自己對話的過程中遇到的疑問，也能透過種子班課程解惑，或與師傅師母、師兄姊的對談中有所指引。但禁語的終極核心，其實是連念頭都不能有的，此次移地禁語，對我來說既熟悉又新鮮，在大自然的包圍中，想法更清晰且無雜念。",
-        "type": "paragraph"
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "而我們的活動沒有因為禁語就無法進行，透過打板、引磬提醒時間，我們各自就定位，依舊能完成活動、完成自己。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "互動對話",
-        "level": 2
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "此次的互動對話，我以攝影師的身份在一旁，從古典的樂曲到輕快節奏、再到節拍強烈的音樂，大家都很享受其中，每個人都活靈活現地透過身體與無極表達當下的心境，在慢節奏的音樂中快，在快節奏的音樂中慢，從雙人到四人，直至大家手牽手繞成一個大圈圈，處處皆無極。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "現階段的我",
-        "level": 2
-      },
-      {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "人生就像是不停地越過一座一座的山頭，每個人快慢不同，跑得快的人享受優先權、跑得慢的人享受優惠，但在越過每座山頭時，我們看不見前面的路，路途崎嶇波折卻又模糊不清，只能緊抓著自己現有的經驗和資訊往前跑，往往頭破血流卻又不知為何，但因為有導引的明燈從山頭照亮引路，我可以提早看見山路的模樣，我可以往前看見山頭有多高，了解自己有多渺小。山有多高，就需有多堅強，著實的讓自己發出自身年紀的光，深呼吸後，再越過下一個山頭．",
-        "type": "paragraph"
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-3-9",
-    "sourceId": "2301-3-9",
-    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
-    "slug": "202301-2301-3-9",
+    "slug": "202301-2301-3-8",
+    "image": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-8",
+    "order": 15,
+    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
+    "title": "之八 – 依規矩而擺脫規矩",
+    "sourceFileName": "2301-3-8秋玲.docx",
+    "author": "何秋玲"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "之九 – 群龍無首，各自就定位",
-    "sourceUrl": "",
+    "images": [
+      {
+        "paragraphIndex": 3,
+        "caption": "",
+        "src": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
+        "type": "image"
+      },
+      {
+        "src": "/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761",
+        "caption": "",
+        "type": "image"
+      },
+      {
+        "src": "/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460",
+        "caption": "",
+        "type": "image"
+      }
+    ],
+    "category": "歲末嬉遊記",
+    "tags": [
+      "歲末嬉遊記"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "無極讓活動更圓滿",
           "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排一餐或體驗斷食，卻在第一天就破功 ; 原本安排以聊天為主，品香為輔的香席活動，大夥品香品得忘我，將聊天主題拋之雲霄 ; 原本說好的禁語，也因為師傅的特別開講，才維持了半天就解禁 ; 這一系列意料中的意外，卻讓我們的活動更加圓滿，也感受到群龍無首，各自就定位的能量。",
@@ -76758,100 +76528,257 @@ export const reviewDraftArticles = [
           "此次的互動對話，我以攝影師的身份在一旁，從古典的樂曲到輕快節奏、再到節拍強烈的音樂，大家都很享受其中，每個人都活靈活現地透過身體與無極表達當下的心境，在慢節奏的音樂中快，在快節奏的音樂中慢，從雙人到四人，直至大家手牽手繞成一個大圈圈，處處皆無極。",
           "現階段的我",
           "人生就像是不停地越過一座一座的山頭，每個人快慢不同，跑得快的人享受優先權、跑得慢的人享受優惠，但在越過每座山頭時，我們看不見前面的路，路途崎嶇波折卻又模糊不清，只能緊抓著自己現有的經驗和資訊往前跑，往往頭破血流卻又不知為何，但因為有導引的明燈從山頭照亮引路，我可以提早看見山路的模樣，我可以往前看見山頭有多高，了解自己有多渺小。山有多高，就需有多堅強，著實的讓自己發出自身年紀的光，深呼吸後，再越過下一個山頭．"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-3-9暐婷.docx",
-    "tags": [
-      "歲末嬉遊記"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-4420690.jpg?v=4420690",
+    "imageCaption": "",
+    "readTime": "約 3 分鐘",
+    "sourceUrl": "",
     "issue": "第203期 / 2023.01電子報",
-    "category": "練功筆記",
-    "imageCaption": "圖片來源 / Pixabay",
-    "author": "熊曼琦",
-    "issueId": "202301",
-    "order": 17,
-    "readTime": "約 2 分鐘",
-    "hasExplicitTitle": true,
+    "sourceId": "2301-3-9",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
-        "type": "paragraph"
+        "level": 2,
+        "text": "無極讓活動更圓滿",
+        "type": "heading"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排一餐或體驗斷食，卻在第一天就破功 ; 原本安排以聊天為主，品香為輔的香席活動，大夥品香品得忘我，將聊天主題拋之雲霄 ; 原本說好的禁語，也因為師傅的特別開講，才維持了半天就解禁 ; 這一系列意料中的意外，卻讓我們的活動更加圓滿，也感受到群龍無首，各自就定位的能量。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "比如上一次初夏的雪山坑之旅，讓我至今仍印象深刻。雪山坑後院清靜，清風徐來，純淨自然，大塊石磚砌成的擋土牆呈現著安全、堅固與美觀。樹被風吹得發出沙沙的聲響，同學們坐在椅子上開心的吃箸午餐、甜點與水果，談天說地，悠閒的享受午餐時刻。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "在練功房複習無極，其中第一段的無極功法，我常有碰到功法與功法連結的「十字路口」就停頓的狀態，經過一次次反覆練習，才漸漸能順暢連結起來。練到無極第二段，大腦不想太多，心情和思緒平靜下來，就比較順暢，螺旋、延伸、開闔、絞轉的肢體動作更放鬆。",
-        "type": "paragraph"
+        "src": "/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761",
+        "caption": "",
+        "type": "image"
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "互動香席",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "當夜晚來臨，紛紛出現的螢火蟲忽隱忽現穿梭在草叢間，開啟牠們的一天。 在安靜的夜幕中讓人可以暫時遠離都市生活的庸擾。躺在後院的水泥地感受大自然，近看一盞盞小燈籠原來是在空中飛舞的火金姑，還有青蛙的鳴叫及山羌的叫聲，遠處星空浩瀚，這個夜晚特別美。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "此次的香席活動以聊天為主，品香為輔，透過分組品香、聊天、心得分享、參悟。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "雪山坑還可以採買到新鮮的蔬菜、綿密香甜的南瓜、滑嫩可口的桂竹筍、味道鮮美的雞蛋，一道道都變成餐桌上的美食，大家吃得好開心，一口又一口。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "我設計了互動式香席與茶席讓聊天更自在地進行，蔥綠色的席子、淺咖啡色的坐墊（內附暖暖包），用山莊花園前的當季粉色茶花與各式蕨類妝點，希望能帶給香客人溫暖、輕鬆的感覺，好似坐在草地上有花草陪伴，桌上也有靜心兔香座讓我們的心更沉澱。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "第二屆武林大會，與二早班同學表演「Bu啊 嘛捂出頭天」也讓我記憶猶新。我們「六小瓠」一次次的練習，漸漸從生疏到熟練，有段時間我甚至在做飯煮菜時也手拿鍋鏟上下左右揮動著表演的劇本動作，練到變成自然反應，才能在舞台上不緊張，輕鬆的演出。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "為何說是互動式香席呢？我想往往香席總是一人操作，倘若每個人都能在聊天前點燃自己心中的那一柱香，每句話與空間皆充滿著無限的力量。我準備了三個香座，每個香座下有兩個主題，香客人抽一個主題後點燃臥香，就可以針對主題開始娓娓道來。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "那天我們進場是搭配「素蘭小姐要出嫁」的音樂，由素蘭師姐帶領，接著是代表我們班的武林盟主入圍者麗惠班長，全班隨著音樂旋律舞蹈，氣氛歡樂，搖曳生姿，相當有趣。終於輪到我們登場時，「六小瓠」披著紅色大斗篷，頭戴有髮捲的蓬鬆假髮，穿著圍裙，手拿表演道具，輕鬆逗趣的舞台表演，在演出動作中描述家庭主婦一成不變的工作及辛苦。直到「主婦當自強」的音樂響起，「六小瓠」做起氣機導引的功法。因為遇見了氣機導引，家庭主婦也可以發揮能量，有成長的機會！「主婦當自強」洪亮的歌聲、貼切的台詞、獨特又滑稽的造型、順暢的演出，這次武林大會成為我心中難忘的回憶。除了感謝幕後團隊的創意激盪，也深感慶幸十多年前有機會來練氣機導引一直到現在。我會繼續練下去，期待創造更多美好的記憶。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "src": "/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460",
+        "caption": "",
+        "type": "image"
+      },
+      {
+        "text": "我們事先準備了上課教授過的三個主題：",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "1. 你是自己作主嗎？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "2. 你能覺察你有哪些很難攻破的意識型態嗎？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "3. 怎樣做，才是本心？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "另外我自己發想了三個主題，分別是：",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "1. 一分鐘錄音分享",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "2. 你如何能快樂？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "3. 你期待在此次活動中感受到什麼？",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "阿堡分享了自己的一分鐘錄音，從工作面講到生活面，無不將導引心法運用在其中，生活雖然忙碌常常打拼到很晚，陪伴在旁的我也感受到他的成長與穩重，失敗與挫折是滋養人覺悟的好地方，要把自己放在錯的地方去「對」。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "慧敏抽到了期待在此次活動中感受到什麼？與其期待，不如好好去感受活動，甚至是每一件事，不做過多的預設立場和想像，實在的享受當下才是活動中最珍貴的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "靜慧分享了她的快樂秘訣，雖然沒什麼脾氣的她，卻一樣會做出許多出格的糗事，但對此她也能一笑置之，心的動盪也降至最低，而面對其他的事情也能處之泰然。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "平順抽到「你能覺察你有哪些很難攻破的意識型態嗎？」還來不及好好分享，就被師傅的火山爆發吸引走了，期待下次再聽到他的心法。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "移地禁語",
+        "type": "heading"
+      },
+      {
+        "text": "由於現在五感人間的工作模式，與自己相處和對話的時間比以前上班時多得多，在公司總是有各式各樣的狀況、電話、交談聲，而在八德館能給我最清楚、安定的思緒，與自己對話的過程中遇到的疑問，也能透過種子班課程解惑，或與師傅師母、師兄姊的對談中有所指引。但禁語的終極核心，其實是連念頭都不能有的，此次移地禁語，對我來說既熟悉又新鮮，在大自然的包圍中，想法更清晰且無雜念。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "而我們的活動沒有因為禁語就無法進行，透過打板、引磬提醒時間，我們各自就定位，依舊能完成活動、完成自己。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "互動對話",
+        "type": "heading"
+      },
+      {
+        "text": "此次的互動對話，我以攝影師的身份在一旁，從古典的樂曲到輕快節奏、再到節拍強烈的音樂，大家都很享受其中，每個人都活靈活現地透過身體與無極表達當下的心境，在慢節奏的音樂中快，在快節奏的音樂中慢，從雙人到四人，直至大家手牽手繞成一個大圈圈，處處皆無極。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "現階段的我",
+        "type": "heading"
+      },
+      {
+        "text": "人生就像是不停地越過一座一座的山頭，每個人快慢不同，跑得快的人享受優先權、跑得慢的人享受優惠，但在越過每座山頭時，我們看不見前面的路，路途崎嶇波折卻又模糊不清，只能緊抓著自己現有的經驗和資訊往前跑，往往頭破血流卻又不知為何，但因為有導引的明燈從山頭照亮引路，我可以提早看見山路的模樣，我可以往前看見山頭有多高，了解自己有多渺小。山有多高，就需有多堅強，著實的讓自己發出自身年紀的光，深呼吸後，再越過下一個山頭．",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-4",
-    "sourceId": "2301-4",
-    "excerpt": "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
-    "slug": "202301-2301-4",
+    "slug": "202301-2301-3-9",
+    "image": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-3-9",
+    "order": 16,
+    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
+    "title": "之九 – 群龍無首，各自就定位",
+    "sourceFileName": "2301-3-9暐婷.docx",
+    "author": "倪暐婷"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "難忘你我共聚時互放的光亮",
-    "sourceUrl": "",
+    "images": [],
+    "category": "練功筆記",
+    "tags": [
+      "練功筆記",
+      "身體感知"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
           "比如上一次初夏的雪山坑之旅，讓我至今仍印象深刻。雪山坑後院清靜，清風徐來，純淨自然，大塊石磚砌成的擋土牆呈現著安全、堅固與美觀。樹被風吹得發出沙沙的聲響，同學們坐在椅子上開心的吃箸午餐、甜點與水果，談天說地，悠閒的享受午餐時刻。",
@@ -76860,120 +76787,101 @@ export const reviewDraftArticles = [
           "雪山坑還可以採買到新鮮的蔬菜、綿密香甜的南瓜、滑嫩可口的桂竹筍、味道鮮美的雞蛋，一道道都變成餐桌上的美食，大家吃得好開心，一口又一口。",
           "第二屆武林大會，與二早班同學表演「Bu啊 嘛捂出頭天」也讓我記憶猶新。我們「六小瓠」一次次的練習，漸漸從生疏到熟練，有段時間我甚至在做飯煮菜時也手拿鍋鏟上下左右揮動著表演的劇本動作，練到變成自然反應，才能在舞台上不緊張，輕鬆的演出。",
           "那天我們進場是搭配「素蘭小姐要出嫁」的音樂，由素蘭師姐帶領，接著是代表我們班的武林盟主入圍者麗惠班長，全班隨著音樂旋律舞蹈，氣氛歡樂，搖曳生姿，相當有趣。終於輪到我們登場時，「六小瓠」披著紅色大斗篷，頭戴有髮捲的蓬鬆假髮，穿著圍裙，手拿表演道具，輕鬆逗趣的舞台表演，在演出動作中描述家庭主婦一成不變的工作及辛苦。直到「主婦當自強」的音樂響起，「六小瓠」做起氣機導引的功法。因為遇見了氣機導引，家庭主婦也可以發揮能量，有成長的機會！「主婦當自強」洪亮的歌聲、貼切的台詞、獨特又滑稽的造型、順暢的演出，這次武林大會成為我心中難忘的回憶。除了感謝幕後團隊的創意激盪，也深感慶幸十多年前有機會來練氣機導引一直到現在。我會繼續練下去，期待創造更多美好的記憶。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-4練功筆記.docx",
-    "tags": [
-      "練功筆記",
-      "身體感知"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-6943982.jpg?v=6943982",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "體證道德經",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "文稿彙整 / 楊慧敏",
-    "issueId": "202301",
-    "order": 18,
-    "readTime": "約 3 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 2 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-4",
     "contentBlocks": [
       {
-        "type": "quote",
-        "text": "道德經第三十一章\n\n夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶事尚右。偏將軍居左，上將軍居右。言以喪禮處之。殺人之眾，以悲哀泣之，戰勝以喪禮處之。"
-      },
-      {
-        "type": "heading",
-        "text": "兵者不祥之器",
-        "level": 2
-      },
-      {
-        "styleName": "",
-        "styleId": "",
+        "text": "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「夫佳兵者不祥之器，物或惡之，故有道者不處。」兵者，兵器或好勝好鬥之意，就是殺戮、攻擊武器、攻擊策略、征戰企圖、好勝之心，不管你拿的是上好的寶劍，或是作戰的利器，只要是兵器，就有主戰、主勝、主消滅、主擊敗的意識，確然不是好物品或好意識，萬物皆會嫌惡它，最終也都會滅亡。因此，悟道者不取之。",
-        "type": "paragraph"
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。」古代廟堂裡面左邊為陽，是大人坐的位置，所以君子所處之態度居左；右邊為陰，是小人坐的位置，若用兵者就處右邊。想戰勝或想戰鬥的念頭是不祥的，非君子處世之道。君子所處之態度與用兵者是相反的，即便手上拿著兵器，還是不主戰，以退為進，退無可退，逼不得已才採用兵器，以戰逼和，心平氣和才是正道。",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
+        "text": "比如上一次初夏的雪山坑之旅，讓我至今仍印象深刻。雪山坑後院清靜，清風徐來，純淨自然，大塊石磚砌成的擋土牆呈現著安全、堅固與美觀。樹被風吹得發出沙沙的聲響，同學們坐在椅子上開心的吃箸午餐、甜點與水果，談天說地，悠閒的享受午餐時刻。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "在練功房複習無極，其中第一段的無極功法，我常有碰到功法與功法連結的「十字路口」就停頓的狀態，經過一次次反覆練習，才漸漸能順暢連結起來。練到無極第二段，大腦不想太多，心情和思緒平靜下來，就比較順暢，螺旋、延伸、開闔、絞轉的肢體動作更放鬆。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。」勝利是醜陋的，只有喜歡殺人者或好勝者，才會將勝利視為美好的。沒有人會喜歡製造仇恨者，喜歡殺人者或好勝者一定會很孤獨的，雖得天下卻失民心。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "戰勝以喪禮處之",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "「吉事尚左，凶事尚右。偏將軍居左，上將軍居右」，廟堂裡面左邊為陽，吉事以左邊為主；右邊為陰，凶事以右邊為主。回歸事物的本質來看所處位置，古代偏將軍主要任務為管理軍隊的行政事務，主責周全軍隊的吃、住、傷兵醫治以及全然而退，所以偏將軍居屬吉事的左邊；上將軍雖是總司令官，但主導作戰，在沙場上必須殺人，一兵一卒都要趕盡殺絕，主戰為凶，故居右邊。",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
+        "text": "當夜晚來臨，紛紛出現的螢火蟲忽隱忽現穿梭在草叢間，開啟牠們的一天。 在安靜的夜幕中讓人可以暫時遠離都市生活的庸擾。躺在後院的水泥地感受大自然，近看一盞盞小燈籠原來是在空中飛舞的火金姑，還有青蛙的鳴叫及山羌的叫聲，遠處星空浩瀚，這個夜晚特別美。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "雪山坑還可以採買到新鮮的蔬菜、綿密香甜的南瓜、滑嫩可口的桂竹筍、味道鮮美的雞蛋，一道道都變成餐桌上的美食，大家吃得好開心，一口又一口。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "「言以喪禮處之。殺人之眾，以悲哀泣之，戰勝以喪禮處之」，以一個主殺氣的狀態作戰殺人，殺那麼多人，是要悲哀痛哭的，因此，即使打了勝仗，回來時也要用辦喪禮的態度來對待。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "處虛、處生、處善、不處殺",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
-        "isLargeFont": true,
-        "isHeadingStyle": false,
-        "isBold": false,
-        "text": "老子哲學無所不在，呼應天地萬物，所有立場都適用，從上一篇30章及這一篇31章看到老子如何看待生死，看待人生，看待人與人之間的終極關係。從養生、個人的志，談到整個國家、全民的大志。一個人面對自我的時候，要處虛，就是第30章所說的「以道佐人主者也」，就是要以宇宙自然常道的法則來對待自己，要以無為養生，以處虛的哲學來進行管理，讓身體的六十兆細胞能夠安居樂業，充滿細胞的張力，活出最大的人生效果；擴大到對外及國際之間的重大時刻，要去除「兵者」的備戰狀態；處生，處善而不能處殺。",
-        "type": "paragraph"
+        "styleId": ""
       },
       {
-        "styleName": "",
-        "styleId": "",
+        "text": "第二屆武林大會，與二早班同學表演「Bu啊 嘛捂出頭天」也讓我記憶猶新。我們「六小瓠」一次次的練習，漸漸從生疏到熟練，有段時間我甚至在做飯煮菜時也手拿鍋鏟上下左右揮動著表演的劇本動作，練到變成自然反應，才能在舞台上不緊張，輕鬆的演出。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "人最強烈的手段就是殺、戰爭，就是人與人之間的格鬥，每個人呼吸之間就爭一個贏，這就是「戰」、「兵」，那是老子絕對反對的，求生的人是吉，主戰的人是凶。兵者，除了具體的兵戎相見，還包含內在的好戰之心、好勝好強之心及採取的態度，例如：夫妻之間若「兵」在心裡，採取處處不信任對方的柔性暴力，夫妻必生嫌隙。每一個人都希望有主見，主見一來就是起戰心，我們日常生活有多少是在「兵」的狀態，起心動念越銳利越強的東西，就越是所謂的「佳兵」，恨、嫉妒、揣測就很銳利，都是「夫佳兵者」。我們內心裡面其實都隱藏著「把別人踩下去」的心態，以現代人而言，這類人是沒有朋友的，趾高氣揚，好勝心強，鬼神皆遠之，誰願意靠近？何謂吉凶？一念之間而已。千萬不要用兵，不要用暴力、對抗，天下不是對抗出來的，天下是合作出來的。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "那天我們進場是搭配「素蘭小姐要出嫁」的音樂，由素蘭師姐帶領，接著是代表我們班的武林盟主入圍者麗惠班長，全班隨著音樂旋律舞蹈，氣氛歡樂，搖曳生姿，相當有趣。終於輪到我們登場時，「六小瓠」披著紅色大斗篷，頭戴有髮捲的蓬鬆假髮，穿著圍裙，手拿表演道具，輕鬆逗趣的舞台表演，在演出動作中描述家庭主婦一成不變的工作及辛苦。直到「主婦當自強」的音樂響起，「六小瓠」做起氣機導引的功法。因為遇見了氣機導引，家庭主婦也可以發揮能量，有成長的機會！「主婦當自強」洪亮的歌聲、貼切的台詞、獨特又滑稽的造型、順暢的演出，這次武林大會成為我心中難忘的回憶。除了感謝幕後團隊的創意激盪，也深感慶幸十多年前有機會來練氣機導引一直到現在。我會繼續練下去，期待創造更多美好的記憶。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-5",
-    "sourceId": "2301-5",
-    "excerpt": "夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶…",
-    "slug": "202301-2301-5",
+    "slug": "202301-2301-4",
+    "image": "/assets/pixabay/pixabay-4420690.jpg?v=4420690",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-4",
+    "order": 17,
+    "excerpt": "跟著張老師練氣機導引已經十幾年了，練功除了是讓自己更懂得放鬆的身體保健，藉由練功還有聽張老師講道，也拓展了我的視野、結交了志趣相投的好同學，在記憶中留下許多難忘的美好時光。",
+    "title": "難忘你我共聚時互放的光亮",
+    "sourceFileName": "2301-4練功筆記.docx",
+    "author": "熊曼琦"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "你的心裡也伏藏著「佳兵」嗎？",
-    "sourceUrl": "",
+    "images": [],
+    "category": "體證道德經",
+    "tags": [
+      "體證道德經",
+      "道德經"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "道德經第三十一章",
           "夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶事尚右。偏將軍居左，上將軍居右。言以喪禮處之。殺人之眾，以悲哀泣之，戰勝以喪禮處之。",
@@ -76987,117 +76895,120 @@ export const reviewDraftArticles = [
           "處虛、處生、處善、不處殺",
           "老子哲學無所不在，呼應天地萬物，所有立場都適用，從上一篇30章及這一篇31章看到老子如何看待生死，看待人生，看待人與人之間的終極關係。從養生、個人的志，談到整個國家、全民的大志。一個人面對自我的時候，要處虛，就是第30章所說的「以道佐人主者也」，就是要以宇宙自然常道的法則來對待自己，要以無為養生，以處虛的哲學來進行管理，讓身體的六十兆細胞能夠安居樂業，充滿細胞的張力，活出最大的人生效果；擴大到對外及國際之間的重大時刻，要去除「兵者」的備戰狀態；處生，處善而不能處殺。",
           "人最強烈的手段就是殺、戰爭，就是人與人之間的格鬥，每個人呼吸之間就爭一個贏，這就是「戰」、「兵」，那是老子絕對反對的，求生的人是吉，主戰的人是凶。兵者，除了具體的兵戎相見，還包含內在的好戰之心、好勝好強之心及採取的態度，例如：夫妻之間若「兵」在心裡，採取處處不信任對方的柔性暴力，夫妻必生嫌隙。每一個人都希望有主見，主見一來就是起戰心，我們日常生活有多少是在「兵」的狀態，起心動念越銳利越強的東西，就越是所謂的「佳兵」，恨、嫉妒、揣測就很銳利，都是「夫佳兵者」。我們內心裡面其實都隱藏著「把別人踩下去」的心態，以現代人而言，這類人是沒有朋友的，趾高氣揚，好勝心強，鬼神皆遠之，誰願意靠近？何謂吉凶？一念之間而已。千萬不要用兵，不要用暴力、對抗，天下不是對抗出來的，天下是合作出來的。"
-        ],
-        "heading": null
+        ]
       }
     ],
-    "sourceFileName": "2301-5體證道德經.docx",
-    "tags": [
-      "體證道德經",
-      "道德經"
-    ]
-  },
-  {
-    "images": [],
-    "image": "/assets/pixabay/pixabay-7387018.jpg?v=7387018",
-    "issue": "第203期 / 2023.01電子報",
-    "category": "圖靈集",
     "imageCaption": "圖片來源 / Pixabay",
-    "author": "阿充",
-    "issueId": "202301",
-    "order": 19,
-    "readTime": "約 4 分鐘",
-    "hasExplicitTitle": true,
+    "readTime": "約 3 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-5",
     "contentBlocks": [
       {
-        "styleName": "",
-        "styleId": "",
+        "type": "quote",
+        "text": "道德經第三十一章\n\n夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶事尚右。偏將軍居左，上將軍居右。言以喪禮處之。殺人之眾，以悲哀泣之，戰勝以喪禮處之。"
+      },
+      {
+        "level": 2,
+        "text": "兵者不祥之器",
+        "type": "heading"
+      },
+      {
+        "text": "「夫佳兵者不祥之器，物或惡之，故有道者不處。」兵者，兵器或好勝好鬥之意，就是殺戮、攻擊武器、攻擊策略、征戰企圖、好勝之心，不管你拿的是上好的寶劍，或是作戰的利器，只要是兵器，就有主戰、主勝、主消滅、主擊敗的意識，確然不是好物品或好意識，萬物皆會嫌惡它，最終也都會滅亡。因此，悟道者不取之。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主，心想期末作業應該就這麼過關了吧！沒想到好戲還在後頭，張老師針對這1分鐘錄音的一席話，搞得大家都抬不起頭來，內心不寒而慄，尤其是像我這樣的老學員。今天就透過這1分鐘的錄音，看看自己到底怎麼了。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "聽的不是內容，是誠意",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "「君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。」古代廟堂裡面左邊為陽，是大人坐的位置，所以君子所處之態度居左；右邊為陰，是小人坐的位置，若用兵者就處右邊。想戰勝或想戰鬥的念頭是不祥的，非君子處世之道。君子所處之態度與用兵者是相反的，即便手上拿著兵器，還是不主戰，以退為進，退無可退，逼不得已才採用兵器，以戰逼和，心平氣和才是正道。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "當老師提到「誠意」時，我的心頭馬上一涼，我即刻就自首了。我一點誠意都沒有，我只是交差了事，而且還要輕鬆地交差，因為年年做的事情，不應該再花心思了。我還有些莫名的原則：別人說過的我絕不再說、時間要精準控制在1分鐘、錄音一次就要完成，不能打草稿也不能念稿。這1分鐘的錄音就像是我自己舉行了一場作文比賽和演講比賽，我只關心在自己的比賽中勝出。天啊！我怎麼這麼複雜，哪來這麼多遊戲規則，這些無聊的事卻是分分秒秒在我大腦中進行著，這應該就是「無明」，不知道怎麼來的卻又揮之不去。那什麼是「誠意」？初心是也，老師說在新進學員身上就很容易聽到，他們只是很直接地說出他們的感受，老學員們一開始也是這樣的。其實老學員們也不必妄自菲薄，大家已經突破了層層關卡才走到今天，說錄音就錄音也不是一件簡單的事，只有少數人才做得到的。為什麼不錄？因為會想很多：我為什麼要錄、我為什麼要聽你的話、我為什麼要讓人家聽我內心的話⋯⋯。理由可以有千百種，但解法只有一個，就是「不想」，做就是了。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "想了就沒誠意",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "「勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。」勝利是醜陋的，只有喜歡殺人者或好勝者，才會將勝利視為美好的。沒有人會喜歡製造仇恨者，喜歡殺人者或好勝者一定會很孤獨的，雖得天下卻失民心。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "人只要一想，就會呼叫自己拿手的演算法，不知不覺中計算一番，算出一個分數，進入一個相對的世界，然後想這樣比較好一點，那樣好像差一點。不是只有0與1的世界才叫二元對立，99分和100分的差別也是一種對立，偏偏我們的大腦很擅長這種運算，而且沒停過，隨時提供給我們分數最高的選擇。決定不錄音是一種選擇，決定錄哪些內容也是一種選擇，那能不能不用選擇，進入一個絕對的世界？人家說錄我就錄，就說出內心的感受，不用去猜測別人的動機，也沒有預想別人聽了會什麼感受。「不想」不是槁木死灰，不是毫無回應，反而是事事都最直接地回應，跳過那些你常用的演算法，也就是把你的意識形態拿掉。最近老師上課常提到京都學派的「絕對的無」，這個哲學語言其實也就是我們在練的「無極」，從「相對的有、無」走向「絕對的無」，就等於是從「太極」走向「無極」。「絕對的無」其實也就是「絕對的有」，因為「無」限制，所以一切可能都存在，所以說「真空妙有」。那這個「有」在哪裡？本自俱足，都在你的DNA裡，都在你這台精密複雜的機器裡，其實不用想就能說出心裡的感受，不用想就能感受到別人的感受。其實1分鐘的錄音就是在進行這樣的實驗，一個不要「想太多」的實驗。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "話是拿來檢驗的，根性無所遁形",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "戰勝以喪禮處之",
+        "type": "heading"
+      },
+      {
+        "text": "「吉事尚左，凶事尚右。偏將軍居左，上將軍居右」，廟堂裡面左邊為陽，吉事以左邊為主；右邊為陰，凶事以右邊為主。回歸事物的本質來看所處位置，古代偏將軍主要任務為管理軍隊的行政事務，主責周全軍隊的吃、住、傷兵醫治以及全然而退，所以偏將軍居屬吉事的左邊；上將軍雖是總司令官，但主導作戰，在沙場上必須殺人，一兵一卒都要趕盡殺絕，主戰為凶，故居右邊。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "每句話都是你的演算法精密計算的結果，是拿來自己檢驗的，也是讓別人檢驗的。你從早到晚的一言一行都脫離不了這樣的運作模式，只要你願意，你都可以找到每句話背後的來龍去脈、起心動念，最後追溯到根性。譬如一個懶惰的人，不想面對事情的時候，就會找各種藉口，把責任推在別人身上，產生對立，但可能會被包裝成很有個性，所以才容易和別人衝突。其實他自己也不知道，以為自己很率性，以為自己不怕得罪人，就這樣很有個性地過一輩子。其實我們不是要修改個性，是要知道自己到底怎麼了，知道了就好，知道了以後就不一樣了。知「道」，知「存在一個真空妙有的道」，你就可以放心了，就可以不用多想，不用計算，個性就不會跑出來作亂了。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "用感受聽，聽到別人的喜悅和悲苦",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "text": "「言以喪禮處之。殺人之眾，以悲哀泣之，戰勝以喪禮處之」，以一個主殺氣的狀態作戰殺人，殺那麼多人，是要悲哀痛哭的，因此，即使打了勝仗，回來時也要用辦喪禮的態度來對待。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "你又怎麼聽別人的1分鐘？分析、解讀，然後判斷別人？對，那就是我，用那個我熟悉又擅長的模式。我的判斷是真相嗎？我下的判斷能幫助別人嗎？凡是經過大腦運算的，和自己的執著就越近，距離真相就越來越遠，這樣是幫不了別人的。最後還是回到那一招，「不想」，用感受去聽，不要去判斷他是怎樣的人，不要去說他就是這樣所以一定會那樣，開放一切的可能，去感受他要傳達的訊息。除非你是他的老師，不然你對別人妄下評論是沒有意義的，只會造成對立，遠離了「無極」。張老師說他在今年的錄音當中，聽到了生命求救的訊號，或許當事人都不知道，所以這不是透過分析得出來了，而是透過乾淨的頻道直接收聽，那就必須先排除雜訊，想太多就是雜訊的來源。",
-        "type": "paragraph"
-      },
-      {
-        "type": "heading",
-        "text": "1分鐘的誠意，一輩子的動力",
-        "level": 2
-      },
-      {
+        "type": "paragraph",
+        "isHeadingStyle": false,
         "styleName": "",
-        "styleId": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "處虛、處生、處善、不處殺",
+        "type": "heading"
+      },
+      {
+        "text": "老子哲學無所不在，呼應天地萬物，所有立場都適用，從上一篇30章及這一篇31章看到老子如何看待生死，看待人生，看待人與人之間的終極關係。從養生、個人的志，談到整個國家、全民的大志。一個人面對自我的時候，要處虛，就是第30章所說的「以道佐人主者也」，就是要以宇宙自然常道的法則來對待自己，要以無為養生，以處虛的哲學來進行管理，讓身體的六十兆細胞能夠安居樂業，充滿細胞的張力，活出最大的人生效果；擴大到對外及國際之間的重大時刻，要去除「兵者」的備戰狀態；處生，處善而不能處殺。",
         "isLargeFont": true,
-        "isHeadingStyle": false,
         "isBold": false,
-        "text": "如果每年都有這1分鐘的儀式，讓自己歸零，找回自己的初心，這種感受就會轉化成一種力量，主導著你未來一年的趨向，如果一年一年都這麼做，就像一輩子都加滿了油，朝著篤定的方向前進。生活中的每個1分鐘何嘗不是，如果我們都可以誠實地看見自己，也可以讓別人看見，那每1分鐘都是一個神聖的儀式。我們先從1分鐘的錄音開始，展現誠意，再把誠意帶到生活中的每一分鐘，功夫就是這樣一點一滴的累積，生命也就越來越豁然開朗了。",
-        "type": "paragraph"
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "text": "人最強烈的手段就是殺、戰爭，就是人與人之間的格鬥，每個人呼吸之間就爭一個贏，這就是「戰」、「兵」，那是老子絕對反對的，求生的人是吉，主戰的人是凶。兵者，除了具體的兵戎相見，還包含內在的好戰之心、好勝好強之心及採取的態度，例如：夫妻之間若「兵」在心裡，採取處處不信任對方的柔性暴力，夫妻必生嫌隙。每一個人都希望有主見，主見一來就是起戰心，我們日常生活有多少是在「兵」的狀態，起心動念越銳利越強的東西，就越是所謂的「佳兵」，恨、嫉妒、揣測就很銳利，都是「夫佳兵者」。我們內心裡面其實都隱藏著「把別人踩下去」的心態，以現代人而言，這類人是沒有朋友的，趾高氣揚，好勝心強，鬼神皆遠之，誰願意靠近？何謂吉凶？一念之間而已。千萬不要用兵，不要用暴力、對抗，天下不是對抗出來的，天下是合作出來的。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
       }
     ],
-    "homeAnchor": "#article-202301-2301-6",
-    "sourceId": "2301-6",
-    "excerpt": "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主…",
-    "slug": "202301-2301-6",
+    "slug": "202301-2301-5",
+    "image": "/assets/pixabay/pixabay-6943982.jpg?v=6943982",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-5",
+    "order": 18,
+    "excerpt": "夫佳兵者不祥之器，物或惡之，故有道者不處。君子居則貴左，用兵則貴右。兵者不祥之器，非君子之器，不得已而用之，恬淡為上。勝而不美，而美之者，是樂殺人。夫樂殺人者，則不可得志於天下矣。吉事尚左，凶…",
+    "title": "你的心裡也伏藏著「佳兵」嗎？",
+    "sourceFileName": "2301-5體證道德經.docx",
+    "author": "文稿彙整 / 楊慧敏"
+  },
+  {
+    "hasExplicitTitle": true,
     "date": "2023.01.10",
-    "title": "誠意",
-    "sourceUrl": "",
+    "images": [],
+    "category": "圖靈集",
+    "tags": [
+      "圖靈集",
+      "AI時代"
+    ],
     "sections": [
       {
+        "heading": null,
         "paragraphs": [
           "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主，心想期末作業應該就這麼過關了吧！沒想到好戲還在後頭，張老師針對這1分鐘錄音的一席話，搞得大家都抬不起頭來，內心不寒而慄，尤其是像我這樣的老學員。今天就透過這1分鐘的錄音，看看自己到底怎麼了。",
           "聽的不是內容，是誠意",
@@ -77110,15 +77021,104 @@ export const reviewDraftArticles = [
           "你又怎麼聽別人的1分鐘？分析、解讀，然後判斷別人？對，那就是我，用那個我熟悉又擅長的模式。我的判斷是真相嗎？我下的判斷能幫助別人嗎？凡是經過大腦運算的，和自己的執著就越近，距離真相就越來越遠，這樣是幫不了別人的。最後還是回到那一招，「不想」，用感受去聽，不要去判斷他是怎樣的人，不要去說他就是這樣所以一定會那樣，開放一切的可能，去感受他要傳達的訊息。除非你是他的老師，不然你對別人妄下評論是沒有意義的，只會造成對立，遠離了「無極」。張老師說他在今年的錄音當中，聽到了生命求救的訊號，或許當事人都不知道，所以這不是透過分析得出來了，而是透過乾淨的頻道直接收聽，那就必須先排除雜訊，想太多就是雜訊的來源。",
           "1分鐘的誠意，一輩子的動力",
           "如果每年都有這1分鐘的儀式，讓自己歸零，找回自己的初心，這種感受就會轉化成一種力量，主導著你未來一年的趨向，如果一年一年都這麼做，就像一輩子都加滿了油，朝著篤定的方向前進。生活中的每個1分鐘何嘗不是，如果我們都可以誠實地看見自己，也可以讓別人看見，那每1分鐘都是一個神聖的儀式。我們先從1分鐘的錄音開始，展現誠意，再把誠意帶到生活中的每一分鐘，功夫就是這樣一點一滴的累積，生命也就越來越豁然開朗了。"
-        ],
-        "heading": null
+        ]
       }
     ],
+    "imageCaption": "圖片來源 / Pixabay",
+    "readTime": "約 4 分鐘",
+    "sourceUrl": "",
+    "issue": "第203期 / 2023.01電子報",
+    "sourceId": "2301-6",
+    "contentBlocks": [
+      {
+        "text": "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主，心想期末作業應該就這麼過關了吧！沒想到好戲還在後頭，張老師針對這1分鐘錄音的一席話，搞得大家都抬不起頭來，內心不寒而慄，尤其是像我這樣的老學員。今天就透過這1分鐘的錄音，看看自己到底怎麼了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "聽的不是內容，是誠意",
+        "type": "heading"
+      },
+      {
+        "text": "當老師提到「誠意」時，我的心頭馬上一涼，我即刻就自首了。我一點誠意都沒有，我只是交差了事，而且還要輕鬆地交差，因為年年做的事情，不應該再花心思了。我還有些莫名的原則：別人說過的我絕不再說、時間要精準控制在1分鐘、錄音一次就要完成，不能打草稿也不能念稿。這1分鐘的錄音就像是我自己舉行了一場作文比賽和演講比賽，我只關心在自己的比賽中勝出。天啊！我怎麼這麼複雜，哪來這麼多遊戲規則，這些無聊的事卻是分分秒秒在我大腦中進行著，這應該就是「無明」，不知道怎麼來的卻又揮之不去。那什麼是「誠意」？初心是也，老師說在新進學員身上就很容易聽到，他們只是很直接地說出他們的感受，老學員們一開始也是這樣的。其實老學員們也不必妄自菲薄，大家已經突破了層層關卡才走到今天，說錄音就錄音也不是一件簡單的事，只有少數人才做得到的。為什麼不錄？因為會想很多：我為什麼要錄、我為什麼要聽你的話、我為什麼要讓人家聽我內心的話⋯⋯。理由可以有千百種，但解法只有一個，就是「不想」，做就是了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "想了就沒誠意",
+        "type": "heading"
+      },
+      {
+        "text": "人只要一想，就會呼叫自己拿手的演算法，不知不覺中計算一番，算出一個分數，進入一個相對的世界，然後想這樣比較好一點，那樣好像差一點。不是只有0與1的世界才叫二元對立，99分和100分的差別也是一種對立，偏偏我們的大腦很擅長這種運算，而且沒停過，隨時提供給我們分數最高的選擇。決定不錄音是一種選擇，決定錄哪些內容也是一種選擇，那能不能不用選擇，進入一個絕對的世界？人家說錄我就錄，就說出內心的感受，不用去猜測別人的動機，也沒有預想別人聽了會什麼感受。「不想」不是槁木死灰，不是毫無回應，反而是事事都最直接地回應，跳過那些你常用的演算法，也就是把你的意識形態拿掉。最近老師上課常提到京都學派的「絕對的無」，這個哲學語言其實也就是我們在練的「無極」，從「相對的有、無」走向「絕對的無」，就等於是從「太極」走向「無極」。「絕對的無」其實也就是「絕對的有」，因為「無」限制，所以一切可能都存在，所以說「真空妙有」。那這個「有」在哪裡？本自俱足，都在你的DNA裡，都在你這台精密複雜的機器裡，其實不用想就能說出心裡的感受，不用想就能感受到別人的感受。其實1分鐘的錄音就是在進行這樣的實驗，一個不要「想太多」的實驗。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "話是拿來檢驗的，根性無所遁形",
+        "type": "heading"
+      },
+      {
+        "text": "每句話都是你的演算法精密計算的結果，是拿來自己檢驗的，也是讓別人檢驗的。你從早到晚的一言一行都脫離不了這樣的運作模式，只要你願意，你都可以找到每句話背後的來龍去脈、起心動念，最後追溯到根性。譬如一個懶惰的人，不想面對事情的時候，就會找各種藉口，把責任推在別人身上，產生對立，但可能會被包裝成很有個性，所以才容易和別人衝突。其實他自己也不知道，以為自己很率性，以為自己不怕得罪人，就這樣很有個性地過一輩子。其實我們不是要修改個性，是要知道自己到底怎麼了，知道了就好，知道了以後就不一樣了。知「道」，知「存在一個真空妙有的道」，你就可以放心了，就可以不用多想，不用計算，個性就不會跑出來作亂了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "用感受聽，聽到別人的喜悅和悲苦",
+        "type": "heading"
+      },
+      {
+        "text": "你又怎麼聽別人的1分鐘？分析、解讀，然後判斷別人？對，那就是我，用那個我熟悉又擅長的模式。我的判斷是真相嗎？我下的判斷能幫助別人嗎？凡是經過大腦運算的，和自己的執著就越近，距離真相就越來越遠，這樣是幫不了別人的。最後還是回到那一招，「不想」，用感受去聽，不要去判斷他是怎樣的人，不要去說他就是這樣所以一定會那樣，開放一切的可能，去感受他要傳達的訊息。除非你是他的老師，不然你對別人妄下評論是沒有意義的，只會造成對立，遠離了「無極」。張老師說他在今年的錄音當中，聽到了生命求救的訊號，或許當事人都不知道，所以這不是透過分析得出來了，而是透過乾淨的頻道直接收聽，那就必須先排除雜訊，想太多就是雜訊的來源。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      },
+      {
+        "level": 2,
+        "text": "1分鐘的誠意，一輩子的動力",
+        "type": "heading"
+      },
+      {
+        "text": "如果每年都有這1分鐘的儀式，讓自己歸零，找回自己的初心，這種感受就會轉化成一種力量，主導著你未來一年的趨向，如果一年一年都這麼做，就像一輩子都加滿了油，朝著篤定的方向前進。生活中的每個1分鐘何嘗不是，如果我們都可以誠實地看見自己，也可以讓別人看見，那每1分鐘都是一個神聖的儀式。我們先從1分鐘的錄音開始，展現誠意，再把誠意帶到生活中的每一分鐘，功夫就是這樣一點一滴的累積，生命也就越來越豁然開朗了。",
+        "isLargeFont": true,
+        "isBold": false,
+        "type": "paragraph",
+        "isHeadingStyle": false,
+        "styleName": "",
+        "styleId": ""
+      }
+    ],
+    "slug": "202301-2301-6",
+    "image": "/assets/pixabay/pixabay-7387018.jpg?v=7387018",
+    "issueId": "202301",
+    "homeAnchor": "#article-202301-2301-6",
+    "order": 19,
+    "excerpt": "依照慣例，種子班學員都會在歲末之際，錄製1分鐘的談話，可以是檢討、期許、懺悔或任何內容，總結過去一年，然後將錄音檔放上班級的群組。今年也不例外，大多數學員都跟著這麼做了，反正今年也不選武林盟主…",
+    "title": "誠意",
     "sourceFileName": "2301-6圖靈集.docx",
-    "tags": [
-      "圖靈集",
-      "AI時代"
-    ]
+    "author": "阿充"
   },
   {
     "imageCaption": "圖片來源 / Pixabay",
@@ -107951,14 +107951,14 @@ export const reviewDraftIssues = [
     "articleCount": 14
   },
   {
-    "articleCount": 20,
-    "date": "2023.01",
-    "href": "/issues/202301/",
-    "label": "2023.01 電子報",
-    "id": "202301",
-    "title": "恰恰是、剛剛好",
     "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
-    "issueNumber": "第203期"
+    "label": "2023.01 電子報",
+    "date": "2023.01",
+    "title": "恰恰是、剛剛好",
+    "articleCount": 20,
+    "href": "/issues/202301/",
+    "issueNumber": "第203期",
+    "id": "202301"
   },
   {
     "issueNumber": "第202期",

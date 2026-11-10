@@ -2796,395 +2796,395 @@ export const generatedReviewItems = [
     ]
   },
   {
-    "author": "",
+    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
+    "category": "編輯小語",
+    "sourceId": "2301-1",
+    "file": "2301-1",
+    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
+    "sourceSignature": "",
     "date": "2023.01.10",
+    "author": "",
     "sourceModified": "",
+    "issueId": "202301",
+    "slug": "202301-2301-1",
+    "title": "恰恰是、剛剛好",
     "messages": [
       {
         "type": "missing-author",
-        "severity": "warning",
-        "message": "文章缺少作者：恰恰是、剛剛好"
+        "message": "文章缺少作者：恰恰是、剛剛好",
+        "severity": "warning"
       }
     ],
-    "title": "恰恰是、剛剛好",
-    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
-    "category": "編輯小語",
-    "issueId": "202301",
-    "file": "2301-1",
     "id": "202301::2301-1",
-    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
-    "sourceSignature": "",
-    "slug": "202301-2301-1",
-    "status": "needs-review",
-    "sourceId": "2301-1"
+    "status": "needs-review"
   },
   {
-    "author": "文字彙整 / 洪淑敏",
-    "date": "2023.01.10",
-    "sourceModified": "",
-    "messages": [
-      {
-        "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：年終錄音側記"
-      }
-    ],
-    "title": "一晚班 - 朝向生命的極致法則",
-    "excerpt": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的…",
-    "category": "年終錄音側記",
-    "issueId": "202301",
-    "file": "2301-2-1",
-    "id": "202301::2301-2-1",
     "image": "/assets/pixabay/pixabay-7390865.jpg?v=7390865",
+    "category": "年終錄音側記",
+    "sourceId": "2301-2-1",
+    "file": "2301-2-1",
+    "excerpt": "2022年一晚班的同學都各自經歷生活道場的試煉，大家遇到困境時，從老師的話語中，找到打開困境之門的鑰匙；跟著老師練無極內息導引的動作，覺察自己的感受。年終一分鐘的錄音，字句中流露出大家對生命的…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "文字彙整 / 洪淑敏",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-2-1",
-    "status": "needs-review",
-    "sourceId": "2301-2-1"
-  },
-  {
-    "author": "文字彙整 / 蕭怡萍",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "一晚班 - 朝向生命的極致法則",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：年終錄音側記"
+        "message": "分類不在既有分類清單：年終錄音側記",
+        "severity": "warning"
       }
     ],
-    "title": "二早班 - 搭上歲末反省末班車",
-    "excerpt": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
-    "category": "年終錄音側記",
-    "issueId": "202301",
-    "file": "2301-2-2",
-    "id": "202301::2301-2-2",
+    "id": "202301::2301-2-1",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/pixabay/pixabay-1345746.jpg?v=1345746",
+    "category": "年終錄音側記",
+    "sourceId": "2301-2-2",
+    "file": "2301-2-2",
+    "excerpt": "張老師得知後來上課時，對我們說：「既然你們不想錄音不想說，那我也不說心法了，你們班以後就只要練功就好。」",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "文字彙整 / 蕭怡萍",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-2-2",
-    "status": "needs-review",
-    "sourceId": "2301-2-2"
-  },
-  {
-    "author": "文稿彙整 / 陳盈靜",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "二早班 - 搭上歲末反省末班車",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：年終錄音側記"
+        "message": "分類不在既有分類清單：年終錄音側記",
+        "severity": "warning"
       }
     ],
-    "title": "二晚班 - 「老鳥」「菜鳥」在一班",
-    "excerpt": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境…",
-    "category": "年終錄音側記",
-    "issueId": "202301",
-    "file": "2301-2-3",
-    "id": "202301::2301-2-3",
+    "id": "202301::2301-2-2",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/pixabay/pixabay-6701636.jpg?v=6701636",
+    "category": "年終錄音側記",
+    "sourceId": "2301-2-3",
+    "file": "2301-2-3",
+    "excerpt": "二晚班生活群群組及下課之餘，大家熱鬧地討論著年底一分鐘錄音的功課，錄與不錄？每個人有不同的想法與理由，沒有「對」也沒有「不對」！而是藉著這個「境」反觀自己用甚麼樣的意識形態、信念在對待這個「境…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "文稿彙整 / 陳盈靜",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-2-3",
-    "status": "needs-review",
-    "sourceId": "2301-2-3"
-  },
-  {
-    "author": "文稿彙整 / 蔡育展",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "二晚班 - 「老鳥」「菜鳥」在一班",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：年終錄音側記"
+        "message": "分類不在既有分類清單：年終錄音側記",
+        "severity": "warning"
       }
     ],
-    "title": "四午班 - 在變動中、行動中看見圓滿",
-    "excerpt": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮…",
-    "category": "年終錄音側記",
-    "issueId": "202301",
-    "file": "2301-2-4",
-    "id": "202301::2301-2-4",
+    "id": "202301::2301-2-3",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/pixabay/pixabay-7870374.jpg?v=7870374",
-    "sourceSignature": "",
-    "slug": "202301-2301-2-4",
-    "status": "needs-review",
-    "sourceId": "2301-2-4"
-  },
-  {
-    "author": "文稿彙整 / 沈紅玫",
-    "date": "2023.01.10",
-    "sourceModified": "",
-    "messages": [
-      {
-        "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：年終錄音側記"
-      }
-    ],
-    "title": "五晚班 - 為何要走原來那條老路呢？",
-    "excerpt": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識…",
     "category": "年終錄音側記",
+    "sourceId": "2301-2-4",
+    "file": "2301-2-4",
+    "excerpt": "四午班應該是種子班當中分量最重、尺度最大、能量最強的一班。有最年長的鎮班之寶，搭配最嫩學員年齡差距尺度最大，老師與師母最強夫妻檔聯合戰鬥力最強學員讓能量值爆表，身為天下第一班成員之一的我與有榮…",
+    "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "文稿彙整 / 蔡育展",
+    "sourceModified": "",
     "issueId": "202301",
-    "file": "2301-2-6",
-    "id": "202301::2301-2-6",
+    "slug": "202301-2301-2-4",
+    "title": "四午班 - 在變動中、行動中看見圓滿",
+    "messages": [
+      {
+        "type": "unknown-category",
+        "message": "分類不在既有分類清單：年終錄音側記",
+        "severity": "warning"
+      }
+    ],
+    "id": "202301::2301-2-4",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/pixabay/pixabay-2183489.jpg?v=2183489",
+    "category": "年終錄音側記",
+    "sourceId": "2301-2-6",
+    "file": "2301-2-6",
+    "excerpt": "張老師說：歲末心得，不需要多麼凸顯自己。這個練習，只是在看你每年的一分鐘能不能跳脫你的樣子。在錄音裡，故作有禪意，那是在做作一種哲學人生觀，沒有意義。你的舉手投足就代表了一切，不要去作一種意識…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "文稿彙整 / 沈紅玫",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-2-6",
-    "status": "needs-review",
-    "sourceId": "2301-2-6"
-  },
-  {
-    "author": "黃惠如",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "五晚班 - 為何要走原來那條老路呢？",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：年終錄音側記",
+        "severity": "warning"
       }
     ],
-    "title": "之一 - 蛻殼進化之旅",
-    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-1",
-    "id": "202301::2301-3-1",
+    "id": "202301::2301-2-6",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-1",
+    "file": "2301-3-1",
+    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "黃惠如",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-1",
-    "status": "needs-review",
-    "sourceId": "2301-3-1"
-  },
-  {
-    "author": "游夙君",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之一 - 蛻殼進化之旅",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之十 – 往上跌了一跤",
-    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-10",
-    "id": "202301::2301-3-10",
+    "id": "202301::2301-3-1",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-10",
+    "file": "2301-3-10",
+    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "游夙君",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-10",
-    "status": "needs-review",
-    "sourceId": "2301-3-10"
-  },
-  {
-    "author": "張尊堡",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之十 – 往上跌了一跤",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之十一 - 嬉出深度‧遊出體悟",
-    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-11",
-    "id": "202301::2301-3-11",
+    "id": "202301::2301-3-10",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-11",
+    "file": "2301-3-11",
+    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "張尊堡",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-11",
-    "status": "needs-review",
-    "sourceId": "2301-3-11"
-  },
-  {
-    "author": "楊慧敏",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之十一 - 嬉出深度‧遊出體悟",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之二 - 就在彼此間流動著",
-    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-2",
-    "id": "202301::2301-3-2",
+    "id": "202301::2301-3-11",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-2",
+    "file": "2301-3-2",
+    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "楊慧敏",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-2",
-    "status": "needs-review",
-    "sourceId": "2301-3-2"
-  },
-  {
-    "author": "余媛媛",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之二 - 就在彼此間流動著",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之三 – 理性堅持，感性完成",
-    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-3",
-    "id": "202301::2301-3-3",
+    "id": "202301::2301-3-2",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-3",
+    "file": "2301-3-3",
+    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "余媛媛",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-3",
-    "status": "needs-review",
-    "sourceId": "2301-3-3"
-  },
-  {
-    "author": "朱芮瑩",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之三 – 理性堅持，感性完成",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之四 – 假我脫落 真我自現",
-    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-4",
-    "id": "202301::2301-3-4",
+    "id": "202301::2301-3-3",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-4",
+    "file": "2301-3-4",
+    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "朱芮瑩",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-4",
-    "status": "needs-review",
-    "sourceId": "2301-3-4"
-  },
-  {
-    "author": "胡琦瑛",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之四 – 假我脫落 真我自現",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之五 – 可遇不可求的饗宴",
-    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-5",
-    "id": "202301::2301-3-5",
+    "id": "202301::2301-3-4",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-5",
+    "file": "2301-3-5",
+    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "胡琦瑛",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-5",
-    "status": "needs-review",
-    "sourceId": "2301-3-5"
-  },
-  {
-    "author": "蔡靜慧",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之五 – 可遇不可求的饗宴",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之六 – 我在營火晚會唱歌",
-    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-6",
-    "id": "202301::2301-3-6",
+    "id": "202301::2301-3-5",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-6",
+    "file": "2301-3-6",
+    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "蔡靜慧",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-6",
-    "status": "needs-review",
-    "sourceId": "2301-3-6"
-  },
-  {
-    "author": "高袖桐",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之六 – 我在營火晚會唱歌",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之七 – 真善美在此發生",
-    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-7",
-    "id": "202301::2301-3-7",
+    "id": "202301::2301-3-6",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-7",
+    "file": "2301-3-7",
+    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "高袖桐",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-7",
-    "status": "needs-review",
-    "sourceId": "2301-3-7"
-  },
-  {
-    "author": "何秋玲",
-    "date": "2023.01.10",
-    "sourceModified": "",
+    "title": "之七 – 真善美在此發生",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之八 – 依規矩而擺脫規矩",
-    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-8",
-    "id": "202301::2301-3-8",
+    "id": "202301::2301-3-7",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-8",
+    "file": "2301-3-8",
+    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
     "sourceSignature": "",
-    "slug": "202301-2301-3-8",
-    "status": "needs-review",
-    "sourceId": "2301-3-8"
-  },
-  {
-    "author": "倪暐婷",
     "date": "2023.01.10",
+    "author": "何秋玲",
     "sourceModified": "",
+    "issueId": "202301",
+    "slug": "202301-2301-3-8",
+    "title": "之八 – 依規矩而擺脫規矩",
     "messages": [
       {
         "type": "unknown-category",
-        "severity": "warning",
-        "message": "分類不在既有分類清單：歲末嬉遊記"
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
       }
     ],
-    "title": "之九 – 群龍無首，各自就定位",
-    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "2301-3-9",
-    "id": "202301::2301-3-9",
+    "id": "202301::2301-3-8",
+    "status": "needs-review"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-9",
+    "file": "2301-3-9",
+    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
     "sourceSignature": "",
+    "date": "2023.01.10",
+    "author": "倪暐婷",
+    "sourceModified": "",
+    "issueId": "202301",
     "slug": "202301-2301-3-9",
-    "status": "needs-review",
-    "sourceId": "2301-3-9"
+    "title": "之九 – 群龍無首，各自就定位",
+    "messages": [
+      {
+        "type": "unknown-category",
+        "message": "分類不在既有分類清單：歲末嬉遊記",
+        "severity": "warning"
+      }
+    ],
+    "id": "202301::2301-3-9",
+    "status": "needs-review"
   },
   {
     "image": "/assets/pixabay/pixabay-6003727.jpg?v=6003727",
@@ -9495,295 +9495,295 @@ export const generatedReviewItems = [
     ]
   },
   {
-    "author": "",
+    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
+    "category": "編輯小語",
+    "sourceId": "2301-1",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-1編輯小語.docx",
+    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
+    "sourceSignature": "v3|92da7474f56d8f6eb1e966ade4ca9fafcbf4f9e11ea2ccfb5ba185f9fbf404f8|",
     "date": "2023.01.10",
+    "author": "",
     "sourceModified": "2023-01-08T14:36:33.1200000Z",
+    "issueId": "202301",
+    "slug": "202301-2301-1",
+    "title": "恰恰是、剛剛好",
     "messages": [
       {
         "type": "legacy-template-missing",
-        "severity": "warning",
-        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入"
+        "message": "舊格式文章未含投稿模板，已用保守 legacy 規則匯入",
+        "severity": "warning"
       },
       {
         "type": "missing-author",
-        "severity": "warning",
-        "message": "缺少作者，已留空"
+        "message": "缺少作者，已留空",
+        "severity": "warning"
       }
     ],
-    "title": "恰恰是、剛剛好",
-    "excerpt": "這一期電子報文章滿檔，即便如此，編輯完畢總覽目錄表時，竟覺得恰恰是、剛剛好的圓滿，非常喜悅。",
-    "category": "編輯小語",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-1編輯小語.docx",
     "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-1編輯小語.docx",
-    "image": "/assets/pixabay/pixabay-6728318.jpg?v=6728318",
-    "sourceSignature": "v3|92da7474f56d8f6eb1e966ade4ca9fafcbf4f9e11ea2ccfb5ba185f9fbf404f8|",
-    "slug": "202301-2301-1",
-    "status": "approved",
-    "sourceId": "2301-1"
+    "status": "approved"
   },
   {
-    "author": "游夙君",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:14:40.0280000Z",
-    "messages": [
-      {
-        "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615"
-      }
-    ],
-    "title": "之十 – 往上跌了一跤",
-    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-10游夙君.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-10游夙君.docx",
     "image": "/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-10",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-10游夙君.docx",
+    "excerpt": "加入此次活動群組，緣於經歷失去親人的恐懼與自身病痛死亡恐懼的面對，以及課堂話語與心的激盪，軟化原先的堅持而來。籌備之前，上班途中經驗近一時辰的恍神，雖感覺會有很多變數，依然跟著籌備。幾次會議討…",
     "sourceSignature": "v3|47bad14520fb65c67d3ddd420199556835899358e216bab290a843a8f49494d5|c14c3e5fda3bca4dbe56600dc06f4144491bf1fb4f94adcf300fa8d69c63b483",
+    "date": "2023.01.10",
+    "author": "游夙君",
+    "sourceModified": "2026-11-09T15:14:40.0280000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-10",
-    "status": "approved",
-    "sourceId": "2301-3-10"
-  },
-  {
-    "author": "張尊堡",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:15:54.4950000Z",
+    "title": "之十 – 往上跌了一跤",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-10-img-001.jpeg?v=561615",
+        "severity": "warning"
       }
     ],
-    "title": "之十一 - 嬉出深度‧遊出體悟",
-    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-10游夙君.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-11",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx",
+    "excerpt": "2022年的生活節奏隨著疫情逐漸解封，許多醞釀已久的活動終於能如期展開，也讓2022成為行動滿滿的一年。在這樣的歲末之時，我們決定用最特別的方式，在雪生坑的大自然環抱下，跨越這成果豐碩的一年。…",
     "sourceSignature": "v3|5fbb74a9eaf3d88f73714e15639684b29ed4a415dae71216beca3a4893322901|cbef1827641b38a9ab9f339bc0dd128f5c6d12599dc61c9e02d3dd3cd41e7e01",
+    "date": "2023.01.10",
+    "author": "張尊堡",
+    "sourceModified": "2026-11-09T15:15:54.4950000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-11",
-    "status": "approved",
-    "sourceId": "2301-3-11"
-  },
-  {
-    "author": "黃惠如",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:16:55.3730000Z",
+    "title": "之十一 - 嬉出深度‧遊出體悟",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-11-img-001.jpeg?v=480344",
+        "severity": "warning"
       }
     ],
-    "title": "之一 - 蛻殼進化之旅",
-    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-11張尊堡.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-1",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx",
+    "excerpt": "只能說非常感恩，真的很幸運有這樣的緣分，參與這次的活動。透過活動逐項進行，原本受現實還有想法執念綑綁住的身心靈，一層一層的解封釋放開來，三天雪山坑歲末嬉遊，竟是神奇寶貝們蛻殼進化的歷程！",
     "sourceSignature": "v3|6b254845fa3035a0dcfbe689e4e4e95bcef66dbbd29ba173b7bf6d879dc7ae1c|705f9ecfe1a0563fa33d8c349bca95d3281597ef350eeb7bcddf3569dc6b3f18",
+    "date": "2023.01.10",
+    "author": "黃惠如",
+    "sourceModified": "2026-11-09T15:16:55.3730000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-1",
-    "status": "approved",
-    "sourceId": "2301-3-1"
-  },
-  {
-    "author": "楊慧敏",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:17:33.9910000Z",
+    "title": "之一 - 蛻殼進化之旅",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-1-img-001.jpeg?v=205426",
+        "severity": "warning"
       }
     ],
-    "title": "之二 - 就在彼此間流動著",
-    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-1惠如.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-2",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx",
+    "excerpt": "車子從市區到市郊慢慢開進雪山坑，覺知漸次被喚醒，安置好行李，在師母泡茶的茶香中進入三天兩夜活動的序曲。下午，袖桐、媛媛、芮瑩及暐婷以自己設計的香席表達對香的禮讚，大夥在香氣裡穿梭著，在聊天交流…",
     "sourceSignature": "v3|553a7dc47f88dcda2078b1484b0d9b8cca0d14ab4e8817259c181bafe218fe80|d3740484ad1f77a6f07e69d9d15a73f1087d6d95f5f0603f4d008e201e741960",
+    "date": "2023.01.10",
+    "author": "楊慧敏",
+    "sourceModified": "2026-11-09T15:17:33.9910000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-2",
-    "status": "approved",
-    "sourceId": "2301-3-2"
-  },
-  {
-    "author": "余媛媛",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:18:01.4960000Z",
+    "title": "之二 - 就在彼此間流動著",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-2-img-001.jpeg?v=255377",
+        "severity": "warning"
       }
     ],
-    "title": "之三 – 理性堅持，感性完成",
-    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-2慧敏.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-3",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx",
+    "excerpt": "從理性到不理性，一場別開生面的活動開始，從很嚴肅的討論活動議題，到整個活動的結束都是令人意想不到！這些都靠主辦同學的柔性說明、硬性堅持，才有的圓滿結果。老師說這回的主辦人已經進入柔性卻帶有堅持…",
     "sourceSignature": "v3|4014068c26e506ca079f4ae1cf83765646513822db2bac70a9eda6c6139c8b74|f57de30f21ee874d50f3a431520d63c52976bada866a4115045870f20a9bed27",
+    "date": "2023.01.10",
+    "author": "余媛媛",
+    "sourceModified": "2026-11-09T15:18:01.4960000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-3",
-    "status": "approved",
-    "sourceId": "2301-3-3"
-  },
-  {
-    "author": "朱芮瑩",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:18:25.1320000Z",
+    "title": "之三 – 理性堅持，感性完成",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-3-img-001.jpeg?v=349657",
+        "severity": "warning"
       }
     ],
-    "title": "之四 – 假我脫落 真我自現",
-    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-3媛媛.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-4",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx",
+    "excerpt": "雪山坑歲末嬉遊活動中，最讓人回味無窮的是老師在飯桌上信手捻來談京都學派《絕對無的哲學》。以下是我依記憶所及做的筆記：",
     "sourceSignature": "v3|4323da65dbc4e9021aca97aa0c2ef0e5d3e5de9b6989f238bb50d3b31436c9a7|c4843f30e12fc1dbfc6bbf01def744aa957ca242fa80d1cd79fc1a8f33441782",
+    "date": "2023.01.10",
+    "author": "朱芮瑩",
+    "sourceModified": "2026-11-09T15:18:25.1320000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-4",
-    "status": "approved",
-    "sourceId": "2301-3-4"
-  },
-  {
-    "author": "胡琦瑛",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:19:44.2900000Z",
+    "title": "之四 – 假我脫落 真我自現",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-4-img-001.jpeg?v=788046",
+        "severity": "warning"
       }
     ],
-    "title": "之五 – 可遇不可求的饗宴",
-    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-4芮瑩.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-5",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx",
+    "excerpt": "蛤！斷食、禁語、清晨四點起床靜坐、練功（別怕，嚇你的！行前主辦人體恤大家，幾乎都順應大家的意見做了修正）。",
     "sourceSignature": "v3|c772663bc32c93007897ccf4f8ab4c749debc6675723fd179196d4de5b4fc5a2|7a9a0e43ae469114c0424bfa79d053c17f9919a27c358f776fc8e76b744bacd5",
+    "date": "2023.01.10",
+    "author": "胡琦瑛",
+    "sourceModified": "2026-11-09T15:19:44.2900000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-5",
-    "status": "approved",
-    "sourceId": "2301-3-5"
-  },
-  {
-    "author": "蔡靜慧",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:20:09.9040000Z",
+    "title": "之五 – 可遇不可求的饗宴",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-5-img-001.jpeg?v=664919",
+        "severity": "warning"
       }
     ],
-    "title": "之六 – 我在營火晚會唱歌",
-    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-5琦瑛.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-6",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx",
+    "excerpt": "這次心血來潮，參加了一晚班和六早班聯合舉辦的雪山坑2022歲末嬉遊活動，主辦同學精心策劃每一個單元，加上大家集思廣益的結果，大家玩得很開心，\n收獲滿滿。活動結束坐車回台北，我剛好坐在主辦同學旁…",
     "sourceSignature": "v3|c1a6810ae83b91f379c1f84e6dce99398f6ff7f7495dc388dac4c26952be06b3|66c741c549bc4d88b41d489aac0e82cfdc9c570001da54e1534e19f65265397b",
+    "date": "2023.01.10",
+    "author": "蔡靜慧",
+    "sourceModified": "2026-11-09T15:20:09.9040000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-6",
-    "status": "approved",
-    "sourceId": "2301-3-6"
-  },
-  {
-    "author": "高袖桐",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:20:26.9920000Z",
+    "title": "之六 – 我在營火晚會唱歌",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-6-img-001.jpeg?v=306874",
+        "severity": "warning"
       }
     ],
-    "title": "之七 – 真善美在此發生",
-    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-6靜慧.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-7",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx",
+    "excerpt": "第一個活動是品香與香席故事的分享，我希望用香的祝福陪伴父親渡過一個寒冷難耐的嚴冬。對子女而言，失去父親像少了一隻臂膀一樣，我需要更堅強的照顧安慰媽媽，內心真正強大力量，所以一分鐘的提醒告訴自己…",
     "sourceSignature": "v3|dafa79fd2554f94218769e3168edb5dc7c52dee6250d7d4b84fe828111b6fa5c|7eb93b070837a3442a4c278f5dea5da9dc39838d9b893cd660a3f7bfd1229759",
+    "date": "2023.01.10",
+    "author": "高袖桐",
+    "sourceModified": "2026-11-09T15:20:26.9920000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-7",
-    "status": "approved",
-    "sourceId": "2301-3-7"
-  },
-  {
-    "author": "何秋玲",
-    "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:21:09.2590000Z",
+    "title": "之七 – 真善美在此發生",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-7-img-001.jpeg?v=315117",
+        "severity": "warning"
       }
     ],
-    "title": "之八 – 依規矩而擺脫規矩",
-    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-7高袖桐.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-8",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx",
+    "excerpt": "活動第一天晚上享受銅鑼浴，隨著雅君清澈無遠弗屆震動的銅鑼聲，想必山林溪水、有情無情眾生也於寂靜夜晚參與了這場盛宴。我包裹在暖和加了毛披肩的睡袋裡，全身放鬆無比通暢，遊歷了一趟宇宙星空之旅，管它…",
     "sourceSignature": "v3|c232a5aad0d97411021268e6057fc2c4c229ab3514b2339e8fe6f860db02ce3e|efa7cb2753f9fd1d01dc1cd7a500346632dc7545b36cd599650f9589ac143d9e",
-    "slug": "202301-2301-3-8",
-    "status": "approved",
-    "sourceId": "2301-3-8"
-  },
-  {
-    "author": "倪暐婷",
     "date": "2023.01.10",
-    "sourceModified": "2026-11-09T15:21:35.4950000Z",
+    "author": "何秋玲",
+    "sourceModified": "2026-11-09T15:21:09.2590000Z",
+    "issueId": "202301",
+    "slug": "202301-2301-3-8",
+    "title": "之八 – 依規矩而擺脫規矩",
     "messages": [
       {
         "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531"
-      },
-      {
-        "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761"
-      },
-      {
-        "type": "content-warning",
-        "severity": "warning",
-        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460"
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-8-img-001.jpeg?v=304458",
+        "severity": "warning"
       }
     ],
-    "title": "之九 – 群龍無首，各自就定位",
-    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
-    "category": "歲末嬉遊記",
-    "issueId": "202301",
-    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx",
-    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx",
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-8秋玲.docx",
+    "status": "approved"
+  },
+  {
     "image": "/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
+    "category": "歲末嬉遊記",
+    "sourceId": "2301-3-9",
+    "file": "/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx",
+    "excerpt": "從籌備到舉辦，我們一行人只開了四次會，不同的人一起發想出三天的活動，人員安排、活動進行方式、音樂播放等無不細細討論安排，但實際執行起來卻有意想不到的不按理出牌．原本想讓身體機能休息，一天只安排…",
     "sourceSignature": "v3|d107c7ed8d958442a1f997fe54d88cd58d2d385030c774717e6fb412adb806f5|f9f3ecab48b8a390923deea9691cf8003b604054b03375497089c9e4cc104b21",
+    "date": "2023.01.10",
+    "author": "倪暐婷",
+    "sourceModified": "2026-11-09T15:21:35.4950000Z",
+    "issueId": "202301",
     "slug": "202301-2301-3-9",
-    "status": "approved",
-    "sourceId": "2301-3-9"
+    "title": "之九 – 群龍無首，各自就定位",
+    "messages": [
+      {
+        "type": "content-warning",
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-001.jpeg?v=299531",
+        "severity": "warning"
+      },
+      {
+        "type": "content-warning",
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-002.jpeg?v=904761",
+        "severity": "warning"
+      },
+      {
+        "type": "content-warning",
+        "message": "圖片無標題：/assets/articles/202301/202301-2301-3-9-img-003.jpeg?v=892460",
+        "severity": "warning"
+      }
+    ],
+    "id": "202301::/home/runner/work/qiji-newsletter/qiji-newsletter/各期電子報/202301/2301-3-9暐婷.docx",
+    "status": "approved"
   },
   {
     "image": "/assets/pixabay/pixabay-6003727.jpg?v=6003727",
