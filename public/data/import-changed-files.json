@@ -1,6 +1,71 @@
 {
-  "changedFiles": [],
-  "totalChanged": 0,
-  "generatedAt": "2026-11-10T01:39:42.6630477Z",
-  "cacheBaselineRebuilt": 0
+  "generatedAt": "2026-11-10T01:43:42.5891073Z",
+  "cacheBaselineRebuilt": 0,
+  "totalChanged": 8,
+  "changedFiles": [
+    {
+      "issueId": "202412",
+      "fileName": "2412-1編輯小語.docx",
+      "relativePath": "202412/2412-1編輯小語.docx",
+      "sourceId": "2412-1",
+      "stableSignature": "v3|3114fd670c294a7b69bacbff21e656d5ac8786d648d5e6210883bf3f3dc69c97|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-2-1如是我聞.docx",
+      "relativePath": "202412/2412-2-1如是我聞.docx",
+      "sourceId": "2412-2-1",
+      "stableSignature": "v3|fd6f4ab2c3afdaf3bef47b4220cd5d4382045ce998957d46330dfb3496839cc1|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-2-2如是我聞之二.docx",
+      "relativePath": "202412/2412-2-2如是我聞之二.docx",
+      "sourceId": "2412-2-2",
+      "stableSignature": "v3|d0be7c6aa6151ff4f91e923003196006219a0ce8b8852b099ea6a4bfa8cde943|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-3記沉香花梨會.docx",
+      "relativePath": "202412/2412-3記沉香花梨會.docx",
+      "sourceId": "2412-3",
+      "stableSignature": "v3|6ea1e15e6fd8967d59985aaf1d839e2273f9e57302a25ade966a1d5978fa6302|1b7e6912f57571829d53cab7371412d152a469884222a6f11baa5aa839379972",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-4讀書會.docx",
+      "relativePath": "202412/2412-4讀書會.docx",
+      "sourceId": "2412-4",
+      "stableSignature": "v3|3fd781f5579b14604502e592c0d6c0db9ce01551cd753efb8e788604bd91bdd9|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-5含德章055.docx",
+      "relativePath": "202412/2412-5含德章055.docx",
+      "sourceId": "2412-5",
+      "stableSignature": "v3|5fbf7eadf32e8cc952cd1b38f52852d04459b7cf6d1e13e166fafd6be00a9aa5|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-6導引按蹻.docx",
+      "relativePath": "202412/2412-6導引按蹻.docx",
+      "sourceId": "2412-6",
+      "stableSignature": "v3|0f3bb0ff87baa07b87b3ae4192dba7f77ad61dee3aa1d18588dbc1371d224d24|",
+      "status": "updated"
+    },
+    {
+      "issueId": "202412",
+      "fileName": "2412-7股海人生.docx",
+      "relativePath": "202412/2412-7股海人生.docx",
+      "sourceId": "2412-7",
+      "stableSignature": "v3|3ad2b15fca30f4cb76524b8891fd983fa10f0e483d25e91272a821cd1ee1623b|",
+      "status": "updated"
+    }
+  ]
 }
