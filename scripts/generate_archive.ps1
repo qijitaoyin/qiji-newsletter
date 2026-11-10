@@ -2100,54 +2100,11 @@ function Get-ArticleAssetPath {
   return "/assets/articles/${IssueId}/${FileName}?v=${version}"
 }
 
-function Test-FileCopyNeeded {
-  param([System.IO.FileInfo]$Source, [string]$Destination)
-  if (-not (Test-Path -LiteralPath $Destination)) { return $true }
-  $targetItem = Get-Item -LiteralPath $Destination
-  if ($targetItem.Length -ne $Source.Length) { return $true }
-  if ($targetItem.LastWriteTimeUtc -lt $Source.LastWriteTimeUtc) { return $true }
-  return $false
-}
-
-function Copy-IssueImages {
-  param([string]$IssueId, [System.IO.DirectoryInfo]$IssueDir)
-  $target = Join-Path $publicArticles $IssueId
-  New-Item -ItemType Directory -Force -Path $target | Out-Null
-  $images = Get-ChildItem -Path $IssueDir.FullName -Recurse -File |
-    Where-Object { $_.Extension -match "^\.(jpg|jpeg|png|webp|gif)$" } |
-    Where-Object { Test-UsableImageFile $_ } |
-    Where-Object { -not (Test-InNestedIssuePath $_.FullName $IssueDir) } |
-    Sort-Object FullName
-  $copied = New-Object System.Collections.Generic.List[object]
-  $index = 1
-  foreach ($image in $images) {
-    $ext = $image.Extension.ToLowerInvariant()
-    $name = "{0}-img-{1:D3}{2}" -f $IssueId, $index, $ext
-    $destination = Join-Path $target $name
-    if (Test-FileCopyNeeded $image $destination) {
-      Copy-Item -LiteralPath $image.FullName -Destination $destination -Force
-      (Get-Item -LiteralPath $destination).LastWriteTimeUtc = $image.LastWriteTimeUtc
-    }
-    $copied.Add(@{
-      sourceName = [IO.Path]::GetFileNameWithoutExtension($image.Name)
-      path = Get-ArticleAssetPath $IssueId $name $destination
-    })
-    $index++
-  }
-  return $copied.ToArray()
-}
-
-function Select-ArticleImage {
-  param([object[]]$Images, [string]$SourceId, [string]$Title, [int]$Index)
-  if (-not $Images -or $Images.Count -eq 0) { return "" }
-  $needle = ($SourceId -replace "^20\d{2}", "") -replace "[^\d]", ""
-  if ($needle) {
-    $match = $Images | Where-Object { $_.sourceName -replace "[^\d]", "" -like "*$needle*" } | Select-Object -First 1
-    if ($match) { return $match.path }
-  }
-  $titleMatch = $Images | Where-Object { $Title -and $_.sourceName -and ($Title.Contains($_.sourceName) -or $_.sourceName.Contains($Title)) } | Select-Object -First 1
-  if ($titleMatch) { return $titleMatch.path }
-  return ""
+function Test-LegacyIssueFolderHeroImage {
+  param([string]$Path, [string]$IssueId)
+  if ([string]::IsNullOrWhiteSpace($Path) -or [string]::IsNullOrWhiteSpace($IssueId)) { return $false }
+  $escapedIssueId = [regex]::Escape($IssueId)
+  return ($Path -match "^/assets/articles/$escapedIssueId/$escapedIssueId-img-\d{3}\.")
 }
 
 function Should-SkipDoc {
@@ -2393,12 +2350,12 @@ if (Test-Path -LiteralPath $importCachePath) {
 foreach ($issueDir in $issueDirs) {
   $issueId = ([regex]::Match($issueDir.Name, "20\d{4}")).Value
   Write-Host "Importing issue $issueId from $($issueDir.FullName)"
+  $issueAssetDir = Join-Path $publicArticles $issueId
+  New-Item -ItemType Directory -Force -Path $issueAssetDir | Out-Null
   $year = $issueId.Substring(0, 4)
   $month = $issueId.Substring(4, 2)
   $issueNumber = Get-IssueNumber $issueId
   $files = Get-PreferredArticleFiles $issueDir $issueId
-  $images = $null
-
   $issueArticles = New-Object System.Collections.Generic.List[object]
   $order = 0
   foreach ($file in $files) {
@@ -2426,14 +2383,12 @@ foreach ($issueDir in $issueDirs) {
       if ($publishedSlug) {
         $cachedArticle["slug"] = $publishedSlug
       }
-      if (-not $cachedArticle.image) {
-        if ($null -eq $images) {
-          $images = Copy-IssueImages $issueId $issueDir
-        }
-        $matchedIssueImage = Select-ArticleImage $images $sourceId $cachedArticle.title $order
-        if ($matchedIssueImage) {
-          $cachedArticle["image"] = $matchedIssueImage
-        }
+      # Older caches guessed title artwork from loose files elsewhere in the
+      # issue folder. Those files are not part of this Word article and can
+      # belong to another article, so discard the legacy cross-article match.
+      if (Test-LegacyIssueFolderHeroImage ([string]$cachedArticle.image) $issueId) {
+        $cachedArticle["image"] = ""
+        $cachedArticle["imageCaption"] = ""
       }
       if ($cachedArticle.slug) {
         if ($seenSlugs.ContainsKey($cachedArticle.slug)) {
@@ -2517,10 +2472,7 @@ foreach ($issueDir in $issueDirs) {
     $isPublishedIssueArticle = [bool]$publishedBaseline
     $isKnownPublishedWithoutBaseline = (-not $isPublishedIssueArticle) -and (Test-IssueIsAtOrBeforePublicLatest $issueId)
     $validationStartIndex = $validationItems.Count
-    if ($null -eq $images) {
-      $images = Copy-IssueImages $issueId $issueDir
-    }
-    $docxContent = Read-DocxContent $file $issueId $sourceId (Join-Path $publicArticles $issueId)
+    $docxContent = Read-DocxContent $file $issueId $sourceId $issueAssetDir
     $paragraphs = $docxContent.Paragraphs
     if (-not $paragraphs -or $paragraphs.Count -eq 0) { continue }
 
@@ -2731,11 +2683,6 @@ foreach ($issueDir in $issueDirs) {
     if ($preBodyImages.Count -gt 0) {
       $heroImage = $preBodyImages[0].src
       $heroCaption = $preBodyImages[0].caption
-    } else {
-      $matchedIssueImage = Select-ArticleImage $images $sourceId $title $order
-      if ($matchedIssueImage) {
-        $heroImage = $matchedIssueImage
-      }
     }
     $sourceCaption = Get-ImageSourceCaption $paragraphs
     if (-not $heroCaption -and $sourceCaption) {

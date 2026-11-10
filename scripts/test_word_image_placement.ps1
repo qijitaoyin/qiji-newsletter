@@ -77,18 +77,26 @@ try {
     "src\data\reviewDraftArticles.ts",
     "src\data\generatedReview.ts",
     "src\data\publishState.json",
-    "review-approvals.json"
+    "review-approvals.json",
+    ".cache\article-import-cache.json"
   )) {
     Copy-TestFile $relativePath $sandboxRoot
   }
 
+  $issue301 = Join-Path $sourceRoot "202301"
   $issue610 = Join-Path $sourceRoot "202610"
   $issue611 = Join-Path $sourceRoot "202611"
   $issue612 = Join-Path $sourceRoot "202612"
-  New-Item -ItemType Directory -Force -Path $issue610, $issue611, $issue612 | Out-Null
+  New-Item -ItemType Directory -Force -Path $issue301, $issue610, $issue611, $issue612 | Out-Null
+  $legacyCacheFixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202301") -File -Filter "2301-2-3*.docx" | Select-Object -First 1
+  if (-not $legacyCacheFixture) { throw "Cannot find the 2301-2-3 legacy cached-image regression fixture." }
+  Copy-Item -LiteralPath $legacyCacheFixture.FullName -Destination $issue301
   $fixture = Get-ChildItem -LiteralPath (Join-Path $canonicalSource "202610") -File -Filter "2610-3-2*.docx" | Select-Object -First 1
   if (-not $fixture) { throw "Cannot find the 2610-3-2 body-image regression fixture." }
   Copy-Item -LiteralPath $fixture.FullName -Destination $issue610
+  # A loose issue-folder image may belong to another article. Even when its
+  # filename resembles this source id, it must never become title artwork.
+  [System.IO.File]::WriteAllBytes((Join-Path $issue610 "2610-3-2.jpg"), [byte[]](0xFF, 0xD8, 0xFF, 0xD9))
   $preBodyFixturePath = Join-Path $issue611 ($fixture.Name -replace '^2610-', '2611-')
   Copy-Item -LiteralPath $fixture.FullName -Destination $preBodyFixturePath
   Move-FirstDocxImageBeforeBodyMarker $preBodyFixturePath
@@ -110,7 +118,7 @@ try {
   New-Item -ItemType Directory -Force -Path (Split-Path -Parent $pixabayStorePath) | Out-Null
   $pixabayStore = @{
     version = 1
-    policy = "nature-landscape-v2"
+    policy = "nature-landscape-v3"
     usedImageIds = @("test")
     articles = @{
       "202610-2610-3-2" = @{
@@ -140,6 +148,17 @@ try {
     ([string]$bodyArticle.image -eq [string]$bodyInlineImages[0].src)
   ) {
     throw "A body image did not remain inline with separate Pixabay title artwork."
+  }
+  if (Test-Path -LiteralPath (Join-Path $sandboxRoot "public\assets\articles\202610\202610-img-001.jpg")) {
+    throw "A loose issue-folder image was copied and could be assigned across articles."
+  }
+
+  $legacyCacheArticle = @($articles | Where-Object { $_.issueId -eq "202301" -and $_.sourceId -eq "2301-2-3" })[0]
+  if (
+    -not $legacyCacheArticle -or
+    ([string]$legacyCacheArticle.image -match '^/assets/articles/202301/202301-img-\d{3}\.')
+  ) {
+    throw "A cached cross-article issue image was not removed."
   }
 
   $preBodyArticle = @($articles | Where-Object { $_.issueId -eq "202611" -and $_.sourceId -eq "2611-3-2" })[0]
@@ -180,6 +199,8 @@ try {
 
   Write-Host "PASS: pre-body Word images become title artwork without duplication."
   Write-Host "PASS: images after the body marker remain inline and use separate title artwork."
+  Write-Host "PASS: loose issue-folder images cannot become cross-article title artwork."
+  Write-Host "PASS: cached cross-article issue images are removed before fallback selection."
   Write-Host "PASS: TIFF Word images are converted to browser-compatible PNG files."
   Write-Host "PASS: every Word article uses deterministic article-scoped image paths."
 } finally {
